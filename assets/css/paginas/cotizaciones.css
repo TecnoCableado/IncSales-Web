@@ -1,0 +1,214 @@
+/* ============================================================================
+   COTIZACIONES Y VENTA · piezas propias de esta página
+   ----------------------------------------------------------------------------
+   Solo lo que NO existe en sistema.css. Cero hex sueltos, cero radios nuevos,
+   cero sombras nuevas, cero pesos de 700 o más: todo sale de los tokens.
+   UNA sola tipografía: los folios, SKU y claves usan var(--fuente) con cifras
+   tabulares (.clave / .mono del sistema), nunca una monoespaciada.
+   NINGÚN borde de color: las líneas son de 1 px y grises.
+   ========================================================================== */
+
+/* =================================================== 1. PORTADA DE INTERIOR
+   Misma retícula que la portada de index.html: el titular y las acciones se
+   reparten arriba y la maqueta se lleva el ancho entero abajo, para que la
+   pantalla del sistema se vea completa y nunca recortada. */
+.portada__reja { display: grid; gap: clamp(2.5rem, 5vw, var(--e10)); }
+.portada__cabeza { display: grid; gap: var(--e6) var(--e9); align-items: end; }
+@media (min-width: 900px) {
+  .portada__cabeza { grid-template-columns: minmax(0, 1.3fr) minmax(0, .85fr); }
+}
+.portada__lado .portada__acciones { margin-top: 0; }
+@media (min-width: 900px) {
+  .portada__lado .portada__firma { flex-direction: column; gap: .55rem; }
+}
+/* Sobre fondo claro la línea de la firma es gris, no la blanca traslúcida que
+   usa la portada de noche. */
+.portada__firma { padding-top: var(--e5); border-top: 1px solid var(--linea-suave); }
+.portada__firma svg { width: 14px; height: 14px; flex: 0 0 auto; color: var(--exito); }
+
+/* ======================================================= 2. MAQUETAS REALES
+   El sistema de verdad, montado con las clases de producto dentro de un
+   .marco. Cambia la densidad y nada de adentro recibe foco: es una imagen. */
+.maqueta {
+  position: relative;
+  container-type: inline-size;
+  font-size: var(--t-13);
+  letter-spacing: var(--tr-13);
+  line-height: 1.5;
+  --e-caja: var(--e3);
+}
+.maqueta .app { min-height: 0; }
+.maqueta .pagina { gap: var(--e4); }
+/* Dentro de la maqueta no hay prosa: cada párrafo es un rótulo de interfaz y
+   no arrastra el margen inferior del cuerpo de texto. */
+.maqueta p { margin: 0; }
+.maqueta .pagina__sub { margin-top: .1rem; }
+/* En la barra lateral el <b> es la empresa y .apunte el perfil de quien entró:
+   los dos heredaban grises de página clara sobre el fondo de noche. */
+.maqueta .lateral .apunte { color: inherit; }
+.maqueta .lateral__marca b { color: var(--tinta-noche); font-weight: var(--peso-medio); }
+.maqueta .lateral__cuenta b { display: block; color: var(--tinta-noche); }
+/* Un folio nunca se parte en dos renglones: es una sola unidad de lectura. */
+.maqueta .datos .clave { white-space: nowrap; }
+/* Una dirección larga en una maqueta angosta se recorta: nunca empuja la barra
+   del marco ni se parte a la mitad. */
+.maqueta .marco__url { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* En una columna de 520 px el indicador se lee mejor un punto más chico; la
+   cifra sigue siendo la pieza dominante de su tarjeta. */
+.maqueta .kpi__n { font-size: var(--t-20); letter-spacing: var(--tr-20); }
+@container (max-width: 459px) { .maqueta .kpis { grid-template-columns: 1fr; } }
+@container (min-width: 460px) { .maqueta .kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+/* La maqueta se adapta a SU ancho, no al de la ventana. */
+.maqueta .pagina__acciones { flex-wrap: wrap; }
+@container (max-width: 860px) {
+  .maqueta .app { grid-template-columns: 176px 1fr; }
+  .maqueta .pagina { padding: var(--e5); }
+}
+/* Estrecha, la pantalla se comporta como se comportaría de verdad: suelta la
+   acción secundaria y las columnas que no deciden nada, no las encoge. */
+@container (max-width: 560px) {
+  .maqueta .buscador { min-width: 0; }
+  .maqueta .buscador kbd,
+  .maqueta .cabecera-app .estado,
+  .maqueta .pagina__acciones .btn { display: none; }
+}
+@container (max-width: 420px) {
+  .maqueta .datos th:nth-child(2), .maqueta .datos td:nth-child(2) { display: none; }
+}
+@container (max-width: 600px) {
+  .maqueta .app { grid-template-columns: 1fr; }
+  .maqueta .lateral { display: none; }
+}
+/* La barra lateral la decide el ancho de la maqueta, no el de la ventana: en
+   sistema.css la regla base de .lateral va después de su media query. */
+@container (min-width: 601px) { .maqueta .lateral { display: flex; } }
+
+/* Equivalentes no enfocables de los controles del sistema. Mismas medidas. */
+.maqueta .segmentado span {
+  display: inline-block; font-size: var(--t-13); font-weight: var(--peso-medio);
+  letter-spacing: var(--tr-13); color: var(--tinta-3); padding: .3rem .7rem; border-radius: var(--r-xs);
+}
+.maqueta .segmentado span.activo { background: var(--superficie); color: var(--tinta); box-shadow: var(--sombra-1); }
+
+/* ============================================================ 3. CONTRASTE
+   Cómo se cotiza hoy y cómo se cotiza aquí, lado a lado. Dos tarjetas: la de
+   hoy es plana y la nuestra es la que está posada. Sin bordes de color. */
+.contraste { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--e5); align-items: start; }
+@media (max-width: 760px) { .contraste { grid-template-columns: 1fr; } }
+.contraste__cab {
+  display: flex; align-items: center; gap: .6rem;
+  padding-bottom: var(--e4); margin-bottom: var(--e4); border-bottom: 1px solid var(--linea-suave);
+}
+.contraste__cab h3 { margin: 0; font-size: var(--t-18); letter-spacing: var(--tr-18); }
+
+/* ================================================================ 4. PASOS
+   Cuatro momentos de la captura. El número es un rótulo, no un adorno: va en
+   la misma letra que todo lo demás, con cifras tabulares. */
+.pasos { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--e4); }
+.pasos > li { margin: 0; }
+.paso { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--e4); align-items: start; }
+.paso__n {
+  width: 28px; height: 28px; border-radius: var(--r-full); flex: 0 0 auto;
+  display: grid; place-items: center; background: var(--n2); color: var(--tinta-4);
+  font-size: var(--t-12); letter-spacing: var(--tr-12); font-weight: var(--peso-fuerte);
+  font-variant-numeric: tabular-nums;
+}
+.paso h3 { margin: 0 0 .25rem; font-size: var(--t-16); letter-spacing: var(--tr-16); }
+.paso p { margin: 0; font-size: var(--t-15); letter-spacing: var(--tr-15); color: var(--tinta-4); }
+
+/* ============================================================= 5. LA HOJA
+   La cotización tal como la recibe el cliente. Va dentro de un .marco, así que
+   no pone borde ni sombra propios: solo el papel y sus renglones. */
+.hoja { padding: var(--e6); font-size: var(--t-13); letter-spacing: var(--tr-13); }
+.hoja__cab {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--e4);
+  padding-bottom: var(--e4); margin-bottom: var(--e2); border-bottom: 1px solid var(--linea);
+}
+.hoja__cab b { color: var(--tinta); font-weight: var(--peso-fuerte); }
+.hoja__cab--der { text-align: right; }
+.hoja__folio { display: block; font-size: var(--t-18); letter-spacing: var(--tr-18); color: var(--tinta); }
+.hoja__renglon {
+  display: grid; grid-template-columns: minmax(0, 1fr) 3.2rem 6.4rem; gap: var(--e3);
+  padding: .55rem 0; border-bottom: 1px solid var(--linea-suave); align-items: start;
+}
+.hoja__renglon > span + span { text-align: right; font-variant-numeric: tabular-nums; color: var(--tinta-2); }
+.hoja__renglon .apunte { display: block; }
+.hoja__total {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--e3);
+  padding-top: var(--e4); font-size: var(--t-18); letter-spacing: var(--tr-18);
+  color: var(--tinta); font-weight: var(--peso-fuerte);
+}
+.hoja__total span:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+.hoja__pie { margin: var(--e4) 0 0; }
+@media (max-width: 420px) {
+  .hoja { padding: var(--e5); }
+  .hoja__cab { grid-template-columns: 1fr; }
+  .hoja__cab--der { text-align: left; }
+}
+
+/* =========================================================== 6. LA CADENA
+   Los seis documentos, en orden. Las divisiones son el fondo asomando por un
+   hueco de 1 px: misma lectura que un borde, sin duplicar líneas. */
+.cadena { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1px; background: var(--linea-suave); }
+@media (max-width: 1000px) { .cadena { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 620px) { .cadena { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 400px) { .cadena { grid-template-columns: 1fr; } }
+.cadena__eslabon { background: var(--superficie); padding: var(--e5) var(--e4); display: grid; gap: .3rem; align-content: start; }
+.cadena__n { font-size: var(--t-11); letter-spacing: .09em; text-transform: uppercase; color: var(--tinta-5); font-variant-numeric: tabular-nums; }
+.cadena__eslabon b { font-size: var(--t-15); letter-spacing: var(--tr-15); color: var(--tinta); font-weight: var(--peso-fuerte); }
+.cadena__eslabon span { font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-4); }
+
+/* ============================================================== 7. SELLOS
+   Icono a la izquierda y el texto a su lado: para tarjetas que son una sola
+   idea corta, no un módulo entero. */
+.sello { display: flex; gap: .8rem; align-items: flex-start; }
+.sello h3 { font-size: var(--t-16); letter-spacing: var(--tr-16); margin: 0 0 .25rem; }
+.sello p { font-size: var(--t-14); letter-spacing: var(--tr-14); color: var(--tinta-4); margin: 0; }
+
+/* =============================================================== 8. CITAS */
+.cita {
+  margin: 0; background: var(--superficie); border: 1px solid var(--linea);
+  border-radius: var(--r-md); padding: var(--e6); display: grid; gap: var(--e5); align-content: start;
+}
+.cita__texto { margin: 0; font-size: var(--t-16); letter-spacing: var(--tr-16); line-height: 1.55; color: var(--tinta-2); }
+.cita__pie { display: flex; align-items: center; gap: .6rem; }
+.cita__quien b { display: block; font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta); font-weight: var(--peso-fuerte); }
+.cita__quien span { display: block; font-size: var(--t-12); letter-spacing: var(--tr-12); color: var(--tinta-5); }
+
+/* ============================================================== 9. TABLAS
+   El renglón que importa se marca con relleno tenue del propio azul, nunca con
+   una raya de color al costado. */
+.tabla tbody tr.destacada { background: var(--a1); }
+
+/* ===================================================== 10. REMATES Y RITMO */
+.tras-encabezado { margin-top: var(--e6); }
+.tras-rejilla { margin-top: var(--e6); }
+.tras-tira { margin-top: var(--e8); }
+.tras-aviso { margin-top: var(--e5); }
+.remate { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: var(--e7); }
+.remate--centro { justify-content: center; }
+.icono-linea { flex: 0 0 auto; }
+
+/* Los rótulos del pie son encabezados de verdad (h3), para no saltar de h2 a
+   h5 en la jerarquía. El aspecto es el que sistema.css le da a .pie h5. */
+.cierre__acciones { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; margin-top: var(--e7); }
+.cierre__pie { margin-top: var(--e6); color: var(--tinta-noche-2); }
+.pie__titulo {
+  color: var(--tinta-noche); font-size: var(--t-12); font-weight: var(--peso-fuerte);
+  letter-spacing: .07em; text-transform: uppercase; line-height: 1.4; margin-bottom: var(--e4);
+}
+.pie__logo { height: 30px; width: auto; margin-bottom: var(--e4); }
+.pie__contacto { display: grid; gap: .4rem; margin-top: var(--e4); font-size: var(--t-13); letter-spacing: var(--tr-13); }
+
+/* La nota que cuelga del botón del plan: es un apunte, no una tercera línea de
+   precio, así que va centrada bajo la acción y con el gris de metadatos. */
+.plan__nota { margin: var(--e3) 0 0; text-align: center; }
+
+/* A 360 px la barra del pie de una tabla de producto tiene que poder bajar de
+   renglón: el total, el aviso y el botón no caben en fila y el .datos-caja los
+   recortaría contra su propio borde. */
+.maqueta .datos__pie { flex-wrap: wrap; }
+/* La tarjeta entera es el enlace: la flecha también responde al pasar por
+   encima de la tarjeta, no solo por encima de las dos palabras. */
+.tarjeta-enlace:hover .enlace-ir svg { transform: translateX(3px); }

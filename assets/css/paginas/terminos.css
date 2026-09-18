@@ -1,0 +1,208 @@
+/* ============================================================================
+   PÁGINA · TÉRMINOS DEL SERVICIO (terminos.html)
+   ----------------------------------------------------------------------------
+   Un documento legal es una prueba de fuego para un sistema de diseño: dieciséis
+   apartados, sesenta cláusulas, tres tablas y ni una sola imagen que distraiga.
+   Lo único que sostiene la lectura es la jerarquía y el ritmo vertical.
+
+   Aquí vive SOLO lo que sistema.css no resuelve, y todo con sus tokens: cero
+   hex sueltos, cero radios o sombras nuevas, una sola familia tipográfica —los
+   números de cláusula y la versión van con .clave, no en monoespaciada— y
+   ningún borde de color: las separaciones son líneas de 1 px grises.
+   ========================================================================== */
+
+/* ================================================= 1. PORTADA DE LA PÁGINA */
+/* Las migas heredan el gris de metadatos, que sobre el fondo de noche no se
+   lee. Se listan una por una, no como .portada--tinta *, porque dentro de la
+   portada puede ir una superficie clara. */
+.portada--tinta .migas,
+.portada--tinta .migas a { color: var(--tinta-noche-2); }
+
+/* La ficha de vigencia: versión, fecha y quién presta el servicio. Es el dato
+   que un abogado busca primero, así que va en la portada y no al pie. */
+.ficha {
+  display: grid; margin: var(--e7) 0 0;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+  gap: var(--e5) var(--e7); padding-top: var(--e5);
+  border-top: 1px solid var(--linea-noche);
+}
+.ficha > div { min-width: 0; }
+.ficha dt {
+  font-size: var(--t-11); letter-spacing: .08em; text-transform: uppercase;
+  font-weight: var(--peso-fuerte); color: var(--tinta-noche-2);
+}
+.ficha dd {
+  margin: .25rem 0 0; font-size: var(--t-15); letter-spacing: var(--tr-15);
+  color: var(--tinta-noche);
+}
+
+.portada__firma { padding-top: var(--e5); border-top: 1px solid var(--linea-noche); }
+.portada__firma svg { width: 14px; height: 14px; flex: 0 0 auto; color: var(--a4); }
+
+/* ====================================================== 2. PIEZAS SUELTAS */
+/* Un h2 dentro de una tarjeta baja un escalón: a 38 px parte la frase en
+   cuatro renglones y compite con el título de la página. */
+.cab-tarjeta { font-size: var(--t-24); letter-spacing: var(--tr-24); margin-bottom: var(--e2); }
+
+/* Tablas anchas: dentro de .tabla-scroll no se aplastan, se desplazan. */
+.tabla--larga { min-width: 34rem; }
+/* La fila que hay que leer aunque se lea en diagonal. Relleno tenue del azul
+   de marca, sin raya ni contorno de color; se mantiene en :hover para que no
+   parpadee al pasar el ratón. */
+.tabla tbody tr.fila-clave,
+.tabla tbody tr.fila-clave:hover { background: var(--accion-tenue); }
+
+/* El icono de un aviso no se encoge cuando el texto es largo. */
+.icono-linea { flex: 0 0 auto; }
+
+/* Atribución de una afirmación dentro de un aviso. */
+.fuente {
+  display: block; margin-top: .55rem; padding-top: .55rem;
+  border-top: 1px solid var(--linea); font-size: var(--t-12); letter-spacing: var(--tr-12);
+  line-height: 1.55; color: var(--tinta-5);
+}
+
+/* ================================== 3. RETÍCULA DEL ARTICULADO Y SU ÍNDICE
+   Índice a la izquierda, pegajoso bajo la barra; el articulado a la derecha.
+   Debajo de 1000 px el índice vuelve a ser lo que siempre fue: una lista de
+   enlaces antes del contenido. */
+.legal { display: grid; gap: var(--e8); align-items: start; }
+.legal__columna { min-width: 0; }
+@media (min-width: 1000px) {
+  .legal { grid-template-columns: 14rem minmax(0, 1fr); gap: var(--e10); }
+  .legal__indice { position: sticky; top: calc(var(--barra) + var(--e5)); }
+}
+.legal__indice { scroll-margin-top: calc(var(--barra) + var(--e5)); }
+.legal__indice-titulo {
+  font-size: var(--t-11); font-weight: var(--peso-fuerte); letter-spacing: .09em;
+  text-transform: uppercase; color: var(--tinta-5); margin: 0 0 var(--e3);
+}
+.legal__indice ol {
+  list-style: none; margin: 0; padding: 0; counter-reset: apartado; display: grid; gap: .05rem;
+}
+.legal__indice li { margin: 0; }
+.legal__indice a {
+  display: grid; grid-template-columns: 1.45rem minmax(0, 1fr); align-items: baseline;
+  gap: .3rem; padding: .3rem .5rem; border-radius: var(--r-sm);
+  font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-4); line-height: 1.4;
+  transition: background-color var(--rapido) var(--curva), color var(--rapido) var(--curva);
+}
+.legal__indice a::before {
+  content: counter(apartado) "."; counter-increment: apartado;
+  color: var(--tinta-5); font-variant-numeric: tabular-nums; font-feature-settings: "tnum" 1;
+}
+.legal__indice a:hover { background: var(--lienzo-hundido); color: var(--tinta); text-decoration: none; }
+.legal__indice a:hover::before { color: var(--accion-honda); }
+.legal__indice-pie {
+  margin-top: var(--e5); padding-top: var(--e4); border-top: 1px solid var(--linea);
+  display: grid; gap: .35rem;
+}
+.legal__indice-pie p { margin: 0; }
+
+/* ------------------------------------------------------ cada apartado ---- */
+.apartado { scroll-margin-top: calc(var(--barra) + var(--e7)); }
+.apartado + .apartado {
+  margin-top: var(--e9); padding-top: var(--e9); border-top: 1px solid var(--linea-suave);
+}
+.apartado__cabeza {
+  display: grid; grid-template-columns: 2.25rem minmax(0, 1fr);
+  gap: var(--e4); align-items: start; margin-bottom: var(--e4);
+}
+/* El número del apartado: relleno tenue y cifra tabular, igual que un chip.
+   Ni recuadro oscuro ni borde de color. */
+.apartado__num {
+  width: 2.25rem; height: 2.25rem; margin-top: .1em; display: inline-grid; place-items: center;
+  border-radius: var(--r-sm); background: var(--accion-tenue); color: var(--accion-honda);
+  font-size: var(--t-14); letter-spacing: var(--tr-14); font-weight: var(--peso-fuerte);
+}
+/* Dieciséis títulos seguidos no piden el tamaño de un h2 de sección: se bajan
+   un escalón de la escala, con SU tracking. */
+.apartado__cabeza h2 {
+  margin: 0; font-size: var(--t-30); letter-spacing: var(--tr-30); line-height: 1.18;
+}
+.apartado__entrada {
+  max-width: var(--ancho-texto); margin: 0 0 var(--e7);
+  font-size: var(--t-16); letter-spacing: var(--tr-16); color: var(--tinta-4);
+}
+
+/* ------------------------------ cada cláusula, con su número colgado ---- */
+.clausula { display: grid; grid-template-columns: 3.25rem minmax(0, 1fr); gap: var(--e4); }
+.clausula + .clausula { margin-top: var(--e7); }
+.clausula__num { font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-5); padding-top: .35rem; }
+.clausula__texto { max-width: var(--ancho-texto); }
+.clausula__texto > * + * { margin-top: var(--e4); }
+.clausula__texto > h3 + * { margin-top: 0; }
+.clausula__texto h3 {
+  font-size: var(--t-18); letter-spacing: var(--tr-18); line-height: 1.35; margin: 0 0 var(--e2);
+}
+.clausula__texto p, .clausula__texto ul, .clausula__texto .lista { margin-bottom: 0; }
+
+/* ------------------------------------------------------- definiciones ---- */
+/* Siete términos seguidos: renglones separados por la línea del sistema, que
+   es lo que sustituye a la barra de color del diseño anterior. */
+.definiciones { margin: 0; display: grid; }
+.definiciones > div { padding: var(--e3) 0; border-bottom: 1px solid var(--linea-suave); }
+.definiciones > div:first-child { padding-top: 0; }
+.definiciones > div:last-child { padding-bottom: 0; border-bottom: 0; }
+.definiciones dt {
+  font-size: var(--t-14); letter-spacing: var(--tr-14);
+  font-weight: var(--peso-fuerte); color: var(--tinta);
+}
+.definiciones dd {
+  margin: .15rem 0 0; font-size: var(--t-14); letter-spacing: var(--tr-14); color: var(--tinta-4);
+}
+
+/* ------------------------------------------- volver, y sello de cierre ---- */
+.volver { margin: var(--e6) 0 0; font-size: var(--t-13); letter-spacing: var(--tr-13); }
+.volver a { color: var(--tinta-5); }
+.volver a:hover { color: var(--accion-honda); }
+
+.sello {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--e3) var(--e7);
+  margin: var(--e9) 0 0; padding-top: var(--e5); border-top: 1px solid var(--linea);
+  font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-5);
+}
+.sello b { color: var(--tinta-2); font-weight: var(--peso-fuerte); }
+
+/* ==================================================== 4. DUDAS Y REMATES */
+/* El cuerpo de una respuesta puede traer avisos y listas: mismo ritmo
+   vertical que sus párrafos, sin margen colgando arriba ni abajo. */
+.acordeon__cuerpo > .aviso,
+.acordeon__cuerpo > .lista { margin: var(--e4) 0; }
+.acordeon__cuerpo > :first-child { margin-top: 0; }
+.acordeon__cuerpo > :last-child { margin-bottom: 0; }
+
+.tras-tarjeta { margin-top: var(--e7); }
+.tras-tabla { margin-top: var(--e5); }
+.tras-lista { margin-top: var(--e4); }
+
+@media (max-width: 560px) {
+  .apartado__cabeza { grid-template-columns: minmax(0, 1fr); gap: var(--e3); }
+  .apartado__num { margin-top: 0; }
+  .clausula { grid-template-columns: minmax(0, 1fr); gap: .1rem; }
+  .clausula__num { padding-top: 0; }
+}
+
+/* ====================================== 5. CIERRE Y PIE (igual que index) */
+.cierre__acciones {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; margin-top: var(--e7);
+}
+.cierre__pie { margin-top: var(--e6); color: var(--tinta-noche-2); }
+
+/* Los rótulos del pie son encabezados de verdad (h3), para no saltar de h2 a
+   h5 en la jerarquía. El aspecto es el que sistema.css le da a .pie h5. */
+.pie__titulo {
+  color: var(--tinta-noche); font-size: var(--t-12); font-weight: var(--peso-fuerte);
+  letter-spacing: .07em; text-transform: uppercase; line-height: 1.4; margin-bottom: var(--e4);
+}
+.pie__logo { height: 30px; width: auto; margin-bottom: var(--e4); }
+.pie__contacto {
+  display: grid; gap: .4rem; margin-top: var(--e4);
+  font-size: var(--t-13); letter-spacing: var(--tr-13);
+}
+
+@media print {
+  .legal__indice, .volver { display: none !important; }
+  .legal { grid-template-columns: 1fr; }
+  .apartado { break-inside: avoid; }
+}

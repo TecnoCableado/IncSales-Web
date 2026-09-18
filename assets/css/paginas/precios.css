@@ -1,0 +1,229 @@
+/* ============================================================================
+   INCSALES · PRECIOS Y PLANES (precios.html)
+   ----------------------------------------------------------------------------
+   Solo piezas que NO existen en sistema.css. Cero hex sueltos, cero rgba()
+   inventados, cero radios o sombras nuevos, una sola tipografía y ningún borde
+   de color: todo sale de los tokens. Cada font-size viaja con su
+   letter-spacing, como manda el sistema. Si algo de aquí se repite en otra
+   página, se sube al sistema; mientras tanto vive aquí y no toca a nadie más.
+   ========================================================================== */
+
+/* ================================================= 0. UNA SOLA TIPOGRAFÍA
+   Un <button> no hereda la letra del documento: hay que dársela. Sin esto, el
+   único botón del menú —«Producto»— sale en la letra por omisión del sistema
+   operativo y queda como el único elemento de la página con otra tipografía,
+   justo al lado de los enlaces que sí van en Inter. */
+.nav__item, .nav__hamburguesa { font-family: var(--fuente); }
+
+/* Un <th> del cuerpo de la tabla llega en negrita de navegador (700). Esta es
+   una página de tablas largas: aquí se fija el peso del sistema, que es el
+   mismo de cualquier otro rótulo fuerte. */
+.tabla tbody th { font-weight: var(--peso-medio); color: var(--tinta-2); }
+
+/* Con una barra de índice pegada bajo el menú, el destino de un ancla tiene
+   que bajar lo que miden las dos barras juntas o el título aterriza tapado. */
+html { scroll-padding-top: calc(var(--barra) + var(--e10)); }
+
+/* ================================================== 1. PORTADA DE INTERIOR
+   Misma portada de noche que la portada del sitio, con las migas encima: en
+   una página de precios lo primero que hay que resolver es que el precio que
+   se ve es el precio que se paga. */
+.portada__cabeza { display: grid; gap: var(--e7) var(--e9); align-items: start; }
+@media (min-width: 900px) {
+  .portada__cabeza { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); }
+}
+/* La columna de la ficha no estira: la tarjeta mide lo que mide su contenido
+   y se queda arriba, a la altura del titular. */
+.portada__lado { display: grid; align-content: start; }
+.portada__firma { padding-top: var(--e5); border-top: 1px solid var(--linea-noche); }
+.portada__firma svg { width: 14px; height: 14px; flex: 0 0 auto; color: var(--a4); }
+
+/* Sobre el fondo de noche las migas heredaban grises de página clara (3.4:1).
+   Se listan una por una y no como .portada--tinta *, por la misma razón que
+   lo hace el sistema: dentro de una portada puede ir superficie clara. */
+.portada--tinta .migas { color: var(--tinta-noche-2); }
+.portada--tinta .migas a { color: var(--a4); }
+.portada--tinta .migas li:not(:last-child)::after { color: var(--a4); opacity: .55; }
+
+/* La ficha que acompaña al titular: el resumen de las tres familias. Es una
+   tarjeta de las de fondo oscuro, no una tarjeta blanca sobre la noche. */
+.lado__titulo {
+  margin: 0 0 var(--e3); font-size: var(--t-18); letter-spacing: var(--tr-18);
+  font-weight: var(--peso-fuerte); color: var(--tinta-noche); line-height: 1.32;
+}
+.tarjeta--tinta .apunte { color: var(--tinta-noche-2); }
+/* Las tres familias, una debajo de otra. La separación es la misma línea de
+   1 px que usa el sistema sobre fondo de noche; no hay viñetas de color. */
+.lado__lista { list-style: none; margin: 0; padding: 0; display: grid; }
+.lado__lista li {
+  margin: 0; padding: .6rem 0; border-top: 1px solid var(--linea-noche);
+  font-size: var(--t-14); letter-spacing: var(--tr-14); color: var(--tinta-noche-2);
+}
+.lado__lista li:first-child { border-top: 0; padding-top: 0; }
+.lado__lista a { color: var(--a4); font-weight: var(--peso-fuerte); }
+.lado__lista b { color: var(--tinta-noche); font-weight: var(--peso-fuerte); }
+.lado__legal {
+  margin: var(--e5) 0 0; padding-top: var(--e4);
+  border-top: 1px solid var(--linea-noche);
+  font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-noche-2);
+}
+.lado__legal b { display: block; color: var(--tinta-noche); font-weight: var(--peso-fuerte); }
+
+/* ====================================================== 2. ÍNDICE PEGAJOSO
+   Nueve secciones son demasiadas para recordarlas: el índice se queda pegado
+   bajo el menú y se comporta igual que él —relleno tenue al pasar por encima,
+   nunca una raya de color. */
+.indice {
+  position: sticky; top: var(--barra); z-index: 90;
+  background: var(--lienzo); border-bottom: 1px solid var(--linea-suave);
+}
+.indice__pista {
+  display: flex; gap: .1rem; margin: 0; padding: .35rem 0;
+  list-style: none; overflow-x: auto; scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.indice__pista::-webkit-scrollbar { display: none; }
+.indice__pista li { margin: 0; flex: 0 0 auto; }
+.indice__pista a {
+  display: block; padding: .4rem .65rem; border-radius: var(--r-sm);
+  font-size: var(--t-13); letter-spacing: var(--tr-13); font-weight: var(--peso-medio);
+  color: var(--tinta-4); text-decoration: none; white-space: nowrap;
+  transition: background-color var(--rapido) var(--curva), color var(--rapido) var(--curva);
+}
+.indice__pista a:hover { background: var(--n2); color: var(--tinta); text-decoration: none; }
+
+/* ========================================================== 3. LAS FAMILIAS
+   Cada familia se presenta con su nombre, a quién sirve y desde cuánto
+   arranca. La división es una línea de 1 px gris, como todas. */
+.familia + .familia { margin-top: var(--e10); }
+.familia__cabeza {
+  display: grid; gap: var(--e4) var(--e7); align-items: end;
+  padding-bottom: var(--e5); margin-bottom: var(--e6);
+  border-bottom: 1px solid var(--linea);
+}
+@media (min-width: 860px) {
+  .familia__cabeza { grid-template-columns: minmax(0, 1fr) auto; }
+}
+.familia__cabeza h3 { margin-bottom: .35rem; }
+/* Solo el último párrafo pierde el margen: el sobre-título necesita el suyo
+   para no quedar pegado al titular de la familia. */
+.familia__cabeza p:last-child { margin-bottom: 0; }
+.familia__desde {
+  margin: 0; font-size: var(--t-20); letter-spacing: var(--tr-20);
+  font-weight: var(--peso-fuerte); color: var(--tinta); white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Un plan puede traer lo que incluye y lo que no: dos listas seguidas dentro
+   de la misma tarjeta, con el aire del sistema entre ellas. */
+.plan .lista { margin-bottom: var(--e4); }
+.plan .lista:last-of-type { margin-bottom: var(--e6); }
+/* «Cotización» donde los demás planes traen una cifra: es una palabra, no un
+   importe, y a tamaño de importe se salía de la tarjeta a 360 px. */
+.plan__monto--texto { font-size: var(--t-24); letter-spacing: var(--tr-24); }
+.plan__nota { margin: var(--e3) 0 0; font-size: var(--t-12); letter-spacing: var(--tr-12); color: var(--tinta-5); text-align: center; }
+
+/* ======================================================== 4. LOS ESCENARIOS
+   «Así trabajo hoy» y el plan que le toca. El precio va abajo del todo, para
+   que las seis tarjetas terminen a la misma altura. */
+.escenario { display: flex; flex-direction: column; height: 100%; }
+.escenario h3 { font-size: var(--t-18); letter-spacing: var(--tr-18); margin-bottom: .5rem; }
+.escenario p { font-size: var(--t-15); letter-spacing: var(--tr-15); color: var(--tinta-4); }
+.escenario__plan {
+  display: grid; gap: .1rem; margin-top: auto;
+  padding-top: var(--e4); border-top: 1px solid var(--linea-suave);
+}
+.escenario__plan b { font-size: var(--t-14); letter-spacing: var(--tr-14); color: var(--tinta); }
+.escenario__precio {
+  font-size: var(--t-24); letter-spacing: var(--tr-24); line-height: 1.15;
+  font-weight: var(--peso-fuerte); color: var(--tinta); font-variant-numeric: tabular-nums;
+}
+.escenario__periodo { font-size: var(--t-12); letter-spacing: var(--tr-12); color: var(--tinta-5); }
+
+/* ==================================================== 5. TABLAS DE PRECIOS
+   El precio debajo del nombre de la columna, dentro de la misma celda de
+   cabecera: no es un rótulo más, así que no hereda ni versales ni peso. */
+.tabla__nota {
+  display: block; text-transform: none; font-weight: var(--peso-normal);
+  font-size: var(--t-11); letter-spacing: var(--tr-11); color: var(--tinta-4);
+}
+.tabla thead .tabla__col-nuestra .tabla__nota { color: var(--a2); }
+
+/* Los cortes por materia dentro de la comparativa: mismo rótulo que una
+   cabecera de tabla, un escalón más adentro. */
+.tabla tbody .tabla__grupo th {
+  background: var(--n2); color: var(--tinta-5);
+  font-size: var(--t-11); font-weight: var(--peso-fuerte);
+  letter-spacing: .06em; text-transform: uppercase;
+  padding-top: .5rem; padding-bottom: .5rem;
+}
+
+/* Diez columnas no caben en un teléfono: la columna de «qué necesitas» se
+   queda anclada a la izquierda mientras las demás se recorren. */
+.tabla--planes tbody th[scope="row"] {
+  position: sticky; left: 0; z-index: 1;
+  min-width: 15rem; background: var(--superficie);
+  border-right: 1px solid var(--linea-suave);
+}
+.tabla--planes thead th { vertical-align: top; }
+
+/* El renglón que cuenta la historia de la tabla: relleno tenue, sin raya. */
+.tabla__fila-clave > th, .tabla__fila-clave > td { background: var(--accion-tenue); }
+
+/* ========================================================= 6. EL CONTRASTE
+   Hoy contra con IncSales: dos tarjetas del mismo tamaño, una hundida y otra
+   posada. La diferencia la hacen la lista y el relleno, nunca un borde. */
+.contraste__cab {
+  display: flex; align-items: center; gap: .6rem;
+  padding-bottom: var(--e4); margin-bottom: var(--e5);
+  border-bottom: 1px solid var(--linea-suave);
+}
+.contraste__cab h3 { margin: 0; font-size: var(--t-18); letter-spacing: var(--tr-18); }
+
+/* ====================================================== 7. LA CUENTA DE HOY
+   Ocho renglones para llenar con los recibos en la mano. Cifras tabulares y
+   la misma letra que el resto: la columna de importes se alinea sola. */
+.cuenta { display: grid; margin-top: var(--e5); border-top: 1px solid var(--linea-suave); }
+.cuenta__renglon {
+  display: flex; flex-wrap: wrap; align-items: baseline;
+  justify-content: space-between; gap: var(--e3);
+  padding: .55rem 0; border-bottom: 1px solid var(--linea-suave);
+  font-size: var(--t-14); letter-spacing: var(--tr-14); color: var(--tinta-3);
+}
+.cuenta__renglon b {
+  flex: 0 0 auto; color: var(--tinta-4); font-weight: var(--peso-medio);
+  font-variant-numeric: tabular-nums;
+}
+
+/* El dato citable: una tarjeta plana con la cifra grande y su fuente debajo.
+   Ni comillas decorativas ni barra de color: la cifra se defiende sola. */
+.dato + .dato { margin-top: var(--e4); }
+.dato .cifra__n { font-size: var(--t-30); letter-spacing: var(--tr-30); }
+.dato p { margin: var(--e3) 0 0; font-size: var(--t-14); letter-spacing: var(--tr-14); color: var(--tinta-4); }
+.dato cite { display: block; margin-top: var(--e2); font-style: normal; font-size: var(--t-12); letter-spacing: var(--tr-12); color: var(--tinta-5); }
+
+/* ==================================================== 8. REMATES Y AJUSTES
+   Las únicas medidas que no son de una pieza, sino del ritmo entre ellas. */
+.tras-rejilla { margin-top: var(--e6); }
+.tras-tabla { margin-top: var(--e6); }
+.tras-par { margin-top: var(--e7); }
+.tras-tira { margin-top: var(--e8); }
+.acciones { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: var(--e6); }
+.accion-centro { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; margin-top: var(--e7); }
+.icono-linea { flex: 0 0 auto; }
+
+/* =============================================== 9. CIERRE Y PIE DEL SITIO
+   Las mismas piezas que cierran la portada, para que todas las páginas
+   terminen igual. */
+.cierre__acciones { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; margin-top: var(--e7); }
+.cierre__firma { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--e5); margin-top: var(--e6); font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-noche-2); }
+.cierre__pie { margin-top: var(--e6); color: var(--tinta-noche-2); }
+
+/* Los rótulos del pie son encabezados de verdad (h3), para no saltar de h2 a
+   h5 en la jerarquía. El aspecto es el que sistema.css le da a .pie h5. */
+.pie__titulo {
+  color: var(--tinta-noche); font-size: var(--t-12); font-weight: var(--peso-fuerte);
+  letter-spacing: .07em; text-transform: uppercase; line-height: 1.4; margin-bottom: var(--e4);
+}
+.pie__logo { height: 30px; width: auto; margin-bottom: var(--e4); }
+.pie__contacto { display: grid; gap: .4rem; margin-top: var(--e4); font-size: var(--t-13); letter-spacing: var(--tr-13); }

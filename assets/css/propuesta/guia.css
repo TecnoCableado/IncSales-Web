@@ -1,0 +1,513 @@
+/* ============================================================================
+   PROPUESTA · GUÍA DEL SISTEMA  ·  propuesta/guia.html
+   ----------------------------------------------------------------------------
+   Esta hoja NO define diseño: define el andamio del documento que enseña el
+   diseño. Todo valor de color, radio, sombra, tamaño, tracking y espacio sale
+   de un token de sistema.css. Aquí no nace ni un hexadecimal, ni una sombra,
+   ni un radio nuevo.
+
+   ÚNICA EXCEPCIÓN, deliberada y acotada: el bloque 9 («muestras de lo que NO
+   se hace») escribe cuatro declaraciones que rompen el sistema a propósito,
+   porque la sección de reglas tiene que poder DIBUJAR el error, no solo
+   describirlo. Están todas bajo el prefijo .mal-, todas comentadas, y ninguna
+   toca una pieza real. Los dos errores que no se pueden dibujar sin inventar
+   un valor —la sombra dura y el color puesto a mano— no se dibujan: aparecen
+   solo como código.
+   ========================================================================== */
+
+/* ============================================================ 1. MASTHEAD */
+.doc-cabeza {
+  padding-block: clamp(2.5rem, 5vw, 4rem) var(--e8);
+  border-bottom: 1px solid var(--linea-suave);
+  background: var(--superficie);
+}
+.doc-cabeza h1 {
+  font-size: var(--t-48);
+  letter-spacing: var(--tr-48);
+  line-height: 1.04;
+  margin-bottom: var(--e4);
+}
+.doc-cabeza .entradilla { margin-bottom: 0; }
+
+.doc-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+  gap: var(--e5) var(--e6);
+  margin: var(--e8) 0 0;
+  padding-top: var(--e5);
+  border-top: 1px solid var(--linea-suave);
+}
+.doc-meta > div { display: grid; gap: .25rem; align-content: start; }
+.doc-meta dt {
+  font-size: var(--t-11);
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--tinta-5);
+  font-weight: var(--peso-fuerte);
+}
+.doc-meta dd {
+  margin: 0;
+  font-size: var(--t-14);
+  letter-spacing: var(--tr-14);
+  color: var(--tinta-2);
+}
+
+/* ====================================================== 2. DOS COLUMNAS */
+.doc {
+  display: grid;
+  grid-template-columns: 13.5rem minmax(0, 1fr);
+  gap: var(--e9);
+  align-items: start;
+  padding-block: var(--e8) var(--e12);
+}
+@media (max-width: 1060px) {
+  .doc { grid-template-columns: minmax(0, 1fr); gap: var(--e7); }
+}
+
+/* Índice pegajoso: en un documento de consulta, saber dónde estás es función. */
+.indice { position: sticky; top: calc(var(--barra) + var(--e5)); }
+@media (max-width: 1060px) {
+  .indice {
+    position: static;
+    border: 1px solid var(--linea);
+    border-radius: var(--r-md);
+    padding: var(--e4);
+    background: var(--superficie);
+  }
+}
+.indice h2 {
+  font-size: var(--t-11);
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--tinta-5);
+  font-weight: var(--peso-fuerte);
+  margin-bottom: var(--e3);
+}
+.indice ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 1px; }
+.indice li { margin: 0; }
+.indice a {
+  display: grid;
+  grid-template-columns: 1.15rem minmax(0, 1fr);
+  gap: .5rem;
+  padding: .3rem .45rem;
+  border-radius: var(--r-sm);
+  font-size: var(--t-13);
+  letter-spacing: var(--tr-13);
+  color: var(--tinta-4);
+  transition: background-color var(--rapido) var(--curva), color var(--rapido) var(--curva);
+}
+.indice a:hover { background: var(--n2); color: var(--tinta); text-decoration: none; }
+.indice a > span:first-child { color: var(--tinta-5); font-variant-numeric: tabular-nums; }
+.indice a:hover > span:first-child { color: var(--accion-honda); }
+.indice__pie {
+  margin-top: var(--e5);
+  padding-top: var(--e4);
+  border-top: 1px solid var(--linea-suave);
+  font-size: var(--t-12);
+  letter-spacing: var(--tr-12);
+  color: var(--tinta-4);
+  display: grid;
+  gap: .35rem;
+}
+
+/* ========================================================== 3. SECCIONES */
+.sec {
+  padding-block: var(--e9);
+  border-top: 1px solid var(--linea-suave);
+  scroll-margin-top: calc(var(--barra) + var(--e5));
+}
+.sec:first-of-type { border-top: 0; padding-top: 0; }
+.sec__eti { display: flex; align-items: center; gap: .65rem; margin-bottom: var(--e3); }
+.sec__eti::after { content: ""; flex: 1 1 auto; height: 1px; background: var(--linea-suave); }
+.sec__n {
+  font-family: var(--fuente-mono);
+  font-size: var(--t-12);
+  letter-spacing: 0;
+  font-weight: var(--peso-medio);
+  color: var(--accion-honda);
+  background: var(--accion-tenue);
+  border-radius: var(--r-xs);
+  padding: .1rem .38rem;
+}
+.sec > h2 { font-size: var(--t-30); letter-spacing: var(--tr-30); line-height: 1.16; margin-bottom: var(--e3); }
+.sec__intro { font-size: var(--t-16); letter-spacing: var(--tr-16); color: var(--tinta-4); max-width: var(--ancho-texto); }
+.sec:target .sec__n { background: var(--accion-tenue2); }
+
+.sub { margin-top: var(--e8); }
+.sub__cab {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--e4);
+  flex-wrap: wrap;
+  margin-bottom: var(--e4);
+  padding-bottom: .45rem;
+  border-bottom: 1px solid var(--linea-suave);
+}
+.sub__cab h3 { font-size: var(--t-16); letter-spacing: var(--tr-16); font-weight: var(--peso-fuerte); margin: 0; }
+.sub__cab h4 { font-size: var(--t-15); letter-spacing: var(--tr-15); font-weight: var(--peso-fuerte); margin: 0; }
+
+/* La clase, siempre al lado de la pieza. Un catálogo sin nombres no sirve. */
+.clase {
+  font-family: var(--fuente-codigo);
+  font-size: var(--t-12);
+  letter-spacing: 0;
+  color: var(--tinta-4);
+  background: var(--n2);
+  border: 1px solid var(--linea-suave);
+  border-radius: var(--r-xs);
+  padding: .05rem .35rem;
+  white-space: nowrap;
+}
+
+/* ============================================================ 4. MUESTRAS */
+.muestra {
+  border: 1px solid var(--linea);
+  border-radius: var(--r-md);
+  background: var(--superficie);
+  padding: var(--e5);
+}
+.muestra--hundida { background: var(--n2); }
+.muestra--tinta { background: var(--noche); border-color: var(--noche); }
+.muestra--suelta { padding: var(--e6); }
+.muestra + .muestra { margin-top: var(--e4); }
+.muestra__nota {
+  margin-top: var(--e4);
+  padding-top: var(--e3);
+  border-top: 1px solid var(--linea-suave);
+  font-size: var(--t-12);
+  letter-spacing: var(--tr-12);
+  color: var(--tinta-4);
+}
+.muestra--tinta .muestra__nota { border-top-color: var(--linea-noche); color: var(--tinta-noche-2); }
+
+.piezas { display: flex; flex-wrap: wrap; gap: var(--e5) var(--e6); align-items: flex-start; }
+.piezas--juntas { gap: var(--e4); align-items: center; }
+.pieza { display: grid; gap: .5rem; justify-items: start; }
+.pieza > code,
+.pieza figcaption {
+  font-family: var(--fuente-mono);
+  font-size: var(--t-11);
+  color: var(--tinta-4);
+  letter-spacing: 0;
+}
+.muestra--tinta .pieza > code { color: var(--tinta-noche-2); }
+
+/* ============================================================== 5. COLOR */
+.rampa {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(4.25rem, 1fr));
+  gap: var(--e4) .4rem;
+}
+@media (min-width: 1180px) { .rampa { grid-template-columns: repeat(12, minmax(0, 1fr)); } }
+.rampa + .rampa { margin-top: var(--e6); }
+.rampa__t {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--e4);
+  font-size: var(--t-12);
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  font-weight: var(--peso-fuerte);
+  color: var(--tinta-4);
+}
+.rampa__t span { text-transform: none; letter-spacing: var(--tr-12); font-weight: var(--peso-normal); color: var(--tinta-4); }
+.paso { display: grid; gap: .3rem; align-content: start; }
+.paso i {
+  display: block;
+  height: 2.75rem;
+  border-radius: var(--r-xs);
+  border: 1px solid var(--linea-suave);
+}
+.paso__id { display: flex; align-items: baseline; justify-content: space-between; gap: .3rem; }
+.paso__id b { font-size: var(--t-11); letter-spacing: var(--tr-11); font-weight: var(--peso-fuerte); color: var(--tinta-2); font-variant-numeric: tabular-nums; }
+.paso code,
+.paso__id code { font-family: var(--fuente-mono); font-size: var(--t-11); color: var(--tinta-4); letter-spacing: 0; }
+.paso > code { display: block; }
+
+/* Las rampas semánticas solo existen en los pasos que el sistema usa: los
+   huecos se ven porque son verdad, no porque falte trabajo. */
+@media (min-width: 1180px) { .rampa--huecos .paso:nth-child(4) { grid-column: 6; } }
+
+.punto {
+  width: .85rem;
+  height: .85rem;
+  border-radius: var(--r-xs);
+  border: 1px solid var(--linea-suave);
+  display: inline-block;
+  vertical-align: -.12rem;
+  flex: 0 0 auto;
+}
+.tabla td .punto { margin-right: .45rem; }
+
+/* Muestras de color: el fondo lo pone el token, nunca un valor a mano. */
+.t--a1{background:var(--a1)} .t--a2{background:var(--a2)} .t--a3{background:var(--a3)} .t--a4{background:var(--a4)}
+.t--a5{background:var(--a5)} .t--a6{background:var(--a6)} .t--a7{background:var(--a7)} .t--a8{background:var(--a8)}
+.t--a9{background:var(--a9)} .t--a10{background:var(--a10)} .t--a11{background:var(--a11)} .t--a12{background:var(--a12)}
+.t--n1{background:var(--n1)} .t--n2{background:var(--n2)} .t--n3{background:var(--n3)} .t--n4{background:var(--n4)}
+.t--n5{background:var(--n5)} .t--n6{background:var(--n6)} .t--n7{background:var(--n7)} .t--n8{background:var(--n8)}
+.t--n9{background:var(--n9)} .t--n10{background:var(--n10)} .t--n11{background:var(--n11)} .t--n12{background:var(--n12)}
+.t--v1{background:var(--v1)} .t--v2{background:var(--v2)} .t--v6{background:var(--v6)} .t--v7{background:var(--v7)}
+.t--v8{background:var(--v8)} .t--v9{background:var(--v9)}
+.t--m1{background:var(--m1)} .t--m2{background:var(--m2)} .t--m6{background:var(--m6)} .t--m7{background:var(--m7)}
+.t--m8{background:var(--m8)} .t--m9{background:var(--m9)}
+.t--r1{background:var(--r1)} .t--r2{background:var(--r2)} .t--r6{background:var(--r6)} .t--r7{background:var(--r7)}
+.t--r8{background:var(--r8)} .t--r9{background:var(--r9)}
+.t--p1{background:var(--p1)} .t--p2{background:var(--p2)} .t--p6{background:var(--p6)} .t--p7{background:var(--p7)}
+.t--p8{background:var(--p8)} .t--p9{background:var(--p9)}
+.t--lienzo{background:var(--lienzo)} .t--superficie-2{background:var(--superficie-2)} .t--superficie-3{background:var(--superficie-3)}
+.t--linea{background:var(--linea)} .t--linea-suave{background:var(--linea-suave)} .t--linea-fuerte{background:var(--linea-fuerte)}
+.t--tinta{background:var(--tinta)} .t--tinta-2{background:var(--tinta-2)} .t--tinta-3{background:var(--tinta-3)}
+.t--tinta-4{background:var(--tinta-4)} .t--tinta-5{background:var(--tinta-5)}
+.t--accion{background:var(--accion)} .t--accion-viva{background:var(--accion-viva)} .t--accion-honda{background:var(--accion-honda)}
+.t--accion-tenue{background:var(--accion-tenue)} .t--exito{background:var(--exito)} .t--aviso{background:var(--aviso)}
+.t--error{background:var(--error)} .t--info{background:var(--info)} .t--noche{background:var(--noche)} .t--noche-2{background:var(--noche-2)}
+
+/* ========================================================= 6. TIPOGRAFÍA */
+/* Cada tamaño con SU tracking. No existe una clase que traiga uno sin el otro. */
+.ts-11{font-size:var(--t-11);letter-spacing:var(--tr-11)}
+.ts-12{font-size:var(--t-12);letter-spacing:var(--tr-12)}
+.ts-13{font-size:var(--t-13);letter-spacing:var(--tr-13)}
+.ts-14{font-size:var(--t-14);letter-spacing:var(--tr-14)}
+.ts-15{font-size:var(--t-15);letter-spacing:var(--tr-15)}
+.ts-16{font-size:var(--t-16);letter-spacing:var(--tr-16)}
+.ts-18{font-size:var(--t-18);letter-spacing:var(--tr-18);line-height:1.32}
+.ts-20{font-size:var(--t-20);letter-spacing:var(--tr-20);line-height:1.28}
+.ts-24{font-size:var(--t-24);letter-spacing:var(--tr-24);line-height:1.22}
+.ts-30{font-size:var(--t-30);letter-spacing:var(--tr-30);line-height:1.16}
+.ts-38{font-size:var(--t-38);letter-spacing:var(--tr-38);line-height:1.12}
+.ts-48{font-size:var(--t-48);letter-spacing:var(--tr-48);line-height:1.06}
+.ts-60{font-size:var(--t-60);letter-spacing:var(--tr-60);line-height:1.04}
+.tabla .muestra-tipo { color: var(--tinta); font-weight: var(--peso-fuerte); padding-block: .55rem; }
+/* Un token partido en dos renglones dentro de una tabla de referencia no se
+   puede copiar de un vistazo. La caja ya tiene su propio desplazamiento. */
+.tabla td code, .tabla th code, .datos td code { white-space: nowrap; }
+
+.pw-400{font-weight:var(--peso-normal)} .pw-480{font-weight:var(--peso-medio)}
+.pw-540{font-weight:var(--peso-fuerte)} .pw-600{font-weight:var(--peso-titulo)}
+
+/* ==================================================== 7. ESPACIO Y FORMA */
+.espacios { display: grid; gap: .3rem; }
+.espacio {
+  display: grid;
+  grid-template-columns: 4.25rem minmax(0, 1fr) 3.25rem;
+  align-items: center;
+  gap: var(--e4);
+  font-size: var(--t-12);
+  letter-spacing: 0;
+  font-family: var(--fuente-mono);
+  color: var(--tinta-4);
+}
+.espacio b { color: var(--tinta-2); font-weight: var(--peso-medio); }
+.espacio__pista { background: var(--n2); height: .625rem; border-radius: var(--r-xs); overflow: hidden; }
+.espacio__pista i { display: block; height: 100%; background: var(--a4); }
+.espacio__px { text-align: right; font-variant-numeric: tabular-nums; }
+.w-e1{width:var(--e1)} .w-e2{width:var(--e2)} .w-e3{width:var(--e3)} .w-e4{width:var(--e4)}
+.w-e5{width:var(--e5)} .w-e6{width:var(--e6)} .w-e7{width:var(--e7)} .w-e8{width:var(--e8)}
+.w-e9{width:var(--e9)} .w-e10{width:var(--e10)} .w-e11{width:var(--e11)} .w-e12{width:var(--e12)} .w-e13{width:var(--e13)}
+
+.radios { display: flex; flex-wrap: wrap; gap: var(--e6); }
+.radio-m { display: grid; gap: .5rem; width: 5.5rem; }
+.radio-m i { display: block; height: 3.75rem; background: var(--n3); border: 1px solid var(--linea); }
+.radio-m b { font-size: var(--t-12); color: var(--tinta-2); font-family: var(--fuente-mono); font-weight: var(--peso-medio); letter-spacing: 0; }
+.radio-m span { font-size: var(--t-11); letter-spacing: var(--tr-11); color: var(--tinta-4); display: block; line-height: 1.4; }
+.rr--xs{border-radius:var(--r-xs)} .rr--sm{border-radius:var(--r-sm)} .rr--md{border-radius:var(--r-md)}
+.rr--lg{border-radius:var(--r-lg)} .rr--xl{border-radius:var(--r-xl)} .rr--full{border-radius:var(--r-full)}
+
+/* ========================================================= 8. ELEVACIÓN */
+.elevaciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 10.5rem), 1fr));
+  gap: var(--e6);
+}
+.elev { background: var(--superficie); border-radius: var(--r-md); padding: var(--e5); display: grid; gap: .3rem; }
+.elev b { font-family: var(--fuente-mono); font-size: var(--t-12); font-weight: var(--peso-medio); color: var(--tinta-2); letter-spacing: 0; }
+.elev span { font-size: var(--t-12); letter-spacing: var(--tr-12); color: var(--tinta-4); }
+.el-1{box-shadow:var(--sombra-1)} .el-2{box-shadow:var(--sombra-2)}
+.el-3{box-shadow:var(--sombra-3)} .el-4{box-shadow:var(--sombra-4)}
+.el-anillo{box-shadow:var(--anillo)} .el-anillo-error{box-shadow:var(--anillo-error)}
+
+/* ============================================================== 9. CÓDIGO */
+.codigo {
+  margin: 0;
+  background: var(--n1);
+  border: 1px solid var(--linea-suave);
+  border-radius: var(--r-sm);
+  padding: var(--e4) var(--e5);
+  overflow-x: auto;
+  font-family: var(--fuente-codigo);
+  font-size: var(--t-12);
+  line-height: 1.75;
+  letter-spacing: 0;
+  color: var(--tinta-2);
+  font-variant-numeric: tabular-nums;
+}
+.codigo .c { color: var(--tinta-4); }   /* comentario */
+.codigo .k { color: var(--p8); }        /* palabra clave */
+.codigo .v { color: var(--accion-honda); } /* token o valor */
+.codigo .s { color: var(--v8); }        /* cadena */
+.codigo .x { color: var(--r8); }        /* lo que no se hace */
+.codigo + .codigo { margin-top: var(--e3); }
+
+/* ========================================================== 10. ASÍ SÍ / NO */
+.compara { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--e5); }
+@media (max-width: 800px) { .compara { grid-template-columns: minmax(0, 1fr); } }
+.caso {
+  border: 1px solid var(--linea);
+  border-radius: var(--r-md);
+  background: var(--superficie);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.caso__cab {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .45rem .8rem;
+  font-size: var(--t-12);
+  letter-spacing: var(--tr-12);
+  font-weight: var(--peso-fuerte);
+  border-bottom: 1px solid var(--linea-suave);
+}
+.caso__cab svg { width: .85rem; height: .85rem; flex: 0 0 auto; }
+.caso--no .caso__cab { background: var(--r1); color: var(--r8); }
+.caso--si .caso__cab { background: var(--v1); color: var(--v8); }
+.caso__cuerpo { padding: var(--e5); display: grid; gap: var(--e4); align-content: start; flex: 1 1 auto; }
+.caso__pie {
+  padding: .55rem .8rem;
+  border-top: 1px solid var(--linea-suave);
+  background: var(--n1);
+  font-size: var(--t-12);
+  letter-spacing: var(--tr-12);
+  color: var(--tinta-4);
+}
+.regla { margin-top: var(--e6); }
+.regla > h3 { font-size: var(--t-16); letter-spacing: var(--tr-16); margin-bottom: .25rem; }
+.regla > p { font-size: var(--t-14); letter-spacing: var(--tr-14); color: var(--tinta-4); margin-bottom: var(--e4); max-width: var(--ancho-texto); }
+
+/* Caja neutra donde viven las muestras de las reglas, para que el error se
+   compare contra el acierto sobre exactamente el mismo fondo. */
+.probeta { display: grid; gap: .35rem; }
+.probeta b { font-size: var(--t-14); letter-spacing: var(--tr-14); color: var(--tinta); font-weight: var(--peso-fuerte); }
+.probeta span { font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-4); }
+
+/* --------------------------------------------------------------------------
+   LAS CUATRO DECLARACIONES QUE ROMPEN EL SISTEMA A PROPÓSITO.
+   Existen para que la sección de reglas pueda DIBUJAR el error. No las copies
+   a ninguna pantalla: son el ejemplo de lo que no se hace.
+   -------------------------------------------------------------------------- */
+.mal-borde { border: 1px solid var(--a7); border-radius: var(--r-md); background: var(--superficie); padding: var(--e4); }
+.bien-borde { border: 1px solid var(--linea); border-radius: var(--r-md); background: var(--accion-tenue); padding: var(--e4); }
+.mal-peso { font-weight: 700; }                       /* el sistema se detiene en 600 */
+.mal-tracking { letter-spacing: normal; }             /* tamaño grande sin su tracking */
+.mal-radio { border-radius: var(--r-full); }          /* radio real, pieza equivocada */
+
+/* ====================================================== 11. ENTREGA A NEXT */
+.mapa-archivos {
+  display: grid;
+  gap: 0;
+  border: 1px solid var(--linea);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  background: var(--superficie);
+}
+.mapa-archivos div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: .15rem;
+  padding: .6rem .85rem;
+  border-bottom: 1px solid var(--linea-suave);
+}
+.mapa-archivos div:last-child { border-bottom: 0; }
+.mapa-archivos b { font-family: var(--fuente-mono); font-size: var(--t-12); font-weight: var(--peso-medio); color: var(--tinta); letter-spacing: 0; }
+.mapa-archivos span { font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-4); }
+
+/* El cascarón de producto dentro de un documento no puede medir una pantalla. */
+.demo-app .app { min-height: 0; }
+.demo-app .pagina { gap: var(--e4); }
+/* Los cuatro indicadores van en un renglón: dentro de la columna del documento,
+   el auto-fit dejaba el cuarto solo en un segundo renglón y la maqueta perdía
+   justo lo que tiene que demostrar. */
+.demo-app .kpis { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 760px) { .demo-app .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* La ficha de la cuenta hereda el color de la lateral: sobre --noche, --tinta-5
+   se apaga demasiado (5.51:1 contra los 7.63:1 del resto de la barra). */
+.demo-app .lateral .apunte { color: inherit; }
+/* El buscador del producto reserva 220 px y la cabecera no envuelve: dentro de
+   la columna del documento eso recorta el botón contra el borde del marco entre
+   1060 y 1100 px. Aquí se deja encoger; en el producto real conserva su medida. */
+.demo-app .buscador { min-width: 0; white-space: nowrap; overflow: hidden; }
+@media (max-width: 720px) {
+  .demo-app .cabecera-app { padding-inline: var(--e4); gap: var(--e3); }
+  .demo-app .buscador kbd { display: none; }
+  .demo-app .marco__url { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+}
+/* Por debajo de 520 px ya no queda sitio para los dos: manda la acción. */
+@media (max-width: 520px) {
+  .demo-app .buscador { display: none; }
+}
+
+/* La barra lateral se esconde por debajo de 900 px con la regla de sistema.css
+   (el @media va después del bloque `.lateral`, que es lo que hace que gane).
+   Esta página no la duplica: si alguna vez deja de esconderse, el problema está
+   en el orden de esas dos reglas, no aquí.
+   Pendiente del producto, no de este documento: por debajo de 900 px no hay
+   todavía un disparador que devuelva esa navegación. */
+
+/* ============================================================= 12. ICONOS */
+.sprite { display: none; }
+.ico { width: 1em; height: 1em; flex: 0 0 auto; }
+.ico--g { width: 1.15rem; height: 1.15rem; }
+.vacio__icono svg { width: 1.35rem; height: 1.35rem; }
+.kpi__d svg { width: .7rem; height: .7rem; }
+.btn .ico { width: 1.05em; height: 1.05em; }
+
+/* Foco simulado: un documento impreso no puede enfocar un campo, pero tiene
+   que poder enseñar cómo se ve. Mismos tokens que :focus de sistema.css. */
+.campo--foco input { border-color: var(--accion); box-shadow: var(--anillo); }
+
+/* ============================================================= 13. VARIOS */
+.nav__doc {
+  font-size: var(--t-12);
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  font-weight: var(--peso-fuerte);
+  color: var(--tinta-5);
+  padding-left: var(--e4);
+  margin-left: var(--e2);
+  border-left: 1px solid var(--linea);
+  align-self: center;
+}
+@media (max-width: 760px) { .nav__doc { display: none; } }
+/* El pie de esta guía cuelga de un h3, así que sus títulos de columna son h4
+   y no h5: la jerarquía no salta un nivel solo para heredar un estilo.
+   Mismos valores que .pie h5 en sistema.css, con los mismos tokens. */
+/* Sobre --noche, .apunte llegaría con --tinta-5 (5.51:1). En el pie se lee con
+   la tinta clara del propio bloque oscuro, como el resto de la columna. */
+.pie .apunte { color: var(--tinta-noche-2); }
+/* sistema.css no le pone medida al logotipo del pie: sin esto sale a 327 px de
+   ancho y se come la columna. Misma altura que en la portada de la propuesta. */
+.pie__logo { height: 30px; width: auto; margin-bottom: var(--e4); }
+.pie h4 {
+  color: var(--tinta-noche);
+  font-size: var(--t-12);
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  margin-bottom: var(--e4);
+  font-weight: var(--peso-fuerte);
+}
+
+.dos-col { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--e6); align-items: start; }
+@media (max-width: 800px) { .dos-col { grid-template-columns: minmax(0, 1fr); } }
+.apilado { display: grid; gap: var(--e4); }
+.pie__grid .indice-pie { display: grid; gap: .5rem; }
+
+@media print {
+  .indice, .doc-cabeza .doc-meta { display: none !important; }
+  .doc { grid-template-columns: 1fr; }
+  .sec { break-inside: auto; page-break-inside: auto; }
+  .muestra, .caso, .elev { break-inside: avoid; }
+}

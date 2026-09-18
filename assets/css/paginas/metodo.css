@@ -1,0 +1,315 @@
+/* ============================================================================
+   INCSALES · EL MÉTODO (metodo.html)
+   ----------------------------------------------------------------------------
+   Solo las piezas que NO existen en sistema.css. Cero colores sueltos, cero
+   radios nuevos, cero sombras nuevas, una sola tipografía: todo sale de los
+   tokens. Cada font-size viaja con su letter-spacing, como manda el sistema.
+   Ningún borde de color: las divisiones son de 1 px y grises, y lo que se
+   quiere destacar se distingue por relleno o por elevación, nunca por una raya
+   de color al costado. Si algo de aquí se repite en otra página, se sube al
+   sistema; mientras tanto vive aquí y no toca a nadie más.
+   ========================================================================== */
+
+/* ================================================== 1. RETÍCULA DE PORTADA
+   El titular a la izquierda y las acciones con la firma a la derecha: la misma
+   repartición que la portada del sitio, para que las dos se sientan la misma
+   casa aunque esta no lleve maqueta arriba. */
+.portada__reja { display: grid; gap: clamp(2.5rem, 5vw, var(--e10)); }
+.portada__cabeza { display: grid; gap: var(--e6) var(--e9); align-items: end; }
+@media (min-width: 900px) {
+  .portada__cabeza { grid-template-columns: minmax(0, 1.3fr) minmax(0, .85fr); }
+  .portada__lado .portada__firma { flex-direction: column; gap: .55rem; }
+}
+.portada__lado .portada__acciones { margin-top: 0; }
+.portada__firma { padding-top: var(--e5); border-top: 1px solid var(--linea-noche); }
+.portada__firma svg { width: 14px; height: 14px; flex: 0 0 auto; color: var(--a4); }
+
+/* Las migas heredan grises de página clara (3.4:1 y 4.6:1 sobre el fondo de
+   noche). Sobre tinta toman el gris azulado de la propia superficie oscura. */
+.portada--tinta .migas { color: var(--tinta-noche-2); }
+.portada--tinta .migas a { color: var(--a4); }
+.portada--tinta .migas li:not(:last-child)::after { color: var(--tinta-noche-2); }
+
+/* Lo mismo con los tres rótulos menores dentro de un bloque de tinta: sin
+   esto, un .apunte se queda en gris de página clara sobre el fondo oscuro. */
+.bloque--tinta .apunte,
+.bloque--tinta .tenue,
+.bloque--tinta .suave { color: var(--tinta-noche-2); }
+
+/* ====================================================== 2. MAQUETAS REALES
+   Son el sistema de verdad, montado con las clases de producto dentro de un
+   .marco. Lo único que cambia es la densidad y que nada de adentro recibe
+   foco: la maqueta es una imagen, no una interfaz a medias. */
+.maqueta {
+  position: relative;
+  container-type: inline-size;
+  font-size: var(--t-13);
+  letter-spacing: var(--tr-13);
+  line-height: 1.5;
+  --e-caja: var(--e3);
+}
+/* Sin barra lateral, la maqueta enseña el lienzo del sistema, que es gris y no
+   blanco: sin esto se confunde con el papel de la página. */
+.maqueta .pagina { background: var(--lienzo-hundido); gap: var(--e4); }
+/* Dentro de la maqueta no hay prosa: cada párrafo es una etiqueta de interfaz
+   y no arrastra el margen inferior del cuerpo de texto. */
+.maqueta p { margin: 0; }
+.maqueta .pagina__sub { margin-top: .1rem; }
+/* Un folio nunca se parte en dos renglones: es una sola unidad de lectura. */
+.maqueta .datos .clave { white-space: nowrap; }
+/* Una dirección larga en una maqueta angosta se recorta con puntos
+   suspensivos: nunca empuja la barra del marco ni se parte a la mitad. */
+.maqueta .marco__url { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.maqueta .pagina__acciones { flex-wrap: wrap; }
+/* Los indicadores no se reparten solos: una cifra en pesos necesita su ancho.
+   Tres en fila cuando caben con holgura, apilados cuando no. */
+@container (max-width: 459px) { .maqueta .kpis { grid-template-columns: 1fr; } }
+@container (min-width: 460px) { .maqueta .kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@container (max-width: 520px) { .maqueta .pagina { padding: var(--e4); } }
+
+/* La charla de WhatsApp: mismo lenguaje que la bandeja del sistema. El verde
+   identifica el mensaje propio; el borde se queda gris, como todos. */
+.charla {
+  display: flex; flex-direction: column; gap: .45rem;
+  padding: var(--e4); background: var(--superficie);
+  border: 1px solid var(--linea); border-radius: var(--r-md);
+}
+.burbuja {
+  max-width: 82%; background: var(--superficie-2); border: 1px solid var(--linea-suave);
+  border-radius: var(--r-md); padding: .45rem .65rem;
+  font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-2);
+}
+.burbuja b { display: block; color: var(--tinta); font-weight: var(--peso-fuerte); }
+.burbuja--mia { margin-left: auto; background: var(--v1); border-color: var(--linea-suave); }
+
+/* Una casilla de formulario dentro de una maqueta: el cuadro y su texto en la
+   misma línea de base, sin el margen de párrafo del cuerpo. */
+.casilla { display: flex; align-items: flex-start; gap: .5rem; margin: 0; }
+.casilla input { margin: .2rem 0 0; flex: 0 0 auto; accent-color: var(--accion); }
+.casilla label { font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-3); }
+
+/* ============================================================= 3. LA HOJA
+   Un documento del sistema, tal como se imprime: cabecera, renglones y total.
+   Las cifras van a la derecha y tabulares, que es como se revisa una hoja. */
+.hoja {
+  background: var(--superficie); border: 1px solid var(--linea);
+  border-radius: var(--r-md); padding: var(--e6); box-shadow: var(--sombra-2);
+}
+.hoja__cab {
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--e4);
+  padding-bottom: var(--e4); margin-bottom: var(--e2); border-bottom: 1px solid var(--linea);
+}
+.hoja__cab b { display: block; font-size: var(--t-15); letter-spacing: var(--tr-15); color: var(--tinta); font-weight: var(--peso-fuerte); }
+.hoja__cab span { display: block; font-size: var(--t-12); letter-spacing: var(--tr-12); color: var(--tinta-5); }
+.hoja__quien { text-align: right; }
+.hoja__renglon {
+  display: grid; grid-template-columns: minmax(0, 1fr) 3.2rem 6.2rem; gap: var(--e3);
+  padding: .55rem 0; border-bottom: 1px solid var(--linea-suave);
+  font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-3);
+}
+.hoja__renglon span + span { text-align: right; color: var(--tinta-2); font-variant-numeric: tabular-nums; }
+.hoja__total {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--e3);
+  padding-top: var(--e4);
+  font-size: var(--t-16); letter-spacing: var(--tr-16); color: var(--tinta); font-weight: var(--peso-fuerte);
+}
+.hoja__total span:last-child { font-variant-numeric: tabular-nums; }
+.hoja__nota { margin: var(--e4) 0 0; }
+
+/* =========================================================== 4. LAS FUGAS
+   Seis tarjetas iguales. La fuente de cada dato no es letra chica escondida:
+   va abajo, separada por una línea de 1 px, porque es la mitad del argumento. */
+.fuga { display: flex; flex-direction: column; gap: var(--e3); }
+/* Con el elemento delante, igual que la fuente de abajo: la regla .fuga p le
+   ganaría por especificidad y el rótulo saldría del tamaño del cuerpo. */
+.fuga p.fuga__n {
+  margin: 0; font-size: var(--t-11); letter-spacing: .09em; text-transform: uppercase;
+  color: var(--tinta-5); font-weight: var(--peso-fuerte);
+}
+.fuga .icono-caja { margin-bottom: .1rem; }
+.fuga h3 { margin: 0; font-size: var(--t-18); letter-spacing: var(--tr-18); }
+.fuga p { margin: 0; font-size: var(--t-15); letter-spacing: var(--tr-15); color: var(--tinta-4); }
+/* Escrita con el elemento delante a propósito: si va suelta, la regla de
+   arriba le gana por especificidad y la fuente se lee del tamaño del cuerpo. */
+.fuga p.fuga__fuente {
+  margin-top: auto; padding-top: var(--e4); border-top: 1px solid var(--linea-suave);
+  font-size: var(--t-12); letter-spacing: var(--tr-12); color: var(--tinta-5); line-height: 1.5;
+}
+.fuga__fuente b { color: var(--tinta-2); font-weight: var(--peso-fuerte); }
+
+/* ======================================== 5. ÍNDICE PEGAJOSO Y LOS PASOS
+   La columna de la izquierda se queda a la vista mientras se leen los seis
+   pasos. Debajo de 1000 px deja de pegarse y se lee como lo que es: un índice. */
+.metodo-cuerpo { display: grid; gap: clamp(2rem, 4vw, var(--e9)); align-items: start; }
+@media (min-width: 1000px) {
+  .metodo-cuerpo { grid-template-columns: 13.5rem minmax(0, 1fr); }
+  .indice { position: sticky; top: calc(var(--barra) + var(--e5)); }
+}
+.indice__titulo {
+  margin: 0 0 var(--e3); font-size: var(--t-11); letter-spacing: .09em;
+  text-transform: uppercase; color: var(--tinta-5); font-weight: var(--peso-fuerte);
+}
+.indice ul {
+  list-style: none; margin: 0; padding: 0; display: grid; gap: .1rem;
+  border-left: 1px solid var(--linea-suave);
+}
+.indice li { margin: 0; }
+.indice a {
+  display: block; padding: .3rem .65rem;
+  font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-4);
+  font-variant-numeric: tabular-nums;
+}
+.indice a:hover { color: var(--tinta); background: var(--n2); text-decoration: none; }
+.indice__pie {
+  margin: var(--e4) 0 0; font-size: var(--t-12); letter-spacing: var(--tr-12);
+  color: var(--tinta-5); line-height: 1.55;
+}
+
+/* Cada paso es un tramo de lectura, separado del anterior por una línea, no
+   por una caja: seis cajas seguidas se leen como seis interrupciones. */
+.paso-bloque { padding-top: clamp(2.5rem, 5vw, var(--e10)); border-top: 1px solid var(--linea-suave); margin-top: clamp(2.5rem, 5vw, var(--e10)); }
+.paso-bloque:first-child { padding-top: 0; border-top: 0; margin-top: 0; }
+.paso-bloque__cabeza { display: flex; align-items: flex-start; gap: var(--e4); margin-bottom: var(--e6); }
+.paso-bloque__n {
+  width: 40px; height: 40px; flex: 0 0 auto; border-radius: var(--r-sm);
+  display: grid; place-items: center; background: var(--accion-tenue); color: var(--accion-honda);
+  font-size: var(--t-16); letter-spacing: var(--tr-16); font-weight: var(--peso-fuerte);
+  font-variant-numeric: tabular-nums;
+}
+.paso-bloque__cabeza h3 { margin: 0; font-size: var(--t-24); letter-spacing: var(--tr-24); }
+.paso-bloque__cabeza .sobre-titulo { margin-bottom: .2rem; }
+.paso-bloque h4 { margin: 0 0 var(--e3); font-size: var(--t-16); letter-spacing: var(--tr-16); }
+/* El texto primero y la prueba debajo, a lo ancho de la columna: una maqueta
+   del sistema partida en media columna no se lee, y aquí la maqueta ES el
+   argumento. */
+.paso-bloque__reja { display: grid; gap: clamp(1.75rem, 3vw, var(--e8)); }
+/* La columna de apoyo: maqueta, dato citable y avisos, uno debajo de otro. */
+.apoyo { display: grid; gap: var(--e5); align-content: start; }
+
+/* «Qué pasa» es el hoy: relleno tenue y sin contorno, para que se lea como el
+   antes de la película y no como una advertencia de color. */
+.paso-hoy { margin-bottom: var(--e6); }
+.paso-hoy p { margin: 0; font-size: var(--t-15); letter-spacing: var(--tr-15); color: var(--tinta-4); }
+.paso-bloque__hace p { font-size: var(--t-15); letter-spacing: var(--tr-15); color: var(--tinta-4); }
+.paso-bloque .lista li { font-size: var(--t-15); letter-spacing: var(--tr-15); }
+
+/* ===================================================== 6. EL DATO CITABLE
+   Una cifra grande con su explicación y su fuente. Es una tarjeta plana: el
+   dato ya pesa lo suficiente sin que la caja grite. */
+.cifra--media .cifra__n { font-size: var(--t-30); letter-spacing: var(--tr-30); }
+.cifra--chica .cifra__n { font-size: var(--t-24); letter-spacing: var(--tr-24); }
+.cifra__q strong { color: var(--tinta-2); }
+.bloque--tinta .cifra__q strong { color: var(--tinta-noche); }
+.fuente {
+  display: block; margin: var(--e3) 0 0;
+  font-size: var(--t-12); letter-spacing: var(--tr-12); color: var(--tinta-5); line-height: 1.5;
+}
+
+/* ====================================================== 7. EL CIRCUITO
+   No es un dibujo: son los seis pasos apoyados en la misma base, montados con
+   la retícula. Las divisiones son el fondo asomando por un hueco de 1 px, y
+   así el diagrama se lee igual de bien en un teléfono que en una pantalla.
+   Al ser texto de verdad y no una imagen, se lee, se busca y se copia. */
+.figura { margin: 0; }
+.circuito { background: var(--superficie); }
+.circuito__vuelta {
+  margin: 0; padding: .7rem .9rem; border-bottom: 1px solid var(--linea-suave);
+  font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-4);
+  display: flex; align-items: center; gap: .5rem;
+}
+.circuito__vuelta svg { width: 15px; height: 15px; flex: 0 0 auto; color: var(--tinta-5); }
+.circuito__pasos { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1px; background: var(--linea-suave); }
+@media (max-width: 1000px) { .circuito__pasos { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 620px) { .circuito__pasos { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 380px) { .circuito__pasos { grid-template-columns: 1fr; } }
+.circuito__paso { background: var(--superficie); padding: var(--e5) var(--e4); display: grid; gap: .3rem; align-content: start; }
+.circuito__n { margin: 0; font-size: var(--t-11); letter-spacing: var(--tr-11); color: var(--tinta-5); font-variant-numeric: tabular-nums; }
+.circuito__q { margin: 0; font-size: var(--t-15); letter-spacing: var(--tr-15); font-weight: var(--peso-fuerte); color: var(--tinta); }
+.circuito__d { margin: 0; font-size: var(--t-12); letter-spacing: var(--tr-12); color: var(--tinta-4); }
+.circuito__base {
+  margin: 0; padding: .85rem .9rem; background: var(--accion-tenue);
+  border-top: 1px solid var(--linea-suave);
+  font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-3); text-align: center;
+}
+.circuito__base b { color: var(--accion-honda); font-weight: var(--peso-fuerte); }
+.circuito__pie { margin: var(--e4) 0 0; }
+
+/* =================================================== 8. LOS SIETE NÚMEROS
+   Cada indicador con su fórmula. La fórmula va en la misma letra que todo lo
+   demás: lo que la separa es el relleno y el tracking, no otra tipografía. */
+.indicador { display: flex; flex-direction: column; gap: var(--e3); }
+.indicador h3 { margin: 0; font-size: var(--t-16); letter-spacing: var(--tr-16); }
+.indicador__formula {
+  display: block; background: var(--superficie-3); border-radius: var(--r-sm); padding: .45rem .6rem;
+  font-size: var(--t-12); letter-spacing: var(--tr-12); color: var(--tinta-3);
+}
+.indicador__alerta {
+  display: block; margin-top: auto; padding-top: var(--e3); border-top: 1px solid var(--linea-suave);
+  font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-4); line-height: 1.55;
+}
+.indicador__alerta b { color: var(--tinta-2); font-weight: var(--peso-fuerte); }
+
+/* ====================================================== 9. LOS HITOS
+   Las seis semanas de arranque. No es una línea dibujada: es una lista con su
+   cuándo a la izquierda, que es lo que se lee igual en cualquier ancho. */
+.hitos { list-style: none; margin: 0; padding: 0; display: grid; }
+.hitos > li {
+  margin: 0; display: grid; gap: .25rem var(--e5);
+  padding: var(--e5) 0; border-top: 1px solid var(--linea-suave);
+}
+.hitos > li:first-child { border-top: 0; padding-top: 0; }
+.hitos > li:last-child { padding-bottom: 0; }
+@media (min-width: 560px) { .hitos > li { grid-template-columns: 7.5rem minmax(0, 1fr); } }
+.hito__cuando {
+  margin: 0; font-size: var(--t-12); letter-spacing: .06em; text-transform: uppercase;
+  color: var(--tinta-5); font-weight: var(--peso-fuerte);
+}
+.hito h4 { margin: 0 0 .25rem; font-size: var(--t-16); letter-spacing: var(--tr-16); }
+.hito p { margin: 0; font-size: var(--t-14); letter-spacing: var(--tr-14); color: var(--tinta-4); }
+
+/* ================================================ 10. LISTA DE RENGLONES
+   Para lo que no es una promesa cumplida ni una casilla marcada —precios de
+   arranque, por ejemplo—: renglones separados por una línea, sin palomas. */
+.lineas { list-style: none; margin: 0; padding: 0; display: grid; }
+.lineas > li {
+  margin: 0; padding: var(--e3) 0; border-top: 1px solid var(--linea-suave);
+  font-size: var(--t-14); letter-spacing: var(--tr-14); color: var(--tinta-4);
+}
+.lineas > li:first-child { border-top: 0; padding-top: 0; }
+
+/* ============================================ 11. AJUSTES DE TABLA Y MAQUETA
+   El paso del método es la cabecera de su renglón: un <th> de cuerpo, que el
+   navegador pondría en negrita de 700 si no se le dice con qué peso va. */
+.tabla tbody th { font-weight: var(--peso-fuerte); color: var(--tinta); text-align: left; }
+/* El segundo renglón de una celda —el «o CRM Esencial + WhatsApp $699»— es una
+   línea aparte, no una coletilla pegada al precio. */
+.tabla td .apunte { display: block; margin-top: .1rem; }
+/* El pie de una tabla de maqueta se lee arriba, como el rótulo que es. */
+.datos caption {
+  padding: .5rem .75rem; text-align: left;
+  border-bottom: 1px solid var(--linea-suave); background: var(--superficie);
+}
+
+/* ================================================== 12. REMATES Y AJUSTES
+   Las únicas medidas que no son de una pieza, sino del ritmo entre ellas. */
+.tramo { margin-top: clamp(3rem, 6vw, 5rem); }
+.tras-rejilla { margin-top: var(--e6); }
+.tras-tira { margin-top: var(--e8); }
+.tras-tabla { margin-top: var(--e6); }
+/* El enlace o el botón que sale de un bloque de texto, separado de su párrafo */
+.ir-seccion { margin-top: var(--e5); }
+.icono-linea { flex: 0 0 auto; }
+.centrado-medida { max-width: 62ch; margin-inline: auto; }
+
+/* Remates del cierre y del pie, iguales a los de la portada del sitio: el
+   cierre y el pie son los mismos en todas las páginas. */
+.cierre__acciones { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; margin-top: var(--e7); }
+.cierre__pie { margin-top: var(--e6); color: var(--tinta-noche-2); }
+/* Los rótulos del pie son encabezados de verdad (h3), para no saltar de h2 a
+   h5 en la jerarquía. El aspecto es el que sistema.css le da a .pie h5. */
+.pie__titulo {
+  color: var(--tinta-noche); font-size: var(--t-12); font-weight: var(--peso-fuerte);
+  letter-spacing: .07em; text-transform: uppercase; line-height: 1.4; margin-bottom: var(--e4);
+}
+.pie__logo { height: 30px; width: auto; margin-bottom: var(--e4); }
+.pie__contacto { display: grid; gap: .4rem; margin-top: var(--e4); font-size: var(--t-13); letter-spacing: var(--tr-13); }

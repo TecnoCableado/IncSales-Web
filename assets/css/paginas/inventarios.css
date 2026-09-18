@@ -1,0 +1,198 @@
+/* ============================================================================
+   PÁGINA · INVENTARIOS Y ALMACENES (inventarios.html)
+   ----------------------------------------------------------------------------
+   Solo las piezas que NO existen en sistema.css. Cero hex sueltos, cero rgba
+   inventados, cero radios ni sombras nuevas, una sola tipografía y ningún
+   borde de color: todo sale de los tokens del sistema.
+   Se enlaza DESPUÉS de sistema.css.
+   ========================================================================== */
+
+/* ============================================================== 0. SÍMBOLOS
+   Un solo juego de iconos para toda la página, sin imágenes externas. Heredan
+   el color del texto, así que sirven igual sobre blanco y sobre la noche. */
+.sprite { display: none; }
+
+/* ===================================================== 1. PORTADA INTERIOR
+   Las migas heredan los grises de página clara; sobre el fondo de noche se
+   quedaban por debajo del contraste mínimo. Se reescriben con la familia
+   oscura, igual que hace sistema.css con el sobre-título y la entradilla. */
+.portada--tinta .migas { color: var(--tinta-noche-2); }
+.portada--tinta .migas a { color: var(--a4); }
+.portada--tinta .migas li:not(:last-child)::after { color: var(--tinta-noche-2); opacity: .55; }
+
+/* Las señales de confianza bajo los botones, separadas por una línea fina.
+   Las tres llevan la misma marca: una con viñeta y dos sin ella es lo que
+   hace que una portada se vea armada a mano. */
+.portada__firma { padding-top: var(--e5); border-top: 1px solid var(--linea-noche); }
+.portada__firma svg { width: 14px; height: 14px; flex: 0 0 auto; color: var(--a4); }
+
+/* ======================================================= 2. MAQUETAS REALES
+   Son el sistema de verdad, montado con las clases de producto dentro de un
+   .marco. Lo único que cambia es la densidad, y que nada de adentro recibe
+   foco: la maqueta es una imagen, no una interfaz a medias. */
+.maqueta {
+  position: relative;
+  container-type: inline-size;
+  font-size: var(--t-13);
+  letter-spacing: var(--tr-13);
+  line-height: 1.5;
+  --e-caja: var(--e3);
+}
+.maqueta .app { min-height: 0; }
+.maqueta .pagina { gap: var(--e4); }
+/* Dentro de la maqueta no hay prosa: cada párrafo es una etiqueta de interfaz
+   y no arrastra el margen inferior del cuerpo de texto. */
+.maqueta p { margin: 0; }
+.maqueta .pagina__sub { margin-top: .1rem; }
+/* Un folio, un SKU o un pedimento nunca se parten en dos renglones. */
+.maqueta .datos .clave { white-space: nowrap; }
+/* Una dirección larga en una maqueta angosta se recorta con puntos
+   suspensivos: nunca empuja la barra del marco ni se parte a la mitad. */
+.maqueta .marco__url { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* En la barra lateral el <b> es el nombre de la empresa: hereda un gris de
+   página clara que sobre el fondo de noche no se lee. */
+.maqueta .lateral__marca b { color: var(--tinta-noche); font-weight: var(--peso-medio); }
+.maqueta .lateral .apunte { color: inherit; }
+/* Una ventana sin barra lateral: el cuerpo toma el lienzo hundido, que es el
+   fondo real de una pantalla del producto. */
+.maqueta__cuerpo { background: var(--lienzo-hundido); }
+/* La ventana y su pie de foto son una sola pieza: el <figure> no arrastra el
+   margen que le pone el navegador. */
+.maqueta-figura { margin: 0; }
+.maqueta__pie { margin-top: var(--e4); }
+
+/* Equivalentes no enfocables de los controles del sistema. Mismas medidas. */
+.maqueta .segmentado span {
+  display: inline-block; font-size: var(--t-13); font-weight: var(--peso-medio);
+  letter-spacing: var(--tr-13); color: var(--tinta-3); padding: .3rem .7rem; border-radius: var(--r-xs);
+}
+.maqueta .segmentado span.activo { background: var(--superficie); color: var(--tinta); box-shadow: var(--sombra-1); }
+
+/* La maqueta se adapta a SU ancho, no al de la ventana. */
+.maqueta .pagina__acciones { flex-wrap: wrap; }
+@container (max-width: 860px) {
+  .maqueta .app { grid-template-columns: 176px 1fr; }
+  .maqueta .pagina { padding: var(--e5); }
+}
+/* En una maqueta angosta se suelta lo que es adorno —el atajo de teclado, la
+   ayuda del buscador— y nunca un dato. Las columnas de estas tablas son el
+   argumento de la página (qué caduca, con qué documento, quién lo tiene), así
+   que ninguna se esconde: .datos-scroll las deja correr de lado. */
+@container (max-width: 560px) {
+  .maqueta .buscador { min-width: 0; }
+  .maqueta .buscador kbd, .maqueta .buscador__ayuda { display: none; }
+}
+@container (max-width: 600px) {
+  .maqueta .app { grid-template-columns: 1fr; }
+  .maqueta .lateral { display: none; }
+}
+/* En sistema.css la regla base de .lateral va DESPUÉS de su media query, así
+   que esa media query no alcanza a ocultarla. Aquí el criterio lo decide el
+   ancho de la maqueta, sin tocar el sistema y sin depender de ese orden. */
+@container (min-width: 601px) { .maqueta .lateral { display: flex; } }
+
+/* Una maqueta es una superficie clara metida en un bloque oscuro: lo que no
+   trae color propio no puede heredar el de la noche. Sin estas dos reglas, un
+   <b> dentro de una ventana sale blanco sobre blanco. */
+.bloque--tinta .marco, .portada--tinta .marco { color: var(--tinta-3); }
+.bloque--tinta .marco b, .bloque--tinta .marco strong,
+.portada--tinta .marco b, .portada--tinta .marco strong { color: var(--tinta); }
+
+/* El buscador del producto, usado como maqueta de ancho completo. */
+.buscador--ancho { width: 100%; min-width: 0; }
+.buscador--ancho b { color: var(--tinta); font-weight: var(--peso-medio); }
+.buscador__ayuda { margin-left: auto; font-size: var(--t-11); letter-spacing: var(--tr-11); color: var(--tinta-5); }
+
+/* .aviso pone su título en bloque; .flotante no trae esa regla y su cuerpo se
+   pegaría al título en el mismo renglón. */
+.flotante b { display: block; color: var(--tinta); font-weight: var(--peso-fuerte); }
+.flotante .apunte { display: block; }
+.icono-linea { flex: 0 0 auto; }
+
+/* En sistema.css el título de un aviso se puede marcar con <b> o con <strong>,
+   y por eso los dos van en bloque. En esta página el título es siempre <b>:
+   <strong> queda para el énfasis dentro de la frase, y ahí tiene que seguir
+   siendo inline o parte el párrafo en tres renglones sueltos. El color blanco
+   que .bloque--tinta le da sobre la noche gana por especificidad y se queda. */
+.aviso strong { display: inline; color: var(--tinta-2); margin-bottom: 0; }
+
+/* ================================================ 3. PRODUCTO Y VARIANTES
+   La ficha que explica la regla de diseño de todo el catálogo: la existencia
+   y el precio cuelgan de la variante, nunca del producto padre. Las variantes
+   se separan con una línea de 1 px gris, no con una caja dentro de otra. */
+.variantes { display: grid; gap: var(--e3); margin-top: var(--e5); }
+.variante { padding-top: var(--e3); border-top: 1px solid var(--linea-suave); }
+.variante:first-child { padding-top: 0; border-top: 0; }
+.variante__fila { display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .6rem; }
+.variante__fila b { font-size: var(--t-14); letter-spacing: var(--tr-14); font-weight: var(--peso-fuerte); color: var(--tinta); }
+.variante__marcas { display: flex; flex-wrap: wrap; gap: .3rem; margin-top: .4rem; }
+
+/* ============================================== 4. CABEZA DE TARJETA
+   Icono y título en el mismo renglón: el icono ordena la rejilla y el título
+   no se descuelga cuando el texto de una tarjeta es más largo que el de otra. */
+.tarjeta__cab { display: flex; align-items: center; gap: .7rem; margin-bottom: var(--e4); }
+.tarjeta__cab h3 { margin: 0; font-size: var(--t-18); letter-spacing: var(--tr-18); }
+.tarjeta__cab h4 { margin: 0; font-size: var(--t-16); letter-spacing: var(--tr-16); }
+.tarjeta__titulillo { font-size: var(--t-14); letter-spacing: var(--tr-14); font-weight: var(--peso-fuerte); color: var(--tinta); margin: var(--e5) 0 var(--e3); }
+
+/* ========================================= 5. REPORTE DE IMPORTACIÓN
+   Cada renglón del archivo termina con un resultado escrito. La cabecera
+   lleva el nombre del archivo a la izquierda y el marcador a la derecha. */
+.reporte__cab {
+  display: flex; flex-wrap: wrap; align-items: flex-start; gap: var(--e4);
+  padding: .7rem .9rem; background: var(--superficie-2); border-bottom: 1px solid var(--linea);
+}
+.reporte__cab b { display: block; font-size: var(--t-14); letter-spacing: var(--tr-14); color: var(--tinta); font-weight: var(--peso-fuerte); }
+.reporte__marcador { margin-left: auto; text-align: right; }
+
+/* ====================================================== 6. CITAS
+   Un testimonio es texto con firma, no una tarjeta con comillas dibujadas. */
+.cita { margin: 0; display: flex; flex-direction: column; gap: var(--e5); }
+.cita blockquote { margin: 0; font-size: var(--t-18); letter-spacing: var(--tr-18); line-height: 1.5; color: var(--tinta-2); }
+.cita figcaption { display: flex; align-items: center; gap: .6rem; }
+.cita__quien b { display: block; font-size: var(--t-14); letter-spacing: var(--tr-14); color: var(--tinta); font-weight: var(--peso-fuerte); }
+.cita__quien span { font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-5); }
+
+/* ====================================================== 7. PLANES
+   La única pieza que le falta al plan del sistema: la nota que cuelga debajo
+   del botón cuando ese plan trae algo incluido. */
+.plan__nota { margin-top: var(--e3); text-align: center; }
+
+/* ================================================= 8. REMATES Y RITMO
+   Las medidas que no son de una pieza, sino del aire entre dos. */
+.tras-tira { margin-top: var(--e8); }
+.tras-maqueta { margin-top: var(--e8); }
+.tras-tabla { margin-top: var(--e7); }
+.tras-rejilla { margin-top: var(--e6); }
+.tras-texto { margin-top: var(--e5); }
+.ir-seccion { margin-top: var(--e5); }
+.remate { margin-top: var(--e7); }
+/* .btn lleva white-space: nowrap para que una acción de dos palabras no se
+   parta a la mitad. El remate de una sección no es una acción de dos palabras:
+   es una frase, y a 360 px empujaba la página 28 px hacia la derecha. Ahí, y
+   solo ahí, el rótulo envuelve. */
+@media (max-width: 430px) {
+  .remate .btn { white-space: normal; text-align: center; }
+}
+
+/* ====================================================== 9. CIERRE
+   Igual que la portada, al revés: primero la promesa y luego las señales. */
+.cierre__acciones { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; margin-top: var(--e7); }
+.cierre__pie { margin-top: var(--e6); color: var(--tinta-noche-2); }
+.senales {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: var(--e3) var(--e6);
+  margin: var(--e6) 0 0; padding: 0; list-style: none;
+  font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-noche-2);
+}
+.senales li { margin: 0; display: inline-flex; align-items: center; gap: .35rem; }
+.senales svg { width: 14px; height: 14px; flex: 0 0 auto; color: var(--a4); }
+
+/* ========================================================= 10. PIE
+   Los rótulos del pie son encabezados de verdad (h3), para no saltar de h2 a
+   h5 en la jerarquía. El aspecto es el que sistema.css le da a .pie h5. */
+.pie__titulo {
+  color: var(--tinta-noche); font-size: var(--t-12); font-weight: var(--peso-fuerte);
+  letter-spacing: .07em; text-transform: uppercase; line-height: 1.4; margin-bottom: var(--e4);
+}
+.pie__logo { height: 30px; width: auto; margin-bottom: var(--e4); }
+.pie__contacto { display: grid; gap: .4rem; margin-top: var(--e4); font-size: var(--t-13); letter-spacing: var(--tr-13); }

@@ -1,0 +1,134 @@
+/* ============================================================================
+   PÁGINA · PREGUNTAS FRECUENTES (preguntas.html)
+   ----------------------------------------------------------------------------
+   Solo piezas que NO existen en sistema.css, y todas armadas con sus tokens:
+   cero colores sueltos, cero radios nuevos, cero sombras nuevas, una sola
+   familia tipográfica y ningún borde de color —los bordes son de 1 px y
+   grises—. Si algo de aquí se repite en otra página, se sube al sistema;
+   mientras tanto vive aquí.
+   ========================================================================== */
+
+/* ================================================= 1. PORTADA DE LA PÁGINA */
+/* Las migas heredan el gris de metadatos, que sobre el fondo de noche no se
+   lee. Se listan una por una, no como .portada--tinta *, porque dentro de la
+   portada puede ir una superficie clara. */
+.portada--tinta .migas,
+.portada--tinta .migas a { color: var(--tinta-noche-2); }
+
+.portada__firma { padding-top: var(--e5); border-top: 1px solid var(--linea-noche); }
+.portada__firma svg { width: 14px; height: 14px; flex: 0 0 auto; color: var(--a4); }
+
+/* La tarjeta de la portada: las cuatro preguntas de siempre, en una línea.
+   Sobre fondo de noche una .lista pinta su texto en gris de cuerpo, así que
+   aquí van renglones de definición separados por la misma línea del sistema:
+   mismo ritmo, contraste correcto. */
+.caja-rapidas h2 {
+  font-size: var(--t-20); letter-spacing: var(--tr-20);
+  color: var(--tinta-noche); margin-bottom: var(--e5);
+}
+.caja-rapidas a { color: var(--a4); }
+.caja-rapidas .apunte { color: var(--tinta-noche-2); }
+.rapidas { display: grid; margin: 0; }
+.rapidas__fila { padding: var(--e3) 0; border-bottom: 1px solid var(--linea-noche); }
+.rapidas__fila:first-child { padding-top: 0; }
+.rapidas__fila:last-child { padding-bottom: 0; border-bottom: 0; }
+.rapidas dt {
+  font-size: var(--t-14); letter-spacing: var(--tr-14);
+  font-weight: var(--peso-fuerte); color: var(--tinta-noche);
+}
+.rapidas dd {
+  margin: .15rem 0 0; font-size: var(--t-14); letter-spacing: var(--tr-14);
+  color: var(--tinta-noche-2);
+}
+
+/* ============================================= 2. RETÍCULA DEL CUESTIONARIO
+   Índice a la izquierda, pegajoso bajo la barra; las respuestas a la derecha.
+   Debajo de 1000 px el índice se convierte en lo que siempre fue: una lista
+   de enlaces antes del contenido. */
+.faq { display: grid; gap: var(--e8); align-items: start; }
+.faq__columna { min-width: 0; }
+@media (min-width: 1000px) {
+  .faq { grid-template-columns: 13rem minmax(0, 1fr); gap: var(--e10); }
+  .faq__indice { position: sticky; top: calc(var(--barra) + var(--e5)); }
+}
+.faq__indice ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .1rem; }
+.faq__indice li { margin: 0; }
+.faq__indice a {
+  display: block; padding: .35rem .5rem; border-radius: var(--r-sm);
+  font-size: var(--t-14); letter-spacing: var(--tr-14); color: var(--tinta-4);
+  transition: background-color var(--rapido) var(--curva), color var(--rapido) var(--curva);
+}
+.faq__indice a:hover { background: var(--superficie); color: var(--tinta); text-decoration: none; }
+.faq__indice-pie {
+  margin-top: var(--e5); padding-top: var(--e4);
+  border-top: 1px solid var(--linea); display: grid; gap: .35rem;
+}
+.faq__indice-pie p { margin: 0; }
+
+/* ------------------------------------------- cada bloque de preguntas ---- */
+.faq-bloque + .faq-bloque { margin-top: var(--e10); }
+.faq-bloque__cabeza { margin-bottom: var(--e5); max-width: var(--ancho-texto); }
+.faq-bloque__fila {
+  display: flex; align-items: baseline; flex-wrap: wrap;
+  gap: var(--e3); margin-bottom: var(--e3);
+}
+/* Ocho títulos de bloque seguidos no piden el tamaño de un h2 de sección: se
+   bajan un escalón de la escala, con SU tracking. */
+.faq-bloque__fila h2 {
+  margin: 0; font-size: var(--t-30); letter-spacing: var(--tr-30); line-height: 1.15;
+}
+.faq-bloque__cabeza p {
+  margin: 0; font-size: var(--t-15); letter-spacing: var(--tr-15); color: var(--tinta-4);
+}
+
+/* El cuerpo de una respuesta puede traer avisos, listas y tablas: mismo ritmo
+   vertical que sus párrafos, sin margen colgando arriba ni abajo. */
+.acordeon__cuerpo > .aviso,
+.acordeon__cuerpo > .tabla-caja,
+.acordeon__cuerpo > .lista { margin: var(--e4) 0; }
+.acordeon__cuerpo > :first-child { margin-top: 0; }
+.acordeon__cuerpo > :last-child { margin-bottom: 0; }
+
+.faq-remate {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem var(--e4);
+  margin: var(--e5) 0 0; font-size: var(--t-14); letter-spacing: var(--tr-14);
+  color: var(--tinta-4);
+}
+
+/* ========================================== 3. LA VARA Y EL DATO CITABLE */
+/* Los títulos dentro de una tarjeta bajan un escalón: en una retícula de tres
+   o cuatro columnas, un h3 de 24 px parte la frase en cuatro renglones. */
+.cab-tarjeta { font-size: var(--t-18); letter-spacing: var(--tr-18); margin-bottom: var(--e4); }
+.cab-mini { font-size: var(--t-16); letter-spacing: var(--tr-16); margin-bottom: .3rem; }
+.tarjeta > .icono-caja { margin-bottom: var(--e4); }
+
+.dato { display: grid; gap: var(--e5); align-items: start; }
+@media (min-width: 860px) {
+  .dato { grid-template-columns: minmax(0, 14rem) minmax(0, 1fr); gap: var(--e8); }
+}
+.dato .cifra__n { white-space: nowrap; }
+
+/* ==================================================== 4. REMATES Y AJUSTES
+   Las medidas que no son de una pieza, sino del ritmo entre ellas. */
+.tras-rejilla { margin-top: var(--e6); }
+.tras-tira { margin-top: var(--e8); }
+.ir-final { margin-top: var(--e4); }
+.icono-linea { flex: 0 0 auto; }
+
+/* ====================================== 5. CIERRE Y PIE (igual que index) */
+.cierre__acciones {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; margin-top: var(--e7);
+}
+.cierre__pie { margin-top: var(--e6); color: var(--tinta-noche-2); }
+
+/* Los rótulos del pie son encabezados de verdad (h3), para no saltar de h2 a
+   h5 en la jerarquía. El aspecto es el que sistema.css le da a .pie h5. */
+.pie__titulo {
+  color: var(--tinta-noche); font-size: var(--t-12); font-weight: var(--peso-fuerte);
+  letter-spacing: .07em; text-transform: uppercase; line-height: 1.4; margin-bottom: var(--e4);
+}
+.pie__logo { height: 30px; width: auto; margin-bottom: var(--e4); }
+.pie__contacto {
+  display: grid; gap: .4rem; margin-top: var(--e4);
+  font-size: var(--t-13); letter-spacing: var(--tr-13);
+}

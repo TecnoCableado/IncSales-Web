@@ -1,0 +1,304 @@
+/* ============================================================================
+   PROPUESTA · LAS PANTALLAS DEL SISTEMA
+   Capa de página de propuesta/sistema.html. Todo sale de los tokens de
+   sistema.css: ni un color suelto, ni un radio, ni una sombra nueva.
+   Aquí solo hay dos cosas: el marco editorial que presenta cada captura, y
+   las piezas de producto que sistema.css todavía no tiene (bandeja de cuatro
+   columnas, documento de cotización, indicador de existencia, esqueleto de
+   carga). Cada una está montada con variables del sistema.
+   ========================================================================== */
+
+/* ============================================ 1. MARCO EDITORIAL DE LA PÁGINA */
+.doc-cabeza .marca-enlace img { height: 30px; }
+.doc-indice {
+  display: flex; flex-wrap: wrap; gap: .3rem; list-style: none; margin: var(--e6) 0 0; padding: 0;
+}
+.doc-indice li { margin: 0; }
+.doc-indice a {
+  display: inline-flex; align-items: baseline; gap: .4rem;
+  font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-noche-2);
+  border: 1px solid var(--linea-noche); border-radius: var(--r-sm); padding: .3rem .6rem;
+  transition: background-color var(--rapido) var(--curva), border-color var(--rapido) var(--curva);
+}
+.doc-indice a:hover { background: var(--noche-2); color: var(--tinta-noche); text-decoration: none; }
+.doc-indice i { font-family: var(--fuente-mono); font-style: normal; font-size: var(--t-11); letter-spacing: var(--tr-11); opacity: .7; }
+
+.pantalla { padding-block: clamp(2.5rem, 5vw, 4rem); }
+.pantalla + .pantalla { border-top: 1px solid var(--linea); }
+
+/* Rótulo: número, qué es y para qué sirve. Tres columnas ópticas que caen
+   siempre en el mismo eje, pantalla tras pantalla. */
+.rotulo { display: grid; grid-template-columns: 2.5rem minmax(0, 1fr); gap: var(--e4); margin-bottom: var(--e5); }
+.rotulo__n {
+  font-family: var(--fuente-mono); font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-5);
+  border: 1px solid var(--linea); border-radius: var(--r-xs); background: var(--superficie);
+  height: 1.7rem; display: grid; place-items: center;
+}
+.rotulo h2 { font-size: var(--t-24); letter-spacing: var(--tr-24); line-height: 1.2; margin: 0; }
+.rotulo p { margin: .3rem 0 0; font-size: var(--t-15); letter-spacing: var(--tr-15); color: var(--tinta-4); max-width: 68ch; }
+
+/* Notas al pie de cada captura: dónde mirar. */
+.notas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--e5); list-style: none; margin: var(--e5) 0 0; padding: 0; }
+.notas li { margin: 0; padding-left: var(--e4); border-left: 1px solid var(--linea); font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-4); }
+.notas b { display: block; color: var(--tinta-2); font-weight: var(--peso-fuerte); margin-bottom: .1rem; }
+@media (max-width: 860px) { .notas { grid-template-columns: 1fr; gap: var(--e3); } }
+
+/* La captura es un .marco del sistema; solo hay que soltarle el alto de pantalla. */
+.marco .app { min-height: 0; }
+.marco .lienzo-app { position: relative; min-width: 0; }
+.marco .pagina { min-height: 0; }
+.marco__url { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.marco__url b { color: var(--tinta-3); font-weight: var(--peso-medio); }
+
+/* ================================================== 2. PIEZAS COMPARTIDAS */
+/* Dato etiquetado: el par rótulo/valor que se repite en cabeceras y fichas. */
+.dato { display: grid; gap: .1rem; min-width: 0; }
+.dato__t { font-size: var(--t-11); letter-spacing: .06em; text-transform: uppercase; color: var(--tinta-5); }
+.dato__v { font-size: var(--t-14); letter-spacing: var(--tr-14); color: var(--tinta); font-weight: var(--peso-medio); }
+.sub-dato { font-size: var(--t-12); letter-spacing: var(--tr-12); color: var(--tinta-5); }
+.dato__v small { display: block; font-size: var(--t-12); letter-spacing: var(--tr-12); color: var(--tinta-5); font-weight: var(--peso-normal); }
+
+/* Panel con cabecera. Misma caja que .kpi, con un renglón de título arriba. */
+.cuadro { background: var(--superficie); border: 1px solid var(--linea); border-radius: var(--r-md); overflow: hidden; }
+.cuadro__cab { display: flex; align-items: center; gap: var(--e3); padding: .55rem var(--e4); border-bottom: 1px solid var(--linea-suave); }
+.cuadro__cab h3, .cuadro__cab h4 { margin: 0; font-size: var(--t-14); letter-spacing: var(--tr-14); line-height: 1.4; font-weight: var(--peso-fuerte); color: var(--tinta); }
+.cuadro__cab .apunte { margin-left: auto; }
+.cuadro__cuerpo { padding: var(--e4); }
+
+/* Los indicadores de una fila tienen que compartir el eje de la cifra: si un
+   rótulo ocupa dos renglones y el de al lado uno, los números se desalinean.
+   Se le reserva la altura de dos renglones a todos. */
+.kpi { display: flex; flex-direction: column; }
+.kpi__q { min-height: calc(1.6em * 2); }
+
+/* Medidor de consumo. Cuatro píxeles bastan para decir cuánto llevas. */
+.medidor { display: block; height: 4px; border-radius: var(--r-full); background: var(--n3); overflow: hidden; margin-top: .45rem; }
+.medidor i { display: block; height: 100%; background: var(--accion); border-radius: inherit; }
+
+/* Existencia en el buscador: verde si tienes, ámbar si no tienes nada tuyo,
+   rojo si el dato del proveedor ya envejeció. */
+.existencia {
+  display: inline-flex; align-items: center; gap: .3rem;
+  font-size: var(--t-11); letter-spacing: var(--tr-11); white-space: nowrap;
+  background: var(--v1); color: var(--v8); border-radius: var(--r-xs); padding: .08rem .35rem;
+}
+.existencia b { font-weight: var(--peso-fuerte); }
+.existencia--ambar { background: var(--m1); color: var(--m8); }
+.existencia--rojo { background: var(--r1); color: var(--r8); }
+
+/* Lista de pendientes del inicio. */
+.pendientes { list-style: none; margin: 0; padding: 0; }
+.pendientes li {
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: .6rem; align-items: center;
+  margin: 0; padding: .5rem var(--e4); border-bottom: 1px solid var(--linea-suave);
+  font-size: var(--t-13); letter-spacing: var(--tr-13);
+  transition: background-color var(--rapido) var(--curva);
+}
+.pendientes li:last-child { border-bottom: 0; }
+.pendientes li:hover { background: var(--n1); }
+.pendientes b { color: var(--tinta); font-weight: var(--peso-medio); white-space: nowrap; }
+.pendientes .cuando { color: var(--tinta-5); font-size: var(--t-12); letter-spacing: var(--tr-12); white-space: nowrap; }
+
+/* Fichas del tablero: una línea de negocio, una de contexto. */
+.tablero__ficha .fila { display: flex; align-items: center; gap: .4rem; margin-top: .3rem; }
+.tablero__ficha .monto { font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-2); font-weight: var(--peso-medio); font-variant-numeric: tabular-nums; }
+.tablero__ficha .fila .apunte { margin-left: auto; }
+.tablero__col { min-height: 7rem; }
+/* El rótulo de la columna iba en --tinta-5 sobre el relleno gris: 2.9:1, por
+   debajo de lo legible. Sube un escalón y la cifra se queda con el peso.
+   Corresponde arreglarlo en sistema.css (.tablero__cab), no sólo aquí. */
+.tablero__cab { color: var(--tinta-3); }
+.tablero__cab b { color: var(--tinta-2); }
+.tablero__cab span { min-width: 0; }
+.kpi__d { align-items: flex-start; }
+.kpi__d svg { margin-top: .2rem; }
+
+/* ================================================= 3. EDITOR DE COTIZACIÓN */
+.doc { background: var(--superficie); border: 1px solid var(--linea); border-radius: var(--r-md); overflow: hidden; }
+.doc__cab { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--e5); padding: var(--e5); border-bottom: 1px solid var(--linea-suave); }
+.doc__tira { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; padding: .5rem var(--e5); background: var(--n1); border-bottom: 1px solid var(--linea-suave); font-size: var(--t-12); letter-spacing: var(--tr-12); color: var(--tinta-5); }
+.doc__buscar { padding: var(--e4) var(--e5); border-bottom: 1px solid var(--linea-suave); }
+.doc__pie { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 20rem); gap: var(--e5); padding: var(--e5); }
+.doc__barra { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; padding: .65rem var(--e5); background: var(--n1); border-top: 1px solid var(--linea); }
+.doc__barra .juntos { margin-left: auto; display: flex; gap: .5rem; align-items: center; }
+@media (max-width: 900px) { .doc__cab { grid-template-columns: repeat(2, minmax(0, 1fr)); } .doc__pie { grid-template-columns: 1fr; } }
+
+/* Sugerencias del buscador de productos. */
+.sugerencias { margin-top: .5rem; border: 1px solid var(--linea); border-radius: var(--r-sm); background: var(--superficie); box-shadow: var(--sombra-2); overflow: hidden; }
+.sugerencia { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .15rem var(--e4); align-items: center; padding: .45rem .65rem; border-bottom: 1px solid var(--linea-suave); font-size: var(--t-13); letter-spacing: var(--tr-13); cursor: pointer; transition: background-color var(--rapido) var(--curva); }
+.sugerencia:last-child { border-bottom: 0; }
+.sugerencia:hover, .sugerencia[aria-selected="true"] { background: var(--a1); }
+.sugerencia__n { color: var(--tinta); font-weight: var(--peso-medio); }
+.sugerencia__c { grid-column: 1; font-family: var(--fuente-mono); font-size: var(--t-11); letter-spacing: var(--tr-11); color: var(--tinta-5); }
+.sugerencia__e { grid-column: 2; grid-row: 1 / span 2; justify-self: end; }
+
+/* Totales: etiqueta a la izquierda, cifra a la derecha, mismo eje siempre. */
+.totales { display: grid; gap: .35rem; align-content: start; }
+.total-fila { display: flex; justify-content: space-between; gap: var(--e6); font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-4); }
+.total-fila b { color: var(--tinta-2); font-weight: var(--peso-medio); font-variant-numeric: tabular-nums; }
+.total-fila--suma { margin-top: .35rem; padding-top: .55rem; border-top: 1px solid var(--linea); font-size: var(--t-15); letter-spacing: var(--tr-15); color: var(--tinta-2); }
+.total-fila--suma b { font-size: var(--t-24); letter-spacing: var(--tr-24); line-height: 1.1; color: var(--tinta); font-weight: var(--peso-fuerte); }
+
+/* Renglón que se corrige en su sitio: el campo vive dentro de la celda. */
+.entrada-celda {
+  font: inherit; font-size: var(--t-13); letter-spacing: var(--tr-13); font-variant-numeric: tabular-nums;
+  width: 4.5rem; text-align: right; color: var(--tinta); background: var(--superficie);
+  border: 1px solid var(--accion); border-radius: var(--r-xs); padding: .12rem .35rem;
+  box-shadow: var(--anillo);
+}
+.origen { display: inline-flex; align-items: center; gap: .3rem; font-size: var(--t-11); letter-spacing: var(--tr-11); color: var(--tinta-5); white-space: nowrap; }
+.origen svg { width: 12px; height: 12px; flex: 0 0 auto; }
+
+/* ============================================= 4. BANDEJA DE CONVERSACIONES */
+.bandeja { display: grid; grid-template-columns: 150px 232px minmax(0, 1fr) 212px; min-height: 30rem; background: var(--superficie); border: 1px solid var(--linea); border-radius: var(--r-md); overflow: hidden; }
+.bandeja > * { min-width: 0; display: flex; flex-direction: column; }
+.bandeja > * + * { border-left: 1px solid var(--linea); }
+.bandeja__lado { background: var(--n1); padding: var(--e3); gap: .1rem; }
+.bandeja__cab { display: flex; align-items: center; gap: .45rem; padding: .5rem .65rem; border-bottom: 1px solid var(--linea-suave); min-height: 2.6rem; }
+.bandeja__cab h4 { margin: 0; min-width: 0; font-size: var(--t-13); letter-spacing: var(--tr-13); font-weight: var(--peso-fuerte); color: var(--tinta); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.buzon { display: flex; align-items: center; gap: .5rem; padding: .35rem .5rem; border-radius: var(--r-sm); font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-4); text-decoration: none; transition: background-color var(--rapido) var(--curva), color var(--rapido) var(--curva); }
+.buzon:hover { background: var(--n3); color: var(--tinta); text-decoration: none; }
+.buzon[aria-current="true"] { background: var(--a1); color: var(--a9); font-weight: var(--peso-medio); }
+.buzon svg { width: 14px; height: 14px; flex: 0 0 auto; }
+.buzon .cuenta { margin-left: auto; font-size: var(--t-11); letter-spacing: var(--tr-11); color: var(--tinta-5); font-variant-numeric: tabular-nums; }
+.buzon[aria-current="true"] .cuenta { color: var(--a9); }
+
+.conv { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: .55rem; padding: .55rem .65rem; border-bottom: 1px solid var(--linea-suave); text-decoration: none; color: inherit; transition: background-color var(--rapido) var(--curva); }
+.conv:hover { background: var(--n1); text-decoration: none; color: inherit; }
+.conv[aria-current="true"] { background: var(--a1); }
+/* Sin min-width:0 el nieto no puede truncar: la columna se estira y el texto se corta a lo bruto. */
+.conv > span { min-width: 0; }
+.conv__t { display: flex; align-items: baseline; gap: .4rem; }
+.conv__t b { font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta); font-weight: var(--peso-medio); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.conv__h { margin-left: auto; font-size: var(--t-11); letter-spacing: var(--tr-11); color: var(--tinta-5); white-space: nowrap; }
+.conv__p { font-size: var(--t-12); letter-spacing: var(--tr-12); color: var(--tinta-5); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.conv__e { display: flex; align-items: center; gap: .3rem; margin-top: .2rem; }
+.conv__n { margin-left: auto; background: var(--v7); color: var(--tinta-noche); font-size: var(--t-11); letter-spacing: var(--tr-11); font-weight: var(--peso-fuerte); border-radius: var(--r-full); min-width: 16px; height: 16px; display: grid; place-items: center; padding: 0 .25rem; }
+
+.charla { background: var(--n2); flex: 1; }
+.charla__hilo { flex: 1; display: flex; flex-direction: column; gap: .5rem; padding: var(--e4); }
+.burbuja { max-width: 80%; padding: .45rem .65rem; border-radius: var(--r-md); background: var(--superficie); border: 1px solid var(--linea); font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-2); }
+.burbuja--mia { margin-left: auto; background: var(--v1); border-color: var(--v2); }
+.burbuja .origen { white-space: normal; }
+.burbuja time { display: block; margin-top: .2rem; font-size: var(--t-11); letter-spacing: var(--tr-11); color: var(--tinta-5); text-align: right; }
+.charla__sello { align-self: center; max-width: 94%; display: inline-flex; align-items: center; gap: .35rem; text-align: center; font-size: var(--t-11); letter-spacing: var(--tr-11); color: var(--tinta-5); background: var(--n3); border-radius: var(--r-sm); padding: .2rem .55rem; }
+.charla__sello svg { width: 11px; height: 11px; }
+.charla__pie { padding: .6rem .65rem; background: var(--superficie); border-top: 1px solid var(--linea); }
+.ficha-lado { background: var(--n1); padding: var(--e4); gap: var(--e4); overflow-y: auto; }
+
+@media (max-width: 1180px) {
+  .bandeja { grid-template-columns: 240px minmax(0, 1fr); }
+  .bandeja__lado, .ficha-lado { display: none; }
+}
+@media (max-width: 720px) {
+  .bandeja { grid-template-columns: 1fr; }
+  .bandeja__lista { display: none; }
+}
+
+/* ============================================ 5. CARGANDO, VACÍO Y MODAL */
+.esqueleto { display: block; height: .6rem; border-radius: var(--r-xs); background: var(--n3); animation: latir 1.5s var(--curva) infinite; }
+.esqueleto--corto { width: 45%; }
+.esqueleto--medio { width: 70%; }
+@keyframes latir { 0%, 100% { opacity: 1; } 50% { opacity: .42; } }
+@media (prefers-reduced-motion: reduce) { .esqueleto { animation: none; } }
+
+.escena { position: relative; display: grid; place-items: center; padding: var(--e8) var(--e5); background: var(--n2); min-height: 22rem; }
+.escena__velo { position: absolute; inset: 0; background: var(--n12); opacity: .42; }
+.escena .modal { position: relative; z-index: 1; }
+/* El título del modal es un h3 para no saltarse un nivel de encabezado, pero
+   pesa lo que pesaba de h4: un diálogo no lleva un titular de 24 px. */
+.modal__cabeza h3 { margin: 0 0 .15rem; font-size: var(--t-18); letter-spacing: var(--tr-18); line-height: 1.32; }
+
+.flotante-sitio { position: absolute; right: var(--e5); bottom: var(--e5); z-index: 3; }
+@media (max-width: 640px) { .flotante-sitio { position: static; margin: var(--e4); } }
+
+/* ===================================================== 6. AJUSTES FINOS */
+/* Casillas de selección de tabla, con el azul del sistema. */
+.datos input[type="checkbox"], .forma input[type="checkbox"] { accent-color: var(--accion); width: 14px; height: 14px; margin: 0; }
+/* Columna de acciones al final de un renglón: aparece al pasar el cursor. */
+.datos .acciones { opacity: 0; transition: opacity var(--rapido) var(--curva); }
+.datos tbody tr:hover .acciones, .datos tbody tr:focus-within .acciones { opacity: 1; }
+.btn-icono { display: inline-grid; place-items: center; width: 24px; height: 24px; border: 1px solid transparent; border-radius: var(--r-xs); background: transparent; color: var(--tinta-5); cursor: pointer; padding: 0; transition: background-color var(--rapido) var(--curva), color var(--rapido) var(--curva); }
+.btn-icono:hover { background: var(--n3); color: var(--tinta-2); }
+.btn-icono svg { width: 14px; height: 14px; }
+.fila-acciones { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; }
+.crece { margin-left: auto; }
+.columna { display: grid; gap: var(--e4); align-content: start; min-width: 0; }
+.dos-columnas { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: var(--e4); }
+@media (max-width: 1000px) { .dos-columnas { grid-template-columns: 1fr; } }
+
+/* ================================================= 7. ICONOGRAFÍA EN LÍNEA */
+/* Un solo juego de símbolos SVG al principio del documento. Cero imágenes
+   externas: los iconos heredan el color del texto que acompañan. */
+.sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+.btn svg, .filtro svg { flex: 0 0 auto; }
+.btn svg { width: 14px; height: 14px; }
+.kpi__d svg { width: 11px; height: 11px; }
+.aviso > svg { width: 16px; height: 16px; flex: 0 0 auto; margin-top: .12rem; color: var(--info); }
+.aviso--aviso > svg { color: var(--aviso); }
+.flotante > svg { width: 15px; height: 15px; flex: 0 0 auto; color: var(--exito); margin-top: .12rem; }
+.vacio__icono svg { width: 20px; height: 20px; }
+.avatar--chico { width: 20px; height: 20px; font-size: var(--t-11); letter-spacing: var(--tr-11); }
+.con-avatar { display: flex; align-items: center; gap: .4rem; white-space: nowrap; }
+.doc-cabeza .marca-enlace { margin-bottom: var(--e6); }
+
+/* ------------------------------------------------ 8. AJUSTES DE CONTENIDO */
+/* Nombre de quien tiene la sesión abierta, al pie de la barra lateral. */
+.lateral__cuenta .dato__v { color: var(--tinta-noche); }
+/* Pie de tabla explicativo: mismo tratamiento que el de la landing. */
+/* Una tabla de datos no se comprime: se desplaza. Si se deja encoger, las
+   fechas y los folios se parten en tres renglones y se pierde el eje. */
+.datos-scroll .datos { min-width: 40rem; }
+
+/* Un folio partido en dos renglones rompe el eje de la columna. */
+.datos .clave, .datos .fecha { white-space: nowrap; }
+.nota-celda { display: block; font-size: var(--t-11); letter-spacing: var(--tr-11); color: var(--tinta-5); }
+.datos caption { caption-side: bottom; text-align: left; padding: .5rem .75rem; border-top: 1px solid var(--linea-suave); font-size: var(--t-12); letter-spacing: var(--tr-12); color: var(--tinta-5); }
+/* Unidad que acompaña a una cifra sin competir con ella. */
+.kpi__n .de { font-size: var(--t-16); letter-spacing: var(--tr-16); font-weight: var(--peso-normal); color: var(--tinta-5); }
+.sep-arriba { margin-top: var(--e4); }
+.grupo-lado { font-size: var(--t-11); text-transform: uppercase; letter-spacing: .09em; color: var(--tinta-5); margin: var(--e4) .5rem .25rem; }
+/* Campo en línea: el redactor del chat y cualquier fila de captura rápida. */
+.campo--fila { display: flex; align-items: center; gap: .45rem; }
+.campo--fila input { flex: 1; min-width: 0; }
+.casilla { display: flex; align-items: center; gap: .5rem; margin: 0; font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-2); }
+.vacio .btn { margin-top: var(--e4); }
+.pie-doc img { height: 26px; width: auto; }
+
+/* -------------------------------------------- 9. LA CAPTURA EN PANTALLA CHICA */
+/* Debajo de 900 px el sistema esconde la barra lateral (lo hace sistema.css).
+   La cabecera de la aplicación no cabe entera: el buscador cede el ancho y el
+   botón de alta se retira, porque el avatar y los avisos sí tienen que quedarse. */
+/* sistema.css ya esconde .lateral debajo de 900 px con su @media puesto
+   después de la regla base. Se deja aquí el mismo corte, acotado a la captura:
+   si alguien vuelve a mover ese bloque, la propuesta no se rompe. */
+@media (max-width: 900px) {
+  .marco .lateral { display: none; }
+}
+
+@media (max-width: 520px) {
+  .sugerencia { grid-template-columns: minmax(0, 1fr); }
+  .sugerencia__e { grid-column: 1; grid-row: auto; justify-self: start; margin-top: .15rem; }
+}
+
+@media (max-width: 720px) {
+  .marco .cabecera-app { padding-inline: var(--e4); gap: .5rem; }
+  /* Los botones de la cabeza de página se salían del marco, que recorta. */
+  .pagina__cabeza { gap: var(--e3); }
+  .pagina__acciones { margin-left: 0; flex-wrap: wrap; }
+  /* El pie de la tabla lleva conteo, suma y paginación: en una sola línea,
+     la paginación se quedaba fuera de la caja. */
+  .datos__pie { flex-wrap: wrap; gap: .35rem var(--e4); }
+  .marco .cabecera-app .buscador { min-width: 0; flex: 1; white-space: nowrap; overflow: hidden; }
+  .marco .cabecera-app .btn { display: none; }
+  .marco .pagina { padding: var(--e4); }
+  .marco .pestanas { overflow-x: auto; scrollbar-width: none; }
+  .marco .pestanas::-webkit-scrollbar { display: none; }
+  .marco .pestanas > * { flex: 0 0 auto; }
+  .doc__cab, .doc__buscar, .doc__pie, .doc__barra, .doc__tira { padding-inline: var(--e4); }
+  .doc__cab { grid-template-columns: 1fr; gap: var(--e4); }
+  .doc__barra .juntos { margin-left: 0; width: 100%; flex-wrap: wrap; }
+  .rotulo { grid-template-columns: 1fr; gap: var(--e2); }
+  .rotulo__n { justify-self: start; padding-inline: .5rem; }
+}

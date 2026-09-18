@@ -1,0 +1,1565 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CRM y seguimiento · IncSales</title>
+<meta name="description" content="CRM mexicano dentro del mismo sistema que cotiza, surte y factura: interesados, tablero de negocios, bitácora con el WhatsApp entrante y comisiones sobre lo cobrado. Desde $499 al mes, IVA incluido.">
+<link rel="icon" type="image/svg+xml" href="assets/logos/incsales-icono.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap">
+<link rel="stylesheet" href="assets/css/sistema.css">
+<link rel="stylesheet" href="assets/css/paginas/crm.css">
+</head>
+<body data-superficie="landing">
+
+<a class="saltar" href="#principal">Saltar al contenido</a>
+
+<!-- ============================================================= CINTILLO -->
+<div class="cintillo">
+  Migración de datos sin costo al contratar cualquier plan anual ·
+  <a href="index.html#precios">Ver los planes</a>
+</div>
+
+<!-- =========================================================== NAVEGACIÓN -->
+<header class="nav">
+  <div class="envoltura envoltura--ancha">
+    <div class="nav__fila">
+      <a class="marca-enlace" href="index.html" aria-label="IncSales, inicio">
+        <img src="assets/logos/incsales-completo.svg" alt="" width="800" height="219">
+      </a>
+      <nav class="nav__menu" id="menu" aria-label="Principal">
+        <div class="nav__grupo">
+          <button class="nav__item activo" type="button" aria-expanded="false">
+            Producto <span class="nav__flecha" aria-hidden="true"></span>
+          </button>
+          <div class="panel" hidden>
+            <div class="panel__grid">
+              <p class="panel__titulo">Los módulos que ya operan todos los días</p>
+              <a class="panel__item" href="crm.html" aria-current="page">
+                <b>CRM y seguimiento</b>
+                <span>Interesados, tablero de negocios y bitácora</span>
+              </a>
+              <a class="panel__item" href="index.html#cotizaciones">
+                <b>Cotizaciones y venta</b>
+                <span>Seis documentos con la misma forma</span>
+              </a>
+              <a class="panel__item" href="index.html#inventarios">
+                <b>Inventarios</b>
+                <span>Variantes, multialmacén, lotes y kárdex</span>
+              </a>
+              <a class="panel__item" href="index.html#compras">
+                <b>Compras y proveedores</b>
+                <span>Requisiciones, órdenes y recepciones</span>
+              </a>
+              <a class="panel__item" href="index.html#facturacion">
+                <b>Facturación CFDI 4.0</b>
+                <span>Timbrado, pagos y notas de crédito</span>
+              </a>
+              <a class="panel__item" href="index.html#whatsapp">
+                <b>WhatsApp y marketing</b>
+                <span>Tu número, bandeja de equipo y formularios</span>
+              </a>
+              <div class="panel__pie">
+                <span class="apunte">Todo lo de arriba está construido y en uso.</span>
+                <a class="enlace-ir" href="por-dentro.html">
+                  Ver las pantallas
+                  <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="nav__item" href="index.html#prueba">Por dentro</a>
+        <a class="nav__item" href="por-dentro.html">Las pantallas</a>
+        <a class="nav__item" href="index.html#precios">Precios</a>
+        <a class="nav__item" href="index.html#confianza">Confianza</a>
+        <a class="nav__item" href="index.html#preguntas">Preguntas</a>
+      </nav>
+      <div class="nav__acciones">
+        <a class="btn btn--chico" href="#demo">Agenda una demo</a>
+      </div>
+      <button class="nav__hamburguesa" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir el menú">
+        <i></i><i></i><i></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="principal">
+
+<!-- ============================================================== PORTADA -->
+<section class="portada portada--tinta">
+  <div class="envoltura envoltura--ancha">
+    <ol class="migas">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html#modulos">Producto</a></li>
+      <li>CRM y seguimiento</li>
+    </ol>
+    <div class="portada__reja">
+      <div class="portada__cabeza">
+        <div>
+          <p class="sobre-titulo">Módulo · CRM y seguimiento</p>
+          <h1>El CRM que sí sabe cuánto tienes en el almacén</h1>
+          <p class="entradilla">Interesados, tablero de negocios, bitácora y recordatorios. Lo mismo que hace un CRM
+            caro, pero <strong>dentro del sistema que cotiza, surte y factura</strong> — y en pesos, sin
+            tipo de cambio. Desde <strong>$499 al mes</strong> para tres usuarios, IVA incluido.</p>
+        </div>
+        <div class="portada__lado">
+          <div class="portada__acciones">
+            <a class="btn btn--claro btn--grande" href="contacto.html">Agenda tu demo</a>
+            <a class="btn btn--linea-clara btn--grande" href="#planes">Ver planes de CRM</a>
+          </div>
+          <div class="portada__firma">
+            <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.2 8.4 3.1 3.1 6.5-6.9"/></svg> Desde $499 al mes, IVA incluido</span>
+            <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.2 8.4 3.1 3.1 6.5-6.9"/></svg> Migración probada desde HubSpot</span>
+            <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.2 8.4 3.1 3.1 6.5-6.9"/></svg> El WhatsApp entrante cae solo en la bitácora</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================ EL COSTO DE NO SEGUIR -->
+<section class="bloque" id="costo">
+  <div class="envoltura">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">El problema real</p>
+      <h2>Cotizar es fácil. Perseguir es lo que nadie hace.</h2>
+      <p>En lo que hemos visto operando con nuestros clientes, la venta rara vez se cae por el
+        precio. Se cae porque la cotización salió el martes y nadie volvió a preguntar.</p>
+    </div>
+
+    <div class="rejilla rejilla--3 aparecer">
+      <article class="tarjeta tarjeta--comoda tarjeta--viva">
+        <span class="icono-caja icono-caja--ambar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 13h6M9 17h4"/></svg></span>
+        <h3>La cotización que nadie persigue</h3>
+        <p class="suave">Se envía, el cliente no contesta y a los cinco días ya nadie se acuerda. No es que haya
+          dicho que no: es que nadie volvió a marcarle. Esa cotización no está perdida, está
+          huérfana.</p>
+      </article>
+      <article class="tarjeta tarjeta--comoda tarjeta--viva">
+        <span class="icono-caja icono-caja--ambar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.8a8.4 8.4 0 0 1-12.3 7.5L3.6 20.6l1.4-4.8A8.4 8.4 0 1 1 21 11.8z"/></svg></span>
+        <h3>El vendedor que se va con su celular lleno</h3>
+        <p class="suave">Si la relación vive en un WhatsApp personal, la relación no es de tu empresa. Cuando esa
+          persona renuncia se lleva los teléfonos, el historial y los precios que prometió. Y el que
+          llega empieza de cero.</p>
+      </article>
+      <article class="tarjeta tarjeta--comoda tarjeta--viva">
+        <span class="icono-caja icono-caja--ambar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3.8v16.4h16"/><path d="m7.5 15 4-5 3 3 5-7"/></svg></span>
+        <h3>Nadie sabe dónde se atoró el mes</h3>
+        <p class="suave">Sin etapas ni fechas, el reporte de ventas es lo que cada quien recuerde en la junta del
+          lunes. Y lo que se recuerda siempre es lo que se ganó, nunca lo que se quedó parado.</p>
+      </article>
+    </div>
+
+    <div class="rejilla rejilla--2 tras-par">
+      <div class="tarjeta tarjeta--plana tarjeta--comoda">
+        <div class="contraste__cab">
+          <span class="chip">Hoy</span>
+          <h3>Cómo se ve hoy</h3>
+        </div>
+        <ul class="lista lista--no">
+          <li>El seguimiento depende de que alguien se acuerde.</li>
+          <li>Las conversaciones importantes están en tres celulares distintos.</li>
+          <li>Cada quien tiene su propia lista de pendientes, y ninguna se comparte.</li>
+          <li>No sabes cuántas cotizaciones llevan más de cinco días sin respuesta.</li>
+          <li>Prometes existencias mirando otra pantalla, o de memoria.</li>
+          <li>La comisión se discute a mano, mes con mes, con el Excel de cada quien.</li>
+        </ul>
+      </div>
+      <div class="tarjeta tarjeta--comoda tarjeta--alta">
+        <div class="contraste__cab">
+          <span class="chip chip--azul">Con IncSales</span>
+          <h3>Cómo se ve con el CRM de IncSales</h3>
+        </div>
+        <ul class="lista">
+          <li>Cada negocio tiene etapa, valor, dueño y fecha del último movimiento.</li>
+          <li>El WhatsApp entrante se guarda solo en la bitácora del negocio abierto.</li>
+          <li>El Inicio enseña cuántos negocios están parados en cada punto del proceso.</li>
+          <li>Las tareas tienen responsable y fecha, y se ven en la misma pantalla.</li>
+          <li>Y si además llevas los inventarios aquí, el buscador te dice «tienes 48 · proveedor 40
+            en 5 d» antes de que prometas nada.</li>
+          <li>La comisión se calcula sola, y sobre lo que de verdad se cobró.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================== INTERESADOS -->
+<section class="bloque bloque--hundido" id="interesados">
+  <div class="envoltura envoltura--ancha">
+    <div class="encabezado">
+      <p class="sobre-titulo">Bandeja de interesados</p>
+      <h2>Entre por donde entre, cae en la misma bandeja</h2>
+      <p>Un interesado que llega por Google Ads y otro que escribe por WhatsApp son el mismo tipo de
+        registro. Nadie tiene que copiarlo de un lado a otro.</p>
+    </div>
+
+    <div class="par par--apoyo par--arriba">
+      <div>
+        <h3>Cuatro puertas, una sola fila</h3>
+        <p class="suave">La pantalla de interesados es la primera parada de todo lo que llega. Ahí decides a quién
+          se le hace caso hoy, quién se convierte en negocio y quién no era para ti.</p>
+        <ul class="lista">
+          <li><strong>Google Ads:</strong> el clic que pagaste termina en una ficha, no en un correo
+            que nadie abre.</li>
+          <li><strong>Formularios de tu sitio:</strong> se arman con un constructor visual de 14 tipos
+            de campo, en versión incrustada, de ventana emergente o flotante. Copias el código, lo
+            pegas y el interesado entra al instante.</li>
+          <li><strong>WhatsApp:</strong> el número entrante se cruza contra tus contactos y trae hasta
+            el nombre del perfil de Meta como borrador.</li>
+          <li><strong>Captura manual:</strong> la llamada, la feria y el conocido del cliente también
+            entran aquí, en veinte segundos y al mismo embudo.</li>
+        </ul>
+        <a class="enlace-ir ir-seccion" href="whatsapp.html">Ver cómo se llenan los formularios y WhatsApp <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg></a>
+      </div>
+
+      <!-- Maqueta 1 · bandeja de interesados -->
+      <div class="marco maqueta" role="img"
+           aria-label="Bandeja de interesados de IncSales: doce sin atender, con quién es cada uno, por qué puerta entró —Google Ads, WhatsApp, formulario o captura manual—, qué pidió y su estado; abajo, 38 interesados del mes, 26 ya convertidos en negocio y 4 horas de tiempo en contestar.">
+        <div class="marco__barra"><div class="marco__puntos" aria-hidden="true"><i></i><i></i><i></i></div><span class="marco__url">erp.tuempresa.com/interesados</span></div>
+        <div class="app">
+          <aside class="lateral">
+            <div class="lateral__marca">
+              <img src="assets/logos/incsales-icono.svg" alt="" width="800" height="800">
+              <b>IncSales</b>
+            </div>
+            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9.6V21h13V9.6"/></svg> Inicio</div>
+            <p class="lateral__grupo">Vender</p>
+            <div class="lateral__item" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16M7 12h10M10 19h4"/></svg> Interesados <span class="lateral__insignia">12</span></div>
+            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="5.5" height="16" rx="1"/><rect x="10.3" y="4" width="5.5" height="11" rx="1"/><rect x="17.6" y="4" width="3.4" height="7" rx="1"/></svg> Negocios</div>
+            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M4.6 20a7.4 7.4 0 0 1 14.8 0"/></svg> Clientes</div>
+            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 13h6M9 17h4"/></svg> Cotizaciones</div>
+            <p class="lateral__grupo">Canales</p>
+            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.8a8.4 8.4 0 0 1-12.3 7.5L3.6 20.6l1.4-4.8A8.4 8.4 0 1 1 21 11.8z"/></svg> WhatsApp</div>
+            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="m3.6 7.5 8.4 6 8.4-6"/></svg> Correo</div>
+            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h4"/></svg> Formularios</div>
+          </aside>
+          <div class="lienzo-app">
+            <div class="cabecera-app">
+              <div class="buscador"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.6 4.6"/></svg> Busca un interesado, cliente o folio <kbd>⌘K</kbd></div>
+              <div class="pagina__acciones">
+                <span class="estado estado--ok">WhatsApp conectado</span>
+                <span class="avatar avatar--claro" aria-hidden="true">AR</span>
+              </div>
+            </div>
+            <div class="pagina">
+              <div class="pagina__cabeza">
+                <div>
+                  <p class="pagina__titulo">Interesados</p>
+                  <p class="pagina__sub">12 sin atender</p>
+                </div>
+                <div class="pagina__acciones">
+                  <span class="chip chip--azul">Nuevo</span>
+                </div>
+              </div>
+              <div class="datos-caja">
+                <div class="datos-scroll">
+                  <table class="datos">
+                    <thead>
+                      <tr>
+                        <th scope="col">Quién</th>
+                        <th scope="col">Origen</th>
+                        <th scope="col">Qué pidió</th>
+                        <th scope="col">Estado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="fuerte">Hospital San Javier</td>
+                        <td>Google Ads</td>
+                        <td>Guante nitrilo</td>
+                        <td><span class="chip chip--ambar">Sin atender</span></td>
+                      </tr>
+                      <tr>
+                        <td class="fuerte">Ferretería Cruz</td>
+                        <td>WhatsApp</td>
+                        <td>Cable Cat6</td>
+                        <td><span class="chip chip--verde">Contestado</span></td>
+                      </tr>
+                      <tr>
+                        <td class="fuerte">Constructora Nod</td>
+                        <td>Formulario</td>
+                        <td>Canaleta y jacks</td>
+                        <td><span class="chip chip--azul">A negocio</span></td>
+                      </tr>
+                      <tr>
+                        <td class="fuerte">Grupo Alfa</td>
+                        <td>Captura manual</td>
+                        <td>Pintura obra</td>
+                        <td><span class="chip chip--verde">Contestado</span></td>
+                      </tr>
+                      <tr>
+                        <td class="fuerte">Casther</td>
+                        <td>Google Ads</td>
+                        <td>Cubrebocas</td>
+                        <td><span class="chip">Descartado</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="kpis">
+                <div class="kpi">
+                  <p class="kpi__q">Este mes</p>
+                  <p class="kpi__n">38</p>
+                  <p class="kpi__d suave">interesados recibidos</p>
+                </div>
+                <div class="kpi">
+                  <p class="kpi__q">Ya son negocio</p>
+                  <p class="kpi__n">26</p>
+                  <p class="kpi__d suave">pasaron al embudo</p>
+                </div>
+                <div class="kpi">
+                  <p class="kpi__q">En contestar</p>
+                  <p class="kpi__n">4 h</p>
+                  <p class="kpi__d suave">promedio del equipo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="aviso tras-par">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="icono-linea" aria-hidden="true"><path d="M12 3.5 5 6.2v5.4c0 3.8 2.7 6.9 7 8.2 4.3-1.3 7-4.4 7-8.2V6.2z"/><path d="m9.3 12 1.9 1.9 3.7-3.8"/></svg>
+      <div><b>Dos candados que casi nadie pone</b>
+        Cada formulario trae <strong>dominios autorizados</strong>: si el envío no viene de un sitio
+        que tú diste de alta, no se acepta. Y el alta usa <strong>doble opt-in</strong>: llega un
+        correo de confirmación y un solo clic confirma todas las listas de ese formulario. Tu base
+        crece con gente que sí quiso estar ahí.</div>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================== TABLERO DE NEGOCIOS -->
+<section class="bloque" id="negocios">
+  <div class="envoltura envoltura--ancha">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">Tablero de negocios</p>
+      <h2>Arrastras la tarjeta y el sistema se entera de todo</h2>
+      <p>Cada tarjeta es un negocio: su empresa, su valor en juego, su dueño y su etapa. Mover una
+        tarjeta cambia la probabilidad, mueve el pronóstico y queda escrito en la bitácora.</p>
+    </div>
+
+    <!-- Maqueta 2 · tablero de negocios -->
+    <div class="marco maqueta aparecer" role="img"
+         aria-label="Tablero de negocios de IncSales sobre el pipeline Ventas, con $3,383,210 en juego repartidos en cuatro etapas —interesado recibido al 10 %, requerimientos al 25 %, cotizando al 40 % y cotización enviada al 60 %— y el detalle de los negocios que llevan más días sin moverse.">
+      <div class="marco__barra"><div class="marco__puntos" aria-hidden="true"><i></i><i></i><i></i></div><span class="marco__url">erp.tuempresa.com/negocios</span></div>
+      <div class="app">
+        <aside class="lateral">
+          <div class="lateral__marca">
+            <img src="assets/logos/incsales-icono.svg" alt="" width="800" height="800">
+            <b>IncSales</b>
+          </div>
+          <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9.6V21h13V9.6"/></svg> Inicio</div>
+          <p class="lateral__grupo">Vender</p>
+          <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16M7 12h10M10 19h4"/></svg> Interesados</div>
+          <div class="lateral__item" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="5.5" height="16" rx="1"/><rect x="10.3" y="4" width="5.5" height="11" rx="1"/><rect x="17.6" y="4" width="3.4" height="7" rx="1"/></svg> Negocios</div>
+          <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M4.6 20a7.4 7.4 0 0 1 14.8 0"/></svg> Clientes</div>
+          <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 13h6M9 17h4"/></svg> Cotizaciones</div>
+          <p class="lateral__grupo">Analítica</p>
+          <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3.8v16.4h16"/><path d="m7.5 15 4-5 3 3 5-7"/></svg> Ventas</div>
+          <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18l-2.3-1.6-2.4 1.6-2.3-1.6-2.3 1.6L7.3 19 5 21z"/><path d="M9 8.5h6M9 12.5h6"/></svg> Comisiones</div>
+          <p class="lateral__grupo">Ajustes</p>
+          <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 7h15M4.5 12h15M4.5 17h15"/><circle cx="9.2" cy="7" r="1.9"/><circle cx="15" cy="12" r="1.9"/><circle cx="8" cy="17" r="1.9"/></svg> Pipelines</div>
+          <div class="lateral__cuenta">
+            <span class="avatar" aria-hidden="true">AR</span>
+            <div><b>Ana Ruiz</b><span class="apunte">Vendedora</span></div>
+          </div>
+        </aside>
+        <div class="lienzo-app">
+          <div class="cabecera-app">
+            <div class="buscador"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.6 4.6"/></svg> Busca un negocio, cliente o folio <kbd>⌘K</kbd></div>
+            <div class="pagina__acciones">
+              <span class="estado estado--curso">Pipeline Ventas</span>
+              <span class="avatar avatar--claro" aria-hidden="true">AR</span>
+            </div>
+          </div>
+          <div class="pagina">
+            <div class="pagina__cabeza">
+              <div>
+                <p class="pagina__titulo">Negocios · Pipeline Ventas</p>
+                <p class="pagina__sub">Etapas configurables, con su probabilidad</p>
+              </div>
+              <div class="pagina__acciones">
+                <span class="chip chip--azul">$3,383,210 en juego</span>
+              </div>
+            </div>
+            <div class="tablero">
+              <div class="tablero__col">
+                <div class="tablero__cab">Interesado recibido <b>10 %</b></div>
+                <div class="tablero__ficha"><b>Hospital San Javier</b><span>$248,900 · Ads · Ana</span></div>
+                <div class="tablero__ficha"><b>Ferretería Cruz</b><span>$18,400 · WhatsApp · Luis</span></div>
+                <div class="tablero__ficha"><b>Constructora Nod</b><span>$96,000 · Formulario</span></div>
+              </div>
+              <div class="tablero__col">
+                <div class="tablero__cab">Requerimientos <b>25 %</b></div>
+                <div class="tablero__ficha"><b>Grupo Alfa</b><span>$92,750 · lista de obra</span></div>
+                <div class="tablero__ficha"><b>Romar</b><span>$41,600 · pide plano</span></div>
+              </div>
+              <div class="tablero__col">
+                <div class="tablero__cab">Cotizando <b>40 %</b></div>
+                <div class="tablero__ficha"><b>Distrimedic</b><span>$184,320 · 3 proveedores</span></div>
+                <div class="tablero__ficha"><b>Casther</b><span>$61,200 · comparando IVA</span></div>
+              </div>
+              <div class="tablero__col">
+                <div class="tablero__cab">Enviada <b>60 %</b></div>
+                <div class="tablero__ficha"><b>Grupo Médico GDL</b><span>$74,110 · 5 días sin mover</span></div>
+                <div class="tablero__ficha"><b>TecnoCableado</b><span>$212,480 · por autorizar</span></div>
+              </div>
+            </div>
+            <div class="datos-caja">
+              <div class="datos-scroll">
+                <table class="datos">
+                  <thead>
+                    <tr>
+                      <th scope="col">Negocio</th>
+                      <th scope="col">Etapa</th>
+                      <th scope="col" class="n">Valor</th>
+                      <th scope="col">Último movimiento</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="fuerte">Grupo Médico GDL</td>
+                      <td>Cotización enviada</td>
+                      <td class="n">$74,110</td>
+                      <td><span class="chip chip--ambar">Hace 5 días</span></td>
+                    </tr>
+                    <tr>
+                      <td class="fuerte">Distrimedic</td>
+                      <td>Cotizando</td>
+                      <td class="n">$184,320</td>
+                      <td><span class="chip chip--verde">Hoy</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="par par--arriba tras-par">
+      <div>
+        <h3>Los pipelines son tuyos, no del fabricante</h3>
+        <p class="suave">No vendes igual por Google Ads que por licitación que en mostrador. Por eso puedes tener
+          varios pipelines, cada uno con sus etapas, y cada etapa con tres cosas que casi nadie
+          configura bien:</p>
+        <ul class="lista">
+          <li><strong>Su paso del proceso:</strong> captación, cotización, compra o entrega. Así el
+            mapa del Inicio sigue funcionando aunque le cambies el nombre a la etapa.</li>
+          <li><strong>Su probabilidad:</strong> el pronóstico deja de ser una corazonada y pasa a ser
+            una suma.</li>
+          <li><strong>Si cierra ganando o perdiendo:</strong> lo que decide qué entra al reporte de
+            ganados y qué se va a la lista de perdidos.</li>
+        </ul>
+        <p class="suave tras-rejilla">Y no hay que empezar de cero: en la prueba de migración del HubSpot de Distrimedic
+          trajimos sus <strong>4 pipelines</strong> —Leads Google Ads, Pre Registro, Alta de Cliente y
+          Ventas— con sus <strong>20 etapas</strong>, cada una con su probabilidad y su forma de
+          cerrar.</p>
+        <div class="acciones">
+          <a class="btn btn--fantasma" href="migracion.html">Cómo traemos tu embudo actual</a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Ejemplo de configuración de un pipeline</h3>
+        <div class="tabla-caja tras-tabla">
+          <div class="tabla-scroll">
+            <table class="tabla">
+              <caption>Ejemplo de configuración. Las etapas, sus nombres y sus probabilidades las
+                defines tú en Configuración › Pipelines.</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Etapa</th>
+                  <th scope="col">Paso del proceso</th>
+                  <th scope="col" class="n">Probabilidad</th>
+                  <th scope="col">Al llegar aquí</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Interesado recibido</td><td>Captación</td><td class="n clave">10 %</td><td>Abierto</td></tr>
+                <tr><td>Requerimientos definidos</td><td>Captación</td><td class="n clave">25 %</td><td>Abierto</td></tr>
+                <tr><td>Cotizando con proveedores</td><td>Cotización</td><td class="n clave">40 %</td><td>Abierto</td></tr>
+                <tr><td>Cotización enviada</td><td>Cotización</td><td class="n clave">60 %</td><td>Abierto</td></tr>
+                <tr><td>Pedido confirmado</td><td>Compra</td><td class="n clave">85 %</td><td>Abierto</td></tr>
+                <tr><td>Por entregar</td><td>Entrega</td><td class="n clave">95 %</td><td>Abierto</td></tr>
+                <tr><td>Entregado y facturado</td><td>Entrega</td><td class="n clave">100 %</td><td class="si">Cierra ganando</td></tr>
+                <tr><td>Perdido con el cliente</td><td>Cotización</td><td class="n clave">0 %</td><td class="no">Cierra perdiendo</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tira tras-tira aparecer">
+      <div class="cifra">
+        <p class="cifra__n">800</p>
+        <p class="cifra__q">negocios traídos de HubSpot, cada uno con su etapa</p>
+        <p class="cifra__f">Prueba de migración de Distrimedic</p>
+      </div>
+      <div class="cifra">
+        <p class="cifra__n clave">$14,759,302.27</p>
+        <p class="cifra__q">de valor migrado, cuadrado al centavo</p>
+        <p class="cifra__f">Contra el reporte original de HubSpot</p>
+      </div>
+      <div class="cifra">
+        <p class="cifra__n">20</p>
+        <p class="cifra__q">etapas con su probabilidad y su forma de cerrar</p>
+        <p class="cifra__f">Repartidas en 4 pipelines</p>
+      </div>
+      <div class="cifra">
+        <p class="cifra__n">686</p>
+        <p class="cifra__q">contactos migrados: todos, ninguno perdido</p>
+        <p class="cifra__f">Y 241 empresas, ya sin fichas vacías</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== BITÁCORA -->
+<section class="bloque bloque--hundido" id="bitacora">
+  <div class="envoltura envoltura--ancha">
+    <div class="encabezado">
+      <p class="sobre-titulo">La bitácora</p>
+      <h2>Lo que se dijo queda escrito, aunque nadie se acuerde de escribirlo</h2>
+      <p>Cada negocio tiene su expediente: correos, notas, cambios de etapa, cotizaciones enviadas y
+        las conversaciones de WhatsApp. Cuando alguien pregunta «¿en qué quedamos?», la respuesta
+        está en una sola pantalla.</p>
+    </div>
+
+    <div class="par par--arriba">
+      <!-- Maqueta 3 · bitácora de un negocio -->
+      <div class="marco maqueta" role="img"
+           aria-label="Bitácora del negocio de Hospital San Javier por $248,900 en etapa de cotización enviada: la conversación de WhatsApp guardada sola y el registro de actividades con quién la hizo, cuándo y si entró automática, del sistema o a mano.">
+        <div class="marco__barra"><div class="marco__puntos" aria-hidden="true"><i></i><i></i><i></i></div><span class="marco__url">erp.tuempresa.com/negocios/1421</span></div>
+        <div class="pagina">
+          <div class="pagina__cabeza">
+            <div>
+              <p class="pagina__titulo">Hospital San Javier · $248,900</p>
+              <p class="pagina__sub">NEG-01421 · Ana Ruiz</p>
+            </div>
+            <div class="pagina__acciones">
+              <span class="chip chip--azul">Cotización enviada</span>
+            </div>
+          </div>
+          <div class="charla">
+            <div class="burbuja"><strong>Mariana · Compras</strong>Buen día, ¿me confirmas si el precio del guante nitrilo sigue igual que la semana pasada?</div>
+            <div class="burbuja burbuja--mia">Sí, sigue igual: COT-01421 por $184,320 con IVA, vigencia 15 días.</div>
+            <div class="burbuja"><strong>Mariana · Compras</strong>Perfecto, lo paso hoy a autorización con el Dr. Ontiveros.</div>
+          </div>
+          <div class="datos-caja">
+            <div class="datos-scroll">
+              <table class="datos">
+                <thead>
+                  <tr>
+                    <th scope="col">Actividad</th>
+                    <th scope="col">Quién</th>
+                    <th scope="col">Cuándo</th>
+                    <th scope="col">Origen</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="fuerte">Mensaje de WhatsApp</td>
+                    <td>Mariana</td>
+                    <td>Hoy 10:42</td>
+                    <td><span class="chip chip--verde">Automático</span></td>
+                  </tr>
+                  <tr>
+                    <td class="fuerte">Cotización COT-01421</td>
+                    <td>Ana</td>
+                    <td>Ayer 17:05</td>
+                    <td><span class="chip chip--azul">Sistema</span></td>
+                  </tr>
+                  <tr>
+                    <td class="fuerte">Cambio a «Enviada»</td>
+                    <td>Ana</td>
+                    <td>Ayer 17:06</td>
+                    <td><span class="chip chip--azul">Sistema</span></td>
+                  </tr>
+                  <tr>
+                    <td class="fuerte">Nota: pide factura a 30 días</td>
+                    <td>Luis</td>
+                    <td>Lun 12:20</td>
+                    <td><span class="chip">A mano</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3>El WhatsApp entrante cae solo en su lugar</h3>
+        <p class="suave">Cuando llega un mensaje, el sistema cruza el teléfono contra tus contactos. Si esa persona
+          tiene un negocio abierto, el mensaje se guarda en su bitácora sin que nadie lo copie ni lo
+          reenvíe. Si todavía no es contacto, la puedes atender igual y darla de alta sin perder el
+          hilo: llega hasta el nombre de su perfil de Meta como borrador.</p>
+        <ul class="lista">
+          <li><strong>Contestar es hacerse cargo:</strong> si la conversación no la llevaba nadie,
+            queda asignada a quien respondió.</li>
+          <li><strong>Los avisos no se van solos:</strong> se quedan hasta que alguien les da a la X.
+            Entrar a la pantalla no cuenta como leer; responder sí.</li>
+          <li><strong>Hilos que se archivan:</strong> abierta, cerrada, spam o papelera. Un mensaje
+            nuevo reabre una cerrada, pero nunca una marcada como spam.</li>
+          <li><strong>Correo del vendedor:</strong> cada usuario puede conectar su buzón por IMAP y
+            trabajar sus hilos, carpetas, enviados y recibidos sin salir del CRM.</li>
+        </ul>
+        <div class="aviso aviso--aviso tras-rejilla">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="icono-linea" aria-hidden="true"><path d="M12 9v4.5M12 17v.1"/><path d="M10.3 3.9 2.6 17.5a1.9 1.9 0 0 0 1.7 2.9h15.4a1.9 1.9 0 0 0 1.7-2.9L13.7 3.9a1.9 1.9 0 0 0-3.4 0z"/></svg>
+          <div><b>Lo que no hace, para que no te lo imagines</b>
+            IncSales no marca por teléfono ni graba llamadas: la llamada se registra a mano como una
+            actividad. Tampoco hay todavía bitácora de auditoría multiusuario a nivel de sistema. Lo
+            que sí queda solo es el WhatsApp, el correo y todo lo que el sistema genera.</div>
+        </div>
+        <a class="enlace-ir ir-seccion" href="whatsapp.html">Ver la bandeja de WhatsApp completa <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== CONTACTOS Y EMPRESAS -->
+<section class="bloque" id="contactos">
+  <div class="envoltura envoltura--ancha">
+    <div class="encabezado">
+      <p class="sobre-titulo">Contactos y empresas</p>
+      <h2>Quien pide no es quien autoriza, y el sistema lo sabe</h2>
+      <p>En una venta B2B casi nunca decide una sola persona. El que te pide la cotización, el que la
+        autoriza y el que paga suelen ser tres. Un CRM que solo guarda «un contacto por cliente» te
+        obliga a inventar el resto.</p>
+    </div>
+
+    <div class="par par--apoyo par--arriba">
+      <div>
+        <h3>La empresa manda, las personas cuelgan de ella</h3>
+        <p class="suave">El negocio se abre contra la empresa, y dentro de la empresa viven todas las personas con
+          las que hablas, cada una con su puesto, su teléfono y su correo. Cuando el comprador cambia
+          de trabajo, no se te cae la cuenta.</p>
+        <ul class="lista">
+          <li>Varias personas por empresa: quien pide, quien autoriza y quien recibe.</li>
+          <li>Clientes, contactos y <strong>proveedores</strong> en el mismo lugar, cada proveedor con
+            su desempeño.</li>
+          <li>Las listas de correo se arman sobre los contactos que ya existen, no sobre un directorio
+            aparte que nadie mantiene.</li>
+          <li>Un rebote permanente o una queja dan de baja al contacto solo; un buzón lleno no.</li>
+        </ul>
+        <div class="tarjeta tarjeta--plana tarjeta--comoda tras-rejilla">
+          <div class="cifra">
+            <p class="cifra__n">439 → 241</p>
+            <p class="cifra__q">empresas entraron y empresas quedaron</p>
+          </div>
+          <p class="suave tras-rejilla">En la prueba de migración de Distrimedic, 198 de sus fichas de empresa estaban vacías.
+            Migrar no es copiar: es la oportunidad de tirar lo que ya no sirve. Los 686 contactos, en
+            cambio, se trajeron todos.</p>
+        </div>
+      </div>
+
+      <!-- Maqueta 4 · ficha de empresa -->
+      <div class="marco maqueta" role="img"
+           aria-label="Ficha de la empresa Hospital San Javier con lista de precios de mayoreo: cuatro personas de contacto con su puesto, su papel en la compra —pide, autoriza, recibe y paga— y su canal; abajo, 7 negocios históricos, $1.2 M comprado en doce meses y 30 días de crédito acordado.">
+        <div class="marco__barra"><div class="marco__puntos" aria-hidden="true"><i></i><i></i><i></i></div><span class="marco__url">erp.tuempresa.com/clientes/hospital-san-javier</span></div>
+        <div class="pagina">
+          <div class="pagina__cabeza">
+            <div>
+              <p class="pagina__titulo">Hospital San Javier</p>
+              <p class="pagina__sub">Cliente desde 2024 · Guadalajara</p>
+            </div>
+            <div class="pagina__acciones">
+              <span class="chip chip--azul">Lista: Mayoreo</span>
+            </div>
+          </div>
+          <div class="datos-caja">
+            <div class="datos-scroll">
+              <table class="datos">
+                <thead>
+                  <tr>
+                    <th scope="col">Persona</th>
+                    <th scope="col">Puesto</th>
+                    <th scope="col">Papel</th>
+                    <th scope="col">Canal</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="fuerte">Mariana Robles</td>
+                    <td>Compras</td>
+                    <td>Pide</td>
+                    <td><span class="chip chip--verde">WhatsApp</span></td>
+                  </tr>
+                  <tr>
+                    <td class="fuerte">Dr. Ontiveros</td>
+                    <td>Dirección médica</td>
+                    <td>Autoriza</td>
+                    <td><span class="chip chip--azul">Correo</span></td>
+                  </tr>
+                  <tr>
+                    <td class="fuerte">Jorge Lara</td>
+                    <td>Almacén</td>
+                    <td>Recibe</td>
+                    <td><span class="chip">Teléfono</span></td>
+                  </tr>
+                  <tr>
+                    <td class="fuerte">Sofía Vega</td>
+                    <td>Cuentas por pagar</td>
+                    <td>Paga</td>
+                    <td><span class="chip chip--azul">Correo</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="kpis">
+            <div class="kpi">
+              <p class="kpi__q">Negocios históricos</p>
+              <p class="kpi__n">7</p>
+              <p class="kpi__d suave">desde el alta</p>
+            </div>
+            <div class="kpi">
+              <p class="kpi__q">Comprado en 12 meses</p>
+              <p class="kpi__n">$1.2 M</p>
+              <p class="kpi__d suave">facturado y cobrado</p>
+            </div>
+            <div class="kpi">
+              <p class="kpi__q">Crédito acordado</p>
+              <p class="kpi__n">30 d</p>
+              <p class="kpi__d suave">sobre factura timbrada</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ TAREAS Y MAPA DEL PROCESO -->
+<section class="bloque bloque--hundido" id="tareas">
+  <div class="envoltura envoltura--ancha">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">Tareas y mapa del proceso</p>
+      <h2>El Inicio te dice qué está parado y desde cuándo</h2>
+      <p>La pantalla de Inicio no es un tablero bonito: es el mapa del proceso completo con cuántos
+        negocios están detenidos en cada punto. Ahí se ve, sin junta de por medio, dónde se está
+        atorando el mes.</p>
+    </div>
+
+    <div class="cadena aparecer">
+      <div class="cadena__eslabon">
+        <p class="cadena__n">01</p>
+        <strong>Captación</strong>
+        <span>interesado recibido y requerimientos definidos</span>
+      </div>
+      <div class="cadena__eslabon">
+        <p class="cadena__n">02</p>
+        <strong>Cotización</strong>
+        <span>cotizando con proveedores y cotización enviada</span>
+      </div>
+      <div class="cadena__eslabon">
+        <p class="cadena__n">03</p>
+        <strong>Compra</strong>
+        <span>pedido confirmado, orden de compra, en proceso</span>
+      </div>
+      <div class="cadena__eslabon">
+        <p class="cadena__n">04</p>
+        <strong>Entrega</strong>
+        <span>facturar, por entregar y entregado</span>
+      </div>
+    </div>
+
+    <div class="par par--apoyo par--arriba tras-par">
+      <div>
+        <h3>Pendientes con nombre y con fecha</h3>
+        <p class="suave">Las tareas tienen responsable y vencimiento, y viven pegadas al negocio que las provocó. El
+          Inicio junta tres listas de pendientes para que nadie tenga que buscarlas.</p>
+        <ul class="lista">
+          <li>Cuántos negocios están parados en cada paso del proceso.</li>
+          <li>Métricas filtrables por 7, 30 o 90 días, por mes, por año o por el rango que quieras.</li>
+          <li>Tres listas de pendientes en la misma pantalla, para empezar el día por ahí.</li>
+          <li>El negocio parado se ve, aunque nadie lo reporte: el sistema cuenta los días desde el
+            último movimiento.</li>
+        </ul>
+        <a class="enlace-ir ir-seccion" href="metodo.html">Ver el proceso completo del Método IncSales <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg></a>
+      </div>
+
+      <!-- Maqueta 5 · inicio con el mapa del proceso -->
+      <div class="marco maqueta" role="img"
+           aria-label="Pantalla de Inicio de IncSales con el mapa del proceso de los últimos 30 días: 14 negocios en captación, 22 en cotización, 8 en compra y 11 en entrega, y la lista de pendientes con su responsable, su fecha de vencimiento y su estado.">
+        <div class="marco__barra"><div class="marco__puntos" aria-hidden="true"><i></i><i></i><i></i></div><span class="marco__url">erp.tuempresa.com</span></div>
+        <div class="pagina">
+          <div class="pagina__cabeza">
+            <div>
+              <p class="pagina__titulo">Inicio · Mapa del proceso</p>
+              <p class="pagina__sub">Jueves 17 de septiembre de 2026</p>
+            </div>
+            <div class="pagina__acciones">
+              <span class="chip chip--azul">Últimos 30 días</span>
+            </div>
+          </div>
+          <div class="tablero">
+            <div class="tablero__col">
+              <div class="tablero__cab">Captación <b>14</b></div>
+              <div class="tablero__ficha"><b>6 sin atender</b><span>llevan más de 2 días</span></div>
+            </div>
+            <div class="tablero__col">
+              <div class="tablero__cab">Cotización <b>22</b></div>
+              <div class="tablero__ficha"><b>9 enviadas</b><span>sin respuesta del cliente</span></div>
+            </div>
+            <div class="tablero__col">
+              <div class="tablero__cab">Compra <b>8</b></div>
+              <div class="tablero__ficha"><b>3 esperando</b><span>orden con el proveedor</span></div>
+            </div>
+            <div class="tablero__col">
+              <div class="tablero__cab">Entrega <b>11</b></div>
+              <div class="tablero__ficha"><b>5 por facturar</b><span>ya se entregaron</span></div>
+            </div>
+          </div>
+          <div class="datos-caja">
+            <div class="datos-scroll">
+              <table class="datos">
+                <thead>
+                  <tr>
+                    <th scope="col">Pendiente</th>
+                    <th scope="col">Responsable</th>
+                    <th scope="col">Vence</th>
+                    <th scope="col">Estado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="fuerte">Hablar a Grupo Médico GDL</td>
+                    <td>Ana</td>
+                    <td>Hoy</td>
+                    <td><span class="chip chip--ambar">Vence hoy</span></td>
+                  </tr>
+                  <tr>
+                    <td class="fuerte">Mandar plano a Romar</td>
+                    <td>Luis</td>
+                    <td>Mañana</td>
+                    <td><span class="chip chip--azul">En tiempo</span></td>
+                  </tr>
+                  <tr>
+                    <td class="fuerte">Cerrar comparativo Casther</td>
+                    <td>Ana</td>
+                    <td>Ayer</td>
+                    <td><span class="chip chip--ambar">Atrasada</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================================================== METAS Y COMISIONES -->
+<section class="bloque bloque--tinta" id="metas">
+  <div class="envoltura envoltura--ancha">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">Metas y comisiones</p>
+      <h2>La comisión se paga sobre lo cobrado, no sobre lo prometido</h2>
+      <p>Es la diferencia entre premiar al que vende y premiar al que además cobra. En IncSales la
+        comisión se fija sobre lo que de verdad entró, así que el vendedor tiene una razón para
+        perseguir la factura, no solo el pedido.</p>
+    </div>
+
+    <div class="tabla-caja aparecer">
+      <div class="tabla-scroll">
+        <table class="tabla">
+          <caption>Números de ejemplo para esta maqueta, con una comisión del 3 % sobre lo cobrado.
+            El porcentaje y la meta los defines tú por usuario.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Vendedor</th>
+              <th scope="col" class="n">Meta del mes</th>
+              <th scope="col" class="n">Cotizado</th>
+              <th scope="col" class="n">Ganado</th>
+              <th scope="col" class="n">Cobrado</th>
+              <th scope="col" class="n tabla__col-nuestra">Comisión sobre lo cobrado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ana Ruiz</td>
+              <td class="n clave">$600,000</td>
+              <td class="n clave">$1,142,300</td>
+              <td class="n clave">$648,900</td>
+              <td class="n clave">$612,400</td>
+              <td class="n clave tabla__col-nuestra">$18,372</td>
+            </tr>
+            <tr>
+              <td>Luis Serrano</td>
+              <td class="n clave">$450,000</td>
+              <td class="n clave">$832,700</td>
+              <td class="n clave">$471,100</td>
+              <td class="n clave">$298,600</td>
+              <td class="n clave tabla__col-nuestra">$8,958</td>
+            </tr>
+            <tr>
+              <td>Karla Méndez</td>
+              <td class="n clave">$450,000</td>
+              <td class="n clave">$604,150</td>
+              <td class="n clave">$389,200</td>
+              <td class="n clave">$389,200</td>
+              <td class="n clave tabla__col-nuestra">$11,676</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="rejilla rejilla--3 tras-par">
+      <article class="tarjeta tarjeta--tinta tarjeta--comoda">
+        <span class="icono-caja icono-caja--tinta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5h17l-6.6 7.7V19l-3.8 1.9v-8.7z"/></svg></span>
+        <h3>Meta por vendedor</h3>
+        <p>Cada usuario tiene su meta de venta del periodo. El avance se ve contra lo ganado y contra
+          lo cobrado, no contra lo que se prometió en la junta.</p>
+      </article>
+      <article class="tarjeta tarjeta--tinta tarjeta--comoda">
+        <span class="icono-caja icono-caja--tinta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14v18l-2.3-1.6-2.4 1.6-2.3-1.6-2.3 1.6L7.3 19 5 21z"/><path d="M9 8.5h6M9 12.5h4"/></svg></span>
+        <h3>Ligada a la cobranza</h3>
+        <p>Como el CRM y la facturación son el mismo sistema, la comisión sabe qué facturas ya se
+          pagaron. Nadie tiene que conciliar dos reportes a fin de mes.</p>
+      </article>
+      <article class="tarjeta tarjeta--tinta tarjeta--comoda">
+        <span class="icono-caja icono-caja--tinta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3.8v16.4h16"/><path d="m7.5 15 4-5 3 3 5-7"/></svg></span>
+        <h3>Su propia pantalla</h3>
+        <p>La analítica de comisiones enseña el cálculo por vendedor y por periodo. Se revisa una vez,
+          se paga y se acabó la discusión del Excel.</p>
+      </article>
+    </div>
+
+    <p class="apunte nota-pie">Metas por vendedor y comisiones vienen en <strong>CRM Crecimiento</strong> y en los planes
+      de la familia Completo.</p>
+  </div>
+</section>
+
+<!-- ============================================================= ANALÍTICA -->
+<section class="bloque" id="analitica">
+  <div class="envoltura envoltura--ancha">
+    <div class="encabezado">
+      <p class="sobre-titulo">Analítica del embudo</p>
+      <h2>El reporte de ventas ya está hecho cuando llegas a la junta</h2>
+      <p>No hay que exportar nada ni pedirle el archivo a nadie. El embudo, los ganados contra los
+        perdidos, los mejores clientes y los productos más cotizados salen del mismo registro donde
+        se trabaja todos los días.</p>
+    </div>
+
+    <div class="par par--arriba">
+      <!-- Maqueta 6 · analítica de ventas -->
+      <div class="marco maqueta" role="img"
+           aria-label="Analítica de ventas del año en curso: 35 % de cierre, $3,383,210 en el embudo y 11 días de ciclo promedio; los ganados contra los perdidos de junio, julio y agosto, y los productos más cotizados con su porcentaje de cierre.">
+        <div class="marco__barra"><div class="marco__puntos" aria-hidden="true"><i></i><i></i><i></i></div><span class="marco__url">erp.tuempresa.com/analitica/ventas</span></div>
+        <div class="pagina">
+          <div class="pagina__cabeza">
+            <div>
+              <p class="pagina__titulo">Analítica de ventas</p>
+              <p class="pagina__sub">Sale del mismo registro, sin exportar nada</p>
+            </div>
+            <div class="pagina__acciones">
+              <span class="chip chip--azul">Año en curso</span>
+            </div>
+          </div>
+          <div class="kpis">
+            <div class="kpi">
+              <p class="kpi__q">De cierre</p>
+              <p class="kpi__n">35 %</p>
+              <p class="kpi__d suave">sobre lo cotizado</p>
+            </div>
+            <div class="kpi">
+              <p class="kpi__q">En el embudo</p>
+              <p class="kpi__n">$3,383,210</p>
+              <p class="kpi__d suave">negocios abiertos</p>
+            </div>
+            <div class="kpi">
+              <p class="kpi__q">Ciclo promedio</p>
+              <p class="kpi__n">11 d</p>
+              <p class="kpi__d suave">del alta al cierre</p>
+            </div>
+          </div>
+          <div class="datos-caja">
+            <div class="datos-scroll">
+              <table class="datos">
+                <thead>
+                  <tr>
+                    <th scope="col">Mes</th>
+                    <th scope="col" class="n">Ganados</th>
+                    <th scope="col" class="n">Importe</th>
+                    <th scope="col" class="n">Perdidos</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td class="fuerte">Junio</td><td class="n">18</td><td class="n">$1,204,800</td><td class="n">21</td></tr>
+                  <tr><td class="fuerte">Julio</td><td class="n">24</td><td class="n">$1,589,100</td><td class="n">19</td></tr>
+                  <tr><td class="fuerte">Agosto</td><td class="n">29</td><td class="n">$1,842,650</td><td class="n">17</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="datos-caja">
+            <div class="datos-scroll">
+              <table class="datos">
+                <thead>
+                  <tr>
+                    <th scope="col">Producto más cotizado</th>
+                    <th scope="col" class="n">Veces</th>
+                    <th scope="col" class="n">Importe</th>
+                    <th scope="col">Cierre</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="fuerte">Cable UTP Cat6 305 m</td>
+                    <td class="n">64</td>
+                    <td class="n">$812,400</td>
+                    <td><span class="chip chip--verde">41 %</span></td>
+                  </tr>
+                  <tr>
+                    <td class="fuerte">Guante nitrilo caja 100</td>
+                    <td class="n">51</td>
+                    <td class="n">$644,900</td>
+                    <td><span class="chip chip--verde">38 %</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3>Cuatro preguntas que por fin tienen respuesta</h3>
+        <ul class="lista">
+          <li><strong>¿Dónde se me caen los negocios?</strong> El embudo enseña cuántos entran a cada
+            etapa y cuántos salen.</li>
+          <li><strong>¿Vamos mejor o peor que el mes pasado?</strong> Ganados contra perdidos, mes por
+            mes.</li>
+          <li><strong>¿Quiénes son mis mejores clientes?</strong> Ordenados por lo que de verdad
+            compraron, no por lo que se les cotizó.</li>
+          <li><strong>¿Qué me piden y no cierro?</strong> Los productos más cotizados, con su
+            porcentaje de cierre — casi siempre ahí está el problema de precio o de existencia.</li>
+        </ul>
+        <p class="suave tras-rejilla">Y como las compras viven en el mismo sistema, hay una pregunta más que un CRM sin módulo de
+          compras no tiene con qué contestar: <strong>cuál de tus proveedores es el más
+          competitivo</strong>, medido sobre las cotizaciones que sí ganaste.</p>
+        <div class="acciones">
+          <a class="btn btn--fantasma" href="plataforma.html">Ver toda la plataforma</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================== LA VENTAJA DE SER TAMBIÉN ERP -->
+<section class="bloque bloque--hundido" id="ventaja">
+  <div class="envoltura envoltura--ancha">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">La diferencia</p>
+      <h2>Lo que cambia cuando el CRM también es el ERP</h2>
+      <p>Un CRM de ventas te ayuda a recordar que tienes que hablarle al cliente. Saber si el material
+        existe y timbrar el CFDI son tareas de un sistema administrativo, así que normalmente hay que
+        pagar y conectar dos programas. En IncSales es uno solo: el CRM y el ERP comparten el mismo
+        registro.</p>
+    </div>
+
+    <div class="par par--arriba">
+      <div>
+        <h3>Cotizar con existencias reales</h3>
+        <p class="suave">Cuando armas la cotización desde el negocio, el buscador de productos no solo trae el
+          precio: trae la disponibilidad. «Tienes 48 · Proveedor 40 en 5 d», en ámbar cuando no tienes
+          nada tuyo y en rojo cuando el dato del proveedor lleva más de una semana sin actualizarse.</p>
+        <ul class="lista">
+          <li>La lista de precios viaja con el cliente y se puede cambiar sobre el documento; se
+            recalculan los renglones y te dice cuántos se movieron y cuántos respetó porque alguien
+            los negoció a mano.</li>
+          <li>El comparativo de proveedores <strong>normaliza el IVA antes de comparar</strong>, que es
+            la forma más fácil de elegir mal si se hace a ojo.</li>
+          <li>Los costos se congelan al pasarlos a la cotización del cliente: lo que enviaste queda
+            igual para siempre, con el enlace a su origen.</li>
+        </ul>
+
+        <h3 class="tras-par">Facturar desde el mismo negocio</h3>
+        <p class="suave">Cotización, pedido, remisión y factura CFDI 4.0 tienen la misma forma y se encadenan sin
+          recapturar nada. El negocio no se cierra cuando el cliente dice que sí: se cierra cuando la
+          factura está timbrada y pagada.</p>
+        <ul class="lista">
+          <li>Timbrado a través de un PAC autorizado, con complementos de pago y notas de crédito.</li>
+          <li>Multimoneda con el tipo de cambio congelado por documento, no global.</li>
+          <li>Si confirmas un pedido con algo que no tienes, la requisición de compra se levanta sola.</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="hoja" role="img"
+             aria-label="Cotización COT-01421 generada desde el negocio de Hospital San Javier, lista de precios de mayoreo en pesos: guante nitrilo, cubrebocas, bata quirúrgica y jeringa, con un total de $184,320.00 con IVA.">
+          <div class="hoja__cab">
+            <div>
+              <b>Cotización</b>
+              <p class="apunte clave">COT-01421</p>
+            </div>
+            <div class="hoja__lado">
+              <p class="apunte">Desde el negocio</p>
+              <b>Hospital San Javier</b>
+              <p class="apunte">Lista: Mayoreo · MXN</p>
+            </div>
+          </div>
+          <div class="hoja__renglon"><span>Guante nitrilo azul caja 100 pzas</span><span>40</span><span>$74,000.00</span></div>
+          <div class="hoja__renglon"><span>Cubrebocas tricapa caja 50 pzas</span><span>120</span><span>$52,800.00</span></div>
+          <div class="hoja__renglon"><span>Bata quirúrgica desechable</span><span>200</span><span>$32,000.00</span></div>
+          <div class="hoja__renglon"><span>Jeringa 5 ml caja 100 pzas</span><span>60</span><span>$25,520.00</span></div>
+          <div class="hoja__total"><span>Total con IVA</span><span>$184,320.00</span></div>
+          <p class="apunte hoja__pie">Guante: tienes 320 · Bata: proveedor 200 en 4 d · Costos congelados desde el
+            comparativo</p>
+        </div>
+
+        <div class="aviso aviso--aviso tras-par">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="icono-linea" aria-hidden="true"><path d="M12 9v4.5M12 17v.1"/><path d="M10.3 3.9 2.6 17.5a1.9 1.9 0 0 0 1.7 2.9h15.4a1.9 1.9 0 0 0 1.7-2.9L13.7 3.9a1.9 1.9 0 0 0-3.4 0z"/></svg>
+          <div><b>Seamos claros con los planes</b>
+            Los planes <strong>CRM Esencial</strong> y <strong>CRM Crecimiento</strong> traen el CRM,
+            no los inventarios ni la facturación. Para cotizar con existencias reales y timbrar desde
+            el negocio necesitas un plan de la familia Completo, o sumarle el CRM a tu plan actual por
+            <strong>$499 al mes</strong>. Es el mismo sistema con más módulos encendidos: no se migra
+            nada al subir.</div>
+        </div>
+
+        <div class="acciones">
+          <a class="btn btn--fantasma" href="cotizaciones.html">Ver cotizaciones</a>
+          <a class="btn btn--fantasma" href="facturacion.html">Ver facturación</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================== COMPARATIVA -->
+<section class="bloque" id="comparativa">
+  <div class="envoltura envoltura--ancha">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">Contra un CRM suelto</p>
+      <h2>La pregunta no es cuál CRM. Es cuántos sistemas quieres pagar.</h2>
+      <p>Un CRM por su cuenta resuelve la mitad del ciclo. La otra mitad —existencias, compras y
+        factura— acaba en otro programa, y entre los dos siempre hay alguien capturando lo mismo dos
+        veces.</p>
+    </div>
+
+    <div class="tabla-caja aparecer">
+      <div class="tabla-scroll">
+        <table class="tabla">
+          <caption>Comparación general por categoría de producto, no contra una marca en particular.
+            Verifica funciones y precios en el sitio de cada fabricante antes de decidir.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Qué necesitas</th>
+              <th scope="col" class="tabla__col-nuestra">IncSales</th>
+              <th scope="col">CRM suelto</th>
+              <th scope="col">ERP administrativo</th>
+              <th scope="col">Hoja de cálculo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Tablero de negocios con etapas y probabilidad</td><td class="tabla__col-nuestra si">Sí</td><td class="si">Sí</td><td class="no">No</td><td class="no">No</td></tr>
+            <tr><td>Bitácora con el WhatsApp entrante pegado al negocio</td><td class="tabla__col-nuestra si">Sí</td><td class="parcial">Con extras</td><td class="no">No</td><td class="no">No</td></tr>
+            <tr><td>Cotizar viendo la existencia real de tu almacén</td><td class="tabla__col-nuestra si">Sí</td><td class="no">No</td><td class="si">Sí</td><td class="no">No</td></tr>
+            <tr><td>Comparar el costo de tres proveedores antes de cotizar</td><td class="tabla__col-nuestra si">Sí</td><td class="no">No</td><td class="parcial">A veces</td><td class="no">No</td></tr>
+            <tr><td>Timbrar el CFDI 4.0 desde el mismo negocio</td><td class="tabla__col-nuestra si">Sí</td><td class="no">No</td><td class="si">Sí</td><td class="no">No</td></tr>
+            <tr><td>Comisión calculada sobre lo cobrado</td><td class="tabla__col-nuestra si">Sí</td><td class="no">No</td><td class="parcial">A veces</td><td class="parcial">A mano</td></tr>
+            <tr><td>Precio de lista en pesos, sin tipo de cambio</td><td class="tabla__col-nuestra si">Sí</td><td class="no">Casi nunca</td><td class="si">Sí</td><td class="si">Sí</td></tr>
+            <tr><td>Soporte en español con quien escribió el sistema</td><td class="tabla__col-nuestra si">Sí</td><td class="no">No</td><td class="parcial">Por distribuidor</td><td class="no">No</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="aviso tras-par">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="icono-linea" aria-hidden="true"><path d="M12 8v5M12 16.2v.1"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><b>Sobre las marcas que se mencionan en esta página</b>
+        La comparación de arriba es por <strong>categoría de producto</strong>, no contra un fabricante
+        en particular y no por precio: en esta página no publicamos cifras de precio de nadie más que
+        las nuestras. HubSpot, Aspel SAE y cualquier otra marca citada aquí son propiedad de sus
+        respectivos titulares; IncSales no tiene relación comercial con ellas ni cuenta con su
+        respaldo o patrocinio. Información pública consultada en <strong>septiembre de 2026</strong> y
+        sujeta a cambio sin aviso: antes de decidir, verifica funciones, alcance y precio vigentes en
+        el sitio oficial de cada fabricante.</div>
+    </div>
+
+    <div class="accion-centro">
+      <a class="btn btn--fantasma btn--frase" href="comparativa.html">Ver la comparativa detallada contra SAE, HubSpot y las hojas de cálculo</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ PLANES -->
+<section class="bloque bloque--hundido" id="planes">
+  <div class="envoltura envoltura--ancha">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">Precios del CRM</p>
+      <h2>Un CRM completo por menos de lo que cuesta perder una cotización</h2>
+      <p>En pesos mexicanos, con IVA incluido y sin permanencia forzosa en los planes mensuales. El
+        anual se paga por adelantado y baja 15 %. Cada tarjeta trae su precio mensual y su precio
+        anual: no hay que cambiar de vista para compararlos.</p>
+    </div>
+
+    <div class="planes">
+      <article class="plan">
+        <p class="plan__familia">CRM</p>
+        <p class="plan__nombre">CRM Esencial</p>
+        <p class="plan__quien">Para el equipo que pierde ventas por no dar seguimiento.</p>
+        <p class="plan__precio"><span class="plan__moneda">$</span><span class="plan__monto">499</span><span class="plan__periodo">/ mes</span></p>
+        <p class="plan__iva">IVA incluido · $424 al mes pagando anual</p>
+        <div class="plan__limites">
+          <span class="chip chip--azul">3 usuarios</span>
+          <span class="chip">Formularios web</span>
+        </div>
+        <ul class="lista">
+          <li>Interesados, pipelines y etapas configurables</li>
+          <li>Tablero de negocios, contactos y empresas</li>
+          <li>Bitácora, tareas y recordatorios</li>
+          <li>Formularios web con doble opt-in y correo saliente</li>
+          <li>Analítica del embudo</li>
+        </ul>
+        <a class="btn btn--fantasma btn--bloque" href="contacto.html">Agenda tu demo</a>
+        <p class="plan__nota">Sin WhatsApp Business, inventarios ni facturación</p>
+      </article>
+
+      <article class="plan">
+        <p class="plan__familia">CRM</p>
+        <p class="plan__nombre">CRM Crecimiento</p>
+        <p class="plan__quien">Cuando ya son varios vendedores y el WhatsApp es el canal de verdad.</p>
+        <p class="plan__precio"><span class="plan__moneda">$</span><span class="plan__monto">1,299</span><span class="plan__periodo">/ mes</span></p>
+        <p class="plan__iva">IVA incluido · $1,104 al mes pagando anual</p>
+        <div class="plan__limites">
+          <span class="chip chip--azul">8 usuarios</span>
+          <span class="chip chip--verde">WhatsApp Business</span>
+        </div>
+        <ul class="lista">
+          <li>Todo lo de CRM Esencial</li>
+          <li>WhatsApp Business con bandeja de equipo y campañas</li>
+          <li>Listas y campañas de correo desde tu propio dominio</li>
+          <li>Metas por vendedor y comisiones</li>
+          <li>Buzón de correo por usuario</li>
+        </ul>
+        <a class="btn btn--fantasma btn--bloque" href="contacto.html">Agenda tu demo</a>
+        <p class="plan__nota">Migración sin costo en plan anual</p>
+      </article>
+
+      <article class="plan">
+        <p class="plan__familia">Complemento</p>
+        <p class="plan__nombre">CRM sobre tu plan</p>
+        <p class="plan__quien">Si ya cotizas o facturas con IncSales y solo te falta el seguimiento.</p>
+        <p class="plan__precio"><span class="plan__moneda">+$</span><span class="plan__monto">499</span><span class="plan__periodo">/ mes</span></p>
+        <p class="plan__iva">IVA incluido</p>
+        <div class="plan__limites">
+          <span class="chip">Sobre Cotiza o Factura Esencial</span>
+        </div>
+        <ul class="lista">
+          <li>Pipelines, negocios y bitácora</li>
+          <li>Seguimiento y tareas sobre lo que ya tienes</li>
+          <li>Se enciende sobre tu misma base: no se migra nada</li>
+        </ul>
+        <a class="btn btn--fantasma btn--bloque" href="precios.html">Ver complementos</a>
+        <p class="plan__nota">Se suma a tu plan actual</p>
+      </article>
+
+      <article class="plan plan--elegido">
+        <span class="plan__cinta">El más elegido</span>
+        <p class="plan__familia">Completo</p>
+        <p class="plan__nombre">Operación</p>
+        <p class="plan__quien">El CRM más el inventario, las compras y la facturación CFDI.</p>
+        <p class="plan__precio"><span class="plan__moneda">$</span><span class="plan__monto">7,500</span><span class="plan__periodo">/ mes</span></p>
+        <p class="plan__iva">IVA incluido · $6,375 al mes pagando anual</p>
+        <div class="plan__limites">
+          <span class="chip chip--azul">10 usuarios</span>
+          <span class="chip chip--azul">100 CFDI al mes</span>
+        </div>
+        <ul class="lista">
+          <li>Todo el sistema, CRM incluido</li>
+          <li>Cotizar con existencias reales y timbrar desde el negocio</li>
+          <li>WhatsApp Business y marketing</li>
+          <li>Subdominio propio y soporte con persona</li>
+        </ul>
+        <a class="btn btn--bloque" href="contacto.html">Agenda tu demo</a>
+        <p class="plan__nota">Es lo que usa TecnoCableado a diario</p>
+      </article>
+    </div>
+
+    <div class="aviso tras-par">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="icono-linea" aria-hidden="true"><circle cx="12" cy="8" r="3.4"/><path d="M4.8 20a7.2 7.2 0 0 1 14.4 0"/></svg>
+      <div><b>¿Cuántos usuarios necesito de verdad?</b>
+        En las familias Cotiza y CRM cada usuario extra cuesta <strong>$199 al mes</strong>. Si lo que
+        quieres es solo WhatsApp Business sobre CRM Esencial, se agrega por <strong>$699 al
+        mes</strong> — o te vas directo a CRM Crecimiento, donde ya viene incluido.</div>
+    </div>
+
+    <div class="accion-centro">
+      <a class="btn btn--fantasma btn--grande btn--frase" href="precios.html">Ver los 9 planes y todos los complementos</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================== TESTIMONIOS -->
+<section class="bloque">
+  <div class="envoltura">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">Lo que dicen</p>
+      <h2>Equipos que dejaron de perseguir la venta de memoria</h2>
+    </div>
+    <div class="rejilla rejilla--3 aparecer">
+      <figure class="cita">
+        <blockquote class="cita__texto">Traer 800 negocios de HubSpot y que el total cuadrara al centavo fue lo que nos convenció.
+          No perdimos ni un año de historia, ni una etapa.</blockquote>
+        <figcaption class="cita__pie">
+          <span class="avatar" aria-hidden="true">DM</span>
+          <span class="cita__quien"><strong>Coordinación de ventas</strong><span>Distrimedic · Insumos médicos</span></span>
+        </figcaption>
+      </figure>
+      <figure class="cita">
+        <blockquote class="cita__texto">Antes el cliente escribía por WhatsApp al celular del vendedor y eso no lo veía nadie. Hoy
+          la conversación queda en el expediente del negocio y cualquiera puede continuarla.</blockquote>
+        <figcaption class="cita__pie">
+          <span class="avatar" aria-hidden="true">TC</span>
+          <span class="cita__quien"><strong>Dirección comercial</strong><span>TecnoCableado · Material eléctrico y redes</span></span>
+        </figcaption>
+      </figure>
+      <figure class="cita">
+        <blockquote class="cita__texto">Tenemos tres canales de venta con etapas distintas y cada uno tiene su propio tablero.
+          Antes todo iba en la misma hoja y nadie entendía el reporte.</blockquote>
+        <figcaption class="cita__pie">
+          <span class="avatar" aria-hidden="true">GS</span>
+          <span class="cita__quien"><strong>Gerencia de operaciones</strong><span>GS Pinturas · Recubrimientos</span></span>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="apunte nota-pie">Testimonios de ejemplo para esta maqueta, basados en la operación real de cada cliente.</p>
+  </div>
+</section>
+
+<!-- ============================================================= PREGUNTAS -->
+<section class="bloque bloque--hundido" id="preguntas">
+  <div class="envoltura envoltura--angosta">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">Dudas razonables</p>
+      <h2>Lo que se pregunta antes de mover el CRM</h2>
+    </div>
+    <div class="acordeon">
+      <details open>
+        <summary>¿Puedo llevarme el CRM sin comprar todo el ERP?</summary>
+        <div class="acordeon__cuerpo">Sí. <strong>CRM Esencial</strong> cuesta $499 al mes con IVA incluido para 3 usuarios, y
+          <strong>CRM Crecimiento</strong> $1,299 para 8 usuarios, con WhatsApp Business, metas y
+          comisiones. Y si ya tienes un plan de cotizaciones o de facturación con nosotros, el CRM se
+          agrega por <strong>$499 al mes</strong> sin migrar nada: es el mismo sistema con más módulos
+          encendidos.</div>
+      </details>
+      <details>
+        <summary>¿Se puede traer lo que ya tengo en HubSpot?</summary>
+        <div class="acordeon__cuerpo">Sí, y está probado con una exportación real. En la prueba con Distrimedic se migraron
+          <strong>800 negocios</strong> con su valor y su etapa, <strong>686 contactos</strong>,
+          <strong>241 empresas</strong> —de 439, porque 198 fichas estaban vacías—,
+          <strong>4 pipelines</strong> con sus <strong>20 etapas</strong> y sus 5 propietarios como
+          usuarios. El valor total cuadró al centavo: <span class="clave">$14,759,302.27</span>. La
+          migración cuesta desde $9,900 y va sin costo con cualquier plan anual.</div>
+      </details>
+      <details>
+        <summary>¿De verdad los WhatsApp se guardan solos en el negocio?</summary>
+        <div class="acordeon__cuerpo">Sí. El mensaje entrante se cruza por teléfono contra tus contactos y, si esa persona tiene
+          un negocio abierto, cae en su bitácora sin que nadie lo copie. Requiere conectar tu propio
+          número de WhatsApp Business API, que viene incluido en CRM Crecimiento, Operación y
+          Corporativo, o se agrega por $699 al mes. El alta en Meta y las primeras plantillas se
+          configuran como servicio de una sola vez, en $4,900.</div>
+      </details>
+      <details>
+        <summary>¿Puedo tener más de un embudo?</summary>
+        <div class="acordeon__cuerpo">Sí. Puedes tener un pipeline para Google Ads, otro para licitaciones y otro para mostrador,
+          cada uno con sus propias etapas. Cada etapa lleva su probabilidad, el paso del proceso al
+          que pertenece y si cierra ganando o perdiendo. Puedes renombrar las etapas como se hable en
+          tu empresa y el mapa del proceso del Inicio sigue funcionando igual.</div>
+      </details>
+      <details>
+        <summary>¿Qué ve un vendedor y qué no?</summary>
+        <div class="acordeon__cuerpo">Hay cuatro perfiles: <strong>Administrador</strong> (todo, incluida la configuración),
+          <strong>Vendedor</strong> (negocios, cotizaciones, clientes, proveedores y productos, pero
+          no entra a configuración), <strong>Compras</strong> (proveedores, órdenes y surtido) y
+          <strong>Solo lectura</strong> (consulta y reportes). El alta se hace por enlace de
+          invitación: la persona pone su propia contraseña y el administrador nunca la ve, porque se
+          guarda como huella irreversible.</div>
+      </details>
+      <details>
+        <summary>¿La comisión se calcula sobre lo vendido o sobre lo cobrado?</summary>
+        <div class="acordeon__cuerpo">Sobre lo <strong>cobrado</strong>. Es a propósito: cuando la comisión se paga por vender, el
+          pedido se cierra y la factura se queda sin perseguir. Como el CRM y la cobranza son el mismo
+          sistema, no hay que conciliar dos reportes a fin de mes. Metas y comisiones vienen en CRM
+          Crecimiento y en la familia Completo.</div>
+      </details>
+      <details>
+        <summary>¿Marca por teléfono o graba llamadas?</summary>
+        <div class="acordeon__cuerpo">No, y preferimos decirlo antes de la demo: IncSales no tiene telefonía integrada. La llamada
+          se registra a mano como una actividad de la bitácora. Lo que sí queda guardado solo es el
+          WhatsApp, el correo y todo lo que el sistema genera (cotizaciones, cambios de etapa,
+          tareas). Tampoco hay todavía bitácora de auditoría multiusuario a nivel de sistema.</div>
+      </details>
+      <details>
+        <summary>¿Mis datos están de verdad separados de los de otras empresas?</summary>
+        <div class="acordeon__cuerpo">Sí. Cada cliente es una organización aparte y dos organizaciones nunca se ven entre sí, ni
+          escribiendo a mano la dirección de un registro ajeno. El aislamiento se impone en la capa de
+          sesión y se revisa con un script de auditoría: no depende de que un programador se acuerde
+          de filtrar. Además puedes tener tu propio subdominio, tipo
+          <span class="mono">erp.tuempresa.com</span>, donde solo entra tu gente.</div>
+      </details>
+    </div>
+    <div class="accion-centro">
+      <a class="enlace-ir" href="preguntas.html">Ver las 36 preguntas frecuentes <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================== PÁGINAS HERMANAS -->
+<section class="bloque">
+  <div class="envoltura">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">Sigue el hilo</p>
+      <h2>El CRM es el principio. Esto es lo que pasa después.</h2>
+    </div>
+    <div class="rejilla rejilla--3 rejilla--apretada aparecer">
+      <a class="tarjeta tarjeta--viva tarjeta-enlace hermana" href="cotizaciones.html">
+        <span class="icono-caja" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 13h6M9 17h4"/></svg></span>
+        <h3>Cotizaciones y venta</h3>
+        <p>Del negocio a la cotización con folio y PDF, y de ahí a pedido, remisión y entrega sin
+          recapturar.</p>
+        <span class="enlace-ir">Ver cotizaciones <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg></span>
+      </a>
+      <a class="tarjeta tarjeta--viva tarjeta-enlace hermana" href="whatsapp.html">
+        <span class="icono-caja icono-caja--verde" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.8a8.4 8.4 0 0 1-12.3 7.5L3.6 20.6l1.4-4.8A8.4 8.4 0 1 1 21 11.8z"/></svg></span>
+        <h3>WhatsApp y marketing</h3>
+        <p>La bandeja de equipo, las campañas por plantilla y los formularios que llenan la bandeja de
+          interesados.</p>
+        <span class="enlace-ir">Ver canales <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg></span>
+      </a>
+      <a class="tarjeta tarjeta--viva tarjeta-enlace hermana" href="migracion.html">
+        <span class="icono-caja icono-caja--violeta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h13M11 7l5 5-5 5M17 4h4v16h-4"/></svg></span>
+        <h3>Migración de datos</h3>
+        <p>Cómo traemos tu HubSpot, tu SAE o tus hojas de cálculo con números de control que cuadran.</p>
+        <span class="enlace-ir">Ver migración <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg></span>
+      </a>
+      <a class="tarjeta tarjeta--viva tarjeta-enlace hermana" href="metodo.html">
+        <span class="icono-caja icono-caja--ambar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2.5 4.5 14h7l-1 7.5L20 10h-7z"/></svg></span>
+        <h3>El Método IncSales</h3>
+        <p>Del anuncio al cobro en seis pasos. El CRM sostiene el segundo y el tercero —capturar y
+          contestar— y sin los otros cuatro no sirve de mucho.</p>
+        <span class="enlace-ir">Ver el método <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg></span>
+      </a>
+      <a class="tarjeta tarjeta--viva tarjeta-enlace hermana" href="comparativa.html">
+        <span class="icono-caja" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7.5h13m-3-3 3 3-3 3"/><path d="M20 16.5H7m3-3-3 3 3 3"/></svg></span>
+        <h3>Comparativas</h3>
+        <p>Contra un CRM suelto, contra un sistema administrativo y contra la hoja de cálculo, función
+          por función y por categoría de producto.</p>
+        <span class="enlace-ir">Ver comparativas <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg></span>
+      </a>
+      <a class="tarjeta tarjeta--viva tarjeta-enlace hermana" href="precios.html">
+        <span class="icono-caja" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3.8v16.4h16"/><path d="m7.5 15 4-5 3 3 5-7"/></svg></span>
+        <h3>Precios y planes</h3>
+        <p>Las tres familias completas, los complementos y los servicios de una sola vez, en pesos.</p>
+        <span class="enlace-ir">Ver precios <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ CIERRE -->
+<section class="bloque bloque--tinta" id="demo">
+  <div class="envoltura envoltura--angosta centro">
+    <p class="sobre-titulo">Demo sin compromiso</p>
+    <h2>Veamos tu embudo con tus etapas, no con las de la demo</h2>
+    <p class="entradilla">Media hora. Traes tres cotizaciones reales, las capturamos en vivo y ves dónde se estaban
+      quedando paradas.</p>
+    <div class="cierre__acciones">
+      <a class="btn btn--claro btn--grande" href="contacto.html">Agenda tu demo</a>
+      <a class="btn btn--linea-clara btn--grande" href="precios.html">Ver planes y precios</a>
+    </div>
+    <div class="cierre__firma">
+      <span>Sin permanencia forzosa</span>
+      <span>Migración incluida en planes anuales</span>
+      <span>Soporte en español, en México</span>
+    </div>
+    <p class="apunte cierre__pie">contacto@incsales.com.mx · +52 33 3779 3774 · Guadalajara, Jalisco ·
+      Respondemos el mismo día hábil</p>
+  </div>
+</section>
+
+</main>
+
+<!-- =================================================================== PIE -->
+<footer class="pie">
+  <div class="envoltura envoltura--ancha">
+    <div class="pie__grid">
+      <div class="pie__acerca">
+        <img class="pie__logo" src="assets/logos/incsales-completo-blanco.svg" alt="IncSales" width="800" height="219">
+        <p>ERP en la nube con CRM adentro, para empresas que viven de cotizar. Hecho en Guadalajara
+          por Incoming Sales.</p>
+        <div class="pie__contacto">
+          <a href="mailto:contacto@incsales.com.mx">contacto@incsales.com.mx</a>
+          <a href="https://wa.me/523337793774" target="_blank" rel="noopener">+52 33 3779 3774</a>
+          <span>Guadalajara, Jalisco, México</span>
+        </div>
+      </div>
+      <div>
+        <h3 class="pie__titulo">Producto</h3>
+        <ul>
+          <li><a href="crm.html" aria-current="page">CRM y seguimiento</a></li>
+          <li><a href="index.html#cotizaciones">Cotizaciones y venta</a></li>
+          <li><a href="index.html#inventarios">Inventarios</a></li>
+          <li><a href="index.html#compras">Compras y proveedores</a></li>
+          <li><a href="index.html#facturacion">Facturación CFDI 4.0</a></li>
+          <li><a href="index.html#whatsapp">WhatsApp y marketing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="pie__titulo">Planes</h3>
+        <ul>
+          <li><a href="index.html#precios">Cotiza, desde $200</a></li>
+          <li><a href="index.html#precios">CRM, desde $499</a></li>
+          <li><a href="index.html#precios">Completo, desde $2,490</a></li>
+          <li><a href="index.html#precios">Complementos</a></li>
+          <li><a href="index.html#precios">A la medida</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="pie__titulo">Servicios</h3>
+        <ul>
+          <li><a href="index.html#precios">Migración de datos</a></li>
+          <li><a href="index.html#precios">Implementación y capacitación</a></li>
+          <li><a href="index.html#precios">Desarrollo a la medida</a></li>
+          <li><a href="index.html#prueba">WhatsApp Business API</a></li>
+          <li><a href="index.html#precios">Portal de clientes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="pie__titulo">Empresa</h3>
+        <ul>
+          <li><a href="index.html#prueba">Por dentro</a></li>
+          <li><a href="por-dentro.html">Las pantallas del sistema</a></li>
+          <li><a href="index.html#confianza">Confianza y operación</a></li>
+          <li><a href="index.html#preguntas">Preguntas frecuentes</a></li>
+          <li><a href="#demo">Agenda una demo</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pie__legal">
+      <span>© <span data-anio>2026</span> Incoming Sales · IncSales ERP. Todos los derechos reservados.</span>
+      <span>Precios en pesos mexicanos con IVA incluido. Propuesta de diseño, no es el sitio publicado.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/sistema.js" defer></script>
+</body>
+</html>

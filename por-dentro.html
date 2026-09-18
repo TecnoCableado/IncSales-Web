@@ -1,0 +1,1226 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El sistema por dentro · Propuesta de diseño de IncSales</title>
+<meta name="description" content="Cinco pantallas del ERP de IncSales construidas con los mismos tokens, la misma tipografía y la misma retícula que la landing.">
+<link rel="icon" type="image/svg+xml" href="assets/logos/incsales-icono.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap">
+<link rel="stylesheet" href="assets/css/sistema.css">
+<link rel="stylesheet" href="assets/css/propuesta/sistema-pantallas.css">
+</head>
+<body data-superficie="app">
+<a class="saltar" href="#principal">Saltar al contenido</a>
+
+<!-- Iconos: un solo juego de símbolos, sin imágenes externas. Heredan el color del texto. -->
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-inicio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 10.5 12 3.5l8.5 7M5.8 9.2V20h12.4V9.2"/></symbol>
+  <symbol id="i-interesados" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 13.8h4.2l1.4 2.6h5.8l1.4-2.6h4.2M6 5.4h12l2.5 8.4v5H3.5v-5z"/></symbol>
+  <symbol id="i-negocios" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.8h4.4v14.4H4zM9.8 4.8h4.4v9.4H9.8zM15.6 4.8H20v12H15.6z"/></symbol>
+  <symbol id="i-cotizaciones" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5h7l5 5v12H6zM13 3.5V9h5M9 13.5h6M9 16.8h4"/></symbol>
+  <symbol id="i-pedidos" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.6H6v15h12v-15h-3M9 4.6V3h6v1.6H9M9.6 12.4l2 2 3.4-4"/></symbol>
+  <symbol id="i-remisiones" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 5.6h10.8v10H2.6zM13.4 9.6h3.8l2.2 3v3h-6z"/><circle cx="7.6" cy="17.6" r="1.7"/><circle cx="16.6" cy="17.6" r="1.7"/></symbol>
+  <symbol id="i-inventarios" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.4 20.4 7.7v8.6L12 20.6 3.6 16.3V7.7zM3.6 7.7 12 12m0 0 8.4-4.3M12 12v8.6"/></symbol>
+  <symbol id="i-compras" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.6h2.3l2.4 10.2h9.5l2.3-7.6H6.2"/><circle cx="9" cy="18.8" r="1.4"/><circle cx="16.8" cy="18.8" r="1.4"/></symbol>
+  <symbol id="i-facturas" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5h12v17l-2.4-1.5-2.4 1.5-2.4-1.5-2.4 1.5L6 19zM9.2 8.2h5.6M9.2 12.2h5.6"/></symbol>
+  <symbol id="i-gastos" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 7.4a2 2 0 0 1 2-2h11.8a2 2 0 0 1 2 2v9.2a2 2 0 0 1-2 2H5.6a2 2 0 0 1-2-2zM19.4 10.4h-3.2a1.9 1.9 0 0 0 0 3.8h3.2"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.9c-4.5 0-8.2 3.3-8.2 7.5 0 1.9.8 3.6 2 4.9l-1.1 3.8 4-1.3c1 .4 2.1.6 3.3.6 4.5 0 8.2-3.3 8.2-7.5S16.5 3.9 12 3.9z"/></symbol>
+  <symbol id="i-marketing" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 10.2v3.6a1.5 1.5 0 0 0 1.5 1.5h2.2L14.5 19V5l-6.3 3.7H6a1.5 1.5 0 0 0-1.5 1.5zM8.2 15.3v3.4M18 9.6a3.6 3.6 0 0 1 0 4.8"/></symbol>
+  <symbol id="i-analitica" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3.8v16.4h16M8 17.4v-4.8M12.4 17.4V9M16.8 17.4v-7"/></symbol>
+  <symbol id="i-config" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 7h14M4.5 12h14M4.5 17h14"/><circle cx="9.2" cy="7" r="1.9"/><circle cx="15" cy="12" r="1.9"/><circle cx="8" cy="17" r="1.9"/></symbol>
+  <symbol id="i-buscar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.6" cy="10.6" r="6.1"/><path d="m15.2 15.2 4.6 4.6"/></symbol>
+  <symbol id="i-campana" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 10.4a5.4 5.4 0 0 1 10.8 0c0 3.9 1.5 5.3 1.5 5.3H5.1s1.5-1.4 1.5-5.3zM10 18.4a2.2 2.2 0 0 0 4 0"/></symbol>
+  <symbol id="i-mas" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5.5v13M5.5 12h13"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 9.4 12 14.8l5.4-5.4"/></symbol>
+  <symbol id="i-filtro" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 5.4h16.8l-6.5 7.6v5.8l-3.8 1.8v-7.6z"/></symbol>
+  <symbol id="i-usuario" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.4" r="3.6"/><path d="M4.8 19.8c.8-3.6 3.7-5.6 7.2-5.6s6.4 2 7.2 5.6"/></symbol>
+  <symbol id="i-descargar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.6v11M7.6 10.4 12 14.8l4.4-4.4M4.6 19.6h14.8"/></symbol>
+  <symbol id="i-enviar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.4 3.6 3.6 10.2l7 2.9 2.9 7z"/><path d="m10.6 13.1 4.2-4.2"/></symbol>
+  <symbol id="i-reloj" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.2"/><path d="M12 7v5.3l3.4 2"/></symbol>
+  <symbol id="i-alerta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4.2 21 19.6H3zM12 10v4.2M12 17.2v.3"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.6 9.6 17 19 6.6"/></symbol>
+  <symbol id="i-doble-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 12.6 6.2 16.4l7.2-8.6M10.4 16.4l1.4 1.4 8.6-10"/></symbol>
+  <symbol id="i-adjuntar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17.4 10.4 11 16.8a3.5 3.5 0 0 1-5-5l7.2-7.2a2.4 2.4 0 0 1 3.4 3.4l-7.2 7.2a1.3 1.3 0 0 1-1.8-1.8l6.4-6.4"/></symbol>
+  <symbol id="i-puntos" viewBox="0 0 24 24" fill="currentColor"><circle cx="6" cy="12" r="1.35"/><circle cx="12" cy="12" r="1.35"/><circle cx="18" cy="12" r="1.35"/></symbol>
+  <symbol id="i-editar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m16.4 4.4 3.2 3.2L8.4 18.8l-4 .8.8-4z"/></symbol>
+  <symbol id="i-caja-vacia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 8.6h16.8v10.2H3.6zM3.6 8.6 6.2 4.6h11.6l2.6 4M12 4.6v4M9.8 12.6h4.4"/></symbol>
+  <symbol id="i-cerrar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.4 6.4l11.2 11.2M17.6 6.4 6.4 17.6"/></symbol>
+  <symbol id="i-sube" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M6 12l6-6 6 6"/></symbol>
+  <symbol id="i-baja" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v13M6 12l6 6 6-6"/></symbol>
+</svg>
+
+<div class="cintillo">
+  Migración de datos sin costo al contratar cualquier plan anual ·
+  <a href="index.html#precios">Ver los planes</a>
+</div>
+<header class="nav">
+  <div class="envoltura envoltura--ancha">
+    <div class="nav__fila">
+      <a class="marca-enlace" href="#principal" aria-label="IncSales, inicio">
+        <img src="assets/logos/incsales-completo.svg" alt="" width="800" height="219">
+      </a>
+      <nav class="nav__menu" id="menu" aria-label="Principal">
+        <div class="nav__grupo">
+          <button class="nav__item" type="button" aria-expanded="false">
+            Producto <span class="nav__flecha" aria-hidden="true"></span>
+          </button>
+          <div class="panel" hidden>
+            <div class="panel__grid">
+              <p class="panel__titulo">Los módulos que ya operan todos los días</p>
+              <a class="panel__item" href="index.html#crm">
+                <b>CRM y seguimiento</b>
+                <span>Interesados, tablero de negocios y bitácora</span>
+              </a>
+              <a class="panel__item" href="#cotizaciones">
+                <b>Cotizaciones y venta</b>
+                <span>Seis documentos con la misma forma</span>
+              </a>
+              <a class="panel__item" href="index.html#inventarios">
+                <b>Inventarios</b>
+                <span>Variantes, multialmacén, lotes y kárdex</span>
+              </a>
+              <a class="panel__item" href="index.html#compras">
+                <b>Compras y proveedores</b>
+                <span>Requisiciones, órdenes y recepciones</span>
+              </a>
+              <a class="panel__item" href="#facturacion">
+                <b>Facturación CFDI 4.0</b>
+                <span>Timbrado, pagos y notas de crédito</span>
+              </a>
+              <a class="panel__item" href="#whatsapp">
+                <b>WhatsApp y marketing</b>
+                <span>Tu número, bandeja de equipo y formularios</span>
+              </a>
+              <div class="panel__pie">
+                <span class="apunte">Todo lo de arriba está construido y en uso.</span>
+                <a class="enlace-ir" href="por-dentro.html">
+                  Ver las pantallas
+                  <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="nav__item" href="index.html#prueba">Por dentro</a>
+        <a class="nav__item activo" href="por-dentro.html" aria-current="page">Las pantallas</a>
+        <a class="nav__item" href="index.html#precios">Precios</a>
+        <a class="nav__item" href="index.html#confianza">Confianza</a>
+        <a class="nav__item" href="index.html#preguntas">Preguntas</a>
+      </nav>
+      <div class="nav__acciones">
+        <a class="btn btn--chico" href="index.html#demo">Agenda una demo</a>
+      </div>
+      <button class="nav__hamburguesa" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir el menú">
+        <i></i><i></i><i></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<header class="bloque bloque--corto bloque--tinta doc-cabeza">
+  <div class="envoltura envoltura--ancha">
+    <a class="marca-enlace" href="index.html" aria-label="IncSales, ir al inicio"><img src="assets/logos/incsales-completo-blanco.svg" alt="" width="800" height="219"></a>
+    <p class="sobre-titulo">Propuesta de diseño · La capa de producto</p>
+    <h1>El sistema por dentro</h1>
+    <p class="entradilla">Cinco pantallas del ERP, con datos que se sostienen entre una y otra. Mismos tokens, misma tipografía y misma retícula que la landing: lo único que cambia es la densidad, y eso es un atributo en el <code>body</code>.</p>
+    <ul class="doc-indice">
+      <li><a href="#inicio"><i>01</i> Inicio</a></li>
+      <li><a href="#cotizaciones"><i>02</i> Cotizaciones</a></li>
+      <li><a href="#editor"><i>03</i> Editor de cotización</a></li>
+      <li><a href="#facturacion"><i>04</i> Facturación</a></li>
+      <li><a href="#whatsapp"><i>05</i> Bandeja de WhatsApp</a></li>
+      <li><a href="#estados"><i>06</i> Cargando, vacío y confirmación</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="principal">
+
+<!-- ===================================================== 01 · INICIO ===== -->
+<section class="pantalla" id="inicio">
+  <div class="envoltura envoltura--ancha">
+    <div class="rotulo">
+      <span class="rotulo__n">01</span>
+      <div>
+        <h2>Inicio</h2>
+        <p>Lo primero que ve alguien al entrar: cuánto se cotizó, cuánto se ganó, qué se está cayendo y dónde está parado cada negocio. Nada de ilustraciones: un ERP se ve serio cuando enseña datos.</p>
+      </div>
+    </div>
+
+    <div class="marco aparecer">
+      <div class="marco__barra"><span class="marco__puntos"><i></i><i></i><i></i></span><span class="marco__url">erp.tecnocableado.com<b>/inicio</b></span></div>
+      <div class="app">
+        <nav class="lateral" aria-label="Módulos del sistema · captura de inicio">
+          <div class="lateral__marca"><img src="assets/logos/incsales-completo-blanco.svg" alt="IncSales" width="800" height="219"></div>
+          <a class="lateral__item" href="#inicio" aria-current="page"><svg aria-hidden="true"><use href="#i-inicio"></use></svg>Inicio</a>
+          <p class="lateral__grupo">Vender</p>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-interesados"></use></svg>Interesados<span class="lateral__insignia">6</span></span>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-negocios"></use></svg>Negocios</span>
+          <a class="lateral__item" href="#cotizaciones"><svg aria-hidden="true"><use href="#i-cotizaciones"></use></svg>Cotizaciones</a>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-pedidos"></use></svg>Pedidos</span>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-remisiones"></use></svg>Remisiones</span>
+          <p class="lateral__grupo">Operar</p>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-inventarios"></use></svg>Inventarios</span>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-compras"></use></svg>Compras</span>
+          <a class="lateral__item" href="#facturacion"><svg aria-hidden="true"><use href="#i-facturas"></use></svg>Facturas</a>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-gastos"></use></svg>Gastos</span>
+          <p class="lateral__grupo">Canales</p>
+          <a class="lateral__item" href="#whatsapp"><svg aria-hidden="true"><use href="#i-whatsapp"></use></svg>WhatsApp<span class="lateral__insignia">4</span></a>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-marketing"></use></svg>Marketing</span>
+          <p class="lateral__grupo">Medir</p>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-analitica"></use></svg>Analítica</span>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-config"></use></svg>Configuración</span>
+          <div class="lateral__cuenta">
+            <span class="avatar" aria-hidden="true">MR</span>
+            <span class="dato"><span class="dato__v">Mariana Ruvalcaba</span><span class="dato__t">TecnoCableado</span></span>
+          </div>
+        </nav>
+
+        <div class="lienzo-app">
+          <header class="cabecera-app">
+            <span class="buscador"><svg aria-hidden="true"><use href="#i-buscar"></use></svg>Busca un cliente, un folio o un producto<kbd>⌘K</kbd></span>
+            <span class="crece"></span>
+            <button type="button" class="btn btn--chico btn--fantasma"><svg aria-hidden="true"><use href="#i-mas"></use></svg>Nuevo</button>
+            <button type="button" class="btn-icono" aria-label="Avisos, 4 sin leer"><svg aria-hidden="true"><use href="#i-campana"></use></svg></button>
+            <span class="avatar" aria-hidden="true">MR</span>
+          </header>
+
+          <div class="pagina">
+            <div class="pagina__cabeza">
+              <div>
+                <h3 class="pagina__titulo">Buenos días, Mariana</h3>
+                <p class="pagina__sub">Jueves 17 de septiembre de 2026 · 12 negocios te esperan</p>
+              </div>
+              <div class="pagina__acciones">
+                <span class="segmentado" role="group" aria-label="Periodo">
+                  <button type="button" aria-pressed="false">7 días</button>
+                  <button type="button" aria-pressed="true">Este mes</button>
+                  <button type="button" aria-pressed="false">Año</button>
+                </span>
+                <button type="button" class="btn btn--chico"><svg aria-hidden="true"><use href="#i-mas"></use></svg>Nueva cotización</button>
+              </div>
+            </div>
+
+            <div class="kpis">
+              <div class="kpi"><p class="kpi__q">Cotizado en septiembre</p><p class="kpi__n">$3,482,610</p><p class="kpi__d kpi__d--sube"><svg aria-hidden="true"><use href="#i-sube"></use></svg>12.4% contra agosto</p></div>
+              <div class="kpi"><p class="kpi__q">Ganado en septiembre</p><p class="kpi__n">$1,214,380</p><p class="kpi__d kpi__d--sube"><svg aria-hidden="true"><use href="#i-sube"></use></svg>8.1% contra agosto</p></div>
+              <div class="kpi"><p class="kpi__q">Negocios abiertos</p><p class="kpi__n">12</p><p class="kpi__d tenue">$1,879,040 en juego</p></div>
+              <div class="kpi"><p class="kpi__q">Por cobrar vencido</p><p class="kpi__n">$284,120</p><p class="kpi__d kpi__d--baja"><svg aria-hidden="true"><use href="#i-baja"></use></svg>3 con más de 30 días</p></div>
+              <div class="kpi"><p class="kpi__q">Cierre · últimos 90 días</p><p class="kpi__n">34.6%</p><p class="kpi__d kpi__d--sube"><svg aria-hidden="true"><use href="#i-sube"></use></svg>2.2 puntos</p></div>
+            </div>
+
+            <div class="cuadro">
+              <div class="cuadro__cab">
+                <h4>Negocios por etapa</h4>
+                <span class="chip chip--azul">Pipeline de ventas</span>
+                <span class="apunte">12 negocios · $1,879,040</span>
+              </div>
+              <div class="cuadro__cuerpo">
+                <div class="tablero">
+                  <div class="tablero__col">
+                    <p class="tablero__cab"><span>Requerimientos definidos</span><b>3 · $174,120</b></p>
+                    <article class="tablero__ficha"><b>Aceros del Bajío</b><span>Planta Tlaquepaque · 96 nodos</span><span class="fila"><span class="monto">$97,600</span><span class="apunte">DA · hace 1 d</span></span></article>
+                    <article class="tablero__ficha"><b>Colegio Cervantes Costa Rica</b><span>Aulas nuevas · 48 nodos</span><span class="fila"><span class="monto">$54,180</span><span class="apunte">DA · hace 2 d</span></span></article>
+                    <article class="tablero__ficha"><b>Refaccionaria Miramar</b><span>Cámaras y red</span><span class="fila"><span class="monto">$22,340</span><span class="apunte">PC · hace 4 d</span></span></article>
+                  </div>
+                  <div class="tablero__col">
+                    <p class="tablero__cab"><span>Cotizando con proveedores</span><b>3 · $530,170</b></p>
+                    <article class="tablero__ficha"><b>Corporativo Andares</b><span>Piso 12 · site completo</span><span class="fila"><span class="monto">$315,000</span><span class="apunte">MR · hace 1 d</span></span></article>
+                    <article class="tablero__ficha"><b>GS Pinturas</b><span>Tienda Zapopan</span><span class="fila"><span class="monto">$128,750</span><span class="apunte">PC · hace 3 d</span></span></article>
+                    <article class="tablero__ficha"><b>Constructora Everest</b><span>Obra Chapalita</span><span class="fila"><span class="monto">$86,420</span><span class="apunte">DA · hoy</span></span></article>
+                  </div>
+                  <div class="tablero__col">
+                    <p class="tablero__cab"><span>Cotización enviada</span><b>3 · $829,600</b></p>
+                    <article class="tablero__ficha"><b>Hospital San Javier</b><span>COT-2026-0418 · 240 nodos</span><span class="fila"><span class="monto">$248,900</span><span class="apunte">MR · hace 2 d</span></span></article>
+                    <article class="tablero__ficha"><b>Distrimedic</b><span>COT-2026-0416 · CEDIS</span><span class="fila"><span class="monto">$412,300</span><span class="apunte">MR · hace 5 d</span></span></article>
+                    <article class="tablero__ficha"><b>Parque Industrial El Salto</b><span>COT-2026-0413 · nave 4</span><span class="fila"><span class="monto">$168,400</span><span class="apunte">PC · hace 8 d</span></span></article>
+                  </div>
+                  <div class="tablero__col">
+                    <p class="tablero__cab"><span>Pedido confirmado</span><b>3 · $345,150</b></p>
+                    <article class="tablero__ficha"><b>Torre Adamant II</b><span>PED-2026-0288 · facturado</span><span class="fila"><span class="monto">$184,500</span><span class="apunte">MR · hoy</span></span></article>
+                    <article class="tablero__ficha"><b>Grupo Médico Providencia</b><span>PED-2026-0286 · por entregar</span><span class="fila"><span class="monto">$96,750</span><span class="apunte">PC · hace 3 d</span></span></article>
+                    <article class="tablero__ficha"><b>Industrias Ocotlán</b><span>PED-2026-0284 · entregado</span><span class="fila"><span class="monto">$63,900</span><span class="apunte">DA · hace 6 d</span></span></article>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dos-columnas">
+              <div class="cuadro">
+                <div class="cuadro__cab"><h4>Lo que hay que mover hoy</h4><span class="apunte">5 pendientes</span></div>
+                <ul class="pendientes">
+                  <li><span class="estado estado--espera" aria-hidden="true"></span><span><b>Hospital San Javier</b> · te preguntó por WhatsApp si el precio le aguanta hasta el viernes</span><span class="cuando">10:42</span></li>
+                  <li><span class="estado estado--mal" aria-hidden="true"></span><span><b>Distrimedic</b> · el PAC rechazó la factura A-1039 con la clave CFDI40102</span><span class="cuando">hace 6 d</span></li>
+                  <li><span class="estado estado--espera" aria-hidden="true"></span><span><b>Parque Industrial El Salto</b> · 8 días sin actividad en el negocio</span><span class="cuando">9 sep</span></li>
+                  <li><span class="estado estado--curso" aria-hidden="true"></span><span><b>GS Pinturas</b> · faltan 2 cotizaciones de proveedor para comparar</span><span class="cuando">hace 3 d</span></li>
+                  <li><span class="estado estado--curso" aria-hidden="true"></span><span><b>Almacén Guadalajara</b> · 4 lotes caducan en menos de 30 días</span><span class="cuando">12 oct</span></li>
+                </ul>
+              </div>
+              <div class="cuadro">
+                <div class="cuadro__cab"><h4>Últimos movimientos</h4><span class="apunte">en vivo</span></div>
+                <ul class="pendientes">
+                  <li><span class="avatar avatar--chico avatar--claro" aria-hidden="true">MR</span><span>Mandó <b>COT-2026-0418</b> por WhatsApp a Hospital San Javier</span><span class="cuando">10:41</span></li>
+                  <li><span class="avatar avatar--chico avatar--claro" aria-hidden="true">DA</span><span>Confirmó el pedido <b>PED-2026-0288</b></span><span class="cuando">09:51</span></li>
+                  <li><span class="avatar avatar--chico avatar--claro" aria-hidden="true">PC</span><span>Recibió mercancía de la orden <b>OC-2026-0192</b></span><span class="cuando">09:14</span></li>
+                  <li><span class="avatar avatar--chico avatar--claro" aria-hidden="true">MR</span><span>Timbró la factura <b>A-1042</b> · $214,020.00</span><span class="cuando">08:40</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ul class="notas">
+      <li><b>El tablero es el proceso</b> Las cuatro columnas son las cuatro etapas reales: requerimientos, cotizando con proveedores, cotización enviada y pedido confirmado.</li>
+      <li><b>Cada cifra dice contra qué</b> Un número sin referencia no sirve para decidir. Todos los indicadores traen su comparación o su desglose.</li>
+      <li><b>Pasa el cursor</b> Los renglones de las listas y los elementos de la barra lateral responden: el sistema tiene estados, no solo maqueta.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- =============================================== 02 · COTIZACIONES ===== -->
+<section class="pantalla" id="cotizaciones">
+  <div class="envoltura envoltura--ancha">
+    <div class="rotulo">
+      <span class="rotulo__n">02</span>
+      <div>
+        <h2>Cotizaciones</h2>
+        <p>La pantalla que más se usa. Folio, cliente, fecha, importe y estado, con el importe siempre en el mismo eje derecho y en cifras tabulares para que dos renglones se comparen de un vistazo.</p>
+      </div>
+    </div>
+
+    <div class="marco aparecer">
+      <div class="marco__barra"><span class="marco__puntos"><i></i><i></i><i></i></span><span class="marco__url">erp.tecnocableado.com<b>/ingresos/cotizaciones</b></span></div>
+      <div class="app">
+        <nav class="lateral" aria-label="Módulos del sistema · captura de cotizaciones">
+          <div class="lateral__marca"><img src="assets/logos/incsales-completo-blanco.svg" alt="IncSales" width="800" height="219"></div>
+          <a class="lateral__item" href="#inicio"><svg aria-hidden="true"><use href="#i-inicio"></use></svg>Inicio</a>
+          <p class="lateral__grupo">Vender</p>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-interesados"></use></svg>Interesados<span class="lateral__insignia">6</span></span>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-negocios"></use></svg>Negocios</span>
+          <a class="lateral__item" href="#cotizaciones" aria-current="page"><svg aria-hidden="true"><use href="#i-cotizaciones"></use></svg>Cotizaciones</a>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-pedidos"></use></svg>Pedidos</span>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-remisiones"></use></svg>Remisiones</span>
+          <p class="lateral__grupo">Operar</p>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-inventarios"></use></svg>Inventarios</span>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-compras"></use></svg>Compras</span>
+          <a class="lateral__item" href="#facturacion"><svg aria-hidden="true"><use href="#i-facturas"></use></svg>Facturas</a>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-gastos"></use></svg>Gastos</span>
+          <p class="lateral__grupo">Canales</p>
+          <a class="lateral__item" href="#whatsapp"><svg aria-hidden="true"><use href="#i-whatsapp"></use></svg>WhatsApp<span class="lateral__insignia">4</span></a>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-marketing"></use></svg>Marketing</span>
+          <p class="lateral__grupo">Medir</p>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-analitica"></use></svg>Analítica</span>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-config"></use></svg>Configuración</span>
+          <div class="lateral__cuenta">
+            <span class="avatar" aria-hidden="true">MR</span>
+            <span class="dato"><span class="dato__v">Mariana Ruvalcaba</span><span class="dato__t">TecnoCableado</span></span>
+          </div>
+        </nav>
+
+        <div class="lienzo-app">
+          <header class="cabecera-app">
+            <span class="buscador"><svg aria-hidden="true"><use href="#i-buscar"></use></svg>Busca un cliente, un folio o un producto<kbd>⌘K</kbd></span>
+            <span class="crece"></span>
+            <button type="button" class="btn btn--chico btn--fantasma"><svg aria-hidden="true"><use href="#i-mas"></use></svg>Nuevo</button>
+            <button type="button" class="btn-icono" aria-label="Avisos, 4 sin leer"><svg aria-hidden="true"><use href="#i-campana"></use></svg></button>
+            <span class="avatar" aria-hidden="true">MR</span>
+          </header>
+
+          <div class="pagina">
+            <div class="pagina__cabeza">
+              <div>
+                <h3 class="pagina__titulo">Cotizaciones</h3>
+                <p class="pagina__sub">128 documentos · $14,284,970.00 cotizados en 2026</p>
+              </div>
+              <div class="pagina__acciones">
+                <button type="button" class="btn btn--chico btn--fantasma"><svg aria-hidden="true"><use href="#i-descargar"></use></svg>Exportar</button>
+                <button type="button" class="btn btn--chico"><svg aria-hidden="true"><use href="#i-mas"></use></svg>Nueva cotización</button>
+              </div>
+            </div>
+
+            <div class="pestanas" role="group" aria-label="Estado de la cotización">
+              <button type="button" aria-current="page">Todas <span class="tenue">128</span></button>
+              <button type="button">Borradores <span class="tenue">14</span></button>
+              <button type="button">Enviadas <span class="tenue">31</span></button>
+              <button type="button">Ganadas <span class="tenue">62</span></button>
+              <button type="button">Vencidas <span class="tenue">21</span></button>
+            </div>
+
+            <div class="herramientas">
+              <span class="buscador"><svg aria-hidden="true"><use href="#i-buscar"></use></svg>Filtrar en la lista</span>
+              <button type="button" class="filtro filtro--puesto"><svg aria-hidden="true"><use href="#i-filtro"></use></svg>Periodo: septiembre 2026</button>
+              <button type="button" class="filtro">Vendedor: todos<svg aria-hidden="true"><use href="#i-chevron"></use></svg></button>
+              <button type="button" class="filtro">Cliente<svg aria-hidden="true"><use href="#i-chevron"></use></svg></button>
+              <button type="button" class="filtro">Importe<svg aria-hidden="true"><use href="#i-chevron"></use></svg></button>
+              <span class="crece"></span>
+              <span class="segmentado" role="group" aria-label="Forma de ver">
+                <button type="button" aria-pressed="true">Tabla</button>
+                <button type="button" aria-pressed="false">Tablero</button>
+              </span>
+            </div>
+
+            <div class="datos-caja">
+              <div class="datos-scroll">
+                <table class="datos">
+                  <caption>Importes sin IVA, en pesos. El tipo de cambio de cada documento queda congelado el día que se captura.</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col"><input type="checkbox" aria-label="Seleccionar todo"></th>
+                      <th scope="col">Folio</th>
+                      <th scope="col">Cliente</th>
+                      <th scope="col">Fecha</th>
+                      <th scope="col">Vendedor</th>
+                      <th scope="col">Vigencia</th>
+                      <th scope="col" class="n">Importe</th>
+                      <th scope="col">Estado</th>
+                      <th scope="col"><span class="tenue">·</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr aria-selected="true">
+                      <td><input type="checkbox" checked aria-label="Seleccionar COT-2026-0418"></td><td class="clave">COT-2026-0418</td><td class="fuerte">Hospital San Javier</td>
+                      <td class="fecha">15 sep 2026</td><td><span class="con-avatar"><span class="avatar avatar--chico avatar--claro" aria-hidden="true">MR</span>Mariana R.</span></td><td>vence en 13 d</td>
+                      <td class="n fuerte">248,900.00</td><td><span class="estado estado--curso">Enviada</span></td><td><span class="acciones fila-acciones"><button type="button" class="btn-icono" aria-label="Editar"><svg aria-hidden="true"><use href="#i-editar"></use></svg></button><button type="button" class="btn-icono" aria-label="Más"><svg aria-hidden="true"><use href="#i-puntos"></use></svg></button></span></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" aria-label="Seleccionar COT-2026-0417"></td><td class="clave">COT-2026-0417</td><td class="fuerte">Constructora Everest</td>
+                      <td class="fecha">15 sep 2026</td><td><span class="con-avatar"><span class="avatar avatar--chico avatar--claro" aria-hidden="true">DA</span>Diego A.</span></td><td><span class="tenue">—</span></td>
+                      <td class="n">86,420.00</td><td><span class="estado">Borrador</span></td><td><span class="acciones fila-acciones"><button type="button" class="btn-icono" aria-label="Editar"><svg aria-hidden="true"><use href="#i-editar"></use></svg></button><button type="button" class="btn-icono" aria-label="Más"><svg aria-hidden="true"><use href="#i-puntos"></use></svg></button></span></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" aria-label="Seleccionar COT-2026-0416"></td><td class="clave">COT-2026-0416</td><td class="fuerte">Distrimedic</td>
+                      <td class="fecha">12 sep 2026</td><td><span class="con-avatar"><span class="avatar avatar--chico avatar--claro" aria-hidden="true">MR</span>Mariana R.</span></td><td>vence en 9 d</td>
+                      <td class="n">412,300.00</td><td><span class="estado estado--curso">Enviada</span></td><td><span class="acciones fila-acciones"><button type="button" class="btn-icono" aria-label="Editar"><svg aria-hidden="true"><use href="#i-editar"></use></svg></button><button type="button" class="btn-icono" aria-label="Más"><svg aria-hidden="true"><use href="#i-puntos"></use></svg></button></span></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" aria-label="Seleccionar COT-2026-0415"></td><td class="clave">COT-2026-0415</td><td class="fuerte">Corporativo Andares</td>
+                      <td class="fecha">11 sep 2026</td><td><span class="con-avatar"><span class="avatar avatar--chico avatar--claro" aria-hidden="true">MR</span>Mariana R.</span></td><td><span class="tenue">—</span></td>
+                      <td class="n">315,000.00</td><td><span class="estado">Borrador</span></td><td><span class="acciones fila-acciones"><button type="button" class="btn-icono" aria-label="Editar"><svg aria-hidden="true"><use href="#i-editar"></use></svg></button><button type="button" class="btn-icono" aria-label="Más"><svg aria-hidden="true"><use href="#i-puntos"></use></svg></button></span></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" aria-label="Seleccionar COT-2026-0414"></td><td class="clave">COT-2026-0414</td><td class="fuerte">GS Pinturas</td>
+                      <td class="fecha">10 sep 2026</td><td><span class="con-avatar"><span class="avatar avatar--chico avatar--claro" aria-hidden="true">PC</span>Paola C.</span></td><td><span class="tenue">—</span></td>
+                      <td class="n">128,750.00</td><td><span class="estado">Borrador</span></td><td><span class="acciones fila-acciones"><button type="button" class="btn-icono" aria-label="Editar"><svg aria-hidden="true"><use href="#i-editar"></use></svg></button><button type="button" class="btn-icono" aria-label="Más"><svg aria-hidden="true"><use href="#i-puntos"></use></svg></button></span></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" aria-label="Seleccionar COT-2026-0413"></td><td class="clave">COT-2026-0413</td><td class="fuerte">Parque Industrial El Salto</td>
+                      <td class="fecha">9 sep 2026</td><td><span class="con-avatar"><span class="avatar avatar--chico avatar--claro" aria-hidden="true">PC</span>Paola C.</span></td><td>vence hoy</td>
+                      <td class="n">168,400.00</td><td><span class="estado estado--curso">Enviada</span></td><td><span class="acciones fila-acciones"><button type="button" class="btn-icono" aria-label="Editar"><svg aria-hidden="true"><use href="#i-editar"></use></svg></button><button type="button" class="btn-icono" aria-label="Más"><svg aria-hidden="true"><use href="#i-puntos"></use></svg></button></span></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" aria-label="Seleccionar COT-2026-0412"></td><td class="clave">COT-2026-0412</td><td class="fuerte">Torre Adamant II</td>
+                      <td class="fecha">8 sep 2026</td><td><span class="con-avatar"><span class="avatar avatar--chico avatar--claro" aria-hidden="true">MR</span>Mariana R.</span></td><td><span class="tenue">—</span></td>
+                      <td class="n">184,500.00</td><td><span class="estado estado--ok">Ganada</span></td><td><span class="acciones fila-acciones"><button type="button" class="btn-icono" aria-label="Editar"><svg aria-hidden="true"><use href="#i-editar"></use></svg></button><button type="button" class="btn-icono" aria-label="Más"><svg aria-hidden="true"><use href="#i-puntos"></use></svg></button></span></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" aria-label="Seleccionar COT-2026-0411"></td><td class="clave">COT-2026-0411</td><td class="fuerte">Grupo Médico Providencia</td>
+                      <td class="fecha">5 sep 2026</td><td><span class="con-avatar"><span class="avatar avatar--chico avatar--claro" aria-hidden="true">PC</span>Paola C.</span></td><td><span class="tenue">—</span></td>
+                      <td class="n">96,750.00</td><td><span class="estado estado--ok">Ganada</span></td><td><span class="acciones fila-acciones"><button type="button" class="btn-icono" aria-label="Editar"><svg aria-hidden="true"><use href="#i-editar"></use></svg></button><button type="button" class="btn-icono" aria-label="Más"><svg aria-hidden="true"><use href="#i-puntos"></use></svg></button></span></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" aria-label="Seleccionar COT-2026-0410"></td><td class="clave">COT-2026-0410</td><td class="fuerte">Industrias Ocotlán</td>
+                      <td class="fecha">4 sep 2026</td><td><span class="con-avatar"><span class="avatar avatar--chico avatar--claro" aria-hidden="true">DA</span>Diego A.</span></td><td><span class="tenue">—</span></td>
+                      <td class="n">63,900.00</td><td><span class="estado estado--ok">Ganada</span></td><td><span class="acciones fila-acciones"><button type="button" class="btn-icono" aria-label="Editar"><svg aria-hidden="true"><use href="#i-editar"></use></svg></button><button type="button" class="btn-icono" aria-label="Más"><svg aria-hidden="true"><use href="#i-puntos"></use></svg></button></span></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" aria-label="Seleccionar COT-2026-0402"></td><td class="clave">COT-2026-0402</td><td class="fuerte">Aceros del Bajío</td>
+                      <td class="fecha">28 ago 2026</td><td><span class="con-avatar"><span class="avatar avatar--chico avatar--claro" aria-hidden="true">DA</span>Diego A.</span></td><td>venció hace 5 d</td>
+                      <td class="n">97,600.00</td><td><span class="estado estado--espera">Vencida</span></td><td><span class="acciones fila-acciones"><button type="button" class="btn-icono" aria-label="Editar"><svg aria-hidden="true"><use href="#i-editar"></use></svg></button><button type="button" class="btn-icono" aria-label="Más"><svg aria-hidden="true"><use href="#i-puntos"></use></svg></button></span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="datos__pie">
+                <span>10 de 128 · <b>1 seleccionada</b></span>
+                <span class="tenue">$1,802,520.00 en pantalla</span>
+                <span class="paginacion">
+                  <button type="button" aria-label="Página anterior" disabled>‹</button>
+                  <button type="button" aria-current="true">1</button>
+                  <button type="button">2</button>
+                  <button type="button">3</button>
+                  <span class="tenue">…</span>
+                  <button type="button">13</button>
+                  <button type="button" aria-label="Página siguiente">›</button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ul class="notas">
+      <li><b>Un solo eje para el dinero</b> La columna de importe está alineada a la derecha y en cifras tabulares: los miles caen uno debajo del otro sin que haya que leer el número entero.</li>
+      <li><b>Seleccionado se ve, no se adivina</b> El renglón elegido toma el azul más tenue de la rampa, el mismo que usa el filtro puesto. Nada de bordes de colores.</li>
+      <li><b>El estado es un punto, no una caja</b> Seis píxeles bastan para distinguir enviada, ganada y vencida sin que la tabla se convierta en un semáforo.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========================================= 03 · EDITOR DE COTIZACIÓN ==== -->
+<section class="pantalla" id="editor">
+  <div class="envoltura envoltura--ancha">
+    <div class="rotulo">
+      <span class="rotulo__n">03</span>
+      <div>
+        <h2>Editor de cotización</h2>
+        <p>El documento. Aquí se ve la diferencia entre un maquetado bonito y un sistema que alguien usa treinta veces al día: el buscador dice quién tiene el producto antes de prometerlo, el tipo de cambio queda congelado en el documento y los renglones se corrigen en su sitio.</p>
+      </div>
+    </div>
+
+    <div class="marco aparecer">
+      <div class="marco__barra"><span class="marco__puntos"><i></i><i></i><i></i></span><span class="marco__url">erp.tecnocableado.com<b>/ingresos/cotizaciones/COT-2026-0418</b></span></div>
+      <div class="app">
+        <nav class="lateral" aria-label="Módulos del sistema · captura del editor de cotización">
+          <div class="lateral__marca"><img src="assets/logos/incsales-completo-blanco.svg" alt="IncSales" width="800" height="219"></div>
+          <a class="lateral__item" href="#inicio"><svg aria-hidden="true"><use href="#i-inicio"></use></svg>Inicio</a>
+          <p class="lateral__grupo">Vender</p>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-interesados"></use></svg>Interesados<span class="lateral__insignia">6</span></span>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-negocios"></use></svg>Negocios</span>
+          <a class="lateral__item" href="#cotizaciones" aria-current="page"><svg aria-hidden="true"><use href="#i-cotizaciones"></use></svg>Cotizaciones</a>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-pedidos"></use></svg>Pedidos</span>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-remisiones"></use></svg>Remisiones</span>
+          <p class="lateral__grupo">Operar</p>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-inventarios"></use></svg>Inventarios</span>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-compras"></use></svg>Compras</span>
+          <a class="lateral__item" href="#facturacion"><svg aria-hidden="true"><use href="#i-facturas"></use></svg>Facturas</a>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-gastos"></use></svg>Gastos</span>
+          <p class="lateral__grupo">Canales</p>
+          <a class="lateral__item" href="#whatsapp"><svg aria-hidden="true"><use href="#i-whatsapp"></use></svg>WhatsApp<span class="lateral__insignia">4</span></a>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-marketing"></use></svg>Marketing</span>
+          <p class="lateral__grupo">Medir</p>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-analitica"></use></svg>Analítica</span>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-config"></use></svg>Configuración</span>
+          <div class="lateral__cuenta">
+            <span class="avatar" aria-hidden="true">MR</span>
+            <span class="dato"><span class="dato__v">Mariana Ruvalcaba</span><span class="dato__t">TecnoCableado</span></span>
+          </div>
+        </nav>
+
+        <div class="lienzo-app">
+          <header class="cabecera-app">
+            <span class="buscador"><svg aria-hidden="true"><use href="#i-buscar"></use></svg>Busca un cliente, un folio o un producto<kbd>⌘K</kbd></span>
+            <span class="crece"></span>
+            <button type="button" class="btn btn--chico btn--fantasma"><svg aria-hidden="true"><use href="#i-mas"></use></svg>Nuevo</button>
+            <button type="button" class="btn-icono" aria-label="Avisos, 4 sin leer"><svg aria-hidden="true"><use href="#i-campana"></use></svg></button>
+            <span class="avatar" aria-hidden="true">MR</span>
+          </header>
+
+          <div class="pagina">
+            <div class="pagina__cabeza">
+              <div>
+                <h3 class="pagina__titulo">COT-2026-0418</h3>
+                <p class="pagina__sub">Hospital San Javier · enviada el 15 sep · cambios sin enviar, guardados hace 2 minutos</p>
+              </div>
+              <div class="pagina__acciones">
+                <span class="chip chip--azul">Negocio: Hospital San Javier · $248,900</span>
+                <button type="button" class="btn-icono" aria-label="Más opciones"><svg aria-hidden="true"><use href="#i-puntos"></use></svg></button>
+              </div>
+            </div>
+
+            <div class="doc">
+              <div class="doc__cab">
+                <div class="dato"><span class="dato__t">Cliente</span><span class="dato__v">Hospital San Javier<small>Av. Pablo Casals 640, Guadalajara · HSJ940512QR3</small></span></div>
+                <div class="dato"><span class="dato__t">Contacto que pide</span><span class="dato__v">Ing. Salvador Mora<small>Jefe de sistemas · autoriza Dir. Administración</small></span></div>
+                <div class="dato"><span class="dato__t">Lista de precios</span><span class="dato__v">Mayoreo obra<small>Va con el cliente · se puede cambiar aquí</small></span></div>
+                <div class="dato"><span class="dato__t">Vigencia</span><span class="dato__v">15 días · vence el 30 sep<small>Condiciones: 50% anticipo</small></span></div>
+              </div>
+
+              <div class="doc__tira">
+                <span class="chip">Moneda del documento: MXN</span>
+                <span class="chip chip--violeta">Tipo de cambio congelado: 18.4210 · 15 sep 2026</span>
+                <span class="chip chip--verde">Costos congelados desde COT-PROV-0231 · Redes del Pacífico</span>
+                <span class="crece"></span>
+                <span>Si el dólar se mueve mañana, este documento no se mueve.</span>
+              </div>
+
+              <div class="doc__buscar">
+                <div class="campo">
+                  <label for="buscar-producto">Agregar producto</label>
+                  <input id="buscar-producto" type="search" value="canaleta 40" autocomplete="off">
+                  <p class="campo__ayuda">Busca por SKU, código de barras o ID alterno. Las tres claves son únicas y se comprueban entre sí.</p>
+                </div>
+                <div class="sugerencias" role="listbox" aria-label="Resultados">
+                  <div class="sugerencia" role="option" aria-selected="true">
+                    <span class="sugerencia__n">Canaleta ranurada 40 × 40 mm · tramo de 2 m</span>
+                    <span class="sugerencia__c">CNL-4040 · 7501234000418</span>
+                    <span class="sugerencia__e existencia existencia--ambar">Tienes <b>0</b> · Proveedor <b>120</b> en 3 d</span>
+                  </div>
+                  <div class="sugerencia" role="option" aria-selected="false">
+                    <span class="sugerencia__n">Jack RJ45 Cat6 blanco · 180°</span>
+                    <span class="sugerencia__c">JCK-C6-BL · 7501234000135</span>
+                    <span class="sugerencia__e existencia">Tienes <b>48</b> · Proveedor <b>192</b> en 5 d</span>
+                  </div>
+                  <div class="sugerencia" role="option" aria-selected="false">
+                    <span class="sugerencia__n">Gabinete de piso 42U 800 × 1000 con PDU</span>
+                    <span class="sugerencia__c">GAB-42U · 7501234000902</span>
+                    <span class="sugerencia__e existencia existencia--rojo">Tienes <b>1</b> · Proveedor <b>4</b> · dato de hace 9 d</span>
+                  </div>
+                </div>
+                <p class="aviso sep-arriba">
+                  <svg aria-hidden="true"><use href="#i-check"></use></svg>
+                  <span><strong>Cambiaste la lista a «Mayoreo obra»</strong>Se recalcularon 6 renglones. Dos quedaron como los negociaste a mano y no se tocaron.</span>
+                </p>
+              </div>
+
+              <div class="datos-scroll">
+                <table class="datos">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Clave</th>
+                      <th scope="col">Descripción</th>
+                      <th scope="col" class="n">Cant.</th>
+                      <th scope="col" class="n">Precio</th>
+                      <th scope="col" class="n">Importe</th>
+                      <th scope="col"><span class="tenue">·</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tenue">1</td>
+                      <td class="clave">SWT-48POE</td>
+                      <td><span class="fuerte">Switch administrable 48 puertos PoE+ 740 W</span><br><span class="origen"><svg aria-hidden="true"><use href="#i-compras"></use></svg>Surte Redes del Pacífico en 5 d · costo 1,485.00 USD congelado</span></td>
+                      <td class="n">3</td>
+                      <td class="n">32,450.00</td>
+                      <td class="n fuerte">97,350.00</td>
+                      <td><span class="acciones fila-acciones"><button type="button" class="btn-icono" aria-label="Quitar renglón"><svg aria-hidden="true"><use href="#i-puntos"></use></svg></button></span></td>
+                    </tr>
+                    <tr>
+                      <td class="tenue">2</td>
+                      <td class="clave">GAB-42U</td>
+                      <td><span class="fuerte">Gabinete de piso 42U 800 × 1000 con PDU</span><br><span class="origen"><svg aria-hidden="true"><use href="#i-inventarios"></use></svg>Almacén Guadalajara · existencia 1, faltan 2</span></td>
+                      <td class="n">3</td>
+                      <td class="n">18,900.00</td>
+                      <td class="n fuerte">56,700.00</td>
+                      <td><span class="acciones fila-acciones"><button type="button" class="btn-icono" aria-label="Quitar renglón"><svg aria-hidden="true"><use href="#i-puntos"></use></svg></button></span></td>
+                    </tr>
+                    <tr>
+                      <td class="tenue">3</td>
+                      <td class="clave">CBL-UTP6-305</td>
+                      <td><span class="fuerte">Bobina UTP Cat6 CMR 305 m · azul</span><br><span class="origen"><svg aria-hidden="true"><use href="#i-inventarios"></use></svg>Almacén Guadalajara · precio negociado a mano</span></td>
+                      <td class="n">15</td>
+                      <td class="n">2,480.00</td>
+                      <td class="n fuerte">37,200.00</td>
+                      <td><span class="acciones fila-acciones"><button type="button" class="btn-icono" aria-label="Quitar renglón"><svg aria-hidden="true"><use href="#i-puntos"></use></svg></button></span></td>
+                    </tr>
+                    <tr>
+                      <td class="tenue">4</td>
+                      <td class="clave">JCK-C6-BL</td>
+                      <td><span class="fuerte">Jack RJ45 Cat6 blanco · 180°</span><br><span class="origen"><svg aria-hidden="true"><use href="#i-inventarios"></use></svg>Almacén Guadalajara · 48 tuyos, 192 del proveedor</span></td>
+                      <td class="n"><input class="entrada-celda" type="text" inputmode="numeric" value="240" aria-label="Cantidad del renglón 4"></td>
+                      <td class="n">78.50</td>
+                      <td class="n fuerte">18,840.00</td>
+                      <td><span class="acciones fila-acciones"><button type="button" class="btn-icono" aria-label="Quitar renglón"><svg aria-hidden="true"><use href="#i-puntos"></use></svg></button></span></td>
+                    </tr>
+                    <tr>
+                      <td class="tenue">5</td>
+                      <td class="clave">PNL-24-C6</td>
+                      <td><span class="fuerte">Patch panel 24 puertos Cat6 · 1U</span><br><span class="origen"><svg aria-hidden="true"><use href="#i-inventarios"></use></svg>Almacén Zapopan · traslado de 3 días</span></td>
+                      <td class="n">8</td>
+                      <td class="n">1,340.00</td>
+                      <td class="n fuerte">10,720.00</td>
+                      <td><span class="acciones fila-acciones"><button type="button" class="btn-icono" aria-label="Quitar renglón"><svg aria-hidden="true"><use href="#i-puntos"></use></svg></button></span></td>
+                    </tr>
+                    <tr>
+                      <td class="tenue">6</td>
+                      <td class="clave">CNL-4040</td>
+                      <td><span class="fuerte">Canaleta ranurada 40 × 40 mm · tramo de 2 m</span><br><span class="origen"><svg aria-hidden="true"><use href="#i-compras"></use></svg>Surte Provecom en 3 d · levanta requisición al confirmar</span></td>
+                      <td class="n">25</td>
+                      <td class="n">186.00</td>
+                      <td class="n fuerte">4,650.00</td>
+                      <td><span class="acciones fila-acciones"><button type="button" class="btn-icono" aria-label="Quitar renglón"><svg aria-hidden="true"><use href="#i-puntos"></use></svg></button></span></td>
+                    </tr>
+                    <tr>
+                      <td class="tenue">7</td>
+                      <td class="clave">SRV-CERT</td>
+                      <td><span class="fuerte">Certificación de nodo con reporte por punto</span><br><span class="origen"><svg aria-hidden="true"><use href="#i-usuario"></use></svg>Servicio · cuadrilla propia, 6 días hábiles</span></td>
+                      <td class="n">240</td>
+                      <td class="n">95.00</td>
+                      <td class="n fuerte">22,800.00</td>
+                      <td><span class="acciones fila-acciones"><button type="button" class="btn-icono" aria-label="Quitar renglón"><svg aria-hidden="true"><use href="#i-puntos"></use></svg></button></span></td>
+                    </tr>
+                    <tr>
+                      <td class="tenue">8</td>
+                      <td class="clave">ETQ-NODO</td>
+                      <td><span class="fuerte">Etiqueta autolaminada para identificación de nodo</span><br><span class="origen"><svg aria-hidden="true"><use href="#i-inventarios"></use></svg>Almacén Guadalajara · precio negociado a mano</span></td>
+                      <td class="n">320</td>
+                      <td class="n">2.00</td>
+                      <td class="n fuerte">640.00</td>
+                      <td><span class="acciones fila-acciones"><button type="button" class="btn-icono" aria-label="Quitar renglón"><svg aria-hidden="true"><use href="#i-puntos"></use></svg></button></span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="doc__pie">
+                <div class="campo">
+                  <label for="notas-doc">Notas que salen en el PDF</label>
+                  <textarea id="notas-doc" rows="3">Los trabajos se programan a partir del anticipo. La certificación se entrega en reporte por nodo, en PDF, al cierre de la obra.</textarea>
+                </div>
+                <div class="totales">
+                  <p class="total-fila"><span>Suma de renglones</span><b>248,900.00</b></p>
+                  <p class="total-fila"><span>Descuento aplicado</span><b>0.00</b></p>
+                  <p class="total-fila"><span>IVA 16%</span><b>39,824.00</b></p>
+                  <p class="total-fila total-fila--suma"><span>Total MXN</span><b>288,724.00</b></p>
+                  <p class="apunte">Equivalente a 15,673.63 USD al tipo de cambio congelado del documento.</p>
+                </div>
+              </div>
+
+              <div class="doc__barra">
+                <span class="chip chip--ambar">Falta: confirmar la entrega del gabinete</span>
+                <span class="apunte">8 renglones · 854 piezas</span>
+                <span class="juntos">
+                  <button type="button" class="btn btn--chico btn--fantasma"><svg aria-hidden="true"><use href="#i-descargar"></use></svg>Vista previa PDF</button>
+                  <button type="button" class="btn btn--chico btn--fantasma">Guardar cambios</button>
+                  <button type="button" class="btn btn--chico"><svg aria-hidden="true"><use href="#i-enviar"></use></svg>Reenviar al cliente</button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ul class="notas">
+      <li><b>Nadie promete lo que no tiene</b> El buscador enseña tu existencia y la del proveedor con su fecha: verde si lo tienes, ámbar si no tienes nada tuyo, rojo si el dato del proveedor ya envejeció.</li>
+      <li><b>El renglón se corrige donde está</b> La cantidad es un campo dentro de la celda, con el mismo anillo de foco del resto del sistema. No abre otra pantalla.</li>
+      <li><b>El documento recuerda su día</b> Tipo de cambio y costos quedan congelados: lo que le mandaste al cliente sigue diciendo lo mismo dentro de seis meses.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================================================ 04 · FACTURACIÓN ===== -->
+<section class="pantalla" id="facturacion">
+  <div class="envoltura envoltura--ancha">
+    <div class="rotulo">
+      <span class="rotulo__n">04</span>
+      <div>
+        <h2>Facturación</h2>
+        <p>Lo que más miedo da mover de sistema. Por eso esta pantalla no adorna nada: estado del timbrado, UUID a la vista, lo que el SAT va a pedir y cuántos timbres del plan llevas.</p>
+      </div>
+    </div>
+
+    <div class="marco aparecer">
+      <div class="marco__barra"><span class="marco__puntos"><i></i><i></i><i></i></span><span class="marco__url">erp.tecnocableado.com<b>/facturas</b></span></div>
+      <div class="app">
+        <nav class="lateral" aria-label="Módulos del sistema · captura de facturas">
+          <div class="lateral__marca"><img src="assets/logos/incsales-completo-blanco.svg" alt="IncSales" width="800" height="219"></div>
+          <a class="lateral__item" href="#inicio"><svg aria-hidden="true"><use href="#i-inicio"></use></svg>Inicio</a>
+          <p class="lateral__grupo">Vender</p>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-interesados"></use></svg>Interesados<span class="lateral__insignia">6</span></span>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-negocios"></use></svg>Negocios</span>
+          <a class="lateral__item" href="#cotizaciones"><svg aria-hidden="true"><use href="#i-cotizaciones"></use></svg>Cotizaciones</a>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-pedidos"></use></svg>Pedidos</span>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-remisiones"></use></svg>Remisiones</span>
+          <p class="lateral__grupo">Operar</p>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-inventarios"></use></svg>Inventarios</span>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-compras"></use></svg>Compras</span>
+          <a class="lateral__item" href="#facturacion" aria-current="page"><svg aria-hidden="true"><use href="#i-facturas"></use></svg>Facturas</a>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-gastos"></use></svg>Gastos</span>
+          <p class="lateral__grupo">Canales</p>
+          <a class="lateral__item" href="#whatsapp"><svg aria-hidden="true"><use href="#i-whatsapp"></use></svg>WhatsApp<span class="lateral__insignia">4</span></a>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-marketing"></use></svg>Marketing</span>
+          <p class="lateral__grupo">Medir</p>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-analitica"></use></svg>Analítica</span>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-config"></use></svg>Configuración</span>
+          <div class="lateral__cuenta">
+            <span class="avatar" aria-hidden="true">MR</span>
+            <span class="dato"><span class="dato__v">Mariana Ruvalcaba</span><span class="dato__t">TecnoCableado</span></span>
+          </div>
+        </nav>
+
+        <div class="lienzo-app">
+          <header class="cabecera-app">
+            <span class="buscador"><svg aria-hidden="true"><use href="#i-buscar"></use></svg>Busca un cliente, un folio o un producto<kbd>⌘K</kbd></span>
+            <span class="crece"></span>
+            <button type="button" class="btn btn--chico btn--fantasma"><svg aria-hidden="true"><use href="#i-mas"></use></svg>Nuevo</button>
+            <button type="button" class="btn-icono" aria-label="Avisos, 4 sin leer"><svg aria-hidden="true"><use href="#i-campana"></use></svg></button>
+            <span class="avatar" aria-hidden="true">MR</span>
+          </header>
+
+          <div class="pagina">
+            <div class="pagina__cabeza">
+              <div>
+                <h3 class="pagina__titulo">Facturas</h3>
+                <p class="pagina__sub">CFDI 4.0 · timbrado por PAC · serie A para venta, serie B para global</p>
+              </div>
+              <div class="pagina__acciones">
+                <button type="button" class="btn btn--chico btn--fantasma"><svg aria-hidden="true"><use href="#i-descargar"></use></svg>ZIP de 2026</button>
+                <button type="button" class="btn btn--chico"><svg aria-hidden="true"><use href="#i-mas"></use></svg>Nueva factura</button>
+              </div>
+            </div>
+
+            <div class="kpis">
+              <div class="kpi"><p class="kpi__q">Facturas de septiembre</p><p class="kpi__n">64</p><p class="kpi__d kpi__d--sube"><svg aria-hidden="true"><use href="#i-sube"></use></svg>9 más que en agosto</p></div>
+              <div class="kpi"><p class="kpi__q">Facturado con IVA</p><p class="kpi__n">$1,284,610</p><p class="kpi__d tenue">62 clientes distintos</p></div>
+              <div class="kpi"><p class="kpi__q">Por cobrar</p><p class="kpi__n">$612,480</p><p class="kpi__d tenue">18 facturas abiertas</p></div>
+              <div class="kpi"><p class="kpi__q">Vencido más de 30 días</p><p class="kpi__n">$186,920</p><p class="kpi__d kpi__d--baja"><svg aria-hidden="true"><use href="#i-baja"></use></svg>3 facturas, 3 clientes</p></div>
+              <div class="kpi">
+                <p class="kpi__q">Timbres usados del plan Operación</p>
+                <p class="kpi__n">60 <span class="de">de 100</span></p>
+                <span class="medidor" role="img" aria-label="60 de 100 timbres usados"><i style="width:60%"></i></span>
+                <p class="kpi__d tenue">Se renueva en 14 días</p>
+              </div>
+            </div>
+
+            <p class="aviso aviso--aviso">
+              <svg aria-hidden="true"><use href="#i-alerta"></use></svg>
+              <span><strong>Tres facturas cobradas siguen sin complemento de pago</strong>A-1036, A-1038 y A-1040 se cobraron este mes. El SAT pide el complemento a más tardar el 5 de octubre.</span>
+              <button type="button" class="btn btn--chico btn--fantasma crece">Generar los tres</button>
+            </p>
+
+            <div class="pestanas" role="group" aria-label="Estado del timbrado">
+              <button type="button" aria-current="page">Todas <span class="tenue">64</span></button>
+              <button type="button">Timbradas <span class="tenue">59</span></button>
+              <button type="button">Por timbrar <span class="tenue">3</span></button>
+              <button type="button">Rechazadas <span class="tenue">1</span></button>
+              <button type="button">Canceladas <span class="tenue">1</span></button>
+            </div>
+
+            <div class="datos-caja">
+              <div class="datos-scroll">
+                <table class="datos">
+                  <caption>Totales con IVA, en pesos. El UUID va recortado; el completo viaja en el PDF y en el XML.</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Serie y folio</th>
+                      <th scope="col">Cliente</th>
+                      <th scope="col">Fecha</th>
+                      <th scope="col">UUID</th>
+                      <th scope="col">Uso CFDI</th>
+                      <th scope="col" class="n">Total</th>
+                      <th scope="col">Timbrado</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="clave">A-1042</td><td class="fuerte">Torre Adamant II</td><td class="fecha">17 sep 2026</td>
+                      <td class="clave">8F3C…A91D</td><td>G03</td><td class="n fuerte">214,020.00</td>
+                      <td><span class="estado estado--ok">Timbrada</span></td>
+                    </tr>
+                    <tr>
+                      <td class="clave">A-1041</td><td class="fuerte">Grupo Médico Providencia</td><td class="fecha">15 sep 2026</td>
+                      <td class="clave">2B77…4C08</td><td>G01</td><td class="n fuerte">112,230.00</td>
+                      <td><span class="estado estado--ok">Timbrada</span></td>
+                    </tr>
+                    <tr>
+                      <td class="clave">A-1040</td><td class="fuerte">Industrias Ocotlán</td><td class="fecha">12 sep 2026</td>
+                      <td class="clave">D014…7E52</td><td>G03</td><td class="n fuerte">74,124.00</td>
+                      <td><span class="estado estado--ok">Timbrada</span></td>
+                    </tr>
+                    <tr>
+                      <td class="clave">A-1039</td><td class="fuerte">Distrimedic</td><td class="fecha">11 sep 2026</td>
+                      <td class="tenue">sin UUID</td><td>G01</td><td class="n fuerte">96,860.00</td>
+                      <td><span class="estado estado--mal">Rechazada · CFDI40102</span><span class="nota-celda">El nombre del receptor no coincide con su constancia</span></td>
+                    </tr>
+                    <tr>
+                      <td class="clave">A-1038</td><td class="fuerte">Aceros del Bajío</td><td class="fecha">10 sep 2026</td>
+                      <td class="clave">6A9E…1B30</td><td>G03</td><td class="n fuerte">48,720.00</td>
+                      <td><span class="estado estado--ok">Timbrada</span></td>
+                    </tr>
+                    <tr>
+                      <td class="clave">A-1037</td><td class="fuerte">GS Pinturas</td><td class="fecha">9 sep 2026</td>
+                      <td class="clave">C528…9F41</td><td>G01</td><td class="n fuerte">33,640.00</td>
+                      <td><span class="estado">Cancelada</span><span class="nota-celda">Sustituida por A-1043</span></td>
+                    </tr>
+                    <tr>
+                      <td class="clave">A-1036</td><td class="fuerte">Refaccionaria Miramar</td><td class="fecha">8 sep 2026</td>
+                      <td class="clave">44B1…C7A6</td><td>G03</td><td class="n fuerte">31,900.00</td>
+                      <td><span class="estado estado--ok">Timbrada</span></td>
+                    </tr>
+                    <tr>
+                      <td class="clave">A-1035</td><td class="fuerte">Constructora Everest</td><td class="fecha">5 sep 2026</td>
+                      <td class="clave">17DA…8E90</td><td>G01</td><td class="n fuerte">61,480.00</td>
+                      <td><span class="estado estado--ok">Timbrada</span></td>
+                    </tr>
+                    <tr>
+                      <td class="clave">B-0008</td><td class="fuerte">Público en general · global de agosto</td><td class="fecha">1 sep 2026</td>
+                      <td class="tenue">en cola</td><td>S01</td><td class="n fuerte">18,560.00</td>
+                      <td><span class="estado estado--espera">Por timbrar</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="datos__pie">
+                <span>9 de 64 facturas de septiembre</span>
+                <span class="tenue">$691,534.00 en pantalla</span>
+                <span class="paginacion">
+                  <button type="button" aria-label="Página anterior" disabled>‹</button>
+                  <button type="button" aria-current="true">1</button>
+                  <button type="button">2</button>
+                  <button type="button">3</button>
+                  <button type="button">…</button>
+                  <button type="button">8</button>
+                  <button type="button" aria-label="Página siguiente">›</button>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flotante flotante-sitio" role="status">
+            <svg aria-hidden="true"><use href="#i-check"></use></svg>
+            <span><strong>Factura A-1042 timbrada</strong><br><span class="tenue">UUID 8F3C…A91D · PDF y XML listos</span></span>
+            <button type="button" class="btn-icono crece" aria-label="Cerrar aviso"><svg aria-hidden="true"><use href="#i-cerrar"></use></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ul class="notas">
+      <li><b>El rechazo se explica</b> Una factura rechazada trae la clave del error del SAT en el mismo renglón. Nadie tiene que abrir el documento para saber qué pasó.</li>
+      <li><b>El plan se ve dentro del producto</b> Los timbres consumidos son un indicador más, no una sorpresa a fin de mes. El plan Operación incluye 100 CFDI al mes.</li>
+      <li><b>Los avisos no se van solos</b> El aviso de timbrado se queda hasta que le das a la X, igual que en el sistema real.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========================================= 05 · BANDEJA DE WHATSAPP ==== -->
+<section class="pantalla" id="whatsapp">
+  <div class="envoltura envoltura--ancha">
+    <div class="rotulo">
+      <span class="rotulo__n">05</span>
+      <div>
+        <h2>Bandeja de WhatsApp</h2>
+        <p>Cuatro columnas: bandejas, conversaciones, chat y ficha de la persona. Todo el estado va en la dirección, así que una conversación se pasa por enlace y el botón de atrás funciona. El mensaje entrante cae solo en la bitácora del negocio.</p>
+      </div>
+    </div>
+
+    <div class="marco aparecer">
+      <div class="marco__barra"><span class="marco__puntos"><i></i><i></i><i></i></span><span class="marco__url">erp.tecnocableado.com<b>/whatsapp?conv=8841&amp;panel=ficha</b></span></div>
+      <div class="app">
+        <nav class="lateral" aria-label="Módulos del sistema · captura de WhatsApp">
+          <div class="lateral__marca"><img src="assets/logos/incsales-completo-blanco.svg" alt="IncSales" width="800" height="219"></div>
+          <a class="lateral__item" href="#inicio"><svg aria-hidden="true"><use href="#i-inicio"></use></svg>Inicio</a>
+          <p class="lateral__grupo">Vender</p>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-interesados"></use></svg>Interesados<span class="lateral__insignia">6</span></span>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-negocios"></use></svg>Negocios</span>
+          <a class="lateral__item" href="#cotizaciones"><svg aria-hidden="true"><use href="#i-cotizaciones"></use></svg>Cotizaciones</a>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-pedidos"></use></svg>Pedidos</span>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-remisiones"></use></svg>Remisiones</span>
+          <p class="lateral__grupo">Operar</p>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-inventarios"></use></svg>Inventarios</span>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-compras"></use></svg>Compras</span>
+          <a class="lateral__item" href="#facturacion"><svg aria-hidden="true"><use href="#i-facturas"></use></svg>Facturas</a>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-gastos"></use></svg>Gastos</span>
+          <p class="lateral__grupo">Canales</p>
+          <a class="lateral__item" href="#whatsapp" aria-current="page"><svg aria-hidden="true"><use href="#i-whatsapp"></use></svg>WhatsApp<span class="lateral__insignia">4</span></a>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-marketing"></use></svg>Marketing</span>
+          <p class="lateral__grupo">Medir</p>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-analitica"></use></svg>Analítica</span>
+          <span class="lateral__item"><svg aria-hidden="true"><use href="#i-config"></use></svg>Configuración</span>
+          <div class="lateral__cuenta">
+            <span class="avatar" aria-hidden="true">MR</span>
+            <span class="dato"><span class="dato__v">Mariana Ruvalcaba</span><span class="dato__t">TecnoCableado</span></span>
+          </div>
+        </nav>
+
+        <div class="lienzo-app">
+          <header class="cabecera-app">
+            <span class="buscador"><svg aria-hidden="true"><use href="#i-buscar"></use></svg>Busca un cliente, un folio o un producto<kbd>⌘K</kbd></span>
+            <span class="crece"></span>
+            <button type="button" class="btn btn--chico btn--fantasma"><svg aria-hidden="true"><use href="#i-mas"></use></svg>Nuevo</button>
+            <button type="button" class="btn-icono" aria-label="Avisos, 4 sin leer"><svg aria-hidden="true"><use href="#i-campana"></use></svg></button>
+            <span class="avatar" aria-hidden="true">MR</span>
+          </header>
+
+          <div class="pagina">
+            <div class="pagina__cabeza">
+              <div>
+                <h3 class="pagina__titulo">WhatsApp</h3>
+                <p class="pagina__sub">Número de la empresa +52 33 3779 3774 · conectado desde Configuración</p>
+              </div>
+              <div class="pagina__acciones">
+                <button type="button" class="btn btn--chico btn--fantasma">Campañas por plantilla</button>
+                <button type="button" class="btn btn--chico"><svg aria-hidden="true"><use href="#i-mas"></use></svg>Nueva conversación</button>
+              </div>
+            </div>
+
+            <div class="bandeja">
+              <div class="bandeja__lado">
+                <span class="buzon"><svg aria-hidden="true"><use href="#i-interesados"></use></svg>Sin asignar<span class="cuenta">4</span></span>
+                <span class="buzon" aria-current="true"><svg aria-hidden="true"><use href="#i-usuario"></use></svg>Míos<span class="cuenta">5</span></span>
+                <span class="buzon"><svg aria-hidden="true"><use href="#i-whatsapp"></use></svg>Todos<span class="cuenta">23</span></span>
+                <span class="buzon"><svg aria-hidden="true"><use href="#i-check"></use></svg>Cerradas<span class="cuenta">147</span></span>
+                <span class="buzon"><svg aria-hidden="true"><use href="#i-alerta"></use></svg>Spam<span class="cuenta">2</span></span>
+                <p class="grupo-lado">Etiquetas</p>
+                <span class="buzon"><span class="chip chip--azul">Cotización</span><span class="cuenta">9</span></span>
+                <span class="buzon"><span class="chip chip--ambar">Cobranza</span><span class="cuenta">3</span></span>
+                <span class="buzon"><span class="chip chip--violeta">Soporte</span><span class="cuenta">5</span></span>
+              </div>
+
+              <div class="bandeja__lista">
+                <div class="bandeja__cab">
+                  <h4>Míos</h4>
+                  <span class="apunte">5 conversaciones</span>
+                </div>
+                <span class="conv" aria-current="true">
+                  <span class="avatar" aria-hidden="true">SM</span>
+                  <span>
+                    <span class="conv__t"><b>Ing. Salvador Mora</b><span class="conv__h">10:42</span></span>
+                    <span class="conv__p">¿Ese precio me aguanta hasta el viernes?</span>
+                    <span class="conv__e"><span class="chip chip--azul">Cotización</span><span class="apunte">Hospital San Javier</span></span>
+                  </span>
+                </span>
+                <span class="conv">
+                  <span class="avatar" aria-hidden="true">KB</span>
+                  <span>
+                    <span class="conv__t"><b>Karla Beltrán</b><span class="conv__h">09:58</span></span>
+                    <span class="conv__p">Te mando la orden de compra firmada</span>
+                    <span class="conv__e"><span class="apunte">Distrimedic</span><span class="conv__n">1</span></span>
+                  </span>
+                </span>
+                <span class="conv">
+                  <span class="avatar" aria-hidden="true">?</span>
+                  <span>
+                    <span class="conv__t"><b>+52 33 1284 5510</b><span class="conv__h">09:12</span></span>
+                    <span class="conv__p">Buenas, quiero cotizar 300 nodos en Zapopan</span>
+                    <span class="conv__e"><span class="chip">Sin contacto</span><span class="conv__n">3</span></span>
+                  </span>
+                </span>
+                <span class="conv">
+                  <span class="avatar" aria-hidden="true">RC</span>
+                  <span>
+                    <span class="conv__t"><b>Ramiro Cortés</b><span class="conv__h">ayer</span></span>
+                    <span class="conv__p">Gracias, lo reviso hoy y te aviso</span>
+                    <span class="conv__e"><span class="apunte">Constructora Everest</span></span>
+                  </span>
+                </span>
+                <span class="conv">
+                  <span class="avatar" aria-hidden="true">AF</span>
+                  <span>
+                    <span class="conv__t"><b>Alma Figueroa</b><span class="conv__h">ayer</span></span>
+                    <span class="conv__p">¿Manejan canaleta de 40 × 40?</span>
+                    <span class="conv__e"><span class="apunte">GS Pinturas</span></span>
+                  </span>
+                </span>
+              </div>
+
+              <div class="charla">
+                <div class="bandeja__cab">
+                  <span class="avatar" aria-hidden="true">SM</span>
+                  <h4>Ing. Salvador Mora</h4>
+                  <span class="crece"></span>
+                  <button type="button" class="filtro" aria-label="Asignada a Mariana Ruvalcaba">Mariana R.<svg aria-hidden="true"><use href="#i-chevron"></use></svg></button>
+                  <button type="button" class="btn-icono" aria-label="Más opciones"><svg aria-hidden="true"><use href="#i-puntos"></use></svg></button>
+                </div>
+                <div class="charla__hilo">
+                  <p class="charla__sello"><svg aria-hidden="true"><use href="#i-reloj"></use></svg>Hoy</p>
+                  <p class="burbuja">Buen día. ¿Ya quedó el precio del switch de 48 puertos? Lo necesito para el comité de mañana.<time>10:38</time></p>
+                  <p class="charla__sello"><svg aria-hidden="true"><use href="#i-check"></use></svg>Se cruzó por teléfono con el contacto y cayó solo en la bitácora de <b>Hospital San Javier</b></p>
+                  <p class="burbuja burbuja--mia">Buen día, ingeniero. Sí: $32,450 + IVA por pieza, entrega en 5 días hábiles. Le mando la cotización completa.<time>10:41 · leído</time></p>
+                  <p class="burbuja burbuja--mia"><span class="origen"><svg aria-hidden="true"><use href="#i-adjuntar"></use></svg>COT-2026-0418 · Hospital San Javier.pdf · 248 KB</span><time>10:41 · leído</time></p>
+                  <p class="burbuja">¿Ese precio me aguanta hasta el viernes?<time>10:42</time></p>
+                </div>
+                <div class="charla__pie">
+                  <div class="fila-acciones">
+                    <span class="chip chip--verde">Ventana de 24 h · quedan 23 h 53 min</span>
+                    <span class="apunte crece">Si contestas, la conversación queda asignada a ti.</span>
+                  </div>
+                  <div class="campo campo--fila sep-arriba">
+                    <div class="fila-acciones">
+                      <input id="mensaje" type="text" placeholder="Escribe un mensaje…" aria-label="Mensaje para Ing. Salvador Mora">
+                      <button type="button" class="btn-icono" aria-label="Adjuntar"><svg aria-hidden="true"><use href="#i-adjuntar"></use></svg></button>
+                      <button type="button" class="btn btn--chico"><svg aria-hidden="true"><use href="#i-enviar"></use></svg>Enviar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ficha-lado">
+                <div class="fila-acciones">
+                  <span class="avatar" aria-hidden="true">SM</span>
+                  <span class="dato"><span class="dato__v">Ing. Salvador Mora</span><span class="sub-dato">Hospital San Javier</span></span>
+                </div>
+                <div class="dato"><span class="dato__t">Teléfono</span><span class="dato__v">+52 33 1180 4472</span></div>
+                <div class="dato"><span class="dato__t">Papel en la empresa</span><span class="dato__v">Jefe de sistemas<small>Quien autoriza: Dir. Administración</small></span></div>
+                <div class="dato">
+                  <span class="dato__t">Negocio abierto</span>
+                  <span class="dato__v">Hospital San Javier · $248,900</span>
+                  <span class="estado estado--curso">Cotización enviada · hace 2 d</span>
+                </div>
+                <div class="dato"><span class="dato__t">Último documento</span><span class="dato__v">COT-2026-0418<small>Enviada el 15 sep · vence el 30 sep</small></span></div>
+                <div class="dato"><span class="dato__t">Etiquetas</span><span class="fila-acciones"><span class="chip chip--azul">Cotización</span><span class="chip chip--verde">Cliente</span></span></div>
+                <button type="button" class="btn btn--chico btn--bloque">Abrir el negocio</button>
+                <button type="button" class="btn btn--chico btn--fantasma btn--bloque">Adjuntar otra cotización</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ul class="notas">
+      <li><b>El mensaje no se queda en el chat</b> Entra por teléfono, se cruza con el contacto y se escribe solo en la bitácora del negocio abierto. Eso es lo que separa un WhatsApp de un CRM.</li>
+      <li><b>Se puede atender a un desconocido</b> La tercera conversación todavía no es contacto y aun así se contesta; darla de alta no pierde el hilo.</li>
+      <li><b>Contestar es hacerse cargo</b> Si nadie llevaba la conversación, queda asignada a quien respondió. La regla está escrita donde se escribe.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ==================================== 06 · CARGANDO, VACÍO Y MODAL ===== -->
+<section class="pantalla" id="estados">
+  <div class="envoltura envoltura--ancha">
+    <div class="rotulo">
+      <span class="rotulo__n">06</span>
+      <div>
+        <h2>Cargando, vacío y confirmación</h2>
+        <p>Un sistema sin estados se siente falso. Estos tres son los que más se ven y los que casi nadie diseña: mientras llegan los datos, cuando no hay nada que enseñar y cuando algo sale de la empresa hacia un cliente.</p>
+      </div>
+    </div>
+
+    <div class="dos-columnas aparecer">
+      <div class="columna">
+        <div class="datos-caja">
+          <div class="cuadro__cab"><h3>Cargando</h3><span class="apunte">La tabla ya reservó su sitio: nada salta cuando llegan los datos.</span></div>
+          <div class="datos-scroll">
+            <table class="datos">
+              <thead>
+                <tr><th scope="col">Folio</th><th scope="col">Cliente</th><th scope="col">Fecha</th><th scope="col" class="n">Importe</th><th scope="col">Estado</th></tr>
+              </thead>
+              <tbody aria-busy="true">
+                <tr><td><span class="esqueleto esqueleto--medio"></span></td><td><span class="esqueleto"></span></td><td><span class="esqueleto esqueleto--corto"></span></td><td><span class="esqueleto esqueleto--corto"></span></td><td><span class="esqueleto esqueleto--corto"></span></td></tr>
+                <tr><td><span class="esqueleto esqueleto--medio"></span></td><td><span class="esqueleto"></span></td><td><span class="esqueleto esqueleto--corto"></span></td><td><span class="esqueleto esqueleto--corto"></span></td><td><span class="esqueleto esqueleto--corto"></span></td></tr>
+                <tr><td><span class="esqueleto esqueleto--medio"></span></td><td><span class="esqueleto"></span></td><td><span class="esqueleto esqueleto--corto"></span></td><td><span class="esqueleto esqueleto--corto"></span></td><td><span class="esqueleto esqueleto--corto"></span></td></tr>
+                <tr><td><span class="esqueleto esqueleto--medio"></span></td><td><span class="esqueleto"></span></td><td><span class="esqueleto esqueleto--corto"></span></td><td><span class="esqueleto esqueleto--corto"></span></td><td><span class="esqueleto esqueleto--corto"></span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="datos__pie"><span class="tenue">Consultando 128 documentos…</span></div>
+        </div>
+
+        <div class="datos-caja">
+          <div class="cuadro__cab"><h3>Vacío</h3><span class="apunte">Dice por qué está vacío y qué hacer, no «no hay datos».</span></div>
+          <div class="vacio">
+            <span class="vacio__icono" aria-hidden="true"><svg><use href="#i-caja-vacia"></use></svg></span>
+            <h4>No hay requisiciones pendientes</h4>
+            <p>Cuando confirmes un pedido con algo que no tienes en almacén, la requisición se levanta sola y aparece aquí, agrupada por proveedor.</p>
+            <button type="button" class="btn btn--chico btn--fantasma">Ver órdenes de compra</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="marco">
+        <div class="marco__barra"><span class="marco__puntos"><i></i><i></i><i></i></span><span class="marco__url">erp.tecnocableado.com/…<b>/COT-2026-0418/enviar</b></span></div>
+        <div class="escena">
+          <span class="escena__velo" aria-hidden="true"></span>
+          <div class="modal" role="dialog" aria-labelledby="titulo-modal">
+            <div class="modal__cabeza">
+              <h3 id="titulo-modal">Reenviar COT-2026-0418 al cliente</h3>
+              <p class="apunte">Sale desde tu propio dominio, no desde un remitente de plataforma.</p>
+            </div>
+            <div class="modal__cuerpo">
+              <div class="forma">
+                <div class="campo">
+                  <label for="modal-para">Para</label>
+                  <input id="modal-para" type="email" value="smora@hospitalsanjavier.mx">
+                  <p class="campo__ayuda">Contacto principal de Hospital San Javier.</p>
+                </div>
+                <div class="campo">
+                  <label for="modal-asunto">Asunto</label>
+                  <input id="modal-asunto" type="text" value="Cotización COT-2026-0418 actualizada · 240 nodos Cat6">
+                </div>
+                <p class="casilla"><input id="modal-pdf" type="checkbox" checked><label for="modal-pdf">Adjuntar el PDF con el logotipo de la empresa (248 KB)</label></p>
+                <p class="aviso">
+                  <svg aria-hidden="true"><use href="#i-reloj"></use></svg>
+                  <span><strong>Al reenviar, el cliente recibe la versión de hoy</strong>Queda registrado en la bitácora del negocio y la vigencia sigue venciendo el 30 de septiembre.</span>
+                </p>
+              </div>
+            </div>
+            <div class="modal__pie">
+              <button type="button" class="btn btn--chico btn--fantasma">Cancelar</button>
+              <button type="button" class="btn btn--chico"><svg aria-hidden="true"><use href="#i-enviar"></use></svg>Reenviar cotización</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ul class="notas">
+      <li><b>Cargando no es un remolino</b> Es la forma de la tabla que viene en camino, con la misma altura de renglón. El ojo no tiene que reacomodarse dos veces.</li>
+      <li><b>Vacío es una instrucción</b> Explica la regla del sistema y ofrece la salida. Una pantalla vacía es la primera que ve un cliente nuevo.</li>
+      <li><b>Confirmar dice consecuencias</b> Antes de que algo salga a un cliente, el modal dice qué va a cambiar dentro del sistema.</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <div class="envoltura envoltura--ancha">
+    <div class="pie__grid">
+      <div class="pie__acerca">
+        <img class="pie__logo" src="assets/logos/incsales-completo-blanco.svg" alt="IncSales" width="800" height="219">
+        <p>ERP en la nube con CRM adentro, para empresas que viven de cotizar. Hecho en Guadalajara
+          por Incoming Sales.</p>
+        <div class="pie__contacto">
+          <a href="mailto:contacto@incsales.com.mx">contacto@incsales.com.mx</a>
+          <a href="https://wa.me/523337793774" target="_blank" rel="noopener">+52 33 3779 3774</a>
+          <span>Guadalajara, Jalisco, México</span>
+        </div>
+      </div>
+      <div>
+        <h3 class="pie__titulo">Producto</h3>
+        <ul>
+          <li><a href="index.html#crm">CRM y seguimiento</a></li>
+          <li><a href="#cotizaciones">Cotizaciones y venta</a></li>
+          <li><a href="index.html#inventarios">Inventarios</a></li>
+          <li><a href="index.html#compras">Compras y proveedores</a></li>
+          <li><a href="#facturacion">Facturación CFDI 4.0</a></li>
+          <li><a href="#whatsapp">WhatsApp y marketing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="pie__titulo">Planes</h3>
+        <ul>
+          <li><a href="index.html#precios">Cotiza, desde $200</a></li>
+          <li><a href="index.html#precios">CRM, desde $499</a></li>
+          <li><a href="index.html#precios">Completo, desde $2,490</a></li>
+          <li><a href="index.html#precios">Complementos</a></li>
+          <li><a href="index.html#precios">A la medida</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="pie__titulo">Servicios</h3>
+        <ul>
+          <li><a href="index.html#precios">Migración de datos</a></li>
+          <li><a href="index.html#precios">Implementación y capacitación</a></li>
+          <li><a href="index.html#precios">Desarrollo a la medida</a></li>
+          <li><a href="index.html#prueba">WhatsApp Business API</a></li>
+          <li><a href="index.html#precios">Portal de clientes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="pie__titulo">Empresa</h3>
+        <ul>
+          <li><a href="index.html#prueba">Por dentro</a></li>
+          <li><a href="por-dentro.html">Las pantallas del sistema</a></li>
+          <li><a href="index.html#confianza">Confianza y operación</a></li>
+          <li><a href="index.html#preguntas">Preguntas frecuentes</a></li>
+          <li><a href="index.html#demo">Agenda una demo</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pie__legal">
+      <span>© <span data-anio>2026</span> Incoming Sales · IncSales ERP. Todos los derechos reservados.</span>
+      <span>Precios en pesos mexicanos con IVA incluido. Propuesta de diseño, no es el sitio publicado.</span>
+    </div>
+  </div>
+</footer>
+
+<footer class="bloque bloque--corto bloque--linea">
+  <div class="envoltura envoltura--ancha fila-acciones pie-doc">
+    <img src="assets/logos/incsales-completo.svg" alt="IncSales" width="800" height="219">
+    <p class="apunte">Las seis pantallas usan los mismos tokens, la misma tipografía y la misma retícula que la landing. Lo único que cambia es la densidad.</p>
+    <p class="apunte crece"><a href="mailto:contacto@incsales.com.mx">contacto@incsales.com.mx</a> · <a href="tel:+523337793774">+52 33 3779 3774</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/sistema.js" defer></script>
+</body>
+</html>

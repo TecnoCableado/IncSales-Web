@@ -1,0 +1,289 @@
+/* ============================================================================
+   INCSALES · COMPARATIVAS (comparativa.html)
+   ----------------------------------------------------------------------------
+   Solo piezas que NO existen en sistema.css. Cero hex sueltos, cero rgba()
+   inventados, cero radios o sombras nuevos, una sola tipografía y ningún borde
+   de color: todo sale de los tokens. Cada font-size viaja con su
+   letter-spacing, como manda el sistema. Si algo de aquí se repite en otra
+   página, se sube al sistema; mientras tanto vive aquí y no toca a nadie más.
+
+   Esta página compara categorías de producto. Su riesgo de diseño es el de
+   siempre en una comparativa: que el color haga el argumento. Aquí no lo hace
+   —no hay columna pintada de verde ni caja con raya roja al costado—; lo hace
+   la palabra escrita en la celda, y el sistema solo la ordena.
+   ========================================================================== */
+
+/* ==================================================== 0. UNA SOLA TIPOGRAFÍA
+   Un <button> no hereda la letra del documento: hay que dársela. Sin esto, el
+   único botón del menú —«Producto»— sale en la letra por omisión del sistema
+   operativo y queda como el único elemento de la página con otra tipografía,
+   justo al lado de los enlaces que sí van en Inter. */
+.nav__item, .nav__hamburguesa { font-family: var(--fuente); }
+
+/* Un <th> del cuerpo de la tabla llega en negrita de navegador (700). Esta es
+   una página de tablas largas: aquí se fija el peso del sistema, que es el
+   mismo de cualquier otro rótulo fuerte. */
+.tabla tbody th { font-weight: var(--peso-medio); color: var(--tinta-2); }
+
+/* Una cita del navegador llega en cursiva y con sangría propia. Ni una ni otra
+   son del sistema: el testimonio se lee en la misma letra que el resto. */
+.cita blockquote { margin: 0; font-style: normal; }
+
+/* El sistema pone en bloque y en color de estado todo <strong> y <b> que caiga
+   dentro de un aviso, porque ahí el texto fuerte es el título. En esta página
+   los avisos son notas de fuente y notas legales: dentro del párrafo hay que
+   poder destacar una fecha o una frase sin partir el renglón en dos. El título
+   sigue siendo el <b> —bloque y color de estado, igual que en todo el sitio— y
+   el <strong> del cuerpo vuelve a ser lo que es en cualquier otro párrafo:
+   mismo peso y misma tinta que un fuerte normal, en línea. */
+.aviso strong { display: inline; color: var(--tinta-2); font-weight: var(--peso-fuerte); margin-bottom: 0; }
+.bloque--tinta .aviso strong { color: var(--tinta-noche); }
+
+/* Con una barra de índice pegada bajo el menú, el destino de un ancla tiene
+   que bajar lo que miden las dos barras juntas o el título aterriza tapado. */
+html { scroll-padding-top: calc(var(--barra) + var(--e10)); }
+
+/* ================================================== 1. PORTADA DE INTERIOR
+   La misma portada de noche del sitio, con las migas encima. A la derecha no
+   va una maqueta: van las reglas con las que está escrita la comparación, que
+   es lo único que hace creíble a una comparativa firmada por el vendedor. */
+.portada__cabeza { display: grid; gap: var(--e7) var(--e9); align-items: start; }
+@media (min-width: 900px) {
+  .portada__cabeza { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); }
+}
+/* La columna de la ficha no estira: la tarjeta mide lo que mide su contenido
+   y se queda arriba, a la altura del titular. */
+.portada__lado { display: grid; align-content: start; }
+.portada__firma { padding-top: var(--e5); border-top: 1px solid var(--linea-noche); }
+.portada__firma svg { width: 14px; height: 14px; flex: 0 0 auto; color: var(--a4); }
+
+/* Sobre el fondo de noche las migas heredaban grises de página clara (3.4:1).
+   Se listan una por una y no como .portada--tinta *, por la misma razón que
+   lo hace el sistema: dentro de una portada puede ir superficie clara. */
+.portada--tinta .migas { color: var(--tinta-noche-2); }
+.portada--tinta .migas a { color: var(--a4); }
+.portada--tinta .migas li:not(:last-child)::after { color: var(--a4); opacity: .55; }
+
+/* La ficha que acompaña al titular. Es una tarjeta de fondo oscuro, no una
+   tarjeta blanca posada sobre la noche. */
+.lado__titulo {
+  margin: 0 0 var(--e3); font-size: var(--t-18); letter-spacing: var(--tr-18);
+  font-weight: var(--peso-fuerte); color: var(--tinta-noche); line-height: 1.32;
+}
+.tarjeta--tinta .apunte { color: var(--tinta-noche-2); }
+/* Las cuatro reglas, una debajo de otra. La separación es la misma línea de
+   1 px que usa el sistema sobre fondo de noche; no hay viñetas de color. */
+.lado__lista { list-style: none; margin: 0; padding: 0; display: grid; }
+.lado__lista li {
+  margin: 0; padding: .7rem 0; border-top: 1px solid var(--linea-noche);
+  font-size: var(--t-14); letter-spacing: var(--tr-14); color: var(--tinta-noche-2);
+}
+.lado__lista li:first-child { border-top: 0; padding-top: 0; }
+.lado__lista a { color: var(--a4); }
+.lado__lista b, .lado__lista strong { color: var(--tinta-noche); font-weight: var(--peso-fuerte); }
+.lado__legal {
+  margin: var(--e5) 0 0; padding-top: var(--e4);
+  border-top: 1px solid var(--linea-noche);
+  font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-noche-2);
+}
+.lado__legal b { display: block; color: var(--tinta-noche); font-weight: var(--peso-fuerte); }
+.lado__legal a { color: var(--a4); }
+
+/* ====================================================== 2. ÍNDICE PEGAJOSO
+   Diez secciones son demasiadas para recordarlas: el índice se queda pegado
+   bajo el menú y se comporta igual que él —relleno tenue al pasar por encima,
+   nunca una raya de color. */
+.indice {
+  position: sticky; top: var(--barra); z-index: 90;
+  background: var(--lienzo); border-bottom: 1px solid var(--linea-suave);
+}
+.indice__pista {
+  display: flex; gap: .1rem; margin: 0; padding: .35rem 0;
+  list-style: none; overflow-x: auto; scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.indice__pista::-webkit-scrollbar { display: none; }
+.indice__pista li { margin: 0; flex: 0 0 auto; }
+.indice__pista a {
+  display: block; padding: .4rem .65rem; border-radius: var(--r-sm);
+  font-size: var(--t-13); letter-spacing: var(--tr-13); font-weight: var(--peso-medio);
+  color: var(--tinta-4); text-decoration: none; white-space: nowrap;
+  transition: background-color var(--rapido) var(--curva), color var(--rapido) var(--curva);
+}
+.indice__pista a:hover { background: var(--n2); color: var(--tinta); text-decoration: none; }
+
+/* ======================================================== 3. EL MAPA DEL CICLO
+   Siete estaciones en fila y tres bandas debajo que dicen hasta dónde llega
+   cada categoría. Las bandas no se distinguen por color: se distinguen por
+   dónde empiezan y dónde terminan, que es justo lo que la sección argumenta.
+   La nuestra lleva el relleno tenue de acción —el mismo de un chip azul—,
+   nunca un borde ni una raya. */
+.ciclo {
+  display: grid; grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: var(--e2); padding: var(--e5); min-width: 52rem;
+}
+.ciclo__estacion {
+  grid-row: 1; display: grid; gap: .1rem; align-content: start;
+  padding: .55rem .6rem; border-radius: var(--r-sm); background: var(--n2);
+  font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-2);
+}
+.ciclo__estacion b {
+  font-size: var(--t-11); letter-spacing: var(--tr-11); font-weight: var(--peso-fuerte);
+  color: var(--tinta-5); font-variant-numeric: tabular-nums;
+}
+/* El cuerpo de la banda va en tinta de cuerpo y no en la secundaria: sobre el
+   gris de la propia banda, el secundario a 12 px se queda en 4.3:1 y no llega
+   a AA. Con la tinta de cuerpo son 7.4:1. */
+.ciclo__banda {
+  display: grid; gap: .1rem; align-content: center; margin: 0;
+  padding: .65rem .8rem; border-radius: var(--r-sm); background: var(--n3);
+  font-size: var(--t-12); letter-spacing: var(--tr-12); color: var(--tinta-3);
+}
+.ciclo__banda b {
+  font-size: var(--t-14); letter-spacing: var(--tr-14);
+  font-weight: var(--peso-fuerte); color: var(--tinta-2);
+}
+.ciclo__banda--crm    { grid-row: 2; grid-column: 1 / 4; }
+.ciclo__banda--admin  { grid-row: 2; grid-column: 4 / 8; }
+.ciclo__banda--nuestra {
+  grid-row: 3; grid-column: 1 / -1;
+  background: var(--accion-tenue); color: var(--tinta-3);
+}
+.ciclo__banda--nuestra b { color: var(--accion-honda); }
+.ciclo__pie {
+  margin: 0; padding: .7rem .9rem; border-top: 1px solid var(--linea-suave);
+}
+
+/* ============================================== 4. LISTAS Y CONTRASTE
+   Dentro de una tarjeta de categoría la lista no es prosa: son cuatro rasgos
+   del modelo de negocio, y van un escalón por debajo del párrafo. */
+.lista--menuda li { font-size: var(--t-13); letter-spacing: var(--tr-13); }
+/* La lista del sistema no trae margen inferior —es una rejilla, no prosa—, así
+   que lo que venga detrás de ella se le pegaba: el precio bajo «De dónde
+   migramos», la nota de los tres planes, el enlace de las siete respuestas. */
+.lista + p { margin-top: var(--e5); }
+
+/* Hoy contra con IncSales: dos tarjetas del mismo tamaño, una hundida y otra
+   posada. La diferencia la hacen la lista y el relleno, nunca un borde. */
+.contraste__cab {
+  display: flex; align-items: center; gap: .6rem; flex-wrap: wrap;
+  padding-bottom: var(--e4); margin-bottom: var(--e5);
+  border-bottom: 1px solid var(--linea-suave);
+}
+.contraste__cab h3 { margin: 0; font-size: var(--t-18); letter-spacing: var(--tr-18); }
+
+/* ================================================ 5. LAS TABLAS DE COBERTURA
+   La leyenda va antes de la tabla, no en el pie: se lee una vez y ya se sabe
+   leer los veinte renglones de abajo. */
+.leyenda {
+  display: flex; flex-wrap: wrap; gap: .4rem var(--e6); margin: 0 0 var(--e5);
+  font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-4);
+}
+.leyenda > span { display: inline-flex; align-items: baseline; gap: .35rem; }
+.leyenda b { font-weight: var(--peso-medio); }
+.leyenda .si { color: var(--exito-texto); }
+.leyenda .parcial { color: var(--aviso-texto); }
+.leyenda .no { color: var(--tinta-5); }
+
+/* Cinco columnas no caben en un teléfono: la columna de «qué necesitas» se
+   queda anclada a la izquierda mientras las demás se recorren. */
+.tabla--cobertura tbody th[scope="row"] {
+  position: sticky; left: 0; z-index: 1;
+  min-width: 17rem; background: var(--superficie);
+  border-right: 1px solid var(--linea-suave);
+}
+.tabla--cobertura thead th { vertical-align: bottom; }
+
+/* Dos pares de uso que en esta página no llegan a AA y aquí se corrigen, sin
+   inventar color: se baja un escalón dentro de la misma rampa.
+   · El «Sí» verde del sistema (--exito) sobre el relleno tenue de nuestra
+     columna da 4.3:1 a 14 px; con el tono de texto del mismo estado, 5.6:1.
+   · El «Parcial» ámbar sobre blanco da 3.4:1 —el ámbar es el color más
+     traicionero de cualquier paleta—; con su tono de texto, 4.8:1. */
+.tabla .tabla__col-nuestra.si { color: var(--exito-texto); }
+.tabla .parcial { color: var(--aviso-texto); }
+
+/* La tarjeta plana es el gris del sistema sobre superficie blanca. Dentro de
+   una sección hundida ese gris es exactamente el fondo de la sección, y la
+   tarjeta se volvía invisible: el dato de HubSpot, las dos notas de las suites
+   y los dos testimonios quedaban sin caja. Ahí se posa en blanco. Es la misma
+   pieza cumpliendo el mismo papel —destacarse del fondo sin relieve—, y no
+   toca al contraste «hoy / con IncSales», que vive sobre blanco y donde el
+   gris sí tiene contra qué recortarse. */
+.bloque--hundido .tarjeta--plana { background: var(--superficie); border-color: var(--linea); }
+
+/* ========================================================= 6. EL DATO CITABLE
+   Una tarjeta plana con la cifra grande y su fuente debajo. Ni comillas
+   decorativas ni barra de color: la cifra se defiende sola. */
+.dato { display: grid; gap: var(--e3); }
+.dato .cifra__n { font-size: var(--t-30); letter-spacing: var(--tr-30); }
+.dato p { margin: 0; font-size: var(--t-14); letter-spacing: var(--tr-14); color: var(--tinta-4); }
+.dato cite { font-style: normal; font-size: var(--t-12); letter-spacing: var(--tr-12); color: var(--tinta-5); }
+.dato + .dato { margin-top: var(--e4); }
+/* Sobre el fondo de noche el gris de metadato cae a 2.4:1. */
+.bloque--tinta .dato p, .bloque--tinta .dato cite { color: var(--tinta-noche-2); }
+
+/* ==================================================== 7. LOS PASOS NUMERADOS
+   Cinco pasos en cinco tarjetas. El número es del mismo cuerpo que un rótulo
+   de metadato y va en la misma letra que todo lo demás: lo que ordena la
+   lectura es la posición, no un círculo de color. */
+.pasos { counter-reset: paso; list-style: none; margin: 0; padding: 0; display: grid; gap: var(--e4); }
+.pasos > li { margin: 0; }
+.pasos h3 {
+  display: flex; align-items: baseline; gap: .6rem; margin-bottom: var(--e3);
+  font-size: var(--t-18); letter-spacing: var(--tr-18);
+}
+.pasos h3::before {
+  counter-increment: paso; content: counter(paso, decimal-leading-zero); flex: 0 0 auto;
+  font-size: var(--t-12); letter-spacing: var(--tr-12); font-weight: var(--peso-fuerte);
+  color: var(--tinta-5); font-variant-numeric: tabular-nums;
+}
+.pasos p { margin: 0; font-size: var(--t-15); letter-spacing: var(--tr-15); color: var(--tinta-4); }
+
+/* ============================================= 8. LAS PREGUNTAS Y LAS CITAS */
+.pregunta h3 {
+  margin: var(--e3) 0 var(--e3);
+  font-size: var(--t-18); letter-spacing: var(--tr-18);
+}
+.pregunta p { margin: 0; font-size: var(--t-15); letter-spacing: var(--tr-15); color: var(--tinta-4); }
+/* La séptima pregunta es la que nadie hace: se lleva el ancho entero. */
+.ancho-total { grid-column: 1 / -1; }
+
+.cita { display: grid; gap: var(--e4); margin: 0; }
+.cita blockquote { font-size: var(--t-16); letter-spacing: var(--tr-16); line-height: 1.55; color: var(--tinta-2); }
+.cita figcaption { display: flex; align-items: center; gap: .6rem; }
+.cita__quien b { display: block; font-size: var(--t-14); letter-spacing: var(--tr-14); font-weight: var(--peso-fuerte); color: var(--tinta); }
+.cita__quien span { font-size: var(--t-12); letter-spacing: var(--tr-12); color: var(--tinta-5); }
+
+/* ==================================================== 9. REMATES Y AJUSTES
+   Las únicas medidas que no son de una pieza, sino del ritmo entre ellas. */
+.pila { display: grid; gap: var(--e5); align-content: start; }
+/* El sistema le pone white-space: nowrap a todo botón, que es lo correcto para
+   uno en línea. Uno de ancho completo con etiqueta larga —«Ver el método de
+   migración de 8 pasos»— empujaba su tarjeta 36 px fuera de la pantalla a
+   360 px: el que ya ocupa el ancho entero puede partir su etiqueta. */
+.btn--bloque { white-space: normal; }
+.tras-rejilla { margin-top: var(--e6); }
+.tras-tabla { margin-top: var(--e6); }
+.tras-par { margin-top: var(--e7); }
+.tras-tira { margin-top: var(--e8); }
+.tras-titulo { margin-top: var(--e8); }
+.accion-centro { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; margin-top: var(--e7); }
+.acciones { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: var(--e5); }
+.icono-linea { flex: 0 0 auto; }
+
+/* =============================================== 10. CIERRE Y PIE DEL SITIO
+   Las mismas piezas que cierran la portada, para que todas las páginas
+   terminen igual. */
+.cierre__acciones { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; margin-top: var(--e7); }
+.cierre__firma { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--e5); margin-top: var(--e6); font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-noche-2); }
+.cierre__pie { margin-top: var(--e6); color: var(--tinta-noche-2); }
+
+/* Los rótulos del pie son encabezados de verdad (h3), para no saltar de h2 a
+   h5 en la jerarquía. El aspecto es el que sistema.css le da a .pie h5. */
+.pie__titulo {
+  color: var(--tinta-noche); font-size: var(--t-12); font-weight: var(--peso-fuerte);
+  letter-spacing: .07em; text-transform: uppercase; line-height: 1.4; margin-bottom: var(--e4);
+}
+.pie__logo { height: 30px; width: auto; margin-bottom: var(--e4); }
+.pie__contacto { display: grid; gap: .4rem; margin-top: var(--e4); font-size: var(--t-13); letter-spacing: var(--tr-13); }

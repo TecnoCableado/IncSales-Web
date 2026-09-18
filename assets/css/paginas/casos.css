@@ -1,0 +1,319 @@
+/* ============================================================================
+   INCSALES · CASOS DE ÉXITO (casos.html)
+   ----------------------------------------------------------------------------
+   Solo las piezas que NO existen en sistema.css. Cero hex sueltos, cero rgba()
+   inventados, cero radios y cero sombras nuevos: todo sale de los tokens.
+   UNA sola tipografía —los folios, los SKU y los importes van en la misma
+   letra que la prosa, con cifras tabulares y un poco de tracking, que es lo
+   que de verdad alinea una columna de números—. Y ningún borde de color: las
+   divisiones son de 1 px y grises, y lo que se quiere destacar se distingue
+   por relleno o por elevación, nunca por una raya de color al costado.
+   Cada font-size viaja con su letter-spacing, como manda el sistema.
+   Si algo de aquí se repite en otra página, se sube al sistema; mientras
+   tanto vive aquí y no toca a nadie más.
+   ========================================================================== */
+
+/* ================================================= 0. UNA SOLA TIPOGRAFÍA
+   Un <button> no hereda la letra del documento: hay que dársela. Sin esto, el
+   único botón del menú —«Producto»— sale en la letra por omisión del sistema
+   operativo y queda como el único elemento de la página con otra tipografía,
+   justo al lado de los enlaces que sí van en Inter. Vive aquí porque
+   sistema.css no se toca; su sitio natural es .nav__item. */
+.nav__item, .nav__hamburguesa { font-family: var(--fuente); }
+
+/* ================================================== 1. PORTADA DE INTERIOR
+   El titular a la izquierda, las acciones y la firma a la derecha, y debajo
+   la maqueta a todo lo ancho: la misma repartición que la portada del sitio,
+   con las migas encima porque en una página de interior lo primero que hay
+   que resolver es dónde estás. */
+.portada__reja { display: grid; gap: clamp(2.5rem, 5vw, var(--e10)); }
+.portada__cabeza { display: grid; gap: var(--e6) var(--e9); align-items: end; }
+@media (min-width: 900px) {
+  .portada__cabeza { grid-template-columns: minmax(0, 1.3fr) minmax(0, .85fr); }
+  .portada__lado .portada__firma { flex-direction: column; gap: .55rem; }
+}
+.portada__lado .portada__acciones { margin-top: 0; }
+.portada__firma { padding-top: var(--e5); border-top: 1px solid var(--linea-noche); }
+.portada__firma svg { width: 14px; height: 14px; flex: 0 0 auto; color: var(--a4); }
+
+/* Sobre el fondo de noche las migas heredaban grises de página clara (3.4:1).
+   Se listan una por una, no como .portada--tinta *, porque dentro de la
+   portada puede ir una maqueta del producto, que es una superficie clara y no
+   debe heredar texto claro. */
+.portada--tinta .migas { color: var(--tinta-noche-2); }
+.portada--tinta .migas a { color: var(--a4); }
+.portada--tinta .migas li:not(:last-child)::after { color: var(--tinta-noche-2); }
+
+/* Lo mismo con los tres rótulos menores dentro de un bloque de tinta: sin
+   esto, un .apunte se queda en gris de página clara sobre el fondo oscuro. */
+.bloque--tinta .apunte,
+.bloque--tinta .tenue,
+.bloque--tinta .suave { color: var(--tinta-noche-2); }
+
+/* ====================================================== 2. MAQUETAS REALES
+   Son el sistema de verdad, montado con las clases de producto dentro de un
+   .marco. Lo único que cambia es la densidad y que nada de adentro recibe
+   foco: la maqueta es una imagen, no una interfaz a medias. */
+.maqueta {
+  position: relative;
+  container-type: inline-size;
+  font-size: var(--t-13);
+  letter-spacing: var(--tr-13);
+  line-height: 1.5;
+  --e-caja: var(--e3);
+}
+.maqueta .app { min-height: 0; }
+.maqueta .pagina { gap: var(--e4); padding: var(--e5); }
+/* Dentro de la maqueta no hay prosa: cada párrafo es una etiqueta de interfaz
+   y no arrastra el margen inferior del cuerpo de texto. */
+.maqueta p { margin: 0; }
+.maqueta .pagina__sub { margin-top: .1rem; }
+.maqueta .lateral .apunte { color: inherit; }
+.maqueta .lateral__marca b { color: var(--tinta-noche); font-weight: var(--peso-medio); }
+.maqueta .lateral__cuenta b { display: block; color: var(--tinta-noche); }
+/* Un folio, un SKU o una clave nunca se parten en dos renglones: son una sola
+   unidad de lectura. */
+.maqueta .datos .clave { white-space: nowrap; }
+/* Una dirección larga en una maqueta angosta se recorta con puntos
+   suspensivos: nunca empuja la barra del marco ni se parte a la mitad. */
+.maqueta .marco__url { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.maqueta .pagina__acciones { flex-wrap: wrap; }
+
+/* Los indicadores no se reparten solos: una cifra necesita su ancho. Tres en
+   fila cuando caben con holgura, apilados cuando no. */
+@container (max-width: 559px) { .maqueta .kpis { grid-template-columns: 1fr; } }
+@container (min-width: 560px) { .maqueta .kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+/* La maqueta se adapta a SU ancho, no al de la ventana. */
+@container (max-width: 860px) {
+  .maqueta .app { grid-template-columns: 184px 1fr; }
+  .maqueta .tablero { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@container (max-width: 700px) {
+  .maqueta .buscador { min-width: 0; }
+  .maqueta .buscador kbd, .maqueta .cabecera-app .estado { display: none; }
+}
+@container (max-width: 560px) {
+  .maqueta .app { grid-template-columns: 1fr; }
+  .maqueta .lateral { display: none; }
+  .maqueta .pagina { padding: var(--e4); }
+  .maqueta .tablero { grid-template-columns: 1fr; }
+  .maqueta .tablero__col:nth-child(n+3) { display: none; }
+}
+/* La barra lateral de la maqueta la decide el ancho de la maqueta, no el de
+   la ventana: en sistema.css la regla base de .lateral está escrita después
+   de su media query de 900 px, así que esa media query no llega a ocultarla.
+   Aquí se fija el criterio sin tocar el sistema. */
+@container (min-width: 561px) { .maqueta .lateral { display: flex; } }
+
+/* Un renglón de pie dentro de la maqueta: lo que el tablero afirma de sí
+   mismo, separado del contenido por una línea gris de 1 px. */
+.maqueta__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: var(--e3);
+  padding-top: var(--e4); border-top: 1px solid var(--linea-suave);
+  font-size: var(--t-12); letter-spacing: var(--tr-12); color: var(--tinta-5);
+}
+.maqueta__pie .chip { margin-left: auto; }
+
+/* La figura y su pie: la maqueta arriba, y debajo, en rótulo menor, qué de
+   todo eso es dato del caso y qué se dibujó para la página. */
+.figura { margin: 0; }
+.figura__pie { margin: var(--e3) 0 0; }
+
+/* ======================================================= 3. AVISOS CON PROSA
+   El rótulo del aviso es el primer <strong> y va en bloque, como manda el
+   sistema. El énfasis que cae DENTRO de la prosa vive en un <p>, y ahí vuelve
+   a ser lo que era: negrita en línea, no un segundo rótulo. */
+.aviso p { margin: .15rem 0 0; }
+.aviso p strong, .aviso p b {
+  display: inline; margin: 0; color: var(--tinta-2); font-weight: var(--peso-fuerte);
+}
+.bloque--tinta .aviso p strong, .bloque--tinta .aviso p b { color: var(--tinta-noche); }
+.avisos { display: grid; gap: var(--e4); }
+
+/* ========================================================= 4. FICHA DEL CASO
+   Seis datos duros de la empresa. Es una lista de definiciones de verdad:
+   rótulo a la izquierda, dato a la derecha, y una línea gris de 1 px entre
+   renglones. Ni viñetas ni palomas: esto no es una lista de beneficios. */
+.ficha { margin: 0; display: grid; }
+.ficha > div {
+  display: grid; gap: .1rem var(--e4);
+  padding: .65rem 0; border-top: 1px solid var(--linea-suave);
+}
+.ficha > div:first-child { border-top: 0; padding-top: 0; }
+.ficha > div:last-child { padding-bottom: 0; }
+@media (min-width: 520px) { .ficha > div { grid-template-columns: 8.5rem minmax(0, 1fr); } }
+.ficha dt {
+  font-size: var(--t-12); letter-spacing: .05em; text-transform: uppercase;
+  color: var(--tinta-5); font-weight: var(--peso-fuerte); line-height: 1.5;
+}
+.ficha dd {
+  margin: 0; font-size: var(--t-14); letter-spacing: var(--tr-14); color: var(--tinta-4);
+}
+.ficha dd b { color: var(--tinta-2); font-weight: var(--peso-fuerte); }
+
+/* ==================================================== 5. FLUJO DE DOCUMENTOS
+   Los seis documentos encadenados y el circuito de seis pasos. No es una
+   línea de tiempo dibujada: son seis fichas numeradas del mismo tamaño, que
+   es lo que se lee igual en cualquier ancho. El número es un rótulo, no un
+   adorno: misma letra, cifras tabulares. */
+.flujo {
+  list-style: none; margin: 0; padding: 0; counter-reset: eslabon;
+  display: grid; gap: var(--e4);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+}
+.flujo > li { margin: 0; display: flex; flex-direction: column; gap: .35rem; }
+.flujo__n {
+  counter-increment: eslabon; display: grid; place-items: center;
+  width: 1.75rem; height: 1.75rem; border-radius: var(--r-full);
+  background: var(--accion-tenue); color: var(--accion-honda);
+  font-size: var(--t-12); letter-spacing: var(--tr-12); font-weight: var(--peso-fuerte);
+  font-variant-numeric: tabular-nums;
+}
+.flujo__n::before { content: counter(eslabon); }
+.flujo b { font-size: var(--t-15); letter-spacing: var(--tr-15); color: var(--tinta); font-weight: var(--peso-fuerte); }
+.flujo span { font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-4); }
+
+/* ======================================================= 6. PASOS NUMERADOS
+   El recorrido de un pedido, paso a paso. Cada paso se separa del anterior
+   por una línea de 1 px, no por una caja: siete cajas seguidas se leen como
+   siete interrupciones. */
+.pasos { list-style: none; margin: 0; padding: 0; display: grid; counter-reset: paso; }
+.pasos > li { margin: 0; padding: var(--e6) 0; border-top: 1px solid var(--linea-suave); }
+.pasos > li:first-child { border-top: 0; padding-top: 0; }
+.pasos > li:last-child { padding-bottom: 0; }
+.bloque--tinta .pasos > li { border-color: var(--linea-noche); }
+/* Ocho pasos de un renglón cada uno piden menos aire que siete de un párrafo:
+   el mismo patrón, más junto. */
+.pasos--juntos > li { padding: var(--e4) 0; }
+.pasos--juntos .paso { grid-template-columns: 1.75rem minmax(0, 1fr); gap: var(--e3); }
+.pasos--juntos .paso__n { width: 1.75rem; height: 1.75rem; font-size: var(--t-12); letter-spacing: var(--tr-12); }
+.pasos--juntos .paso p { font-size: var(--t-14); letter-spacing: var(--tr-14); }
+.pasos--juntos .paso p b { color: var(--tinta-2); font-weight: var(--peso-fuerte); }
+.paso { display: grid; grid-template-columns: 2.1rem minmax(0, 1fr); gap: var(--e4); align-items: start; }
+.paso__n {
+  counter-increment: paso; display: grid; place-items: center;
+  width: 2.1rem; height: 2.1rem; border-radius: var(--r-full);
+  background: var(--accion-tenue); color: var(--accion-honda);
+  font-size: var(--t-13); letter-spacing: var(--tr-13); font-weight: var(--peso-fuerte);
+  font-variant-numeric: tabular-nums;
+}
+.paso__n::before { content: counter(paso); }
+/* Sobre el fondo de noche, el mismo disco pero relleno de azul de acción:
+   una pastilla clara ahí arriba pesa más que el título que acompaña. */
+.bloque--tinta .paso__n { background: var(--accion); color: var(--tinta-noche); }
+.paso h3 { margin: 0 0 .35rem; font-size: var(--t-18); letter-spacing: var(--tr-18); }
+.paso p { margin: 0; font-size: var(--t-15); letter-spacing: var(--tr-15); color: var(--tinta-4); }
+.bloque--tinta .paso p { color: var(--tinta-noche-2); }
+
+/* ================================================== 7. DOCUMENTO DE EJEMPLO
+   La orden de compra que nace del pedido: cabecera, renglones y total. Las
+   cifras van a la derecha y tabulares, que es como se revisa un documento, y
+   el folio va en la misma letra que el resto —la clase .clave del sistema ya
+   le da las cifras tabulares y el tracking que lo separan. */
+.doc { background: var(--superficie); border: 1px solid var(--linea); border-radius: var(--r-md); padding: var(--e6); box-shadow: var(--sombra-2); }
+.doc__cab {
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--e4);
+  padding-bottom: var(--e4); margin-bottom: var(--e2); border-bottom: 1px solid var(--linea);
+}
+.doc__cab b { display: block; font-size: var(--t-15); letter-spacing: var(--tr-15); color: var(--tinta); font-weight: var(--peso-fuerte); }
+.doc__cab span { display: block; font-size: var(--t-12); letter-spacing: var(--tr-12); color: var(--tinta-5); }
+.doc__quien { text-align: right; }
+.doc__renglon {
+  display: grid; grid-template-columns: minmax(0, 1fr) 3.4rem 5.6rem; gap: var(--e3);
+  padding: .5rem 0; border-bottom: 1px solid var(--linea-suave);
+  font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-3);
+}
+.doc__renglon span + span { text-align: right; color: var(--tinta-2); font-variant-numeric: tabular-nums; }
+.doc__total {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--e3);
+  padding-top: var(--e4);
+  font-size: var(--t-16); letter-spacing: var(--tr-16); color: var(--tinta); font-weight: var(--peso-fuerte);
+}
+.doc__total span:last-child { font-variant-numeric: tabular-nums; }
+.doc__nota { margin: var(--e4) 0 0; }
+
+/* ============================================================== 8. EL DATO
+   La frase que se puede citar, con su procedencia debajo. Va sobre una
+   tarjeta hundida: se distingue por el relleno, no por una raya al costado. */
+.dato__frase { margin: 0 0 var(--e3); font-size: var(--t-18); letter-spacing: var(--tr-18); line-height: 1.4; color: var(--tinta); font-weight: var(--peso-fuerte); }
+.dato p:last-child { font-size: var(--t-14); letter-spacing: var(--tr-14); color: var(--tinta-4); margin: 0; }
+
+/* ========================================================= 9. TESTIMONIOS */
+.cita {
+  display: flex; flex-direction: column; gap: var(--e5); margin: 0;
+  background: var(--superficie); border: 1px solid var(--linea);
+  border-radius: var(--r-md); padding: var(--e6);
+}
+.cita__texto { margin: 0; font-size: var(--t-16); letter-spacing: var(--tr-16); line-height: 1.55; color: var(--tinta-2); }
+.cita__pie { display: flex; align-items: center; gap: .6rem; margin-top: auto; }
+.cita__quien { display: grid; gap: .05rem; }
+.cita__quien strong { font-size: var(--t-14); letter-spacing: var(--tr-14); color: var(--tinta); }
+.cita__quien span { font-size: var(--t-12); letter-spacing: var(--tr-12); color: var(--tinta-5); }
+
+/* ============================================= 10. TARJETAS DE ESTA PÁGINA
+   Las tres del vistazo, las seis del patrón común y las seis de páginas
+   hermanas: todas son columnas, con el enlace siempre abajo. Sin esto, el
+   enlace cae donde termine el párrafo y se ven desalineadas aunque midan
+   exactamente lo mismo. */
+.caso, .hermana, .patron { display: flex; flex-direction: column; }
+.caso h3 { margin: var(--e3) 0 var(--e4); font-size: var(--t-24); letter-spacing: var(--tr-24); }
+.caso .cifra { margin-bottom: var(--e4); }
+.caso p { font-size: var(--t-15); letter-spacing: var(--tr-15); color: var(--tinta-4); }
+.caso .enlace-ir, .hermana .enlace-ir { margin-top: auto; padding-top: var(--e4); }
+.hermana h3 { font-size: var(--t-18); letter-spacing: var(--tr-18); margin: var(--e4) 0 .35rem; }
+.hermana p { font-size: var(--t-15); letter-spacing: var(--tr-15); color: var(--tinta-4); }
+.patron h3 { font-size: var(--t-18); letter-spacing: var(--tr-18); margin: var(--e4) 0 .35rem; }
+.patron p { font-size: var(--t-15); letter-spacing: var(--tr-15); color: var(--tinta-4); margin: 0; }
+
+/* =============================================================== 11. TABLAS
+   El renglón del número de control —el valor total que cuadró al centavo— no
+   se marca con un borde ni con otra letra: se hunde un tono. La columna de
+   IncSales ya trae su relleno del sistema y se queda como está. */
+.tabla tbody tr.destacada td { background: var(--superficie-2); }
+.tabla tbody tr.destacada td.tabla__col-nuestra { background: var(--accion-tenue2); }
+/* Un <th scope="row"> —el rótulo de cada renglón— hereda del navegador peso
+   700, que es el único peso que este sistema no usa: el sistema solo viste los
+   th de la cabecera. Aquí se le devuelve el peso del cuerpo de la tabla, y el
+   nombre de la empresa se destaca con el <strong> que ya trae dentro. */
+.tabla tbody th { font-weight: var(--peso-normal); color: var(--tinta-3); }
+.tabla__sub { display: block; font-size: var(--t-12); letter-spacing: var(--tr-12); color: var(--tinta-5); }
+.tabla td .clave { white-space: nowrap; }
+
+/* ==================================================== 12. REMATES Y AJUSTES
+   Las únicas medidas que no son de una pieza, sino del ritmo entre ellas. */
+.apoyo { display: grid; gap: var(--e5); align-content: start; }
+.tras-rejilla { margin-top: var(--e6); }
+.tras-tabla { margin-top: var(--e6); }
+.tras-par { margin-top: var(--e7); }
+.tras-tira { margin-top: var(--e8); }
+.tramo { margin-top: clamp(3rem, 6vw, 5rem); }
+.ir-seccion { margin-top: var(--e5); }
+.acciones { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: var(--e5); }
+.accion-centro { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; margin-top: var(--e7); }
+.nota-pie { margin: var(--e6) 0 0; text-align: center; }
+.bloque--tinta .nota-pie { color: var(--tinta-noche-2); }
+/* Dos listas de cuatro puntos, una junto a la otra: el mismo ritmo que la
+   rejilla, sin que la segunda columna quede pegada a la primera. */
+.dos-listas { display: grid; gap: var(--e6) var(--e9); }
+@media (min-width: 860px) { .dos-listas { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* .btn lleva white-space: nowrap, que es lo correcto para una etiqueta de dos
+   o tres palabras. La que lleva la frase entera se sale de la pantalla a
+   360 px; solo a esa se le deja envolver. */
+.btn--frase { white-space: normal; text-align: center; }
+
+/* =============================================== 13. CIERRE Y PIE DEL SITIO
+   Las mismas piezas que cierran la portada, para que todas las páginas
+   terminen igual. */
+.cierre__acciones { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; margin-top: var(--e7); }
+.cierre__firma { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--e5); margin-top: var(--e6); font-size: var(--t-13); letter-spacing: var(--tr-13); color: var(--tinta-noche-2); }
+.cierre__pie { margin-top: var(--e6); color: var(--tinta-noche-2); }
+
+/* Los rótulos del pie son encabezados de verdad (h3), para no saltar de h2 a
+   h5 en la jerarquía. El aspecto es el que sistema.css le da a .pie h5. */
+.pie__titulo {
+  color: var(--tinta-noche); font-size: var(--t-12); font-weight: var(--peso-fuerte);
+  letter-spacing: .07em; text-transform: uppercase; line-height: 1.4; margin-bottom: var(--e4);
+}
+.pie__logo { height: 30px; width: auto; margin-bottom: var(--e4); }
+.pie__contacto { display: grid; gap: .4rem; margin-top: var(--e4); font-size: var(--t-13); letter-spacing: var(--tr-13); }

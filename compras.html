@@ -1,0 +1,1408 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compras y proveedores · IncSales</title>
+<meta name="description" content="Vende lo que no tienes sin quedar mal: cada renglón sabe quién lo surte, la requisición se levanta sola, la orden sale con un botón y al recibir el pedido dice «ya llegó».">
+<link rel="icon" type="image/svg+xml" href="assets/logos/incsales-icono.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap">
+<link rel="stylesheet" href="assets/css/sistema.css">
+<link rel="stylesheet" href="assets/css/paginas/compras.css">
+</head>
+<body data-superficie="landing">
+
+<a class="saltar" href="#principal">Saltar al contenido</a>
+
+<!-- ============================================================= CINTILLO -->
+<div class="cintillo">
+  Migración de datos sin costo al contratar cualquier plan anual ·
+  <a href="index.html#precios">Ver los planes</a>
+</div>
+
+<!-- =========================================================== NAVEGACIÓN -->
+<header class="nav">
+  <div class="envoltura envoltura--ancha">
+    <div class="nav__fila">
+      <a class="marca-enlace" href="#principal" aria-label="IncSales, inicio">
+        <img src="assets/logos/incsales-completo.svg" alt="" width="800" height="219">
+      </a>
+      <nav class="nav__menu" id="menu" aria-label="Principal">
+        <div class="nav__grupo">
+          <button class="nav__item activo" type="button" aria-expanded="false">
+            Producto <span class="nav__flecha" aria-hidden="true"></span>
+          </button>
+          <div class="panel" hidden>
+            <div class="panel__grid">
+              <p class="panel__titulo">Los módulos que ya operan todos los días</p>
+              <a class="panel__item" href="index.html#crm">
+                <b>CRM y seguimiento</b>
+                <span>Interesados, tablero de negocios y bitácora</span>
+              </a>
+              <a class="panel__item" href="index.html#cotizaciones">
+                <b>Cotizaciones y venta</b>
+                <span>Seis documentos con la misma forma</span>
+              </a>
+              <a class="panel__item" href="index.html#inventarios">
+                <b>Inventarios</b>
+                <span>Variantes, multialmacén, lotes y kárdex</span>
+              </a>
+              <a class="panel__item" href="index.html#compras" aria-current="page">
+                <b>Compras y proveedores</b>
+                <span>Requisiciones, órdenes y recepciones</span>
+              </a>
+              <a class="panel__item" href="index.html#facturacion">
+                <b>Facturación CFDI 4.0</b>
+                <span>Timbrado, pagos y notas de crédito</span>
+              </a>
+              <a class="panel__item" href="index.html#whatsapp">
+                <b>WhatsApp y marketing</b>
+                <span>Tu número, bandeja de equipo y formularios</span>
+              </a>
+              <div class="panel__pie">
+                <span class="apunte">Todo lo de arriba está construido y en uso.</span>
+                <a class="enlace-ir" href="por-dentro.html">
+                  Ver las pantallas
+                  <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="nav__item" href="index.html#prueba">Por dentro</a>
+        <a class="nav__item" href="por-dentro.html">Las pantallas</a>
+        <a class="nav__item" href="index.html#precios">Precios</a>
+        <a class="nav__item" href="index.html#confianza">Confianza</a>
+        <a class="nav__item" href="index.html#preguntas">Preguntas</a>
+      </nav>
+      <div class="nav__acciones">
+        <a class="btn btn--chico" href="#demo">Agenda una demo</a>
+      </div>
+      <button class="nav__hamburguesa" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir el menú">
+        <i></i><i></i><i></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="principal">
+
+<!-- ============================================================== PORTADA -->
+<section class="portada portada--tinta">
+  <div class="envoltura envoltura--ancha">
+    <div class="portada__reja">
+      <div class="portada__cabeza">
+        <div>
+          <ol class="migas">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#modulos">Producto</a></li>
+            <li>Compras y proveedores</li>
+          </ol>
+          <p class="sobre-titulo">Módulo · Compras y proveedores</p>
+          <h1>Para distribuidores que venden lo que no tienen</h1>
+          <p class="entradilla">Tú no vives del almacén: vives de conseguirlo. En IncSales cada renglón del
+            pedido sabe <strong>quién lo surte</strong>, la requisición se levanta sola cuando falta algo,
+            «qué hay que comprar» viene agrupado por proveedor y el pedido dice «ya llegó» cuando la
+            mercancía <strong>se recibe</strong>, no cuando se pide.</p>
+        </div>
+        <div class="portada__lado">
+          <div class="portada__acciones">
+            <a class="btn btn--claro btn--grande" href="contacto.html">Agenda tu demo</a>
+            <a class="btn btn--linea-clara btn--grande" href="precios.html">Compras desde $999 al mes</a>
+          </div>
+          <div class="portada__firma">
+            <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.2 8.4 3.1 3.1 6.5-6.9"/></svg> Requisiciones automáticas</span>
+            <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.2 8.4 3.1 3.1 6.5-6.9"/></svg> Comparativo con IVA normalizado</span>
+            <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.2 8.4 3.1 3.1 6.5-6.9"/></svg> Precio final, IVA incluido</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Maqueta 1 · el panel de compras -->
+      <div class="marco maqueta" role="img"
+           aria-label="Panel de compras de IncSales: $102,390 por comprar, 2 órdenes abiertas y 1 que llega hoy, con la lista de órdenes en curso —OC-0331 de Redcable por $26,000 en camino, OC-0330 de Suministros Alba por $8,530 recibida, OC-0329 de Impornor por $64,210 enviada y 3 requisiciones sin orden por $12,180.">
+        <div class="marco__barra"><div class="marco__puntos" aria-hidden="true"><i></i><i></i><i></i></div><span class="marco__url">erp.tuempresa.com/compras</span></div>
+        <div class="app">
+          <aside class="lateral">
+            <div class="lateral__marca">
+              <img src="assets/logos/incsales-icono.svg" alt="" width="800" height="800">
+              <b>TecnoCableado</b>
+            </div>
+            <p class="lateral__grupo">Vender</p>
+            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="5.5" height="16" rx="1"/><rect x="10.3" y="4" width="5.5" height="11" rx="1"/><rect x="17.6" y="4" width="3.4" height="7" rx="1"/></svg> Negocios</div>
+            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 13h6M9 17h4"/></svg> Cotizaciones</div>
+            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16M7 12h10M10 19h4"/></svg> Pedidos</div>
+            <p class="lateral__grupo">Comprar</p>
+            <div class="lateral__item" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 13h6M9 17h4"/></svg> Requisiciones</div>
+            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9.5" cy="19" r="1.3"/><circle cx="17" cy="19" r="1.3"/><path d="M3 4.5h2.3l2.2 11h11M6.4 8h14.6l-1.6 6H7.6"/></svg> Órdenes de compra</div>
+            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 7.5 12 3l8.5 4.5v9L12 21l-8.5-4.5z"/><path d="M3.5 7.5 12 12l8.5-4.5M12 12v9"/></svg> Recepciones</div>
+            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M4.6 20a7.4 7.4 0 0 1 14.8 0"/></svg> Proveedores</div>
+            <p class="lateral__grupo">Pagar</p>
+            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18l-2.3-1.6-2.4 1.6-2.3-1.6-2.3 1.6L7.3 19 5 21z"/><path d="M9 8.5h6M9 12.5h6"/></svg> Facturas de proveedor</div>
+            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10.5h18"/><circle cx="17" cy="14.8" r="1.1"/></svg> Saldos</div>
+            <div class="lateral__cuenta">
+              <span class="avatar" aria-hidden="true">CR</span>
+              <div><b>César Ruiz</b><span class="apunte">Administrador</span></div>
+            </div>
+          </aside>
+          <div class="lienzo-app">
+            <div class="cabecera-app">
+              <div class="buscador"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.6 4.6"/></svg> Busca un producto, proveedor o folio <kbd>⌘K</kbd></div>
+              <div class="pagina__acciones">
+                <span class="estado estado--ok">3 requisiciones nuevas</span>
+                <span class="avatar avatar--claro" aria-hidden="true">CR</span>
+              </div>
+            </div>
+            <div class="pagina">
+              <div class="pagina__cabeza">
+                <div>
+                  <p class="pagina__titulo">Compras · Panel</p>
+                  <p class="pagina__sub">Últimos 30 días</p>
+                </div>
+                <div class="pagina__acciones">
+                  <div class="segmentado"><span>7 d</span><span class="activo">30 d</span><span>90 d</span></div>
+                  <span class="btn btn--chico">Nueva orden</span>
+                </div>
+              </div>
+              <div class="kpis">
+                <div class="kpi">
+                  <p class="kpi__q">Por comprar</p>
+                  <p class="kpi__n">$102,390</p>
+                  <p class="kpi__d suave">5 requisiciones pendientes</p>
+                </div>
+                <div class="kpi">
+                  <p class="kpi__q">Órdenes abiertas</p>
+                  <p class="kpi__n">2</p>
+                  <p class="kpi__d suave">Redcable e Impornor</p>
+                </div>
+                <div class="kpi">
+                  <p class="kpi__q">Llega hoy</p>
+                  <p class="kpi__n">1</p>
+                  <p class="kpi__d suave">OC-0330 · Suministros Alba</p>
+                </div>
+              </div>
+              <div class="datos-caja">
+                <div class="datos-scroll">
+                  <table class="datos">
+                    <thead>
+                      <tr>
+                        <th scope="col">Orden</th>
+                        <th scope="col">Proveedor</th>
+                        <th scope="col" class="n">Importe</th>
+                        <th scope="col">Estado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="clave">OC-0331</td>
+                        <td class="fuerte">Redcable</td>
+                        <td class="n">$26,000</td>
+                        <td><span class="chip chip--ambar">En camino</span></td>
+                      </tr>
+                      <tr>
+                        <td class="clave">OC-0330</td>
+                        <td class="fuerte">Suministros Alba</td>
+                        <td class="n">$8,530</td>
+                        <td><span class="chip chip--verde">Recibida</span></td>
+                      </tr>
+                      <tr>
+                        <td class="clave">OC-0329</td>
+                        <td class="fuerte">Impornor</td>
+                        <td class="n">$64,210</td>
+                        <td><span class="chip chip--azul">Enviada</span></td>
+                      </tr>
+                      <tr>
+                        <td class="clave">Sin orden</td>
+                        <td class="fuerte">3 requisiciones</td>
+                        <td class="n">$12,180</td>
+                        <td><span class="chip">Por agrupar</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="datos__pie">
+                  <span>4 de 28 movimientos del periodo</span>
+                  <div class="paginacion"><span class="activo">1</span><span>2</span><span>3</span><span>…</span><span>7</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================== EL PROBLEMA -->
+<section class="bloque">
+  <div class="envoltura">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">El problema real</p>
+      <h2>El faltante no te cuesta el material. Te cuesta el pedido.</h2>
+      <p>En una distribuidora, comprar mal casi nunca es comprar caro. Es comprar tarde, comprar de
+        más o prometer algo que nadie estaba comprando.</p>
+    </div>
+    <div class="rejilla rejilla--3 aparecer">
+      <article class="tarjeta tarjeta--comoda">
+        <div class="tarjeta__cab">
+          <span class="icono-caja icono-caja--ambar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.5 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.5a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg></span>
+          <h3>Prometes sin tener</h3>
+        </div>
+        <p class="suave">El vendedor dice «sí hay» porque el archivo de existencias es de la semana pasada.
+          El cliente firma, y el lunes alguien descubre que ese producto no está ni en el almacén ni
+          en camino.</p>
+      </article>
+      <article class="tarjeta tarjeta--comoda">
+        <div class="tarjeta__cab">
+          <span class="icono-caja icono-caja--ambar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <h3>Compras tarde</h3>
+        </div>
+        <p class="suave">La requisición nace cuando alguien se acuerda: en un WhatsApp, en un correo
+          reenviado o en una libreta. Entre que se acuerda y que se pide se van los días que el
+          proveedor iba a tardar.</p>
+      </article>
+      <article class="tarjeta tarjeta--comoda">
+        <div class="tarjeta__cab">
+          <span class="icono-caja icono-caja--ambar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span>
+          <h3>No sabes qué falta</h3>
+        </div>
+        <p class="suave">Lo que hay que comprar está repartido en seis pedidos distintos. Nadie lo junta,
+          así que se compran cuatro piezas de algo que en total se necesitaban veinte, y se paga
+          flete dos veces.</p>
+      </article>
+    </div>
+    <div class="aviso aviso--aviso tras-rejilla">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="icono-linea" aria-hidden="true"><path d="M12 9v4.5M12 17v.1"/><path d="M10.3 3.9 2.6 17.5a1.9 1.9 0 0 0 1.7 2.9h15.4a1.9 1.9 0 0 0 1.7-2.9L13.7 3.9a1.9 1.9 0 0 0-3.4 0z"/></svg>
+      <div><b>Y el costo real no aparece en ninguna cuenta</b>
+        Es el pedido que se queda parado sin que nadie lo sepa, y el cliente que se entera antes que
+        tú. En IncSales el faltante no depende de que alguien lo note: lo levanta el propio documento
+        de venta.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================= VENDER LO QUE NO TIENES -->
+<section class="bloque bloque--hundido">
+  <div class="envoltura">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">De punta a punta</p>
+      <h2>Vender lo que no tienes, sin quedar mal</h2>
+      <p>Es el caso normal de una distribuidora, no la excepción. Por eso está resuelto en la cadena
+        completa y no con una casilla suelta.</p>
+    </div>
+
+    <div class="cadena aparecer">
+      <div class="cadena__eslabon"><p class="cadena__n">01</p><p class="cadena__q">Cotización</p><p class="cadena__f">con lo que hay de verdad</p></div>
+      <div class="cadena__eslabon"><p class="cadena__n">02</p><p class="cadena__q">Pedido</p><p class="cadena__f">cada renglón dice quién surte</p></div>
+      <div class="cadena__eslabon"><p class="cadena__n">03</p><p class="cadena__q">Requisición</p><p class="cadena__f">se levanta sola por lo que falta</p></div>
+      <div class="cadena__eslabon"><p class="cadena__n">04</p><p class="cadena__q">Qué comprar</p><p class="cadena__f">agrupado por proveedor</p></div>
+      <div class="cadena__eslabon"><p class="cadena__n">05</p><p class="cadena__q">Orden de compra</p><p class="cadena__f">sale con un botón</p></div>
+      <div class="cadena__eslabon"><p class="cadena__n">06</p><p class="cadena__q">Recepción</p><p class="cadena__f">entra al almacén y al kárdex</p></div>
+      <div class="cadena__eslabon"><p class="cadena__n">07</p><p class="cadena__q">«Ya llegó»</p><p class="cadena__f">el pedido avisa que se entrega</p></div>
+    </div>
+
+    <div class="par par--apoyo par--arriba tras-tira">
+      <div>
+        <h3>Cada renglón lleva de dónde sale</h3>
+        <p class="suave">Un pedido no es una lista de productos: es una lista de compromisos, y cada uno
+          tiene un origen distinto. En IncSales el renglón guarda si sale <strong>de tu almacén</strong>
+          o del <strong>proveedor que lo va a surtir</strong>, y esa decisión se ve en la pantalla
+          mientras vendes.</p>
+        <ul class="lista tras-lista">
+          <li><strong>El origen se elige renglón por renglón.</strong> Si hay existencia, lo natural es
+            que salga de tu almacén. Si prefieres mandarlo directo con el proveedor —porque es
+            voluminoso, porque va a obra o porque quieres conservar tu inventario—, lo cambias en ese
+            renglón y ya.</li>
+          <li><strong>Cambiar la fuente no cambia el precio.</strong> Lo que le cotizaste al cliente ya
+            quedó congelado en su documento. Mover quién surte mueve <em>tu costo</em>, no <em>su
+            precio</em>: nadie tiene que volver a cotizar ni explicar un ajuste.</li>
+          <li><strong>Lo del proveedor no entra a tu kárdex.</strong> Lo que él dice tener se enseña
+            aparte y con la fecha en que lo dijo. Tu existencia solo se mueve cuando la mercancía
+            entra de verdad.</li>
+        </ul>
+      </div>
+
+      <div>
+        <!-- Maqueta 2 · el pedido, renglón por renglón -->
+        <div class="marco maqueta" role="img"
+             aria-label="Pedido PED-00842 de Casther en IncSales: cuatro renglones con quién los surte —cable UTP Cat6 y canaleta salen del almacén GDL, jack RJ45 y patch panel los surte Redcable en 3 días—, con el aviso de que al confirmar 2 renglones salen de almacén y 2 levantan requisición, y un total de $96,140.">
+          <div class="marco__barra"><div class="marco__puntos" aria-hidden="true"><i></i><i></i><i></i></div><span class="marco__url">erp.tuempresa.com/ingresos/pedidos/PED-00842</span></div>
+          <div class="maqueta__vista">
+            <div class="pagina">
+              <div class="pagina__cabeza">
+                <div>
+                  <p class="pagina__titulo">Pedido PED-00842 · Casther</p>
+                  <p class="pagina__sub">Borrador · por confirmar</p>
+                </div>
+                <div class="pagina__acciones">
+                  <span class="btn btn--chico">Confirmar</span>
+                </div>
+              </div>
+              <div class="datos-caja">
+                <div class="datos-scroll">
+                  <table class="datos">
+                    <thead>
+                      <tr>
+                        <th scope="col">Producto · SKU</th>
+                        <th scope="col" class="n">Cant</th>
+                        <th scope="col">Quién surte</th>
+                        <th scope="col">Estado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><span class="fuerte">Cable UTP Cat6 305 m</span> <span class="clave">CBL-6U305</span></td>
+                        <td class="n">8</td>
+                        <td>Almacén GDL</td>
+                        <td><span class="chip chip--verde">Tienes 48</span></td>
+                      </tr>
+                      <tr>
+                        <td><span class="fuerte">Jack RJ45 Cat6</span> <span class="clave">JK-6RJ</span></td>
+                        <td class="n">400</td>
+                        <td>Redcable</td>
+                        <td><span class="chip chip--ambar">Prov. 3 d</span></td>
+                      </tr>
+                      <tr>
+                        <td><span class="fuerte">Canaleta 40×25</span> <span class="clave">CN-4025</span></td>
+                        <td class="n">60</td>
+                        <td>Almacén GDL</td>
+                        <td><span class="chip chip--verde">Tienes 210</span></td>
+                      </tr>
+                      <tr>
+                        <td><span class="fuerte">Patch panel 24 p</span> <span class="clave">PP-24</span></td>
+                        <td class="n">4</td>
+                        <td>Redcable</td>
+                        <td><span class="chip chip--ambar">Prov. 3 d</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="datos__pie">
+                  <span>Al confirmar: <b>2 renglones</b> salen de almacén y <b>2</b> levantan requisición</span>
+                  <span class="chip chip--azul derecha">Total $96,140</span>
+                </div>
+              </div>
+              <div class="kpis">
+                <div class="kpi"><p class="kpi__q">De tu almacén</p><p class="kpi__n">2</p></div>
+                <div class="kpi"><p class="kpi__q">Por comprar</p><p class="kpi__n">2</p></div>
+                <div class="kpi"><p class="kpi__q">Lo que tarda el más lento</p><p class="kpi__n">3 d</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="apunte tras-maqueta">La barra fija al pie del documento enseña el total, lo que falta y
+          el botón que sigue. Es la misma forma en los seis documentos: cotización, pedido, remisión,
+          factura, orden de compra y recepción.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================== REQUISICIONES -->
+<section class="bloque">
+  <div class="envoltura">
+    <div class="encabezado">
+      <p class="sobre-titulo">Requisiciones</p>
+      <h2>Nadie levanta la requisición. Se levanta sola.</h2>
+      <p>Hay dos momentos en los que se descubre que falta algo, y los dos disparan lo mismo sin que
+        nadie tenga que acordarse.</p>
+    </div>
+
+    <div class="rejilla rejilla--2 aparecer">
+      <article class="tarjeta tarjeta--comoda tarjeta--alta">
+        <div class="tarjeta__cab">
+          <span class="icono-caja" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span>
+          <h3>Confirmas un pedido con algo que no hay</h3>
+        </div>
+        <p class="suave">En el momento de confirmar, el sistema separa los renglones que salen de tu
+          almacén de los que no. Por cada faltante nace una requisición con el producto, la cantidad
+          exacta, el pedido que la pidió y el proveedor propuesto.</p>
+        <ul class="lista tras-lista">
+          <li>Sale con la cantidad que falta, no con la del pedido completo.</li>
+          <li>Queda amarrada al pedido: siempre sabes para quién es esa compra.</li>
+          <li>Se cierra cuando la mercancía se recibe, no cuando se manda la orden.</li>
+        </ul>
+      </article>
+      <article class="tarjeta tarjeta--comoda tarjeta--alta">
+        <div class="tarjeta__cab">
+          <span class="icono-caja icono-caja--verde" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h13v13H1z"/><path d="M14 8h4l3 3v5h-7"/><circle cx="5.5" cy="18.5" r="2"/><circle cx="17.5" cy="18.5" r="2"/></svg></span>
+          <h3>Entregas sin tener</h3>
+        </div>
+        <p class="suave">La venta de mostrador no espera a un pedido formal: alguien llega, se lleva el
+          material y luego se repone. Entregar algo que no estaba también levanta la requisición, así
+          que <strong>el mostrador queda cubierto sin hacer nada aparte</strong>.</p>
+        <ul class="lista tras-lista">
+          <li>No hay una segunda pantalla que llenar después de vender.</li>
+          <li>Lo que se repone queda con su origen: se sabe de qué salida vino.</li>
+          <li>El almacén no se queda con un hueco que nadie apuntó.</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="tira tras-tira aparecer">
+      <div class="cifra">
+        <p class="cifra__n">2 disparadores</p>
+        <p class="cifra__q">confirmar un pedido y entregar sin tener</p>
+      </div>
+      <div class="cifra">
+        <p class="cifra__n">0</p>
+        <p class="cifra__q">capturas aparte para pedirle al proveedor</p>
+      </div>
+      <div class="cifra">
+        <p class="cifra__n">1 botón</p>
+        <p class="cifra__q">de requisiciones agrupadas a orden de compra</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================== QUÉ HAY QUE COMPRAR -->
+<section class="bloque bloque--tinta">
+  <div class="envoltura">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">Qué hay que comprar</p>
+      <h2>Agrupado por proveedor, porque así se compra</h2>
+      <p>Nadie le habla al mismo proveedor cuatro veces al día. La pantalla de requisiciones junta
+        todo lo pendiente y lo ordena por a quién se lo vas a pedir, no por qué pedido lo pidió.</p>
+    </div>
+
+    <div class="par par--apoyo par--arriba">
+      <div>
+        <h3>Una lista, no seis pantallas</h3>
+        <p>Cada grupo enseña lo que ese proveedor tiene que surtirte hoy: el producto con
+          <strong>su clave</strong>, la cantidad sumada de todos los pedidos que la piden, su costo y
+          lo que tarda en entregar.</p>
+        <ul class="lista tras-lista">
+          <li>La cantidad viene sumada: si tres pedidos piden el mismo jack, lo compras una vez.</li>
+          <li>Cada renglón conserva para qué pedido es, aunque se compren juntos.</li>
+          <li>Un producto puede tener varios proveedores dados de alta, así que eliges a quién pedirle
+            antes de generar la orden.</li>
+          <li>Lo que salió del mostrador aparece en la misma lista: la reposición no vive en otra
+            pantalla.</li>
+        </ul>
+        <p class="remate"><a class="btn btn--claro btn--frase" href="inventarios.html">Cómo se cargan los proveedores de cada producto</a></p>
+      </div>
+
+      <div>
+        <!-- Maqueta 3 · requisiciones agrupadas por proveedor -->
+        <div class="marco maqueta" role="img"
+             aria-label="Pantalla de requisiciones de IncSales con cinco pendientes agrupados por proveedor: Redcable con entrega de 3 días surte jack RJ45, patch panel y bota RJ45; Suministros Alba con entrega de 5 días surte canaleta y chalupa reforzada, una de ellas del mostrador. En total 2 proveedores, 5 renglones y $34,530 sin IVA.">
+          <div class="marco__barra"><div class="marco__puntos" aria-hidden="true"><i></i><i></i><i></i></div><span class="marco__url">erp.tuempresa.com/compras/requisiciones</span></div>
+          <div class="maqueta__vista">
+            <div class="pagina">
+              <div class="pagina__cabeza">
+                <div>
+                  <p class="pagina__titulo">Requisiciones · 5 pendientes</p>
+                  <p class="pagina__sub">Agrupar por proveedor</p>
+                </div>
+              </div>
+              <div class="datos-caja">
+                <div class="datos-scroll">
+                  <table class="datos">
+                    <thead>
+                      <tr>
+                        <th scope="col">Producto · clave del proveedor</th>
+                        <th scope="col">Para</th>
+                        <th scope="col" class="n">Cant</th>
+                        <th scope="col" class="n">Costo</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="datos__grupo">
+                        <td colspan="4">
+                          <div class="datos__fila"><span><b>Redcable</b> · entrega 3 d · MXN</span><span class="chip chip--azul derecha">Generar orden</span></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="fuerte">Jack RJ45 Cat6</span> <span class="clave">RDC-JK6RJ</span></td>
+                        <td class="clave">PED-00842</td>
+                        <td class="n">400</td>
+                        <td class="n">$46.00</td>
+                      </tr>
+                      <tr>
+                        <td><span class="fuerte">Patch panel 24 p</span> <span class="clave">RDC-PP24</span></td>
+                        <td class="clave">PED-00842</td>
+                        <td class="n">4</td>
+                        <td class="n">$1,580.00</td>
+                      </tr>
+                      <tr>
+                        <td><span class="fuerte">Bota RJ45 azul</span> <span class="clave">RDC-BT6A</span></td>
+                        <td class="clave">PED-00851</td>
+                        <td class="n">400</td>
+                        <td class="n">$3.20</td>
+                      </tr>
+                      <tr class="datos__grupo">
+                        <td colspan="4">
+                          <div class="datos__fila"><span><b>Suministros Alba</b> · entrega 5 d · MXN</span><span class="chip chip--azul derecha">Generar orden</span></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="fuerte">Canaleta 40×25</span> <span class="clave">ALB-C4025</span></td>
+                        <td class="clave">PED-00847</td>
+                        <td class="n">60</td>
+                        <td class="n">$128.00</td>
+                      </tr>
+                      <tr>
+                        <td><span class="fuerte">Chalupa reforzada</span> <span class="clave">ALB-CH2</span></td>
+                        <td class="clave">Mostrador</td>
+                        <td class="n">25</td>
+                        <td class="n">$34.00</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="datos__pie">
+                  <span>2 proveedores · 5 renglones · lo del mostrador ya viene incluido</span>
+                  <span class="chip chip--verde derecha">$34,530 sin IVA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== ORDEN DE COMPRA -->
+<section class="bloque">
+  <div class="envoltura">
+    <div class="encabezado">
+      <p class="sobre-titulo">Órdenes de compra</p>
+      <h2>La orden sale con un botón, ya con el costo que él cobra</h2>
+      <p>No es «exportar a Excel y armarla». Es tomar el grupo del proveedor y convertirlo en un
+        documento con folio, listo para enviarse.</p>
+    </div>
+
+    <div class="par par--arriba">
+      <div>
+        <h3>Con su clave, su costo y su moneda</h3>
+        <p class="suave">Cada producto puede tener varios proveedores, y cada proveedor tiene <strong>su
+          propia clave y su propio costo</strong> para ese producto. La orden se arma con los datos de
+          ese proveedor, no con los tuyos: él recibe un documento que entiende a la primera.</p>
+        <ul class="lista tras-lista">
+          <li><strong>Su clave, no la tuya.</strong> En la orden va RDC-JK6RJ si así lo tiene él, aunque
+            en tu catálogo sea JK-6RJ.</li>
+          <li><strong>Multimoneda con tipo de cambio congelado por documento.</strong> Si compras en
+            dólares, la orden guarda el tipo de cambio del día en que la hiciste. Que el dólar suba
+            mañana no reescribe lo que ya pediste.</li>
+          <li><strong>Trae su origen.</strong> La orden recuerda de qué requisiciones nació y, a través
+            de ellas, de qué pedidos y de qué cliente.</li>
+          <li><strong>Se envía y se sigue.</strong> Queda como documento vivo: enviada, en proceso con
+            el proveedor y recibida.</li>
+        </ul>
+        <div class="aviso tras-rejilla">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="icono-linea" aria-hidden="true"><path d="M12 3 5 6v6c0 4.2 2.9 7.6 7 9 4.1-1.4 7-4.8 7-9V6z"/><path d="m9 12 2 2 4-4"/></svg>
+          <div><b>El costo del cliente ya está a salvo</b>
+            Los costos se congelan cuando pasan a la cotización del cliente, con el enlace al origen
+            para rastrearlos. Si el proveedor te sube el precio después, se ve en tu margen —no en un
+            documento que tu cliente ya recibió.</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="tarjeta tarjeta--comoda">
+          <div class="hoja">
+            <div class="hoja__cabeza">
+              <div>
+                <p class="hoja__tipo">Orden de compra</p>
+                <p class="clave apunte">OC-0331</p>
+              </div>
+              <div class="hoja__quien">
+                <p class="apunte">Proveedor</p>
+                <p class="hoja__tipo">Redcable</p>
+                <p class="apunte">Entrega 3 días · MXN</p>
+              </div>
+            </div>
+            <div class="hoja__renglon"><span>Jack RJ45 Cat6 · RDC-JK6RJ</span><span>400</span><span>$18,400.00</span></div>
+            <div class="hoja__renglon"><span>Patch panel 24 puertos · RDC-PP24</span><span>4</span><span>$6,320.00</span></div>
+            <div class="hoja__renglon"><span>Bota RJ45 azul · RDC-BT6A</span><span>400</span><span>$1,280.00</span></div>
+            <div class="hoja__total"><span>Total sin IVA</span><span>$26,000.00</span></div>
+            <p class="apunte hoja__origen">Nació de REQ-0312, REQ-0313 y REQ-0318 · Surte los pedidos
+              PED-00842 y PED-00851 · Costos tomados de la lista vigente de ese proveedor</p>
+          </div>
+        </div>
+        <div class="aviso tras-rejilla">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="icono-linea" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h9"/></svg>
+          <div><b>Los seis documentos se hacen igual</b>
+            Cotización, pedido, remisión, factura, orden de compra y recepción comparten la misma forma
+            de capturar: eliges el producto y se agrega, los renglones se corrigen en su sitio y la
+            barra fija al pie te dice el total y lo que falta. Quien aprende a cotizar ya sabe comprar.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================== RECEPCIONES -->
+<section class="bloque bloque--hundido">
+  <div class="envoltura">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">Recepciones</p>
+      <h2>Al recibir, no al pedir</h2>
+      <p>La mercancía cuenta cuando entra al almacén, no cuando alguien mandó el correo. Suena obvio,
+        y es lo que separa un inventario en el que puedes confiar de uno que ya se despegó de la
+        realidad.</p>
+    </div>
+
+    <div class="par par--apoyo par--arriba">
+      <div>
+        <ol class="pasos">
+          <li>
+            <div class="paso">
+              <span class="paso__n" aria-hidden="true"></span>
+              <div>
+                <h3>Llega la mercancía y la marcas recibida</h3>
+                <p>Se captura contra la orden de compra: lo que pediste ya está escrito, solo confirmas
+                  lo que bajó del camión.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="paso">
+              <span class="paso__n" aria-hidden="true"></span>
+              <div>
+                <h3>Entra al almacén y al kárdex</h3>
+                <p>La existencia se mueve en ese momento y queda el movimiento de entrada con su fecha.
+                  Si el producto maneja lotes, entra con su caducidad y su pedimento, y sale primero lo
+                  que primero vence.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="paso">
+              <span class="paso__n" aria-hidden="true"></span>
+              <div>
+                <h3>Se cierran las requisiciones de esa orden</h3>
+                <p>Las requisiciones que dieron origen a la orden dejan de estar pendientes solas. Ya no
+                  aparecen en «qué hay que comprar»: nadie vuelve a comprar lo mismo por error.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="paso">
+              <span class="paso__n" aria-hidden="true"></span>
+              <div>
+                <h3>El pedido que la esperaba dice «ya llegó»</h3>
+                <p>Quien vendió no tiene que preguntarle a compras. El pedido cambia de estado solo y el
+                  material se puede entregar o facturar.</p>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div>
+        <!-- Maqueta 4 · la recepción -->
+        <div class="marco maqueta" role="img"
+             aria-label="Recepción REC-0198 contra la orden OC-0331 en IncSales: tres renglones que entran al kárdex del almacén GDL, el cierre automático de las requisiciones REQ-0312, REQ-0313 y REQ-0318, y los pedidos PED-00842 de Casther y PED-00851 que pasan a «por entregar».">
+          <div class="marco__barra"><div class="marco__puntos" aria-hidden="true"><i></i><i></i><i></i></div><span class="marco__url">erp.tuempresa.com/compras/recepciones/REC-0198</span></div>
+          <div class="maqueta__vista">
+            <div class="pagina">
+              <div class="pagina__cabeza">
+                <div>
+                  <p class="pagina__titulo">Recepción REC-0198 · OC-0331</p>
+                  <p class="pagina__sub">Redcable · llegó hoy</p>
+                </div>
+                <div class="pagina__acciones">
+                  <span class="btn btn--chico">Marcar recibida</span>
+                </div>
+              </div>
+              <div class="datos-caja">
+                <div class="datos-scroll">
+                  <table class="datos">
+                    <thead>
+                      <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col" class="n">Cant</th>
+                        <th scope="col">Almacén</th>
+                        <th scope="col">Entrada</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td class="fuerte">Jack RJ45 Cat6</td><td class="n">400</td><td>GDL</td><td><span class="chip chip--verde">Al kárdex</span></td></tr>
+                      <tr><td class="fuerte">Patch panel 24 p</td><td class="n">4</td><td>GDL</td><td><span class="chip chip--verde">Al kárdex</span></td></tr>
+                      <tr><td class="fuerte">Bota RJ45 azul</td><td class="n">400</td><td>GDL</td><td><span class="chip chip--verde">Al kárdex</span></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="datos__pie">
+                  <span>Se cerraron <b>REQ-0312</b>, <b>REQ-0313</b> y <b>REQ-0318</b></span>
+                  <span class="chip derecha">Automático</span>
+                </div>
+              </div>
+              <div class="datos-caja">
+                <div class="datos-scroll">
+                  <table class="datos">
+                    <tbody>
+                      <tr><td><b>PED-00842 · Casther</b> pasó a «ya llegó, por entregar»</td><td><span class="chip chip--verde">Listo</span></td></tr>
+                      <tr><td><b>PED-00851</b> también quedó completo y pasó a «por entregar»</td><td><span class="chip chip--verde">Listo</span></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="kpis">
+                <div class="kpi"><p class="kpi__q">Renglones recibidos</p><p class="kpi__n">3</p></div>
+                <div class="kpi"><p class="kpi__q">Requisiciones cerradas</p><p class="kpi__n">3</p></div>
+                <div class="kpi"><p class="kpi__q">Pedidos liberados</p><p class="kpi__n">2</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aviso aviso--aviso tras-rejilla">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="icono-linea" aria-hidden="true"><path d="M12 9v4.5M12 17v.1"/><path d="M10.3 3.9 2.6 17.5a1.9 1.9 0 0 0 1.7 2.9h15.4a1.9 1.9 0 0 0 1.7-2.9L13.7 3.9a1.9 1.9 0 0 0-3.4 0z"/></svg>
+          <div><b>Lo que todavía no hace</b>
+            La recepción no controla piezas por número de serie, y tampoco hay una bitácora de auditoría
+            multiusuario que registre quién tocó cada documento. Si tu operación lo necesita, se
+            construye a la medida — pero no te lo vamos a vender como si ya estuviera.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================== FICHA PROVEEDOR -->
+<section class="bloque">
+  <div class="envoltura">
+    <div class="encabezado">
+      <p class="sobre-titulo">Proveedores</p>
+      <h2>La ficha del proveedor: qué maneja, cómo se porta, cuánto le debes</h2>
+      <p>El proveedor deja de ser un nombre en una factura. Es una ficha con su catálogo, su desempeño
+        y su saldo, en la misma pantalla.</p>
+    </div>
+
+    <div class="par par--apoyo par--arriba">
+      <div>
+        <h3>Tres cosas que siempre acabas preguntando</h3>
+        <ul class="lista tras-lista">
+          <li><strong>Qué productos maneja.</strong> Los productos ligados a él, cada uno con la clave
+            que él usa, su costo, lo que dice tener y en cuántos días entrega. Cada dato viene con la
+            fecha en que lo declaró, y se marca en rojo cuando ya lleva más de una semana sin
+            actualizarse. Su lista se carga por archivo y empareja por su clave, sin tocar tu
+            producto.</li>
+          <li><strong>Cómo se ha portado.</strong> Sus cotizaciones y las órdenes que le has hecho quedan
+            en su ficha, así que sabes a quién le pides cuando el cliente tiene prisa y a quién cuando
+            lo que importa es el precio.</li>
+          <li><strong>Qué le debes.</strong> Sus facturas, lo que ya le pagaste y el saldo, en el mismo
+            sistema. IncSales no lleva tu contabilidad ni tu nómina: te dice cuánto debes y a quién,
+            que es lo que necesitas para decidir.</li>
+        </ul>
+        <p class="suave tras-lista">La analítica lo remata: <strong>proveedores más competitivos</strong>
+          es un reporte, no una impresión de pasillo. Cuando toca renegociar, llegas con los números en
+          la mano.</p>
+        <a class="enlace-ir ir-seccion" href="integraciones.html">Ver su existencia en vivo por API, como servicio de integración
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg></a>
+      </div>
+
+      <div>
+        <!-- Maqueta 5 · la ficha del proveedor -->
+        <div class="marco maqueta" role="img"
+             aria-label="Ficha del proveedor Redcable en IncSales: 1,284 productos ligados, entrega declarada de 3 días y $186,400 de saldo por pagar, con su catálogo —jack RJ45, patch panel, switch PoE y bota RJ45— con lo que dice tener, su costo y la fecha del dato, uno de ellos de hace 9 días.">
+          <div class="marco__barra"><div class="marco__puntos" aria-hidden="true"><i></i><i></i><i></i></div><span class="marco__url">erp.tuempresa.com/proveedores/redcable</span></div>
+          <div class="maqueta__vista">
+            <div class="pagina">
+              <div class="pagina__cabeza">
+                <div>
+                  <p class="pagina__titulo">Redcable</p>
+                  <p class="pagina__sub">Proveedor · material de red</p>
+                </div>
+                <div class="pagina__acciones">
+                  <span class="btn btn--chico">Cargar su lista</span>
+                </div>
+              </div>
+              <div class="kpis">
+                <div class="kpi"><p class="kpi__q">Productos ligados</p><p class="kpi__n">1,284</p></div>
+                <div class="kpi"><p class="kpi__q">Entrega que declara</p><p class="kpi__n">3 d</p></div>
+                <div class="kpi"><p class="kpi__q">Saldo por pagar</p><p class="kpi__n">$186,400</p></div>
+              </div>
+              <div class="datos-caja">
+                <div class="datos-scroll">
+                  <table class="datos">
+                    <thead>
+                      <tr>
+                        <th scope="col">Producto · su clave</th>
+                        <th scope="col">Dice tener</th>
+                        <th scope="col" class="n">Costo</th>
+                        <th scope="col">Dato de</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><span class="fuerte">Jack RJ45 Cat6</span> <span class="clave">RDC-JK6RJ</span></td>
+                        <td>1,200 pzas</td><td class="n">$46.00</td><td><span class="chip chip--verde">Hoy</span></td>
+                      </tr>
+                      <tr>
+                        <td><span class="fuerte">Patch panel 24 p</span> <span class="clave">RDC-PP24</span></td>
+                        <td>36 pzas</td><td class="n">$1,580.00</td><td><span class="chip chip--verde">Hoy</span></td>
+                      </tr>
+                      <tr>
+                        <td><span class="fuerte">Switch 24 p PoE</span> <span class="clave">RDC-SW24P</span></td>
+                        <td>8 pzas</td><td class="n">$9,240.00</td><td><span class="chip chip--rojo">Hace 9 días</span></td>
+                      </tr>
+                      <tr>
+                        <td><span class="fuerte">Bota RJ45 azul</span> <span class="clave">RDC-BT6A</span></td>
+                        <td>5,000 pzas</td><td class="n">$3.20</td><td><span class="chip chip--verde">Hoy</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="datos__pie">
+                  <span>Lo que él dice tener no toca tu kárdex: se enseña aparte y con la fecha en que lo dijo</span>
+                  <span class="chip derecha">Informativo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================== COMPARATIVO -->
+<section class="bloque bloque--hundido">
+  <div class="envoltura">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">Comparativo</p>
+      <h2>Comparar sin normalizar el IVA es la forma más fácil de elegir mal</h2>
+      <p>Uno te cotiza con IVA, otro más IVA, otro en dólares y otro por caja. IncSales los pone en la
+        misma unidad antes de que decidas.</p>
+    </div>
+
+    <div class="tabla-caja aparecer">
+      <div class="tabla-scroll">
+        <table class="tabla">
+          <caption>Ejemplo de maqueta: comparativo por producto de una requisición de 400 piezas de jack RJ45 Cat6. Los proveedores, sus claves y sus cifras son inventados para esta demostración.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Proveedor · su clave</th>
+              <th scope="col">Lo que cotiza</th>
+              <th scope="col">Moneda</th>
+              <th scope="col" class="tabla__col-nuestra">Comparable por pieza</th>
+              <th scope="col">Entrega</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Redcable</strong> · <span class="clave">RDC-JK6RJ</span></td>
+              <td>$53.36 con IVA incluido</td>
+              <td>MXN</td>
+              <td class="tabla__col-nuestra si">$46.00</td>
+              <td>3 días</td>
+            </tr>
+            <tr>
+              <td><strong>Suministros Alba</strong> · <span class="clave">ALB-JK6RJ</span></td>
+              <td>$48.90 más IVA</td>
+              <td>MXN</td>
+              <td class="tabla__col-nuestra">$48.90</td>
+              <td>5 días</td>
+            </tr>
+            <tr>
+              <td><strong>Impornor</strong> · <span class="clave">IMP-J6RJ</span></td>
+              <td>USD 2.65 más IVA · tipo de cambio 17.85 congelado</td>
+              <td>USD</td>
+              <td class="tabla__col-nuestra">$47.30</td>
+              <td>12 días</td>
+            </tr>
+            <tr>
+              <td><strong>Eléctrica Poniente</strong> · <span class="clave">EPO-J6X24</span></td>
+              <td>$1,180.00 la caja de 24 con bota incluida</td>
+              <td>MXN</td>
+              <td class="tabla__col-nuestra parcial">No comparable</td>
+              <td>7 días</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="rejilla rejilla--3 rejilla--apretada tras-rejilla aparecer">
+      <article class="tarjeta">
+        <h3>Se normaliza el IVA, no se adivina</h3>
+        <p class="suave">Cada cotización de proveedor guarda si su precio ya trae impuesto. La columna
+          comparable se calcula sobre la misma base para todos, así el número más chico sí es el más
+          barato.</p>
+      </article>
+      <article class="tarjeta">
+        <h3>El tipo de cambio queda escrito</h3>
+        <p class="suave">La cotización en dólares se compara con el tipo de cambio del documento, y ese
+          tipo de cambio se queda ahí. Nadie va a recalcular tu decisión con el dólar de otro mes.</p>
+      </article>
+      <article class="tarjeta">
+        <h3>Lo que no se puede comparar, se dice</h3>
+        <p class="suave">Cuando la presentación no es la misma, el sistema marca «no comparable» en lugar
+          de inventar una división. Prefiere que lo veas tú a darte un número que parece bueno.</p>
+      </article>
+    </div>
+
+    <div class="aviso tras-rejilla">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="icono-linea" aria-hidden="true"><path d="M12 8v5M12 16.2v.1"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><b>Sobre este ejemplo</b>
+        Redcable, Suministros Alba, Impornor y Eléctrica Poniente son proveedores inventados para la
+        maqueta: no son empresas reales y sus costos, claves y tiempos de entrega no corresponden a
+        ninguna cotización vigente (ejemplo armado en septiembre de 2026). No publicamos precios de
+        terceros. Cualquier marca o nombre comercial que aparezca en el sistema es propiedad de su
+        titular y no implica relación, patrocinio ni respaldo con IncSales.</div>
+    </div>
+
+    <p class="centro remate"><a class="btn btn--fantasma btn--frase" href="cotizaciones.html">Cómo se pasan esos costos a la cotización del cliente</a></p>
+  </div>
+</section>
+
+<!-- ==================================================== CUENTAS POR PAGAR -->
+<section class="bloque">
+  <div class="envoltura">
+    <div class="encabezado">
+      <p class="sobre-titulo">Cuentas por pagar</p>
+      <h2>Comprar termina cuando pagas, no cuando recibes</h2>
+      <p>La factura del proveedor, los pagos que le has hecho y el saldo viven en el mismo sistema
+        donde nació la orden. Sin exportar nada a la contabilidad para saber cuánto debes.</p>
+    </div>
+
+    <div class="par par--arriba">
+      <div>
+        <!-- Maqueta 6 · los saldos por pagar -->
+        <div class="marco maqueta" role="img"
+             aria-label="Pantalla de saldos por pagar de IncSales: $412,180 en total, $86,400 que vencen esta semana y 2 facturas vencidas, con el detalle por proveedor —Redcable, Suministros Alba, Impornor y Eléctrica Poniente— con su fecha de vencimiento y su saldo.">
+          <div class="marco__barra"><div class="marco__puntos" aria-hidden="true"><i></i><i></i><i></i></div><span class="marco__url">erp.tuempresa.com/gastos/saldos</span></div>
+          <div class="maqueta__vista">
+            <div class="pagina">
+              <div class="pagina__cabeza">
+                <div>
+                  <p class="pagina__titulo">Saldos por pagar</p>
+                  <p class="pagina__sub">Por vencimiento</p>
+                </div>
+                <div class="pagina__acciones">
+                  <span class="btn btn--chico">Registrar pago</span>
+                </div>
+              </div>
+              <div class="kpis">
+                <div class="kpi"><p class="kpi__q">Total por pagar</p><p class="kpi__n">$412,180</p></div>
+                <div class="kpi"><p class="kpi__q">Vence esta semana</p><p class="kpi__n">$86,400</p></div>
+                <div class="kpi"><p class="kpi__q">Vencidas</p><p class="kpi__n">2</p></div>
+              </div>
+              <div class="datos-caja">
+                <div class="datos-scroll">
+                  <table class="datos">
+                    <thead>
+                      <tr>
+                        <th scope="col">Proveedor · factura</th>
+                        <th scope="col">Vence</th>
+                        <th scope="col" class="n">Saldo</th>
+                        <th scope="col">Estado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><span class="fuerte">Redcable</span> <span class="clave">A-18422</span></td>
+                        <td>12 sep</td><td class="n">$26,000</td><td><span class="chip chip--verde">Al día</span></td>
+                      </tr>
+                      <tr>
+                        <td><span class="fuerte">Suministros Alba</span> <span class="clave">F-9031</span></td>
+                        <td>08 sep</td><td class="n">$8,530</td><td><span class="chip chip--ambar">3 días</span></td>
+                      </tr>
+                      <tr>
+                        <td><span class="fuerte">Impornor</span> <span class="clave">INV-2210</span></td>
+                        <td>29 ago</td><td class="n">$64,210</td><td><span class="chip">Vencida</span></td>
+                      </tr>
+                      <tr>
+                        <td><span class="fuerte">Eléctrica Poniente</span> <span class="clave">B-7712</span></td>
+                        <td>20 sep</td><td class="n">$18,900</td><td><span class="chip chip--verde">Al día</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3>Del CFDI que te mandó al saldo que le debes</h3>
+        <ul class="lista">
+          <li><strong>Facturas de proveedor con su CFDI.</strong> Cargas el comprobante que te mandó y
+            queda pegado a la compra, no en una carpeta compartida que nadie encuentra en marzo.</li>
+          <li><strong>Pagos registrados.</strong> Cada pago baja el saldo del proveedor y queda con su
+            fecha y su importe.</li>
+          <li><strong>Saldos siempre a la vista.</strong> Cuánto le debes a cada proveedor y qué vence
+            primero, para negociar con datos y no con memoria.</li>
+          <li><strong>El otro lado también.</strong> Lo que a ti te deben vive en cuentas por cobrar, con
+            la misma lógica. Vender y comprar se ven en el mismo tablero.</li>
+        </ul>
+        <div class="aviso aviso--aviso tras-rejilla">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="icono-linea" aria-hidden="true"><path d="M12 9v4.5M12 17v.1"/><path d="M10.3 3.9 2.6 17.5a1.9 1.9 0 0 0 1.7 2.9h15.4a1.9 1.9 0 0 0 1.7-2.9L13.7 3.9a1.9 1.9 0 0 0-3.4 0z"/></svg>
+          <div><b>Con honestidad</b>
+            Se registran facturas, pagos y saldos de proveedor. Todavía no cubrimos IEPS ni el esquema
+            completo de retenciones: si tu giro lo necesita, dilo en la demo y te decimos si se construye
+            o si no somos para ti.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================== LO QUE NO HACE (EN HONESTO) -->
+<section class="bloque bloque--hundido">
+  <div class="envoltura">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">Con todas sus letras</p>
+      <h2>Lo que compras todavía no hace</h2>
+      <p>Preferimos que te enteres aquí y no en la tercera semana de implementación. Si algo de esta
+        lista es indispensable para tu operación, dínoslo antes de firmar.</p>
+    </div>
+
+    <div class="contraste">
+      <div class="tarjeta tarjeta--plana tarjeta--comoda">
+        <div class="contraste__cab">
+          <span class="chip">Hoy no está</span>
+          <h3>Lo que no vas a encontrar</h3>
+        </div>
+        <ul class="lista lista--no">
+          <li>Números de serie pieza por pieza en la recepción: manejamos lotes con caducidad y
+            pedimento, no series.</li>
+          <li>Bitácora de auditoría multiusuario: no hay registro campo por campo de quién tocó cada
+            documento.</li>
+          <li>IEPS y el esquema completo de retenciones en la factura de tu proveedor.</li>
+          <li>Contabilidad y nómina: pólizas, balanza, declaraciones y recibos timbrados.</li>
+          <li>Telefonía: las llamadas al proveedor se anotan a mano, no se graban desde el sistema.</li>
+        </ul>
+      </div>
+      <div class="tarjeta tarjeta--comoda tarjeta--alta">
+        <div class="contraste__cab">
+          <span class="chip chip--azul">Lo que sí está</span>
+          <h3>Y está completo</h3>
+        </div>
+        <ul class="lista">
+          <li>Requisiciones que se levantan solas al confirmar un pedido y al entregar sin tener.</li>
+          <li>«Qué hay que comprar» agrupado por proveedor, con la cantidad sumada de todos los
+            pedidos.</li>
+          <li>Órdenes de compra con la clave y el costo de ese proveedor, multimoneda con tipo de
+            cambio congelado por documento.</li>
+          <li>Recepciones que mueven el kárdex, cierran las requisiciones y liberan el pedido que
+            esperaba.</li>
+          <li>Varios proveedores por producto, comparativo con el IVA normalizado y carga de su lista
+            por archivo.</li>
+          <li>Facturas de proveedor con su CFDI, pagos registrados y saldos por vencimiento.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="aviso aviso--aviso tras-rejilla">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="icono-linea" aria-hidden="true"><path d="M12 9v4.5M12 17v.1"/><path d="M10.3 3.9 2.6 17.5a1.9 1.9 0 0 0 1.7 2.9h15.4a1.9 1.9 0 0 0 1.7-2.9L13.7 3.9a1.9 1.9 0 0 0-3.4 0z"/></svg>
+      <div><b>Y lo que no viene encendido de fábrica</b>
+        El conector con WooCommerce, la consulta de inventarios de tus proveedores por API y el
+        orquestador de existencias entre canales se contratan como servicio de integración, con su alta
+        y su costo aparte: no son una casilla que ya venga prendida en el plan. Los conectores de
+        catálogo externo que existieron están archivados; hoy el catálogo es propio.</div>
+    </div>
+
+    <div class="aviso tras-rejilla">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="icono-linea" aria-hidden="true"><path d="M12 8v5M12 16.2v.1"/><circle cx="12" cy="12" r="9"/></svg>
+      <div><b>¿Y si lo necesito de todos modos?</b>
+        Nosotros escribimos el sistema, así que se puede construir: el desarrollo a la medida se cotiza
+        a $890 la hora, o en una bolsa de 40 horas desde $29,900, con alcance y fecha por escrito. Lo
+        que no vamos a hacer es venderte hoy algo que todavía no existe.</div>
+    </div>
+
+    <p class="centro remate"><a class="btn btn--fantasma" href="servicios.html">Ver desarrollo a la medida</a></p>
+  </div>
+</section>
+
+<!-- ================================================ QUIÉN COMPRA Y CON QUÉ -->
+<section class="bloque">
+  <div class="envoltura">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">Quién y con qué plan</p>
+      <h2>Compras es un perfil, no un permiso improvisado</h2>
+      <p>El que compra ve lo que necesita para comprar. Ni menos, ni la configuración de toda la
+        empresa.</p>
+    </div>
+
+    <div class="rejilla rejilla--2 aparecer">
+      <article class="tarjeta tarjeta--comoda">
+        <div class="tarjeta__cab">
+          <span class="icono-caja icono-caja--violeta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
+          <h3>Perfiles que tocan compras</h3>
+        </div>
+        <ul class="lista lista--punto">
+          <li><strong>Compras:</strong> proveedores, órdenes de compra y surtido. Es el perfil de quien
+            vive en esta pantalla.</li>
+          <li><strong>Administrador:</strong> todo, incluida la configuración general de la empresa.</li>
+          <li><strong>Vendedor:</strong> cotiza, ve proveedores y productos, y ve de dónde sale cada
+            renglón de su pedido. No entra a configuración.</li>
+          <li><strong>Solo lectura:</strong> consulta y reportes, para quien necesita mirar sin mover.</li>
+        </ul>
+        <p class="apunte tras-lista">El alta es por enlace de invitación: la persona pone su propia
+          contraseña y el administrador nunca la ve.</p>
+      </article>
+
+      <article class="tarjeta tarjeta--comoda">
+        <div class="tarjeta__cab">
+          <span class="icono-caja" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg></span>
+          <h3>En qué planes viene compras</h3>
+        </div>
+        <ul class="lista">
+          <li><strong>Cotiza Pro · $999 al mes.</strong> Compras completas: requisiciones, órdenes y
+            recepciones, más el comparativo de proveedores. IVA incluido.</li>
+          <li><strong>Factura Esencial · $2,490 al mes.</strong> Compras junto con inventarios
+            multialmacén y facturación CFDI 4.0. IVA incluido.</li>
+          <li><strong>Operación · $7,500 al mes.</strong> Todo el sistema: compras, CRM, inventarios,
+            facturación y WhatsApp. IVA incluido.</li>
+        </ul>
+        <p class="apunte tras-lista">¿Quieres ver la existencia de tu proveedor en vivo dentro del
+          buscador? La consulta por API es un complemento: <strong>+$890 al mes por proveedor
+          conectado</strong>, con integración desde $12,000.</p>
+        <p class="tras-lista"><a class="btn btn--fantasma" href="precios.html">Ver todos los planes</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================== TESTIMONIOS -->
+<section class="bloque bloque--hundido">
+  <div class="envoltura">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">Lo que dicen</p>
+      <h2>Gente que ya no le habla al proveedor por WhatsApp para saber si llegó</h2>
+    </div>
+    <div class="rejilla rejilla--2 aparecer">
+      <figure class="tarjeta tarjeta--comoda cita">
+        <blockquote>Nosotros vendemos casi todo sobre pedido. Antes el vendedor mandaba un correo a
+          compras y rezaba. Hoy confirma el pedido y la requisición ya está puesta, con la cantidad
+          exacta y el proveedor propuesto.</blockquote>
+        <figcaption>
+          <span class="avatar" aria-hidden="true">TC</span>
+          <span><b>Coordinación de compras</b><span>TecnoCableado · Material eléctrico y redes</span></span>
+        </figcaption>
+      </figure>
+      <figure class="tarjeta tarjeta--comoda cita">
+        <blockquote>Lo que nos cambió el mes fue que las requisiciones se cierran al recibir. Dejamos
+          de comprar dos veces lo mismo porque nadie sabía que ya venía en camino.</blockquote>
+        <figcaption>
+          <span class="avatar" aria-hidden="true">DM</span>
+          <span><b>Almacén y logística</b><span>Distrimedic · Insumos médicos</span></span>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="centro apunte remate">Testimonios de ejemplo para esta maqueta, basados en la operación
+      real de cada cliente.</p>
+  </div>
+</section>
+
+<!-- ============================================================ PREGUNTAS -->
+<section class="bloque">
+  <div class="envoltura envoltura--angosta">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">Dudas de compras</p>
+      <h2>Lo que pregunta el que compra</h2>
+    </div>
+    <div class="acordeon">
+      <details open>
+        <summary>¿Puedo vender algo que no tengo sin descuadrar el almacén?</summary>
+        <div class="acordeon__cuerpo">Sí, y es justo para lo que está hecho. El renglón que sale del
+          proveedor no descuenta tu existencia: se marca con quién lo surte y levanta su requisición.
+          Lo que el proveedor dice tener no entra a tu kárdex; tu inventario solo se mueve cuando la
+          mercancía se recibe de verdad.</div>
+      </details>
+      <details>
+        <summary>¿La requisición también se levanta si la venta fue de mostrador?</summary>
+        <div class="acordeon__cuerpo">Sí. Hay dos disparadores: confirmar un pedido con algo que no hay,
+          y entregar algo que no tenías. El segundo cubre el mostrador, que es donde normalmente se
+          pierde el rastro. No tienes que abrir otra pantalla ni acordarte de reponer.</div>
+      </details>
+      <details>
+        <summary>¿Cuándo se cierra la requisición: al pedirle al proveedor o al recibir?</summary>
+        <div class="acordeon__cuerpo">Al recibir. Mandar la orden no significa que la mercancía exista.
+          Cuando marcas recibida la orden se cierran las requisiciones que le dieron origen y el pedido
+          que las esperaba cambia a «ya llegó». Esa distinción es lo que evita que dos personas compren
+          lo mismo.</div>
+      </details>
+      <details>
+        <summary>¿Qué pasa si tres proveedores manejan el mismo producto?</summary>
+        <div class="acordeon__cuerpo">Es lo esperado. Cada proveedor tiene su propia clave, su costo, lo
+          que dice tener y en cuántos días entrega para ese producto. Al comparar, el sistema normaliza
+          el IVA y el tipo de cambio para ponerlos en la misma unidad, y marca «no comparable» cuando la
+          presentación no coincide en lugar de inventarte un número.</div>
+      </details>
+      <details>
+        <summary>¿Puedo comprar en dólares?</summary>
+        <div class="acordeon__cuerpo">Sí. Las órdenes son multimoneda y el tipo de cambio se congela por
+          documento, no de forma global. Lo que ya pediste conserva el tipo de cambio con el que lo
+          pediste, aunque el dólar se mueva mañana.</div>
+      </details>
+      <details>
+        <summary>¿Cómo cargo la lista de precios de mi proveedor?</summary>
+        <div class="acordeon__cuerpo">Por archivo. La carga empareja por la clave que él usa y actualiza
+          su costo, lo que dice tener y sus días de entrega, sin tocar tu producto ni tus precios de
+          venta. Si quieres esa información en vivo en lugar de por archivo, la consulta por API existe
+          como complemento: +$890 al mes por proveedor conectado, con integración desde $12,000.</div>
+      </details>
+      <details>
+        <summary>¿La factura del proveedor y los pagos también están aquí?</summary>
+        <div class="acordeon__cuerpo">Sí: cargas su CFDI, registras los pagos y ves el saldo por proveedor
+          y por vencimiento. Lo que todavía no cubrimos es IEPS ni el esquema completo de retenciones,
+          así que si tu giro los necesita, pregúntalo antes de firmar.</div>
+      </details>
+      <details>
+        <summary>¿Puedo darle acceso a compras sin abrirle todo el sistema?</summary>
+        <div class="acordeon__cuerpo">Sí. El perfil Compras entra a proveedores, órdenes de compra y
+          surtido, y no a la configuración de la empresa. El alta se hace con un enlace de invitación:
+          la persona pone su propia contraseña y nadie más la ve.</div>
+      </details>
+    </div>
+    <p class="centro remate"><a class="enlace-ir" href="preguntas.html">Ver todas las preguntas frecuentes
+      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg></a></p>
+  </div>
+</section>
+
+<!-- ====================================================== PÁGINAS HERMANAS -->
+<section class="bloque bloque--hundido">
+  <div class="envoltura">
+    <div class="encabezado">
+      <p class="sobre-titulo">Sigue por aquí</p>
+      <h2>Compras no vive sola</h2>
+      <p>Es el eslabón entre lo que vendiste y lo que vas a entregar. Estas son las piezas que tiene a
+        los lados.</p>
+    </div>
+    <div class="rejilla rejilla--3 rejilla--apretada aparecer">
+      <a class="tarjeta tarjeta--viva tarjeta-enlace" href="inventarios.html">
+        <div class="tarjeta__cab">
+          <span class="icono-caja icono-caja--verde" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8l9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg></span>
+          <h3>Inventarios</h3>
+        </div>
+        <p class="suave">Multialmacén, kárdex, lotes con caducidad y varios proveedores por producto con
+          su clave y su tiempo de entrega.</p>
+        <span class="enlace-ir">Ver inventarios
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg></span>
+      </a>
+      <a class="tarjeta tarjeta--viva tarjeta-enlace" href="cotizaciones.html">
+        <div class="tarjeta__cab">
+          <span class="icono-caja" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span>
+          <h3>Cotizaciones y venta</h3>
+        </div>
+        <p class="suave">Dónde nace todo esto: la cotización con costos congelados, el pedido que dispara
+          la requisición y la remisión.</p>
+        <span class="enlace-ir">Ver cotizaciones
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg></span>
+      </a>
+      <a class="tarjeta tarjeta--viva tarjeta-enlace" href="facturacion.html">
+        <div class="tarjeta__cab">
+          <span class="icono-caja" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12v20l-3-2-3 2-3-2-3 2z"/><path d="M9 7h6M9 11h6M9 15h3"/></svg></span>
+          <h3>Facturación CFDI 4.0</h3>
+        </div>
+        <p class="suave">Lo que sigue después de entregar: timbrado desde el mismo pedido, complementos
+          de pago y notas de crédito.</p>
+        <span class="enlace-ir">Ver facturación
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg></span>
+      </a>
+      <a class="tarjeta tarjeta--viva tarjeta-enlace" href="integraciones.html">
+        <div class="tarjeta__cab">
+          <span class="icono-caja icono-caja--violeta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6M15 2v6"/><path d="M6 8h12v4a6 6 0 0 1-12 0z"/><path d="M12 18v4"/></svg></span>
+          <h3>Integraciones y API</h3>
+        </div>
+        <p class="suave">Consulta de inventarios de tus proveedores por API, conector con WooCommerce y
+          orquestador de existencias entre canales. Se contratan como servicio de integración, con su
+          alta y su costo aparte.</p>
+        <span class="enlace-ir">Ver integraciones
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg></span>
+      </a>
+      <a class="tarjeta tarjeta--viva tarjeta-enlace" href="casos.html">
+        <div class="tarjeta__cab">
+          <span class="icono-caja icono-caja--verde" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5z"/></svg></span>
+          <h3>Casos de éxito</h3>
+        </div>
+        <p class="suave">TecnoCableado vende sobre pedido todos los días dentro de IncSales, con
+          subdominio propio y compras completas.</p>
+        <span class="enlace-ir">Ver casos
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ CIERRE -->
+<section class="bloque bloque--tinta" id="demo">
+  <div class="envoltura envoltura--angosta centro">
+    <h2>Treinta minutos con tu propia operación en pantalla</h2>
+    <p class="entradilla">En la demo abrimos el sistema con un caso tuyo: una cotización real, con tus productos y tu
+      margen. Si no te convence, te lo decimos nosotros primero.</p>
+    <div class="cierre__acciones">
+      <a class="btn btn--claro btn--grande" href="mailto:contacto@incsales.com.mx?subject=Quiero%20una%20demo%20de%20IncSales">Escríbenos por correo</a>
+      <a class="btn btn--linea-clara btn--grande" href="https://wa.me/523337793774" target="_blank" rel="noopener">WhatsApp +52 33 3779 3774</a>
+    </div>
+    <p class="apunte cierre__pie">contacto@incsales.com.mx · Guadalajara, Jalisco ·
+      Respondemos el mismo día hábil</p>
+  </div>
+</section>
+
+</main>
+
+<!-- =================================================================== PIE -->
+<footer class="pie">
+  <div class="envoltura envoltura--ancha">
+    <div class="pie__grid">
+      <div class="pie__acerca">
+        <img class="pie__logo" src="assets/logos/incsales-completo-blanco.svg" alt="IncSales" width="800" height="219">
+        <p>ERP en la nube con CRM adentro, para empresas que viven de cotizar. Hecho en Guadalajara
+          por Incoming Sales.</p>
+        <div class="pie__contacto">
+          <a href="mailto:contacto@incsales.com.mx">contacto@incsales.com.mx</a>
+          <a href="https://wa.me/523337793774" target="_blank" rel="noopener">+52 33 3779 3774</a>
+          <span>Guadalajara, Jalisco, México</span>
+        </div>
+      </div>
+      <div>
+        <h3 class="pie__titulo">Producto</h3>
+        <ul>
+          <li><a href="index.html#crm">CRM y seguimiento</a></li>
+          <li><a href="index.html#cotizaciones">Cotizaciones y venta</a></li>
+          <li><a href="index.html#inventarios">Inventarios</a></li>
+          <li><a href="index.html#compras">Compras y proveedores</a></li>
+          <li><a href="index.html#facturacion">Facturación CFDI 4.0</a></li>
+          <li><a href="index.html#whatsapp">WhatsApp y marketing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="pie__titulo">Planes</h3>
+        <ul>
+          <li><a href="index.html#precios">Cotiza, desde $200</a></li>
+          <li><a href="index.html#precios">CRM, desde $499</a></li>
+          <li><a href="index.html#precios">Completo, desde $2,490</a></li>
+          <li><a href="index.html#precios">Complementos</a></li>
+          <li><a href="index.html#precios">A la medida</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="pie__titulo">Servicios</h3>
+        <ul>
+          <li><a href="index.html#precios">Migración de datos</a></li>
+          <li><a href="index.html#precios">Implementación y capacitación</a></li>
+          <li><a href="index.html#precios">Desarrollo a la medida</a></li>
+          <li><a href="index.html#prueba">WhatsApp Business API</a></li>
+          <li><a href="index.html#precios">Portal de clientes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="pie__titulo">Empresa</h3>
+        <ul>
+          <li><a href="index.html#prueba">Por dentro</a></li>
+          <li><a href="por-dentro.html">Las pantallas del sistema</a></li>
+          <li><a href="index.html#confianza">Confianza y operación</a></li>
+          <li><a href="index.html#preguntas">Preguntas frecuentes</a></li>
+          <li><a href="#demo">Agenda una demo</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pie__legal">
+      <span>© <span data-anio>2026</span> Incoming Sales · IncSales ERP. Todos los derechos reservados.</span>
+      <span>Precios en pesos mexicanos con IVA incluido. Propuesta de diseño, no es el sitio publicado.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/sistema.js" defer></script>
+</body>
+</html>

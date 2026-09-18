@@ -1,0 +1,7 @@
+.DS_Store
+.claude/
+
+# Documentación interna y archivo del diseño anterior: se quedan en disco,
+# fuera del repositorio público.
+_brief/
+_respaldo/

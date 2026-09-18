@@ -1,0 +1,1375 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inventarios y almacenes · IncSales</title>
+<meta name="description" content="Catálogo con variantes, multialmacén, kárdex, listas de precios, lotes con caducidad y pedimento, y varios proveedores por producto. Desde $200 al mes con IVA incluido.">
+<link rel="icon" type="image/svg+xml" href="assets/logos/incsales-icono.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap">
+<link rel="stylesheet" href="assets/css/sistema.css">
+<link rel="stylesheet" href="assets/css/paginas/inventarios.css">
+</head>
+<body data-superficie="landing">
+
+<a class="saltar" href="#principal">Saltar al contenido</a>
+
+<!-- Iconos: un solo juego de símbolos, sin imágenes externas. Heredan el color del texto. -->
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-flecha" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3.2 8.4 3.1 3.1 6.5-6.9"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.2M12 7.8v.1"/></symbol>
+  <symbol id="i-alerta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4.5M12 17v.1"/><path d="M10.3 3.9 2.6 17.5a1.9 1.9 0 0 0 1.7 2.9h15.4a1.9 1.9 0 0 0 1.7-2.9L13.7 3.9a1.9 1.9 0 0 0-3.4 0z"/></symbol>
+  <symbol id="i-buscar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.6 4.6"/></symbol>
+  <symbol id="i-caja" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7.5 12 3l8.5 4.5v9L12 21l-8.5-4.5z"/><path d="M3.5 7.5 12 12l8.5-4.5M12 12v9"/></symbol>
+  <symbol id="i-almacen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5V9L12 3.5 20.5 9v11.5"/><path d="M9 20.5V14h6v6.5"/></symbol>
+  <symbol id="i-movimientos" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20V5M3.6 8.4 7 5l3.4 3.4M17 4v15M13.6 15.6 17 19l3.4-3.4"/></symbol>
+  <symbol id="i-precios" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 11.4V4.2h7.2l9 9-7.2 7.2z"/><path d="M7.4 7.6v.1"/></symbol>
+  <symbol id="i-lotes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.4"/><path d="M12 6.8V12l3.4 2.1"/></symbol>
+  <symbol id="i-atributos" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h11"/></symbol>
+  <symbol id="i-categorias" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 19.5v-14h6l2 2.4h9v11.6z"/></symbol>
+  <symbol id="i-documento" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 13h6M9 17h4"/></symbol>
+  <symbol id="i-pedidos" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.6H6v15h12v-15h-3M9 4.6V3h6v1.6H9M9.6 12.4l2 2 3.4-4"/></symbol>
+  <symbol id="i-camion" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 5.6h10.8v10H2.6zM13.4 9.6h3.8l2.2 3v3h-6z"/><circle cx="7.6" cy="17.6" r="1.7"/><circle cx="16.6" cy="17.6" r="1.7"/></symbol>
+  <symbol id="i-compras" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9.5" cy="19" r="1.3"/><circle cx="17" cy="19" r="1.3"/><path d="M3 4.5h2.3l2.2 11h11M6.4 8h14.6l-1.6 6H7.6"/></symbol>
+  <symbol id="i-imagen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.4" y="5" width="17.2" height="14" rx="2"/><circle cx="8.6" cy="10" r="1.5"/><path d="m20.6 16.4-5.2-5.2-6.2 6.2"/></symbol>
+  <symbol id="i-nube" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17.6 18.4H7.2a4.2 4.2 0 0 1-.6-8.3 6.2 6.2 0 0 1 12-.1 4.2 4.2 0 0 1-1 8.4z"/></symbol>
+  <symbol id="i-escudo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v6c0 4.2 2.9 7.6 7 9 4.1-1.4 7-4.8 7-9V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-barras" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6v12M7.3 6v12M10.6 6v12M14 6v12M17.3 6v12M20 6v12"/></symbol>
+  <symbol id="i-id" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h11M10 7.5l4.5 4.5L10 16.5M17 4.5h4v15h-4"/></symbol>
+  <symbol id="i-sku" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 8 12 3.4 3.4 8l8.6 4.6z"/><path d="M3.4 8v8L12 20.6 20.6 16V8"/><path d="M12 12.6v8"/></symbol>
+  <symbol id="i-enlace" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 13.7a3.6 3.6 0 0 0 5.1 0l2.6-2.6a3.6 3.6 0 0 0-5.1-5.1l-1.1 1.1"/><path d="M13.7 10.3a3.6 3.6 0 0 0-5.1 0L6 12.9a3.6 3.6 0 0 0 5.1 5.1l1.1-1.1"/></symbol>
+</svg>
+
+<!-- ============================================================= CINTILLO -->
+<div class="cintillo">
+  Migración de datos sin costo al contratar cualquier plan anual ·
+  <a href="index.html#precios">Ver los planes</a>
+</div>
+
+<!-- =========================================================== NAVEGACIÓN -->
+<header class="nav">
+  <div class="envoltura envoltura--ancha">
+    <div class="nav__fila">
+      <a class="marca-enlace" href="index.html" aria-label="IncSales, inicio">
+        <img src="assets/logos/incsales-completo.svg" alt="" width="800" height="219">
+      </a>
+      <nav class="nav__menu" id="menu" aria-label="Principal">
+        <div class="nav__grupo">
+          <button class="nav__item activo" type="button" aria-expanded="false">
+            Producto <span class="nav__flecha" aria-hidden="true"></span>
+          </button>
+          <div class="panel" hidden>
+            <div class="panel__grid">
+              <p class="panel__titulo">Los módulos que ya operan todos los días</p>
+              <a class="panel__item" href="index.html#crm">
+                <b>CRM y seguimiento</b>
+                <span>Interesados, tablero de negocios y bitácora</span>
+              </a>
+              <a class="panel__item" href="index.html#cotizaciones">
+                <b>Cotizaciones y venta</b>
+                <span>Seis documentos con la misma forma</span>
+              </a>
+              <a class="panel__item" href="inventarios.html" aria-current="page">
+                <b>Inventarios</b>
+                <span>Variantes, multialmacén, lotes y kárdex</span>
+              </a>
+              <a class="panel__item" href="index.html#compras">
+                <b>Compras y proveedores</b>
+                <span>Requisiciones, órdenes y recepciones</span>
+              </a>
+              <a class="panel__item" href="index.html#facturacion">
+                <b>Facturación CFDI 4.0</b>
+                <span>Timbrado, pagos y notas de crédito</span>
+              </a>
+              <a class="panel__item" href="index.html#whatsapp">
+                <b>WhatsApp y marketing</b>
+                <span>Tu número, bandeja de equipo y formularios</span>
+              </a>
+              <div class="panel__pie">
+                <span class="apunte">Todo lo de arriba está construido y en uso.</span>
+                <a class="enlace-ir" href="por-dentro.html">
+                  Ver las pantallas
+                  <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="nav__item" href="index.html#prueba">Por dentro</a>
+        <a class="nav__item" href="por-dentro.html">Las pantallas</a>
+        <a class="nav__item" href="index.html#precios">Precios</a>
+        <a class="nav__item" href="index.html#confianza">Confianza</a>
+        <a class="nav__item" href="index.html#preguntas">Preguntas</a>
+      </nav>
+      <div class="nav__acciones">
+        <a class="btn btn--chico" href="#demo">Agenda una demo</a>
+      </div>
+      <button class="nav__hamburguesa" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir el menú">
+        <i></i><i></i><i></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="principal">
+
+<!-- ==================================================== PORTADA INTERIOR -->
+<section class="portada portada--tinta">
+  <div class="envoltura">
+    <ol class="migas">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html#modulos">Producto</a></li>
+      <li>Inventarios y almacenes</li>
+    </ol>
+    <p class="sobre-titulo">Módulo · Inventarios y almacenes</p>
+    <h1>Inventarios que saben qué hay, dónde está y quién más lo tiene</h1>
+    <p class="entradilla">Catálogo con variantes, existencia por almacén, kárdex de cada movimiento, listas de precios
+      que viajan con el cliente, lotes con caducidad y pedimento, y los proveedores de cada producto con su clave y
+      su tiempo de entrega. Todo en el <strong>mismo sistema donde cotizas, compras y facturas</strong>.</p>
+    <div class="portada__acciones">
+      <a class="btn btn--claro btn--grande" href="#demo">Agenda tu demo</a>
+      <a class="btn btn--linea-clara btn--grande" href="#planes">Ver planes con inventarios</a>
+    </div>
+    <div class="portada__firma">
+      <span><svg width="14" height="14" aria-hidden="true"><use href="#i-check"></use></svg> Multialmacén</span>
+      <span><svg width="14" height="14" aria-hidden="true"><use href="#i-check"></use></svg> Kárdex completo</span>
+      <span><svg width="14" height="14" aria-hidden="true"><use href="#i-check"></use></svg> Lotes con caducidad y pedimento</span>
+      <span><svg width="14" height="14" aria-hidden="true"><use href="#i-check"></use></svg> Catálogo propio</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================ LA REGLA: VARIANTES -->
+<section class="bloque" id="variantes">
+  <div class="envoltura">
+    <div class="tira aparecer">
+      <div class="cifra">
+        <p class="cifra__n">3</p>
+        <p class="cifra__q">Claves únicas por producto</p>
+        <p class="cifra__f">SKU, código de barras e ID alterno</p>
+      </div>
+      <div class="cifra">
+        <p class="cifra__n">30/60/90</p>
+        <p class="cifra__q">Días de aviso antes de que caduque un lote</p>
+        <p class="cifra__f">El umbral lo eliges tú</p>
+      </div>
+      <div class="cifra">
+        <p class="cifra__n">500</p>
+        <p class="cifra__q">Productos ya en el plan de entrada</p>
+        <p class="cifra__f">Cotiza Uno · $200 al mes, IVA incluido</p>
+      </div>
+    </div>
+
+    <div class="encabezado tras-tira">
+      <p class="sobre-titulo">La regla de diseño</p>
+      <h2>Todo producto tiene al menos una variante. Siempre.</h2>
+      <p>Es la decisión que evita la mitad de los enredos de un catálogo: la existencia y el precio nunca cuelgan
+        del producto, cuelgan de la variante.</p>
+    </div>
+
+    <div class="par par--arriba">
+      <div>
+        <p class="suave">Cuando das de alta un producto, IncSales crea su primera variante aunque hoy vendas una sola
+          presentación. No es un trámite: es el lugar donde vive lo que cambia. El producto guarda lo que no cambia
+          —nombre, categoría, atributos, imágenes— y la variante guarda lo que sí.</p>
+        <p class="suave">El día que ese mismo cable te llegue en carrete de 100 metros además del de 305, no rehaces
+          el catálogo ni das de alta un producto nuevo: agregas una variante. El historial no se parte en dos y nadie
+          tiene que explicar por qué existen dos «Cable Cat6» con existencias distintas.</p>
+        <ul class="lista tras-texto">
+          <li><strong>El producto:</strong> nombre, descripción, categoría, atributos e imágenes.</li>
+          <li><strong>La variante:</strong> SKU, código de barras, ID alterno, existencia en cada almacén y precio en cada lista.</li>
+          <li>Un producto de una sola presentación se captura igual de rápido: la variante está ahí y no estorba.</li>
+          <li>Cotizar, remisionar y facturar siempre apunta a una variante, así que la salida de almacén nunca queda a medias.</li>
+        </ul>
+        <div class="aviso aviso--aviso tras-texto">
+          <svg viewBox="0 0 24 24" width="18" height="18" class="icono-linea" aria-hidden="true"><use href="#i-alerta"></use></svg>
+          <div><b>Por qué importa antes de firmar</b>
+            Los catálogos que llegan de una hoja de cálculo casi siempre traen el mismo producto tres veces, con tres
+            nombres, porque no había dónde poner la presentación. En la <a href="migracion.html">migración</a> eso se
+            ordena una sola vez y ya no vuelve a pasar.</div>
+        </div>
+      </div>
+
+      <div>
+        <article class="tarjeta tarjeta--comoda tarjeta--alta">
+          <div class="tarjeta__cab">
+            <span class="chip chip--azul">Producto</span>
+            <h3>Cable UTP Cat6 exterior</h3>
+          </div>
+          <p class="apunte">Categoría: Redes / Cableado · Atributos: color, longitud, chaqueta · 3 imágenes</p>
+          <div class="variantes">
+            <div class="variante">
+              <p class="variante__fila"><b>Gris · carrete 305 m</b> <span class="clave apunte">CBL-6U305-GRI</span></p>
+              <p class="variante__marcas">
+                <span class="chip chip--verde">32 en Guadalajara</span>
+                <span class="chip">12 en León</span>
+                <span class="chip">4 en Mostrador</span>
+                <span class="chip chip--azul">Mayoreo $3,240</span>
+              </p>
+            </div>
+            <div class="variante">
+              <p class="variante__fila"><b>Negro · carrete 305 m</b> <span class="clave apunte">CBL-6U305-NEG</span></p>
+              <p class="variante__marcas">
+                <span class="chip chip--ambar">0 en existencia</span>
+                <span class="chip">Proveedor: 120 en 3 días</span>
+                <span class="chip chip--azul">Mayoreo $3,310</span>
+              </p>
+            </div>
+            <div class="variante">
+              <p class="variante__fila"><b>Gris · tramo 100 m</b> <span class="clave apunte">CBL-6U100-GRI</span></p>
+              <p class="variante__marcas">
+                <span class="chip chip--verde">31 en Guadalajara</span>
+                <span class="chip chip--azul">Mayoreo $1,180</span>
+              </p>
+            </div>
+          </div>
+          <p class="apunte tras-texto">Un producto, tres variantes. La existencia y el precio están abajo, nunca arriba.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================== TRES CLAVES -->
+<section class="bloque bloque--hundido" id="claves">
+  <div class="envoltura">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">Identidad del producto</p>
+      <h2>Tres claves por producto, y las tres se vigilan entre sí</h2>
+      <p>Cada variante puede tener SKU, código de barras e ID alterno. Las tres son únicas y el sistema las comprueba
+        cruzadas: un código de barras no puede ser el SKU de otra variante.</p>
+    </div>
+
+    <div class="rejilla rejilla--3 aparecer">
+      <article class="tarjeta tarjeta--comoda">
+        <div class="tarjeta__cab">
+          <span class="icono-caja" aria-hidden="true"><svg><use href="#i-sku"></use></svg></span>
+          <h3>SKU · obligatorio</h3>
+        </div>
+        <p class="suave">Es la clave con la que tu gente busca y con la que sale impreso en la cotización. No se puede
+          dejar en blanco, porque un producto sin clave es un producto que alguien va a volver a capturar mañana.</p>
+      </article>
+      <article class="tarjeta tarjeta--comoda">
+        <div class="tarjeta__cab">
+          <span class="icono-caja icono-caja--verde" aria-hidden="true"><svg><use href="#i-barras"></use></svg></span>
+          <h3>Código de barras</h3>
+        </div>
+        <p class="suave">El que trae la caja del fabricante. Sirve para encontrar la variante exacta cuando alguien
+          tiene el producto en la mano y no sabe cómo se llama en tu catálogo.</p>
+      </article>
+      <article class="tarjeta tarjeta--comoda">
+        <div class="tarjeta__cab">
+          <span class="icono-caja icono-caja--violeta" aria-hidden="true"><svg><use href="#i-id"></use></svg></span>
+          <h3>ID alterno</h3>
+        </div>
+        <p class="suave">La clave con la que ese producto se llamaba en tu sistema anterior, o la que usa tu cliente
+          grande en sus órdenes de compra. Se busca por él igual que por el SKU.</p>
+      </article>
+    </div>
+
+    <div class="par par--arriba tras-tabla">
+      <div>
+        <h3>El candado no es contra el código repetido</h3>
+        <p class="suave">Que dos claves choquen es la señal, no el problema. El problema es el
+          <strong>producto duplicado</strong>: el mismo cable dado de alta dos veces, con dos existencias, dos precios
+          y dos historias. Ese es el que te hace prometer 48 piezas cuando en realidad tienes 12 en un registro y 36
+          en otro que nadie mira.</p>
+        <p class="suave">Por eso, cuando alguien captura una clave que ya vive en otra variante, el sistema no la
+          acepta y le enseña cuál es la variante que ya la tiene. La captura se detiene en el segundo correcto: antes
+          de que exista el duplicado, no tres meses después cuando ya hay movimientos colgando de los dos.</p>
+      </div>
+      <div>
+        <article class="tarjeta tarjeta--comoda tarjeta--alta">
+          <h4>Lo que ese candado te ahorra</h4>
+          <ul class="lista">
+            <li>Cotizar sobre una existencia partida entre dos registros del mismo producto.</li>
+            <li>Comprar de más porque el otro registro sí tenía piezas.</li>
+            <li>Reportes de rotación que no cuadran con lo que ve el almacén.</li>
+            <li>Importaciones que crean copias en vez de actualizar lo que ya existía.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================= EL CATÁLOGO EN PANTALLA -->
+<section class="bloque" id="catalogo">
+  <div class="envoltura envoltura--ancha">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">La pantalla</p>
+      <h2>El catálogo dice quién lo tiene, no nada más cuánto cuesta</h2>
+      <p>Cada renglón trae dos disponibilidades: la tuya, que sale del kárdex, y la de tus proveedores, que sale de lo
+        que ellos declararon y con la fecha en que lo declararon.</p>
+    </div>
+
+    <figure class="maqueta-figura">
+      <div class="marco maqueta" role="img"
+           aria-label="Catálogo de productos de IncSales: 4,182 productos con su SKU, la existencia propia que sale del kárdex, lo que declara el proveedor con su tiempo de entrega y el precio de la lista de mayoreo.">
+        <div class="marco__barra"><div class="marco__puntos" aria-hidden="true"><i></i><i></i><i></i></div><span class="marco__url">erp.tuempresa.com/inventarios/productos</span></div>
+        <div class="app">
+          <aside class="lateral">
+            <div class="lateral__marca">
+              <img src="assets/logos/incsales-icono.svg" alt="" width="800" height="800">
+              <b>TuEmpresa</b>
+            </div>
+            <p class="lateral__grupo">Vender</p>
+            <div class="lateral__item"><svg aria-hidden="true"><use href="#i-documento"></use></svg> Cotizaciones</div>
+            <div class="lateral__item"><svg aria-hidden="true"><use href="#i-pedidos"></use></svg> Pedidos</div>
+            <div class="lateral__item"><svg aria-hidden="true"><use href="#i-camion"></use></svg> Remisiones</div>
+            <p class="lateral__grupo">Inventarios</p>
+            <div class="lateral__item" aria-current="page"><svg aria-hidden="true"><use href="#i-caja"></use></svg> Productos</div>
+            <div class="lateral__item"><svg aria-hidden="true"><use href="#i-almacen"></use></svg> Almacenes</div>
+            <div class="lateral__item"><svg aria-hidden="true"><use href="#i-movimientos"></use></svg> Movimientos</div>
+            <div class="lateral__item"><svg aria-hidden="true"><use href="#i-precios"></use></svg> Listas de precios</div>
+            <div class="lateral__item"><svg aria-hidden="true"><use href="#i-lotes"></use></svg> Lotes</div>
+            <div class="lateral__item"><svg aria-hidden="true"><use href="#i-atributos"></use></svg> Atributos</div>
+            <div class="lateral__item"><svg aria-hidden="true"><use href="#i-categorias"></use></svg> Categorías</div>
+            <p class="lateral__grupo">Comprar</p>
+            <div class="lateral__item"><svg aria-hidden="true"><use href="#i-nube"></use></svg> Requisiciones</div>
+            <div class="lateral__item"><svg aria-hidden="true"><use href="#i-compras"></use></svg> Órdenes</div>
+          </aside>
+          <div class="lienzo-app">
+            <div class="cabecera-app">
+              <div class="buscador"><svg aria-hidden="true"><use href="#i-buscar"></use></svg> Busca un producto, cliente o folio <kbd>⌘K</kbd></div>
+              <div class="pagina__acciones">
+                <span class="estado estado--ok">Catálogo al día</span>
+                <span class="avatar avatar--claro" aria-hidden="true">TE</span>
+              </div>
+            </div>
+            <div class="pagina">
+              <div class="pagina__cabeza">
+                <div>
+                  <p class="pagina__titulo">Catálogo</p>
+                  <p class="pagina__sub">4,182 productos · 3 almacenes</p>
+                </div>
+                <div class="pagina__acciones">
+                  <span class="btn btn--chico btn--fantasma">Importar archivo</span>
+                </div>
+              </div>
+              <div class="kpis">
+                <div class="kpi"><p class="kpi__q">Almacenes</p><p class="kpi__n">3</p></div>
+                <div class="kpi"><p class="kpi__q">Listas de precios</p><p class="kpi__n">4</p></div>
+                <div class="kpi"><p class="kpi__q">Lotes por vencer</p><p class="kpi__n">4</p></div>
+              </div>
+              <div class="datos-caja">
+                <div class="datos-scroll">
+                  <table class="datos">
+                    <thead>
+                      <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">SKU</th>
+                        <th scope="col">Tuyo</th>
+                        <th scope="col">Proveedor</th>
+                        <th scope="col" class="n">Mayoreo</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="fuerte">Cable UTP Cat6 305 m</td>
+                        <td class="clave">CBL-6U305-GRI</td>
+                        <td><span class="chip chip--verde">Tienes 48</span></td>
+                        <td><span class="chip">120 en 3 d</span></td>
+                        <td class="n">$3,240</td>
+                      </tr>
+                      <tr>
+                        <td class="fuerte">Jack RJ45 Cat6</td>
+                        <td class="clave">JK-6RJ</td>
+                        <td><span class="chip chip--ambar">Tienes 0</span></td>
+                        <td><span class="chip">40 en 5 d</span></td>
+                        <td class="n">$62</td>
+                      </tr>
+                      <tr>
+                        <td class="fuerte">Canaleta 20×12 tramo 2 m</td>
+                        <td class="clave">CAN-2012</td>
+                        <td><span class="chip chip--verde">Tienes 214</span></td>
+                        <td><span class="chip chip--rojo">Dato de hace 9 d</span></td>
+                        <td class="n">$78</td>
+                      </tr>
+                      <tr>
+                        <td class="fuerte">Guante nitrilo azul caja 100</td>
+                        <td class="clave">GNT-100A</td>
+                        <td><span class="chip chip--verde">Tienes 320</span></td>
+                        <td><span class="chip">500 en 7 d</span></td>
+                        <td class="n">$1,850</td>
+                      </tr>
+                      <tr>
+                        <td class="fuerte">Pinza ponchadora RJ45</td>
+                        <td class="clave">HRR-PON</td>
+                        <td><span class="chip chip--verde">Tienes 6</span></td>
+                        <td><span class="chip">18 en 4 d</span></td>
+                        <td class="n">No entra</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="datos__pie">
+                  <span>5 de 4,182 productos</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption class="apunte maqueta__pie">Maqueta del catálogo. La columna «Tuyo» sale de tu kárdex y suma tus
+        almacenes: verde cuando tienes, ámbar cuando estás en cero. La columna «Proveedor» es lo que él declaró, con su
+        tiempo de entrega, y se pone en rojo cuando ese dato lleva más de una semana sin actualizarse. «No entra»
+        quiere decir que ese producto no participa en la lista de mayoreo.</figcaption>
+    </figure>
+
+    <div class="encabezado tras-maqueta">
+      <h3>Y todo lo que hace que un catálogo se pueda consultar</h3>
+    </div>
+    <div class="rejilla rejilla--3 rejilla--apretada aparecer">
+      <article class="tarjeta">
+        <div class="tarjeta__cab">
+          <span class="icono-caja" aria-hidden="true"><svg><use href="#i-atributos"></use></svg></span>
+          <h4>Atributos</h4>
+        </div>
+        <p class="suave">Color, medida, calibre, presentación, material. Los defines tú, se reutilizan en todo el
+          catálogo y son los que dan forma a las variantes de cada producto.</p>
+      </article>
+      <article class="tarjeta">
+        <div class="tarjeta__cab">
+          <span class="icono-caja icono-caja--verde" aria-hidden="true"><svg><use href="#i-categorias"></use></svg></span>
+          <h4>Categorías</h4>
+        </div>
+        <p class="suave">El árbol con el que tu gente navega y con el que se filtran los reportes. Ordena el catálogo
+          como lo piensa tu almacén, no como lo pensó un fabricante.</p>
+      </article>
+      <article class="tarjeta">
+        <div class="tarjeta__cab">
+          <span class="icono-caja icono-caja--violeta" aria-hidden="true"><svg><use href="#i-imagen"></use></svg></span>
+          <h4>Imágenes de producto</h4>
+        </div>
+        <p class="suave">Se suben al producto y se optimizan al guardarlas. Sirven para que el vendedor confirme que
+          está cotizando la pieza que el cliente le pidió.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================= MULTIALMACÉN -->
+<section class="bloque bloque--hundido" id="almacenes">
+  <div class="envoltura">
+    <div class="encabezado">
+      <p class="sobre-titulo">Multialmacén</p>
+      <h2>La existencia se guarda por almacén, no en una bolsa común</h2>
+      <p>Matriz, sucursal, bodega de obra o la camioneta que funciona como mostrador: cada uno tiene su existencia y su
+        historia. La suma se ve, pero nunca se confunde con el dato de cada lugar.</p>
+    </div>
+
+    <div class="tabla-caja aparecer">
+      <div class="tabla-scroll">
+        <table class="tabla">
+          <caption>Maqueta de existencias por almacén. Los movimientos que forman cada cifra viven en el kárdex, con su documento.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Producto</th>
+              <th scope="col">SKU</th>
+              <th scope="col" class="n">Guadalajara</th>
+              <th scope="col" class="n">León</th>
+              <th scope="col" class="n">Mostrador</th>
+              <th scope="col" class="n tabla__col-nuestra">Total</th>
+              <th scope="col">Último movimiento</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cable UTP Cat6 305 m</td><td class="clave">CBL-6U305-GRI</td>
+              <td class="n">32</td><td class="n">12</td><td class="n">4</td>
+              <td class="n tabla__col-nuestra"><strong>48</strong></td><td>Salida · REM-00842</td>
+            </tr>
+            <tr>
+              <td>Jack RJ45 Cat6</td><td class="clave">JK-6RJ</td>
+              <td class="n">0</td><td class="n">0</td><td class="n">0</td>
+              <td class="n tabla__col-nuestra"><strong>0</strong></td><td>Salida · REM-00839</td>
+            </tr>
+            <tr>
+              <td>Canaleta 20×12</td><td class="clave">CAN-2012</td>
+              <td class="n">160</td><td class="n">54</td><td class="n">0</td>
+              <td class="n tabla__col-nuestra"><strong>214</strong></td><td>Entrada · REC-00311</td>
+            </tr>
+            <tr>
+              <td>Guante nitrilo azul caja 100</td><td class="clave">GNT-100A</td>
+              <td class="n">320</td><td class="n">0</td><td class="n">0</td>
+              <td class="n tabla__col-nuestra"><strong>320</strong></td><td>Entrada · REC-00308</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="rejilla rejilla--3 rejilla--apretada tras-tabla aparecer">
+      <article class="tarjeta tarjeta--comoda">
+        <div class="tarjeta__cab">
+          <span class="icono-caja" aria-hidden="true"><svg><use href="#i-almacen"></use></svg></span>
+          <h3>Empiezas con uno y creces</h3>
+        </div>
+        <p class="suave">El plan de entrada trae un almacén; el de equipo, hasta tres. Si necesitas más, un almacén
+          adicional cuesta <strong>$299 al mes</strong>, IVA incluido, y se enciende sin migrar nada.</p>
+      </article>
+      <article class="tarjeta tarjeta--comoda">
+        <div class="tarjeta__cab">
+          <span class="icono-caja icono-caja--ambar" aria-hidden="true"><svg><use href="#i-camion"></use></svg></span>
+          <h3>La remisión sabe de dónde salió</h3>
+        </div>
+        <p class="suave">Cuando entregas, la salida se descuenta del almacén que surtió, no de la suma. Por eso el
+          conteo físico de una sucursal se puede comparar contra el sistema sin hacer cuentas aparte.</p>
+      </article>
+      <article class="tarjeta tarjeta--comoda">
+        <div class="tarjeta__cab">
+          <span class="icono-caja icono-caja--verde" aria-hidden="true"><svg><use href="#i-escudo"></use></svg></span>
+          <h3>Varias empresas, datos aparte</h3>
+        </div>
+        <p class="suave">Si operas más de un RFC, cada empresa tiene sus propios almacenes y catálogo, aislados de
+          verdad: dos organizaciones nunca se ven entre sí, y hay un auditor automático que lo comprueba.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================== KÁRDEX -->
+<section class="bloque bloque--tinta" id="kardex">
+  <div class="envoltura envoltura--ancha">
+    <div class="encabezado">
+      <p class="sobre-titulo">Kárdex</p>
+      <h2>Cada pieza que entra y cada pieza que sale deja renglón</h2>
+      <p>El kárdex no es un reporte que se genera: es el registro del que sale la existencia. Si el número cambió, hay
+        un renglón que dice cuándo, en qué almacén y con qué documento.</p>
+    </div>
+
+    <div class="par par--apoyo par--arriba">
+      <div>
+        <ul class="lista">
+          <li>Entradas por recepción de compra y salidas por remisión, con su folio.</li>
+          <li>Ajustes de inventario cuando el conteo físico no coincide, con su motivo.</li>
+          <li>Traspasos entre almacenes: una salida de uno y una entrada en el otro, no un número que se mueve solo.</li>
+          <li>El saldo después de cada movimiento, para que puedas reconstruir cualquier fecha hacia atrás.</li>
+        </ul>
+        <div class="aviso tras-texto">
+          <svg viewBox="0 0 24 24" width="18" height="18" class="icono-linea" aria-hidden="true"><use href="#i-info"></use></svg>
+          <div><b>El kárdex es solo tuyo</b>
+            Lo que dicen tener tus proveedores no entra aquí. Nunca. Tu existencia es lo que está en tu almacén y llegó
+            con un documento; lo demás se enseña aparte, con la fecha en que te lo dijeron.</div>
+        </div>
+        <p class="ir-seccion"><a class="enlace-ir" href="compras.html">Ver cómo entra la mercancía desde compras
+          <svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-flecha"></use></svg></a></p>
+      </div>
+
+      <div>
+        <div class="marco maqueta" role="img"
+             aria-label="Kárdex de movimientos del producto CBL-6U305-GRI en el almacén de Guadalajara: entradas por recepción, salidas por remisión, un traspaso y un ajuste, con el saldo después de cada movimiento.">
+          <div class="marco__barra"><div class="marco__puntos" aria-hidden="true"><i></i><i></i><i></i></div><span class="marco__url">erp.tuempresa.com/inventarios/movimientos</span></div>
+          <div class="pagina maqueta__cuerpo">
+            <div class="pagina__cabeza">
+              <div>
+                <p class="pagina__titulo">Movimientos</p>
+                <p class="pagina__sub">CBL-6U305-GRI · Guadalajara</p>
+              </div>
+              <div class="pagina__acciones">
+                <span class="chip chip--azul">Últimos 30 días</span>
+              </div>
+            </div>
+            <div class="kpis">
+              <div class="kpi"><p class="kpi__q">Entradas</p><p class="kpi__n">+80</p></div>
+              <div class="kpi"><p class="kpi__q">Salidas</p><p class="kpi__n">−48</p></div>
+              <div class="kpi"><p class="kpi__q">Saldo</p><p class="kpi__n">32</p></div>
+            </div>
+            <div class="datos-caja">
+              <div class="datos-scroll">
+                <table class="datos">
+                  <thead>
+                    <tr>
+                      <th scope="col">Fecha</th>
+                      <th scope="col">Movimiento</th>
+                      <th scope="col">Documento</th>
+                      <th scope="col" class="n">Cant.</th>
+                      <th scope="col" class="n">Saldo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>03/09</td><td class="fuerte">Salida por remisión</td><td class="clave">REM-00842</td><td class="n">−28</td><td class="n">32</td></tr>
+                    <tr><td>02/09</td><td class="fuerte">Entrada por recepción</td><td class="clave">REC-00311</td><td class="n">+40</td><td class="n">60</td></tr>
+                    <tr><td>29/08</td><td class="fuerte">Traspaso a León</td><td class="clave">TR-00074</td><td class="n">−12</td><td class="n">20</td></tr>
+                    <tr><td>27/08</td><td class="fuerte">Ajuste por conteo</td><td class="clave">AJ-00019</td><td class="n">−2</td><td class="n">32</td></tr>
+                    <tr><td>22/08</td><td class="fuerte">Salida por remisión</td><td class="clave">REM-00838</td><td class="n">−6</td><td class="n">34</td></tr>
+                    <tr><td>19/08</td><td class="fuerte">Entrada por recepción</td><td class="clave">REC-00308</td><td class="n">+40</td><td class="n">40</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="datos__pie"><span>6 movimientos en el periodo</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================================================== LISTAS DE PRECIOS -->
+<section class="bloque" id="listas">
+  <div class="envoltura envoltura--ancha">
+    <div class="encabezado">
+      <p class="sobre-titulo">Listas de precios</p>
+      <h2>El descuento de mayoreo aplica al material, no a la herramienta</h2>
+      <p>Una lista de precios la tiene cualquiera. Lo que aquí te enseñamos es el control fino: producto por producto,
+        en qué listas participa y en cuáles no.</p>
+    </div>
+
+    <div class="par par--arriba">
+      <div>
+        <h3>La lista viaja con el cliente</h3>
+        <p class="suave">Cada cliente trae su lista, así que la cotización nace con el precio correcto sin que nadie se
+          acuerde. Y si en ese documento en particular hay que cambiarla —porque la obra es grande o porque el trato
+          fue otro— se cambia sobre el documento.</p>
+        <p class="suave">Al cambiarla, los renglones se recalculan <strong>respetando los que alguien ya negoció a
+          mano</strong>, y el sistema te avisa cuántos se movieron y cuántos se quedaron. Nunca te borra en silencio el
+          precio que peleaste con el cliente.</p>
+        <h3 class="tras-tabla">El control fino: quién entra a qué lista</h3>
+        <p class="suave">El material te deja margen para dar mayoreo. La herramienta, no. Por eso cada producto define
+          en qué listas participa: el que no entra a mayoreo se cotiza a su precio, aunque el cliente tenga esa lista
+          asignada, y el vendedor lo ve en el renglón, no cuando alguien revisa el margen a fin de mes.</p>
+        <p class="ir-seccion"><a class="enlace-ir" href="cotizaciones.html">Ver cómo se aplica al cotizar
+          <svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-flecha"></use></svg></a></p>
+      </div>
+
+      <div>
+        <div class="tabla-caja">
+          <div class="tabla-scroll">
+            <table class="tabla">
+              <caption>Maqueta de listas de precios. «No entra» significa que ese producto no participa en esa lista y se cotiza a su precio de siempre.</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Producto</th>
+                  <th scope="col" class="n">Público</th>
+                  <th scope="col" class="n tabla__col-nuestra">Mayoreo</th>
+                  <th scope="col" class="n">Distribuidor</th>
+                  <th scope="col" class="n">Obra</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cable UTP Cat6 305 m</td>
+                  <td class="n">$3,600</td><td class="n tabla__col-nuestra">$3,240</td><td class="n">$3,050</td><td class="n">$2,980</td>
+                </tr>
+                <tr>
+                  <td>Jack RJ45 Cat6</td>
+                  <td class="n">$78</td><td class="n tabla__col-nuestra">$62</td><td class="n">$58</td><td class="n">$56</td>
+                </tr>
+                <tr>
+                  <td>Canaleta 20×12 tramo 2 m</td>
+                  <td class="n">$96</td><td class="n tabla__col-nuestra">$78</td><td class="n">$74</td><td class="n">$71</td>
+                </tr>
+                <tr>
+                  <td>Pinza ponchadora RJ45 <span class="chip chip--ambar">Herramienta</span></td>
+                  <td class="n">$1,290</td><td class="n no tabla__col-nuestra">No entra</td><td class="n">$1,190</td><td class="n no">No entra</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="aviso aviso--exito tras-texto">
+          <svg viewBox="0 0 16 16" width="16" height="16" class="icono-linea" aria-hidden="true"><use href="#i-check"></use></svg>
+          <div><b>Lo que ves cuando cambias de lista</b>
+            «Se actualizaron 14 renglones. 3 se quedaron con el precio que capturaste a mano.» Ese aviso es la
+            diferencia entre confiar en el recálculo y revisar el documento entero otra vez.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== LOTES Y CADUCIDAD -->
+<section class="bloque bloque--hundido" id="lotes">
+  <div class="envoltura envoltura--ancha">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">Lotes</p>
+      <h2>Sale primero lo que primero caduca</h2>
+      <p>Si vendes insumos médicos, químicos, alimentos o cualquier cosa con fecha, el lote no es un campo extra: es lo
+        que decide qué pieza se entrega y cuál se queda.</p>
+    </div>
+
+    <div class="par par--arriba">
+      <div>
+        <h3>Caducidad y pedimento, en el lote</h3>
+        <p class="suave">Cada lote guarda su fecha de caducidad y, cuando la mercancía viene de importación, su número
+          de pedimento. Al surtir, el sistema toma el lote que vence primero, así que el inventario rota por fecha y no
+          por cuál estaba más a la mano en el anaquel.</p>
+        <ul class="lista tras-texto">
+          <li>La pantalla de <strong>próximos a vencer</strong> con umbral de 30, 60 o 90 días: eliges el que aguanta tu operación.</li>
+          <li>El pedimento queda amarrado al lote, no a una nota suelta en un correo.</li>
+          <li>Cada lote sabe en qué almacén está, porque la existencia sigue siendo por almacén.</li>
+          <li>Lo que caduca primero sale primero, sin depender de que alguien del almacén se acuerde de la regla.</li>
+        </ul>
+      </div>
+
+      <div>
+        <article class="tarjeta tarjeta--comoda tarjeta--alta">
+          <h4>Para qué sirve el umbral</h4>
+          <p class="suave">A 90 días todavía puedes moverlo con una promoción o devolverlo al proveedor. A 30 ya nada
+            más te queda mirarlo. Por eso el aviso no es una alarma del último día: es una lista con la que se
+            trabaja.</p>
+        </article>
+      </div>
+    </div>
+
+    <figure class="maqueta-figura tras-maqueta">
+        <div class="marco maqueta" role="img"
+             aria-label="Pantalla de lotes próximos a vencer con umbral de 90 días: un lote vence en 30 días, dos en 60 y cuatro en 90, cada uno con su caducidad, su pedimento y sus piezas.">
+          <div class="marco__barra"><div class="marco__puntos" aria-hidden="true"><i></i><i></i><i></i></div><span class="marco__url">erp.tuempresa.com/inventarios/lotes</span></div>
+          <div class="pagina maqueta__cuerpo">
+            <div class="pagina__cabeza">
+              <div>
+                <p class="pagina__titulo">Próximos a vencer</p>
+                <p class="pagina__sub">Umbral: 90 días</p>
+              </div>
+              <div class="pagina__acciones">
+                <div class="segmentado"><span>30 d</span><span>60 d</span><span class="activo">90 d</span></div>
+              </div>
+            </div>
+            <div class="kpis">
+              <div class="kpi"><p class="kpi__q">Vence en 30 días</p><p class="kpi__n">1</p></div>
+              <div class="kpi"><p class="kpi__q">Vencen en 60 días</p><p class="kpi__n">2</p></div>
+              <div class="kpi"><p class="kpi__q">Vencen en 90 días</p><p class="kpi__n">4</p></div>
+            </div>
+            <div class="datos-caja">
+              <div class="datos-scroll">
+                <table class="datos">
+                  <thead>
+                    <tr>
+                      <th scope="col">Lote</th>
+                      <th scope="col">Producto</th>
+                      <th scope="col">Caduca</th>
+                      <th scope="col">Pedimento</th>
+                      <th scope="col" class="n">Pzas</th>
+                      <th scope="col">Aviso</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td class="clave">L-2409-A</td><td class="fuerte">Guante nitrilo</td><td>28/09/26</td><td class="clave">26 43 3807 6001234</td><td class="n">40</td><td><span class="chip chip--rojo">25 días</span></td></tr>
+                    <tr><td class="clave">L-2410-B</td><td class="fuerte">Cubrebocas</td><td>21/10/26</td><td class="clave">26 43 3807 6001519</td><td class="n">120</td><td><span class="chip chip--ambar">48 días</span></td></tr>
+                    <tr><td class="clave">L-2411-C</td><td class="fuerte">Guante nitrilo</td><td>15/11/26</td><td class="clave">26 43 3807 6001987</td><td class="n">180</td><td><span class="chip chip--ambar">73 días</span></td></tr>
+                    <tr><td class="clave">L-2611-D</td><td class="fuerte">Jeringa 5 ml</td><td>26/11/26</td><td class="clave">26 43 3807 6002455</td><td class="n">260</td><td><span class="chip chip--verde">84 días</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="flotante">
+              <svg viewBox="0 0 16 16" width="16" height="16" class="icono-linea" aria-hidden="true"><use href="#i-check"></use></svg>
+              <div><b>Al surtir REM-00845 se tomó el lote L-2409-A por caducidad</b>
+                <span class="apunte">Automático: sale primero el que vence primero.</span></div>
+            </div>
+          </div>
+        </div>
+      <figcaption class="apunte maqueta__pie">La pantalla de próximos a vencer con el umbral en 90 días. El aviso del pie
+        es el que deja el sistema cuando surte: tomó el lote que caduca primero sin que nadie se lo pidiera.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- =============================================== PROVEEDORES POR PRODUCTO -->
+<section class="bloque" id="proveedores">
+  <div class="envoltura envoltura--ancha">
+    <div class="encabezado">
+      <p class="sobre-titulo">Proveedores por producto</p>
+      <h2>Cuatro proveedores para el mismo producto, cada uno con su clave</h2>
+      <p>El producto es tuyo y se llama como tú lo llamas. Debajo cuelgan los proveedores que lo surten, y cada uno
+        trae su propia clave, su costo, lo que dice tener y en cuántos días lo entrega.</p>
+    </div>
+
+    <div class="tabla-caja aparecer">
+      <div class="tabla-scroll">
+        <table class="tabla">
+          <caption>Maqueta de los proveedores de un solo producto. El costo más bajo no siempre gana: a veces gana el que entrega en dos días o el que sí tiene.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Proveedor</th>
+              <th scope="col">Su clave</th>
+              <th scope="col" class="n">Costo</th>
+              <th scope="col" class="n">Dice tener</th>
+              <th scope="col">Entrega</th>
+              <th scope="col">Lo dijo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Mayoreo del Norte</strong> <span class="chip chip--verde">El que surte</span></td>
+              <td class="clave">MN-6UTP-305</td><td class="n">$2,375</td><td class="n">120</td><td>3 días</td><td class="si">Hoy</td>
+            </tr>
+            <tr>
+              <td>Distribuidora Occidente</td>
+              <td class="clave">DO-305EXT</td><td class="n">$2,410</td><td class="n">60</td><td>2 días</td><td class="si">Ayer</td>
+            </tr>
+            <tr>
+              <td>Importadora del Bajío <span class="chip chip--ambar">El más barato</span></td>
+              <td class="clave">4471-UTP6</td><td class="n">$2,290</td><td class="n">0</td><td>12 días</td><td class="parcial">Hace 4 días</td>
+            </tr>
+            <tr>
+              <td>Cables y Redes GDL</td>
+              <td class="clave">CRG-00871</td><td class="n">$2,560</td><td class="n">40</td><td>5 días</td><td class="no">Hace 9 días</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="medida tras-tabla">
+      <h3>Por qué eso no entra al kárdex</h3>
+      <p class="suave">Porque no es tuyo. Tu kárdex es la historia de la mercancía que pasó por tu almacén con un
+        documento detrás; lo que un proveedor declara es una promesa con fecha. Si las dos cosas vivieran en el mismo
+        número, tu existencia sería una mezcla de lo que tienes y de lo que alguien más te dijo por teléfono.</p>
+      <p class="suave">Por eso se enseñan juntas pero separadas: en el catálogo y en el buscador ves las dos columnas,
+        y la del proveedor siempre viene con la fecha en que él lo declaró. Así el vendedor decide si promete o si
+        pregunta primero.</p>
+    </div>
+
+    <div class="par tras-rejilla aparecer">
+      <article class="tarjeta tarjeta--plana tarjeta--comoda">
+        <div class="tarjeta__cab">
+          <span class="chip">Si se mezclara</span>
+          <h4>El número deja de ser un número</h4>
+        </div>
+        <ul class="lista lista--no">
+          <li>Prometes 168 piezas cuando tuyas solo hay 48.</li>
+          <li>El reporte de rotación cuenta mercancía ajena.</li>
+          <li>Nadie sabe qué parte del número es real.</li>
+        </ul>
+      </article>
+      <article class="tarjeta tarjeta--comoda tarjeta--alta">
+        <div class="tarjeta__cab">
+          <span class="chip chip--azul">Como funciona</span>
+          <h4>Juntas, pero separadas</h4>
+        </div>
+        <ul class="lista">
+          <li>Tu existencia sale solo del kárdex.</li>
+          <li>Lo del proveedor se ve aparte, con su fecha.</li>
+          <li>Si el dato ya está viejo, el sistema lo marca en rojo.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================================================== CARGAS POR ARCHIVO -->
+<section class="bloque bloque--hundido" id="cargas">
+  <div class="envoltura envoltura--ancha">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">Cargas por archivo</p>
+      <h2>Dos importaciones que se parecen y no son lo mismo</h2>
+      <p>Una actualiza lo que dicen tus proveedores. La otra toca tu catálogo. Confundirlas es la manera más rápida de
+        arruinar un inventario, así que en IncSales están separadas a propósito.</p>
+    </div>
+
+    <div class="par par--arriba">
+      <article class="tarjeta tarjeta--comoda">
+        <div class="tarjeta__cab">
+          <span class="icono-caja icono-caja--ambar" aria-hidden="true"><svg><use href="#i-nube"></use></svg></span>
+          <h3>Lista de proveedor</h3>
+        </div>
+        <p class="suave">Te llega su archivo de precios y existencias. Lo subes y el sistema <strong>empareja por la
+          clave de él</strong>, la que ya guardaste en ese producto.</p>
+        <p class="tarjeta__titulillo">Qué actualiza</p>
+        <ul class="lista">
+          <li>Su costo.</li>
+          <li>Lo que dice tener.</li>
+          <li>En cuántos días entrega.</li>
+          <li>La fecha en que lo declaró.</li>
+        </ul>
+        <p class="tarjeta__titulillo">Qué no toca</p>
+        <ul class="lista lista--no">
+          <li>El nombre de tu producto.</li>
+          <li>Tu SKU ni tus otras claves.</li>
+          <li>Tus precios de venta.</li>
+          <li>Tu existencia ni tu kárdex.</li>
+        </ul>
+      </article>
+
+      <article class="tarjeta tarjeta--comoda">
+        <div class="tarjeta__cab">
+          <span class="icono-caja" aria-hidden="true"><svg><use href="#i-documento"></use></svg></span>
+          <h3>Importación de catálogo</h3>
+        </div>
+        <p class="suave">Esta sí toca tus productos, y por eso es <strong>auditable renglón por renglón</strong>: cada
+          línea del archivo termina con un resultado escrito, no con un «listo» genérico.</p>
+
+        <div class="datos-caja tras-texto" role="img"
+             aria-label="Reporte de importación de catálogo: 1,284 renglones, 1,251 aplicados y 33 detenidos, con el resultado escrito de cada línea.">
+          <div class="reporte__cab">
+            <div>
+              <b>Importación de catálogo</b>
+              <span class="apunte clave">catalogo-septiembre · 1,284 renglones</span>
+            </div>
+            <div class="reporte__marcador">
+              <span class="apunte">Resultado</span>
+              <b>1,251 aplicados</b>
+              <span class="apunte">33 detenidos</span>
+            </div>
+          </div>
+          <div class="datos-scroll">
+            <table class="datos">
+              <thead>
+                <tr>
+                  <th scope="col" class="n">#</th>
+                  <th scope="col">Renglón</th>
+                  <th scope="col">Resultado</th>
+                  <th scope="col">Motivo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td class="n">412</td><td class="fuerte">Jack RJ45 Cat6 · <span class="clave">JK-6RJ</span></td><td><span class="chip chip--azul">Actualizado</span></td><td>Precio</td></tr>
+                <tr><td class="n">413</td><td class="fuerte">Canaleta 20×12 · <span class="clave">CAN-2012</span></td><td><span class="chip chip--verde">Creado</span></td><td>1 variante</td></tr>
+                <tr><td class="n">414</td><td class="fuerte">Cable UTP Cat6 · <span class="clave">CBL-6U305-GRI</span></td><td><span class="chip">Sin cambio</span></td><td>Igual</td></tr>
+                <tr><td class="n">415</td><td class="fuerte">Patch cord 3 m · <span class="clave">(sin SKU)</span></td><td><span class="chip chip--ambar">Detenido</span></td><td>Falta SKU</td></tr>
+                <tr><td class="n">416</td><td class="fuerte">Jack RJ45 Cat6 azul · <span class="clave">JK-6RJ</span></td><td><span class="chip chip--ambar">Detenido</span></td><td>SKU en uso</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="datos__pie">
+            <span>Nada se aplicó a medias</span>
+            <span class="paginacion">33 por revisar</span>
+          </div>
+        </div>
+        <p class="apunte tras-texto">Los renglones detenidos se corrigen en el archivo y se vuelven a subir. Los que ya
+          entraron no se duplican.</p>
+      </article>
+    </div>
+
+    <div class="aviso tras-rejilla aparecer">
+      <svg viewBox="0 0 24 24" width="18" height="18" class="icono-linea" aria-hidden="true"><use href="#i-info"></use></svg>
+      <div><b>Si el catálogo viene de años de hojas de cálculo</b>
+        Existe el servicio de <strong>carga y limpieza de catálogo desde $6,900</strong>, hasta 5,000 productos con sus
+        claves y sus proveedores. Y si vienes de otro sistema, la <a href="migracion.html">migración de datos</a> cuesta
+        desde $9,900 y va <strong>sin costo</strong> al contratar cualquier plan anual.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= BUSCADOR -->
+<section class="bloque bloque--tinta" id="buscador">
+  <div class="envoltura envoltura--ancha">
+    <div class="encabezado">
+      <p class="sobre-titulo">El buscador</p>
+      <h2>«Tienes 48 · Proveedor 40 en 5 d», antes de prometer</h2>
+      <p>El buscador alcanza el catálogo entero y contesta la única pregunta que importa cuando el cliente está en el
+        teléfono: ¿lo tengo, y si no, quién lo tiene y para cuándo?</p>
+    </div>
+
+    <div class="par par--texto par--arriba">
+      <div>
+        <div class="marco maqueta" role="img"
+             aria-label="Buscador del catálogo con la consulta «cat6»: cada resultado dice la existencia propia y la del proveedor con su tiempo de entrega, y el precio de lista.">
+          <div class="marco__barra"><div class="marco__puntos" aria-hidden="true"><i></i><i></i><i></i></div><span class="marco__url">erp.tuempresa.com/inventarios/productos?q=cat6</span></div>
+          <div class="pagina maqueta__cuerpo">
+            <div class="buscador buscador--ancho">
+              <svg aria-hidden="true"><use href="#i-buscar"></use></svg>
+              <b>cat6</b>
+              <span class="buscador__ayuda">SKU · barras · ID alterno · clave de proveedor</span>
+            </div>
+            <div class="datos-caja">
+              <div class="datos-scroll">
+                <table class="datos">
+                  <thead>
+                    <tr>
+                      <th scope="col">Producto</th>
+                      <th scope="col">SKU</th>
+                      <th scope="col">Disponibilidad</th>
+                      <th scope="col" class="n">Precio</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td class="fuerte">Cable UTP Cat6 305 m</td><td class="clave">CBL-6U305-GRI</td><td><span class="chip chip--verde">Tienes 48 · Prov. 120 en 3 d</span></td><td class="n">$3,240</td></tr>
+                    <tr><td class="fuerte">Jack RJ45 Cat6</td><td class="clave">JK-6RJ</td><td><span class="chip chip--ambar">Tienes 0 · Prov. 40 en 5 d</span></td><td class="n">$62</td></tr>
+                    <tr><td class="fuerte">Patch panel Cat6 24 p</td><td class="clave">PP-6X24</td><td><span class="chip chip--rojo">Tienes 0 · dato de hace 9 d</span></td><td class="n">$2,480</td></tr>
+                    <tr><td class="fuerte">Patch cord Cat6 3 m</td><td class="clave">PC-6X3</td><td><span class="chip chip--verde">Tienes 210</span></td><td class="n">$96</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="datos__pie"><span>4 resultados en el catálogo</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3>Tres colores, tres decisiones</h3>
+        <ul class="lista">
+          <li><strong>Verde:</strong> tienes existencia tuya. Prométela y remisiona hoy.</li>
+          <li><strong>Ámbar:</strong> tú no tienes, pero el proveedor sí y dice en cuántos días. Cotiza con esa fecha, no con una que te inventaste.</li>
+          <li><strong>Rojo:</strong> el dato del proveedor lleva más de una semana sin actualizarse. Antes de prometer, háblale.</li>
+        </ul>
+        <h3 class="tras-tabla">Busca por lo que la gente sí recuerda</h3>
+        <p>Por nombre, por SKU, por código de barras, por ID alterno y por la clave del proveedor. Sirve igual si el
+          cliente te manda su número de parte que si el de almacén te lee lo que dice la caja.</p>
+        <div class="aviso tras-texto">
+          <svg viewBox="0 0 24 24" width="18" height="18" class="icono-linea" aria-hidden="true"><use href="#i-info"></use></svg>
+          <div><b>Y si de verdad no tienes</b>
+            Confirmar un pedido con algo que no hay <strong>levanta la requisición sola</strong>. No hay que acordarse
+            de avisarle a compras. <a href="compras.html">Así funciona vender lo que no tienes</a>.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================== TESTIMONIOS -->
+<section class="bloque bloque--corto bloque--hundido" id="voces">
+  <div class="envoltura">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">Lo que dicen</p>
+      <h2>Gente que dejó de prometer de memoria</h2>
+    </div>
+    <div class="rejilla rejilla--2 aparecer">
+      <figure class="tarjeta tarjeta--comoda cita">
+        <blockquote>Antes prometíamos con la existencia que alguien recordaba. Hoy el vendedor ve «tienes 48, el
+          proveedor 120 en tres días» en la misma pantalla desde la que cotiza, y dejamos de quedar mal por adivinar.</blockquote>
+        <figcaption>
+          <span class="avatar" aria-hidden="true">TC</span>
+          <span class="cita__quien"><b>Jefatura de almacén</b><span>TecnoCableado · Material eléctrico y redes</span></span>
+        </figcaption>
+      </figure>
+      <figure class="tarjeta tarjeta--comoda cita">
+        <blockquote>Lo que nos cambió el mes fue la pantalla de próximos a vencer. A 90 días todavía movemos el lote;
+          antes nos enterábamos cuando ya no se podía hacer nada con él.</blockquote>
+        <figcaption>
+          <span class="avatar" aria-hidden="true">DM</span>
+          <span class="cita__quien"><b>Coordinación de operaciones</b><span>Distrimedic · Insumos médicos</span></span>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="apunte centro tras-texto">Testimonios de ejemplo para esta maqueta, basados en la operación real de cada cliente.</p>
+  </div>
+</section>
+
+<!-- =============================================================== PLANES -->
+<section class="bloque" id="planes">
+  <div class="envoltura envoltura--ancha">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">Planes</p>
+      <h2>Desde un almacén y 500 productos, hasta el sistema completo</h2>
+      <p>Los inventarios no son un módulo aparte que se cobra por fuera: vienen desde el plan de entrada y crecen
+        contigo. Todos los precios en pesos y con IVA incluido. Pagando el año por adelantado son 15 % menos.</p>
+    </div>
+
+    <div class="planes">
+      <article class="plan">
+        <p class="plan__familia">Cotiza</p>
+        <h3 class="plan__nombre">Cotiza Uno</h3>
+        <p class="plan__quien">Para el que cotiza solo y quiere dejar el Excel hoy mismo.</p>
+        <p class="plan__precio"><span class="plan__moneda">$</span><span class="plan__monto">200</span><span class="plan__periodo">/ mes</span></p>
+        <p class="plan__iva">IVA incluido · $170 al mes pagando anual</p>
+        <div class="plan__limites">
+          <span class="chip">1 usuario</span>
+          <span class="chip">1 almacén</span>
+        </div>
+        <ul class="lista">
+          <li>Catálogo hasta 500 productos</li>
+          <li>Cotizaciones con folio y PDF con tu logo</li>
+          <li>Clientes, contactos e historial</li>
+        </ul>
+        <a class="btn btn--fantasma btn--bloque" href="precios.html">Ver detalle</a>
+      </article>
+
+      <article class="plan">
+        <p class="plan__familia">Cotiza</p>
+        <h3 class="plan__nombre">Cotiza Equipo</h3>
+        <p class="plan__quien">Cuando ya son varios y el catálogo dejó de caber en una hoja.</p>
+        <p class="plan__precio"><span class="plan__moneda">$</span><span class="plan__monto">499</span><span class="plan__periodo">/ mes</span></p>
+        <p class="plan__iva">IVA incluido · $424 al mes pagando anual</p>
+        <div class="plan__limites">
+          <span class="chip">3 usuarios</span>
+          <span class="chip">Hasta 3 almacenes</span>
+        </div>
+        <ul class="lista">
+          <li>Catálogo ilimitado y multialmacén</li>
+          <li>Listas de precios</li>
+          <li>Proveedores por producto</li>
+          <li>Importación por archivo</li>
+        </ul>
+        <a class="btn btn--fantasma btn--bloque" href="precios.html">Ver detalle</a>
+      </article>
+
+      <article class="plan">
+        <p class="plan__familia">Cotiza</p>
+        <h3 class="plan__nombre">Cotiza Pro</h3>
+        <p class="plan__quien">El inventario completo: lotes, compras y comparativo de proveedores.</p>
+        <p class="plan__precio"><span class="plan__moneda">$</span><span class="plan__monto">999</span><span class="plan__periodo">/ mes</span></p>
+        <p class="plan__iva">IVA incluido · $849 al mes pagando anual</p>
+        <div class="plan__limites">
+          <span class="chip">5 usuarios</span>
+          <span class="chip">Lotes y caducidad</span>
+        </div>
+        <ul class="lista">
+          <li>Todo lo de Cotiza Equipo</li>
+          <li>Lotes con caducidad y pedimento</li>
+          <li>Compras: requisiciones, órdenes y recepciones</li>
+          <li>Comparativo de proveedores y analítica</li>
+        </ul>
+        <a class="btn btn--fantasma btn--bloque" href="precios.html">Ver detalle</a>
+      </article>
+
+      <article class="plan plan--elegido">
+        <span class="plan__cinta">El más elegido</span>
+        <p class="plan__familia">Completo</p>
+        <h3 class="plan__nombre">Operación</h3>
+        <p class="plan__quien">Todo el sistema. Es lo que usa TecnoCableado todos los días.</p>
+        <p class="plan__precio"><span class="plan__moneda">$</span><span class="plan__monto">7,500</span><span class="plan__periodo">/ mes</span></p>
+        <p class="plan__iva">IVA incluido · $6,375 al mes pagando anual</p>
+        <div class="plan__limites">
+          <span class="chip chip--azul">10 usuarios</span>
+          <span class="chip chip--azul">100 CFDI al mes</span>
+        </div>
+        <ul class="lista">
+          <li>Inventarios completos + CRM + cotizaciones</li>
+          <li>Compras y facturación CFDI 4.0</li>
+          <li>WhatsApp Business y marketing</li>
+          <li>Subdominio propio y soporte con persona</li>
+        </ul>
+        <a class="btn btn--bloque" href="#demo">Agenda tu demo</a>
+        <p class="apunte plan__nota">Migración sin costo en plan anual</p>
+      </article>
+    </div>
+
+    <div class="rejilla rejilla--3 rejilla--apretada tras-rejilla aparecer">
+      <article class="tarjeta">
+        <h4>Almacén adicional</h4>
+        <p class="suave"><strong>+$299 al mes</strong>, IVA incluido. Se enciende y ya: el catálogo y el kárdex son los mismos.</p>
+      </article>
+      <article class="tarjeta">
+        <h4>Inventarios de proveedor por API</h4>
+        <p class="suave"><strong>+$890 al mes</strong> por proveedor conectado, IVA incluido, más la integración desde
+          $12,000. Es un trabajo de conexión que cotizamos con tu proveedor, no una casilla del sistema.</p>
+      </article>
+      <article class="tarjeta">
+        <h4>Orquestador multicanal</h4>
+        <p class="suave">Desde <strong>+$2,490 al mes</strong>, IVA incluido. Reparte una sola existencia entre tienda
+          en línea, marketplaces y mostrador. También se arma como integración; su mensualidad va incluida en el plan
+          Corporativo.</p>
+      </article>
+    </div>
+
+    <div class="aviso aviso--aviso tras-rejilla aparecer">
+      <svg viewBox="0 0 24 24" width="18" height="18" class="icono-linea" aria-hidden="true"><use href="#i-alerta"></use></svg>
+      <div><b>Lo que todavía no hace, dicho de frente</b>
+        IncSales no maneja <strong>números de serie</strong> por pieza, ni bitácora de auditoría multiusuario, ni IEPS
+        y retenciones completas. Sí maneja lotes con caducidad y pedimento, multialmacén y kárdex. Las consultas de
+        inventario externo por API, el conector con WooCommerce y el orquestador multicanal son <strong>integraciones
+        que se cotizan y se implementan</strong>, no casillas que ya vienen encendidas de fábrica. Si tu operación
+        necesita seguimiento por número de serie, dínoslo en la demo y te decimos con honestidad si hoy te servimos.</div>
+    </div>
+
+    <p class="apunte tras-texto">WooCommerce y las demás marcas mencionadas son propiedad de sus titulares. Nombrarlas
+      aquí describe con qué se conecta IncSales; no implica relación, patrocinio ni respaldo de su parte. Precios
+      vigentes a septiembre de 2026 y sujetos a cambio sin previo aviso.</p>
+
+    <p class="centro remate"><a class="btn btn--fantasma btn--grande" href="precios.html">Ver los 9 planes y todos los complementos</a></p>
+  </div>
+</section>
+
+<!-- ============================================================ PREGUNTAS -->
+<section class="bloque bloque--hundido" id="preguntas">
+  <div class="envoltura envoltura--angosta">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">Dudas de almacén</p>
+      <h2>Lo que preguntan los que ya tienen inventario</h2>
+    </div>
+    <div class="acordeon">
+      <details open>
+        <summary>Mis productos no tienen variantes. ¿Me estorba?</summary>
+        <div class="acordeon__cuerpo">No. Cuando das de alta el producto, su primera variante se crea contigo y no
+          tienes que pensar en ella: capturas nombre, SKU y precio como en cualquier sistema. La variante importa el
+          día que aparezca una segunda presentación, y ese día no tendrás que rehacer nada.</div>
+      </details>
+      <details>
+        <summary>¿Puedo empezar con un almacén y agregar más después?</summary>
+        <div class="acordeon__cuerpo">Sí. Cotiza Uno trae un almacén, Cotiza Equipo hasta tres, y a partir de ahí el
+          almacén adicional cuesta $299 al mes con IVA incluido. Subir de plan o agregar un almacén no migra nada: es
+          el mismo sistema con más cosas encendidas.</div>
+      </details>
+      <details>
+        <summary>¿Maneja números de serie?</summary>
+        <div class="acordeon__cuerpo">Todavía no, y preferimos decirlo antes de la demo. Lo que sí maneja son lotes con
+          caducidad y pedimento, existencia por almacén y kárdex completo de entradas y salidas. Si el número de serie
+          es indispensable para tu operación, es tema de desarrollo a la medida, no de una casilla que se prenda.</div>
+      </details>
+      <details>
+        <summary>¿Puedo ver la existencia de mis proveedores dentro del buscador?</summary>
+        <div class="acordeon__cuerpo">Sí, con lo que ellos declaran: cargas su lista por archivo y el sistema empareja
+          por la clave de ese proveedor, actualizando costo, existencia declarada y días de entrega, con la fecha en
+          que lo dijeron. Si lo que quieres es consulta en vivo contra su sistema, eso es una integración por API:
+          desde $12,000 de implementación y $890 al mes por proveedor conectado.</div>
+      </details>
+      <details>
+        <summary>¿Qué pasa cuando vendo algo que no tengo?</summary>
+        <div class="acordeon__cuerpo">Cada renglón del pedido lleva de dónde va a salir: tu almacén o el proveedor que
+          lo va a surtir. Al confirmar un pedido con algo que no hay, la requisición se levanta sola; cuando la
+          mercancía se recibe —al recibir, no al pedir— esa requisición se cierra y el pedido dice «ya llegó».
+          <a href="compras.html">Se explica completo en Compras</a>.</div>
+      </details>
+      <details>
+        <summary>¿Cómo entra mi catálogo que hoy vive en Excel?</summary>
+        <div class="acordeon__cuerpo">Por la importación de catálogo, que es auditable renglón por renglón: cada línea
+          termina con creado, actualizado, sin cambio o detenido, y el motivo. Si el archivo viene sucio de años, existe
+          el servicio de carga y limpieza desde $6,900 hasta 5,000 productos con sus claves y proveedores; y si vienes
+          de otro sistema, la migración va sin costo en planes anuales.</div>
+      </details>
+      <details>
+        <summary>¿Puedo tener precios distintos por cliente sin llevarlo aparte?</summary>
+        <div class="acordeon__cuerpo">Sí: la lista de precios va con el cliente y se aplica sola al cotizar. Puedes
+          cambiarla sobre el documento y los renglones se recalculan respetando los que se negociaron a mano,
+          avisándote cuántos se movieron y cuántos no. Y cada producto define en qué listas participa, así que el
+          mayoreo puede aplicar al material y no a la herramienta.</div>
+      </details>
+      <details>
+        <summary>¿Quién puede tocar el inventario?</summary>
+        <div class="acordeon__cuerpo">Depende del perfil. El administrador entra a todo; el vendedor ve productos,
+          clientes y proveedores pero no la configuración; el perfil de compras trabaja proveedores, órdenes y surtido;
+          y el de solo lectura consulta y saca reportes. El alta se hace por enlace de invitación: la persona pone su
+          propia contraseña y nadie más la ve.</div>
+      </details>
+    </div>
+    <p class="centro remate"><a class="enlace-ir" href="preguntas.html">Ver todas las preguntas frecuentes
+      <svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-flecha"></use></svg></a></p>
+  </div>
+</section>
+
+<!-- ====================================================== PÁGINAS HERMANAS -->
+<section class="bloque bloque--corto bloque--linea" id="sigue">
+  <div class="envoltura envoltura--ancha">
+    <div class="encabezado encabezado--centro">
+      <h2>El inventario no vive solo</h2>
+      <p>Estas son las piezas que lo tocan todos los días.</p>
+    </div>
+    <div class="rejilla rejilla--4 rejilla--apretada aparecer">
+      <a class="tarjeta tarjeta--viva tarjeta-enlace" href="cotizaciones.html">
+        <div class="tarjeta__cab">
+          <span class="icono-caja" aria-hidden="true"><svg><use href="#i-documento"></use></svg></span>
+          <h3>Cotizaciones y venta</h3>
+        </div>
+        <p class="suave">Donde la existencia y la lista de precios se convierten en un documento con folio.</p>
+        <span class="enlace-ir tras-texto">Ver cotizaciones
+          <svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-flecha"></use></svg></span>
+      </a>
+      <a class="tarjeta tarjeta--viva tarjeta-enlace" href="compras.html">
+        <div class="tarjeta__cab">
+          <span class="icono-caja icono-caja--ambar" aria-hidden="true"><svg><use href="#i-compras"></use></svg></span>
+          <h3>Compras</h3>
+        </div>
+        <p class="suave">Requisiciones agrupadas por proveedor, órdenes y la recepción que llena el kárdex.</p>
+        <span class="enlace-ir tras-texto">Ver compras
+          <svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-flecha"></use></svg></span>
+      </a>
+      <a class="tarjeta tarjeta--viva tarjeta-enlace" href="integraciones.html">
+        <div class="tarjeta__cab">
+          <span class="icono-caja icono-caja--violeta" aria-hidden="true"><svg><use href="#i-enlace"></use></svg></span>
+          <h3>Integraciones y API</h3>
+        </div>
+        <p class="suave">WooCommerce, inventarios de proveedor por API y orquestador entre canales.</p>
+        <span class="enlace-ir tras-texto">Ver integraciones
+          <svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-flecha"></use></svg></span>
+      </a>
+      <a class="tarjeta tarjeta--viva tarjeta-enlace" href="migracion.html">
+        <div class="tarjeta__cab">
+          <span class="icono-caja icono-caja--verde" aria-hidden="true"><svg><use href="#i-id"></use></svg></span>
+          <h3>Migración de datos</h3>
+        </div>
+        <p class="suave">Traer tu catálogo, tus claves y tus proveedores sin duplicar ni un producto.</p>
+        <span class="enlace-ir tras-texto">Ver migración
+          <svg viewBox="0 0 20 20" aria-hidden="true"><use href="#i-flecha"></use></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ CIERRE -->
+<section class="bloque bloque--tinta" id="demo">
+  <div class="envoltura envoltura--angosta centro">
+    <p class="sobre-titulo">Demo sin compromiso</p>
+    <h2>Subimos una muestra de tu catálogo y lo buscas tú</h2>
+    <p class="entradilla">Media hora. Cargamos cien productos tuyos antes de la llamada y cotizas con existencias
+      reales.</p>
+    <div class="cierre__acciones">
+      <a class="btn btn--claro btn--grande" href="mailto:contacto@incsales.com.mx?subject=Quiero%20una%20demo%20de%20IncSales">Escríbenos por correo</a>
+      <a class="btn btn--linea-clara btn--grande" href="https://wa.me/523337793774" target="_blank" rel="noopener">WhatsApp +52 33 3779 3774</a>
+    </div>
+    <ul class="senales">
+      <li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"></use></svg> Sin permanencia forzosa</li>
+      <li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"></use></svg> Migración incluida en planes anuales</li>
+      <li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"></use></svg> Soporte en español, en México</li>
+    </ul>
+    <p class="apunte cierre__pie">contacto@incsales.com.mx · Guadalajara, Jalisco ·
+      Respondemos el mismo día hábil</p>
+  </div>
+</section>
+
+</main>
+
+<!-- =================================================================== PIE -->
+<footer class="pie">
+  <div class="envoltura envoltura--ancha">
+    <div class="pie__grid">
+      <div class="pie__acerca">
+        <img class="pie__logo" src="assets/logos/incsales-completo-blanco.svg" alt="IncSales" width="800" height="219">
+        <p>ERP en la nube con CRM adentro, para empresas que viven de cotizar. Hecho en Guadalajara
+          por Incoming Sales.</p>
+        <div class="pie__contacto">
+          <a href="mailto:contacto@incsales.com.mx">contacto@incsales.com.mx</a>
+          <a href="https://wa.me/523337793774" target="_blank" rel="noopener">+52 33 3779 3774</a>
+          <span>Guadalajara, Jalisco, México</span>
+        </div>
+      </div>
+      <div>
+        <h3 class="pie__titulo">Producto</h3>
+        <ul>
+          <li><a href="index.html#crm">CRM y seguimiento</a></li>
+          <li><a href="index.html#cotizaciones">Cotizaciones y venta</a></li>
+          <li><a href="inventarios.html" aria-current="page">Inventarios</a></li>
+          <li><a href="index.html#compras">Compras y proveedores</a></li>
+          <li><a href="index.html#facturacion">Facturación CFDI 4.0</a></li>
+          <li><a href="index.html#whatsapp">WhatsApp y marketing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="pie__titulo">Planes</h3>
+        <ul>
+          <li><a href="index.html#precios">Cotiza, desde $200</a></li>
+          <li><a href="index.html#precios">CRM, desde $499</a></li>
+          <li><a href="index.html#precios">Completo, desde $2,490</a></li>
+          <li><a href="index.html#precios">Complementos</a></li>
+          <li><a href="index.html#precios">A la medida</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="pie__titulo">Servicios</h3>
+        <ul>
+          <li><a href="index.html#precios">Migración de datos</a></li>
+          <li><a href="index.html#precios">Implementación y capacitación</a></li>
+          <li><a href="index.html#precios">Desarrollo a la medida</a></li>
+          <li><a href="index.html#prueba">WhatsApp Business API</a></li>
+          <li><a href="index.html#precios">Portal de clientes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="pie__titulo">Empresa</h3>
+        <ul>
+          <li><a href="index.html#prueba">Por dentro</a></li>
+          <li><a href="por-dentro.html">Las pantallas del sistema</a></li>
+          <li><a href="index.html#confianza">Confianza y operación</a></li>
+          <li><a href="index.html#preguntas">Preguntas frecuentes</a></li>
+          <li><a href="#demo">Agenda una demo</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pie__legal">
+      <span>© <span data-anio>2026</span> Incoming Sales · IncSales ERP. Todos los derechos reservados.</span>
+      <span>Precios en pesos mexicanos con IVA incluido. Propuesta de diseño, no es el sitio publicado.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/sistema.js" defer></script>
+</body>
+</html>
