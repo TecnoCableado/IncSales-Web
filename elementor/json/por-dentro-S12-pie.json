@@ -1,0 +1,387 @@
+{
+ "version": "0.4",
+ "title": "por-dentro · S12 PIE",
+ "type": "container",
+ "content": [
+  {
+   "id": "76c371c",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "56",
+     "right": "0",
+     "bottom": "28",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "24",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#0b3587"
+   },
+   "elements": [
+    {
+     "id": "252cde6",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "9603787",
+       "elType": "widget",
+       "widgetType": "image",
+       "settings": {
+        "image": {
+         "url": "../assets/logos/incsales-completo-blanco.svg",
+         "id": ""
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "7e22c89",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>IncSales ERP: ocho módulos sobre una sola base de datos. Lo hace Incoming Sales, y lo usamos todos los días en nuestra propia operación.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "dedd52e",
+       "elType": "container",
+       "settings": {
+        "container_type": "grid",
+        "grid_columns_grid": {
+         "unit": "fr",
+         "size": 4,
+         "sizes": []
+        },
+        "grid_columns_grid_tablet": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        },
+        "grid_columns_grid_mobile": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_gaps": {
+         "unit": "px",
+         "size": 24,
+         "column": "24",
+         "row": "24"
+        }
+       },
+       "elements": [
+        {
+         "id": "62914c1",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          }
+         },
+         "elements": [
+          {
+           "id": "3b69ff7",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Producto",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "618c4a4",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p><a href=\"crm.html\">IncSales CRM</a> <a href=\"cotizaciones.html\">IncSales Cotiza</a> <a href=\"inventarios.html\">IncSales Inventarios</a> <a href=\"compras.html\">IncSales Compras</a> <a href=\"facturacion.html\">IncSales Facturación</a> <a href=\"whatsapp.html\">IncSales WhatsApp</a> <a href=\"forms.html\">IncSales Forms</a> <a href=\"correo.html\">IncSales Correo</a></p>"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "792b3bd",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          }
+         },
+         "elements": [
+          {
+           "id": "b59fbe1",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Se contrata aparte",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "75142da",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p><a href=\"wordpress.html\">IncSales WooSync</a> <a href=\"integraciones.html\">Integraciones y API</a> <a href=\"integraciones.html#proveedores\">IncSales Proveedores en Línea</a> <a href=\"integraciones.html#orquestador\">IncSales Orquestador</a> <a href=\"integraciones.html#portal\">IncSales Portal</a> <a href=\"migracion.html\">IncSales Migración</a></p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "c9c984c",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Todos llevan implementación, no son una casilla que se enciende.</p>"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "94ebbe3",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          }
+         },
+         "elements": [
+          {
+           "id": "45c65bc",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Antes de decidir",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "0ff4798",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p><a href=\"comparativa.html\">Contra lo que ya tienes</a> <a href=\"industrias.html\">Por tu giro</a> <a href=\"por-dentro.html\">Por dentro · las siete pantallas</a> <a href=\"preguntas.html\">Preguntas frecuentes</a></p>"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "3bfa3e1",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          }
+         },
+         "elements": [
+          {
+           "id": "fdaa3fb",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Empresa",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "f40cf33",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p><a href=\"nosotros.html\">Nosotros</a> <a href=\"agencia.html\">Agencia IncSales</a> <a href=\"casos.html\">Clientes</a> <a href=\"precios.html\">Precios</a> <a href=\"contacto.html\">Contacto</a></p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "ae994b6",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Contacto",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "3eec45c",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p><a href=\"mailto:contacto@incsales.com.mx\">contacto@incsales.com.mx</a> <a href=\"tel:+523337793774\">+52 33 3779 3774</a> Guadalajara, Jalisco Respondemos el mismo día hábil.</p>"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "27b9a2a",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        }
+       },
+       "elements": [
+        {
+         "id": "0a05a6f",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>IncSales ERP lo hace Incoming Sales · Guadalajara, Jalisco. Precios mensuales en pesos mexicanos con IVA incluido; el plan anual se paga por adelantado. <a href=\"privacidad.html\">Aviso de privacidad</a> · <a href=\"terminos.html\">Términos del servicio</a></p>"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "0db423b",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>WhatsApp, WordPress, WooCommerce, HubSpot, Google Ads, Amazon SES, SAE, CONTPAQi, Alegra y Bind son marcas de sus respectivos dueños, y se nombran solo para decir con qué conecta o de dónde migra IncSales. Incoming Sales no está afiliada a ninguna de esas empresas.</p>"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

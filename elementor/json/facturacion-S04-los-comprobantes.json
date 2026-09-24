@@ -1,0 +1,625 @@
+{
+ "version": "0.4",
+ "title": "facturacion · S04 LOS COMPROBANTES",
+ "type": "container",
+ "content": [
+  {
+   "id": "269b2d0",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "4ff253e",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "510f7ec",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        },
+        "flex_align_items": "center"
+       },
+       "elements": [
+        {
+         "id": "0258207",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "background_background": "classic",
+          "background_color": "#f2f7ff",
+          "border_radius": {
+           "unit": "px",
+           "top": "999",
+           "right": "999",
+           "bottom": "999",
+           "left": "999",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "5",
+           "right": "11",
+           "bottom": "5",
+           "left": "11",
+           "isLinked": false
+          },
+          "flex_direction": "row",
+          "margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "a385ae6",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Comprobantes",
+            "header_size": "div",
+            "title_color": "#1e5bd4",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {
+             "unit": "px",
+             "size": 0.6,
+             "sizes": []
+            },
+            "align": "center"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "490061c",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Cinco cosas, con los nombres que usa el SAT",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600",
+          "align": "center"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "9f3b2b1",
+       "elType": "container",
+       "settings": {
+        "container_type": "grid",
+        "grid_columns_grid": {
+         "unit": "fr",
+         "size": 3,
+         "sizes": []
+        },
+        "grid_columns_grid_tablet": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        },
+        "grid_columns_grid_mobile": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_gaps": {
+         "unit": "px",
+         "size": 24,
+         "column": "24",
+         "row": "24"
+        }
+       },
+       "elements": [
+        {
+         "id": "084e005",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "7017235",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "CFDI 4.0 de ingreso",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "94a4e7d",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Se arma desde el pedido o la remisión, con el tipo de cambio congelado en el documento.</p>"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "6827362",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "beb35b6",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Complemento de pago",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "e151414",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Registras el abono y de ahí sale el REP, aplicado contra la factura que corresponde.</p>"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "f64b65c",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "d9f940b",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Notas de crédito",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "9bfbf85",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Se relacionan con la factura original y el saldo del cliente se corrige solo.</p>"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "9a2a66c",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "340f5fe",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Facturas globales",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "3ec5487",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Lo que vendiste a quien no pidió factura, junto, en un CFDI al público en general.</p>"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "75b477b",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "dd0cf4a",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "CFDI del proveedor",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "a333da7",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Cargas el comprobante que te mandan y queda en cuentas por pagar, con su saldo.</p>"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

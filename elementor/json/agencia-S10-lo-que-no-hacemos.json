@@ -1,0 +1,502 @@
+{
+ "version": "0.4",
+ "title": "agencia · S10 LO QUE NO HACEMOS",
+ "type": "container",
+ "content": [
+  {
+   "id": "c64686e",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "f4354ce",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "04ae776",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        }
+       },
+       "elements": [
+        {
+         "id": "e48e1a4",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "background_background": "classic",
+          "background_color": "#f2f7ff",
+          "border_radius": {
+           "unit": "px",
+           "top": "999",
+           "right": "999",
+           "bottom": "999",
+           "left": "999",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "5",
+           "right": "11",
+           "bottom": "5",
+           "left": "11",
+           "isLinked": false
+          },
+          "flex_direction": "row",
+          "margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "f84f39f",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Antes de firmar",
+            "header_size": "div",
+            "title_color": "#1e5bd4",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {
+             "unit": "px",
+             "size": 0.6,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "40b0228",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Lo que no hacemos, y lo que sí te comprometemos",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "024d4c0",
+       "elType": "container",
+       "settings": {
+        "container_type": "grid",
+        "grid_columns_grid": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        },
+        "grid_columns_grid_tablet": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_columns_grid_mobile": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_gaps": {
+         "unit": "px",
+         "size": 48,
+         "column": "48",
+         "row": "32"
+        }
+       },
+       "elements": [
+        {
+         "id": "291615b",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "f32f32a",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Lo que no hacemos",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "b992e3a",
+           "elType": "widget",
+           "widgetType": "icon-list",
+           "settings": {
+            "icon_list": [
+             {
+              "_id": "0ad7476",
+              "text": "Garantizar posiciones en el buscador ni ventas",
+              "selected_icon": {
+               "value": "fas fa-times",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "da2ac90",
+              "text": "Publicar un costo por interesado de referencia",
+              "selected_icon": {
+               "value": "fas fa-times",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "9497940",
+              "text": "Revender tu pauta con margen escondido",
+              "selected_icon": {
+               "value": "fas fa-times",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "35921a3",
+              "text": "Aceptar la cuenta si nadie contesta el WhatsApp",
+              "selected_icon": {
+               "value": "fas fa-times",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "c12f809",
+              "text": "Encender pauta con un catálogo que no se puede cotizar",
+              "selected_icon": {
+               "value": "fas fa-times",
+               "library": "fa-solid"
+              }
+             }
+            ],
+            "space_between": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "icon_size": {
+             "unit": "px",
+             "size": 17,
+             "sizes": []
+            },
+            "icon_color": "#a7abb3",
+            "icon_self_align": "left",
+            "text_color": "#6a6f78",
+            "icon_typography_typography": "custom",
+            "icon_typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "aeda8b3",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "41aabdb",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Lo que sí te comprometemos",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "6351919",
+           "elType": "widget",
+           "widgetType": "icon-list",
+           "settings": {
+            "icon_list": [
+             {
+              "_id": "e628695",
+              "text": "La cuenta de Google Ads va a nombre de tu empresa",
+              "selected_icon": {
+               "value": "fas fa-check",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "bfc52c9",
+              "text": "La pauta la pagas directo a Google, con tu factura",
+              "selected_icon": {
+               "value": "fas fa-check",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "b36362b",
+              "text": "El diagnóstico va por escrito y sin costo",
+              "selected_icon": {
+               "value": "fas fa-check",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "808c33c",
+              "text": "Si todavía no estás listo, te lo decimos",
+              "selected_icon": {
+               "value": "fas fa-check",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "f9c2736",
+              "text": "Los reportes viven en tu sistema y ahí se quedan",
+              "selected_icon": {
+               "value": "fas fa-check",
+               "library": "fa-solid"
+              }
+             }
+            ],
+            "space_between": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "icon_size": {
+             "unit": "px",
+             "size": 17,
+             "sizes": []
+            },
+            "icon_color": "#00874a",
+            "icon_self_align": "left",
+            "text_color": "#4d535d",
+            "icon_typography_typography": "custom",
+            "icon_typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

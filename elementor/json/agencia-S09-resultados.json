@@ -1,0 +1,644 @@
+{
+ "version": "0.4",
+ "title": "agencia · S09 RESULTADOS",
+ "type": "container",
+ "content": [
+  {
+   "id": "762db04",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#f4f6f9"
+   },
+   "elements": [
+    {
+     "id": "2c8e82b",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "f0ed135",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        }
+       },
+       "elements": [
+        {
+         "id": "463f616",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "background_background": "classic",
+          "background_color": "#f2f7ff",
+          "border_radius": {
+           "unit": "px",
+           "top": "999",
+           "right": "999",
+           "bottom": "999",
+           "left": "999",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "5",
+           "right": "11",
+           "bottom": "5",
+           "left": "11",
+           "isLinked": false
+          },
+          "flex_direction": "row",
+          "margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "106e898",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Resultados",
+            "header_size": "div",
+            "title_color": "#1e5bd4",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {
+             "unit": "px",
+             "size": 0.6,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "9a886e2",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Tres empresas, y el límite exacto de cada una",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "f36559e",
+       "elType": "container",
+       "settings": {
+        "container_type": "grid",
+        "grid_columns_grid": {
+         "unit": "fr",
+         "size": 3,
+         "sizes": []
+        },
+        "grid_columns_grid_tablet": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        },
+        "grid_columns_grid_mobile": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_gaps": {
+         "unit": "px",
+         "size": 24,
+         "column": "24",
+         "row": "24"
+        }
+       },
+       "elements": [
+        {
+         "id": "4e6c216",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "eaa7c1a",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Distrimedic",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "d96b1f5",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 12,
+             "column": "12",
+             "row": "12"
+            }
+           },
+           "elements": [
+            {
+             "id": "f52b236",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "+$20 M",
+              "text_color": "#4d535d"
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          },
+          {
+           "id": "303f3d3",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 12,
+             "column": "12",
+             "row": "12"
+            }
+           },
+           "elements": [
+            {
+             "id": "0220055",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "vendidos en un año",
+              "text_color": "#4d535d"
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          },
+          {
+           "id": "e24a9ea",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Distribuidor de insumos médicos. Es el resultado del Método IncSales completo: Google Ads, CRM y seguimiento.</p>"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "cd89abc",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "2c75f1d",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "TecnoCableado",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "abbc14a",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 12,
+             "column": "12",
+             "row": "12"
+            }
+           },
+           "elements": [
+            {
+             "id": "ef7b688",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "$7,500",
+              "text_color": "#4d535d"
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          },
+          {
+           "id": "75b199a",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 12,
+             "column": "12",
+             "row": "12"
+            }
+           },
+           "elements": [
+            {
+             "id": "c852a7e",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "plan Operación, al mes",
+              "text_color": "#4d535d"
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          },
+          {
+           "id": "66dd13d",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Es nuestra casa. Organización número uno, en producción con datos reales: cotiza, compra, factura y timbra.</p>"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "8a126a6",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "71e8800",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "GS Pinturas",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "2e4c842",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 12,
+             "column": "12",
+             "row": "12"
+            }
+           },
+           "elements": [
+            {
+             "id": "60fd0f0",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "3",
+              "text_color": "#4d535d"
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          },
+          {
+           "id": "09da0d3",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 12,
+             "column": "12",
+             "row": "12"
+            }
+           },
+           "elements": [
+            {
+             "id": "d57c382",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "canales en un embudo",
+              "text_color": "#4d535d"
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          },
+          {
+           "id": "3351de4",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Campañas y programa de puntos de venta, con tres listas de precios. Sin cifra publicable, porque no la hay.</p>"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "4f6b368",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Es el resultado de Distrimedic con su catálogo y su margen, no una garantía del tuyo. <a href=\"casos.html\">Ver los tres casos completos</a> .</p>",
+        "align": "center",
+        "text_color": "#6a6f78",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

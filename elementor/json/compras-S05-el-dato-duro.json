@@ -1,0 +1,439 @@
+{
+ "version": "0.4",
+ "title": "compras · S05 EL DATO DURO",
+ "type": "container",
+ "content": [
+  {
+   "id": "2adb7a7",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#f2f7ff"
+   },
+   "elements": [
+    {
+     "id": "c29a940",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "bc09d22",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        },
+        "flex_align_items": "center"
+       },
+       "elements": [
+        {
+         "id": "5ef2ea6",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Dos disparadores, un botón, cero capturas",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600",
+          "align": "center"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "e1bf105",
+       "elType": "container",
+       "settings": {
+        "container_type": "grid",
+        "grid_columns_grid": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        },
+        "grid_columns_grid_mobile": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        },
+        "grid_gaps": {
+         "unit": "px",
+         "size": 24,
+         "column": "24",
+         "row": "24"
+        }
+       },
+       "elements": [
+        {
+         "id": "1abd5a1",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          }
+         },
+         "elements": [
+          {
+           "id": "e4720c4",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 12,
+             "column": "12",
+             "row": "12"
+            }
+           },
+           "elements": [
+            {
+             "id": "7688517",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "2",
+              "text_color": "#4d535d"
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          },
+          {
+           "id": "49d6934",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 12,
+             "column": "12",
+             "row": "12"
+            }
+           },
+           "elements": [
+            {
+             "id": "ba7651f",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "disparadores levantan la requisición sola",
+              "text_color": "#4d535d"
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "8adf3e3",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          }
+         },
+         "elements": [
+          {
+           "id": "61589b7",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 12,
+             "column": "12",
+             "row": "12"
+            }
+           },
+           "elements": [
+            {
+             "id": "6343518",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "1",
+              "text_color": "#4d535d"
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          },
+          {
+           "id": "6b2a7e3",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 12,
+             "column": "12",
+             "row": "12"
+            }
+           },
+           "elements": [
+            {
+             "id": "cfa4e66",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "botón convierte el grupo del proveedor en orden",
+              "text_color": "#4d535d"
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "68f65c5",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          }
+         },
+         "elements": [
+          {
+           "id": "37c2ca8",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 12,
+             "column": "12",
+             "row": "12"
+            }
+           },
+           "elements": [
+            {
+             "id": "c1464ce",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "6",
+              "text_color": "#4d535d"
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          },
+          {
+           "id": "55ceeb1",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 12,
+             "column": "12",
+             "row": "12"
+            }
+           },
+           "elements": [
+            {
+             "id": "4353e5c",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "documentos con la misma forma de capturar",
+              "text_color": "#4d535d"
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "525d235",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          }
+         },
+         "elements": [
+          {
+           "id": "01788f1",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 12,
+             "column": "12",
+             "row": "12"
+            }
+           },
+           "elements": [
+            {
+             "id": "efd7255",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "0",
+              "text_color": "#4d535d"
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          },
+          {
+           "id": "df5329e",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 12,
+             "column": "12",
+             "row": "12"
+            }
+           },
+           "elements": [
+            {
+             "id": "183a26d",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "capturas aparte para pedirle al proveedor",
+              "text_color": "#4d535d"
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

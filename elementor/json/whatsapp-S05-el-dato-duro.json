@@ -1,0 +1,246 @@
+{
+ "version": "0.4",
+ "title": "whatsapp · S05 EL DATO DURO",
+ "type": "container",
+ "content": [
+  {
+   "id": "981b83e",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#f2f7ff"
+   },
+   "elements": [
+    {
+     "id": "71d40d7",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "6cf9577",
+       "elType": "container",
+       "settings": {
+        "container_type": "grid",
+        "grid_columns_grid": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        },
+        "grid_columns_grid_tablet": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_columns_grid_mobile": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_gaps": {
+         "unit": "px",
+         "size": 48,
+         "column": "48",
+         "row": "32"
+        }
+       },
+       "elements": [
+        {
+         "id": "2383d34",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          }
+         },
+         "elements": [
+          {
+           "id": "09e0c20",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 12,
+             "column": "12",
+             "row": "12"
+            }
+           },
+           "elements": [
+            {
+             "id": "48d1e53",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "64 %",
+              "text_color": "#4d535d"
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          },
+          {
+           "id": "e3c0e64",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 12,
+             "column": "12",
+             "row": "12"
+            }
+           },
+           "elements": [
+            {
+             "id": "ab3ec84",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "de las operaciones de comercio electrónico entre PyMEs mexicanas se inicia, se gestiona o se cierra por WhatsApp.",
+              "text_color": "#4d535d"
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          },
+          {
+           "id": "5906846",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Meta y Statista, recopilados por Blip y Hubtype, septiembre de 2026.</p>",
+            "text_color": "#6a6f78",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "6e8f6e9",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#fff7e9",
+          "border_radius": {
+           "unit": "px",
+           "top": "8",
+           "right": "8",
+           "bottom": "8",
+           "left": "8",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "18",
+           "right": "20",
+           "bottom": "18",
+           "left": "20",
+           "isLinked": false
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 4,
+           "column": "4",
+           "row": "4"
+          }
+         },
+         "elements": [
+          {
+           "id": "6a5231b",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<strong>Lo que el alta sí implica</strong> El número se da de alta en WhatsApp Business API y pasa la verificación de Meta. Un número que hoy usas en la aplicación del celular deja de funcionar ahí. Los tiempos los pone Meta.",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

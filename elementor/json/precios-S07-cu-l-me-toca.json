@@ -1,0 +1,784 @@
+{
+ "version": "0.4",
+ "title": "precios · S07 CUÁL ME TOCA",
+ "type": "container",
+ "content": [
+  {
+   "id": "f373ef4",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "f526bb4",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "1ecf86f",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        }
+       },
+       "elements": [
+        {
+         "id": "1e3a59e",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "background_background": "classic",
+          "background_color": "#f2f7ff",
+          "border_radius": {
+           "unit": "px",
+           "top": "999",
+           "right": "999",
+           "bottom": "999",
+           "left": "999",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "5",
+           "right": "11",
+           "bottom": "5",
+           "left": "11",
+           "isLinked": false
+          },
+          "flex_direction": "row",
+          "margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "a4244c6",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Cuál me toca",
+            "header_size": "div",
+            "title_color": "#1e5bd4",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {
+             "unit": "px",
+             "size": 0.6,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "f049be5",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Dinos cómo trabajas hoy y te decimos dónde entrar",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "63390b4",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Si con el plan chico resuelves, te decimos que empieces ahí.</p>"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "c6e3d5b",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "border_color": "#dbdee3",
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0"
+        }
+       },
+       "elements": [
+        {
+         "id": "aaa5773",
+         "elType": "container",
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_gaps": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "8"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "14",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "e4d1fa5",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Como trabajas hoy",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "8cd0b9c",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Tu plan",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "61415e4",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Al mes",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "b7e2488",
+         "elType": "container",
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_gaps": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "8"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "14",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "304d90e",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Cotizo solo y copio el archivo de la semana pasada",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "7885752",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Cotiza Uno",
+            "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "e8381d4",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "$200",
+            "text_color": "#00874a"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "7bad40e",
+         "elType": "container",
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_gaps": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "8"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "14",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "5e9b780",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Somos tres y se nos caen los seguimientos",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "1f1baa0",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "CRM Esencial",
+            "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "70b1151",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "$499",
+            "text_color": "#00874a"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "db9604c",
+         "elType": "container",
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_gaps": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "8"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "14",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "6a56a42",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Ya facturo en otro lado y no quiero moverlo",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "83eb8ac",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "CRM Esencial",
+            "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "89a889b",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "$499",
+            "text_color": "#00874a"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "f6954a3",
+         "elType": "container",
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_gaps": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "8"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "14",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "f6845e1",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Compro, recibo, y algo siempre se me caduca",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "4d506d2",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Cotiza Pro",
+            "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "431fcd0",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "$999",
+            "text_color": "#00874a"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "35b6d46",
+         "elType": "container",
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_gaps": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "8"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "14",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "c2ceb81",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Quiero todo junto y dejar de conciliar",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "7a94d4e",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Operación",
+            "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "a497061",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "$7,500",
+            "text_color": "#00874a"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "eb0ebf7",
+         "elType": "container",
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_gaps": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "8"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "14",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "24e623d",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Dos empresas, tienda en línea y mucho volumen",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "6644d5e",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Corporativo",
+            "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "0a4c694",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "$15,000",
+            "text_color": "#00874a"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "a37bb41",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>¿Dos empresas, pero chicas? Operación más una empresa adicional suman <strong>$9,400 al mes</strong> , IVA incluido. Si con eso te alcanza, quédate ahí.</p>",
+        "align": "center",
+        "text_color": "#6a6f78",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

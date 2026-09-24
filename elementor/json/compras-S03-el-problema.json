@@ -1,0 +1,491 @@
+{
+ "version": "0.4",
+ "title": "compras · S03 EL PROBLEMA",
+ "type": "container",
+ "content": [
+  {
+   "id": "839cbd5",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#f4f6f9"
+   },
+   "elements": [
+    {
+     "id": "5cef76a",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "dc696b9",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        },
+        "flex_align_items": "center"
+       },
+       "elements": [
+        {
+         "id": "4feb5d8",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "background_background": "classic",
+          "background_color": "#f2f7ff",
+          "border_radius": {
+           "unit": "px",
+           "top": "999",
+           "right": "999",
+           "bottom": "999",
+           "left": "999",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "5",
+           "right": "11",
+           "bottom": "5",
+           "left": "11",
+           "isLinked": false
+          },
+          "flex_direction": "row",
+          "margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "c79aa4c",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "El problema",
+            "header_size": "div",
+            "title_color": "#1e5bd4",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {
+             "unit": "px",
+             "size": 0.6,
+             "sizes": []
+            },
+            "align": "center"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "7735782",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "«Le vendí algo que no tenía»",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600",
+          "align": "center"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "726fed6",
+       "elType": "container",
+       "settings": {
+        "container_type": "grid",
+        "grid_columns_grid": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        },
+        "grid_columns_grid_tablet": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        },
+        "grid_columns_grid_mobile": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_gaps": {
+         "unit": "px",
+         "size": 24,
+         "column": "24",
+         "row": "24"
+        }
+       },
+       "elements": [
+        {
+         "id": "0034a26",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "acad0d9",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Hoy",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "b7fabc1",
+           "elType": "widget",
+           "widgetType": "icon-list",
+           "settings": {
+            "icon_list": [
+             {
+              "_id": "c159d9a",
+              "text": "El vendedor promete con un archivo de la semana pasada",
+              "selected_icon": {
+               "value": "fas fa-times",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "5a355c5",
+              "text": "La requisición nace cuando alguien se acuerda",
+              "selected_icon": {
+               "value": "fas fa-times",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "d21b3e5",
+              "text": "Lo que falta vive repartido en seis pedidos distintos",
+              "selected_icon": {
+               "value": "fas fa-times",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "a2a0d7c",
+              "text": "Se paga flete dos veces al mismo proveedor",
+              "selected_icon": {
+               "value": "fas fa-times",
+               "library": "fa-solid"
+              }
+             }
+            ],
+            "space_between": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "icon_size": {
+             "unit": "px",
+             "size": 17,
+             "sizes": []
+            },
+            "icon_color": "#a7abb3",
+            "icon_self_align": "left",
+            "text_color": "#6a6f78",
+            "icon_typography_typography": "custom",
+            "icon_typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "3e4ad52",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "1e75b37",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Con IncSales Compras",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "d79f866",
+           "elType": "widget",
+           "widgetType": "icon-list",
+           "settings": {
+            "icon_list": [
+             {
+              "_id": "88c9bba",
+              "text": "Confirmar el pedido levanta la requisición sola",
+              "selected_icon": {
+               "value": "fas fa-check",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "73d909e",
+              "text": "Sale con la cantidad que falta, no con todo",
+              "selected_icon": {
+               "value": "fas fa-check",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "19a787c",
+              "text": "Queda amarrada a su pedido y a su cliente",
+              "selected_icon": {
+               "value": "fas fa-check",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "72343b9",
+              "text": "Lo del mismo proveedor sale en una sola orden",
+              "selected_icon": {
+               "value": "fas fa-check",
+               "library": "fa-solid"
+              }
+             }
+            ],
+            "space_between": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "icon_size": {
+             "unit": "px",
+             "size": 17,
+             "sizes": []
+            },
+            "icon_color": "#00874a",
+            "icon_self_align": "left",
+            "text_color": "#4d535d",
+            "icon_typography_typography": "custom",
+            "icon_typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

@@ -1,0 +1,718 @@
+{
+ "version": "0.4",
+ "title": "facturacion · S02 PORTADA",
+ "type": "container",
+ "content": [
+  {
+   "id": "6ee7797",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "_element_id": "portada"
+   },
+   "elements": [
+    {
+     "id": "12d4f3c",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "d123a03",
+       "elType": "container",
+       "settings": {
+        "container_type": "grid",
+        "grid_columns_grid": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        },
+        "grid_columns_grid_tablet": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_columns_grid_mobile": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_gaps": {
+         "unit": "px",
+         "size": 48,
+         "column": "48",
+         "row": "32"
+        }
+       },
+       "elements": [
+        {
+         "id": "c10ab6f",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          }
+         },
+         "elements": [
+          {
+           "id": "69b1448",
+           "elType": "container",
+           "settings": {
+            "content_width": "full",
+            "background_background": "classic",
+            "background_color": "#f2f7ff",
+            "border_radius": {
+             "unit": "px",
+             "top": "999",
+             "right": "999",
+             "bottom": "999",
+             "left": "999",
+             "isLinked": true
+            },
+            "padding": {
+             "unit": "px",
+             "top": "5",
+             "right": "11",
+             "bottom": "5",
+             "left": "11",
+             "isLinked": false
+            },
+            "flex_direction": "row",
+            "margin": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "14",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [
+            {
+             "id": "8a5ec56",
+             "elType": "widget",
+             "widgetType": "heading",
+             "settings": {
+              "title": "Módulo · IncSales Facturación",
+              "header_size": "div",
+              "title_color": "#1e5bd4",
+              "typography_typography": "custom",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 12,
+               "sizes": []
+              },
+              "typography_font_weight": "600",
+              "typography_text_transform": "uppercase",
+              "typography_letter_spacing": {
+               "unit": "px",
+               "size": 0.6,
+               "sizes": []
+              }
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          },
+          {
+           "id": "e7878c6",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "La factura sale del pedido que ya capturaste",
+            "header_size": "h1",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 52,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "2cd6c76",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>CFDI 4.0 timbrado por un PAC autorizado, con los renglones que el vendedor metió. Nadie vuelve a capturar el pedido.</p>",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 19,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "4826a5b",
+           "elType": "widget",
+           "widgetType": "icon-list",
+           "settings": {
+            "icon_list": [
+             {
+              "_id": "63f68fe",
+              "text": "Complemento de pago, notas de crédito y facturas globales",
+              "selected_icon": {
+               "value": "fas fa-check",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "1b90803",
+              "text": "PDF y XML por comprobante, y el año completo en un ZIP",
+              "selected_icon": {
+               "value": "fas fa-check",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "0773819",
+              "text": "Incluido desde <strong>Factura Esencial $2,490 al mes</strong> , IVA incluido",
+              "selected_icon": {
+               "value": "fas fa-check",
+               "library": "fa-solid"
+              }
+             }
+            ],
+            "space_between": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "icon_size": {
+             "unit": "px",
+             "size": 17,
+             "sizes": []
+            },
+            "icon_color": "#00874a",
+            "icon_self_align": "left",
+            "text_color": "#4d535d",
+            "icon_typography_typography": "custom",
+            "icon_typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "9cb046c",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Agenda una demo",
+            "link": {
+             "url": "contacto.html",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "size": "md",
+            "border_radius": {
+             "unit": "px",
+             "top": "6",
+             "right": "6",
+             "bottom": "6",
+             "left": "6",
+             "isLinked": true
+            },
+            "text_padding": {
+             "unit": "px",
+             "top": "15",
+             "right": "26",
+             "bottom": "15",
+             "left": "26",
+             "isLinked": false
+            },
+            "align": "left",
+            "background_color": "#1e5bd4",
+            "button_text_color": "#ffffff"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "9682777",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3",
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 2,
+           "blur": 6,
+           "spread": 0,
+           "color": "rgba(15,19,25,0.07)"
+          }
+         },
+         "elements": [
+          {
+           "id": "b9806de",
+           "elType": "container",
+           "settings": {
+            "content_width": "full",
+            "background_background": "classic",
+            "background_color": "#f4f6f9",
+            "border_radius": {
+             "unit": "px",
+             "top": "999",
+             "right": "999",
+             "bottom": "999",
+             "left": "999",
+             "isLinked": true
+            },
+            "padding": {
+             "unit": "px",
+             "top": "5",
+             "right": "11",
+             "bottom": "5",
+             "left": "11",
+             "isLinked": false
+            },
+            "flex_direction": "row",
+            "margin": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "14",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [
+            {
+             "id": "3ce21f1",
+             "elType": "widget",
+             "widgetType": "heading",
+             "settings": {
+              "title": "Cómo se timbra",
+              "header_size": "div",
+              "title_color": "#6a6f78",
+              "typography_typography": "custom",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 12,
+               "sizes": []
+              },
+              "typography_font_weight": "600",
+              "typography_text_transform": "uppercase",
+              "typography_letter_spacing": {
+               "unit": "px",
+               "size": 0.6,
+               "sizes": []
+              }
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          },
+          {
+           "id": "bd5185b",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "row",
+            "flex_gap": {
+             "unit": "px",
+             "size": 16,
+             "column": "16",
+             "row": "16"
+            },
+            "padding": {
+             "unit": "px",
+             "top": "14",
+             "right": "0",
+             "bottom": "14",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [
+            {
+             "id": "e3b8ff1",
+             "elType": "container",
+             "settings": {
+              "flex_direction": "column",
+              "flex_gap": {
+               "unit": "px",
+               "size": 12,
+               "column": "12",
+               "row": "12"
+              }
+             },
+             "elements": [
+              {
+               "id": "4c60c97",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "1",
+                "text_color": "#4d535d"
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "88bed6f",
+             "elType": "container",
+             "settings": {
+              "flex_direction": "column",
+              "flex_gap": {
+               "unit": "px",
+               "size": 12,
+               "column": "12",
+               "row": "12"
+              }
+             },
+             "elements": [
+              {
+               "id": "4786cb1",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<p>Se captura como los demás</p>"
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "2db91ca",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<p>Es uno de los seis documentos con la misma forma: los renglones se corrigen en su sitio.</p>",
+                "text_color": "#6a6f78",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 13,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          },
+          {
+           "id": "6beead1",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "row",
+            "flex_gap": {
+             "unit": "px",
+             "size": 16,
+             "column": "16",
+             "row": "16"
+            },
+            "padding": {
+             "unit": "px",
+             "top": "14",
+             "right": "0",
+             "bottom": "14",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [
+            {
+             "id": "3cd6468",
+             "elType": "container",
+             "settings": {
+              "flex_direction": "column",
+              "flex_gap": {
+               "unit": "px",
+               "size": 12,
+               "column": "12",
+               "row": "12"
+              }
+             },
+             "elements": [
+              {
+               "id": "2ab7a39",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "2",
+                "text_color": "#4d535d"
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "9da041f",
+             "elType": "container",
+             "settings": {
+              "flex_direction": "column",
+              "flex_gap": {
+               "unit": "px",
+               "size": 12,
+               "column": "12",
+               "row": "12"
+              }
+             },
+             "elements": [
+              {
+               "id": "ead2771",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<p>Lo fiscal ya está puesto</p>"
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "5aa1f6d",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<p>Folios, impuestos y datos fiscales se configuran una vez por empresa.</p>",
+                "text_color": "#6a6f78",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 13,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          },
+          {
+           "id": "a904f2c",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "row",
+            "flex_gap": {
+             "unit": "px",
+             "size": 16,
+             "column": "16",
+             "row": "16"
+            },
+            "padding": {
+             "unit": "px",
+             "top": "14",
+             "right": "0",
+             "bottom": "14",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [
+            {
+             "id": "98f74f4",
+             "elType": "container",
+             "settings": {
+              "flex_direction": "column",
+              "flex_gap": {
+               "unit": "px",
+               "size": 12,
+               "column": "12",
+               "row": "12"
+              }
+             },
+             "elements": [
+              {
+               "id": "240e045",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "3",
+                "text_color": "#4d535d"
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "7fa7ce6",
+             "elType": "container",
+             "settings": {
+              "flex_direction": "column",
+              "flex_gap": {
+               "unit": "px",
+               "size": 12,
+               "column": "12",
+               "row": "12"
+              }
+             },
+             "elements": [
+              {
+               "id": "6d17f97",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<p>El PAC avisa por webhook</p>"
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "f076b62",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "<p>La factura cambia de estado sola. Nadie se queda refrescando la pantalla.</p>",
+                "text_color": "#6a6f78",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 13,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

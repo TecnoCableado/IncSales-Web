@@ -1,0 +1,1220 @@
+{
+ "version": "0.4",
+ "title": "precios · S09 COMPLEMENTOS",
+ "type": "container",
+ "content": [
+  {
+   "id": "e28d2b9",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#f4f6f9"
+   },
+   "elements": [
+    {
+     "id": "116cab5",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "92f7f2e",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        }
+       },
+       "elements": [
+        {
+         "id": "a601355",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "background_background": "classic",
+          "background_color": "#f2f7ff",
+          "border_radius": {
+           "unit": "px",
+           "top": "999",
+           "right": "999",
+           "bottom": "999",
+           "left": "999",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "5",
+           "right": "11",
+           "bottom": "5",
+           "left": "11",
+           "isLinked": false
+          },
+          "flex_direction": "row",
+          "margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "092038a",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Complementos",
+            "header_size": "div",
+            "title_color": "#1e5bd4",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {
+             "unit": "px",
+             "size": 0.6,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "bb69bab",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Lo que se suma al plan, con su precio a la vista",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "fe20d9d",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        },
+        "border_color": "#dbdee3",
+        "flex_gap": {
+         "unit": "px",
+         "size": 0,
+         "column": "0",
+         "row": "0"
+        }
+       },
+       "elements": [
+        {
+         "id": "21c3325",
+         "elType": "container",
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_gaps": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "8"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "14",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "ed37879",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Complemento",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "60bb6a8",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Precio",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "9deea5b",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Qué resuelve",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "3ec6400",
+         "elType": "container",
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_gaps": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "8"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "14",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "a03bf7c",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"crm.html\">IncSales CRM</a> sobre tu plan",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "a862fee",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "+$499 al mes",
+            "text_color": "#00874a"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "40592f9",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Pipelines, negocios y bitácora",
+            "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "a2021ba",
+         "elType": "container",
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_gaps": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "8"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "14",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "512fdf4",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"whatsapp.html\">IncSales WhatsApp</a>",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "2fc168e",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "+$699 al mes",
+            "text_color": "#00874a"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "fa0a3da",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Incluido en Crecimiento, Operación y Corporativo",
+            "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "71bdeb1",
+         "elType": "container",
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_gaps": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "8"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "14",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "9b7a60e",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Usuario adicional, familias Cotiza y CRM",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "c7797ca",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "+$199 al mes",
+            "text_color": "#00874a"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "c661c25",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Una persona, un precio",
+            "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "cdabbb9",
+         "elType": "container",
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_gaps": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "8"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "14",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "71bd8b5",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Usuario adicional, familia Completo",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "5baf772",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "+$349 al mes",
+            "text_color": "#00874a"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "291b06c",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "También consume inventarios y facturación",
+            "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "56aca27",
+         "elType": "container",
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_gaps": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "8"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "14",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "c0e7fe5",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Paquete de 100 CFDI adicionales",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "61da6ce",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "+$499 al mes",
+            "text_color": "#00874a"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "7a368d9",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Se acumulan dentro del mes",
+            "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "465e074",
+         "elType": "container",
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_gaps": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "8"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "14",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "1607505",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Almacén adicional",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "6c007d3",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "+$299 al mes",
+            "text_color": "#00874a"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "63af89d",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Con su propio kárdex",
+            "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "9f67568",
+         "elType": "container",
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_gaps": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "8"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "14",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "28564e6",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Empresa o RFC adicional",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "4ca86ec",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "+$1,900 al mes",
+            "text_color": "#00874a"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "a1ec87b",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Datos aislados entre empresas",
+            "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "2bcee0e",
+         "elType": "container",
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_gaps": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "8"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "14",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "cd6fa89",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"wordpress.html\">IncSales WooSync</a> , el conector con WooCommerce",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "3c971d9",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "+$1,490 al mes con implementación desde $9,900",
+            "text_color": "#00874a"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "fd0c7c5",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Productos, precios, existencias, pedidos y clientes",
+            "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "d090a4b",
+         "elType": "container",
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_gaps": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "8"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "14",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "299fef8",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"integraciones.html#proveedores\">IncSales Proveedores en Línea</a>",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "7fc796f",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "+$890 al mes por proveedor conectado, integración desde $12,000",
+            "text_color": "#00874a"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "18172fc",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Su existencia y su precio en tu buscador",
+            "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "e4bca68",
+         "elType": "container",
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_gaps": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "8"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "14",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "343c51d",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"integraciones.html#orquestador\">IncSales Orquestador</a>",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "f974afe",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "desde +$2,490 al mes",
+            "text_color": "#00874a"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "0c57633",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Una existencia, tres canales. Incluido en Corporativo",
+            "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "bb36bde",
+         "elType": "container",
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_gaps": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "8"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "14",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "747a32e",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"integraciones.html#portal\">IncSales Portal</a>",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "4adc65a",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "+$1,290 al mes",
+            "text_color": "#00874a"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "c864fc7",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Tu cliente consulta sus pedidos y sus facturas",
+            "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "f693f51",
+         "elType": "container",
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 3,
+           "sizes": []
+          },
+          "grid_gaps": {
+           "unit": "px",
+           "size": 16,
+           "column": "16",
+           "row": "8"
+          },
+          "padding": {
+           "unit": "px",
+           "top": "14",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "1",
+           "left": "0",
+           "isLinked": false
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "e13766a",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Soporte prioritario con acuerdo de servicio",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "563d014",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "desde +$2,900 al mes",
+            "text_color": "#00874a"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "eb06e0e",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Incluido en Corporativo",
+            "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

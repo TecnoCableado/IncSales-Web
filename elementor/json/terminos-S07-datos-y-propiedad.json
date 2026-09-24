@@ -1,0 +1,506 @@
+{
+ "version": "0.4",
+ "title": "terminos · S07 DATOS Y PROPIEDAD",
+ "type": "container",
+ "content": [
+  {
+   "id": "3dad4ad",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#f4f6f9"
+   },
+   "elements": [
+    {
+     "id": "d49c102",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "4d309fb",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        }
+       },
+       "elements": [
+        {
+         "id": "1657d82",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "background_background": "classic",
+          "background_color": "#f2f7ff",
+          "border_radius": {
+           "unit": "px",
+           "top": "999",
+           "right": "999",
+           "bottom": "999",
+           "left": "999",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "5",
+           "right": "11",
+           "bottom": "5",
+           "left": "11",
+           "isLinked": false
+          },
+          "flex_direction": "row",
+          "margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "44b9684",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Apartados 7 y 8",
+            "header_size": "div",
+            "title_color": "#1e5bd4",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {
+             "unit": "px",
+             "size": 0.6,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "41c075e",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Los datos son tuyos, el sistema es nuestro",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "6075139",
+       "elType": "container",
+       "settings": {
+        "container_type": "grid",
+        "grid_columns_grid": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        },
+        "grid_columns_grid_tablet": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        },
+        "grid_columns_grid_mobile": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_gaps": {
+         "unit": "px",
+         "size": 24,
+         "column": "24",
+         "row": "24"
+        }
+       },
+       "elements": [
+        {
+         "id": "b7fb8ac",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "6f6b791",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "7 · Datos, portabilidad y conservación",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "a2281fd",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p><strong>7.1 Son tuyos.</strong> No los vendemos, no los compartimos y no entrenamos modelos con ellos. El aislamiento se audita por script.</p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "6238fff",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p><strong>7.2 Te los llevas.</strong> Exportación completa en formatos abiertos, con los XML y PDF de tus CFDI y el ZIP del año.</p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "51311bf",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p><strong>7.3 Cuánto se conservan.</strong> 30 días naturales para pedir tu exportación con la cuenta en pie, y 90 días más de resguardo sin acceso.</p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "851b5db",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p><strong>7.4 Respaldos.</strong> Un respaldo nuestro no sustituye tu copia: conservar tus comprobantes es obligación tuya.</p>"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "6d3e3c3",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "1bfeb56",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "8 · Propiedad intelectual del software",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "01f5356",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p><strong>8.1 De quién es.</strong> El código, el diseño y las marcas de IncSales ERP son de Incoming Sales.</p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "9182211",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p><strong>8.2 Lo que no se puede hacer.</strong></p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "2b412f3",
+           "elType": "widget",
+           "widgetType": "icon-list",
+           "settings": {
+            "icon_list": [
+             {
+              "_id": "06038d6",
+              "text": "Copiarlo, descompilarlo u obtener su código fuente.",
+              "selected_icon": {
+               "value": "fas fa-times",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "642cc28",
+              "text": "Revenderlo, rentarlo o sublicenciarlo.",
+              "selected_icon": {
+               "value": "fas fa-times",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "d62f08a",
+              "text": "Construir con él un producto que compita.",
+              "selected_icon": {
+               "value": "fas fa-times",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "f58a786",
+              "text": "Hacerle pruebas de intrusión sin permiso escrito.",
+              "selected_icon": {
+               "value": "fas fa-times",
+               "library": "fa-solid"
+              }
+             }
+            ],
+            "space_between": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "icon_size": {
+             "unit": "px",
+             "size": 17,
+             "sizes": []
+            },
+            "icon_color": "#a7abb3",
+            "icon_self_align": "left",
+            "text_color": "#6a6f78",
+            "icon_typography_typography": "custom",
+            "icon_typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "761ee0f",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p><strong>8.3 Marcas.</strong> Puedes decir que usas IncSales; te nombramos como cliente solo con tu permiso escrito.</p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "6b0bed3",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p><strong>8.4 Sugerencias.</strong> Si propones una mejora y la construimos, queda dentro del producto.</p>"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

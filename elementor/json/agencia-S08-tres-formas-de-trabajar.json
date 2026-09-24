@@ -1,0 +1,1164 @@
+{
+ "version": "0.4",
+ "title": "agencia · S08 TRES FORMAS DE TRABAJAR",
+ "type": "container",
+ "content": [
+  {
+   "id": "b15339d",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "1f5f759",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "3a72f14",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        }
+       },
+       "elements": [
+        {
+         "id": "70b93b1",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "background_background": "classic",
+          "background_color": "#f2f7ff",
+          "border_radius": {
+           "unit": "px",
+           "top": "999",
+           "right": "999",
+           "bottom": "999",
+           "left": "999",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "5",
+           "right": "11",
+           "bottom": "5",
+           "left": "11",
+           "isLinked": false
+          },
+          "flex_direction": "row",
+          "margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "1bc4016",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Tres formas de trabajar",
+            "header_size": "div",
+            "title_color": "#1e5bd4",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {
+             "unit": "px",
+             "size": 0.6,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "5f0bc20",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Honorarios en pesos, y la pauta aparte",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "6efd3d7",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>No revendemos tu inversión publicitaria ni la escondemos dentro del paquete.</p>"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "9864fa8",
+       "elType": "container",
+       "settings": {
+        "container_type": "grid",
+        "grid_columns_grid": {
+         "unit": "fr",
+         "size": 3,
+         "sizes": []
+        },
+        "grid_columns_grid_tablet": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        },
+        "grid_columns_grid_mobile": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_gaps": {
+         "unit": "px",
+         "size": 24,
+         "column": "24",
+         "row": "24"
+        }
+       },
+       "elements": [
+        {
+         "id": "5180966",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "c4df05a",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Google Ads gestionado</p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "920539d",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Para quien necesita que entre demanda ya.</p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "6b00e60",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "$12,000",
+            "header_size": "div",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 40,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "7d2c548",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>al mes, desde</p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "3a45bbb",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>IVA incluido</p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "e76eeed",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Más tu inversión publicitaria</p>",
+            "text_color": "#6a6f78",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "5cb042c",
+           "elType": "widget",
+           "widgetType": "icon-list",
+           "settings": {
+            "icon_list": [
+             {
+              "_id": "c4e7fb4",
+              "text": "Búsqueda y remarketing por producto",
+              "selected_icon": {
+               "value": "fas fa-check",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "72b2935",
+              "text": "Revisión semanal de términos y presupuesto",
+              "selected_icon": {
+               "value": "fas fa-check",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "a7cfc45",
+              "text": "Formularios conectados al CRM",
+              "selected_icon": {
+               "value": "fas fa-check",
+               "library": "fa-solid"
+              }
+             }
+            ],
+            "space_between": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "icon_size": {
+             "unit": "px",
+             "size": 17,
+             "sizes": []
+            },
+            "icon_color": "#00874a",
+            "icon_self_align": "left",
+            "text_color": "#4d535d",
+            "icon_typography_typography": "custom",
+            "icon_typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "269db46",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Agenda una demo",
+            "link": {
+             "url": "contacto.html",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "size": "md",
+            "border_radius": {
+             "unit": "px",
+             "top": "6",
+             "right": "6",
+             "bottom": "6",
+             "left": "6",
+             "isLinked": true
+            },
+            "text_padding": {
+             "unit": "px",
+             "top": "15",
+             "right": "26",
+             "bottom": "15",
+             "left": "26",
+             "isLinked": false
+            },
+            "align": "left",
+            "background_color": "#00000000",
+            "button_text_color": "#1e5bd4",
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_color": "#dbdee3"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "d613bce",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "2",
+           "right": "2",
+           "bottom": "2",
+           "left": "2",
+           "isLinked": true
+          },
+          "border_color": "#1e5bd4",
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+           "horizontal": 0,
+           "vertical": 2,
+           "blur": 6,
+           "spread": 0,
+           "color": "rgba(15,19,25,0.07)"
+          }
+         },
+         "elements": [
+          {
+           "id": "eaff889",
+           "elType": "container",
+           "settings": {
+            "content_width": "full",
+            "background_background": "classic",
+            "background_color": "#f2f7ff",
+            "border_radius": {
+             "unit": "px",
+             "top": "999",
+             "right": "999",
+             "bottom": "999",
+             "left": "999",
+             "isLinked": true
+            },
+            "padding": {
+             "unit": "px",
+             "top": "5",
+             "right": "11",
+             "bottom": "5",
+             "left": "11",
+             "isLinked": false
+            },
+            "flex_direction": "row",
+            "margin": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "14",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [
+            {
+             "id": "307b85e",
+             "elType": "widget",
+             "widgetType": "heading",
+             "settings": {
+              "title": "El circuito completo",
+              "header_size": "div",
+              "title_color": "#1e5bd4",
+              "typography_typography": "custom",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 12,
+               "sizes": []
+              },
+              "typography_font_weight": "600",
+              "typography_text_transform": "uppercase",
+              "typography_letter_spacing": {
+               "unit": "px",
+               "size": 0.6,
+               "sizes": []
+              }
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          },
+          {
+           "id": "ba1099b",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Método IncSales</p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "753bb76",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Para quien quiere una sola persona que responda por el peso.</p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "ad7a674",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "$24,000",
+            "header_size": "div",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 40,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "b2f982c",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>al mes, desde</p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "3b68850",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>IVA incluido</p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "10a466d",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Más tu inversión publicitaria</p>",
+            "text_color": "#6a6f78",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "5c7ffd5",
+           "elType": "widget",
+           "widgetType": "icon-list",
+           "settings": {
+            "icon_list": [
+             {
+              "_id": "3a918ff",
+              "text": "Todo lo de Ads y todo lo de SEO",
+              "selected_icon": {
+               "value": "fas fa-check",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "8c9c604",
+              "text": "Campañas de WhatsApp y correo a tu base",
+              "selected_icon": {
+               "value": "fas fa-check",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "859a253",
+              "text": "Revisión del seguimiento, interesado por interesado",
+              "selected_icon": {
+               "value": "fas fa-check",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "980f129",
+              "text": "Sesión mensual con dirección y con ventas",
+              "selected_icon": {
+               "value": "fas fa-check",
+               "library": "fa-solid"
+              }
+             }
+            ],
+            "space_between": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "icon_size": {
+             "unit": "px",
+             "size": 17,
+             "sizes": []
+            },
+            "icon_color": "#00874a",
+            "icon_self_align": "left",
+            "text_color": "#4d535d",
+            "icon_typography_typography": "custom",
+            "icon_typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "5babe78",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Agenda una demo",
+            "link": {
+             "url": "contacto.html",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "size": "md",
+            "border_radius": {
+             "unit": "px",
+             "top": "6",
+             "right": "6",
+             "bottom": "6",
+             "left": "6",
+             "isLinked": true
+            },
+            "text_padding": {
+             "unit": "px",
+             "top": "15",
+             "right": "26",
+             "bottom": "15",
+             "left": "26",
+             "isLinked": false
+            },
+            "align": "left",
+            "background_color": "#1e5bd4",
+            "button_text_color": "#ffffff"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "76f6b02",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "b68d50a",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>SEO y contenidos</p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "d0a3723",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Para quien quiere dejar de depender del clic pagado.</p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "a08e028",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "$14,000",
+            "header_size": "div",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 40,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "abfa24a",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>al mes, desde</p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "e88bbc4",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>IVA incluido</p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "bbbc58a",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Se mide en meses, no en semanas</p>",
+            "text_color": "#6a6f78",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "5ed9edf",
+           "elType": "widget",
+           "widgetType": "icon-list",
+           "settings": {
+            "icon_list": [
+             {
+              "_id": "47e60e3",
+              "text": "Revisión técnica y estructura del sitio",
+              "selected_icon": {
+               "value": "fas fa-check",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "f841a29",
+              "text": "Fichas y categorías que sí se pueden cotizar",
+              "selected_icon": {
+               "value": "fas fa-check",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "0af5cd2",
+              "text": "Esos formularios también crean al interesado",
+              "selected_icon": {
+               "value": "fas fa-check",
+               "library": "fa-solid"
+              }
+             }
+            ],
+            "space_between": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "icon_size": {
+             "unit": "px",
+             "size": 17,
+             "sizes": []
+            },
+            "icon_color": "#00874a",
+            "icon_self_align": "left",
+            "text_color": "#4d535d",
+            "icon_typography_typography": "custom",
+            "icon_typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "ea3e1e4",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Agenda una demo",
+            "link": {
+             "url": "contacto.html",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "size": "md",
+            "border_radius": {
+             "unit": "px",
+             "top": "6",
+             "right": "6",
+             "bottom": "6",
+             "left": "6",
+             "isLinked": true
+            },
+            "text_padding": {
+             "unit": "px",
+             "top": "15",
+             "right": "26",
+             "bottom": "15",
+             "left": "26",
+             "isLinked": false
+            },
+            "align": "left",
+            "background_color": "#00000000",
+            "button_text_color": "#1e5bd4",
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_color": "#dbdee3"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "098c56a",
+       "elType": "container",
+       "settings": {
+        "container_type": "grid",
+        "grid_columns_grid": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        },
+        "grid_columns_grid_tablet": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_columns_grid_mobile": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_gaps": {
+         "unit": "px",
+         "size": 48,
+         "column": "48",
+         "row": "32"
+        }
+       },
+       "elements": [
+        {
+         "id": "d52d751",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#f4f6f9",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          }
+         },
+         "elements": [
+          {
+           "id": "5b1164f",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Sitio o tienda conectada a IncSales",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "67ca832",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Lo construimos con los formularios del sistema ya puestos, para que cada envío sea un interesado con su origen desde el primer día.</p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "49dd313",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Desde $45,000 una sola vez, IVA incluido",
+            "header_size": "div",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 40,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "56a49ea",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#fff7e9",
+          "border_radius": {
+           "unit": "px",
+           "top": "8",
+           "right": "8",
+           "bottom": "8",
+           "left": "8",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "18",
+           "right": "20",
+           "bottom": "18",
+           "left": "20",
+           "isLinked": false
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 4,
+           "column": "4",
+           "row": "4"
+          }
+         },
+         "elements": [
+          {
+           "id": "8d3a247",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<strong>El plan mínimo es un plan con CRM</strong> $499 al mes, IVA incluido, o el complemento de CRM por +$499 encima del plan de cotizaciones o de facturación que ya tengas.",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "fb5eb35",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"precios.html\">Ver todos los planes</a>",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "1aea0ef",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": ".",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

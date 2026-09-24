@@ -1,0 +1,352 @@
+{
+ "version": "0.4",
+ "title": "preguntas · S06 TUS DATOS",
+ "type": "container",
+ "content": [
+  {
+   "id": "14cb43a",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "2a0c197",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 820,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "0bc7adb",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        }
+       },
+       "elements": [
+        {
+         "id": "984b1c8",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "background_background": "classic",
+          "background_color": "#f2f7ff",
+          "border_radius": {
+           "unit": "px",
+           "top": "999",
+           "right": "999",
+           "bottom": "999",
+           "left": "999",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "5",
+           "right": "11",
+           "bottom": "5",
+           "left": "11",
+           "isLinked": false
+          },
+          "flex_direction": "row",
+          "margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "14",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "627115a",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Tus datos",
+            "header_size": "div",
+            "title_color": "#1e5bd4",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {
+             "unit": "px",
+             "size": 0.6,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "5f1eef8",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Quién los ve y cómo te los llevas",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "cd3c490",
+       "elType": "widget",
+       "widgetType": "nested-accordion",
+       "settings": {
+        "items": [
+         {
+          "_id": "8cc3c3a",
+          "item_title": "¿Otra empresa puede ver lo mío?"
+         },
+         {
+          "_id": "83d063e",
+          "item_title": "¿Me llevo mis datos si un día me voy?"
+         },
+         {
+          "_id": "e45a594",
+          "item_title": "¿Cómo se manejan las contraseñas?"
+         },
+         {
+          "_id": "d2342be",
+          "item_title": "¿Se instala algo en las computadoras?"
+         }
+        ],
+        "default_state": "all_collapsed",
+        "title_typography_typography": "custom",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "title_typography_font_weight": "600",
+        "accordion_item_title_space_between": {
+         "unit": "px",
+         "size": 0,
+         "sizes": []
+        },
+        "accordion_padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "40",
+         "bottom": "20",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "9faaaf4",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "22",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "21f419c",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "No. Cada cliente es una organización distinta y el aislamiento se impone en la capa de sesión, auditado por un script. <a href=\"nosotros.html\">Cómo está armado</a> ."
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "5783e2b",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "22",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "2efd1ab",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Sí. Clientes, contactos, productos, cotizaciones, negocios, movimientos y saldos, más el XML de tus CFDI. También el día que te vayas."
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "e2dbadd",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "22",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "500d176",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Cada quien entra por enlace de invitación y pone la suya. Se guardan como huella irreversible, no como texto."
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "dedc111",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "22",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "c2cf439",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Nada. Se abre en el navegador, también en el celular, en el subdominio de tu empresa: erp.tuempresa.com."
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

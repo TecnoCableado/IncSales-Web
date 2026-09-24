@@ -1,0 +1,389 @@
+/* ============================================================================
+   INCOMING SALES · AGENCIA — hoja de la maqueta
+   ----------------------------------------------------------------------------
+   Esta hoja existe para VER el diseño. El sitio final se arma a mano en
+   WordPress con Elementor GRATUITO, así que aquí no hay una sola cosa que
+   Elementor gratis no pueda reproducir con sus controles nativos.
+
+   LO QUE SE PROHIBIÓ A PROPÓSITO, y por qué:
+   · Sombras de varias capas → el control de Elementor solo acepta una
+     (H / V / Desenfoque / Extensión / Color). Aquí todas son de UNA capa.
+   · ::before y ::after decorativos → no se pueden dibujar en el editor.
+     Las palomas, los puntos y las flechas son iconos de verdad.
+   · backdrop-filter, position:sticky, container queries, clamp() con vw →
+     no hay control para eso. Los tamaños cambian por punto de quiebre.
+   · grid con auto-fit → en Elementor se teclea "columnas = N" por
+     dispositivo. Aquí se escribe igual: número fijo por punto de quiebre.
+   · Animaciones de entrada y parallax → el encargo dice sin animaciones raras.
+
+   PUNTOS DE QUIEBRE: los de Elementor por omisión.
+   Escritorio >1024 · Tablet ≤1024 · Móvil ≤767
+   ========================================================================== */
+
+:root {
+  /* ---- Los seis colores globales de Elementor.
+          Ajustes del sitio → Colores globales. ---- */
+  --primario:   #1e5bd4;   /* Primario   · botones, enlaces, acentos   */
+  --secundario: #0b3587;   /* Secundario · fondos oscuros, hover       */
+  --titulo:     #21252d;   /* Texto      · titulares                   */
+  --exito:      #00874a;   /* Destacado  · palomas, señales de bien    */
+  /* ---- Y cuatro más como colores personalizados ---- */
+  --cuerpo:     #4d535d;
+  --tenue:      #6a6f78;
+  --linea:      #dbdee3;
+  --lienzo:     #f4f6f9;
+  --azul-tenue: #f2f7ff;
+  --ambar:      #8a5a00;
+  --ambar-tenue:#fff7e9;
+  --blanco:     #ffffff;
+  --claro:      #c3d4f0;   /* texto sobre fondo oscuro     */
+  --acento-claro: #8ab4ff; /* rótulo sobre fondo oscuro    */
+  --tenue-oscuro: #9bb0d2; /* legal del pie, 5.1:1         */
+  --icono-no:   #8e939c;   /* taches, 3.2:1                */
+  --borde-campo:#c4c7ce;
+  --verde-tenue:#e8f5ee;
+
+  /* ---- Sombras de UNA capa. En Elementor: Avanzado → Sombra de caja. ---- */
+  --sombra-1: 0 1px 2px rgba(15,19,25,.06);
+  --sombra-2: 0 2px 6px rgba(15,19,25,.07);
+  --sombra-3: 0 8px 24px rgba(15,19,25,.08);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Inter, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--cuerpo);
+  background: var(--blanco);
+  -webkit-font-smoothing: antialiased;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- Tipografía. En Elementor: Ajustes del sitio → Tipografía.
+        Los tres valores de cada renglón son escritorio / tablet / móvil. ---- */
+h1, h2, h3, h4 { color: var(--titulo); margin: 0 0 16px; font-weight: 600; }
+h1 { font-size: 52px; line-height: 1.1;  letter-spacing: -1.3px; }
+h2 { font-size: 36px; line-height: 1.15; letter-spacing: -0.8px; }
+h3 { font-size: 22px; line-height: 1.3;  letter-spacing: -0.4px; }
+h4 { font-size: 18px; line-height: 1.4;  letter-spacing: -0.2px; font-weight: 600; }
+p  { margin: 0 0 16px; }
+p:last-child { margin-bottom: 0; }
+a  { color: var(--primario); text-decoration: none; }
+a:hover { text-decoration: underline; }
+strong { color: var(--titulo); font-weight: 600; }
+img, svg { max-width: 100%; height: auto; display: block; }
+
+@media (max-width: 1024px) {
+  body { font-size: 16px; }
+  h1 { font-size: 40px; letter-spacing: -1px; }
+  h2 { font-size: 30px; letter-spacing: -0.6px; }
+  h3 { font-size: 20px; }
+}
+@media (max-width: 767px) {
+  h1 { font-size: 32px; letter-spacing: -0.8px; }
+  h2 { font-size: 26px; letter-spacing: -0.5px; }
+  h3 { font-size: 19px; }
+}
+
+/* ---- Secciones y contenedores ------------------------------------------- */
+.seccion { padding: 88px 0; }
+.seccion--gris   { background: var(--lienzo); }
+.seccion--azul   { background: var(--azul-tenue); }
+.seccion--oscura { background: var(--secundario); color: #c3d4f0; }
+.seccion--oscura h1, .seccion--oscura h2, .seccion--oscura h3, .seccion--oscura h4 { color: var(--blanco); }
+.seccion--oscura strong { color: var(--blanco); }
+.seccion--corta { padding: 48px 0; }
+
+.ancho { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+.ancho--angosto { max-width: 820px; }
+
+@media (max-width: 1024px) { .seccion { padding: 64px 0; } }
+@media (max-width: 767px)  { .seccion { padding: 48px 0; } .ancho { padding: 0 20px; } }
+
+/* ---- Rejillas. En Elementor: contenedor con "columnas = N" ---- */
+.cols { display: grid; gap: 24px; }
+.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.cols-4 { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 1024px) { .cols-3, .cols-4 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 767px)  { .cols-2, .cols-3, .cols-4 { grid-template-columns: 1fr; } }
+
+.par { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.par--arriba { align-items: start; }
+@media (max-width: 1024px) { .par { grid-template-columns: 1fr; gap: 32px; } }
+
+/* ---- Encabezado de sección ---- */
+.cabeza { max-width: 720px; margin: 0 0 40px; }
+.cabeza--centro { margin-left: auto; margin-right: auto; text-align: center; }
+.cabeza p { font-size: 19px; color: var(--tenue); margin-bottom: 0; }
+.seccion--oscura .cabeza p { color: #c3d4f0; }
+@media (max-width: 767px) { .cabeza p { font-size: 17px; } }
+
+/* ---- Rótulo sobre el título. En Elementor: widget Encabezado, etiqueta
+        HTML "div", 13px, peso 600, mayúsculas, espaciado 1.2px ---- */
+.rotulo {
+  display: block; font-size: 13px; font-weight: 600; letter-spacing: 1.2px;
+  text-transform: uppercase; color: var(--primario); margin: 0 0 12px;
+}
+.seccion--oscura .rotulo { color: var(--acento-claro); }
+
+/* ---- Botones. En Elementor: widget Botón ---- */
+.btn {
+  display: inline-block; padding: 15px 26px; border-radius: 6px;
+  font-size: 16px; font-weight: 600; line-height: 1;
+  background: var(--primario); color: var(--blanco); border: 1px solid var(--primario);
+  text-decoration: none; text-align: center;
+}
+.btn:hover { background: var(--secundario); border-color: var(--secundario); color: var(--blanco); text-decoration: none; }
+.btn--linea { background: transparent; color: var(--primario); border-color: var(--linea); }
+.btn--linea:hover { background: var(--lienzo); color: var(--secundario); border-color: var(--tenue); }
+.btn--blanco { background: var(--blanco); color: var(--secundario); border-color: var(--blanco); }
+.btn--blanco:hover { background: var(--azul-tenue); color: var(--secundario); border-color: var(--azul-tenue); }
+.btn--lineaclara { background: transparent; color: var(--blanco); border-color: rgba(255,255,255,.4); }
+.btn--lineaclara:hover { background: rgba(255,255,255,.1); color: var(--blanco); border-color: var(--blanco); }
+.btn--bloque { display: block; width: 100%; }
+
+/* ---- Tarjeta. En Elementor: contenedor con fondo, borde, radio y relleno ---- */
+.tarjeta {
+  background: var(--blanco); border: 1px solid var(--linea); border-radius: 10px;
+  padding: 28px; height: 100%;
+}
+.tarjeta--sombra { box-shadow: var(--sombra-2); }
+.tarjeta--plana { background: var(--lienzo); border-color: transparent; }
+.tarjeta--oscura { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.14); }
+@media (max-width: 767px) { .tarjeta { padding: 22px; } }
+
+/* ---- Lista con iconos. En Elementor: widget Lista de iconos ---- */
+.lista { list-style: none; margin: 0; padding: 0; }
+.lista li {
+  display: flex; gap: 10px; align-items: flex-start;
+  padding: 7px 0; font-size: 16px; color: var(--cuerpo);
+}
+.lista li svg { width: 17px; height: 17px; flex: 0 0 auto; margin-top: 4px; }
+.lista--ok li svg { color: var(--exito); }
+.lista--no li { color: var(--tenue); }
+.lista--no li svg { color: var(--icono-no); }
+.seccion--oscura .lista li { color: #c3d4f0; }
+
+/* ---- Paquetes ---- */
+.paquete {
+  background: var(--blanco); border: 1px solid var(--linea); border-radius: 10px;
+  padding: 30px; display: flex; flex-direction: column; height: 100%;
+}
+.paquete--elegido { border: 2px solid var(--primario); box-shadow: var(--sombra-3); }
+.paquete__etiqueta {
+  display: inline-block; background: var(--primario); color: var(--blanco);
+  font-size: 12px; font-weight: 600; letter-spacing: .6px; text-transform: uppercase;
+  padding: 5px 11px; border-radius: 999px; margin-bottom: 14px; align-self: flex-start;
+}
+.paquete__nombre { font-size: 20px; font-weight: 600; color: var(--titulo); margin: 0 0 6px; }
+.paquete__quien { font-size: 15px; color: var(--tenue); margin: 0 0 20px; min-height: 44px; }
+.paquete__precio { font-size: 40px; font-weight: 600; color: var(--titulo); line-height: 1; margin: 0; }
+.paquete__periodo { font-size: 15px; color: var(--tenue); }
+.paquete__iva { font-size: 13px; color: var(--exito); font-weight: 600; margin: 6px 0 4px; }
+.paquete__pauta { font-size: 13px; color: var(--tenue); margin: 0 0 20px; padding-bottom: 20px; border-bottom: 1px solid var(--linea); }
+.paquete .lista { margin-bottom: 24px; }
+.paquete .btn { margin-top: auto; }
+
+/* ---- Aviso. Relleno de color, sin borde de color ---- */
+.aviso { background: var(--azul-tenue); border-radius: 8px; padding: 18px 20px; font-size: 16px; }
+.aviso strong { display: block; margin-bottom: 4px; color: var(--secundario); }
+.aviso--ambar { background: var(--ambar-tenue); }
+.aviso--ambar strong { color: var(--ambar); }
+.seccion--oscura .aviso { background: rgba(255,255,255,.07); color: #c3d4f0; }
+.seccion--oscura .aviso strong { color: var(--blanco); }
+
+/* ---- Cifra. En Elementor: widget Contador, o Encabezado si no se anima ---- */
+.cifra__n { font-size: 40px; font-weight: 600; color: var(--titulo); line-height: 1.1; }
+.cifra__q { font-size: 15px; color: var(--tenue); }
+.seccion--oscura .cifra__n { color: var(--blanco); }
+.seccion--oscura .cifra__q { color: #c3d4f0; }
+
+/* ---- Preguntas. En Elementor: widget Acordeón anidado ---- */
+.faq { border-top: 1px solid var(--linea); }
+.faq details { border-bottom: 1px solid var(--linea); }
+.faq summary {
+  cursor: pointer; list-style: none; padding: 20px 40px 20px 0;
+  font-size: 17px; font-weight: 600; color: var(--titulo); position: relative;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: "+"; position: absolute; right: 8px; top: 17px;
+  font-size: 22px; font-weight: 400; color: var(--primario);
+}
+.faq details[open] summary::after { content: "–"; }
+.faq__cuerpo { padding: 0 40px 22px 0; font-size: 16px; color: var(--cuerpo); }
+
+/* ---- Barra superior y pie ---- */
+.barra { background: var(--blanco); border-bottom: 1px solid var(--linea); }
+.barra__fila { display: flex; align-items: center; gap: 24px; min-height: 72px; }
+.barra__menu { display: flex; gap: 22px; margin-left: auto; align-items: center; }
+.barra__menu a { font-size: 15px; font-weight: 500; color: var(--cuerpo); }
+.barra__menu a:hover { color: var(--titulo); text-decoration: none; }
+.barra img { height: 30px; width: auto; }
+@media (max-width: 1024px) { .barra__menu a:not(.btn) { display: none; } }
+
+.pie { background: var(--secundario); color: #c3d4f0; padding: 56px 0 28px; font-size: 15px; }
+.pie a { color: #c3d4f0; }
+.pie a:hover { color: var(--blanco); }
+.pie h4 { color: var(--blanco); font-size: 13px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 14px; }
+.pie img { height: 32px; width: auto; margin-bottom: 16px; }
+.pie__legal { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.14); font-size: 13px; color: var(--tenue-oscuro); }
+
+/* ---- Formulario. Elementor gratis NO trae widget de formulario:
+        en WordPress esto se sustituye por Fluent Forms o WPForms Lite. ---- */
+.campo { margin-bottom: 16px; }
+.campo label { display: block; font-size: 15px; font-weight: 600; color: var(--titulo); margin-bottom: 6px; }
+.campo input, .campo select, .campo textarea {
+  width: 100%; font-family: inherit; font-size: 16px; color: var(--titulo);
+  padding: 12px 14px; border: 1px solid var(--borde-campo); border-radius: 6px; background: var(--blanco);
+}
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+  outline: none; border-color: var(--primario); box-shadow: 0 0 0 3px rgba(30,91,212,.35);
+}
+.campo textarea { min-height: 110px; resize: vertical; }
+.campo__ayuda { font-size: 13px; color: var(--tenue); margin-top: 5px; }
+
+/* ---- Piezas de la sección del sistema y del bono ------------------------- */
+.paquete__etiqueta--verde { background: var(--exito); }
+.nota-pie { font-size: 15px; color: var(--tenue); text-align: center; margin: 32px auto 0; max-width: 620px; }
+.sep-32 { margin-top: 32px; }
+.sep-40 { margin-top: 40px; }
+.sep-20 { margin-top: 20px; }
+.nota-sustento { font-size: 14px; color: var(--tenue); margin: 0; }
+.centrado { text-align: center; }
+
+/* ===========================================================================
+   EXTENSIÓN PARA EL SITIO DE PRODUCTO · INCSALES
+   Mismas reglas que arriba: nada aquí sale de lo que Elementor GRATUITO
+   puede teclear con controles nativos. Una sola capa de sombra, sin
+   pseudoelementos decorativos, sin transform, sin clamp con vw, columnas
+   fijas por punto de quiebre.
+   ========================================================================= */
+
+/* ---- Marca de producto. Se escribe siempre igual: IncSales Forms. -------- */
+.marca-producto { font-weight: 600; color: var(--titulo); }
+
+/* ---- Etiqueta en línea. Elementor: Encabezado div con fondo y radio. ----- */
+.etiqueta {
+  display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: .6px;
+  text-transform: uppercase; padding: 5px 11px; border-radius: 999px;
+  background: var(--azul-tenue); color: var(--primario); margin-bottom: 14px;
+}
+.etiqueta--verde { background: var(--verde-tenue); color: #00713e; }
+.etiqueta--ambar { background: var(--ambar-tenue); color: var(--ambar); }
+.etiqueta--gris  { background: var(--lienzo); color: var(--tenue); }
+
+/* ---- Módulo del sistema. Elementor: contenedor + Icono + Encabezado. ----- */
+.modulo { display: flex; flex-direction: column; height: 100%; }
+.modulo__icono {
+  width: 40px; height: 40px; border-radius: 8px; background: var(--azul-tenue);
+  color: var(--primario); display: flex; align-items: center; justify-content: center;
+  margin-bottom: 16px;
+}
+.modulo__icono svg { width: 21px; height: 21px; }
+.modulo__nombre { font-size: 18px; font-weight: 600; color: var(--titulo); margin: 0 0 8px; }
+.modulo__precio { font-size: 13px; font-weight: 600; color: var(--exito); margin: 12px 0 0; }
+
+/* ---- Pantalla del producto. En Elementor es un widget Imagen dentro de
+        un contenedor con borde, radio y sombra: NO se dibuja con CSS. ------ */
+.pantalla {
+  border: 1px solid var(--linea); border-radius: 10px; overflow: hidden;
+  background: var(--blanco); box-shadow: var(--sombra-3);
+}
+.pantalla img { display: block; width: 100%; height: auto; }
+.pantalla__pie { font-size: 13px; color: var(--tenue); padding: 12px 16px; border-top: 1px solid var(--linea); }
+
+/* ---- Paso numerado. Elementor: contenedor fila + Encabezado + texto. ----- */
+.paso { display: flex; gap: 16px; align-items: flex-start; padding: 14px 0; }
+.paso__n {
+  flex: 0 0 auto; width: 30px; height: 30px; border-radius: 999px;
+  background: var(--primario); color: var(--blanco);
+  font-size: 14px; font-weight: 600; line-height: 30px; text-align: center;
+}
+.paso__cuerpo { flex: 1 1 auto; min-width: 0; }
+.paso__titulo { font-size: 17px; font-weight: 600; color: var(--titulo); margin: 0 0 4px; }
+
+/* ---- Renglón de tabla comparativa. Elementor: contenedores en rejilla,
+        NO existe widget de tabla en la versión gratuita. ------------------- */
+.tabla { border-top: 1px solid var(--linea); }
+.tabla__fila {
+  display: grid; grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--linea);
+  font-size: 15px; align-items: center;
+}
+.tabla__fila--cabeza { font-weight: 600; color: var(--titulo); font-size: 13px;
+  letter-spacing: .6px; text-transform: uppercase; }
+.tabla__que { color: var(--cuerpo); }
+.tabla__si { color: var(--exito); font-weight: 600; }
+.tabla__no { color: var(--tenue); }
+@media (max-width: 767px) {
+  .tabla__fila { grid-template-columns: 1fr 64px 64px; gap: 10px; font-size: 14px; }
+}
+
+/* ---- Cita de cliente. Elementor: contenedor + Editor + Encabezado. ------- */
+.cita { background: var(--lienzo); border-radius: 10px; padding: 28px; }
+.cita__texto { font-size: 19px; line-height: 1.5; color: var(--titulo); margin: 0 0 16px; }
+.cita__quien { font-size: 15px; color: var(--tenue); margin: 0; }
+.cita__quien b { color: var(--titulo); font-weight: 600; }
+@media (max-width: 767px) { .cita { padding: 22px; } .cita__texto { font-size: 17px; } }
+
+/* ---- Fila de datos duros. Elementor: rejilla de 3 o 4 con Encabezados. --- */
+.datos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+@media (max-width: 1024px) { .datos { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 767px)  { .datos { grid-template-columns: repeat(2, 1fr); gap: 20px; } }
+
+/* ---- Interruptor mensual/anual: en gratis son dos botones, no un control.  */
+.interruptor { display: inline-flex; border: 1px solid var(--linea); border-radius: 999px; padding: 4px; gap: 4px; background: var(--blanco); }
+.interruptor a { font-size: 14px; font-weight: 600; padding: 8px 18px; border-radius: 999px; color: var(--cuerpo); }
+.interruptor a:hover { text-decoration: none; }
+.interruptor .es-activo { background: var(--primario); color: var(--blanco); }
+
+/* ---- Logos de clientes. Elementor: rejilla de widgets Imagen. ------------ */
+.logos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; align-items: center; }
+.logos img { height: 30px; width: auto; margin: 0 auto; }
+@media (max-width: 767px) { .logos { grid-template-columns: repeat(3, 1fr); gap: 20px; } .logos img { height: 22px; } }
+
+/* ---- Rejilla de 5 y 6, para catálogos de módulos ------------------------- */
+.cols-5 { grid-template-columns: repeat(5, 1fr); }
+.cols-6 { grid-template-columns: repeat(6, 1fr); }
+@media (max-width: 1024px) { .cols-5, .cols-6 { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 767px)  { .cols-5, .cols-6 { grid-template-columns: repeat(2, 1fr); } }
+
+/* ---- Par 60/40 para portadas con pantalla al lado ----------------------- */
+.par--ancho { grid-template-columns: 1.15fr 1fr; }
+@media (max-width: 1024px) { .par--ancho { grid-template-columns: 1fr; } }
+
+/* ---- Separaciones que faltaban ------------------------------------------ */
+.sep-12 { margin-top: 12px; }
+.sep-24 { margin-top: 24px; }
+.sep-56 { margin-top: 56px; }
+.entradilla { font-size: 19px; line-height: 1.55; color: var(--tenue); margin: 0 0 16px; }
+@media (max-width: 767px) { .entradilla { font-size: 17px; } }
+
+/* ---- Correcciones de auditoría ------------------------------------------ */
+
+/* La nota al pie quedaba a 2.22:1 sobre el fondo oscuro: ilegible. */
+.seccion--oscura .nota-pie,
+.seccion--oscura .nota-sustento,
+.seccion--oscura .cifra__q { color: var(--claro); }
+
+/* La píldora azul sobre sección azul era invisible: mismo fondo. */
+.seccion--azul .etiqueta { background: var(--blanco); }
+.seccion--oscura .etiqueta { background: rgba(255,255,255,.12); color: var(--acento-claro); }
+
+/* Título de tarjeta. Es <h3> por jerarquía, pero se dibuja al tamaño de h4. */
+.t-tarjeta { font-size: 18px; line-height: 1.4; letter-spacing: -0.2px; font-weight: 600;
+  color: var(--titulo); margin: 0 0 12px; }
+.seccion--oscura .t-tarjeta { color: var(--blanco); }
+.pie .t-tarjeta { color: var(--blanco); font-size: 13px; letter-spacing: 1px;
+  text-transform: uppercase; margin-bottom: 14px; }
+
+/* A 360px el botón de la barra no tenía holgura y partía en dos renglones. */
+@media (max-width: 767px) {
+  .barra__fila { gap: 12px; }
+  .barra .btn { padding: 13px 16px; font-size: 15px; }
+}

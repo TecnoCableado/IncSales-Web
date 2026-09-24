@@ -1,0 +1,126 @@
+{
+ "version": "0.4",
+ "title": "precios · S10 SE IMPLEMENTA, NO SE ENCIENDE",
+ "type": "container",
+ "content": [
+  {
+   "id": "1623289",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "7c7d146",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "f0357bc",
+       "elType": "container",
+       "settings": {
+        "background_background": "classic",
+        "background_color": "#fff7e9",
+        "border_radius": {
+         "unit": "px",
+         "top": "8",
+         "right": "8",
+         "bottom": "8",
+         "left": "8",
+         "isLinked": true
+        },
+        "padding": {
+         "unit": "px",
+         "top": "18",
+         "right": "20",
+         "bottom": "18",
+         "left": "20",
+         "isLinked": false
+        },
+        "flex_direction": "column",
+        "flex_gap": {
+         "unit": "px",
+         "size": 4,
+         "column": "4",
+         "row": "4"
+        }
+       },
+       "elements": [
+        {
+         "id": "d34f0b1",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<strong>Esto se implementa, no se enciende con una casilla</strong> IncSales WooSync, IncSales Proveedores en Línea y IncSales Orquestador se levantan como servicio. Por eso llevan mensual e implementación.",
+          "text_color": "#4d535d"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

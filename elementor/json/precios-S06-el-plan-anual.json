@@ -1,0 +1,150 @@
+{
+ "version": "0.4",
+ "title": "precios · S06 EL PLAN ANUAL",
+ "type": "container",
+ "content": [
+  {
+   "id": "4c23963",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#f4f6f9"
+   },
+   "elements": [
+    {
+     "id": "837f95e",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "52088af",
+       "elType": "container",
+       "settings": {
+        "background_background": "classic",
+        "background_color": "#f2f7ff",
+        "border_radius": {
+         "unit": "px",
+         "top": "8",
+         "right": "8",
+         "bottom": "8",
+         "left": "8",
+         "isLinked": true
+        },
+        "padding": {
+         "unit": "px",
+         "top": "18",
+         "right": "20",
+         "bottom": "18",
+         "left": "20",
+         "isLinked": false
+        },
+        "flex_direction": "column",
+        "flex_gap": {
+         "unit": "px",
+         "size": 4,
+         "column": "4",
+         "row": "4"
+        }
+       },
+       "elements": [
+        {
+         "id": "bdcf569",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<strong>Qué cambia si pagas el año por adelantado</strong> Cuesta 15% menos, y es el segundo precio de cada tarjeta. Además,",
+          "text_color": "#4d535d"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "04a01ca",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<a href=\"migracion.html\">IncSales Migración</a>",
+          "text_color": "#4d535d"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "bcdae65",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "va sin costo: suelta arranca en $9,900.",
+          "text_color": "#4d535d"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

@@ -1,0 +1,278 @@
+{
+ "version": "0.4",
+ "title": "whatsapp · S08 PREGUNTAS",
+ "type": "container",
+ "content": [
+  {
+   "id": "a4b6347",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "72188d4",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 820,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "fe58ab3",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        },
+        "flex_align_items": "center"
+       },
+       "elements": [
+        {
+         "id": "c38003a",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Tres dudas que salen siempre",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600",
+          "align": "center"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "1dab48d",
+       "elType": "widget",
+       "widgetType": "nested-accordion",
+       "settings": {
+        "items": [
+         {
+          "_id": "69b16b9",
+          "item_title": "¿Se trae el historial del celular del vendedor?"
+         },
+         {
+          "_id": "78c4d1a",
+          "item_title": "¿Hay chatbot o respuestas automáticas?"
+         },
+         {
+          "_id": "0195b5d",
+          "item_title": "¿Le puedo escribir a un cliente que no me ha escrito?"
+         }
+        ],
+        "default_state": "all_collapsed",
+        "title_typography_typography": "custom",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "title_typography_font_weight": "600",
+        "accordion_item_title_space_between": {
+         "unit": "px",
+         "size": 0,
+         "sizes": []
+        },
+        "accordion_padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "40",
+         "bottom": "20",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "2396d35",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "22",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "7df1087",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "No. Lo que ya se habló en un celular personal se queda ahí. Desde que conectas el número, todo lo nuevo se guarda en la bitácora del negocio."
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "3fef463",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "22",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "a739f8b",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "No. Contesta tu equipo. El sistema se encarga de guardar el mensaje, asignar el hilo a quien respondió y avisarte con una insignia que no se va sola."
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "f56826f",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "22",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "2029b8a",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Sí, con una plantilla aprobada por Meta. Dentro de la ventana de 24 horas contestas libre; fuera de ella, solo plantilla. Lo que conteste vuelve a tu bandeja."
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "6cc646e",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p><a href=\"preguntas.html\">Todas las preguntas frecuentes</a></p>",
+        "align": "center",
+        "text_color": "#6a6f78",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

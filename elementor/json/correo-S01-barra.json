@@ -1,0 +1,248 @@
+{
+ "version": "0.4",
+ "title": "correo · S01 BARRA",
+ "type": "container",
+ "content": [
+  {
+   "id": "39e8cc0",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#ffffff",
+    "border_border": "solid",
+    "border_width": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "1",
+     "left": "0",
+     "isLinked": false
+    },
+    "border_color": "#dbdee3"
+   },
+   "elements": [
+    {
+     "id": "a713d0d",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "fdc8e00",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "row",
+        "flex_align_items": "center",
+        "flex_gap": {
+         "unit": "px",
+         "size": 24,
+         "column": "24",
+         "row": "24"
+        },
+        "flex_gap_mobile": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        },
+        "min_height": {
+         "unit": "px",
+         "size": 72,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "0db2b0c",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "../assets/logos/incsales-completo.svg",
+           "id": ""
+          },
+          "link_to": "custom",
+          "link": {
+           "url": "index.html",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "5871c15",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "row",
+          "flex_align_items": "center",
+          "flex_gap": {
+           "unit": "px",
+           "size": 22,
+           "column": "22",
+           "row": "22"
+          },
+          "content_width": "full"
+         },
+         "elements": [
+          {
+           "id": "1a91a6d",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"por-dentro.html\">Por dentro</a>",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "a3ca548",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"comparativa.html\">Comparativa</a>",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "b8c6c2e",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"casos.html\">Clientes</a>",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "44d9ccd",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"precios.html\">Precios</a>",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "b8e8354",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"agencia.html\">Agencia</a>",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "92295ee",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "Agenda una demo",
+          "link": {
+           "url": "contacto.html",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "size": "md",
+          "border_radius": {
+           "unit": "px",
+           "top": "6",
+           "right": "6",
+           "bottom": "6",
+           "left": "6",
+           "isLinked": true
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "15",
+           "right": "26",
+           "bottom": "15",
+           "left": "26",
+           "isLinked": false
+          },
+          "align": "left",
+          "background_color": "#1e5bd4",
+          "button_text_color": "#ffffff"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}
