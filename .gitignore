@@ -5,3 +5,11 @@
 # fuera del repositorio público.
 _brief/
 _respaldo/
+
+# Lo mismo para la agencia: la maqueta sí se publica; el brief, la
+# investigación de competencia y la guía de armado se quedan en disco.
+agencia-incoming/CONTENIDO.md
+agencia-incoming/PAQUETES.md
+agencia-incoming/INVESTIGACION.md
+agencia-incoming/GUIA-ELEMENTOR.md
+.respaldo-agencia-largo.html
