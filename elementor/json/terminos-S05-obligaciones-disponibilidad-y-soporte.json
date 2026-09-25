@@ -1,0 +1,341 @@
+{
+ "version": "0.4",
+ "title": "terminos · S05 OBLIGACIONES, DISPONIBILIDAD Y SOPORTE",
+ "type": "container",
+ "content": [
+  {
+   "id": "979f8f0",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "b132e05",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 820,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "806fb4b",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "5 · Obligaciones del cliente",
+        "header_size": "h2",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "9c5557f",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "5.1 Uso lícito",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "0fdf568",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>No se usa para amparar operaciones inexistentes o simuladas ni para guardar contenido del que no tienes derechos.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "13f029c",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "5.2 El CFDI lo emites tú",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "d3da579",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Nosotros ponemos la herramienta y el enlace con el PAC; <strong>el emisor ante el SAT eres tú</strong> , y respondes por tus datos fiscales, tus certificados y el contenido de cada comprobante.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "3fc958d",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "5.3 Cuidado de las contraseñas",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "bfe85d4",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Se guardan como huella irreversible y nadie las ve: da de baja el mismo día a quien deja la empresa.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "d3d699f",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "5.4 Reglas de WhatsApp y de correo",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "cb266fe",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Al usar tu número aceptas las políticas de Meta: fuera de la ventana de 24 horas, solo plantillas aprobadas. El correo sale de tu dominio y solo a quien lo consintió, sin listas compradas. Que Meta te limite, o que pausemos envíos por rebotes y quejas, no es falla del servicio.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "89790fd",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "5.5 Datos personales de tus clientes",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "0064523",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Tú eres el responsable de su tratamiento y nosotros los procesamos por cuenta tuya; el detalle está en el <a href=\"privacidad.html\">aviso de privacidad</a> .</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "65d0668",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "6 · Disponibilidad, mantenimientos y soporte",
+        "header_size": "h2",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "1760871",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "6.1 Disponibilidad",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "b664880",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>No comprometemos un porcentaje sin acuerdo de nivel de servicio, porque un porcentaje sin consecuencias escritas no vale nada. Ese acuerdo cuesta <strong>desde $2,900 al mes</strong> , incluido en Corporativo.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "590e234",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "6.2 Mantenimientos y soporte",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "8f53859",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Los programados se avisan antes; los de emergencia, al terminar. El soporte es en español y en México, por correo y WhatsApp en horario hábil; no incluye capturar tu información ni rehacer tu catálogo.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "d7471ba",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "6.3 Cambios en el sistema",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "3013284",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Las actualizaciones van incluidas. Si retiráramos una función que usas de forma sustancial, te decimos antes con qué se reemplaza.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

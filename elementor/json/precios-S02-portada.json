@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "9a3aeb5",
+   "id": "2700a94",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -32,17 +32,19 @@
      "bottom": "48",
      "left": "0",
      "isLinked": false
-    }
+    },
+    "background_background": "classic",
+    "background_color": "#021035"
    },
    "elements": [
     {
-     "id": "13124b3",
+     "id": "60f3c75",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
       "boxed_width": {
        "unit": "px",
-       "size": 1140,
+       "size": 1280,
        "sizes": []
       },
       "padding": {
@@ -71,7 +73,18 @@
      },
      "elements": [
       {
-       "id": "67c563b",
+       "id": "7ebd458",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<ol><li><a href=\"index.html\">Inicio</a></li><li>Precios</li></ol>",
+        "text_color": "#b9cbe8"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "c3e800b",
        "elType": "container",
        "settings": {
         "container_type": "grid",
@@ -99,364 +112,95 @@
        },
        "elements": [
         {
-         "id": "dc91ecb",
+         "id": "03054a4",
          "elType": "container",
          "settings": {
-          "flex_direction": "column",
-          "flex_gap": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 2,
+           "sizes": []
+          },
+          "grid_columns_grid_tablet": {
+           "unit": "fr",
+           "size": 1,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 1,
+           "sizes": []
+          },
+          "grid_gaps": {
            "unit": "px",
-           "size": 12,
-           "column": "12",
-           "row": "12"
+           "size": 48,
+           "column": "48",
+           "row": "32"
           }
          },
          "elements": [
           {
-           "id": "7d191b1",
+           "id": "dbdbea2",
            "elType": "container",
            "settings": {
-            "content_width": "full",
-            "background_background": "classic",
-            "background_color": "#f2f7ff",
-            "border_radius": {
+            "flex_direction": "column",
+            "flex_gap": {
              "unit": "px",
-             "top": "999",
-             "right": "999",
-             "bottom": "999",
-             "left": "999",
-             "isLinked": true
-            },
-            "padding": {
-             "unit": "px",
-             "top": "5",
-             "right": "11",
-             "bottom": "5",
-             "left": "11",
-             "isLinked": false
-            },
-            "flex_direction": "row",
-            "margin": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "14",
-             "left": "0",
-             "isLinked": false
+             "size": 12,
+             "column": "12",
+             "row": "12"
             }
            },
            "elements": [
             {
-             "id": "aa3834b",
+             "id": "c02594d",
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Precios",
+              "title": "Nueve planes, todos publicados",
               "header_size": "div",
               "title_color": "#1e5bd4",
               "typography_typography": "custom",
               "typography_font_size": {
                "unit": "px",
-               "size": 12,
+               "size": 13,
                "sizes": []
               },
-              "typography_font_weight": "600",
-              "typography_text_transform": "uppercase",
-              "typography_letter_spacing": {
-               "unit": "px",
-               "size": 0.6,
-               "sizes": []
-              }
-             },
-             "elements": [],
-             "isInner": false
-            }
-           ],
-           "isInner": false
-          },
-          {
-           "id": "f1efa04",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Precio final, en pesos y con IVA incluido",
-            "header_size": "h1",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 52,
-             "sizes": []
-            },
-            "typography_font_weight": "600"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "34fa61e",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p>Nueve planes publicados, desde $200 al mes. Aquí no hay un «contáctanos para conocer el precio».</p>",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 19,
-             "sizes": []
-            }
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "d4206c8",
-           "elType": "widget",
-           "widgetType": "icon-list",
-           "settings": {
-            "icon_list": [
-             {
-              "_id": "be483b2",
-              "text": "Sin permanencia forzosa en los planes mensuales",
-              "selected_icon": {
-               "value": "fas fa-check",
-               "library": "fa-solid"
-              }
-             },
-             {
-              "_id": "70a30b0",
-              "text": "El anual cuesta 15% menos, pagando por adelantado",
-              "selected_icon": {
-               "value": "fas fa-check",
-               "library": "fa-solid"
-              }
-             },
-             {
-              "_id": "9359446",
-              "text": "Migración sin costo al contratar cualquier plan anual",
-              "selected_icon": {
-               "value": "fas fa-check",
-               "library": "fa-solid"
-              }
-             }
-            ],
-            "space_between": {
-             "unit": "px",
-             "size": 14,
-             "sizes": []
-            },
-            "icon_size": {
-             "unit": "px",
-             "size": 17,
-             "sizes": []
-            },
-            "icon_color": "#00874a",
-            "icon_self_align": "left",
-            "text_color": "#4d535d",
-            "icon_typography_typography": "custom",
-            "icon_typography_font_size": {
-             "unit": "px",
-             "size": 16,
-             "sizes": []
-            }
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "965c25f",
-           "elType": "container",
-           "settings": {
-            "flex_direction": "row",
-            "flex_align_items": "center",
-            "flex_gap": {
-             "unit": "px",
-             "size": 4,
-             "column": "4",
-             "row": "4"
-            },
-            "border_border": "solid",
-            "border_width": {
-             "unit": "px",
-             "top": "1",
-             "right": "1",
-             "bottom": "1",
-             "left": "1",
-             "isLinked": true
-            },
-            "border_color": "#dbdee3",
-            "border_radius": {
-             "unit": "px",
-             "top": "999",
-             "right": "999",
-             "bottom": "999",
-             "left": "999",
-             "isLinked": true
-            },
-            "padding": {
-             "unit": "px",
-             "top": "4",
-             "right": "4",
-             "bottom": "4",
-             "left": "4",
-             "isLinked": true
-            },
-            "content_width": "full"
-           },
-           "elements": [
-            {
-             "id": "01d6c93",
-             "elType": "widget",
-             "widgetType": "text-editor",
-             "settings": {
-              "editor": "<a href=\"#planes\">Mensual</a>",
-              "text_color": "#4d535d"
+              "typography_font_weight": "600"
              },
              "elements": [],
              "isInner": false
             },
             {
-             "id": "ae68c3d",
-             "elType": "widget",
-             "widgetType": "text-editor",
-             "settings": {
-              "editor": "<a href=\"#anual\">Anual · 15% menos</a>",
-              "text_color": "#4d535d"
-             },
-             "elements": [],
-             "isInner": false
-            }
-           ],
-           "isInner": false
-          },
-          {
-           "id": "3a91004",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p>El monto total a la vista, como manda el artículo 7 Bis de la Ley Federal de Protección al Consumidor.</p>",
-            "text_color": "#6a6f78",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 13,
-             "sizes": []
-            }
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "3c8766e",
-         "elType": "container",
-         "settings": {
-          "background_background": "classic",
-          "background_color": "#ffffff",
-          "border_radius": {
-           "unit": "px",
-           "top": "10",
-           "right": "10",
-           "bottom": "10",
-           "left": "10",
-           "isLinked": true
-          },
-          "padding": {
-           "unit": "px",
-           "top": "28",
-           "right": "28",
-           "bottom": "28",
-           "left": "28",
-           "isLinked": true
-          },
-          "padding_mobile": {
-           "unit": "px",
-           "top": "22",
-           "right": "22",
-           "bottom": "22",
-           "left": "22",
-           "isLinked": true
-          },
-          "flex_direction": "column",
-          "flex_gap": {
-           "unit": "px",
-           "size": 12,
-           "column": "12",
-           "row": "12"
-          },
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#dbdee3",
-          "box_shadow_box_shadow_type": "yes",
-          "box_shadow_box_shadow": {
-           "horizontal": 0,
-           "vertical": 2,
-           "blur": 6,
-           "spread": 0,
-           "color": "rgba(15,19,25,0.07)"
-          }
-         },
-         "elements": [
-          {
-           "id": "4537b9d",
-           "elType": "container",
-           "settings": {
-            "content_width": "full",
-            "background_background": "classic",
-            "background_color": "#f4f6f9",
-            "border_radius": {
-             "unit": "px",
-             "top": "999",
-             "right": "999",
-             "bottom": "999",
-             "left": "999",
-             "isLinked": true
-            },
-            "padding": {
-             "unit": "px",
-             "top": "5",
-             "right": "11",
-             "bottom": "5",
-             "left": "11",
-             "isLinked": false
-            },
-            "flex_direction": "row",
-            "margin": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "14",
-             "left": "0",
-             "isLinked": false
-            }
-           },
-           "elements": [
-            {
-             "id": "8c210b0",
+             "id": "f1efa04",
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Lo que cuesta entrar",
-              "header_size": "div",
-              "title_color": "#6a6f78",
+              "title": "Precio final, en pesos y con IVA incluido",
+              "header_size": "h1",
+              "title_color": "#ffffff",
               "typography_typography": "custom",
               "typography_font_size": {
                "unit": "px",
-               "size": 12,
+               "size": 52,
                "sizes": []
               },
-              "typography_font_weight": "600",
-              "typography_text_transform": "uppercase",
-              "typography_letter_spacing": {
+              "typography_font_weight": "600"
+             },
+             "elements": [],
+             "isInner": false
+            },
+            {
+             "id": "34fa61e",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "Empieza en <strong>$200 al mes</strong> y llega hasta el sistema entero. Lo que ves aquí es lo que vas a pagar: nada de «contáctanos para conocer el precio», nada de dólares que se mueven a media quincena.",
+              "text_color": "#b9cbe8",
+              "typography_typography": "custom",
+              "typography_font_size": {
                "unit": "px",
-               "size": 0.6,
+               "size": 19,
                "sizes": []
               }
              },
@@ -467,306 +211,166 @@
            "isInner": false
           },
           {
-           "id": "a0187c9",
+           "id": "155e139",
            "elType": "container",
            "settings": {
-            "container_type": "grid",
-            "grid_columns_grid": {
-             "unit": "fr",
-             "size": 2,
-             "sizes": []
-            },
-            "grid_columns_grid_mobile": {
-             "unit": "fr",
-             "size": 2,
-             "sizes": []
-            },
-            "grid_gaps": {
+            "flex_direction": "column",
+            "flex_gap": {
              "unit": "px",
-             "size": 24,
-             "column": "24",
-             "row": "24"
+             "size": 16,
+             "column": "16",
+             "row": "16"
             }
            },
            "elements": [
             {
-             "id": "2700a94",
+             "id": "0303d5c",
              "elType": "container",
              "settings": {
               "flex_direction": "column",
               "flex_gap": {
                "unit": "px",
-               "size": 12,
-               "column": "12",
-               "row": "12"
+               "size": 16,
+               "column": "16",
+               "row": "16"
               }
              },
              "elements": [
               {
-               "id": "03054a4",
-               "elType": "container",
+               "id": "06321bd",
+               "elType": "widget",
+               "widgetType": "button",
                "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
+                "text": "Que te digamos cuál te toca",
+                "link": {
+                 "url": "contacto.html",
+                 "is_external": "",
+                 "nofollow": ""
+                },
+                "size": "md",
+                "border_radius": {
                  "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
+                 "top": "6",
+                 "right": "6",
+                 "bottom": "6",
+                 "left": "6",
+                 "isLinked": true
+                },
+                "text_padding": {
+                 "unit": "px",
+                 "top": "15",
+                 "right": "26",
+                 "bottom": "15",
+                 "left": "26",
+                 "isLinked": false
+                },
+                "align": "left",
+                "background_color": "#1e5bd4",
+                "button_text_color": "#ffffff"
                },
-               "elements": [
-                {
-                 "id": "514a88b",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "$200",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
+               "elements": [],
                "isInner": false
               },
               {
-               "id": "60f3c75",
-               "elType": "container",
+               "id": "9b58225",
+               "elType": "widget",
+               "widgetType": "button",
                "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
+                "text": "Ver las pantallas",
+                "link": {
+                 "url": "por-dentro.html",
+                 "is_external": "",
+                 "nofollow": ""
+                },
+                "size": "md",
+                "border_radius": {
                  "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
+                 "top": "6",
+                 "right": "6",
+                 "bottom": "6",
+                 "left": "6",
+                 "isLinked": true
+                },
+                "text_padding": {
+                 "unit": "px",
+                 "top": "15",
+                 "right": "26",
+                 "bottom": "15",
+                 "left": "26",
+                 "isLinked": false
+                },
+                "align": "left",
+                "background_color": "#00000000",
+                "button_text_color": "#1e5bd4",
+                "border_border": "solid",
+                "border_width": {
+                 "unit": "px",
+                 "top": "1",
+                 "right": "1",
+                 "bottom": "1",
+                 "left": "1",
+                 "isLinked": true
+                },
+                "border_color": "#dbdee3"
                },
-               "elements": [
-                {
-                 "id": "c10c93a",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "al mes el plan más chico",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
+               "elements": [],
                "isInner": false
               }
              ],
              "isInner": false
             },
             {
-             "id": "8ebb299",
-             "elType": "container",
+             "id": "8e534d5",
+             "elType": "widget",
+             "widgetType": "icon-list",
              "settings": {
-              "flex_direction": "column",
-              "flex_gap": {
+              "icon_list": [
+               {
+                "_id": "87e85c7",
+                "text": "Sin permanencia forzosa en mensual",
+                "selected_icon": {
+                 "value": "fas fa-check",
+                 "library": "fa-solid"
+                }
+               },
+               {
+                "_id": "bf7969b",
+                "text": "Anual: 15% menos y precio congelado 12 meses",
+                "selected_icon": {
+                 "value": "fas fa-check",
+                 "library": "fa-solid"
+                }
+               },
+               {
+                "_id": "001f4ef",
+                "text": "Migración sin costo con plan anual",
+                "selected_icon": {
+                 "value": "fas fa-check",
+                 "library": "fa-solid"
+                }
+               }
+              ],
+              "space_between": {
                "unit": "px",
-               "size": 12,
-               "column": "12",
-               "row": "12"
+               "size": 14,
+               "sizes": []
+              },
+              "icon_size": {
+               "unit": "px",
+               "size": 17,
+               "sizes": []
+              },
+              "icon_color": "#00874a",
+              "icon_self_align": "left",
+              "text_color": "#4d535d",
+              "icon_typography_typography": "custom",
+              "icon_typography_font_size": {
+               "unit": "px",
+               "size": 16,
+               "sizes": []
               }
              },
-             "elements": [
-              {
-               "id": "f046d4f",
-               "elType": "container",
-               "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
-                 "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
-               },
-               "elements": [
-                {
-                 "id": "d99c4ac",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "9",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
-               "isInner": false
-              },
-              {
-               "id": "af54fbc",
-               "elType": "container",
-               "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
-                 "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
-               },
-               "elements": [
-                {
-                 "id": "26e45d6",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "planes en tres familias",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
-               "isInner": false
-              }
-             ],
-             "isInner": false
-            },
-            {
-             "id": "f99fe28",
-             "elType": "container",
-             "settings": {
-              "flex_direction": "column",
-              "flex_gap": {
-               "unit": "px",
-               "size": 12,
-               "column": "12",
-               "row": "12"
-              }
-             },
-             "elements": [
-              {
-               "id": "11d5333",
-               "elType": "container",
-               "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
-                 "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
-               },
-               "elements": [
-                {
-                 "id": "144fa08",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "$750",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
-               "isInner": false
-              },
-              {
-               "id": "224e87a",
-               "elType": "container",
-               "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
-                 "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
-               },
-               "elements": [
-                {
-                 "id": "df33ed9",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "al mes por persona en Operación",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
-               "isInner": false
-              }
-             ],
-             "isInner": false
-            },
-            {
-             "id": "50b3d3a",
-             "elType": "container",
-             "settings": {
-              "flex_direction": "column",
-              "flex_gap": {
-               "unit": "px",
-               "size": 12,
-               "column": "12",
-               "row": "12"
-              }
-             },
-             "elements": [
-              {
-               "id": "fd3d609",
-               "elType": "container",
-               "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
-                 "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
-               },
-               "elements": [
-                {
-                 "id": "39a9599",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "$0",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
-               "isInner": false
-              },
-              {
-               "id": "76fcb99",
-               "elType": "container",
-               "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
-                 "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
-               },
-               "elements": [
-                {
-                 "id": "dde63bc",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "de migración con plan anual",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
-               "isInner": false
-              }
-             ],
+             "elements": [],
              "isInner": false
             }
            ],

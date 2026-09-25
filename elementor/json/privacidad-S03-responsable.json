@@ -1,0 +1,212 @@
+{
+ "version": "0.4",
+ "title": "privacidad · S03 RESPONSABLE",
+ "type": "container",
+ "content": [
+  {
+   "id": "b636082",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "79a2352",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 820,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "01bcc3f",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        }
+       },
+       "elements": [
+        {
+         "id": "376d30c",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Apartado 1",
+          "header_size": "div",
+          "title_color": "#1e5bd4",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "c9fa68a",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Incoming Sales es la responsable de tus datos",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "a85481a",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Incoming Sales, la empresa que desarrolla y opera IncSales ERP, decide qué datos se recaban, para qué se usan y cuánto tiempo se conservan. Esas decisiones las toma esta empresa, no el proveedor que renta el servidor.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "7806553",
+       "elType": "widget",
+       "widgetType": "icon-list",
+       "settings": {
+        "icon_list": [
+         {
+          "_id": "b9c399f",
+          "text": "<strong>Domicilio.</strong> Guadalajara, Jalisco, México.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "e2b2657",
+          "text": "<strong>Correo para asuntos de privacidad.</strong> <a href=\"mailto:contacto@incsales.com.mx\">contacto@incsales.com.mx</a>",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "27ddd57",
+          "text": "<strong>Teléfono.</strong> <a href=\"https://wa.me/523337793774\">+52 33 3779 3774</a>",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         }
+        ],
+        "space_between": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        },
+        "icon_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "icon_color": "#4d535d",
+        "icon_self_align": "left",
+        "text_color": "#4d535d",
+        "icon_typography_typography": "custom",
+        "icon_typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

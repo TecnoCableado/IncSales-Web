@@ -1,0 +1,229 @@
+{
+ "version": "0.4",
+ "title": "privacidad · S11 CAMBIOS",
+ "type": "container",
+ "content": [
+  {
+   "id": "fd0c458",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "ad77449",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 820,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "d7a556a",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        }
+       },
+       "elements": [
+        {
+         "id": "4b82153",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Apartado 9",
+          "header_size": "div",
+          "title_color": "#1e5bd4",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "4c709f1",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Un cambio sustancial se avisa por correo, no se cuela",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "b2c8c62",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Este aviso puede cambiar porque cambie la ley, nuestras prácticas, un proveedor o porque se agregue un módulo. Cuando pase:</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "f4d7b50",
+       "elType": "widget",
+       "widgetType": "icon-list",
+       "settings": {
+        "icon_list": [
+         {
+          "_id": "ac72838",
+          "text": "La versión vigente se publica siempre en esta misma dirección, con su número y su fecha.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "18838c6",
+          "text": "Si el cambio es sustancial —nuevas finalidades, nuevas transferencias o cambio de responsable—, te avisamos por correo a los usuarios administradores y con un mensaje dentro del sistema.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "0ba7188",
+          "text": "Las correcciones de redacción o de formato no se avisan por correo, pero sí cambian la fecha.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         }
+        ],
+        "space_between": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        },
+        "icon_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "icon_color": "#4d535d",
+        "icon_self_align": "left",
+        "text_color": "#4d535d",
+        "icon_typography_typography": "custom",
+        "icon_typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "8b81871",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<strong>Responsable:</strong> Incoming Sales · <strong>Versión:</strong> 2.0 · <strong>Última actualización:</strong> 25 de septiembre de 2026. Si después de un cambio sustancial sigues usando el servicio sin manifestar oposición, entendemos que aceptas la nueva versión.",
+        "text_color": "#6a6f78",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

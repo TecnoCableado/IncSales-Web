@@ -1,0 +1,379 @@
+/* ============================================================================
+   MARCA DE PRODUCTO · INCSALES
+   ----------------------------------------------------------------------------
+   Hoja NUEVA. Se carga DESPUÉS de sistema.css y no lo modifica ni una línea:
+
+     <link rel="stylesheet" href="assets/css/sistema.css">
+     <link rel="stylesheet" href="assets/css/productos.css">
+
+   POR QUÉ EXISTE ESTA HOJA Y NO UN PARCHE DENTRO DEL SISTEMA
+   sistema.css es el contrato del sitio entero, incluidas las páginas que no son
+   de producto. La identidad de producto es una capa encima: si mañana se decide
+   que los módulos no llevan color, se borra este archivo y el sitio sigue en
+   pie. Esa reversibilidad es la razón de la hoja aparte.
+
+   EL PRINCIPIO, Y TODO LO DEMÁS SE DERIVA DE ÉL
+   El color grande es de la familia; el color chico es del producto. El relleno
+   de la caja del icono —superficie grande, y además casi blanca— lo pone la
+   familia. El glifo de 18 o 24 px lo pone el producto. Así el ojo cuenta cinco
+   matices en una pantalla completa y aun así cada landing tiene cara propia.
+
+   CÓMO SE CALCULARON LOS DOCE HEXADECIMALES NUEVOS
+   Con el método que la cabecera de sistema.css ya documenta: OKLab, escalera de
+   luminosidad regular, croma al límite de gamut sRGB con techo, matiz que rota
+   hacia el vecino frío al oscurecer, y el ajuste final hecho sobre el par de
+   uso real, no sobre la L. Los cuatro pisos, todos medidos y todos cumplidos:
+   5.2:1 contra blanco · 4.8:1 sobre su propio tenue · 4.8:1 sobre --n2 ·
+   4.5:1 en las tres dicromacías simuladas (Machado 2009, severidad 1.0).
+   El piso de dicromacía es el que obliga a los otros tres: con 4.65 en visión
+   normal hay tonos que caen a 4.31 en protanopia; con 5.2 ninguno baja de 4.53.
+
+   ESCRITA PARA ELEMENTOR 4.3.2 GRATUITO
+   Sin sombras multicapa, sin pseudoelementos decorativos, sin transform, sin
+   clamp con vw, sin container queries y sin una sola consulta de medios. Todo
+   lo de aquí es un color, un tamaño fijo o un borde: exactamente lo que el
+   núcleo gratuito sabe teclear en un control. Tres valores por página.
+
+   LO QUE ESTA HOJA NO HACE, A PROPÓSITO
+   No reasigna --accion ni --accion-honda. El encargo pedía teñir el botón
+   también, y eso no se hace: la acción es del paraguas. El día que cada landing
+   tiene su propio botón, el usuario deja de saber dónde dar clic. (De paso:
+   --accion-fuerte no existe en sistema.css; los reales son --accion,
+   --accion-viva y --accion-honda, y los tres se quedan quietos.)
+   La raya de 14×1 px de .sobre-titulo::before tampoco se toca aquí: quitarla es
+   una decisión sobre el sistema, no sobre la marca de producto.
+
+   Detalle normativo completo: _brief/MARCA-PRODUCTO.md
+   ========================================================================== */
+
+
+/* ============================================ 1. LAS DOS RAMPAS NUEVAS
+   Solo dos, porque las otras tres familias ya tenían rampa en el sistema y
+   reutilizar pasos que hoy no significan nada es más barato —y más seguro— que
+   inventar. --p7, --p9, --v9, --p2 y --v2 estaban definidos con CERO
+   referencias en sistema.css y en portada.css: esta hoja los pone a trabajar
+   sin pisarle el significado a nadie.
+
+   Cian 190°→204° · «el documento y los canales». En sRGB este matiz no pasa de
+   croma 0.090 a la luminosidad que exige AA, y no se fuerza ni se compensa:
+   queda la familia más sobria del sistema, y para el trámite fiscal y los
+   canales eso es correcto, no una carencia. */
+:root {
+  --c1:#007974;  /* L 52.0 · 5.27:1 contra blanco · tono de la familia */
+  --c2:#00686a;  /* L 46.9 · 6.59:1 */
+  --c3:#005a5e;  /* L 42.5 · 8.00:1 */
+  --c4:#004c52;  /* L 38.0 · 9.74:1 */
+  --c-tenue:#d6fdfd;  /* L 96.7 · 1.09:1 contra blanco: casi blanco a propósito */
+  --c-claro:#6cd8d9;  /* L 81.9 · 11.05:1 sobre --noche, para la portada oscura */
+
+  /* Magenta 344°→332° · «la demanda». Aquí el gamut da de sobra, así que manda
+     el techo de croma 0.150: es el pico que el ámbar del sistema ya usa y queda
+     por debajo del 0.198 del azul de marca. Consecuencia buscada: por
+     construcción, ningún módulo puede verse más fuerte que IncSales ERP. */
+  --g1:#a44181;  /* L 53.0 · 5.75:1 · tono de la familia */
+  --g2:#933479;  /* L 48.5 · 6.98:1 */
+  --g3:#822871;  /* L 44.1 · 8.43:1 */
+  --g4:#711b69;  /* L 39.6 · 10.18:1 */
+  --g-tenue:#ffeef9;  /* L 96.6 · 1.11:1 */
+  --g-claro:#efabdb;  /* L 82.0 · 10.21:1 sobre --noche */
+}
+
+
+/* ============================================ 2. LOS TRES ROLES DE ACENTO
+   Tres tokens y ni uno más. Una página sin clase de producto hereda el azul de
+   marca, que es justo lo que le toca por ser IncSales ERP: index.html no
+   necesita clase y no cambia ni una línea al cargar esta hoja.
+
+   Se llaman --acento y no --accion porque son cosas distintas: el acento dice
+   «de qué producto es esta página» y la acción dice «dónde das clic». Mezclarlos
+   es el error que rompe los dos. */
+:root {
+  --acento:       var(--a8);
+  --acento-tenue: var(--a1);
+  --acento-claro: var(--a4);
+}
+
+
+/* ============================================ 3. LAS SEIS FAMILIAS
+   Se le pone la clase a la BANDA de la rejilla, no a la tarjeta. En cualquier
+   pantalla donde se ven más de cuatro productos el tono es de familia: el
+   índice ordena, la landing distingue. Al revés no funciona, y es lo que
+   convierte un catálogo en feria.
+
+   El paso 1 de cada familia es su tono, y lo usan también los productos que no
+   tienen página propia, porque ahí hablan como familia y no como producto. */
+.f-sistema      { --acento: var(--a8); --acento-tenue: var(--a1);      --acento-claro: var(--a4); }
+.f-demanda      { --acento: var(--g1); --acento-tenue: var(--g-tenue); --acento-claro: var(--g-claro); }
+.f-material     { --acento: var(--p7); --acento-tenue: var(--p1);      --acento-claro: var(--p2); }
+.f-documento    { --acento: var(--c1); --acento-tenue: var(--c-tenue); --acento-claro: var(--c-claro); }
+/* El verde no se eligió aquí: ya estaba decidido por el canal. Y ojo con el
+   hexadecimal reservado: #128c4a da 4.31:1 contra blanco y 4.04:1 sobre --v1,
+   así que NO cumple AA como texto ni como glifo tenue. Sirve como RELLENO
+   MACIZO con glifo blanco encima, donde el umbral es 3:1 de elemento gráfico y
+   lo pasa de sobra. El acento de texto es --v9, que está a ΔEok 16.38 de
+   --exito y a 8.37 de --exito-texto: no se confunde con «correcto». */
+.f-conversacion { --acento: var(--v9); --acento-tenue: var(--v1);      --acento-claro: var(--v2); }
+/* La gente no lleva matiz. Es la regla gramatical de NOMENCLATURA §2 convertida
+   en regla de color: lo que empieza con «IncSales» es software y lleva tono; lo
+   que termina en «IncSales» es gente y va en tinta. Sin esto, el primer agente
+   que pase le inventa un color a la agencia. */
+.f-gente        { --acento: var(--a12); --acento-tenue: var(--n2);     --acento-claro: var(--a4); }
+
+
+/* ============================================ 4. LOS QUINCE PRODUCTOS
+   La clase va en el <body> de la landing, o en la sección que la abre. Dentro de
+   la familia el paso lo fija la distancia: lo que toca a un tercero va más
+   claro, lo que vive dentro de tu pantalla va más hondo. Así el color dice algo
+   en vez de decorar, y un producto futuro se asigna sin preguntarle a nadie.
+
+   Trece hexadecimales para quince nombres: los tres de integraciones.html
+   comparten el paso 1 de su familia y los dos de gente comparten la tinta. Las
+   dos veces es una decisión, no un descuido, y las dos veces lo que los separa
+   es el glifo. */
+
+/* EL SISTEMA · el paraguas. No necesita clase, pero se escribe para que una
+   sección suelta pueda declararse del paraguas dentro de otra página. */
+.p-erp          { --acento: var(--a8); --acento-tenue: var(--a1);      --acento-claro: var(--a4); }
+
+/* LA DEMANDA · traer, contestar y cerrar. */
+.p-forms        { --acento: var(--g2); --acento-tenue: var(--g-tenue); --acento-claro: var(--g-claro); } /* lo llena un desconocido */
+.p-correo       { --acento: var(--g3); --acento-tenue: var(--g-tenue); --acento-claro: var(--g-claro); } /* sale al buzón de otro */
+.p-crm          { --acento: var(--g4); --acento-tenue: var(--g-tenue); --acento-claro: var(--g-claro); } /* vive en tu pantalla */
+/* IncSales WhatsApp es de esta banda de trabajo pero conserva el verde del
+   canal: es el único producto cuyo tono ya estaba decidido y no se toca. */
+.p-whatsapp     { --acento: var(--v9); --acento-tenue: var(--v1);      --acento-claro: var(--v2); }
+
+/* EL MATERIAL · conseguir y mover lo que vendes. Rampa que ya existía, con dos
+   avisos: --p8 y --p1 visten hoy 39 iconos en 21 páginas con significado
+   decorativo, y al volverse «el material» hay que reasignar esos usos en el
+   mismo pase de reescritura. El de la tarjeta de WhatsApp de index.html pasa al
+   verde del canal; el del sello de soporte, a caja neutra. */
+.p-inventarios  { --acento: var(--p8); --acento-tenue: var(--p1);      --acento-claro: var(--p2); } /* tu almacén */
+.p-compras      { --acento: var(--p9); --acento-tenue: var(--p1);      --acento-claro: var(--p2); } /* tu trámite de surtido */
+
+/* EL DOCUMENTO Y LOS CANALES · lo que sale de tu empresa, sea un papel o un
+   enlace. Cinco nombres en una familia porque el sistema solo tiene cuatro
+   huecos de matiz a 38° de distancia: es aritmética, no gusto. */
+.p-cotiza       { --acento: var(--c3); --acento-tenue: var(--c-tenue); --acento-claro: var(--c-claro); } /* el documento que recibe tu cliente */
+.p-facturacion  { --acento: var(--c4); --acento-tenue: var(--c-tenue); --acento-claro: var(--c-claro); } /* el trámite fiscal, lo más adentro */
+/* IncSales WooSync vive dentro del software de otro, así que va más claro. Y su
+   cian está a ~100° y ΔEok 20.1 del morado de WooCommerce (#7f54b3, 302.6° en
+   OKLCh): la separación es deliberada, para que no se lea como apropiación de
+   marca de tercero. */
+.p-woosync      { --acento: var(--c2); --acento-tenue: var(--c-tenue); --acento-claro: var(--c-claro); }
+/* Los tres bloques de integraciones.html comparten el paso 1: no tienen página
+   propia, se levantan caso por caso y se evalúan cuando el cliente ya está
+   adentro del embudo. Compartir tono en la misma página es coherencia. */
+.p-proveedores  { --acento: var(--c1); --acento-tenue: var(--c-tenue); --acento-claro: var(--c-claro); }
+.p-orquestador  { --acento: var(--c1); --acento-tenue: var(--c-tenue); --acento-claro: var(--c-claro); }
+.p-portal       { --acento: var(--c1); --acento-tenue: var(--c-tenue); --acento-claro: var(--c-claro); }
+
+/* LA GENTE · un servicio no compite en color con un módulo. Comparten el
+   hexadecimal a propósito; los separa el glifo, que en esta familia es el único
+   que no encierra nada. */
+.p-migracion    { --acento: var(--a12); --acento-tenue: var(--n2);     --acento-claro: var(--a4); }
+.p-metodo       { --acento: var(--a12); --acento-tenue: var(--n2);     --acento-claro: var(--a4); }
+
+
+/* ============================================ 5. LA CAJA DEL ICONO
+   .icono-caja ya existe en sistema.css con el par --a1/--a9 escrito a mano, no
+   con roles, así que aquí se le añade un modificador en vez de reasignarle la
+   rampa azul: reasignar --a1 y --a9 en una sección teñiría de paso los enlaces,
+   .chip--azul, .plan__cinta y la columna propia de las tablas. El acento tiene
+   presupuesto de tres apariciones, no de doce. */
+.icono-caja--producto {
+  background: var(--acento-tenue);
+  color: var(--acento);
+}
+
+/* Los 48 px de la portada de la landing. sistema.css línea 369 fija el svg de
+   .icono-caja en 18 px, así que el tamaño grande NO es una variante de color:
+   necesita regla propia, y esto es lo que las tres propuestas no vieron. Una
+   sola vez por página. */
+.icono-caja--grande {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--r-md);
+}
+.icono-caja--grande svg { width: 24px; height: 24px; }
+
+/* Los 20 px del menú, el pie y las migas, SIN tono: heredan --tinta-5. El color
+   solo existe donde alguien está comparando productos; donde ya elegiste,
+   desaparece. Es la mitad de la respuesta al problema de los quince juntos. */
+.icono-caja--chica {
+  width: 20px;
+  height: 20px;
+  border-radius: var(--r-xs);
+  background: transparent;
+  color: var(--tinta-5);
+}
+.icono-caja--chica svg { width: 14px; height: 14px; }
+
+/* La cabeza de la portada se tiñe sola: basta con que la página lleve su clase.
+   Está acotado a .portada__cabeza y no a .portada porque la maqueta es hermana
+   suya dentro de .portada__reja, y la capa de producto de la maqueta también
+   usa .icono-caja: teñirla sería pintar la pantalla del cliente. */
+.portada__cabeza .icono-caja {
+  background: var(--acento-tenue, var(--a1));
+  color: var(--acento, var(--a9));
+}
+
+
+/* ============================================ 6. EL RÓTULO DE LA PORTADA
+   Se tiñe UN .sobre-titulo por página: el de la portada. index.html tiene
+   nueve; teñir la clase saca el acento once o doce veces y el presupuesto es de
+   tres. Los otros ocho se quedan en --accion-honda, que es su color de siempre.
+   El var() de respaldo hace que esta hoja sea inofensiva en una página sin
+   clase de producto. */
+.portada__cabeza .sobre-titulo {
+  color: var(--acento, var(--accion-honda));
+}
+
+/* Sobre la portada de noche, sistema.css ya manda el rótulo a --a4 y ganaría por
+   orden de fuente, así que aquí se sube la especificidad con el contenedor y se
+   pasa al claro de la familia: entre 10.21:1 y 16.04:1 contra #021035. Sin esta
+   regla, el acento del producto desaparece justo en el patrón de portada que
+   copian las doce landings. */
+.portada--tinta .portada__cabeza .sobre-titulo {
+  color: var(--acento-claro, var(--a4));
+}
+
+/* Y la caja del icono sobre noche: el relleno tenue no existe contra un fondo
+   oscuro, así que se usa el velo blanco que el sistema ya definió para
+   .icono-caja--tinta y el glifo se va al claro de la familia. */
+.portada--tinta .portada__cabeza .icono-caja {
+  background: rgba(255,255,255,.08);
+  color: var(--acento-claro, var(--a3));
+}
+
+
+/* ============================================ 7. LA REGLA DE 3 PX
+   La tercera y última aparición del acento. Es un elemento de verdad y no un
+   ::before porque un pseudoelemento decorativo no se teclea en Elementor
+   gratuito, y porque esto en Elementor es un contenedor con borde superior:
+   dos campos, border_width y border_color. */
+.regla-producto {
+  display: block;
+  width: 40px;
+  height: 0;
+  border-top: 3px solid var(--acento);
+  margin: var(--e5) 0 var(--e6);
+}
+/* Sobre noche la regla necesita el paso claro para verse; el tono hondo
+   desaparece contra #021035. */
+.portada--tinta .regla-producto { border-top-color: var(--acento-claro); }
+
+
+/* ============================================ 8. EL CHIP DE FAMILIA
+   Mismo patrón tenue/tono que los cinco .chip del sistema, para que se lea como
+   parte de la casa y no como pieza nueva. Se usa UNA vez: el rótulo de la banda
+   en la rejilla. Si una página lo usa además del icono, del rótulo y de la
+   regla, ya se pasó del presupuesto y tiene que soltar una de las tres. */
+.chip--producto {
+  background: var(--acento-tenue);
+  color: var(--acento);
+}
+
+
+/* ============================================ 9. EL LOCKUP
+   Las cuatro piezas, siempre las cuatro y siempre en este orden: glifo, nombre
+   con marca, aposición de una línea y precio con IVA. Lo aspiracional no sale
+   del matiz: sale de esa repetición. Y el precio pegado al nombre es lo que
+   evita el reclamo en la llamada de venta, sobre todo en IncSales Forms, que
+   tiene marca fuerte y no se compra aparte. */
+.lockup {
+  display: flex;
+  align-items: center;   /* al centro óptico de la caja, no a la línea base */
+  gap: var(--e3);        /* 12 px */
+}
+.lockup__texto { min-width: 0; }
+.lockup__nombre {
+  display: block;
+  font-size: var(--t-16);
+  letter-spacing: var(--tr-16);
+  font-weight: var(--peso-fuerte);
+  color: var(--tinta);
+}
+/* La aposición es obligatoria en la primera mención de cada página y cabe en
+   una línea: «IncSales WooSync, el conector con WooCommerce». */
+.lockup__aposicion {
+  display: block;
+  font-size: var(--t-13);
+  letter-spacing: var(--tr-13);
+  color: var(--tinta-4);
+}
+/* El precio nunca va en letra chica: es del mismo tamaño que la aposición y va
+   pegado, no al pie de la tarjeta. */
+.lockup__precio {
+  display: block;
+  font-size: var(--t-13);
+  letter-spacing: var(--tr-13);
+  color: var(--tinta-4);
+  font-variant-numeric: tabular-nums;
+}
+/* Vertical, solo en la portada de la landing: caja de 48, nombre debajo. */
+.lockup--alto {
+  display: block;
+}
+.lockup--alto .lockup__texto { margin-top: var(--e4); }   /* 16 px */
+
+/* Sobre noche el nombre va en blanco y las dos líneas de apoyo en el gris claro
+   que el sistema ya usa para texto sobre fondo oscuro. */
+.portada--tinta .lockup__nombre { color: var(--tinta-noche); }
+.portada--tinta .lockup__aposicion,
+.portada--tinta .lockup__precio { color: var(--tinta-noche-2); }
+
+
+/* ============================================ 10. LO QUE ESTA HOJA PROTEGE
+   Nada de lo de abajo se escribe como regla porque no hace falta: al no
+   reasignar --accion ni --accion-honda, estas cosas se quedan quietas solas.
+   Queda escrito para que nadie «complete» el sistema y lo rompa:
+
+   · .btn es --accion #1e5bd4 en las quince páginas, incluido su hover.
+   · .chip--azul/verde/ambar/rojo/violeta, .estado y .aviso se quedan
+     semánticos: verde sí, ámbar espera, rojo error.
+   · La palomita de .lista se queda verde: es el «sí» del sistema.
+   · .plan__cinta, .plan--elegido y .tabla__col-nuestra se quedan azules.
+   · El resplandor radial de la portada oscura se queda en el azul de marca
+     rgba(52,115,239,.30) en las quince páginas: es la marca, no el producto.
+   · Los .bloque--tinta interiores no llevan acento: su rótulo sigue en --a4.
+   · El tenue de producto SOLO rellena la caja del icono. Nunca un bloque, una
+     tarjeta, una franja ni un aviso: --g-tenue está a ΔEok 1.73 del relleno de
+     error, y lo que evita la confusión es el área, no el matiz. Un cuadrito de
+     48 px con un glifo magenta no se lee como alerta; una franja de 1,160 px de
+     ancho con ese mismo relleno, sí.
+   ========================================================================== */
+
+/* ============================================================================
+   PORTADA TEÑIDA POR FAMILIA
+   ----------------------------------------------------------------------------
+   Hasta aquí el producto tenía acento pero no identidad: la portada oscura de
+   todas las landings era el mismo azul noche, así que Forms y Facturación se
+   veían igual. Estos cinco fondos se generaron en OKLab con la MISMA claridad y
+   casi el mismo croma que --noche #021035; lo único que cambia es el matiz, que
+   es el de la familia. Por eso se sienten igual de profundos y no compiten.
+   El blanco encima queda entre 17.8:1 y 18.8:1 en los cinco.
+   El botón NO se tiñe: sigue azul, que es la referencia de «aquí se da clic».
+   ========================================================================== */
+.p-crm, .p-forms, .p-correo                  { --noche-producto: #27031b; --tinta-noche-producto: #e6bdd4; }
+.p-cotiza, .p-facturacion,
+.p-woosync, .p-proveedores,
+.p-orquestador, .p-portal                    { --noche-producto: #001c1a; --tinta-noche-producto: #a2d7d2; }
+.p-inventarios, .p-compras                   { --noche-producto: #19092e; --tinta-noche-producto: #d0c3ea; }
+.p-whatsapp                                  { --noche-producto: #001c04; --tinta-noche-producto: #b0d6ba; }
+.p-erp, .p-migracion, .p-metodo              { --noche-producto: var(--noche); --tinta-noche-producto: var(--tinta-noche-2); }
+
+.portada--tinta[class*="p-"],
+.bloque--tinta[class*="p-"] {
+  background: var(--noche-producto, var(--noche));
+  color: var(--tinta-noche-producto, var(--tinta-noche-2));
+}
+.portada--tinta[class*="p-"] .entradilla,
+.bloque--tinta[class*="p-"] .encabezado p,
+.bloque--tinta[class*="p-"] .suave { color: var(--tinta-noche-producto, var(--tinta-noche-2)); }
+
+/* El rótulo y la caja del icono sobre la portada teñida usan el claro de la
+   familia, no el azul del sistema: si no, el acento se pierde contra el fondo. */
+.portada--tinta[class*="p-"] .sobre-titulo { color: var(--acento-claro); }
+.portada--tinta[class*="p-"] .icono-caja   { background: rgba(255,255,255,.12); color: var(--acento-claro); }
+.portada--tinta[class*="p-"] .portada__firma span { color: var(--tinta-noche-producto); }

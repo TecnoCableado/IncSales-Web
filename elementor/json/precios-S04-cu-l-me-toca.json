@@ -1,0 +1,245 @@
+{
+ "version": "0.4",
+ "title": "precios · S04 CUÁL ME TOCA",
+ "type": "container",
+ "content": [
+  {
+   "id": "4b1ad3b",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#f4f6f9"
+   },
+   "elements": [
+    {
+     "id": "95ad0c9",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 820,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "2609a9c",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        }
+       },
+       "elements": [
+        {
+         "id": "742f473",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "En una línea",
+          "header_size": "div",
+          "title_color": "#1e5bd4",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "db8e54a",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Así entra cada quien",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "b1fe75b",
+       "elType": "widget",
+       "widgetType": "icon-list",
+       "settings": {
+        "icon_list": [
+         {
+          "_id": "7efa420",
+          "text": "<strong>Cotizo solo y en Excel.</strong> Cotiza Uno, $200 al mes.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "119d93c",
+          "text": "<strong>Somos tres en el mostrador con el mismo catálogo.</strong> Cotiza Equipo, $499.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "6863945",
+          "text": "<strong>Se nos caen los seguimientos.</strong> CRM Esencial, $499.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "2519447",
+          "text": "<strong>Ya facturo en otro lado y quiero seguimiento.</strong> CRM Esencial, o el complemento de CRM por $499 sobre el plan que ya tengas.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "687edd6",
+          "text": "<strong>Quiero todo junto y dejar de conciliar.</strong> Operación, $7,500.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "7e66b07",
+          "text": "<strong>Tengo dos empresas y tienda en línea.</strong> Corporativo, $15,000, más IncSales WooSync.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         }
+        ],
+        "space_between": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        },
+        "icon_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "icon_color": "#4d535d",
+        "icon_self_align": "left",
+        "text_color": "#4d535d",
+        "icon_typography_typography": "custom",
+        "icon_typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "ee31736",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<a href=\"comparativa.html\">Contra lo que ya tienes</a> · <a href=\"por-dentro.html\">Las pantallas por dentro</a> · <a href=\"preguntas.html\">Preguntas frecuentes</a>",
+        "text_color": "#6a6f78",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

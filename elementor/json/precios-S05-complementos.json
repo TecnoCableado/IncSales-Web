@@ -1,0 +1,1457 @@
+{
+ "version": "0.4",
+ "title": "precios · S05 COMPLEMENTOS",
+ "type": "container",
+ "content": [
+  {
+   "id": "da6d84a",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "b978017",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "0551733",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        }
+       },
+       "elements": [
+        {
+         "id": "e630604",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Complementos",
+          "header_size": "div",
+          "title_color": "#1e5bd4",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "1e3b908",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Lo que se suma al plan trae su precio a la vista",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "0ee1ecf",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Se agregan a cualquier plan y se cobran al mes, con IVA incluido.</p>"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "1993f9d",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        }
+       },
+       "elements": [
+        {
+         "id": "867a593",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          }
+         },
+         "elements": [
+          {
+           "id": "861dd4f",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 0,
+             "column": "0",
+             "row": "0"
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": false
+            },
+            "border_color": "#dbdee3"
+           },
+           "elements": [
+            {
+             "id": "9c65ea9",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "63c5043",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Complemento",
+                "header_size": "div",
+                "title_color": "#21252d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 13,
+                 "sizes": []
+                },
+                "typography_font_weight": "600"
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "9c4ec27",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Al mes",
+                "header_size": "div",
+                "title_color": "#21252d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 13,
+                 "sizes": []
+                },
+                "typography_font_weight": "600"
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "082b381",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Nota",
+                "header_size": "div",
+                "title_color": "#21252d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 13,
+                 "sizes": []
+                },
+                "typography_font_weight": "600"
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "e0f5976",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "f60605c",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "CRM sobre un plan de Cotiza o de Facturación",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "e879ace",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "+$499",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "23846f6",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Pipelines, negocios y bitácora sobre lo que ya tienes",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "edf5858",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "5458291",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "IncSales WhatsApp",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "011a103",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "+$699",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "e60dda7",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Ya viene en CRM Crecimiento, Operación y Corporativo",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "7cb2073",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "4e904ff",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Usuario adicional, familias Cotiza y CRM",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "f0b53f8",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "+$199",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "a2d74a5",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "—",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "729d9b0",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "9e2ed25",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Usuario adicional, familia Completo",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "95469f0",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "+$349",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "d373c0d",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "—",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "02dfd0a",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "f8d2529",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Paquete de 100 CFDI adicionales",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "c39477e",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "+$499",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "bc6e911",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Se acumulan dentro del mes",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "94dddaf",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "3ecdc90",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Almacén adicional",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "b8c7251",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "+$299",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "af440fb",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "—",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "d6b4c46",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "3677a6f",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Empresa o RFC adicional",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "ad5ab82",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "+$1,900",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "b6f494a",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Datos aislados entre empresas",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "ddebbb8",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "7dcfe82",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "IncSales WooSync para WordPress y WooCommerce",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "8960bfb",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "+$1,490",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "c4b2f2c",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Es servicio: implementación desde $9,900",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "757f573",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "b40163b",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Consulta de inventarios externos por API",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "a566f03",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "+$890",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "d322266",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Por proveedor conectado. Es servicio: integración desde $12,000. En el buscador lees «Tienes 48 · Proveedor 40 en 5 d»",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "07f6a2b",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "587de19",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Orquestador de inventarios multicanal",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "9dfd58c",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "desde +$2,490",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "86bff8b",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Una sola existencia entre tienda, marketplaces y mostrador",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "6c77b8d",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "68d8a0d",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Soporte prioritario con acuerdo de servicio",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "a0d0a63",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "desde +$2,900",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "143a0d9",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Incluido en Corporativo",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "1c9eece",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "ae107a0",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Portal de clientes",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "07460e5",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "+$1,290",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "ca53b9c",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Consulta de pedidos y facturas",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

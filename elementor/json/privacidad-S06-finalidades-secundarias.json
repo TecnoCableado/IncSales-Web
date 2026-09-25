@@ -1,0 +1,187 @@
+{
+ "version": "0.4",
+ "title": "privacidad · S06 FINALIDADES SECUNDARIAS",
+ "type": "container",
+ "content": [
+  {
+   "id": "26340a9",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#f4f6f9"
+   },
+   "elements": [
+    {
+     "id": "40bd9e7",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 820,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "bd7bcb1",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        }
+       },
+       "elements": [
+        {
+         "id": "8a72115",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Apartado 4",
+          "header_size": "div",
+          "title_color": "#1e5bd4",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "8f6a901",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Las finalidades secundarias las puedes negar sin perder nada",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "f90835e",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>No son necesarias para el servicio: enviarte novedades, guías y cambios de precios; invitarte a sesiones en vivo y capacitaciones abiertas; aplicarte encuestas de satisfacción; elaborar estadísticas internas y perfiles agregados de uso; y usar el nombre de tu empresa como referencia comercial.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "c4c4a6b",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p><strong>Cómo te niegas.</strong> Escribe a <a href=\"mailto:contacto@incsales.com.mx\">contacto@incsales.com.mx</a> con el asunto «Finalidades secundarias». Tienes cinco días hábiles desde que conoces este aviso para manifestar tu negativa, y de todas formas puedes hacerlo después, cuando quieras. Cada correo comercial trae además su enlace de baja con un clic. Esa baja no cancela los avisos operativos del apartado 3: si vamos a hacer un mantenimiento, te lo tenemos que decir.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "390252c",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "Como los datos que recabamos no son sensibles —salvo los fiscales, que se piden con consentimiento expreso al contratar—, tu consentimiento se entiende otorgado de forma tácita cuando, estando este aviso a tu disposición, nos das tus datos y no manifiestas oposición.",
+        "text_color": "#6a6f78",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "0f7afca",
+   "id": "3c9e80f",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -34,18 +34,17 @@
      "isLinked": false
     },
     "background_background": "classic",
-    "background_color": "#0b3587",
-    "_element_id": "demo"
+    "background_color": "#f4f6f9"
    },
    "elements": [
     {
-     "id": "4a4d100",
+     "id": "d49b507",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
       "boxed_width": {
        "unit": "px",
-       "size": 1140,
+       "size": 820,
        "sizes": []
       },
       "padding": {
@@ -74,7 +73,7 @@
      },
      "elements": [
       {
-       "id": "4a48b7e",
+       "id": "a1b88e7",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -106,9 +105,8 @@
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
-          "title": "Te lo enseñamos con tu caso, no con un catálogo",
+          "title": "Timbramos una factura en la demo",
           "header_size": "h2",
-          "title_color": "#ffffff",
           "typography_typography": "custom",
           "typography_font_size": {
            "unit": "px",
@@ -126,87 +124,19 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>Treinta minutos con tu propia operación en pantalla. Cotizamos algo que de verdad vendas y lo timbramos.</p>",
-          "text_color": "#c3d4f0",
+          "editor": "<p>Treinta minutos. Capturamos un pedido de tu negocio, lo pasamos a factura y ves salir el CFDI 4.0 timbrado, con su PDF y su XML.</p>",
           "align": "center"
          },
          "elements": [],
          "isInner": false
-        }
-       ],
-       "isInner": false
-      },
-      {
-       "id": "3c9e80f",
-       "elType": "container",
-       "settings": {
-        "flex_direction": "column",
-        "flex_align_items": "center",
-        "margin": {
-         "unit": "px",
-         "top": "40",
-         "right": "0",
-         "bottom": "0",
-         "left": "0",
-         "isLinked": false
-        },
-        "flex_gap": {
-         "unit": "px",
-         "size": 12,
-         "column": "12",
-         "row": "12"
-        }
-       },
-       "elements": [
-        {
-         "id": "411ad42",
-         "elType": "widget",
-         "widgetType": "button",
-         "settings": {
-          "text": "Agenda una demo",
-          "link": {
-           "url": "contacto.html",
-           "is_external": "",
-           "nofollow": ""
-          },
-          "size": "md",
-          "border_radius": {
-           "unit": "px",
-           "top": "6",
-           "right": "6",
-           "bottom": "6",
-           "left": "6",
-           "isLinked": true
-          },
-          "text_padding": {
-           "unit": "px",
-           "top": "15",
-           "right": "26",
-           "bottom": "15",
-           "left": "26",
-           "isLinked": false
-          },
-          "align": "center",
-          "background_color": "#ffffff",
-          "button_text_color": "#0b3587"
-         },
-         "elements": [],
-         "isInner": false
         },
         {
-         "id": "e70a880",
+         "id": "490b734",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>contacto@incsales.com.mx · WhatsApp +52 33 3779 3774 · Guadalajara, Jalisco · respondemos el mismo día hábil.</p>",
-          "align": "center",
-          "text_color": "#6a6f78",
-          "typography_typography": "custom",
-          "typography_font_size": {
-           "unit": "px",
-           "size": 13,
-           "sizes": []
-          }
+          "editor": "<p><a href=\"contacto.html\">Agenda tu demo</a></p>",
+          "align": "center"
          },
          "elements": [],
          "isInner": false

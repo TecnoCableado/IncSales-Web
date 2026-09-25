@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "943923a",
+   "id": "7181bf6",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -32,13 +32,11 @@
      "bottom": "48",
      "left": "0",
      "isLinked": false
-    },
-    "background_background": "classic",
-    "background_color": "#f4f6f9"
+    }
    },
    "elements": [
     {
-     "id": "a92a755",
+     "id": "e972e53",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -73,7 +71,7 @@
      },
      "elements": [
       {
-       "id": "5924c8f",
+       "id": "63d2a77",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -101,74 +99,31 @@
        },
        "elements": [
         {
-         "id": "03fab2b",
-         "elType": "container",
-         "settings": {
-          "content_width": "full",
-          "background_background": "classic",
-          "background_color": "#f2f7ff",
-          "border_radius": {
-           "unit": "px",
-           "top": "999",
-           "right": "999",
-           "bottom": "999",
-           "left": "999",
-           "isLinked": true
-          },
-          "padding": {
-           "unit": "px",
-           "top": "5",
-           "right": "11",
-           "bottom": "5",
-           "left": "11",
-           "isLinked": false
-          },
-          "flex_direction": "row",
-          "margin": {
-           "unit": "px",
-           "top": "0",
-           "right": "0",
-           "bottom": "14",
-           "left": "0",
-           "isLinked": false
-          }
-         },
-         "elements": [
-          {
-           "id": "ef5dc53",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "El problema",
-            "header_size": "div",
-            "title_color": "#1e5bd4",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 12,
-             "sizes": []
-            },
-            "typography_font_weight": "600",
-            "typography_text_transform": "uppercase",
-            "typography_letter_spacing": {
-             "unit": "px",
-             "size": 0.6,
-             "sizes": []
-            },
-            "align": "center"
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "2fc403f",
+         "id": "ef5dc53",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
-          "title": "«El WhatsApp de mis ventas está en el celular del vendedor»",
+          "title": "Lo que pasa hoy",
+          "header_size": "div",
+          "title_color": "#1e5bd4",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "600",
+          "align": "center"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "dd02f1d",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Tus clientes ya te escriben por WhatsApp. Nadie sabe a quién.",
           "header_size": "h2",
           "typography_typography": "custom",
           "typography_font_size": {
@@ -186,13 +141,13 @@
        "isInner": false
       },
       {
-       "id": "5c26cc6",
+       "id": "d00cb2b",
        "elType": "container",
        "settings": {
         "container_type": "grid",
         "grid_columns_grid": {
          "unit": "fr",
-         "size": 2,
+         "size": 3,
          "sizes": []
         },
         "grid_columns_grid_tablet": {
@@ -214,7 +169,7 @@
        },
        "elements": [
         {
-         "id": "d82a6da",
+         "id": "779de60",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -263,16 +218,16 @@
          },
          "elements": [
           {
-           "id": "1652db3",
+           "id": "7c448f3",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Hoy",
+            "title": "La conversación se va con el vendedor",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
              "unit": "px",
-             "size": 18,
+             "size": 22,
              "sizes": []
             },
             "typography_font_weight": "600"
@@ -281,63 +236,12 @@
            "isInner": false
           },
           {
-           "id": "2088280",
+           "id": "573c9fd",
            "elType": "widget",
-           "widgetType": "icon-list",
+           "widgetType": "text-editor",
            "settings": {
-            "icon_list": [
-             {
-              "_id": "4c37747",
-              "text": "El número es personal y se va con quien renuncia",
-              "selected_icon": {
-               "value": "fas fa-times",
-               "library": "fa-solid"
-              }
-             },
-             {
-              "_id": "59466ad",
-              "text": "Nadie sabe qué chat se quedó sin contestar",
-              "selected_icon": {
-               "value": "fas fa-times",
-               "library": "fa-solid"
-              }
-             },
-             {
-              "_id": "6d09125",
-              "text": "La conversación se copia al sistema si alguien se acuerda",
-              "selected_icon": {
-               "value": "fas fa-times",
-               "library": "fa-solid"
-              }
-             },
-             {
-              "_id": "fdb2cbe",
-              "text": "El reporte del lunes miente sin querer",
-              "selected_icon": {
-               "value": "fas fa-times",
-               "library": "fa-solid"
-              }
-             }
-            ],
-            "space_between": {
-             "unit": "px",
-             "size": 14,
-             "sizes": []
-            },
-            "icon_size": {
-             "unit": "px",
-             "size": 17,
-             "sizes": []
-            },
-            "icon_color": "#a7abb3",
-            "icon_self_align": "left",
-            "text_color": "#6a6f78",
-            "icon_typography_typography": "custom",
-            "icon_typography_font_size": {
-             "unit": "px",
-             "size": 16,
-             "sizes": []
-            }
+            "editor": "Si no viene mañana, o si ya no trabaja aquí, el hilo se fue con su teléfono.",
+            "text_color": "#6a6f78"
            },
            "elements": [],
            "isInner": false
@@ -346,7 +250,7 @@
          "isInner": false
         },
         {
-         "id": "7ce1014",
+         "id": "7405e42",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -395,16 +299,16 @@
          },
          "elements": [
           {
-           "id": "56a8b19",
+           "id": "693e3e0",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Con IncSales WhatsApp",
+            "title": "Dos contestan y uno no contesta",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
              "unit": "px",
-             "size": 18,
+             "size": 22,
              "sizes": []
             },
             "typography_font_weight": "600"
@@ -413,63 +317,93 @@
            "isInner": false
           },
           {
-           "id": "f68dc31",
+           "id": "d5eb5cd",
            "elType": "widget",
-           "widgetType": "icon-list",
+           "widgetType": "text-editor",
            "settings": {
-            "icon_list": [
-             {
-              "_id": "d04ccc3",
-              "text": "Un número de empresa que atiende todo el equipo",
-              "selected_icon": {
-               "value": "fas fa-check",
-               "library": "fa-solid"
-              }
-             },
-             {
-              "_id": "fdcaa72",
-              "text": "El hilo se asigna al contestar y siempre tiene dueño",
-              "selected_icon": {
-               "value": "fas fa-check",
-               "library": "fa-solid"
-              }
-             },
-             {
-              "_id": "a1c1080",
-              "text": "El mensaje entrante cae solo en la bitácora",
-              "selected_icon": {
-               "value": "fas fa-check",
-               "library": "fa-solid"
-              }
-             },
-             {
-              "_id": "1c9a174",
-              "text": "Campañas por plantilla aprobada, con historial de entrega",
-              "selected_icon": {
-               "value": "fas fa-check",
-               "library": "fa-solid"
-              }
-             }
-            ],
-            "space_between": {
+            "editor": "Sin dueño declarado, el mensaje importante es siempre el que todos suponen que ya tomó otro.",
+            "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "665615e",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "cb64101",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Lo acordado no queda en el negocio",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_size": {
              "unit": "px",
-             "size": 14,
+             "size": 22,
              "sizes": []
             },
-            "icon_size": {
-             "unit": "px",
-             "size": 17,
-             "sizes": []
-            },
-            "icon_color": "#00874a",
-            "icon_self_align": "left",
-            "text_color": "#4d535d",
-            "icon_typography_typography": "custom",
-            "icon_typography_font_size": {
-             "unit": "px",
-             "size": 16,
-             "sizes": []
-            }
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "fb7338f",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "El precio se pactó en un chat y la cotización se hizo aparte, sin ese chat a la vista.",
+            "text_color": "#6a6f78"
            },
            "elements": [],
            "isInner": false

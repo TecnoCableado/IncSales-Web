@@ -1,0 +1,287 @@
+{
+ "version": "0.4",
+ "title": "terminos · S04 PRECIOS, FACTURACIÓN Y LÍMITES",
+ "type": "container",
+ "content": [
+  {
+   "id": "acbef6e",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#f4f6f9"
+   },
+   "elements": [
+    {
+     "id": "4de090a",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 820,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "a924356",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "3 · Precios, facturación y ajustes",
+        "header_size": "h2",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "9278269",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "3.1 Precio final, en pesos y con IVA incluido",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "a9bbd0f",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>El número de la <a href=\"precios.html\">página de precios</a> es el que sale de tu cuenta: no se le suma un 16% después ni depende del tipo de cambio.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "d054858",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "3.2 Cuándo se cobra y cómo se factura",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "5b88069",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Por adelantado, con los complementos en el mismo recibo y los servicios de una sola vez cotizados aparte. Emitimos CFDI por cada cobro con los datos fiscales que nos des.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "1b6b161",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "3.3 Ajuste de precio",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "3faf1f7",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Cuando mucho una vez cada doce meses y con <strong>60 días naturales de aviso</strong> . Si no te acomoda, terminas antes sin penalización; un periodo anual ya pagado no cambia.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "95af080",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "4 · Límites de cada plan",
+        "header_size": "h2",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "7ff2a0c",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "4.1 Están publicados y así se amplían",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "42b24e8",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Usuarios, CFDI al mes, almacenes y módulos viven en la <a href=\"precios.html\">página de precios</a> . Cada límite se amplía con complementos mensuales —usuario, 100 CFDI, almacén, empresa o RFC con datos aislados, WhatsApp— que se quitan en la siguiente renovación.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "9d693d4",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "4.2 Cuando te acercas al límite",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "20253d0",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Te avisamos antes de alcanzarlo: no suspendemos el timbrado, pero no se da de alta un usuario de más sin su complemento.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "4584879",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "4.3 Uso razonable",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "d38213b",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Cada persona necesita su usuario: la bitácora se sostiene sobre saber quién hizo qué. El acceso no se comparte, revende, renta ni sublicencia.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

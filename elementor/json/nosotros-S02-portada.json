@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "0fcac73",
+   "id": "b86081b",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -32,17 +32,19 @@
      "bottom": "48",
      "left": "0",
      "isLinked": false
-    }
+    },
+    "background_background": "classic",
+    "background_color": "#021035"
    },
    "elements": [
     {
-     "id": "801c2ca",
+     "id": "5b6a7a8",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
       "boxed_width": {
        "unit": "px",
-       "size": 1140,
+       "size": 1280,
        "sizes": []
       },
       "padding": {
@@ -71,7 +73,18 @@
      },
      "elements": [
       {
-       "id": "86e0e12",
+       "id": "c1e2a5a",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<ol><li><a href=\"index.html\">Inicio</a></li><li>Quiénes somos</li></ol>",
+        "text_color": "#b9cbe8"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "90fa779",
        "elType": "container",
        "settings": {
         "container_type": "grid",
@@ -99,272 +112,95 @@
        },
        "elements": [
         {
-         "id": "4282288",
+         "id": "1566358",
          "elType": "container",
          "settings": {
-          "flex_direction": "column",
-          "flex_gap": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 2,
+           "sizes": []
+          },
+          "grid_columns_grid_tablet": {
+           "unit": "fr",
+           "size": 1,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 1,
+           "sizes": []
+          },
+          "grid_gaps": {
            "unit": "px",
-           "size": 12,
-           "column": "12",
-           "row": "12"
+           "size": 48,
+           "column": "48",
+           "row": "32"
           }
          },
          "elements": [
           {
-           "id": "8021bdd",
+           "id": "0f82f78",
            "elType": "container",
            "settings": {
-            "content_width": "full",
-            "background_background": "classic",
-            "background_color": "#f2f7ff",
-            "border_radius": {
+            "flex_direction": "column",
+            "flex_gap": {
              "unit": "px",
-             "top": "999",
-             "right": "999",
-             "bottom": "999",
-             "left": "999",
-             "isLinked": true
-            },
-            "padding": {
-             "unit": "px",
-             "top": "5",
-             "right": "11",
-             "bottom": "5",
-             "left": "11",
-             "isLinked": false
-            },
-            "flex_direction": "row",
-            "margin": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "14",
-             "left": "0",
-             "isLinked": false
+             "size": 12,
+             "column": "12",
+             "row": "12"
             }
            },
            "elements": [
             {
-             "id": "6b901b4",
+             "id": "044170f",
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Incoming Sales · Guadalajara, Jalisco",
+              "title": "Incoming Sales",
               "header_size": "div",
               "title_color": "#1e5bd4",
               "typography_typography": "custom",
               "typography_font_size": {
                "unit": "px",
-               "size": 12,
+               "size": 13,
                "sizes": []
               },
-              "typography_font_weight": "600",
-              "typography_text_transform": "uppercase",
-              "typography_letter_spacing": {
-               "unit": "px",
-               "size": 0.6,
-               "sizes": []
-              }
+              "typography_font_weight": "600"
              },
              "elements": [],
              "isInner": false
-            }
-           ],
-           "isInner": false
-          },
-          {
-           "id": "89ae7d4",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Hicimos el sistema que nos hacía falta a nosotros",
-            "header_size": "h1",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 52,
-             "sizes": []
             },
-            "typography_font_weight": "600"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "c44e43a",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p>IncSales ERP no salió de una junta de producto. Salió de una distribuidora que cotiza, compra, entrega y cobra.</p>",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 19,
-             "sizes": []
-            }
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "28c155e",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p>Lo operamos todos los días en TecnoCableado, la organización número uno, con el plan Operación de <strong>$7,500 al mes</strong> , IVA incluido.</p>"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "6ce212b",
-           "elType": "widget",
-           "widgetType": "button",
-           "settings": {
-            "text": "Agenda una demo",
-            "link": {
-             "url": "contacto.html",
-             "is_external": "",
-             "nofollow": ""
-            },
-            "size": "md",
-            "border_radius": {
-             "unit": "px",
-             "top": "6",
-             "right": "6",
-             "bottom": "6",
-             "left": "6",
-             "isLinked": true
-            },
-            "text_padding": {
-             "unit": "px",
-             "top": "15",
-             "right": "26",
-             "bottom": "15",
-             "left": "26",
-             "isLinked": false
-            },
-            "align": "left",
-            "background_color": "#1e5bd4",
-            "button_text_color": "#ffffff"
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "3fff4f7",
-         "elType": "container",
-         "settings": {
-          "background_background": "classic",
-          "background_color": "#ffffff",
-          "border_radius": {
-           "unit": "px",
-           "top": "10",
-           "right": "10",
-           "bottom": "10",
-           "left": "10",
-           "isLinked": true
-          },
-          "padding": {
-           "unit": "px",
-           "top": "28",
-           "right": "28",
-           "bottom": "28",
-           "left": "28",
-           "isLinked": true
-          },
-          "padding_mobile": {
-           "unit": "px",
-           "top": "22",
-           "right": "22",
-           "bottom": "22",
-           "left": "22",
-           "isLinked": true
-          },
-          "flex_direction": "column",
-          "flex_gap": {
-           "unit": "px",
-           "size": 12,
-           "column": "12",
-           "row": "12"
-          },
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#dbdee3",
-          "box_shadow_box_shadow_type": "yes",
-          "box_shadow_box_shadow": {
-           "horizontal": 0,
-           "vertical": 2,
-           "blur": 6,
-           "spread": 0,
-           "color": "rgba(15,19,25,0.07)"
-          }
-         },
-         "elements": [
-          {
-           "id": "0df730a",
-           "elType": "container",
-           "settings": {
-            "content_width": "full",
-            "background_background": "classic",
-            "background_color": "#f4f6f9",
-            "border_radius": {
-             "unit": "px",
-             "top": "999",
-             "right": "999",
-             "bottom": "999",
-             "left": "999",
-             "isLinked": true
-            },
-            "padding": {
-             "unit": "px",
-             "top": "5",
-             "right": "11",
-             "bottom": "5",
-             "left": "11",
-             "isLinked": false
-            },
-            "flex_direction": "row",
-            "margin": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "14",
-             "left": "0",
-             "isLinked": false
-            }
-           },
-           "elements": [
             {
-             "id": "ecb41c2",
+             "id": "89ae7d4",
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Lo que sí es dato",
-              "header_size": "div",
-              "title_color": "#6a6f78",
+              "title": "Hicimos el sistema que nos hacía falta",
+              "header_size": "h1",
+              "title_color": "#ffffff",
               "typography_typography": "custom",
               "typography_font_size": {
                "unit": "px",
-               "size": 12,
+               "size": 52,
                "sizes": []
               },
-              "typography_font_weight": "600",
-              "typography_text_transform": "uppercase",
-              "typography_letter_spacing": {
+              "typography_font_weight": "600"
+             },
+             "elements": [],
+             "isInner": false
+            },
+            {
+             "id": "c44e43a",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "Incoming Sales hace IncSales ERP. No empezó como un producto: empezó porque nuestra distribuidora de cableado necesitaba <strong>cotizar, comprar y facturar en el mismo lugar</strong> , y ningún sistema lo hacía junto.",
+              "text_color": "#b9cbe8",
+              "typography_typography": "custom",
+              "typography_font_size": {
                "unit": "px",
-               "size": 0.6,
+               "size": 19,
                "sizes": []
               }
              },
@@ -375,306 +211,166 @@
            "isInner": false
           },
           {
-           "id": "011e433",
+           "id": "25155c5",
            "elType": "container",
            "settings": {
-            "container_type": "grid",
-            "grid_columns_grid": {
-             "unit": "fr",
-             "size": 2,
-             "sizes": []
-            },
-            "grid_columns_grid_mobile": {
-             "unit": "fr",
-             "size": 2,
-             "sizes": []
-            },
-            "grid_gaps": {
+            "flex_direction": "column",
+            "flex_gap": {
              "unit": "px",
-             "size": 24,
-             "column": "24",
-             "row": "24"
+             "size": 16,
+             "column": "16",
+             "row": "16"
             }
            },
            "elements": [
             {
-             "id": "266509f",
+             "id": "27592af",
              "elType": "container",
              "settings": {
               "flex_direction": "column",
               "flex_gap": {
                "unit": "px",
-               "size": 12,
-               "column": "12",
-               "row": "12"
+               "size": 16,
+               "column": "16",
+               "row": "16"
               }
              },
              "elements": [
               {
-               "id": "4c7b0d3",
-               "elType": "container",
+               "id": "6ce212b",
+               "elType": "widget",
+               "widgetType": "button",
                "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
+                "text": "Agenda tu demo",
+                "link": {
+                 "url": "contacto.html",
+                 "is_external": "",
+                 "nofollow": ""
+                },
+                "size": "md",
+                "border_radius": {
                  "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
+                 "top": "6",
+                 "right": "6",
+                 "bottom": "6",
+                 "left": "6",
+                 "isLinked": true
+                },
+                "text_padding": {
+                 "unit": "px",
+                 "top": "15",
+                 "right": "26",
+                 "bottom": "15",
+                 "left": "26",
+                 "isLinked": false
+                },
+                "align": "left",
+                "background_color": "#1e5bd4",
+                "button_text_color": "#ffffff"
                },
-               "elements": [
-                {
-                 "id": "3474ed8",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "8",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
+               "elements": [],
                "isInner": false
               },
               {
-               "id": "b90f438",
-               "elType": "container",
+               "id": "c9f434b",
+               "elType": "widget",
+               "widgetType": "button",
                "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
+                "text": "Ver a los clientes",
+                "link": {
+                 "url": "casos.html",
+                 "is_external": "",
+                 "nofollow": ""
+                },
+                "size": "md",
+                "border_radius": {
                  "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
+                 "top": "6",
+                 "right": "6",
+                 "bottom": "6",
+                 "left": "6",
+                 "isLinked": true
+                },
+                "text_padding": {
+                 "unit": "px",
+                 "top": "15",
+                 "right": "26",
+                 "bottom": "15",
+                 "left": "26",
+                 "isLinked": false
+                },
+                "align": "left",
+                "background_color": "#00000000",
+                "button_text_color": "#1e5bd4",
+                "border_border": "solid",
+                "border_width": {
+                 "unit": "px",
+                 "top": "1",
+                 "right": "1",
+                 "bottom": "1",
+                 "left": "1",
+                 "isLinked": true
+                },
+                "border_color": "#dbdee3"
                },
-               "elements": [
-                {
-                 "id": "c1b4927",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "módulos sobre una sola base de datos",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
+               "elements": [],
                "isInner": false
               }
              ],
              "isInner": false
             },
             {
-             "id": "5b6a7a8",
-             "elType": "container",
+             "id": "ce943e8",
+             "elType": "widget",
+             "widgetType": "icon-list",
              "settings": {
-              "flex_direction": "column",
-              "flex_gap": {
+              "icon_list": [
+               {
+                "_id": "c2644ae",
+                "text": "Guadalajara, Jalisco",
+                "selected_icon": {
+                 "value": "fas fa-check",
+                 "library": "fa-solid"
+                }
+               },
+               {
+                "_id": "07677ca",
+                "text": "TecnoCableado es la organización #1, en producción",
+                "selected_icon": {
+                 "value": "fas fa-check",
+                 "library": "fa-solid"
+                }
+               },
+               {
+                "_id": "63142aa",
+                "text": "Lo operamos todos los días, también en nuestra agencia",
+                "selected_icon": {
+                 "value": "fas fa-check",
+                 "library": "fa-solid"
+                }
+               }
+              ],
+              "space_between": {
                "unit": "px",
-               "size": 12,
-               "column": "12",
-               "row": "12"
+               "size": 14,
+               "sizes": []
+              },
+              "icon_size": {
+               "unit": "px",
+               "size": 17,
+               "sizes": []
+              },
+              "icon_color": "#00874a",
+              "icon_self_align": "left",
+              "text_color": "#4d535d",
+              "icon_typography_typography": "custom",
+              "icon_typography_font_size": {
+               "unit": "px",
+               "size": 16,
+               "sizes": []
               }
              },
-             "elements": [
-              {
-               "id": "25155c5",
-               "elType": "container",
-               "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
-                 "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
-               },
-               "elements": [
-                {
-                 "id": "9aac45d",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "#1",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
-               "isInner": false
-              },
-              {
-               "id": "90fa779",
-               "elType": "container",
-               "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
-                 "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
-               },
-               "elements": [
-                {
-                 "id": "79a0127",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "la organización de TecnoCableado, en producción",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
-               "isInner": false
-              }
-             ],
-             "isInner": false
-            },
-            {
-             "id": "facc0e9",
-             "elType": "container",
-             "settings": {
-              "flex_direction": "column",
-              "flex_gap": {
-               "unit": "px",
-               "size": 12,
-               "column": "12",
-               "row": "12"
-              }
-             },
-             "elements": [
-              {
-               "id": "53c8d9e",
-               "elType": "container",
-               "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
-                 "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
-               },
-               "elements": [
-                {
-                 "id": "0f83717",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "$14,759,302.27",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
-               "isInner": false
-              },
-              {
-               "id": "a855fd6",
-               "elType": "container",
-               "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
-                 "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
-               },
-               "elements": [
-                {
-                 "id": "b5a8ce1",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "traídos de HubSpot, cuadrados al centavo",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
-               "isInner": false
-              }
-             ],
-             "isInner": false
-            },
-            {
-             "id": "343b16e",
-             "elType": "container",
-             "settings": {
-              "flex_direction": "column",
-              "flex_gap": {
-               "unit": "px",
-               "size": 12,
-               "column": "12",
-               "row": "12"
-              }
-             },
-             "elements": [
-              {
-               "id": "8d9013f",
-               "elType": "container",
-               "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
-                 "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
-               },
-               "elements": [
-                {
-                 "id": "a6c45a8",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "3",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
-               "isInner": false
-              },
-              {
-               "id": "628712b",
-               "elType": "container",
-               "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
-                 "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
-               },
-               "elements": [
-                {
-                 "id": "a32dd9f",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "empresas mexicanas lo usan hoy",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
-               "isInner": false
-              }
-             ],
+             "elements": [],
              "isInner": false
             }
            ],

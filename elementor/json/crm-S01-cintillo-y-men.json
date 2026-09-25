@@ -1,0 +1,455 @@
+{
+ "version": "0.4",
+ "title": "crm · S01 CINTILLO Y MENÚ",
+ "type": "container",
+ "content": [
+  {
+   "id": "763510c",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "5af20b1",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1280,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "ff48b43",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        }
+       },
+       "elements": [
+        {
+         "id": "ecec21f",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "assets/logos/incsales-completo.svg",
+           "id": ""
+          },
+          "link_to": "custom",
+          "link": {
+           "url": "index.html",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "892a935",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          }
+         },
+         "elements": [
+          {
+           "id": "a738d18",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 12,
+             "column": "12",
+             "row": "12"
+            }
+           },
+           "elements": [
+            {
+             "id": "f6e3f83",
+             "elType": "container",
+             "settings": {
+              "flex_direction": "column",
+              "flex_gap": {
+               "unit": "px",
+               "size": 12,
+               "column": "12",
+               "row": "12"
+              }
+             },
+             "elements": [
+              {
+               "id": "b81d394",
+               "elType": "container",
+               "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                 "unit": "px",
+                 "size": 12,
+                 "column": "12",
+                 "row": "12"
+                }
+               },
+               "elements": [
+                {
+                 "id": "4edfda4",
+                 "elType": "widget",
+                 "widgetType": "text-editor",
+                 "settings": {
+                  "editor": "<p>Los módulos que ya operan todos los días</p>"
+                 },
+                 "elements": [],
+                 "isInner": false
+                },
+                {
+                 "id": "4d87fca",
+                 "elType": "widget",
+                 "widgetType": "text-editor",
+                 "settings": {
+                  "editor": "<a href=\"crm.html\">IncSales CRM Interesados, negocios y bitácora</a>",
+                  "text_color": "#4d535d"
+                 },
+                 "elements": [],
+                 "isInner": false
+                },
+                {
+                 "id": "837fc92",
+                 "elType": "widget",
+                 "widgetType": "text-editor",
+                 "settings": {
+                  "editor": "<a href=\"cotizaciones.html\">IncSales Cotiza Seis documentos, una sola forma</a>",
+                  "text_color": "#4d535d"
+                 },
+                 "elements": [],
+                 "isInner": false
+                },
+                {
+                 "id": "98fbe9e",
+                 "elType": "widget",
+                 "widgetType": "text-editor",
+                 "settings": {
+                  "editor": "<a href=\"inventarios.html\">IncSales Inventarios Variantes, kárdex y lotes</a>",
+                  "text_color": "#4d535d"
+                 },
+                 "elements": [],
+                 "isInner": false
+                },
+                {
+                 "id": "18b904b",
+                 "elType": "widget",
+                 "widgetType": "text-editor",
+                 "settings": {
+                  "editor": "<a href=\"compras.html\">IncSales Compras Requisiciones y recepciones</a>",
+                  "text_color": "#4d535d"
+                 },
+                 "elements": [],
+                 "isInner": false
+                },
+                {
+                 "id": "89ab56a",
+                 "elType": "widget",
+                 "widgetType": "text-editor",
+                 "settings": {
+                  "editor": "<a href=\"facturacion.html\">IncSales Facturación CFDI 4.0 timbrado por PAC</a>",
+                  "text_color": "#4d535d"
+                 },
+                 "elements": [],
+                 "isInner": false
+                },
+                {
+                 "id": "072ee28",
+                 "elType": "widget",
+                 "widgetType": "text-editor",
+                 "settings": {
+                  "editor": "<a href=\"whatsapp.html\">IncSales WhatsApp Tu número, bandeja de equipo</a>",
+                  "text_color": "#4d535d"
+                 },
+                 "elements": [],
+                 "isInner": false
+                },
+                {
+                 "id": "281f169",
+                 "elType": "widget",
+                 "widgetType": "text-editor",
+                 "settings": {
+                  "editor": "<a href=\"forms.html\">IncSales Forms 14 tipos de campo, tres formas</a>",
+                  "text_color": "#4d535d"
+                 },
+                 "elements": [],
+                 "isInner": false
+                },
+                {
+                 "id": "2b0176f",
+                 "elType": "widget",
+                 "widgetType": "text-editor",
+                 "settings": {
+                  "editor": "<a href=\"correo.html\">IncSales Correo Listas desde tu propio dominio</a>",
+                  "text_color": "#4d535d"
+                 },
+                 "elements": [],
+                 "isInner": false
+                },
+                {
+                 "id": "cbc4bb2",
+                 "elType": "widget",
+                 "widgetType": "text-editor",
+                 "settings": {
+                  "editor": "<a href=\"wordpress.html\">WordPress y WooCommerce IncSales WooSync, desde $1,490 al mes</a>",
+                  "text_color": "#4d535d"
+                 },
+                 "elements": [],
+                 "isInner": false
+                },
+                {
+                 "id": "efba9e5",
+                 "elType": "widget",
+                 "widgetType": "text-editor",
+                 "settings": {
+                  "editor": "<a href=\"integraciones.html\">Integraciones y API Con el ERP que ya tienes</a>",
+                  "text_color": "#4d535d"
+                 },
+                 "elements": [],
+                 "isInner": false
+                },
+                {
+                 "id": "35f9d4c",
+                 "elType": "widget",
+                 "widgetType": "text-editor",
+                 "settings": {
+                  "editor": "<a href=\"migracion.html\">IncSales Migración Desde $9,900, sin costo en plan anual</a>",
+                  "text_color": "#4d535d"
+                 },
+                 "elements": [],
+                 "isInner": false
+                },
+                {
+                 "id": "48e58af",
+                 "elType": "container",
+                 "settings": {
+                  "flex_direction": "column",
+                  "flex_gap": {
+                   "unit": "px",
+                   "size": 12,
+                   "column": "12",
+                   "row": "12"
+                  }
+                 },
+                 "elements": [
+                  {
+                   "id": "5a23526",
+                   "elType": "widget",
+                   "widgetType": "text-editor",
+                   "settings": {
+                    "editor": "Todo lo de arriba está construido y en uso.",
+                    "text_color": "#4d535d"
+                   },
+                   "elements": [],
+                   "isInner": false
+                  },
+                  {
+                   "id": "188f404",
+                   "elType": "widget",
+                   "widgetType": "text-editor",
+                   "settings": {
+                    "editor": "<a href=\"por-dentro.html\">Ver las pantallas</a>",
+                    "text_color": "#4d535d"
+                   },
+                   "elements": [],
+                   "isInner": false
+                  }
+                 ],
+                 "isInner": false
+                }
+               ],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          },
+          {
+           "id": "6e31bef",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"por-dentro.html\">Las pantallas</a>",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "a5bcff5",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"precios.html\">Precios</a>",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "11f79c5",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"agencia.html\">Agencia</a>",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "9ec3d8c",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"casos.html\">Clientes</a>",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "192dacc",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"preguntas.html\">Preguntas</a>",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "c30529c",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          }
+         },
+         "elements": [
+          {
+           "id": "c748ca6",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Agenda una demo",
+            "link": {
+             "url": "contacto.html",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "size": "md",
+            "border_radius": {
+             "unit": "px",
+             "top": "6",
+             "right": "6",
+             "bottom": "6",
+             "left": "6",
+             "isLinked": true
+            },
+            "text_padding": {
+             "unit": "px",
+             "top": "15",
+             "right": "26",
+             "bottom": "15",
+             "left": "26",
+             "isLinked": false
+            },
+            "align": "left",
+            "background_color": "#1e5bd4",
+            "button_text_color": "#ffffff"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

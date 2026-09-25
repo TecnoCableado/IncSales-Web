@@ -1,0 +1,879 @@
+{
+ "version": "0.4",
+ "title": "precios · S06 SERVICIOS DE UNA SOLA VEZ",
+ "type": "container",
+ "content": [
+  {
+   "id": "e2f2566",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#f4f6f9"
+   },
+   "elements": [
+    {
+     "id": "aa26d01",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "d8e86d2",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        }
+       },
+       "elements": [
+        {
+         "id": "d8f28b9",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Una sola vez",
+          "header_size": "div",
+          "title_color": "#1e5bd4",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "c3d61a7",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Lo que se cobra al arrancar no se vuelve a cobrar",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "d11d3b8",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        }
+       },
+       "elements": [
+        {
+         "id": "6650d5a",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          }
+         },
+         "elements": [
+          {
+           "id": "ac4a82c",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 0,
+             "column": "0",
+             "row": "0"
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": false
+            },
+            "border_color": "#dbdee3"
+           },
+           "elements": [
+            {
+             "id": "8f61a7a",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "14b0474",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Servicio",
+                "header_size": "div",
+                "title_color": "#21252d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 13,
+                 "sizes": []
+                },
+                "typography_font_weight": "600"
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "bfa6ecf",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Precio",
+                "header_size": "div",
+                "title_color": "#21252d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 13,
+                 "sizes": []
+                },
+                "typography_font_weight": "600"
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "8f9c704",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Nota",
+                "header_size": "div",
+                "title_color": "#21252d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 13,
+                 "sizes": []
+                },
+                "typography_font_weight": "600"
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "72c22d8",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "628328d",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "IncSales Migración: SAE, CONTPAQi, HubSpot, Alegra, Bind o Excel",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "5757cf9",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "desde $9,900",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "b2bdf4a",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Sin costo al contratar cualquier plan anual. La de HubSpot, en prueba, cuadró al centavo en $14,759,302.27",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "a929d37",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "a603166",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Implementación y capacitación del equipo",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "14d4ca1",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "desde $14,900",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "98face3",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Tres sesiones, manual propio y acompañamiento el primer mes. Se cobra aparte, también en anual",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "cd0e5eb",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "c14d942",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Desarrollo a la medida",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "96195bf",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "$890 la hora",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "8656dbe",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Bolsa de 40 horas desde $29,900, para reportes, integraciones y pantallas propias",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "2edf691",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "5f45627",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Carga y limpieza de catálogo",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "507f8d6",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "desde $6,900",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "3e31958",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Hasta 5,000 productos con sus claves y proveedores",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "7d19862",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "87ee563",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Configuración de WhatsApp Business API",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "849e093",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "$4,900",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "5da438d",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Alta en Meta, verificación y primeras plantillas",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "1f245b5",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "cbcaba5",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Alta de dominio de correo y calentamiento",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "6a41e6a",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "$2,900",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "fac3b65",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Registros DNS, verificación y prueba de entregabilidad",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "089a6b6",
+   "id": "4d630d7",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -32,11 +32,13 @@
      "bottom": "48",
      "left": "0",
      "isLinked": false
-    }
+    },
+    "background_background": "classic",
+    "background_color": "#f4f6f9"
    },
    "elements": [
     {
-     "id": "e92c96b",
+     "id": "089a6b6",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -71,7 +73,7 @@
      },
      "elements": [
       {
-       "id": "134f384",
+       "id": "a1a9076",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -94,73 +96,32 @@
          "size": 12,
          "column": "12",
          "row": "12"
-        }
+        },
+        "flex_align_items": "center"
        },
        "elements": [
         {
-         "id": "01a294f",
-         "elType": "container",
+         "id": "e3bcac2",
+         "elType": "widget",
+         "widgetType": "heading",
          "settings": {
-          "content_width": "full",
-          "background_background": "classic",
-          "background_color": "#f2f7ff",
-          "border_radius": {
+          "title": "Cómo trabajamos",
+          "header_size": "div",
+          "title_color": "#1e5bd4",
+          "typography_typography": "custom",
+          "typography_font_size": {
            "unit": "px",
-           "top": "999",
-           "right": "999",
-           "bottom": "999",
-           "left": "999",
-           "isLinked": true
+           "size": 13,
+           "sizes": []
           },
-          "padding": {
-           "unit": "px",
-           "top": "5",
-           "right": "11",
-           "bottom": "5",
-           "left": "11",
-           "isLinked": false
-          },
-          "flex_direction": "row",
-          "margin": {
-           "unit": "px",
-           "top": "0",
-           "right": "0",
-           "bottom": "14",
-           "left": "0",
-           "isLinked": false
-          }
+          "typography_font_weight": "600",
+          "align": "center"
          },
-         "elements": [
-          {
-           "id": "e3bcac2",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Cómo trabajamos",
-            "header_size": "div",
-            "title_color": "#1e5bd4",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 12,
-             "sizes": []
-            },
-            "typography_font_weight": "600",
-            "typography_text_transform": "uppercase",
-            "typography_letter_spacing": {
-             "unit": "px",
-             "size": 0.6,
-             "sizes": []
-            }
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
+         "elements": [],
          "isInner": false
         },
         {
-         "id": "c41a4fe",
+         "id": "1c9607c",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
@@ -172,17 +133,8 @@
            "size": 36,
            "sizes": []
           },
-          "typography_font_weight": "600"
-         },
-         "elements": [],
-         "isInner": false
-        },
-        {
-         "id": "e0763af",
-         "elType": "widget",
-         "widgetType": "text-editor",
-         "settings": {
-          "editor": "<p>No hay mesa de ayuda en otro país ni distribuidor en medio. La cadena tiene un eslabón.</p>"
+          "typography_font_weight": "600",
+          "align": "center"
          },
          "elements": [],
          "isInner": false
@@ -191,7 +143,7 @@
        "isInner": false
       },
       {
-       "id": "baf3101",
+       "id": "e92c96b",
        "elType": "container",
        "settings": {
         "container_type": "grid",
@@ -219,7 +171,7 @@
        },
        "elements": [
         {
-         "id": "72ce673",
+         "id": "1d0c89b",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -268,16 +220,16 @@
          },
          "elements": [
           {
-           "id": "9367138",
+           "id": "41c44bd",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Contesta y arregla",
+            "title": "Equipo chico, sin mesa de ayuda",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
              "unit": "px",
-             "size": 18,
+             "size": 22,
              "sizes": []
             },
             "typography_font_weight": "600"
@@ -286,11 +238,12 @@
            "isInner": false
           },
           {
-           "id": "b5b1242",
+           "id": "2246ab9",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<p>Del otro lado abre el código de ese módulo quien lo escribió.</p>"
+            "editor": "Reportas algo y lo lee quien escribió el código que lo hace.",
+            "text_color": "#6a6f78"
            },
            "elements": [],
            "isInner": false
@@ -299,7 +252,7 @@
          "isInner": false
         },
         {
-         "id": "6b1b897",
+         "id": "3b5c1cd",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -348,16 +301,16 @@
          },
          "elements": [
           {
-           "id": "34a7e10",
+           "id": "26fb507",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Se prioriza contigo",
+            "title": "Lo operamos nosotros",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
              "unit": "px",
-             "size": 18,
+             "size": 22,
              "sizes": []
             },
             "typography_font_weight": "600"
@@ -366,11 +319,12 @@
            "isInner": false
           },
           {
-           "id": "0300ae2",
+           "id": "98e4c58",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<p>Lo que pides se estima en horas: <strong>$890 la hora</strong> , bolsa de 40 horas desde <strong>$29,900</strong> .</p>"
+            "editor": "El mismo sistema lleva la distribuidora y la <a href=\"agencia.html\">agencia de marketing</a> que también somos.",
+            "text_color": "#6a6f78"
            },
            "elements": [],
            "isInner": false
@@ -379,7 +333,7 @@
          "isInner": false
         },
         {
-         "id": "6932f41",
+         "id": "baf3101",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -428,16 +382,16 @@
          },
          "elements": [
           {
-           "id": "5b62e6c",
+           "id": "80d4da4",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Duele aquí primero",
+            "title": "O cuadra, o no se entrega",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
              "unit": "px",
-             "size": 18,
+             "size": 22,
              "sizes": []
             },
             "typography_font_weight": "600"
@@ -446,13 +400,52 @@
            "isInner": false
           },
           {
-           "id": "a81c4fc",
+           "id": "33b2fdf",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<p>Lo que cambia se usa antes en TecnoCableado, con datos reales.</p>"
+            "editor": "La migración de HubSpot se verificó contra el total del origen.",
+            "text_color": "#6a6f78"
            },
            "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "6932f41",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 12,
+             "column": "12",
+             "row": "12"
+            }
+           },
+           "elements": [
+            {
+             "id": "d24c07a",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "$14,759,302.27",
+              "text_color": "#4d535d"
+             },
+             "elements": [],
+             "isInner": false
+            },
+            {
+             "id": "a81c4fc",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "El mismo número en origen y destino",
+              "text_color": "#4d535d"
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
            "isInner": false
           }
          ],

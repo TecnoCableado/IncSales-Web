@@ -1,0 +1,626 @@
+{
+ "version": "0.4",
+ "title": "privacidad · S10 COOKIES",
+ "type": "container",
+ "content": [
+  {
+   "id": "811be43",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#f4f6f9"
+   },
+   "elements": [
+    {
+     "id": "f7d14ff",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "9a9c0ae",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        },
+        "flex_align_items": "center"
+       },
+       "elements": [
+        {
+         "id": "b13e058",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Apartado 8",
+          "header_size": "div",
+          "title_color": "#1e5bd4",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "600",
+          "align": "center"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "5d303fb",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Tres tipos de cookies, y solo una no se puede apagar",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600",
+          "align": "center"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "c55eec2",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Una cookie es un archivo pequeño que se guarda en tu navegador para reconocerlo la próxima vez. Por ellas se recaban los datos técnicos del apartado 2.</p>",
+          "align": "center"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "c0d7274",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        }
+       },
+       "elements": [
+        {
+         "id": "09aa607",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          }
+         },
+         "elements": [
+          {
+           "id": "61a2cce",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 0,
+             "column": "0",
+             "row": "0"
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": false
+            },
+            "border_color": "#dbdee3"
+           },
+           "elements": [
+            {
+             "id": "f78a51b",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "00d4afc",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Tipo",
+                "header_size": "div",
+                "title_color": "#21252d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 13,
+                 "sizes": []
+                },
+                "typography_font_weight": "600"
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "bba5d93",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Para qué sirve",
+                "header_size": "div",
+                "title_color": "#21252d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 13,
+                 "sizes": []
+                },
+                "typography_font_weight": "600"
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "2485c56",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "¿Se puede apagar?",
+                "header_size": "div",
+                "title_color": "#21252d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 13,
+                 "sizes": []
+                },
+                "typography_font_weight": "600"
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "e85da30",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "7318230",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Necesarias",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "84cc5ce",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Sostener tu sesión, proteger el acceso y recordar preferencias básicas",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "6d76bbf",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "No",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "a2f897c",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "9e65a78",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "De medición",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "8220afe",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Saber qué páginas se leen, cuánto tiempo y desde qué dispositivo",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "46107b8",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Sí",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "deda41c",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "7b6dcf6",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "De publicidad",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "f96af80",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Medir qué anuncio trajo a una persona y no repetirle uno que ya cumplió",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "656bdd1",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Sí",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "5dba5c8",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "Desde la configuración de tu navegador puedes bloquearlas, borrar las que ya tienes o pedir aviso antes de guardar una nueva. Si bloqueas las necesarias, la sesión no se sostiene y no vas a poder entrar al sistema.",
+        "align": "center",
+        "text_color": "#6a6f78",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

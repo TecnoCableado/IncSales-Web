@@ -1,0 +1,283 @@
+{
+ "version": "0.4",
+ "title": "privacidad · S04 QUÉ DATOS",
+ "type": "container",
+ "content": [
+  {
+   "id": "64eebfb",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#f4f6f9"
+   },
+   "elements": [
+    {
+     "id": "c172faa",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 820,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "cf89164",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        }
+       },
+       "elements": [
+        {
+         "id": "e341416",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Apartado 2",
+          "header_size": "div",
+          "title_color": "#1e5bd4",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "11e900c",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Cuatro grupos de datos, y ninguno «por si acaso»",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "724adec",
+       "elType": "widget",
+       "widgetType": "icon-list",
+       "settings": {
+        "icon_list": [
+         {
+          "_id": "4f3e2d4",
+          "text": "<strong>Identificación y contacto.</strong> Nombre, correo, teléfono o celular, número de WhatsApp y el nombre de tu empresa.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "b0f0dd2",
+          "text": "<strong>Laborales.</strong> Puesto o área, giro, número aproximado de usuarios y qué sistema usas hoy, para cotizarte el plan correcto.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "0e2192e",
+          "text": "<strong>Fiscales, solo si contratas.</strong> RFC, razón social, régimen fiscal, domicilio fiscal, código postal y uso del CFDI, porque el CFDI 4.0 los exige.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "32f2201",
+          "text": "<strong>Técnicos de navegación.</strong> Dirección IP, navegador, sistema operativo, páginas vistas y el sitio o anuncio desde el que llegaste. Se recaban por medios remotos y se explican en el apartado 8.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         }
+        ],
+        "space_between": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        },
+        "icon_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "icon_color": "#4d535d",
+        "icon_self_align": "left",
+        "text_color": "#4d535d",
+        "icon_typography_typography": "custom",
+        "icon_typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "2b2714a",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Los obtenemos de ti cuando llenas un formulario, nos escribes por WhatsApp o correo, agendas una demo o firmas contrato; de forma indirecta cuando alguien de tu empresa te invita como usuario; por cookies en este sitio; y de fuentes de acceso público, como directorios empresariales, cuando prospectamos.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "2624001",
+       "elType": "container",
+       "settings": {
+        "background_background": "classic",
+        "background_color": "#f2f7ff",
+        "border_radius": {
+         "unit": "px",
+         "top": "8",
+         "right": "8",
+         "bottom": "8",
+         "left": "8",
+         "isLinked": true
+        },
+        "padding": {
+         "unit": "px",
+         "top": "18",
+         "right": "20",
+         "bottom": "18",
+         "left": "20",
+         "isLinked": false
+        },
+        "flex_direction": "column",
+        "flex_gap": {
+         "unit": "px",
+         "size": 4,
+         "column": "4",
+         "row": "4"
+        }
+       },
+       "elements": [
+        {
+         "id": "0c4b1f5",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          }
+         },
+         "elements": [
+          {
+           "id": "0e0e86a",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<strong>No recabamos datos sensibles ni datos de tarjetas</strong> Ninguna finalidad de este aviso requiere origen étnico, estado de salud, datos biométricos, creencias, afiliación sindical, opiniones políticas ni preferencia sexual: no se piden ni se guardan. Este sitio tampoco tiene pasarela de pago, así que nunca te va a pedir número de tarjeta, NIP ni claves de banca en línea.",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

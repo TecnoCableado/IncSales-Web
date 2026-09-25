@@ -28,9 +28,27 @@ def texto_json(d):
     for e in d["content"]: rec(e)
     return re.sub(r"<[^>]+>", " ", " ".join(out))
 
+def recortar_maquetas(html):
+    """Quita los bloques que el generador NO traduce a proposito: la interfaz
+    falsa del producto, que se vuelve una imagen, y la barra del navegador de
+    mentiras. Cuenta anidamiento en vez de usar un regex glotón."""
+    for clase in ("app", "lienzo-app", "marco__barra", "modal", "lateral", "cabecera-app"):
+        while True:
+            m = re.search(r'<div class="[^"]*\b' + clase + r'\b[^"]*"[^>]*>', html)
+            if not m: break
+            i, prof = m.end(), 1
+            while prof and i < len(html):
+                a = html.find("<div", i); c = html.find("</div>", i)
+                if c == -1: break
+                if a != -1 and a < c: prof += 1; i = a + 4
+                else: prof -= 1; i = c + 6
+            html = html[:m.start()] + " " + html[i:]
+    return re.sub(r'<span class="marco__url">.*?</span>', " ", html, flags=re.S)
+
 def secciones_html(ruta):
     html = open(ruta, encoding="utf-8").read()
     html = re.sub(r"<svg.*?</svg>", " ", html, flags=re.S)
+    html = recortar_maquetas(html)
     bloques = re.findall(r"<!--\s*(S\d+)\s*·[^>]*-->\s*(<(?:section|header|footer)[\s\S]*?</(?:section|header|footer)>)", html)
     return {cod: re.sub(r"<[^>]+>", " ", cuerpo) for cod, cuerpo in bloques}
 

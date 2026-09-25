@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "329427f",
+   "id": "abdca85",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -32,17 +32,19 @@
      "bottom": "48",
      "left": "0",
      "isLinked": false
-    }
+    },
+    "background_background": "classic",
+    "background_color": "#021035"
    },
    "elements": [
     {
-     "id": "3e09de7",
+     "id": "15e9076",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
       "boxed_width": {
        "unit": "px",
-       "size": 1140,
+       "size": 1280,
        "sizes": []
       },
       "padding": {
@@ -71,7 +73,18 @@
      },
      "elements": [
       {
-       "id": "65ef1ae",
+       "id": "108fdb3",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<ol><li><a href=\"index.html\">Inicio</a></li><li>Antes de decidir</li><li>Por dentro</li></ol>",
+        "text_color": "#b9cbe8"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "91ab964",
        "elType": "container",
        "settings": {
         "container_type": "grid",
@@ -99,54 +112,48 @@
        },
        "elements": [
         {
-         "id": "6d9826a",
+         "id": "5e98040",
          "elType": "container",
          "settings": {
-          "flex_direction": "column",
-          "flex_gap": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 2,
+           "sizes": []
+          },
+          "grid_columns_grid_tablet": {
+           "unit": "fr",
+           "size": 1,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 1,
+           "sizes": []
+          },
+          "grid_gaps": {
            "unit": "px",
-           "size": 12,
-           "column": "12",
-           "row": "12"
+           "size": 48,
+           "column": "48",
+           "row": "32"
           }
          },
          "elements": [
           {
-           "id": "4b96ad6",
+           "id": "955d3cf",
            "elType": "container",
            "settings": {
-            "content_width": "full",
-            "background_background": "classic",
-            "background_color": "#f2f7ff",
-            "border_radius": {
+            "flex_direction": "column",
+            "flex_gap": {
              "unit": "px",
-             "top": "999",
-             "right": "999",
-             "bottom": "999",
-             "left": "999",
-             "isLinked": true
-            },
-            "padding": {
-             "unit": "px",
-             "top": "5",
-             "right": "11",
-             "bottom": "5",
-             "left": "11",
-             "isLinked": false
-            },
-            "flex_direction": "row",
-            "margin": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "14",
-             "left": "0",
-             "isLinked": false
+             "size": 12,
+             "column": "12",
+             "row": "12"
             }
            },
            "elements": [
             {
-             "id": "401a26f",
+             "id": "2e8cf3e",
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
@@ -156,259 +163,44 @@
               "typography_typography": "custom",
               "typography_font_size": {
                "unit": "px",
-               "size": 12,
+               "size": 13,
                "sizes": []
               },
-              "typography_font_weight": "600",
-              "typography_text_transform": "uppercase",
-              "typography_letter_spacing": {
-               "unit": "px",
-               "size": 0.6,
-               "sizes": []
-              }
+              "typography_font_weight": "600"
              },
              "elements": [],
              "isInner": false
-            }
-           ],
-           "isInner": false
-          },
-          {
-           "id": "2d20a00",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Siete pantallas, con datos adentro",
-            "header_size": "h1",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 52,
-             "sizes": []
             },
-            "typography_font_weight": "600"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "da46ec6",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p>Esta página no describe el producto: lo enseña. Las rutas son las reales y los números se sostienen entre una pantalla y la siguiente.</p>",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 19,
-             "sizes": []
-            }
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "b8af29c",
-           "elType": "widget",
-           "widgetType": "icon-list",
-           "settings": {
-            "icon_list": [
-             {
-              "_id": "afe9cf9",
-              "text": "Las rutas que verás son las del sistema",
-              "selected_icon": {
-               "value": "fas fa-check",
-               "library": "fa-solid"
-              }
-             },
-             {
-              "_id": "7782a53",
-              "text": "Subdominio propio por empresa",
-              "selected_icon": {
-               "value": "fas fa-check",
-               "library": "fa-solid"
-              }
-             },
-             {
-              "_id": "ad6a698",
-              "text": "Desde <strong>$200 al mes</strong> , IVA incluido",
-              "selected_icon": {
-               "value": "fas fa-check",
-               "library": "fa-solid"
-              }
-             }
-            ],
-            "space_between": {
-             "unit": "px",
-             "size": 14,
-             "sizes": []
-            },
-            "icon_size": {
-             "unit": "px",
-             "size": 17,
-             "sizes": []
-            },
-            "icon_color": "#00874a",
-            "icon_self_align": "left",
-            "text_color": "#4d535d",
-            "icon_typography_typography": "custom",
-            "icon_typography_font_size": {
-             "unit": "px",
-             "size": 16,
-             "sizes": []
-            }
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "42c9de3",
-           "elType": "widget",
-           "widgetType": "button",
-           "settings": {
-            "text": "Agenda una demo",
-            "link": {
-             "url": "contacto.html",
-             "is_external": "",
-             "nofollow": ""
-            },
-            "size": "md",
-            "border_radius": {
-             "unit": "px",
-             "top": "6",
-             "right": "6",
-             "bottom": "6",
-             "left": "6",
-             "isLinked": true
-            },
-            "text_padding": {
-             "unit": "px",
-             "top": "15",
-             "right": "26",
-             "bottom": "15",
-             "left": "26",
-             "isLinked": false
-            },
-            "align": "left",
-            "background_color": "#1e5bd4",
-            "button_text_color": "#ffffff"
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "ad45b3f",
-         "elType": "container",
-         "settings": {
-          "background_background": "classic",
-          "background_color": "#ffffff",
-          "border_radius": {
-           "unit": "px",
-           "top": "10",
-           "right": "10",
-           "bottom": "10",
-           "left": "10",
-           "isLinked": true
-          },
-          "padding": {
-           "unit": "px",
-           "top": "28",
-           "right": "28",
-           "bottom": "28",
-           "left": "28",
-           "isLinked": true
-          },
-          "padding_mobile": {
-           "unit": "px",
-           "top": "22",
-           "right": "22",
-           "bottom": "22",
-           "left": "22",
-           "isLinked": true
-          },
-          "flex_direction": "column",
-          "flex_gap": {
-           "unit": "px",
-           "size": 12,
-           "column": "12",
-           "row": "12"
-          },
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#dbdee3",
-          "box_shadow_box_shadow_type": "yes",
-          "box_shadow_box_shadow": {
-           "horizontal": 0,
-           "vertical": 2,
-           "blur": 6,
-           "spread": 0,
-           "color": "rgba(15,19,25,0.07)"
-          }
-         },
-         "elements": [
-          {
-           "id": "ea9be6f",
-           "elType": "container",
-           "settings": {
-            "content_width": "full",
-            "background_background": "classic",
-            "background_color": "#f4f6f9",
-            "border_radius": {
-             "unit": "px",
-             "top": "999",
-             "right": "999",
-             "bottom": "999",
-             "left": "999",
-             "isLinked": true
-            },
-            "padding": {
-             "unit": "px",
-             "top": "5",
-             "right": "11",
-             "bottom": "5",
-             "left": "11",
-             "isLinked": false
-            },
-            "flex_direction": "row",
-            "margin": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "14",
-             "left": "0",
-             "isLinked": false
-            }
-           },
-           "elements": [
             {
-             "id": "84b285d",
+             "id": "2d20a00",
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "En pantalla",
-              "header_size": "div",
-              "title_color": "#6a6f78",
+              "title": "Estas son las pantallas que vas a usar el lunes",
+              "header_size": "h1",
+              "title_color": "#ffffff",
               "typography_typography": "custom",
               "typography_font_size": {
                "unit": "px",
-               "size": 12,
+               "size": 52,
                "sizes": []
               },
-              "typography_font_weight": "600",
-              "typography_text_transform": "uppercase",
-              "typography_letter_spacing": {
+              "typography_font_weight": "600"
+             },
+             "elements": [],
+             "isInner": false
+            },
+            {
+             "id": "da46ec6",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "Seis pantallas del ERP con <strong>sus rutas reales</strong> , más los estados que casi nadie diseña. Los nombres y los importes son de ejemplo; el software es el mismo que cotiza, timbra y contesta todos los días.",
+              "text_color": "#b9cbe8",
+              "typography_typography": "custom",
+              "typography_font_size": {
                "unit": "px",
-               "size": 0.6,
+               "size": 19,
                "sizes": []
               }
              },
@@ -419,306 +211,166 @@
            "isInner": false
           },
           {
-           "id": "b2db953",
+           "id": "77ec88b",
            "elType": "container",
            "settings": {
-            "container_type": "grid",
-            "grid_columns_grid": {
-             "unit": "fr",
-             "size": 2,
-             "sizes": []
-            },
-            "grid_columns_grid_mobile": {
-             "unit": "fr",
-             "size": 2,
-             "sizes": []
-            },
-            "grid_gaps": {
+            "flex_direction": "column",
+            "flex_gap": {
              "unit": "px",
-             "size": 24,
-             "column": "24",
-             "row": "24"
+             "size": 16,
+             "column": "16",
+             "row": "16"
             }
            },
            "elements": [
             {
-             "id": "5e98040",
+             "id": "08b6c23",
              "elType": "container",
              "settings": {
               "flex_direction": "column",
               "flex_gap": {
                "unit": "px",
-               "size": 12,
-               "column": "12",
-               "row": "12"
+               "size": 16,
+               "column": "16",
+               "row": "16"
               }
              },
              "elements": [
               {
-               "id": "a0007b2",
-               "elType": "container",
+               "id": "1e85330",
+               "elType": "widget",
+               "widgetType": "button",
                "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
+                "text": "Agenda tu demo",
+                "link": {
+                 "url": "contacto.html",
+                 "is_external": "",
+                 "nofollow": ""
+                },
+                "size": "md",
+                "border_radius": {
                  "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
+                 "top": "6",
+                 "right": "6",
+                 "bottom": "6",
+                 "left": "6",
+                 "isLinked": true
+                },
+                "text_padding": {
+                 "unit": "px",
+                 "top": "15",
+                 "right": "26",
+                 "bottom": "15",
+                 "left": "26",
+                 "isLinked": false
+                },
+                "align": "left",
+                "background_color": "#1e5bd4",
+                "button_text_color": "#ffffff"
                },
-               "elements": [
-                {
-                 "id": "a87325a",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "7",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
+               "elements": [],
                "isInner": false
               },
               {
-               "id": "77ec88b",
-               "elType": "container",
+               "id": "7c0183c",
+               "elType": "widget",
+               "widgetType": "button",
                "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
+                "text": "Ver los planes",
+                "link": {
+                 "url": "precios.html",
+                 "is_external": "",
+                 "nofollow": ""
+                },
+                "size": "md",
+                "border_radius": {
                  "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
+                 "top": "6",
+                 "right": "6",
+                 "bottom": "6",
+                 "left": "6",
+                 "isLinked": true
+                },
+                "text_padding": {
+                 "unit": "px",
+                 "top": "15",
+                 "right": "26",
+                 "bottom": "15",
+                 "left": "26",
+                 "isLinked": false
+                },
+                "align": "left",
+                "background_color": "#00000000",
+                "button_text_color": "#1e5bd4",
+                "border_border": "solid",
+                "border_width": {
+                 "unit": "px",
+                 "top": "1",
+                 "right": "1",
+                 "bottom": "1",
+                 "left": "1",
+                 "isLinked": true
+                },
+                "border_color": "#dbdee3"
                },
-               "elements": [
-                {
-                 "id": "abfcf98",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "pantallas completas",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
+               "elements": [],
                "isInner": false
               }
              ],
              "isInner": false
             },
             {
-             "id": "e7cf9df",
-             "elType": "container",
+             "id": "36b415f",
+             "elType": "widget",
+             "widgetType": "icon-list",
              "settings": {
-              "flex_direction": "column",
-              "flex_gap": {
+              "icon_list": [
+               {
+                "_id": "6bd6273",
+                "text": "Rutas reales: /negocios, /ingresos/cotizaciones, /facturas",
+                "selected_icon": {
+                 "value": "fas fa-check",
+                 "library": "fa-solid"
+                }
+               },
+               {
+                "_id": "962d34a",
+                "text": "Cada empresa entra por su propio subdominio",
+                "selected_icon": {
+                 "value": "fas fa-check",
+                 "library": "fa-solid"
+                }
+               },
+               {
+                "_id": "698a60e",
+                "text": "Desde $200 al mes, IVA incluido",
+                "selected_icon": {
+                 "value": "fas fa-check",
+                 "library": "fa-solid"
+                }
+               }
+              ],
+              "space_between": {
                "unit": "px",
-               "size": 12,
-               "column": "12",
-               "row": "12"
+               "size": 14,
+               "sizes": []
+              },
+              "icon_size": {
+               "unit": "px",
+               "size": 17,
+               "sizes": []
+              },
+              "icon_color": "#00874a",
+              "icon_self_align": "left",
+              "text_color": "#4d535d",
+              "icon_typography_typography": "custom",
+              "icon_typography_font_size": {
+               "unit": "px",
+               "size": 16,
+               "sizes": []
               }
              },
-             "elements": [
-              {
-               "id": "15e9076",
-               "elType": "container",
-               "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
-                 "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
-               },
-               "elements": [
-                {
-                 "id": "5ad35e0",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "8",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
-               "isInner": false
-              },
-              {
-               "id": "b348263",
-               "elType": "container",
-               "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
-                 "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
-               },
-               "elements": [
-                {
-                 "id": "c056f25",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "módulos sobre una sola base de datos",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
-               "isInner": false
-              }
-             ],
-             "isInner": false
-            },
-            {
-             "id": "6c63b5f",
-             "elType": "container",
-             "settings": {
-              "flex_direction": "column",
-              "flex_gap": {
-               "unit": "px",
-               "size": 12,
-               "column": "12",
-               "row": "12"
-              }
-             },
-             "elements": [
-              {
-               "id": "ef92c18",
-               "elType": "container",
-               "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
-                 "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
-               },
-               "elements": [
-                {
-                 "id": "dd126bb",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "6",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
-               "isInner": false
-              },
-              {
-               "id": "1b6e246",
-               "elType": "container",
-               "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
-                 "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
-               },
-               "elements": [
-                {
-                 "id": "1e2451e",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "documentos con la misma forma",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
-               "isInner": false
-              }
-             ],
-             "isInner": false
-            },
-            {
-             "id": "1dda8ec",
-             "elType": "container",
-             "settings": {
-              "flex_direction": "column",
-              "flex_gap": {
-               "unit": "px",
-               "size": 12,
-               "column": "12",
-               "row": "12"
-              }
-             },
-             "elements": [
-              {
-               "id": "14b3807",
-               "elType": "container",
-               "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
-                 "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
-               },
-               "elements": [
-                {
-                 "id": "4bdbb24",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "14",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
-               "isInner": false
-              },
-              {
-               "id": "0b6f08a",
-               "elType": "container",
-               "settings": {
-                "flex_direction": "column",
-                "flex_gap": {
-                 "unit": "px",
-                 "size": 12,
-                 "column": "12",
-                 "row": "12"
-                }
-               },
-               "elements": [
-                {
-                 "id": "89534d5",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "tipos de campo en los formularios",
-                  "text_color": "#4d535d"
-                 },
-                 "elements": [],
-                 "isInner": false
-                }
-               ],
-               "isInner": false
-              }
-             ],
+             "elements": [],
              "isInner": false
             }
            ],

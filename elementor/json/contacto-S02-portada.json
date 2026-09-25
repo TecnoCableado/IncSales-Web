@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "4ab6550",
+   "id": "6916ddb",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -32,17 +32,19 @@
      "bottom": "48",
      "left": "0",
      "isLinked": false
-    }
+    },
+    "background_background": "classic",
+    "background_color": "#021035"
    },
    "elements": [
     {
-     "id": "1cbb11e",
+     "id": "f4a754b",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
       "boxed_width": {
        "unit": "px",
-       "size": 1140,
+       "size": 1280,
        "sizes": []
       },
       "padding": {
@@ -71,7 +73,18 @@
      },
      "elements": [
       {
-       "id": "1c3b6bb",
+       "id": "f39a9cf",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<ol><li><a href=\"index.html\">Inicio</a></li><li>Agenda una demo</li></ol>",
+        "text_color": "#b9cbe8"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "a3e81e6",
        "elType": "container",
        "settings": {
         "container_type": "grid",
@@ -99,281 +112,437 @@
        },
        "elements": [
         {
-         "id": "3b048e6",
+         "id": "c070a37",
          "elType": "container",
          "settings": {
-          "flex_direction": "column",
-          "flex_gap": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 2,
+           "sizes": []
+          },
+          "grid_columns_grid_tablet": {
+           "unit": "fr",
+           "size": 1,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 1,
+           "sizes": []
+          },
+          "grid_gaps": {
            "unit": "px",
-           "size": 12,
-           "column": "12",
-           "row": "12"
+           "size": 48,
+           "column": "48",
+           "row": "32"
           }
          },
          "elements": [
           {
-           "id": "9d56f45",
+           "id": "9c20d43",
            "elType": "container",
            "settings": {
-            "content_width": "full",
-            "background_background": "classic",
-            "background_color": "#f2f7ff",
-            "border_radius": {
+            "flex_direction": "column",
+            "flex_gap": {
              "unit": "px",
-             "top": "999",
-             "right": "999",
-             "bottom": "999",
-             "left": "999",
-             "isLinked": true
-            },
-            "padding": {
-             "unit": "px",
-             "top": "5",
-             "right": "11",
-             "bottom": "5",
-             "left": "11",
-             "isLinked": false
-            },
-            "flex_direction": "row",
-            "margin": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "14",
-             "left": "0",
-             "isLinked": false
+             "size": 12,
+             "column": "12",
+             "row": "12"
             }
            },
            "elements": [
             {
-             "id": "7a73ca3",
+             "id": "a937780",
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Contacto · Guadalajara, Jalisco",
+              "title": "Demo · 30 minutos",
               "header_size": "div",
               "title_color": "#1e5bd4",
               "typography_typography": "custom",
               "typography_font_size": {
                "unit": "px",
-               "size": 12,
+               "size": 13,
                "sizes": []
               },
-              "typography_font_weight": "600",
-              "typography_text_transform": "uppercase",
-              "typography_letter_spacing": {
+              "typography_font_weight": "600"
+             },
+             "elements": [],
+             "isInner": false
+            },
+            {
+             "id": "e9ac6de",
+             "elType": "widget",
+             "widgetType": "heading",
+             "settings": {
+              "title": "En la demo cotizamos algo que de verdad vendas",
+              "header_size": "h1",
+              "title_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_size": {
                "unit": "px",
-               "size": 0.6,
+               "size": 52,
+               "sizes": []
+              },
+              "typography_font_weight": "600"
+             },
+             "elements": [],
+             "isInner": false
+            },
+            {
+             "id": "be10a2d",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "Abrimos el sistema, damos de alta <strong>un producto de tu catálogo</strong> y sacamos la cotización con tu logo. No hay diapositivas.",
+              "text_color": "#b9cbe8",
+              "typography_typography": "custom",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 19,
                "sizes": []
               }
              },
              "elements": [],
+             "isInner": false
+            },
+            {
+             "id": "5521f5b",
+             "elType": "container",
+             "settings": {
+              "flex_direction": "column",
+              "flex_gap": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "16"
+              }
+             },
+             "elements": [
+              {
+               "id": "125e7fd",
+               "elType": "widget",
+               "widgetType": "button",
+               "settings": {
+                "text": "Llenar el formulario",
+                "link": {
+                 "url": "#formulario",
+                 "is_external": "",
+                 "nofollow": ""
+                },
+                "size": "md",
+                "border_radius": {
+                 "unit": "px",
+                 "top": "6",
+                 "right": "6",
+                 "bottom": "6",
+                 "left": "6",
+                 "isLinked": true
+                },
+                "text_padding": {
+                 "unit": "px",
+                 "top": "15",
+                 "right": "26",
+                 "bottom": "15",
+                 "left": "26",
+                 "isLinked": false
+                },
+                "align": "left",
+                "background_color": "#1e5bd4",
+                "button_text_color": "#ffffff"
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "5307838",
+               "elType": "widget",
+               "widgetType": "button",
+               "settings": {
+                "text": "Ver los precios",
+                "link": {
+                 "url": "precios.html",
+                 "is_external": "",
+                 "nofollow": ""
+                },
+                "size": "md",
+                "border_radius": {
+                 "unit": "px",
+                 "top": "6",
+                 "right": "6",
+                 "bottom": "6",
+                 "left": "6",
+                 "isLinked": true
+                },
+                "text_padding": {
+                 "unit": "px",
+                 "top": "15",
+                 "right": "26",
+                 "bottom": "15",
+                 "left": "26",
+                 "isLinked": false
+                },
+                "align": "left",
+                "background_color": "#00000000",
+                "button_text_color": "#1e5bd4",
+                "border_border": "solid",
+                "border_width": {
+                 "unit": "px",
+                 "top": "1",
+                 "right": "1",
+                 "bottom": "1",
+                 "left": "1",
+                 "isLinked": true
+                },
+                "border_color": "#dbdee3"
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
              "isInner": false
             }
            ],
            "isInner": false
           },
           {
-           "id": "e9ac6de",
-           "elType": "widget",
-           "widgetType": "heading",
+           "id": "831426a",
+           "elType": "container",
            "settings": {
-            "title": "Media hora, tus cotizaciones y una respuesta honesta",
-            "header_size": "h1",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 52,
-             "sizes": []
-            },
-            "typography_font_weight": "600"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "be10a2d",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p>Traes tres cotizaciones tuyas y las capturamos en vivo, con tus productos y tus precios.</p>",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 19,
-             "sizes": []
-            }
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "0bf82ad",
-           "elType": "widget",
-           "widgetType": "icon-list",
-           "settings": {
-            "icon_list": [
-             {
-              "_id": "d675873",
-              "text": "Treinta minutos por videollamada, sin diapositivas",
-              "selected_icon": {
-               "value": "fas fa-check",
-               "library": "fa-solid"
-              }
-             },
-             {
-              "_id": "a026560",
-              "text": "Diagnóstico por escrito, aunque no nos contrates",
-              "selected_icon": {
-               "value": "fas fa-check",
-               "library": "fa-solid"
-              }
-             },
-             {
-              "_id": "5b758be",
-              "text": "Desde <strong>$200 al mes</strong> , IVA incluido. <a href=\"precios.html\">Ver planes</a>",
-              "selected_icon": {
-               "value": "fas fa-check",
-               "library": "fa-solid"
-              }
-             }
-            ],
-            "space_between": {
-             "unit": "px",
-             "size": 14,
-             "sizes": []
-            },
-            "icon_size": {
-             "unit": "px",
-             "size": 17,
-             "sizes": []
-            },
-            "icon_color": "#00874a",
-            "icon_self_align": "left",
-            "text_color": "#4d535d",
-            "icon_typography_typography": "custom",
-            "icon_typography_font_size": {
+            "flex_direction": "column",
+            "flex_gap": {
              "unit": "px",
              "size": 16,
-             "sizes": []
+             "column": "16",
+             "row": "16"
             }
            },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "13c4154",
-         "elType": "container",
-         "settings": {
-          "background_background": "classic",
-          "background_color": "#ffffff",
-          "border_radius": {
-           "unit": "px",
-           "top": "10",
-           "right": "10",
-           "bottom": "10",
-           "left": "10",
-           "isLinked": true
-          },
-          "padding": {
-           "unit": "px",
-           "top": "28",
-           "right": "28",
-           "bottom": "28",
-           "left": "28",
-           "isLinked": true
-          },
-          "padding_mobile": {
-           "unit": "px",
-           "top": "22",
-           "right": "22",
-           "bottom": "22",
-           "left": "22",
-           "isLinked": true
-          },
-          "flex_direction": "column",
-          "flex_gap": {
-           "unit": "px",
-           "size": 12,
-           "column": "12",
-           "row": "12"
-          },
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#dbdee3",
-          "box_shadow_box_shadow_type": "yes",
-          "box_shadow_box_shadow": {
-           "horizontal": 0,
-           "vertical": 2,
-           "blur": 6,
-           "spread": 0,
-           "color": "rgba(15,19,25,0.07)"
-          }
-         },
-         "elements": [
-          {
-           "id": "0a329b4",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Escríbenos directo",
-            "header_size": "h3",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 18,
-             "sizes": []
-            },
-            "typography_font_weight": "600"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "207a848",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p><a href=\"mailto:contacto@incsales.com.mx\">contacto@incsales.com.mx</a> <a href=\"tel:+523337793774\">+52 33 3779 3774</a> Guadalajara, Jalisco</p>"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "7466735",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p>Lunes a jueves de 9:00 a 18:00 h. Viernes de 9:00 a 15:00 h, hora del centro de México.</p>"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "a8ceb29",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p>Te contesta quien escribió el sistema.</p>",
-            "text_color": "#6a6f78",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 13,
-             "sizes": []
+           "elements": [
+            {
+             "id": "6dbb74d",
+             "elType": "container",
+             "settings": {
+              "background_background": "classic",
+              "background_color": "rgba(255,255,255,0.06)",
+              "border_radius": {
+               "unit": "px",
+               "top": "10",
+               "right": "10",
+               "bottom": "10",
+               "left": "10",
+               "isLinked": true
+              },
+              "padding": {
+               "unit": "px",
+               "top": "28",
+               "right": "28",
+               "bottom": "28",
+               "left": "28",
+               "isLinked": true
+              },
+              "padding_mobile": {
+               "unit": "px",
+               "top": "22",
+               "right": "22",
+               "bottom": "22",
+               "left": "22",
+               "isLinked": true
+              },
+              "flex_direction": "column",
+              "flex_gap": {
+               "unit": "px",
+               "size": 12,
+               "column": "12",
+               "row": "12"
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "1",
+               "right": "1",
+               "bottom": "1",
+               "left": "1",
+               "isLinked": true
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "95d3b8e",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "O háblanos directo",
+                "header_size": "h3",
+                "title_color": "#ffffff",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 22,
+                 "sizes": []
+                },
+                "typography_font_weight": "600"
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "424c149",
+               "elType": "container",
+               "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                 "unit": "px",
+                 "size": 16,
+                 "column": "16",
+                 "row": "16"
+                }
+               },
+               "elements": [
+                {
+                 "id": "3d50ab4",
+                 "elType": "widget",
+                 "widgetType": "button",
+                 "settings": {
+                  "text": "contacto@incsales.com.mx",
+                  "link": {
+                   "url": "mailto:contacto@incsales.com.mx",
+                   "is_external": "",
+                   "nofollow": ""
+                  },
+                  "size": "md",
+                  "border_radius": {
+                   "unit": "px",
+                   "top": "6",
+                   "right": "6",
+                   "bottom": "6",
+                   "left": "6",
+                   "isLinked": true
+                  },
+                  "text_padding": {
+                   "unit": "px",
+                   "top": "15",
+                   "right": "26",
+                   "bottom": "15",
+                   "left": "26",
+                   "isLinked": false
+                  },
+                  "align": "left",
+                  "background_color": "#00000000",
+                  "button_text_color": "#1e5bd4",
+                  "border_border": "solid",
+                  "border_width": {
+                   "unit": "px",
+                   "top": "1",
+                   "right": "1",
+                   "bottom": "1",
+                   "left": "1",
+                   "isLinked": true
+                  },
+                  "border_color": "#dbdee3"
+                 },
+                 "elements": [],
+                 "isInner": false
+                },
+                {
+                 "id": "ccef07d",
+                 "elType": "widget",
+                 "widgetType": "button",
+                 "settings": {
+                  "text": "+52 33 3779 3774",
+                  "link": {
+                   "url": "https://wa.me/523337793774",
+                   "is_external": "",
+                   "nofollow": ""
+                  },
+                  "size": "md",
+                  "border_radius": {
+                   "unit": "px",
+                   "top": "6",
+                   "right": "6",
+                   "bottom": "6",
+                   "left": "6",
+                   "isLinked": true
+                  },
+                  "text_padding": {
+                   "unit": "px",
+                   "top": "15",
+                   "right": "26",
+                   "bottom": "15",
+                   "left": "26",
+                   "isLinked": false
+                  },
+                  "align": "left",
+                  "background_color": "#00000000",
+                  "button_text_color": "#1e5bd4",
+                  "border_border": "solid",
+                  "border_width": {
+                   "unit": "px",
+                   "top": "1",
+                   "right": "1",
+                   "bottom": "1",
+                   "left": "1",
+                   "isLinked": true
+                  },
+                  "border_color": "#dbdee3"
+                 },
+                 "elements": [],
+                 "isInner": false
+                }
+               ],
+               "isInner": false
+              },
+              {
+               "id": "d8c3334",
+               "elType": "widget",
+               "widgetType": "icon-list",
+               "settings": {
+                "icon_list": [
+                 {
+                  "_id": "08b6139",
+                  "text": "Guadalajara, Jalisco · toda la República por videollamada",
+                  "selected_icon": {
+                   "value": "fas fa-check",
+                   "library": "fa-solid"
+                  }
+                 },
+                 {
+                  "_id": "0d8d22e",
+                  "text": "Contestamos el mismo día hábil",
+                  "selected_icon": {
+                   "value": "fas fa-check",
+                   "library": "fa-solid"
+                  }
+                 }
+                ],
+                "space_between": {
+                 "unit": "px",
+                 "size": 14,
+                 "sizes": []
+                },
+                "icon_size": {
+                 "unit": "px",
+                 "size": 17,
+                 "sizes": []
+                },
+                "icon_color": "#00874a",
+                "icon_self_align": "left",
+                "text_color": "#4d535d",
+                "icon_typography_typography": "custom",
+                "icon_typography_font_size": {
+                 "unit": "px",
+                 "size": 16,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
             }
-           },
-           "elements": [],
+           ],
            "isInner": false
           }
          ],

@@ -15,9 +15,34 @@ COL = {
     "primario": "#1e5bd4", "secundario": "#0b3587", "titulo": "#21252d",
     "exito": "#00874a", "cuerpo": "#4d535d", "tenue": "#6a6f78",
     "linea": "#dbdee3", "lienzo": "#f4f6f9", "azul": "#f2f7ff",
-    "ambar": "#be7d00", "ambarTenue": "#fff7e9", "blanco": "#ffffff",
-    "claro": "#c3d4f0",
+    "ambar": "#8a5a00", "ambarTenue": "#fff7e9", "blanco": "#ffffff",
+    "claro": "#b9cbe8", "noche": "#021035",
 }
+
+# Fondos noche por familia de producto. Se generaron en OKLab con la misma
+# claridad que --noche: solo cambia el matiz, por eso se sienten igual de
+# profundos y ninguno compite con los otros. Ver productos.css.
+NOCHE_FAM = {
+    "p-crm": "#27031b", "p-forms": "#27031b", "p-correo": "#27031b",
+    "p-cotiza": "#001c1a", "p-facturacion": "#001c1a", "p-woosync": "#001c1a",
+    "p-proveedores": "#001c1a", "p-orquestador": "#001c1a", "p-portal": "#001c1a",
+    "p-inventarios": "#19092e", "p-compras": "#19092e",
+    "p-whatsapp": "#001c04",
+    "p-erp": "#021035", "p-migracion": "#021035", "p-metodo": "#021035",
+}
+CLARO_FAM = {
+    "p-crm": "#e6bdd4", "p-forms": "#e6bdd4", "p-correo": "#e6bdd4",
+    "p-cotiza": "#a2d7d2", "p-facturacion": "#a2d7d2", "p-woosync": "#a2d7d2",
+    "p-proveedores": "#a2d7d2", "p-orquestador": "#a2d7d2", "p-portal": "#a2d7d2",
+    "p-inventarios": "#d0c3ea", "p-compras": "#d0c3ea",
+    "p-whatsapp": "#b0d6ba",
+    "p-erp": "#b9cbe8", "p-migracion": "#b9cbe8", "p-metodo": "#b9cbe8",
+}
+def familia(clases):
+    """Devuelve la clase p-* de la seccion, si la trae."""
+    for c in clases.split():
+        if c in NOCHE_FAM: return c
+    return None
 FONDO = {"seccion--gris": COL["lienzo"], "seccion--azul": COL["azul"],
          "seccion--oscura": COL["secundario"]}
 
@@ -135,7 +160,7 @@ def recolectar(n, tag):
         out += recolectar(h, tag)
     return out
 
-def w_nota_formulario(campos=None, ayudas=None):
+def w_nota_formulario(campos=None, ayudas=None, legal=None):
     """Elementor gratuito NO trae widget de formulario. Se deja el aviso
     para que quien arme sepa que ahi va el codigo corto del plugin."""
     return contenedor([
@@ -148,7 +173,8 @@ def w_nota_formulario(campos=None, ayudas=None):
                 "Fluent Forms o WPForms Lite, y dale estilo en Estilo del tema, Campos de formulario."
                 + (" Campos, en este orden: " + "; ".join(campos) + "."
                    if campos else "")
-                + (" Textos de ayuda: " + " ".join(ayudas) if ayudas else ""))],
+                + (" Textos de ayuda: " + " ".join(ayudas) if ayudas else "")
+                + (" Aviso legal bajo el boton: " + " ".join(legal) if legal else ""))],
         background_background="classic", background_color=COL["azul"],
         border_radius=caja(8, 8, 8, 8, True), padding=caja(18, 20, 18, 20),
         flex_direction="column", flex_gap={"unit":"px","size":4,"column":"4","row":"4"})
@@ -181,7 +207,9 @@ class Lector(HTMLParser):
     INTERES = {"section", "div", "header", "footer", "h1", "h2", "h3", "h4", "h5", "h6",
                "p", "ul", "ol", "li", "a", "img", "span", "strong", "em", "b", "small",
                "svg", "nav", "details", "summary", "blockquote",
-               "form", "label", "select", "option", "textarea", "input", "button"}
+               "form", "label", "select", "option", "textarea", "input", "button",
+               "article", "aside", "figure", "figcaption",
+               "table", "thead", "tbody", "tfoot", "tr", "td", "th", "caption"}
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.pila = [{"tag": "raiz", "clase": "", "hijos": [], "texto": ""}]
@@ -249,11 +277,11 @@ def html_de(n):
     return re.sub(r"\s+", " ", " ".join(p for p in partes if p)).strip()
 
 # ------------------------------------------------------------- traducción
-def traducir(n, oscura=False):
+def traducir(n, oscura=False, fam_claro=None):
     """Un nodo del HTML → cero o más elementos de Elementor."""
     c = n["clase"]; t = n["tag"]
     tinta = COL["blanco"] if oscura else None
-    cuerpo = COL["claro"] if oscura else None
+    cuerpo = (fam_claro or COL["claro"]) if oscura else None
 
     if t == "img":
         return [w_imagen(n["src"])]
@@ -272,17 +300,65 @@ def traducir(n, oscura=False):
     if t == "blockquote":
         return [w_texto(f"<blockquote>{html_de(n)}</blockquote>", tinta or COL["titulo"])]
 
+    if t == "table":
+        filas = recolectar(n, "tr")
+        if not filas: return []
+        pie_tabla = [w_texto(html_de(x), COL["tenue"], False, 13)
+                     for x in recolectar(n, "caption") if texto_de(x)]
+        ncol = max(len([x for x in f["hijos"] if x["tag"] in ("td","th")]) for f in filas)
+        ncol = max(1, min(ncol, 6))
+        out = []
+        for i, f in enumerate(filas):
+            celdas = [x for x in f["hijos"] if x["tag"] in ("td","th")]
+            cab = all(x["tag"] == "th" for x in celdas) and i == 0
+            ws = []
+            for x in celdas:
+                txt = html_de(x)
+                if not txt: txt = "—"
+                ws.append(w_titulo(re.sub(r"<[^>]+>", "", txt), "div",
+                                   tinta or COL["titulo"], False, 13) if cab
+                          else w_texto(txt, cuerpo or COL["cuerpo"], False, 15))
+            out.append(contenedor(ws, container_type="grid",
+                                  grid_columns_grid={"unit":"fr","size":ncol,"sizes":[]},
+                                  grid_columns_grid_mobile={"unit":"fr","size":ncol,"sizes":[]},
+                                  grid_gaps={"unit":"px","size":16,"column":"16","row":"8"},
+                                  padding=caja(12,0,12,0),
+                                  border_border="solid", border_width=caja(0,0,1,0),
+                                  border_color=COL["linea"]))
+        return [contenedor(out, flex_direction="column",
+                           flex_gap={"unit":"px","size":0,"column":"0","row":"0"},
+                           border_border="solid", border_width=caja(1,0,0,0),
+                           border_color=COL["linea"])] + pie_tabla
+
+    if t in ("caption", "figcaption"):
+        return [w_texto(html_de(n), COL["tenue"], False, 13)]
+
+    if t in ("thead","tbody","tfoot","tr","td","th"):
+        return []   # los consume la rama de <table>
+
     if t == "form":
         campos = [texto_de(l) for l in recolectar(n, "label")]
+        legal = [texto_de(p) for p in recolectar(n, "p")
+                 if "aviso" in texto_de(p).lower() or "privacidad" in texto_de(p).lower()]
         ayudas = [texto_de(d) for d in recolectar(n, "div") if "campo__ayuda" in d["clase"]]
         ayudas += [texto_de(p) for p in recolectar(n, "p") if "campo__ayuda" in p["clase"]]
         botones = [b for b in recolectar(n, "button")]
-        piezas = [w_nota_formulario(campos, ayudas)]
+        piezas = [w_nota_formulario(campos, ayudas, legal)]
         for b in botones:
             piezas.append(w_boton(texto_de(b), "#", b["clase"]))
         return piezas
 
     if t == "p":
+        if "sobre-titulo" in c or "rotulo" in c:
+            return [w_titulo(texto_de(n), "div",
+                             (fam_claro or COL["primario"]) if oscura else COL["primario"],
+                             False, 13)]
+        if "apunte" in c:
+            return [w_texto(html_de(n), COL["tenue"], "centro" in c, 13)]
+        if "entradilla" in c:
+            return [w_texto(html_de(n), cuerpo or COL["tenue"], "centro" in c, 19)]
+        if "suave" in c or "tenue" in c:
+            return [w_texto(html_de(n), cuerpo or COL["tenue"], "centro" in c, None)]
         if "cita__texto" in c:
             return [w_titulo(texto_de(n), "div", tinta, False, 19)]
         if "cita__quien" in c:
@@ -318,6 +394,10 @@ def traducir(n, oscura=False):
         return [w_texto(f"<strong>{html_de(n)}</strong>", tinta or COL["titulo"])]
 
     if t == "span":
+        if "chip" in c.split() or "estado" in c.split():
+            return [w_etiqueta(texto_de(n), c)]
+        if "icono-caja" in c.split():
+            return []   # es solo el contenedor del glifo
         if "etiqueta" in c or "rotulo" in c:
             return [w_etiqueta(texto_de(n), c)]
         # Un span suelto dentro de un contenedor es una celda de texto.
@@ -333,8 +413,17 @@ def traducir(n, oscura=False):
     if t in ("label", "select", "option", "textarea", "input", "button", "summary"):
         return []
 
-    if t in ("div", "nav", "li"):
-        if "faq" in c.split():
+    if t in ("div", "nav", "li", "article", "aside", "figure"):
+        if "acordeon" in c.split() or "faq" in c.split():
+            pares = []
+            for d in recolectar(n, "details"):
+                tit = next((texto_de(x) for x in d["hijos"] if x["tag"] == "summary"), "")
+                cue = " ".join(html_de(x) for x in d["hijos"] if x["tag"] != "summary")
+                if tit: pares.append((tit, cue))
+            if pares: return [w_acordeon(pares)]
+            return []
+
+        if False:
             pares = []
             for d in n["hijos"]:
                 if d["tag"] != "details": continue
@@ -360,13 +449,109 @@ def traducir(n, oscura=False):
         for h in n["hijos"]:
             if h["tag"] == "#texto":
                 buffer.append(escapar(h["texto"].strip())); continue
-            if h["tag"] == "strong":
+            if h["tag"] in ("strong", "b"):
                 buffer.append(f"<strong>{html_de(h)}</strong>"); continue
+            if h["tag"] in ("em", "small"):
+                buffer.append(f"<em>{html_de(h)}</em>"); continue
             volcar()
-            hijos += traducir(h, oscura)
+            hijos += traducir(h, oscura, fam_claro)
         volcar()
         if not hijos:
             return []
+        # --- La maqueta de pantalla del producto NO se traduce: son cientos de
+        #     divs que dibujan una interfaz falsa. En Elementor va como IMAGEN.
+        # La barra falsa del navegador (puntos y URL) no aporta nada en Elementor.
+        if "marco__barra" in c.split() or "marco__puntos" in c.split():
+            return []
+
+        # Un .marco solo se vuelve imagen cuando DIBUJA una interfaz, es decir
+        # cuando trae un .app adentro. Si lo que enmarca son datos de verdad
+        # —una tabla de cifras, por ejemplo— se traduce como cualquier caja.
+        def dibuja_interfaz(nodo):
+            for h in nodo["hijos"]:
+                if "app" in h["clase"].split() or "lienzo-app" in h["clase"].split():
+                    return True
+                if dibuja_interfaz(h): return True
+            return False
+
+        if ("marco" in c.split() and dibuja_interfaz(n)) or "app" in c.split() or "lienzo-app" in c.split():
+            return [contenedor([
+                w_imagen("assets/pantallas/POR-SUBIR.png"),
+                w_texto("Sustituye esta imagen por la captura real de la pantalla. "
+                        "La maqueta dibujada con HTML no se traduce a Elementor: se exporta como PNG.",
+                        COL["tenue"], False, 13)],
+                background_background="classic", background_color=COL["blanco"],
+                border_border="solid", border_width=caja(1,1,1,1,True), border_color=COL["linea"],
+                border_radius=caja(12,12,12,12,True),
+                box_shadow_box_shadow_type="yes",
+                box_shadow_box_shadow={"horizontal":0,"vertical":8,"blur":24,"spread":0,
+                                       "color":"rgba(15,19,25,0.08)"},
+                padding=caja(0,0,0,0), flex_direction="column")]
+
+        if "marco" in c.split():
+            return [contenedor(hijos, background_background="classic",
+                               background_color=COL["blanco"],
+                               border_border="solid", border_width=caja(1,1,1,1,True),
+                               border_color=COL["linea"], border_radius=caja(12,12,12,12,True),
+                               box_shadow_box_shadow_type="yes",
+                               box_shadow_box_shadow={"horizontal":0,"vertical":8,"blur":24,
+                                                      "spread":0,"color":"rgba(15,19,25,0.08)"},
+                               padding=caja(20,20,20,20,True), flex_direction="column")]
+
+        if "envoltura" in c.split():
+            w = 820 if "envoltura--angosta" in c else (1280 if "envoltura--ancha" in c else 1140)
+            return [contenedor(hijos, content_width="boxed", boxed_width=px(w),
+                               padding=caja(0,24,0,24), padding_mobile=caja(0,20,0,20),
+                               flex_direction="column",
+                               flex_gap={"unit":"px","size":0,"column":"0","row":"0"})]
+
+        if "encabezado" in c.split():
+            e = dict(flex_direction="column", content_width="boxed", boxed_width=px(720),
+                     margin=caja(0,0,40,0),
+                     flex_gap={"unit":"px","size":12,"column":"12","row":"12"})
+            if "encabezado--centro" in c:
+                e["flex_align_items"] = "center"
+                marcar_centro(hijos)
+            return [contenedor(hijos, **e)]
+
+        if "rejilla" in c.split():
+            m = re.search(r"rejilla--(\d)", c)
+            n = int(m.group(1)) if m else 3
+            return [contenedor(hijos, container_type="grid",
+                               grid_columns_grid={"unit":"fr","size":n,"sizes":[]},
+                               grid_columns_grid_tablet={"unit":"fr","size":2 if n>2 else n,"sizes":[]},
+                               grid_columns_grid_mobile={"unit":"fr","size":1,"sizes":[]},
+                               grid_gaps={"unit":"px","size":24,"column":"24","row":"24"})]
+
+        if "portada__reja" in c.split() or "portada__cabeza" in c.split():
+            return [contenedor(hijos, container_type="grid",
+                               grid_columns_grid={"unit":"fr","size":2,"sizes":[]},
+                               grid_columns_grid_tablet={"unit":"fr","size":1,"sizes":[]},
+                               grid_columns_grid_mobile={"unit":"fr","size":1,"sizes":[]},
+                               grid_gaps={"unit":"px","size":48,"column":"48","row":"32"})]
+
+        if "portada__lado" in c.split() or "portada__acciones" in c.split():
+            return [contenedor(hijos, flex_direction="column",
+                               flex_gap={"unit":"px","size":16,"column":"16","row":"16"})]
+
+        if "portada__firma" in c.split():
+            items = [texto_de(h) for h in n["hijos"] if h["tag"] == "span"]
+            return [w_lista(items, "lista--ok")] if items else [
+                contenedor(hijos, flex_direction="column",
+                           flex_gap={"unit":"px","size":8,"column":"8","row":"8"})]
+
+        if "migas" in c.split():
+            partes = [texto_de(h) for h in n["hijos"] if h["tag"] == "li"]
+            return [w_texto(" &rsaquo; ".join(partes), cuerpo or COL["tenue"], False, 13)] if partes else []
+
+        if "icono-caja" in c.split():
+            return [contenedor(hijos, background_background="classic",
+                               background_color=COL["azul"],
+                               border_radius=caja(9,9,9,9,True),
+                               padding=caja(9,9,9,9,True), content_width="full",
+                               flex_direction="row", flex_align_items="center",
+                               margin=caja(0,0,16,0))]
+
         if "ancho" in c.split():
             return [contenedor(hijos, content_width="boxed",
                                boxed_width=px(820 if "ancho--angosto" in c else 1140),
@@ -386,9 +571,31 @@ def traducir(n, oscura=False):
                                grid_columns_grid_tablet={"unit":"fr","size":1,"sizes":[]},
                                grid_columns_grid_mobile={"unit":"fr","size":1,"sizes":[]},
                                grid_gaps={"unit":"px","size":48,"column":"48","row":"32"})]
+        if "planes" in c.split():
+            return [contenedor(hijos, container_type="grid",
+                               grid_columns_grid={"unit":"fr","size":3,"sizes":[]},
+                               grid_columns_grid_tablet={"unit":"fr","size":2,"sizes":[]},
+                               grid_columns_grid_mobile={"unit":"fr","size":1,"sizes":[]},
+                               grid_gaps={"unit":"px","size":24,"column":"24","row":"24"})]
+        if "plan" in c.split():
+            e = dict(background_background="classic", background_color=COL["blanco"],
+                     border_border="solid",
+                     border_width=caja(*([2]*4 if "plan--elegido" in c else [1]*4), True),
+                     border_color=COL["primario"] if "plan--elegido" in c else COL["linea"],
+                     border_radius=caja(12,12,12,12,True),
+                     padding=caja(28,28,28,28,True), padding_mobile=caja(22,22,22,22,True),
+                     flex_direction="column",
+                     flex_gap={"unit":"px","size":10,"column":"10","row":"10"})
+            if "plan--elegido" in c:
+                e.update(box_shadow_box_shadow_type="yes",
+                         box_shadow_box_shadow={"horizontal":0,"vertical":8,"blur":24,
+                                                "spread":0,"color":"rgba(15,19,25,0.08)"})
+            return [contenedor(hijos, **e)]
         if "tarjeta" in c.split() or "paquete" in c.split() or "cita" in c.split():
             s = dict(background_background="classic",
-                     background_color=COL["lienzo"] if ("tarjeta--plana" in c or "cita" in c) else COL["blanco"],
+                     background_color=("rgba(255,255,255,0.06)" if "tarjeta--tinta" in c
+                                       else COL["lienzo"] if ("tarjeta--plana" in c or "cita" in c)
+                                       else COL["blanco"]),
                      border_radius=caja(10, 10, 10, 10, True),
                      padding=caja(28, 28, 28, 28, True), padding_mobile=caja(22, 22, 22, 22, True),
                      flex_direction="column",
@@ -481,11 +688,14 @@ def traducir(n, oscura=False):
 
 def seccion_a_json(nodo, titulo):
     c = nodo["clase"]
-    oscura = "seccion--oscura" in c
+    oscura = ("seccion--oscura" in c or "portada--tinta" in c or "bloque--tinta" in c
+              or "pie" in c.split())
+    fam = familia(c)
+    fam_claro = CLARO_FAM.get(fam)
     hijos = []
     for h in nodo["hijos"]:
-        hijos += traducir(h, oscura)
-    rel = 48 if "seccion--corta" in c else 88
+        hijos += traducir(h, oscura, fam_claro)
+    rel = 48 if ("seccion--corta" in c or "bloque--corto" in c) else 88
     s = dict(content_width="full", flex_direction="column",
              padding=caja(rel, 0, rel, 0),
              padding_tablet=caja(min(rel, 64), 0, min(rel, 64), 0),
@@ -493,6 +703,15 @@ def seccion_a_json(nodo, titulo):
     for clase, color in FONDO.items():
         if clase in c:
             s.update(background_background="classic", background_color=color)
+    # El sistema de diseño bueno: bloque hundido, y portada o bloque en tinta,
+    # que se tiñe con el noche de la familia del producto.
+    if "bloque--hundido" in c:
+        s.update(background_background="classic", background_color=COL["lienzo"])
+    if "portada--tinta" in c or "bloque--tinta" in c:
+        s.update(background_background="classic",
+                 background_color=NOCHE_FAM.get(fam, COL["noche"]))
+    if "portada" in c.split() and "portada--tinta" not in c:
+        s.update(background_background="classic", background_color=COL["blanco"])
     if "pie" in c.split():
         s.update(background_background="classic", background_color=COL["secundario"],
                  padding=caja(56, 0, 28, 0), padding_mobile=caja(48, 0, 24, 0))

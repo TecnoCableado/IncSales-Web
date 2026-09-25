@@ -32,7 +32,9 @@
      "bottom": "48",
      "left": "0",
      "isLinked": false
-    }
+    },
+    "background_background": "classic",
+    "background_color": "#021035"
    },
    "elements": [
     {
@@ -42,7 +44,7 @@
       "content_width": "boxed",
       "boxed_width": {
        "unit": "px",
-       "size": 1140,
+       "size": 1280,
        "sizes": []
       },
       "padding": {
@@ -70,6 +72,17 @@
       }
      },
      "elements": [
+      {
+       "id": "25d817b",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<ol><li><a href=\"index.html\">Inicio</a></li><li>Antes de decidir</li><li>Preguntas frecuentes</li></ol>",
+        "text_color": "#b9cbe8"
+       },
+       "elements": [],
+       "isInner": false
+      },
       {
        "id": "4e5b411",
        "elType": "container",
@@ -99,54 +112,48 @@
        },
        "elements": [
         {
-         "id": "24667a8",
+         "id": "52418f4",
          "elType": "container",
          "settings": {
-          "flex_direction": "column",
-          "flex_gap": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 2,
+           "sizes": []
+          },
+          "grid_columns_grid_tablet": {
+           "unit": "fr",
+           "size": 1,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 1,
+           "sizes": []
+          },
+          "grid_gaps": {
            "unit": "px",
-           "size": 12,
-           "column": "12",
-           "row": "12"
+           "size": 48,
+           "column": "48",
+           "row": "32"
           }
          },
          "elements": [
           {
-           "id": "76a4664",
+           "id": "b2f86db",
            "elType": "container",
            "settings": {
-            "content_width": "full",
-            "background_background": "classic",
-            "background_color": "#f2f7ff",
-            "border_radius": {
+            "flex_direction": "column",
+            "flex_gap": {
              "unit": "px",
-             "top": "999",
-             "right": "999",
-             "bottom": "999",
-             "left": "999",
-             "isLinked": true
-            },
-            "padding": {
-             "unit": "px",
-             "top": "5",
-             "right": "11",
-             "bottom": "5",
-             "left": "11",
-             "isLinked": false
-            },
-            "flex_direction": "row",
-            "margin": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "14",
-             "left": "0",
-             "isLinked": false
+             "size": 12,
+             "column": "12",
+             "row": "12"
             }
            },
            "elements": [
             {
-             "id": "6013f47",
+             "id": "e49b45d",
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
@@ -156,324 +163,296 @@
               "typography_typography": "custom",
               "typography_font_size": {
                "unit": "px",
-               "size": 12,
+               "size": 13,
                "sizes": []
               },
-              "typography_font_weight": "600",
-              "typography_text_transform": "uppercase",
-              "typography_letter_spacing": {
+              "typography_font_weight": "600"
+             },
+             "elements": [],
+             "isInner": false
+            },
+            {
+             "id": "c84b1e5",
+             "elType": "widget",
+             "widgetType": "heading",
+             "settings": {
+              "title": "Ninguna duda debería llegar viva a la junta",
+              "header_size": "h1",
+              "title_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_size": {
                "unit": "px",
-               "size": 0.6,
+               "size": 52,
+               "sizes": []
+              },
+              "typography_font_weight": "600"
+             },
+             "elements": [],
+             "isInner": false
+            },
+            {
+             "id": "9c862b8",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "Precio, migración, lo técnico y los límites. Incluido <strong>lo que el sistema todavía no hace</strong> : si va a ser un problema, mejor que lo sepas hoy y no en la tercera semana.",
+              "text_color": "#b9cbe8",
+              "typography_typography": "custom",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 19,
                "sizes": []
               }
              },
              "elements": [],
+             "isInner": false
+            },
+            {
+             "id": "c5d7755",
+             "elType": "container",
+             "settings": {
+              "flex_direction": "column",
+              "flex_gap": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "16"
+              }
+             },
+             "elements": [
+              {
+               "id": "3535b9a",
+               "elType": "widget",
+               "widgetType": "button",
+               "settings": {
+                "text": "Agenda tu demo",
+                "link": {
+                 "url": "contacto.html",
+                 "is_external": "",
+                 "nofollow": ""
+                },
+                "size": "md",
+                "border_radius": {
+                 "unit": "px",
+                 "top": "6",
+                 "right": "6",
+                 "bottom": "6",
+                 "left": "6",
+                 "isLinked": true
+                },
+                "text_padding": {
+                 "unit": "px",
+                 "top": "15",
+                 "right": "26",
+                 "bottom": "15",
+                 "left": "26",
+                 "isLinked": false
+                },
+                "align": "left",
+                "background_color": "#1e5bd4",
+                "button_text_color": "#ffffff"
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "066a6a0",
+               "elType": "widget",
+               "widgetType": "button",
+               "settings": {
+                "text": "Ver los planes",
+                "link": {
+                 "url": "precios.html",
+                 "is_external": "",
+                 "nofollow": ""
+                },
+                "size": "md",
+                "border_radius": {
+                 "unit": "px",
+                 "top": "6",
+                 "right": "6",
+                 "bottom": "6",
+                 "left": "6",
+                 "isLinked": true
+                },
+                "text_padding": {
+                 "unit": "px",
+                 "top": "15",
+                 "right": "26",
+                 "bottom": "15",
+                 "left": "26",
+                 "isLinked": false
+                },
+                "align": "left",
+                "background_color": "#00000000",
+                "button_text_color": "#1e5bd4",
+                "border_border": "solid",
+                "border_width": {
+                 "unit": "px",
+                 "top": "1",
+                 "right": "1",
+                 "bottom": "1",
+                 "left": "1",
+                 "isLinked": true
+                },
+                "border_color": "#dbdee3"
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
              "isInner": false
             }
            ],
            "isInner": false
           },
           {
-           "id": "c84b1e5",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Ninguna duda llega viva a la junta",
-            "header_size": "h1",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 52,
-             "sizes": []
-            },
-            "typography_font_weight": "600"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "9c862b8",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p>Precio, SAT, inventario, datos y migración. Y lo que el sistema todavía no hace, escrito aquí y no en la junta.</p>",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 19,
-             "sizes": []
-            }
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "3535b9a",
-           "elType": "widget",
-           "widgetType": "button",
-           "settings": {
-            "text": "Agenda una demo",
-            "link": {
-             "url": "contacto.html",
-             "is_external": "",
-             "nofollow": ""
-            },
-            "size": "md",
-            "border_radius": {
-             "unit": "px",
-             "top": "6",
-             "right": "6",
-             "bottom": "6",
-             "left": "6",
-             "isLinked": true
-            },
-            "text_padding": {
-             "unit": "px",
-             "top": "15",
-             "right": "26",
-             "bottom": "15",
-             "left": "26",
-             "isLinked": false
-            },
-            "align": "left",
-            "background_color": "#1e5bd4",
-            "button_text_color": "#ffffff"
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "52418f4",
-         "elType": "container",
-         "settings": {
-          "background_background": "classic",
-          "background_color": "#ffffff",
-          "border_radius": {
-           "unit": "px",
-           "top": "10",
-           "right": "10",
-           "bottom": "10",
-           "left": "10",
-           "isLinked": true
-          },
-          "padding": {
-           "unit": "px",
-           "top": "28",
-           "right": "28",
-           "bottom": "28",
-           "left": "28",
-           "isLinked": true
-          },
-          "padding_mobile": {
-           "unit": "px",
-           "top": "22",
-           "right": "22",
-           "bottom": "22",
-           "left": "22",
-           "isLinked": true
-          },
-          "flex_direction": "column",
-          "flex_gap": {
-           "unit": "px",
-           "size": 12,
-           "column": "12",
-           "row": "12"
-          },
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#dbdee3",
-          "box_shadow_box_shadow_type": "yes",
-          "box_shadow_box_shadow": {
-           "horizontal": 0,
-           "vertical": 2,
-           "blur": 6,
-           "spread": 0,
-           "color": "rgba(15,19,25,0.07)"
-          }
-         },
-         "elements": [
-          {
-           "id": "b2f86db",
+           "id": "8bfae49",
            "elType": "container",
            "settings": {
-            "content_width": "full",
-            "background_background": "classic",
-            "background_color": "#f4f6f9",
-            "border_radius": {
+            "flex_direction": "column",
+            "flex_gap": {
              "unit": "px",
-             "top": "999",
-             "right": "999",
-             "bottom": "999",
-             "left": "999",
-             "isLinked": true
-            },
-            "padding": {
-             "unit": "px",
-             "top": "5",
-             "right": "11",
-             "bottom": "5",
-             "left": "11",
-             "isLinked": false
-            },
-            "flex_direction": "row",
-            "margin": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "14",
-             "left": "0",
-             "isLinked": false
+             "size": 16,
+             "column": "16",
+             "row": "16"
             }
            },
            "elements": [
             {
-             "id": "d585960",
-             "elType": "widget",
-             "widgetType": "heading",
+             "id": "a87d0c7",
+             "elType": "container",
              "settings": {
-              "title": "Las cuatro de siempre, en una línea",
-              "header_size": "div",
-              "title_color": "#6a6f78",
-              "typography_typography": "custom",
-              "typography_font_size": {
+              "background_background": "classic",
+              "background_color": "rgba(255,255,255,0.06)",
+              "border_radius": {
+               "unit": "px",
+               "top": "10",
+               "right": "10",
+               "bottom": "10",
+               "left": "10",
+               "isLinked": true
+              },
+              "padding": {
+               "unit": "px",
+               "top": "28",
+               "right": "28",
+               "bottom": "28",
+               "left": "28",
+               "isLinked": true
+              },
+              "padding_mobile": {
+               "unit": "px",
+               "top": "22",
+               "right": "22",
+               "bottom": "22",
+               "left": "22",
+               "isLinked": true
+              },
+              "flex_direction": "column",
+              "flex_gap": {
                "unit": "px",
                "size": 12,
-               "sizes": []
+               "column": "12",
+               "row": "12"
               },
-              "typography_font_weight": "600",
-              "typography_text_transform": "uppercase",
-              "typography_letter_spacing": {
+              "border_border": "solid",
+              "border_width": {
                "unit": "px",
-               "size": 0.6,
-               "sizes": []
-              }
+               "top": "1",
+               "right": "1",
+               "bottom": "1",
+               "left": "1",
+               "isLinked": true
+              },
+              "border_color": "#dbdee3"
              },
-             "elements": [],
+             "elements": [
+              {
+               "id": "104bb56",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Las cuatro de siempre, en una línea",
+                "header_size": "h2",
+                "title_color": "#ffffff",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 36,
+                 "sizes": []
+                },
+                "typography_font_weight": "600"
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "ef7b8bf",
+               "elType": "widget",
+               "widgetType": "icon-list",
+               "settings": {
+                "icon_list": [
+                 {
+                  "_id": "3e74b1f",
+                  "text": "<strong>¿Cuánto cuesta?</strong> Desde $200 al mes con IVA incluido.",
+                  "selected_icon": {
+                   "value": "fas fa-arrow-right",
+                   "library": "fa-solid"
+                  }
+                 },
+                 {
+                  "_id": "7215929",
+                  "text": "<strong>¿Me amarran?</strong> Los mensuales se cancelan sin penalización.",
+                  "selected_icon": {
+                   "value": "fas fa-arrow-right",
+                   "library": "fa-solid"
+                  }
+                 },
+                 {
+                  "_id": "d3d85aa",
+                  "text": "<strong>¿Y mis datos?</strong> Son tuyos y los exportas completos cuando quieras.",
+                  "selected_icon": {
+                   "value": "fas fa-arrow-right",
+                   "library": "fa-solid"
+                  }
+                 },
+                 {
+                  "_id": "6c34e53",
+                  "text": "<strong>¿Qué no hace?</strong> Está escrito abajo, con nombre y apellido.",
+                  "selected_icon": {
+                   "value": "fas fa-arrow-right",
+                   "library": "fa-solid"
+                  }
+                 }
+                ],
+                "space_between": {
+                 "unit": "px",
+                 "size": 14,
+                 "sizes": []
+                },
+                "icon_size": {
+                 "unit": "px",
+                 "size": 17,
+                 "sizes": []
+                },
+                "icon_color": "#4d535d",
+                "icon_self_align": "left",
+                "text_color": "#4d535d",
+                "icon_typography_typography": "custom",
+                "icon_typography_font_size": {
+                 "unit": "px",
+                 "size": 16,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
              "isInner": false
             }
            ],
-           "isInner": false
-          },
-          {
-           "id": "104bb56",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "¿Cuánto cuesta?",
-            "header_size": "h3",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 18,
-             "sizes": []
-            },
-            "typography_font_weight": "600"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "7f61071",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p>Desde <strong>$200 al mes</strong> , IVA incluido. Todo el sistema, $7,500.</p>"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "684c4f9",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "¿Me amarran?",
-            "header_size": "h3",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 18,
-             "sizes": []
-            },
-            "typography_font_weight": "600"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "03acea0",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p>No. El plan mensual se cancela sin penalización.</p>"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "abb4c93",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "¿Y mis datos?",
-            "header_size": "h3",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 18,
-             "sizes": []
-            },
-            "typography_font_weight": "600"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "7011e61",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p>Son tuyos. Los exportas completos cuando los pidas.</p>"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "84647f5",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "¿Qué no hace?",
-            "header_size": "h3",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 18,
-             "sizes": []
-            },
-            "typography_font_weight": "600"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "f93049a",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p>Contabilidad, nómina, números de serie y telefonía. La lista, abajo.</p>"
-           },
-           "elements": [],
            "isInner": false
           }
          ],

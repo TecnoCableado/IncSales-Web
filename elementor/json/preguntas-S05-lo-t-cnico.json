@@ -1,0 +1,309 @@
+{
+ "version": "0.4",
+ "title": "preguntas · S05 LO TÉCNICO",
+ "type": "container",
+ "content": [
+  {
+   "id": "81b6fa0",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "8b2b630",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 820,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "2d9c36d",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        }
+       },
+       "elements": [
+        {
+         "id": "034bd46",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Lo técnico",
+          "header_size": "div",
+          "title_color": "#1e5bd4",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "bd07073",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Que dos empresas no se vean entre sí lo revisa un script, no la buena voluntad",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "1b9dae4",
+       "elType": "widget",
+       "widgetType": "nested-accordion",
+       "settings": {
+        "items": [
+         {
+          "_id": "9effbec",
+          "item_title": "¿Otra empresa puede ver lo mío?"
+         },
+         {
+          "_id": "e1481cc",
+          "item_title": "¿Podemos entrar con nuestro propio dominio?"
+         },
+         {
+          "_id": "7bdf94e",
+          "item_title": "¿Dónde viven mis datos y quién los respalda?"
+         },
+         {
+          "_id": "e80905c",
+          "item_title": "¿Qué ve cada perfil?"
+         }
+        ],
+        "default_state": "all_collapsed",
+        "title_typography_typography": "custom",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "title_typography_font_weight": "600",
+        "accordion_item_title_space_between": {
+         "unit": "px",
+         "size": 0,
+         "sizes": []
+        },
+        "accordion_padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "40",
+         "bottom": "20",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "95c6198",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "22",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "8af5366",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Cada cliente es una organización distinta y dos organizaciones nunca se ven entre sí. El aislamiento se impone en la capa de sesión y lo audita un script que revisa que ninguna consulta se salga de su organización."
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "50a8a42",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "22",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "57e66ab",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Sí: tu empresa puede tener su propio subdominio, del estilo erp.tuempresa.com, y en ese subdominio solo entra tu gente."
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "de2087a",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "22",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "c0178a5",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "En una base PostgreSQL administrada en la nube: el respaldo corre del lado de la infraestructura y la ventana de recuperación que te aplica queda por escrito en tu contrato. Aparte exportas todo cuando quieras, incluso el día que decidas irte."
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "565634d",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "padding": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "22",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [
+          {
+           "id": "c6f452a",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Cuatro perfiles, asignados persona por persona. Nadie necesita ver la configuración fiscal de la empresa para poder cotizar. Perfil Qué puede Administrador Todo, incluida la configuración general Vendedor Negocios, cotizaciones, clientes, proveedores y productos Compras Proveedores, órdenes de compra y surtido Solo lectura Consulta y reportes"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

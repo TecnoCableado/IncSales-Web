@@ -1,26 +1,26 @@
 # IncSales para Elementor gratuito
 
-Carpeta con el sitio pensado para armarse a mano en WordPress con **Elementor GRATIS**.
+Las plantillas JSON del sitio, para importarlas a mano en WordPress con **Elementor GRATIS**.
 
 ```
 elementor/
-  css/incsales.css      la hoja compatible: 92 componentes, cero cosas que Elementor gratis no pueda
-  *.html                las 23 páginas del sitio (18,737 palabras, contra 111,406 del sitio viejo)
-  json/                 235 plantillas, una por sección, numeradas en orden por página
-  generar-json.py       convierte cualquier página de esta carpeta en sus .json
-  verificar-json.py     compara el HTML contra los .json y avisa si se perdió texto
+  json/               206 plantillas, una por sección, numeradas por página
+  generar-json.py     convierte cualquier página de la raíz en sus .json
+  verificar-json.py   compara el HTML contra los .json y avisa si se perdió texto
 ```
 
-## El ciclo de trabajo
+**El origen es la raíz del proyecto**, no esta carpeta. Las 23 páginas `.html` de la raíz son la
+fuente; estos JSON salen de ellas. Si cambias una página, regenera:
 
 ```bash
-python3 generar-json.py index.html json inicio
-python3 verificar-json.py index.html json inicio
+cd elementor
+python3 generar-json.py ../crm.html json crm
+python3 verificar-json.py ../crm.html json crm
 ```
 
-El segundo comando es el importante: compara palabra por palabra el HTML contra el JSON generado
-y falla si el traductor tiró algo. Así se encontraron y se arreglaron cinco fugas de contenido.
-**Nunca subas un JSON sin correrlo.**
+El segundo comando es el que importa: compara palabra por palabra el HTML contra el JSON y falla si
+el traductor tiró algo. Así se encontraron y arreglaron catorce fugas de contenido.
+**No subas un JSON sin correrlo.**
 
 ## Antes de importar nada
 
@@ -118,30 +118,23 @@ Diecinueve agentes revisaron la entrega por cinco frentes y verificaron sus prop
 - La **barra y el pie** se arman con el plugin gratuito Header Footer Elementor, no como sección.
 
 
-## El sitio completo
+## El sitio
 
-Veintitrés páginas, 18,737 palabras. El sitio anterior tenía 111,406: **se recortó el 84%**.
+23 páginas, 18,400 palabras. El sitio anterior tenía 112,244: se recortó el 84%.
 
-| Página | Palabras | Secciones |
-|---|---|---|
-| `index.html` | 867 | 10 |
-| `crm.html` · `cotizaciones.html` · `inventarios.html` · `compras.html` | 650–768 | 9–10 |
-| `facturacion.html` · `whatsapp.html` · `forms.html` · `correo.html` | 529–692 | 9–11 |
-| `wordpress.html` · `integraciones.html` | 605–679 | 8–10 |
-| `por-dentro.html` | 860 | 12 |
-| `precios.html` | 1,474 | 14 |
-| `agencia.html` | 1,136 | 12 |
-| `casos.html` · `migracion.html` · `comparativa.html` · `industrias.html` | 511–764 | 8–11 |
-| `preguntas.html` · `nosotros.html` · `contacto.html` | 311–901 | 7–11 |
-| `terminos.html` · `privacidad.html` | 1,704–1,786 | 13–16 |
+Trece son landings de producto, cada una con el color de su familia —magenta para la demanda,
+cian para el documento, violeta para el material, verde para la conversación, azul noche para lo
+que hacemos nosotros—. Las otras diez son de apoyo: precios, pantallas, clientes, comparativa,
+giros, preguntas, contacto, quiénes somos y las dos legales.
 
-Las 235 plantillas suman 4,962 nodos, todos con identificador único, sin un solo widget de Pro y
-sin marcado ejecutable dentro de ningún campo de texto.
+## Lo que hay que hacer a mano en WordPress
 
-### Orden de subida sugerido
-
-1. `wordpress-S07-cierre.json` — la prueba de un minuto.
-2. La barra y el pie de cualquier página (`*-S01-barra.json` y el último de cada una), que se
-   arman una vez con Header Footer Elementor y valen para todo el sitio.
-3. `inicio-S*.json` en orden, que es la portada.
-4. El resto de las páginas, cada una con sus secciones en orden.
+1. **Las capturas del producto.** Las maquetas de pantalla están dibujadas con HTML y no se
+   traducen: el JSON deja un marco con un hueco de imagen y una nota. Son 52 huecos. Hay que
+   exportar los PNG y subirlos a la biblioteca de medios.
+2. **Los enlaces.** Apuntan a `archivo.html`. Cámbialos por las rutas reales de WordPress.
+3. **Los logos.** Viajan con la ruta de la maqueta y con `id` vacío: vuelve a seleccionarlos desde
+   la biblioteca de medios.
+4. **Los formularios.** Elementor gratuito no trae widget de formulario. Donde había uno, el JSON
+   deja un aviso con los campos en orden y sus textos de ayuda, para armarlo con Fluent Forms o
+   WPForms Lite e insertarlo por código corto.

@@ -1,0 +1,381 @@
+{
+ "version": "0.4",
+ "title": "terminos · S03 OBJETO, CONTRATACIÓN Y VIGENCIA",
+ "type": "container",
+ "content": [
+  {
+   "id": "f67e368",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "08e9e57",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 820,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "c797538",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "1 · Objeto del servicio y definiciones",
+        "header_size": "h2",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "d9d325a",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "1.1 Quién presta el servicio y qué contratas",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "6f1fca0",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Lo presta <strong>Incoming Sales</strong> , de Guadalajara, Jalisco, México, dueña de IncSales ERP. Contratas acceso por suscripción a un sistema en la nube para cotizar, comprar, controlar existencias, facturar CFDI 4.0 y seguir interesados y cobros: no es licencia perpetua, y la contabilidad y la nómina quedan con tu contador.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "3d7298e",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "1.2 Definiciones",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "7c9ccf3",
+       "elType": "widget",
+       "widgetType": "icon-list",
+       "settings": {
+        "icon_list": [
+         {
+          "_id": "c030d0d",
+          "text": "<strong>Organización.</strong> El espacio aislado donde viven tus datos; dos nunca se ven.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "fab8a66",
+          "text": "<strong>Usuario.</strong> Cada persona con acceso y contraseña propios.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "32efffa",
+          "text": "<strong>Plan y complemento.</strong> El paquete con sus límites, y lo que se le suma cada mes.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "8aa9a78",
+          "text": "<strong>Contenido del cliente.</strong> Lo que capturas o cargas: catálogo, clientes, documentos, movimientos y comprobantes.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "e1700ad",
+          "text": "<strong>PAC.</strong> El proveedor autorizado de certificación que timbra tus CFDI.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "e97c7a5",
+          "text": "<strong>Orden de servicio.</strong> El documento que firmas con plan, precio y plazos.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         }
+        ],
+        "space_between": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        },
+        "icon_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "icon_color": "#4d535d",
+        "icon_self_align": "left",
+        "text_color": "#4d535d",
+        "icon_typography_typography": "custom",
+        "icon_typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "8478440",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "1.3 Desde cuándo aplican",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "c1523b5",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Desde que se activa tu organización o entra alguien de tu empresa; quien los acepta declara poder obligarla.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "ea5ec4c",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "2 · Contratación, planes y vigencia",
+        "header_size": "h2",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "e333944",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "2.1 Cómo se contrata y cómo te damos de alta",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "3cfc035",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Con una orden de servicio aceptada por escrito. Creamos tu organización, tu subdominio, tus datos fiscales y tus series, y te entregamos el acceso de administrador.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "1f41d6f",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "2.2 Plan mensual: sin permanencia forzosa",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "a69acb1",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Se renueva mes con mes hasta que avises por escrito antes de la siguiente renovación. Sin penalización ni cláusula de salida.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "748990e",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "2.3 Plan anual: doce meses por adelantado",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "c26c9c0",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Cuesta <strong>15% menos</strong> , se paga completo al inicio y trae la migración sin costo. No se devuelve de forma proporcional: corre hasta el último día pagado.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "36e502c",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "2.4 Subir o bajar de plan",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "82a809b",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Subir aplica el mismo día, con la diferencia proporcional; bajar, en la siguiente renovación.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

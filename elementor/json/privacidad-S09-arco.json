@@ -1,0 +1,247 @@
+{
+ "version": "0.4",
+ "title": "privacidad · S09 ARCO",
+ "type": "container",
+ "content": [
+  {
+   "id": "62bffa5",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "7e2a1ec",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 820,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "51e3fc8",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        }
+       },
+       "elements": [
+        {
+         "id": "5406796",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Apartado 7",
+          "header_size": "div",
+          "title_color": "#1e5bd4",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "7bc8da3",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Tus derechos ARCO se ejercen con un correo, y son gratis",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "4854b66",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Puedes pedir <strong>acceso</strong> a los datos que tenemos de ti, <strong>rectificación</strong> de lo que esté mal, <strong>cancelación</strong> cuando no exista obligación legal de conservarlos y <strong>oposición</strong> a una finalidad concreta. También puedes <strong>revocar tu consentimiento</strong> , con el mismo trámite.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "00e8e71",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Escribe a <a href=\"mailto:contacto@incsales.com.mx\">contacto@incsales.com.mx</a> con el asunto «Derechos ARCO» o «Revocación». No hay formato obligatorio, pero la solicitud debe traer tu nombre completo y un correo o domicilio para responderte, copia de identificación oficial vigente —y el documento que acredite tu representación, si actúas por otra persona—, la descripción clara de los datos y del derecho que ejerces, y cualquier dato que ayude a localizarlos. Si pides rectificación, agrega el dato correcto y su comprobante.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "124101e",
+       "elType": "widget",
+       "widgetType": "icon-list",
+       "settings": {
+        "icon_list": [
+         {
+          "_id": "147eb5d",
+          "text": "<strong>20 días hábiles</strong> para decirte si procede o no, con la razón por escrito.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "927ba9d",
+          "text": "<strong>15 días hábiles</strong> más para hacerla efectiva cuando procede.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "0486a0f",
+          "text": "Cada plazo se puede ampliar <strong>una sola vez</strong> y por un periodo igual, avisándote la razón.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "846658f",
+          "text": "El trámite <strong>no se cobra</strong> : solo los gastos de envío o la reproducción en copias, si pides un formato que los genere.",
+          "selected_icon": {
+           "value": "fas fa-arrow-right",
+           "library": "fa-solid"
+          }
+         }
+        ],
+        "space_between": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        },
+        "icon_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "icon_color": "#4d535d",
+        "icon_self_align": "left",
+        "text_color": "#4d535d",
+        "icon_typography_typography": "custom",
+        "icon_typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "478026d",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "Revocar no siempre puede ser inmediato ni total, porque hay información que la ley fiscal obliga a conservar; y si revocas los datos necesarios para el servicio, el servicio termina. Si lo que quieres es dejar de recibir correos comerciales, basta con negar las finalidades secundarias del apartado 4. Si no te contestamos o la respuesta no te deja satisfecho, puedes inconformarte ante la autoridad competente en materia de protección de datos personales.",
+        "text_color": "#6a6f78",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

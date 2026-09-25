@@ -1,0 +1,449 @@
+{
+ "version": "0.4",
+ "title": "terminos · S06 DATOS, PROPIEDAD INTELECTUAL Y CONFIDENCIALIDAD",
+ "type": "container",
+ "content": [
+  {
+   "id": "c9a297b",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#f4f6f9"
+   },
+   "elements": [
+    {
+     "id": "bf74f13",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 820,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "737d25e",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "7 · Propiedad de los datos y portabilidad",
+        "header_size": "h2",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "9f0790f",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "7.1 Tus datos son tuyos",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "abae890",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Solo los procesamos para prestarte el servicio: no los vendemos, no los compartimos, no entrenamos modelos y no los mezclamos con los de nadie.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "4d3b67e",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "7.2 Te los llevas cuando quieras",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "0996e71",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Pides tu exportación completa en formatos abiertos: catálogo, clientes, negocios, movimientos, documentos y los XML y PDF de tus CFDI. No cobramos por dejarte ir.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "191c79c",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "7.3 Conservación y respaldos",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "5ed82d7",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Al terminar tienes <strong>30 días naturales</strong> para pedirla con la cuenta en pie; después se resguarda <strong>90 días</strong> sin acceso y luego se elimina. Nuestros respaldos no sustituyen los tuyos: guarda el ZIP anual fuera del sistema.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "ea59b4d",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "8 · Propiedad intelectual del software",
+        "header_size": "h2",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "19f5ee9",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "8.1 El sistema es nuestro",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "725c7e1",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>El código, el diseño, la documentación y las marcas son de Incoming Sales: usas el sistema mientras seas cliente, no lo compras.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "e0b3124",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "8.2 Lo que no se puede hacer con él",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "55812ce",
+       "elType": "widget",
+       "widgetType": "icon-list",
+       "settings": {
+        "icon_list": [
+         {
+          "_id": "8df05df",
+          "text": "Copiarlo, descompilarlo u obtener su código fuente.",
+          "selected_icon": {
+           "value": "fas fa-times",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "ebfe773",
+          "text": "Revenderlo, rentarlo o sublicenciarlo.",
+          "selected_icon": {
+           "value": "fas fa-times",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "6761dce",
+          "text": "Construir con él un producto que le compita.",
+          "selected_icon": {
+           "value": "fas fa-times",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "811e340",
+          "text": "Quitar los avisos de propiedad y de marca.",
+          "selected_icon": {
+           "value": "fas fa-times",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "c8bcb6b",
+          "text": "Hacerle pruebas de intrusión sin permiso escrito.",
+          "selected_icon": {
+           "value": "fas fa-times",
+           "library": "fa-solid"
+          }
+         }
+        ],
+        "space_between": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        },
+        "icon_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "icon_color": "#a7abb3",
+        "icon_self_align": "left",
+        "text_color": "#6a6f78",
+        "icon_typography_typography": "custom",
+        "icon_typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "b68863e",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "8.3 Marcas y sugerencias",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "c0aaae7",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Puedes decir que usas IncSales; nosotros te nombramos como cliente solo con tu permiso escrito. Las mejoras que construyamos quedan dentro del producto.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "51c8ac7",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "9 · Confidencialidad",
+        "header_size": "h2",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "ff29065",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "9.1 Qué es confidencial, de los dos lados",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "15b839c",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Tu información comercial y la nuestra: ninguna parte la revela sin permiso escrito de la otra.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "834becc",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "9.2 Quién ve tu operación de nuestro lado",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "028d24e",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Solo quien necesita prestarte el servicio o reparar una falla, y queda registro de quién entró y para qué.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "942bdab",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "9.3 Excepciones y duración",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "796ad34",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Se exceptúa lo ya público, lo conocido sin reserva y lo que exija una autoridad. La obligación sobrevive a la terminación.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

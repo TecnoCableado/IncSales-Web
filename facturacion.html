@@ -3,26 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Facturación CFDI 4.0 · IncSales</title>
-<meta name="description" content="Emite CFDI 4.0, complementos de pago, notas de crédito y facturas globales desde el mismo pedido. Timbrado por PAC autorizado, PDF y XML, y cuentas por cobrar.">
+<title>IncSales Facturación · CFDI 4.0 timbrado desde el mismo pedido</title>
+<meta name="description" content="CFDI 4.0 timbrado por PAC autorizado desde el pedido que ya capturaste, con complementos de pago, notas de crédito, facturas globales y el ZIP del año. Incluido desde Factura Esencial $2,490 al mes, IVA incluido.">
 <link rel="icon" type="image/svg+xml" href="assets/logos/incsales-icono.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap">
 <link rel="stylesheet" href="assets/css/sistema.css">
-<link rel="stylesheet" href="assets/css/paginas/facturacion.css">
+<link rel="stylesheet" href="assets/css/comun.css">
+<link rel="stylesheet" href="assets/css/productos.css">
 </head>
 <body data-superficie="landing">
 
 <a class="saltar" href="#principal">Saltar al contenido</a>
 
-<!-- ============================================================= CINTILLO -->
+<!-- S01 · CINTILLO Y MENÚ -->
 <div class="cintillo">
-  Migramos tus datos sin costo al contratar cualquier plan anual ·
-  <a href="migracion.html">Ver cómo funciona</a>
+  Migración de datos sin costo al contratar cualquier plan anual ·
+  <a href="precios.html">Ver los planes</a>
 </div>
-
-<!-- =========================================================== NAVEGACIÓN -->
 <header class="nav">
   <div class="envoltura envoltura--ancha">
     <div class="nav__fila">
@@ -31,51 +30,27 @@
       </a>
       <nav class="nav__menu" id="menu" aria-label="Principal">
         <div class="nav__grupo">
-          <button class="nav__item activo" type="button" aria-expanded="false">
+          <button class="nav__item" type="button" aria-expanded="false">
             Producto <span class="nav__flecha" aria-hidden="true"></span>
           </button>
           <div class="panel" hidden>
             <div class="panel__grid">
               <p class="panel__titulo">Los módulos que ya operan todos los días</p>
-              <a class="panel__item" href="index.html#crm">
-                <b>CRM y seguimiento</b>
-                <span>Interesados, tablero de negocios y bitácora</span>
-              </a>
-              <a class="panel__item" href="index.html#cotizaciones">
-                <b>Cotizaciones y venta</b>
-                <span>Seis documentos con la misma forma</span>
-              </a>
-              <a class="panel__item" href="index.html#inventarios">
-                <b>Inventarios</b>
-                <span>Variantes, multialmacén, lotes y kárdex</span>
-              </a>
-              <a class="panel__item" href="index.html#compras">
-                <b>Compras y proveedores</b>
-                <span>Requisiciones, órdenes y recepciones</span>
-              </a>
-              <a class="panel__item" href="facturacion.html" aria-current="page">
-                <b>Facturación CFDI 4.0</b>
-                <span>Timbrado, pagos y notas de crédito</span>
-              </a>
-              <a class="panel__item" href="index.html#whatsapp">
-                <b>WhatsApp y marketing</b>
-                <span>Tu número, bandeja de equipo y formularios</span>
-              </a>
+              <a class="panel__item" href="crm.html"><b>IncSales CRM</b><span>Interesados, negocios y bitácora</span></a><a class="panel__item" href="cotizaciones.html"><b>IncSales Cotiza</b><span>Seis documentos, una sola forma</span></a><a class="panel__item" href="inventarios.html"><b>IncSales Inventarios</b><span>Variantes, kárdex y lotes</span></a><a class="panel__item" href="compras.html"><b>IncSales Compras</b><span>Requisiciones y recepciones</span></a><a class="panel__item" href="facturacion.html"><b>IncSales Facturación</b><span>CFDI 4.0 timbrado por PAC</span></a><a class="panel__item" href="whatsapp.html"><b>IncSales WhatsApp</b><span>Tu número, bandeja de equipo</span></a><a class="panel__item" href="forms.html"><b>IncSales Forms</b><span>14 tipos de campo, tres formas</span></a><a class="panel__item" href="correo.html"><b>IncSales Correo</b><span>Listas desde tu propio dominio</span></a><a class="panel__item" href="wordpress.html"><b>WordPress y WooCommerce</b><span>IncSales WooSync, desde $1,490 al mes</span></a><a class="panel__item" href="integraciones.html"><b>Integraciones y API</b><span>Con el ERP que ya tienes</span></a><a class="panel__item" href="migracion.html"><b>IncSales Migración</b><span>Desde $9,900, sin costo en plan anual</span></a>
               <div class="panel__pie">
                 <span class="apunte">Todo lo de arriba está construido y en uso.</span>
-                <a class="enlace-ir" href="por-dentro.html">
-                  Ver las pantallas
+                <a class="enlace-ir" href="por-dentro.html">Ver las pantallas
                   <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg>
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <a class="nav__item" href="index.html#prueba">Por dentro</a>
         <a class="nav__item" href="por-dentro.html">Las pantallas</a>
-        <a class="nav__item" href="index.html#precios">Precios</a>
-        <a class="nav__item" href="index.html#confianza">Confianza</a>
-        <a class="nav__item" href="index.html#preguntas">Preguntas</a>
+        <a class="nav__item" href="precios.html">Precios</a>
+        <a class="nav__item" href="agencia.html">Agencia</a>
+        <a class="nav__item" href="casos.html">Clientes</a>
+        <a class="nav__item" href="preguntas.html">Preguntas</a>
       </nav>
       <div class="nav__acciones">
         <a class="btn btn--chico" href="contacto.html">Agenda una demo</a>
@@ -89,149 +64,32 @@
 
 <main id="principal">
 
-<!-- ============================================================== PORTADA -->
-<section class="portada portada--tinta">
+<!-- S02 · PORTADA -->
+<section class="portada portada--tinta p-facturacion">
   <div class="envoltura envoltura--ancha">
+    <ol class="migas">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html">Producto</a></li>
+      <li>IncSales Facturación</li>
+    </ol>
     <div class="portada__reja">
       <div class="portada__cabeza">
         <div>
-          <ol class="migas">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="index.html#modulos">Producto</a></li>
-            <li>Facturación CFDI 4.0</li>
-          </ol>
-          <p class="sobre-titulo">Módulo · Facturación</p>
-          <h1>Facturas donde vendes, no en otro programa</h1>
-          <p class="entradilla">CFDI 4.0, complementos de pago, notas de crédito y facturas globales, timbrados a través
-            de un PAC autorizado — <strong>desde el mismo pedido</strong> que ya capturó tu vendedor. Sin exportar,
-            sin volver a teclear el RFC, sin conciliar dos sistemas a fin de mes.</p>
+          <p class="sobre-titulo"><span class="icono-caja icono-caja--producto icono-caja--chica" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3.5h9.5a2 2 0 0 1 2 2v7"/><path d="M4 3.5v17h6"/><path d="M7 8h6M7 11.5h4"/><circle cx="16.5" cy="16.5" r="5"/><path d="M14.6 16.6l1.3 1.3 2.6-2.8"/></svg></span> Módulo · IncSales Facturación</p>
+          <h1>La factura sale del pedido que ya capturó tu vendedor</h1>
+          <p class="entradilla">Eliges el pedido, lo revisas y timbras. El CFDI 4.0 <strong>se arma con
+            los datos que ya están dentro del sistema</strong>, lo sella un PAC autorizado por el SAT y
+            el PDF y el XML se quedan pegados a ese registro.</p>
         </div>
         <div class="portada__lado">
           <div class="portada__acciones">
             <a class="btn btn--claro btn--grande" href="contacto.html">Agenda tu demo</a>
-            <a class="btn btn--linea-clara btn--grande" href="#planes">Ver planes con facturación</a>
+            <a class="btn btn--linea-clara btn--grande" href="#precio">Ver qué plan lo trae</a>
           </div>
           <div class="portada__firma">
-            <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.2 8.4 3.1 3.1 6.5-6.9"/></svg> CFDI 4.0 y complemento de pago</span>
-            <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.2 8.4 3.1 3.1 6.5-6.9"/></svg> PDF y XML de cada factura</span>
-            <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.2 8.4 3.1 3.1 6.5-6.9"/></svg> Cuentas por cobrar y por pagar</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Maqueta 1 · la pantalla de facturas del mes -->
-      <div class="marco maqueta maqueta--lista" role="img"
-           aria-label="Pantalla de facturas de IncSales en septiembre: 38 timbradas, $1,284,300 facturado y 6 complementos de pago por emitir, con el listado del mes —cliente, folio, total y estado del timbrado—.">
-        <div class="marco__barra"><div class="marco__puntos" aria-hidden="true"><i></i><i></i><i></i></div><span class="marco__url">erp.tuempresa.com/facturas</span></div>
-        <div class="app">
-          <aside class="lateral">
-            <div class="lateral__marca">
-              <img src="assets/logos/incsales-icono.svg" alt="" width="800" height="800">
-              <b>Tu empresa</b>
-            </div>
-            <p class="lateral__grupo">Ingresos</p>
-            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 13h6M9 17h4"/></svg> Cotizaciones</div>
-            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16M7 12h10M10 19h4"/></svg> Pedidos</div>
-            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.6 5.6h10.8v10H2.6zM13.4 9.6h3.8l2.2 3v3h-6z"/><circle cx="7.6" cy="17.6" r="1.7"/><circle cx="16.6" cy="17.6" r="1.7"/></svg> Remisiones</div>
-            <div class="lateral__item" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18l-2.3-1.6-2.4 1.6-2.3-1.6-2.3 1.6L7.3 19 5 21z"/><path d="M9 8.5h6M9 12.5h6"/></svg> Facturas</div>
-            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10.5h18"/><circle cx="17" cy="14.8" r="1.1"/></svg> Pagos</div>
-            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3.8v16.4h16M8 17.4v-4.8M12.4 17.4V9M16.8 17.4v-7"/></svg> Saldos</div>
-            <p class="lateral__grupo">Gastos</p>
-            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.6 7.4a2 2 0 0 1 2-2h11.8a2 2 0 0 1 2 2v9.2a2 2 0 0 1-2 2H5.6a2 2 0 0 1-2-2zM19.4 10.4h-3.2a1.9 1.9 0 0 0 0 3.8h3.2"/></svg> CFDI de proveedor</div>
-            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10.5h18"/><circle cx="17" cy="14.8" r="1.1"/></svg> Pagos</div>
-            <div class="lateral__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3.8v16.4h16M8 17.4v-4.8M12.4 17.4V9M16.8 17.4v-7"/></svg> Saldos</div>
-            <div class="lateral__cuenta">
-              <span class="avatar" aria-hidden="true">AM</span>
-              <div><b>Administración</b><span class="apunte">Facturación</span></div>
-            </div>
-          </aside>
-          <div class="lienzo-app">
-            <div class="cabecera-app">
-              <div class="buscador"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.6 4.6"/></svg> Busca un cliente, folio o RFC <kbd>⌘K</kbd></div>
-              <div class="pagina__acciones">
-                <span class="estado estado--ok">PAC conectado</span>
-                <span class="avatar avatar--claro" aria-hidden="true">AM</span>
-              </div>
-            </div>
-            <div class="pagina">
-              <div class="pagina__cabeza">
-                <div>
-                  <p class="pagina__titulo">Facturas · Septiembre</p>
-                  <p class="pagina__sub">CFDI 4.0 emitidos este mes</p>
-                </div>
-                <div class="pagina__acciones">
-                  <div class="segmentado"><span>Mes</span><span class="activo">Trimestre</span><span>Año</span></div>
-                  <span class="btn btn--chico">Nueva factura</span>
-                </div>
-              </div>
-              <div class="kpis">
-                <div class="kpi">
-                  <p class="kpi__q">Timbradas</p>
-                  <p class="kpi__n">38</p>
-                  <p class="kpi__d suave">del 1 al 30 de septiembre</p>
-                </div>
-                <div class="kpi">
-                  <p class="kpi__q">Facturado</p>
-                  <p class="kpi__n">$1,284,300</p>
-                  <p class="kpi__d suave">IVA incluido, en pesos</p>
-                </div>
-                <div class="kpi">
-                  <p class="kpi__q">REP por emitir</p>
-                  <p class="kpi__n">6</p>
-                  <p class="kpi__d suave">facturas PPD con abono</p>
-                </div>
-              </div>
-              <div class="datos-caja">
-                <div class="datos-scroll">
-                  <table class="datos">
-                    <thead>
-                      <tr>
-                        <th scope="col">Cliente</th>
-                        <th scope="col">Folio</th>
-                        <th scope="col" class="n">Total</th>
-                        <th scope="col">Estado</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr aria-selected="true">
-                        <td class="fuerte">Grupo Médico GDL</td>
-                        <td class="clave">FAC-00318</td>
-                        <td class="n">$99,992.00</td>
-                        <td><span class="chip chip--verde">Timbrada</span></td>
-                      </tr>
-                      <tr>
-                        <td class="fuerte">Distrimedic</td>
-                        <td class="clave">FAC-00317</td>
-                        <td class="n">$184,320.00</td>
-                        <td><span class="chip chip--verde">Timbrada</span></td>
-                      </tr>
-                      <tr>
-                        <td class="fuerte">Ferretería Cruz</td>
-                        <td class="clave">FAC-00316</td>
-                        <td class="n">$18,400.00</td>
-                        <td><span class="chip chip--ambar">Por timbrar</span></td>
-                      </tr>
-                      <tr>
-                        <td class="fuerte">Público en general</td>
-                        <td class="clave">GLB-0009</td>
-                        <td class="n">$41,870.00</td>
-                        <td><span class="chip chip--azul">Global</span></td>
-                      </tr>
-                      <tr>
-                        <td class="fuerte">Casther</td>
-                        <td class="clave">NC-0042</td>
-                        <td class="n">-$6,960.00</td>
-                        <td><span class="chip">Nota de crédito</span></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="datos__pie">
-                  <span>5 de 38 comprobantes</span>
-                  <div class="paginacion"><span class="btn btn--chico btn--fantasma">PDF</span><span class="btn btn--chico btn--fantasma">XML</span></div>
-                </div>
-              </div>
-            </div>
+            <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.2 8.4 3.1 3.1 6.5-6.9"/></svg> Incluido desde Factura Esencial $2,490 al mes, IVA incluido</span>
+            <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.2 8.4 3.1 3.1 6.5-6.9"/></svg> CFDI 4.0 timbrado por PAC autorizado, con catálogos del SAT integrados</span>
+            <span><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.2 8.4 3.1 3.1 6.5-6.9"/></svg> ZIP con todas las facturas del año, en un clic</span>
           </div>
         </div>
       </div>
@@ -239,939 +97,147 @@
   </div>
 </section>
 
-<!-- ======================================================= SIN RECAPTURA -->
-<section class="bloque">
+<!-- S03 · EL PROBLEMA -->
+<section class="bloque p-facturacion">
   <div class="envoltura">
     <div class="encabezado encabezado--centro">
-      <p class="sobre-titulo">El problema real</p>
-      <h2>Facturar no debería ser volver a capturar</h2>
-      <p>En muchísimas empresas mexicanas el pedido se hace en un lado y la factura en otro. Alguien teclea
-        otra vez el cliente, los renglones y los importes — y ahí es donde nacen las diferencias que a fin
-        de mes nadie sabe explicar.</p>
+      <p class="sobre-titulo">Lo que pasa hoy</p>
+      <h2>El trabajo no es facturar: es teclear lo mismo dos veces</h2>
     </div>
+    <div class="rejilla rejilla--3">
+      <article class="tarjeta tarjeta--comoda">
+        <span class="icono-caja icono-caja--producto" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4h12v12H8z"/><path d="M4 8v12h12"/></svg></span>
+        <h3>El pedido vive en otro lado</h3>
+        <p class="suave">Alguien vuelve a capturar cliente, claves y cantidades en el portal del timbrador.</p>
+      </article>
+      <article class="tarjeta tarjeta--comoda">
+        <span class="icono-caja icono-caja--producto" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span>
+        <h3>El complemento se deja para fin de mes</h3>
+        <p class="suave">Y cuando llega fin de mes, nadie sabe cuál pago se quedó sin su complemento.</p>
+      </article>
+      <article class="tarjeta tarjeta--comoda">
+        <span class="icono-caja icono-caja--producto" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h18v13H3z"/><path d="M3 7l2-3h14l2 3M12 11v5"/></svg></span>
+        <h3>El año está repartido</h3>
+        <p class="suave">Cuando el contador pide todo, las facturas se bajan una por una.</p>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <ol class="pasos pasos--cadena aparecer">
-      <li><div class="tarjeta tarjeta--plana paso"><b>Cotización</b><span>el cliente acepta</span></div></li>
-      <li><div class="tarjeta tarjeta--plana paso"><b>Pedido</b><span>se confirma lo que sí va</span></div></li>
-      <li><div class="tarjeta tarjeta--plana paso"><b>Remisión</b><span>sale del almacén</span></div></li>
-      <li><div class="tarjeta tarjeta--plana paso"><b>Factura</b><span>se timbra con lo mismo</span></div></li>
-      <li><div class="tarjeta tarjeta--plana paso"><b>Pago</b><span>y su complemento</span></div></li>
-      <li><div class="tarjeta tarjeta--plana paso"><b>Saldo en cero</b><span>la cuenta se cierra</span></div></li>
-    </ol>
+<!-- S04 · CÓMO FUNCIONA -->
+<section class="bloque bloque--hundido p-facturacion">
+  <div class="envoltura">
+    <div class="encabezado encabezado--centro">
+      <p class="sobre-titulo">Cómo funciona</p>
+      <h2>Tres pasos, y el estado del timbrado lo avisa el PAC</h2>
+      <p>El módulo toma el pedido y devuelve el CFDI, sin archivos que subir ni pantallas
+        que refrescar.</p>
+    </div>
+    <div class="rejilla rejilla--3">
+      <article class="tarjeta tarjeta--comoda">
+        <span class="chip chip--producto">Del pedido</span>
+        <h3>Eliges y revisas</h3>
+        <p class="suave">Cliente, claves del SAT, forma de pago y lugar de expedición ya vienen del documento.</p>
+      </article>
+      <article class="tarjeta tarjeta--comoda">
+        <span class="chip chip--producto">Timbrado</span>
+        <h3>Lo sella un PAC autorizado</h3>
+        <p class="suave">Es el único camino que el SAT reconoce, y los catálogos del SAT ya están dentro.</p>
+      </article>
+      <article class="tarjeta tarjeta--comoda">
+        <span class="chip chip--producto">Acuse</span>
+        <h3>El resultado llega solo</h3>
+        <p class="suave">El webhook del PAC escribe el estado en la factura; tú no persigues a nadie.</p>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <div class="contraste tras-tira">
-      <div class="tarjeta tarjeta--plana tarjeta--comoda">
-        <div class="contraste__cab">
-          <span class="chip">Hoy</span>
-          <h3>Cuando facturar vive aparte</h3>
-        </div>
-        <ul class="lista lista--no">
-          <li>Capturas el mismo pedido dos veces: una para vender y otra para facturar.</li>
-          <li>El RFC y el uso de CFDI están en un correo viejo, no en la ficha del cliente.</li>
-          <li>Cancelas una factura y en ventas nadie se entera.</li>
-          <li>El complemento de pago se deja «para fin de mes» y se olvida.</li>
-          <li>Para saber cuánto te deben hoy hay que abrir tres archivos distintos.</li>
+<!-- S05 · LO QUE TRAE -->
+<section class="bloque p-facturacion">
+  <div class="envoltura">
+    <div class="par par--arriba">
+      <div>
+        <p class="sobre-titulo">Lo que trae</p>
+        <h2>Los cuatro documentos fiscales que de verdad emites</h2>
+        <p>Factura, complemento de pago, nota de crédito y factura global, con la misma forma y
+          en el mismo lugar donde cotizaste.</p>
+        <ul class="lista">
+          <li><strong>El complemento sale del pago.</strong> Registras el pago contra su factura y de ahí nace el complemento, sin capturarlo aparte.</li>
+          <li><strong>Notas de crédito y facturas globales.</strong> Cada una aplicada contra el documento que le corresponde, no suelta.</li>
+          <li><strong>El año en un clic.</strong> Un ZIP con todas las facturas del año, con su PDF y su XML.</li>
         </ul>
       </div>
       <div class="tarjeta tarjeta--comoda tarjeta--alta">
-        <div class="contraste__cab">
-          <span class="chip chip--azul">Con IncSales</span>
-          <h3>Cuando facturar es el siguiente paso</h3>
-        </div>
-        <ul class="lista">
-          <li>La factura se arma con los renglones del pedido: no se vuelve a teclear nada.</li>
-          <li>El RFC, el régimen fiscal y el uso de CFDI viven en la ficha del cliente.</li>
-          <li>Cancelar pide el motivo y queda escrito en el expediente del negocio.</li>
-          <li>El complemento de pago sale del pago que ya registraste.</li>
-          <li>Cuentas por cobrar te dice el saldo por cliente y por factura.</li>
-        </ul>
+        <span class="icono-caja icono-caja--producto icono-caja--grande" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3.5h9.5a2 2 0 0 1 2 2v7"/><path d="M4 3.5v17h6"/><path d="M7 8h6M7 11.5h4"/><circle cx="16.5" cy="16.5" r="5"/><path d="M14.6 16.6l1.3 1.3 2.6-2.8"/></svg></span>
+        <h3>Cada empresa con su propia configuración fiscal</h3>
+        <p class="suave">Impuestos, folios y datos fiscales se configuran por empresa, así que varias
+          razones sociales facturan desde el mismo sistema sin mezclarse.</p>
+        <p class="apunte">Contabilidad, nómina, IEPS y el esquema completo de retenciones no están aquí. Te lo decimos antes, no después.</p>
       </div>
-    </div>
-
-    <div class="aviso tras-rejilla">
-      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="icono-linea" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h9"/></svg>
-      <div><b>Los seis documentos tienen la misma forma</b>
-        Cotización, pedido, remisión, factura, orden de compra y recepción se capturan igual: eliges el
-        producto y se agrega, corriges el renglón en su sitio y la barra fija al pie te enseña el total y
-        lo que falta. Quien aprende a cotizar ya aprendió a facturar.</div>
     </div>
   </div>
 </section>
 
-<!-- ======================================================== COMPROBANTES -->
-<section class="bloque bloque--hundido">
+<!-- S06 · QUÉ SIGUE -->
+<section class="bloque bloque--tinta p-facturacion">
   <div class="envoltura">
     <div class="encabezado encabezado--centro">
-      <p class="sobre-titulo">Comprobantes</p>
-      <h2>Cinco cosas que sí puedes hacer desde el sistema</h2>
-      <p>No es «un módulo de facturación» genérico. Es lo que la operación mexicana necesita todos los
-        días, con los nombres que usa el SAT.</p>
+      <p class="sobre-titulo">Qué sigue</p>
+      <h2>Timbrar no cierra el trámite: lo abre</h2>
+      <p>La factura timbrada ya dejó su saldo donde se cobra, sin exportar nada a una hoja.</p>
     </div>
-
-    <div class="rejilla rejilla--auto aparecer">
-      <article class="tarjeta tarjeta--comoda sello">
-        <span class="icono-caja" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12v20l-3-2-3 2-3-2-3 2z"/><path d="M9 7h6M9 11h6M9 15h3"/></svg></span>
-        <div>
-          <h3>CFDI 4.0 de ingreso</h3>
-          <p>La factura de siempre. Se arma desde el pedido o la remisión, con los renglones, los precios
-            y la moneda que ya estaban capturados. Nada se vuelve a teclear.</p>
-        </div>
-      </article>
-      <article class="tarjeta tarjeta--comoda sello">
-        <span class="icono-caja icono-caja--verde" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-5 3 3 5-7"/></svg></span>
-        <div>
-          <h3>Complemento de pago (REP)</h3>
-          <p>Cuando facturaste como pago en parcialidades o diferido, cada abono necesita su comprobante.
-            Registras el pago y de ahí sale el complemento, aplicado contra la factura que corresponde.</p>
-        </div>
-      </article>
-      <article class="tarjeta tarjeta--comoda sello">
-        <span class="icono-caja icono-caja--ambar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 14h6"/></svg></span>
-        <div>
-          <h3>Notas de crédito</h3>
-          <p>Devolviste mercancía, diste un descuento después o te equivocaste en un renglón. La nota de
-            crédito se relaciona con la factura original y el saldo del cliente se corrige solo.</p>
-        </div>
-      </article>
-      <article class="tarjeta tarjeta--comoda sello">
-        <span class="icono-caja icono-caja--violeta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18M3 12h18M3 17h12"/></svg></span>
-        <div>
-          <h3>Facturas globales</h3>
-          <p>Todo lo que vendiste en mostrador a quien no pidió factura, junto y en un solo CFDI al
-            público en general. Se arma con las ventas del periodo, no capturando una lista a mano.</p>
-        </div>
-      </article>
-      <article class="tarjeta tarjeta--comoda sello">
-        <span class="icono-caja icono-caja--rojo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 8.5 7 7m0-7-7 7"/></svg></span>
-        <div>
-          <h3>Cancelación con motivo</h3>
-          <p>El SAT ya no deja cancelar «porque sí». Cancelar te pide el motivo y, cuando ese motivo lo
-            exige, el folio fiscal del comprobante que la sustituye. El motivo se guarda con la factura y
-            la cancelación se anota en la bitácora del negocio.</p>
-        </div>
-      </article>
+    <div class="rejilla rejilla--4">
+      <article class="tarjeta tarjeta--tinta"><h3>Se cobra</h3><p class="suave">Entra a cuentas por cobrar con su saldo.</p></article>
+      <article class="tarjeta tarjeta--tinta"><h3>Se entrega</h3><p class="suave">PDF y XML se descargan del mismo registro.</p></article>
+      <article class="tarjeta tarjeta--tinta"><h3>Se paga</h3><p class="suave">Cada pago registrado emite su complemento.</p></article>
+      <article class="tarjeta tarjeta--tinta"><h3>Se archiva</h3><p class="suave">El ZIP del año sale cuando lo pidan.</p></article>
     </div>
   </div>
 </section>
 
-<!-- ================================================= LA FACTURA POR DENTRO -->
-<section class="bloque">
-  <div class="envoltura">
-    <div class="par par--texto par--arriba">
-      <div>
-        <p class="sobre-titulo">Por dentro</p>
-        <h2>Así se ve una factura ya timbrada</h2>
-        <p class="suave">Los datos fiscales no se preguntan en cada venta: viven en la ficha del cliente y
-          llegan solos al documento. Lo que tú decides al facturar es qué renglones van y cómo te van a
-          pagar.</p>
-        <ul class="lista">
-          <li><strong>Los renglones vienen del pedido</strong>, con su clave del SAT y su unidad de medida.</li>
-          <li><strong>La moneda y el tipo de cambio quedan congelados por documento:</strong> si el dólar
-            sube mañana, lo que ya facturaste no se mueve.</li>
-          <li><strong>El PDF se genera en el servidor</strong>, tamaño carta y con el logo de tu empresa;
-            el XML se descarga junto a él.</li>
-          <li><strong>La factura queda colgada del cliente y del negocio</strong>, no en una carpeta suelta.</li>
-        </ul>
-        <div class="fila tras-rejilla">
-          <a class="btn" href="contacto.html">Verlo con tus propios datos</a>
-          <a class="btn btn--fantasma" href="cotizaciones.html">Ver de dónde sale el pedido</a>
-        </div>
-      </div>
-
-      <figure class="comprobante-figura aparecer">
-        <div class="comprobante">
-          <div class="comprobante__cabeza">
-            <div class="comprobante__quien">
-              <span class="comprobante__rotulo">Factura · CFDI 4.0</span>
-              <span class="comprobante__nombre clave">FAC-00318</span>
-            </div>
-            <div class="comprobante__quien comprobante__quien--fin">
-              <span class="comprobante__rotulo">Receptor</span>
-              <span class="comprobante__nombre">Grupo Médico GDL S.A. de C.V.</span>
-              <span class="apunte clave">RFC GMG180412K72</span>
-            </div>
-          </div>
-          <div class="comprobante__marcas">
-            <span class="chip chip--azul">Régimen 601</span>
-            <span class="chip chip--azul">Uso G03</span>
-            <span class="chip">Método PPD</span>
-            <span class="chip">Forma 99</span>
-            <span class="chip">MXN</span>
-          </div>
-          <div class="comprobante__renglon">
-            <span class="comprobante__concepto">Cable UTP Cat6 305 m<span class="comprobante__clave clave">26121636 · Rollo</span></span>
-            <span class="clave">20</span>
-            <span class="clave">$54,000.00</span>
-          </div>
-          <div class="comprobante__renglon">
-            <span class="comprobante__concepto">Jack RJ45 Cat6<span class="comprobante__clave clave">39121011 · Pieza</span></span>
-            <span class="clave">400</span>
-            <span class="clave">$20,800.00</span>
-          </div>
-          <div class="comprobante__renglon">
-            <span class="comprobante__concepto">Patch cord Cat6 2 m<span class="comprobante__clave clave">26121636 · Pieza</span></span>
-            <span class="clave">300</span>
-            <span class="clave">$11,400.00</span>
-          </div>
-          <div class="comprobante__renglon">
-            <span class="tenue">Subtotal</span>
-            <span></span>
-            <span class="clave">$86,200.00</span>
-          </div>
-          <div class="comprobante__renglon">
-            <span class="tenue">IVA trasladado 16 %</span>
-            <span></span>
-            <span class="clave">$13,792.00</span>
-          </div>
-          <div class="comprobante__total">
-            <span>Total</span>
-            <span class="clave">$99,992.00</span>
-          </div>
-          <p class="comprobante__pie">Folio fiscal <span class="clave">3F9C21A4-7B0E-4C6D-9A55-2E1D48B7C0F2</span><br>
-            Timbrada por PAC autorizado · Origen: pedido PED-00742 · Lugar de expedición 44650</p>
-        </div>
-        <figcaption class="apunte">Ejemplo de maqueta con datos ficticios: así queda el documento cuando el
-          pedido ya existía en el sistema.</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- ===================================================== CATÁLOGOS DEL SAT -->
-<section class="bloque bloque--hundido">
+<!-- S07 · PRECIO -->
+<section class="bloque p-facturacion" id="precio">
   <div class="envoltura">
     <div class="encabezado encabezado--centro">
-      <p class="sobre-titulo">Catálogos y datos fiscales</p>
-      <h2>Los catálogos del SAT ya vienen dentro</h2>
-      <p>Nadie tiene por qué memorizar que un rollo de cable es la clave 26121636. El sistema trae los
-        catálogos y los busca por nombre; tú eliges y él guarda la clave correcta.</p>
+      <p class="sobre-titulo">Qué plan lo trae</p>
+      <h2>IncSales Facturación empieza en Factura Esencial</h2>
+      <p>Va por plan, y cada plan dice cuántos CFDI al mes traes.</p>
     </div>
-
-    <div class="par par--arriba">
-      <div>
-        <h3>Qué se elige de catálogo, no de memoria</h3>
-        <ul class="lista">
-          <li><strong>Clave de producto o servicio</strong> y <strong>clave de unidad</strong>, guardadas
-            en el producto: se capturan una vez y se repiten en cada factura.</li>
-          <li><strong>Régimen fiscal</strong> del emisor y del receptor.</li>
-          <li><strong>Uso del CFDI</strong>, el que el cliente pide siempre y siempre se te olvida preguntar.</li>
-          <li><strong>Forma de pago</strong> y <strong>método de pago</strong> (PUE o PPD), que es lo que
-            decide si va a haber complemento después.</li>
-        </ul>
-        <h3 class="tras-tira">Los datos fiscales viven en el cliente</h3>
-        <p class="suave">Se capturan cuando das de alta la empresa y se quedan ahí. El vendedor no los toca,
-          el de facturación no los persigue por WhatsApp y la factura no sale mal por un RFC copiado a mano.</p>
-        <a class="enlace-ir" href="crm.html">Ver la ficha de cliente completa
-          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg>
-        </a>
-      </div>
-
-      <!-- Maqueta 2 · la ficha fiscal del cliente -->
-      <div class="marco maqueta maqueta--sola aparecer" role="img"
-           aria-label="Ficha fiscal de Grupo Médico GDL en IncSales: razón social, RFC GMG180412K72, código postal 44650, régimen 601, uso de CFDI G03, método de pago PPD y lista de precios de mayoreo.">
-        <div class="marco__barra"><div class="marco__puntos" aria-hidden="true"><i></i><i></i><i></i></div><span class="marco__url">erp.tuempresa.com/clientes</span></div>
-        <div class="pagina">
-          <div class="pagina__cabeza">
-            <div>
-              <p class="pagina__titulo">Grupo Médico GDL</p>
-              <p class="pagina__sub">Datos fiscales</p>
-            </div>
-            <div class="pagina__acciones"><span class="btn btn--chico btn--fantasma">Editar</span></div>
-          </div>
-          <div class="datos-caja">
-            <div class="datos-scroll">
-              <table class="datos">
-                <thead>
-                  <tr><th scope="col">Campo</th><th scope="col">Valor</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>Razón social</td><td class="fuerte">Grupo Médico GDL S.A. de C.V.</td></tr>
-                  <tr><td>RFC</td><td class="fuerte clave">GMG180412K72</td></tr>
-                  <tr><td>Código postal</td><td>44650 · Guadalajara</td></tr>
-                  <tr><td>Régimen fiscal</td><td><span class="chip chip--azul">601 General de Ley</span></td></tr>
-                  <tr><td>Uso del CFDI</td><td><span class="chip chip--azul">G03 Gastos en general</span></td></tr>
-                  <tr><td>Método de pago</td><td><span class="chip chip--ambar">PPD · lleva REP</span></td></tr>
-                  <tr><td>Lista de precios</td><td><span class="chip chip--verde">Mayoreo</span></td></tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="datos__pie">
-              <span>Estos datos llegan solos a la cotización, al pedido y a la factura</span>
-              <div class="paginacion"><span class="chip chip--verde">Una sola captura</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ======================================================= TIMBRADO POR PAC -->
-<section class="bloque">
-  <div class="envoltura">
-    <div class="encabezado">
-      <p class="sobre-titulo">Cómo se timbra</p>
-      <h2>El timbrado va por un PAC autorizado. Siempre.</h2>
-      <p>El sello que le da validez fiscal a un CFDI lo pone un Proveedor Autorizado de Certificación: así
-        lo dispone el SAT y así trabaja IncSales. Lo que cambia de un sistema a otro es cuánto trabajo
-        tienes que hacer tú antes de llegar ahí.</p>
-    </div>
-
-    <div class="par par--arriba">
-      <ol class="pasos pasos--lista aparecer">
-        <li>
-          <div class="paso">
-            <h3>Armas la factura desde el pedido</h3>
-            <p>Eliges qué renglones van. Cada uno ya trae su clave del SAT, su unidad y su precio, porque
-              los trae el producto.</p>
-          </div>
-        </li>
-        <li>
-          <div class="paso">
-            <h3>El sistema revisa antes de mandar</h3>
-            <p>RFC, régimen fiscal, código postal, uso del CFDI, forma y método de pago. Si falta algo, te
-              lo dice aquí y no allá.</p>
-          </div>
-        </li>
-        <li>
-          <div class="paso">
-            <h3>Se manda a timbrar al PAC</h3>
-            <p>El comprobante se sella y regresa con su folio fiscal (UUID) y su cadena original. Ese es el
-              CFDI que vale.</p>
-          </div>
-        </li>
-        <li>
-          <div class="paso">
-            <h3>El estado se actualiza solo</h3>
-            <p>El sistema no se queda esperando a que alguien refresque la pantalla: el PAC le avisa por
-              webhook —un aviso automático de servidor a servidor— y la factura cambia de estado sola.</p>
-          </div>
-        </li>
-        <li>
-          <div class="paso">
-            <h3>Queda guardada con su PDF y su XML</h3>
-            <p>En el expediente del cliente y del negocio, lista para descargar, mandar por correo o cobrar.</p>
-          </div>
-        </li>
-      </ol>
-
-      <div>
-        <div class="tarjeta tarjeta--plana tarjeta--comoda">
-          <h3>Cero recapturas entre vender y facturar</h3>
-          <p class="suave">El mismo registro que empezó como interesado de Google Ads termina como CFDI
-            timbrado. No hay exportación, no hay archivo intermedio, no hay «pásame el pedido para
-            facturarlo».</p>
-        </div>
-        <div class="aviso tras-rejilla">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="icono-linea" aria-hidden="true"><path d="M12 8v5M12 16.2v.1"/><circle cx="12" cy="12" r="9"/></svg>
-          <div><b>Si el timbrado falla, se ve</b>
-            Una factura que no se timbró queda marcada como pendiente, con el motivo que devolvió el PAC.
-            No se queda en el limbo ni desaparece de la lista.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================================================ CÓMO SE CUENTAN LOS CFDI -->
-<section class="bloque bloque--hundido">
-  <div class="envoltura">
-    <div class="encabezado encabezado--centro">
-      <p class="sobre-titulo">Sin letras chiquitas</p>
-      <h2>Cómo se cuentan los CFDI de tu plan</h2>
-      <p>Un CFDI es un documento timbrado: una factura, un complemento de pago, una nota de crédito o una
-        factura global. Cada plan trae una cantidad al mes y, si te quedas corto, se compra un paquete.
-        Sin cambiar de plan y sin llamadas incómodas.</p>
-    </div>
-
-    <div class="tabla-caja aparecer">
-      <div class="tabla-scroll">
-        <table class="tabla">
-          <caption>Precios mensuales en pesos mexicanos, con IVA incluido. El plan anual se paga por
-            adelantado y cuesta 15 % menos. El catálogo completo de los 9 planes está en
-            <a href="precios.html">precios</a>.</caption>
-          <thead>
-            <tr>
-              <th scope="col">Plan con facturación</th>
-              <th scope="col" class="n">Mensual</th>
-              <th scope="col" class="n">Anual (por mes)</th>
-              <th scope="col" class="n">Usuarios</th>
-              <th scope="col" class="n">CFDI al mes</th>
-              <th scope="col">Si necesitas más</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Factura Esencial</strong><br><span class="apunte">Facturar y controlar, sin CRM</span></td>
-              <td class="n clave">$2,490</td>
-              <td class="n clave">$2,117</td>
-              <td class="n">5</td>
-              <td class="n"><strong>50</strong></td>
-              <td>Paquete de 100 CFDI por $499 al mes</td>
-            </tr>
-            <tr class="tabla__fila--nuestra">
-              <td><strong>Operación</strong><br><span class="apunte">El más elegido · todo el sistema</span></td>
-              <td class="n clave">$7,500</td>
-              <td class="n clave">$6,375</td>
-              <td class="n">10</td>
-              <td class="n"><strong>100</strong></td>
-              <td>Paquete de 100 CFDI por $499 al mes</td>
-            </tr>
-            <tr>
-              <td><strong>Corporativo</strong><br><span class="apunte">Varias empresas o sucursales</span></td>
-              <td class="n clave">$15,000</td>
-              <td class="n clave">$12,750</td>
-              <td class="n">25</td>
-              <td class="n"><strong>500</strong></td>
-              <td>Paquete de 100 CFDI por $499 al mes</td>
-            </tr>
-            <tr>
-              <td><strong>A la medida</strong><br><span class="apunte">Instalación dedicada</span></td>
-              <td class="n">Cotización</td>
-              <td class="n">—</td>
-              <td class="n">Sin límite</td>
-              <td class="n">Sin límite</td>
-              <td>Se define en el acuerdo</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="rejilla rejilla--2 tras-rejilla aparecer">
-      <div class="aviso aviso--aviso">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="icono-linea" aria-hidden="true"><path d="M12 8v5M12 16.2v.1"/><circle cx="12" cy="12" r="9"/></svg>
-        <div><b>Paquete de 100 CFDI adicionales · $499 al mes, IVA incluido</b>
-          Se acumulan dentro del mes. Si un mes facturas de más, agregas el paquete y ya; no te obligamos a
-          subir de plan por una temporada alta. Un usuario más en la familia Completo cuesta $349 al mes,
-          también con IVA incluido.</div>
-      </div>
-      <div class="aviso">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="icono-linea" aria-hidden="true"><path d="M3 21h18M5 21V9l7-5 7 5v12M10 21v-5h4v5"/></svg>
-        <div><b>Empresa o RFC adicional · $1,900 al mes, IVA incluido</b>
-          Si facturas con dos razones sociales, cada una vive aislada de la otra: los datos de una nunca se
-          ven desde la otra, y cada una tiene sus folios, sus impuestos y su logo.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================================================ DESCARGAS PDF · XML · ZIP -->
-<section class="bloque bloque--tinta">
-  <div class="envoltura">
-    <div class="encabezado encabezado--centro">
-      <p class="sobre-titulo">Lo que pide tu contador</p>
-      <h2>PDF, XML y el año completo en un ZIP</h2>
-      <p>La entrega mensual al despacho contable es de esas tareas que nadie reconoce hasta que falta. Aquí
-        es un botón, no una tarde.</p>
-    </div>
-
-    <div class="rejilla rejilla--2 aparecer">
-      <article class="tarjeta tarjeta--tinta tarjeta--comoda sello">
-        <span class="icono-caja icono-caja--tinta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M12 12v6m0 0-2.5-2.5M12 18l2.5-2.5"/></svg></span>
-        <div>
-          <h3>Cada comprobante, con sus dos archivos</h3>
-          <p>El PDF para el cliente y el XML para el contador. Se bajan desde la misma pantalla de la
-            factura, sin buscar en el correo de nadie.</p>
-        </div>
+    <div class="rejilla rejilla--2">
+      <article class="tarjeta tarjeta--comoda">
+        <span class="chip chip--producto">Desde aquí</span>
+        <h3>Factura Esencial · $2,490 al mes</h3>
+        <p class="suave">Cinco usuarios y 50 CFDI, IVA incluido. Cotizaciones, inventarios
+          multialmacén, compras, facturación y cuentas por cobrar y por pagar.</p>
       </article>
-      <article class="tarjeta tarjeta--tinta tarjeta--comoda sello">
-        <span class="icono-caja icono-caja--tinta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8l9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg></span>
-        <div>
-          <h3>El año entero en un ZIP</h3>
-          <p>Todas las facturas del año, en un solo archivo. Lo que antes era juntar cientos de XML uno por
-            uno ahora es una descarga.</p>
-        </div>
+      <article class="tarjeta tarjeta--comoda">
+        <span class="chip chip--producto">El más elegido</span>
+        <h3>Operación · $7,500 al mes</h3>
+        <p class="suave">Diez usuarios y 100 CFDI. El sistema completo, con CRM, WhatsApp y marketing.
+          Corporativo son 25 usuarios y 500 CFDI, en $15,000.</p>
       </article>
     </div>
-
-    <div class="tira tras-tira">
-      <div class="cifra">
-        <p class="cifra__n">6 documentos</p>
-        <p class="cifra__q">Cotización, pedido, remisión, factura, orden de compra y recepción, con la
-          misma forma de capturar</p>
-      </div>
-      <div class="cifra">
-        <p class="cifra__n">2 archivos</p>
-        <p class="cifra__q">PDF y XML por cada comprobante timbrado</p>
-      </div>
-      <div class="cifra">
-        <p class="cifra__n">1 ZIP</p>
-        <p class="cifra__q">Para entregar el año completo al despacho contable</p>
-      </div>
-    </div>
+    <p class="apunte centro">El paquete de 100 CFDI adicionales cuesta $499 al mes. Factura Esencial no
+      trae CRM: se agrega por $499. TecnoCableado opera en producción sobre Operación.</p>
   </div>
 </section>
 
-<!-- ==================================================== CUENTAS POR COBRAR -->
-<section class="bloque">
-  <div class="envoltura">
-    <div class="par par--texto par--arriba">
-      <div>
-        <p class="sobre-titulo">Cuentas por cobrar</p>
-        <h2>Facturar es la mitad. La otra mitad es cobrar.</h2>
-        <p class="suave">La pantalla de saldos no es un reporte que alguien arma el viernes: es el estado de
-          cada factura, en vivo, con lo que ya te pagaron y lo que falta.</p>
-        <ul class="lista">
-          <li><strong>Saldo por cliente y por factura</strong>, no un total agregado que no sirve para
-            llamar a nadie.</li>
-          <li><strong>Pagos aplicados</strong>, totales o parciales, contra la factura que corresponde.</li>
-          <li><strong>Las facturas PPD con abono, a la vista</strong>, para que sepas cuáles todavía
-            necesitan su complemento de pago.</li>
-          <li><strong>La cobranza se ve desde el negocio</strong>, así que el vendedor sabe cómo va su
-            cliente antes de volver a venderle.</li>
-        </ul>
-        <div class="fila tras-rejilla">
-          <a class="btn btn--fantasma" href="crm.html">Ver el seguimiento en el CRM</a>
-        </div>
-      </div>
-
-      <!-- Maqueta 3 · cuentas por cobrar -->
-      <div class="marco maqueta maqueta--sola maqueta--lista aparecer" role="img"
-           aria-label="Pantalla de cuentas por cobrar de IncSales: $742,180 en cartera, con el saldo de cada factura, su antigüedad y las facturas PPD que todavía necesitan complemento de pago.">
-        <div class="marco__barra"><div class="marco__puntos" aria-hidden="true"><i></i><i></i><i></i></div><span class="marco__url">erp.tuempresa.com/ingresos/saldos</span></div>
-        <div class="pagina">
-          <div class="pagina__cabeza">
-            <div>
-              <p class="pagina__titulo">Cuentas por cobrar</p>
-              <p class="pagina__sub">$742,180 en cartera</p>
-            </div>
-            <div class="pagina__acciones"><span class="btn btn--chico btn--fantasma">Exportar</span></div>
-          </div>
-          <div class="datos-caja">
-            <div class="datos-scroll">
-              <table class="datos">
-                <thead>
-                  <tr>
-                    <th scope="col">Cliente</th>
-                    <th scope="col">Factura</th>
-                    <th scope="col" class="n">Saldo</th>
-                    <th scope="col">Estado</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td class="fuerte">Grupo Médico GDL</td><td class="clave">FAC-00318</td><td class="n">$49,996.00</td><td><span class="chip chip--verde">Abonado 50 %</span></td></tr>
-                  <tr><td class="fuerte">Distrimedic</td><td class="clave">FAC-00317</td><td class="n">$184,320.00</td><td><span class="chip chip--azul">Vence en 12 d</span></td></tr>
-                  <tr><td class="fuerte">Casther</td><td class="clave">FAC-00309</td><td class="n">$61,200.00</td><td><span class="chip chip--ambar">8 d vencida</span></td></tr>
-                  <tr><td class="fuerte">TecnoCableado</td><td class="clave">FAC-00298</td><td class="n">$0.00</td><td><span class="chip chip--verde">Pagada</span></td></tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="datos__pie">
-              <span>Facturas PPD con abono y sin complemento emitido</span>
-              <div class="paginacion"><span class="chip chip--ambar">6 REP por emitir</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================================================== GASTOS Y POR PAGAR -->
-<section class="bloque bloque--hundido">
-  <div class="envoltura">
-    <div class="par par--apoyo par--arriba">
-      <!-- Maqueta 4 · CFDI recibidos de proveedores -->
-      <div class="marco maqueta maqueta--sola maqueta--lista aparecer" role="img"
-           aria-label="Pantalla de gastos de IncSales con los CFDI recibidos de proveedores, su importe, su estado de pago y el saldo por pagar de la semana: $236,850.">
-        <div class="marco__barra"><div class="marco__puntos" aria-hidden="true"><i></i><i></i><i></i></div><span class="marco__url">erp.tuempresa.com/gastos</span></div>
-        <div class="pagina">
-          <div class="pagina__cabeza">
-            <div>
-              <p class="pagina__titulo">CFDI recibidos</p>
-              <p class="pagina__sub">Comprobantes de proveedor</p>
-            </div>
-            <div class="pagina__acciones"><span class="btn btn--chico">Cargar XML</span></div>
-          </div>
-          <div class="datos-caja">
-            <div class="datos-scroll">
-              <table class="datos">
-                <thead>
-                  <tr>
-                    <th scope="col">Proveedor</th>
-                    <th scope="col">Comprobante</th>
-                    <th scope="col" class="n">Importe</th>
-                    <th scope="col">Estado</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td class="fuerte">Conectores del Norte</td><td class="clave">A-14822</td><td class="n">$212,400.00</td><td><span class="chip chip--ambar">Por pagar</span></td></tr>
-                  <tr><td class="fuerte">Insumos Médicos MX</td><td class="clave">F-00931</td><td class="n">$96,750.00</td><td><span class="chip chip--verde">Pagada</span></td></tr>
-                  <tr><td class="fuerte">Cables y Redes SA</td><td class="clave">B-7710</td><td class="n">$48,900.00</td><td><span class="chip chip--azul">Abono 50 %</span></td></tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="datos__pie">
-              <span>Saldo por pagar esta semana</span>
-              <div class="paginacion"><span class="chip chip--ambar">$236,850.00</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <p class="sobre-titulo">Gastos y cuentas por pagar</p>
-        <h2>Lo que te facturan a ti también vive aquí</h2>
-        <p class="suave">Un sistema que solo emite facturas te deja la mitad del cuadro. IncSales también
-          recibe: cargas el CFDI que te mandó el proveedor —el XML, no una captura a mano— y a partir de
-          ahí llevas tus pagos y tu saldo.</p>
-        <ul class="lista">
-          <li><strong>Carga del CFDI del proveedor:</strong> el comprobante que te emitieron queda guardado
-            con el proveedor que lo emitió.</li>
-          <li><strong>Pagos a proveedores</strong> registrados contra el comprobante que corresponde.</li>
-          <li><strong>Saldos por pagar</strong> para saber qué debes esta semana, no a fin de mes.</li>
-          <li><strong>El mismo proveedor</strong> que ya te cotiza, te surte y aparece en el comparativo
-            por producto.</li>
-        </ul>
-        <div class="fila tras-rejilla">
-          <a class="btn btn--fantasma" href="compras.html">Ver compras y proveedores</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========================================================== CONFIGURACIÓN -->
-<section class="bloque">
-  <div class="envoltura">
-    <div class="encabezado encabezado--centro">
-      <p class="sobre-titulo">Se configura una vez</p>
-      <h2>Cuatro cosas que se dejan listas en la implementación</h2>
-      <p>Después de esto, facturar es elegir el pedido y darle timbrar. Nadie vuelve a tocar la
-        configuración hasta que cambia algo de verdad.</p>
-    </div>
-
-    <div class="rejilla rejilla--4 rejilla--apretada aparecer">
-      <article class="tarjeta">
-        <span class="icono-caja" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg></span>
-        <h3>Datos de tu empresa</h3>
-        <p class="apunte">Razón social, RFC, régimen fiscal y lugar de expedición. Lo que va del lado del
-          emisor en todos los comprobantes.</p>
-      </article>
-      <article class="tarjeta">
-        <span class="icono-caja icono-caja--violeta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span>
-        <h3>Folios y series</h3>
-        <p class="apunte">Prefijo, cuántos dígitos y si el contador se reinicia cada año o nunca. Igual que
-          en cotizaciones y pedidos.</p>
-      </article>
-      <article class="tarjeta">
-        <span class="icono-caja icono-caja--ambar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-5 3 3 5-7"/></svg></span>
-        <h3>Impuestos</h3>
-        <p class="apunte">Cómo se traslada el IVA y qué se aplica por producto, para que el total del
-          documento sea el total de la factura.</p>
-      </article>
-      <article class="tarjeta">
-        <span class="icono-caja icono-caja--verde" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m6 15 4-4 3 3 2-2 3 3"/><circle cx="9" cy="9" r="1.4"/></svg></span>
-        <h3>Logo y PDF</h3>
-        <p class="apunte">Tu logo en el comprobante tamaño carta que se genera en el servidor. La factura
-          sale con tu cara, no con la nuestra.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ===================================================== LO QUE NO HACE -->
-<section class="bloque bloque--hundido">
-  <div class="envoltura">
-    <div class="encabezado encabezado--centro">
-      <p class="sobre-titulo">Con todas sus letras</p>
-      <h2>Lo que la facturación todavía no hace</h2>
-      <p>Preferimos que te enteres aquí y no en la tercera semana de implementación. Si algo de esta lista
-        es indispensable para tu operación, dínoslo antes de firmar.</p>
-    </div>
-
-    <div class="aviso aviso--aviso">
-      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="icono-linea" aria-hidden="true"><path d="M12 9v4.5M12 17v.1"/><path d="M10.3 3.9 2.6 17.5a1.9 1.9 0 0 0 1.7 2.9h15.4a1.9 1.9 0 0 0 1.7-2.9L13.7 3.9a1.9 1.9 0 0 0-3.4 0z"/></svg>
-      <div><b>Hoy no lo hace: IEPS y retenciones completas, ni números de serie</b>
-        El IVA trasladado sí está resuelto y es lo que ocupa a las empresas de distribución para las que
-        está hecho IncSales. Pero si tu giro necesita IEPS o el esquema completo de retenciones —honorarios,
-        arrendamiento, fletes—, hoy no lo cubrimos. Y si tu inventario se controla por número de serie pieza
-        por pieza, tampoco: manejamos lotes con caducidad y pedimento, no series. Tampoco hay todavía una
-        bitácora de auditoría que registre, usuario por usuario, cada movimiento del sistema: lo que sí
-        queda escrito es la actividad del negocio en su bitácora.</div>
-    </div>
-
-    <div class="contraste tras-rejilla">
-      <div class="tarjeta tarjeta--plana tarjeta--comoda">
-        <div class="contraste__cab">
-          <span class="chip">Hoy no está</span>
-          <h3>Lo que todavía no cubre</h3>
-        </div>
-        <ul class="lista lista--no">
-          <li>IEPS.</li>
-          <li>El esquema completo de retenciones de ISR e IVA.</li>
-          <li>Números de serie por pieza.</li>
-          <li>Bitácora de auditoría usuario por usuario en todo el sistema.</li>
-          <li>Nómina y timbrado de recibos de nómina.</li>
-          <li>Contabilidad: pólizas, balanza y declaraciones.</li>
-        </ul>
-      </div>
-      <div class="tarjeta tarjeta--comoda tarjeta--alta">
-        <div class="contraste__cab">
-          <span class="chip chip--azul">Sí está</span>
-          <h3>Lo que sí está, y completo</h3>
-        </div>
-        <ul class="lista">
-          <li>CFDI 4.0 de ingreso con IVA trasladado.</li>
-          <li>Complemento de pago, notas de crédito y facturas globales.</li>
-          <li>Cancelación con motivo y comprobante que sustituye.</li>
-          <li>Lotes con caducidad y pedimento, y salida por lo que primero vence.</li>
-          <li>Cuentas por cobrar, gastos y cuentas por pagar.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="aviso tras-rejilla">
-      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="icono-linea" aria-hidden="true"><path d="M12 8v5M12 16.2v.1"/><circle cx="12" cy="12" r="9"/></svg>
-      <div><b>¿Y si lo necesito de todos modos?</b>
-        Nosotros escribimos el sistema, así que se puede construir: el desarrollo a la medida se cotiza por
-        horas, a <strong>$890 la hora</strong> o en una bolsa de 40 horas desde <strong>$29,900</strong>, en
-        pesos mexicanos y con IVA incluido. Lo que no vamos a hacer es venderte hoy algo que todavía no
-        existe.</div>
-    </div>
-
-    <p class="centro tras-rejilla"><a class="btn btn--fantasma" href="servicios.html">Ver desarrollo a la medida</a></p>
-  </div>
-</section>
-
-<!-- ============================================================ TESTIMONIO -->
-<section class="bloque bloque--tinta">
+<!-- S08 · CIERRE -->
+<section class="bloque bloque--hundido p-facturacion">
   <div class="envoltura envoltura--angosta">
     <div class="encabezado encabezado--centro">
-      <p class="sobre-titulo">Lo que dicen</p>
-      <h2>Qué cambia cuando facturar deja de ser un trámite aparte</h2>
+      <h2>Timbramos una factura en la demo</h2>
+      <p>Treinta minutos. Capturamos un pedido de tu negocio, lo pasamos a factura y ves salir el
+        CFDI 4.0 timbrado, con su PDF y su XML.</p>
+      <p class="centro"><a class="btn btn--grande" href="contacto.html">Agenda tu demo</a></p>
     </div>
-    <figure class="tarjeta tarjeta--tinta tarjeta--comoda cita aparecer">
-      <blockquote class="cita__texto">Antes el pedido se hacía en un sistema y la factura en otro, y cada mes
-        había diferencias que nadie sabía explicar. Hoy la factura sale del mismo pedido y el total es el
-        mismo total.</blockquote>
-      <figcaption class="cita__pie">
-        <span class="avatar" aria-hidden="true">TC</span>
-        <span class="cita__quien">
-          <b>Administración</b>
-          <span>TecnoCableado · Material eléctrico y redes</span>
-        </span>
-      </figcaption>
-    </figure>
-    <p class="apunte centro tras-rejilla">Testimonio de ejemplo para esta maqueta, basado en la operación
-      real del cliente.</p>
-  </div>
-</section>
-
-<!-- ================================================================ PLANES -->
-<section class="bloque" id="planes">
-  <div class="envoltura envoltura--ancha">
-    <div class="encabezado encabezado--centro">
-      <p class="sobre-titulo">Planes con facturación</p>
-      <h2>Tres formas de facturar dentro de IncSales</h2>
-      <p>La facturación CFDI 4.0 vive en la familia Completo: estos son los tres planes de catálogo, y el
-        cuarto, «A la medida», se cotiza contigo. Todos los precios en pesos mexicanos y con IVA incluido.</p>
-    </div>
-
-    <div class="planes">
-      <article class="plan">
-        <p class="plan__familia">Completo</p>
-        <p class="plan__nombre">Factura Esencial</p>
-        <p class="plan__quien">Para quien ya opera bien y lo que necesita es facturar y cobrar dentro del
-          mismo sistema.</p>
-        <p class="plan__precio"><span class="plan__moneda">$</span><span class="plan__monto">2,490</span><span class="plan__periodo">/ mes</span></p>
-        <p class="plan__iva">IVA incluido · $2,117 al mes pagando anual</p>
-        <div class="plan__limites">
-          <span class="chip">5 usuarios</span>
-          <span class="chip">50 CFDI al mes</span>
-        </div>
-        <ul class="lista">
-          <li>Cotizaciones, pedidos y remisiones</li>
-          <li>Inventarios multialmacén y compras</li>
-          <li>CFDI 4.0, complementos de pago y notas de crédito</li>
-          <li>Cuentas por cobrar y por pagar</li>
-        </ul>
-        <a class="btn btn--fantasma btn--bloque" href="precios.html">Ver detalle</a>
-        <p class="apunte plan__nota">Sin CRM · se agrega por $499 al mes</p>
-      </article>
-
-      <article class="plan plan--elegido">
-        <span class="plan__cinta">El más elegido</span>
-        <p class="plan__familia">Completo</p>
-        <p class="plan__nombre">Operación</p>
-        <p class="plan__quien">Todo el sistema junto. Es lo que usa TecnoCableado todos los días.</p>
-        <p class="plan__precio"><span class="plan__moneda">$</span><span class="plan__monto">7,500</span><span class="plan__periodo">/ mes</span></p>
-        <p class="plan__iva">IVA incluido · $6,375 al mes pagando anual</p>
-        <div class="plan__limites">
-          <span class="chip chip--azul">10 usuarios</span>
-          <span class="chip chip--azul">100 CFDI al mes</span>
-        </div>
-        <ul class="lista">
-          <li>CRM completo + cotizaciones + inventarios + compras</li>
-          <li>Facturación CFDI 4.0 con todos sus comprobantes</li>
-          <li>WhatsApp Business, marketing y formularios</li>
-          <li>Subdominio propio y soporte con persona</li>
-        </ul>
-        <a class="btn btn--bloque" href="contacto.html">Agenda tu demo</a>
-        <p class="apunte plan__nota">Migración sin costo en plan anual</p>
-      </article>
-
-      <article class="plan">
-        <p class="plan__familia">Completo</p>
-        <p class="plan__nombre">Corporativo</p>
-        <p class="plan__quien">Para varias razones sociales, varias sucursales y mucho volumen de timbrado.</p>
-        <p class="plan__precio"><span class="plan__moneda">$</span><span class="plan__monto">15,000</span><span class="plan__periodo">/ mes</span></p>
-        <p class="plan__iva">IVA incluido · $12,750 al mes pagando anual</p>
-        <div class="plan__limites">
-          <span class="chip">25 usuarios</span>
-          <span class="chip">500 CFDI al mes</span>
-        </div>
-        <ul class="lista">
-          <li>Todo lo de Operación</li>
-          <li>Varias empresas o sucursales, con datos aislados</li>
-          <li>Acceso a la API y tableros a la medida</li>
-          <li>5 horas de desarrollo al mes y gerente de cuenta</li>
-        </ul>
-        <a class="btn btn--fantasma btn--bloque" href="contacto.html">Habla con ventas</a>
-      </article>
-    </div>
-
-    <p class="centro tras-rejilla"><a class="btn btn--fantasma btn--grande" href="precios.html">Ver los 9 planes y todos los complementos</a></p>
-  </div>
-</section>
-
-<!-- ============================================================= PREGUNTAS -->
-<section class="bloque bloque--hundido">
-  <div class="envoltura envoltura--angosta">
-    <div class="encabezado encabezado--centro">
-      <p class="sobre-titulo">Dudas de facturación</p>
-      <h2>Lo que preguntan quienes ya facturan en otro lado</h2>
-    </div>
-    <div class="acordeon">
-      <details open>
-        <summary>¿Ustedes timbran o timbra un PAC?</summary>
-        <div class="acordeon__cuerpo">Timbra un PAC autorizado por el SAT: es el único camino que la
-          autoridad reconoce para sellar un CFDI. IncSales arma el comprobante, lo valida, lo manda a
-          timbrar y guarda el resultado. El PAC avisa el estado por webhook —un aviso automático de
-          servidor a servidor—, así que la factura cambia sola de «por timbrar» a «timbrada» sin que nadie
-          refresque la pantalla.</div>
-      </details>
-      <details>
-        <summary>¿Qué pasa si me paso de los CFDI que trae mi plan?</summary>
-        <div class="acordeon__cuerpo">Agregas un paquete de 100 CFDI adicionales por $499 al mes con IVA
-          incluido, y se acumulan dentro del mes. No te obligamos a subir de plan porque tuviste una
-          temporada alta. Si el volumen se queda arriba de manera permanente, ahí sí conviene comparar
-          contra Corporativo, que trae 500 CFDI al mes por $15,000 mensuales, IVA incluido.</div>
-      </details>
-      <details>
-        <summary>¿Puedo facturar en dólares?</summary>
-        <div class="acordeon__cuerpo">Sí. El sistema es multimoneda y el tipo de cambio se congela
-          <strong>por documento</strong>, no en una tabla global. Lo que facturaste el martes conserva el
-          tipo de cambio del martes aunque el dólar se mueva el miércoles, y eso es exactamente lo que te
-          van a preguntar cuando alguien revise la operación un año después.</div>
-      </details>
-      <details>
-        <summary>¿Emite complemento de pago sin que yo lo persiga?</summary>
-        <div class="acordeon__cuerpo">El complemento sale del pago que registras contra la factura. Y para
-          que no se te olvide, la pantalla de cuentas por cobrar te enseña cuáles facturas PPD ya tienen
-          abono y todavía no tienen su REP emitido. No es un recordatorio en un pizarrón: es una lista
-          dentro del sistema.</div>
-      </details>
-      <details>
-        <summary>¿Cómo se cancela una factura?</summary>
-        <div class="acordeon__cuerpo">Con motivo, como lo pide el SAT desde la versión 4.0, y cuando el
-          motivo lo exige, indicando el folio fiscal del comprobante que la sustituye. La cancelación queda
-          escrita en el expediente del cliente y del negocio, así que ventas y administración ven lo mismo.</div>
-      </details>
-      <details>
-        <summary>¿Maneja IEPS o retenciones?</summary>
-        <div class="acordeon__cuerpo">No todavía. El IVA trasladado está resuelto y cubre a la mayoría de
-          las empresas de distribución, que es para quienes está hecho IncSales. IEPS y el esquema completo
-          de retenciones no están hoy. Si tu giro los necesita, dilo en la demo: o lo construimos como
-          desarrollo a la medida —$890 la hora, o una bolsa de 40 horas desde $29,900, con IVA incluido— o
-          te decimos de frente que hoy no somos tu sistema.</div>
-      </details>
-      <details>
-        <summary>¿Timbra recibos de nómina?</summary>
-        <div class="acordeon__cuerpo">No. IncSales es el sistema de tu operación comercial: cotizas,
-          compras, entregas, facturas y cobras. La nómina y sus recibos timbrados se quedan donde los tengas
-          hoy, con tu despacho o con tu sistema de nómina. Preferimos decírtelo aquí y no en la junta de
-          arranque.</div>
-      </details>
-      <details>
-        <summary>¿IncSales lleva mi contabilidad?</summary>
-        <div class="acordeon__cuerpo">No. Emite y recibe CFDI, lleva tus cuentas por cobrar y por pagar, y
-          guarda el PDF y el XML de todo. Las pólizas, la balanza y las declaraciones las sigue haciendo tu
-          contador — con los archivos que descargas de aquí, incluido el ZIP con las facturas del año
-          completo.</div>
-      </details>
-    </div>
-    <p class="centro tras-rejilla">
-      <a class="enlace-ir" href="preguntas.html">Ver todas las preguntas frecuentes
-        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg>
-      </a>
-    </p>
-  </div>
-</section>
-
-<!-- ========================================================= SIGUE LEYENDO -->
-<section class="bloque bloque--corto">
-  <div class="envoltura">
-    <div class="encabezado encabezado--centro">
-      <p class="sobre-titulo">Sigue leyendo</p>
-      <h2>La factura no vive sola</h2>
-      <p>Es el final de una cadena que empieza mucho antes. Estas son las piezas que la alimentan.</p>
-    </div>
-    <div class="rejilla rejilla--3 rejilla--apretada aparecer">
-      <a class="tarjeta tarjeta--viva tarjeta-enlace" href="cotizaciones.html">
-        <span class="icono-caja" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span>
-        <h3>Cotizaciones y venta</h3>
-        <p class="suave">De dónde sale el pedido que después se factura: folio, PDF con tu logo y costos
-          congelados.</p>
-        <span class="enlace-ir">Ver cotizaciones
-          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg>
-        </span>
-      </a>
-      <a class="tarjeta tarjeta--viva tarjeta-enlace" href="inventarios.html">
-        <span class="icono-caja icono-caja--verde" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8l9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg></span>
-        <h3>Inventarios</h3>
-        <p class="suave">Las claves del SAT y la unidad de medida viven en el producto, junto con lotes,
-          caducidad y pedimento.</p>
-        <span class="enlace-ir">Ver inventarios
-          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg>
-        </span>
-      </a>
-      <a class="tarjeta tarjeta--viva tarjeta-enlace" href="compras.html">
-        <span class="icono-caja icono-caja--ambar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h13v13H1z"/><path d="M14 8h4l3 3v5h-7"/><circle cx="5.5" cy="18.5" r="2"/><circle cx="17.5" cy="18.5" r="2"/></svg></span>
-        <h3>Compras y proveedores</h3>
-        <p class="suave">El otro lado del CFDI: órdenes, recepciones y los comprobantes que te emiten a ti.</p>
-        <span class="enlace-ir">Ver compras
-          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg>
-        </span>
-      </a>
-    </div>
-    <p class="centro tras-rejilla">
-      <a class="enlace-ir" href="plataforma.html">Ver la plataforma completa, módulo por módulo
-        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"/></svg>
-      </a>
-    </p>
-  </div>
-</section>
-
-<!-- ================================================================ CIERRE -->
-<section class="bloque bloque--tinta" id="demo">
-  <div class="envoltura envoltura--angosta centro">
-    <h2>De tu cotización al CFDI, en la misma llamada</h2>
-    <p class="entradilla">Media hora. Traes tres cotizaciones reales, las capturamos en vivo y ves de dónde
-      sale la factura.</p>
-    <div class="cierre__acciones">
-      <a class="btn btn--claro btn--grande" href="contacto.html">Agenda tu demo</a>
-      <a class="btn btn--linea-clara btn--grande" href="precios.html">Ver planes y precios</a>
-    </div>
-    <p class="apunte cierre__pie">Sin permanencia forzosa · Migración incluida en planes anuales ·
-      Soporte en español, en México</p>
   </div>
 </section>
 
 </main>
 
-<!-- =================================================================== PIE -->
+<!-- S09 · PIE -->
 <footer class="pie">
   <div class="envoltura envoltura--ancha">
     <div class="pie__grid">
@@ -1186,54 +252,48 @@
         </div>
       </div>
       <div>
-        <h3 class="pie__titulo">Producto</h3>
+        <h3 class="pie__titulo">Los módulos</h3>
         <ul>
-          <li><a href="index.html#crm">CRM y seguimiento</a></li>
-          <li><a href="index.html#cotizaciones">Cotizaciones y venta</a></li>
-          <li><a href="index.html#inventarios">Inventarios</a></li>
-          <li><a href="index.html#compras">Compras y proveedores</a></li>
-          <li><a href="facturacion.html" aria-current="page">Facturación CFDI 4.0</a></li>
-          <li><a href="index.html#whatsapp">WhatsApp y marketing</a></li>
+          <li><a href="crm.html">IncSales CRM</a></li>
+          <li><a href="cotizaciones.html">IncSales Cotiza</a></li>
+          <li><a href="inventarios.html">IncSales Inventarios</a></li>
+          <li><a href="compras.html">IncSales Compras</a></li>
+          <li><a href="facturacion.html" aria-current="page">IncSales Facturación</a></li>
+          <li><a href="whatsapp.html">IncSales WhatsApp</a></li>
+          <li><a href="forms.html">IncSales Forms</a></li>
+          <li><a href="correo.html">IncSales Correo</a></li>
         </ul>
       </div>
       <div>
-        <h3 class="pie__titulo">Planes</h3>
+        <h3 class="pie__titulo">Conectar y crecer</h3>
         <ul>
-          <li><a href="index.html#precios">Cotiza, desde $200</a></li>
-          <li><a href="index.html#precios">CRM, desde $499</a></li>
-          <li><a href="index.html#precios">Completo, desde $2,490</a></li>
-          <li><a href="index.html#precios">Complementos</a></li>
-          <li><a href="index.html#precios">A la medida</a></li>
+          <li><a href="wordpress.html">WordPress y WooCommerce</a></li>
+          <li><a href="integraciones.html">Integraciones y API</a></li>
+          <li><a href="migracion.html">IncSales Migración</a></li>
+          <li><a href="agencia.html">Agencia IncSales</a></li>
+          <li><a href="precios.html">Precios y planes</a></li>
         </ul>
       </div>
       <div>
-        <h3 class="pie__titulo">Servicios</h3>
+        <h3 class="pie__titulo">Antes de decidir</h3>
         <ul>
-          <li><a href="index.html#precios">Migración de datos</a></li>
-          <li><a href="index.html#precios">Implementación y capacitación</a></li>
-          <li><a href="index.html#precios">Desarrollo a la medida</a></li>
-          <li><a href="index.html#prueba">WhatsApp Business API</a></li>
-          <li><a href="index.html#precios">Portal de clientes</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="pie__titulo">Empresa</h3>
-        <ul>
-          <li><a href="index.html#prueba">Por dentro</a></li>
-          <li><a href="por-dentro.html">Las pantallas del sistema</a></li>
-          <li><a href="index.html#confianza">Confianza y operación</a></li>
-          <li><a href="index.html#preguntas">Preguntas frecuentes</a></li>
+          <li><a href="por-dentro.html">Las pantallas por dentro</a></li>
+          <li><a href="casos.html">Clientes</a></li>
+          <li><a href="comparativa.html">Contra lo que ya tienes</a></li>
+          <li><a href="industrias.html">Por tu giro</a></li>
+          <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+          <li><a href="nosotros.html">Quiénes somos</a></li>
           <li><a href="contacto.html">Agenda una demo</a></li>
         </ul>
       </div>
     </div>
     <div class="pie__legal">
-      <span>© <span data-anio>2026</span> Incoming Sales · IncSales ERP. Todos los derechos reservados.</span>
-      <span>Precios en pesos mexicanos con IVA incluido. Propuesta de diseño, no es el sitio publicado.</span>
+      <p>© 2026 Incoming Sales · IncSales ERP. Precios en pesos mexicanos, mensuales y con IVA
+        incluido. El plan anual se paga por adelantado.</p>
+      <p><a href="terminos.html">Términos del servicio</a> · <a href="privacidad.html">Aviso de privacidad</a></p>
     </div>
   </div>
 </footer>
-
 <script src="assets/js/sistema.js" defer></script>
 </body>
 </html>

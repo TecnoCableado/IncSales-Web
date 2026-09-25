@@ -1,0 +1,911 @@
+{
+ "version": "0.4",
+ "title": "terminos · S08 DESARROLLO A LA MEDIDA Y TERCEROS",
+ "type": "container",
+ "content": [
+  {
+   "id": "9860d91",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#f4f6f9"
+   },
+   "elements": [
+    {
+     "id": "7fe19fe",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 820,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "24a4979",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "12 · Desarrollo a la medida",
+        "header_size": "h2",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "02b4e30",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "12.1 Cómo se contrata",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "ace01e0",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p><strong>$890 la hora</strong> , o bolsa de 40 horas desde <strong>$29,900</strong> . Ninguna hora se consume sin alcance, entregable y fecha aprobados por escrito; Corporativo incluye 5 horas al mes.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "e4b63f4",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "12.2 De quién es lo que se desarrolla",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "6cec1be",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Se hace dentro de IncSales y lo usas mientras seas cliente. Tus datos, reglas, formatos y configuraciones son tuyos y salen contigo; la exclusividad se pacta aparte.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "f4a0931",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "12.3 Integraciones y garantía",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "0545671",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Dependen de que el tercero mantenga su interfaz, y si cambia su API el ajuste se cotiza. Si algo no cumple el alcance aprobado, lo corregimos sin cobrarte.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "41c6af7",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "13 · Servicios de terceros",
+        "header_size": "h2",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "2800afd",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "13.1 Quién interviene y qué implica",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "65178e2",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        }
+       },
+       "elements": [
+        {
+         "id": "b9d575d",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          }
+         },
+         "elements": [
+          {
+           "id": "21c14b5",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 0,
+             "column": "0",
+             "row": "0"
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": false
+            },
+            "border_color": "#dbdee3"
+           },
+           "elements": [
+            {
+             "id": "be8b0ab",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "695735a",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Tercero",
+                "header_size": "div",
+                "title_color": "#21252d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 13,
+                 "sizes": []
+                },
+                "typography_font_weight": "600"
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "339ecba",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Para qué",
+                "header_size": "div",
+                "title_color": "#21252d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 13,
+                 "sizes": []
+                },
+                "typography_font_weight": "600"
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "cb8e08d",
+               "elType": "widget",
+               "widgetType": "heading",
+               "settings": {
+                "title": "Qué implica",
+                "header_size": "div",
+                "title_color": "#21252d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 13,
+                 "sizes": []
+                },
+                "typography_font_weight": "600"
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "a61e841",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "a354121",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "PAC autorizado por el SAT",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "deb3d3c",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Timbrado de tus CFDI",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "6d7b0e4",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Su caída afecta al timbrado, no al resto",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "87bc97b",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "75b318b",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Meta · WhatsApp Business API",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "9ce1b28",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Tu número y tus campañas",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "4ecb31c",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Sus políticas y la ventana de 24 horas",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "6875ddd",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "6a4fe66",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Proveedor de nube",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "f436070",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Donde corre el sistema",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "e09f2b1",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "La disponibilidad depende en parte de él",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "cbce531",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "82ffc1d",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Proveedor de correo",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "52786a1",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Envío desde tu dominio",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "913e0c6",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Tu dominio se da de alta con sus DNS",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "43f8083",
+             "elType": "container",
+             "settings": {
+              "container_type": "grid",
+              "grid_columns_grid": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_columns_grid_mobile": {
+               "unit": "fr",
+               "size": 3,
+               "sizes": []
+              },
+              "grid_gaps": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "8"
+              },
+              "padding": {
+               "unit": "px",
+               "top": "12",
+               "right": "0",
+               "bottom": "12",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_border": "solid",
+              "border_width": {
+               "unit": "px",
+               "top": "0",
+               "right": "0",
+               "bottom": "1",
+               "left": "0",
+               "isLinked": false
+              },
+              "border_color": "#dbdee3"
+             },
+             "elements": [
+              {
+               "id": "6b4f55b",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Google",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "5b0e457",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Publicidad y medición",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "c597b5a",
+               "elType": "widget",
+               "widgetType": "text-editor",
+               "settings": {
+                "editor": "Se factura aparte del sistema",
+                "text_color": "#4d535d",
+                "typography_typography": "custom",
+                "typography_font_size": {
+                 "unit": "px",
+                 "size": 15,
+                 "sizes": []
+                }
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "f8aea67",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "13.2 Sus términos también aplican",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "6b1b305",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>No controlamos sus condiciones ni respondemos por sus caídas. Si uno falla, te avisamos, escalamos y buscamos sustituto; la lista puede cambiar.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "ff95458",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "13.3 Tus cuentas siguen siendo tuyas",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "8d05336",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>El número de WhatsApp, el dominio de correo, la publicidad y tu PAC están a tu nombre y se quedan contigo.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

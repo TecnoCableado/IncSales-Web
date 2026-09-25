@@ -1,0 +1,56 @@
+/* ============================================================================
+   COMÚN · lo que estaba copiado a mano en más de quince hojas de página
+   ----------------------------------------------------------------------------
+   La portada, las migas y el pie se repetían idénticos en cada CSS de página.
+   Aquí viven una sola vez. Las páginas nuevas cargan sistema.css, este archivo
+   y productos.css, en ese orden; las páginas viejas siguen con su hoja propia
+   y no se enteran, así que no hay regresión posible.
+   ========================================================================== */
+
+PROPUESTA · PORTADA (propuesta/index.html)
+   ----------------------------------------------------------------------------
+   Solo piezas que NO existen en sistema.css. Cero colores sueltos, cero radios
+   nuevos, cero sombras nuevas: todo sale de los tokens. Si algo de aquí se
+   repite en otra página, se sube al sistema; mientras tanto vive aquí.
+   ========================================================================== */
+
+/* ==================================================== 1. RETÍCULA DE PORTADA
+   La retícula útil mide 1240 px. Un titular de 60 px pide 30 rem para no
+   quedar en cuatro renglones sueltos, y la pantalla del sistema pide 760 px
+   para enseñar su barra lateral, tres indicadores en fila y cinco columnas de
+   tabla sin que nada se parta. Las dos cosas no caben una al lado de la otra,
+   así que el titular y las acciones se reparten arriba y la maqueta se lleva
+   el ancho entero abajo: se ve el software completo, nunca recortado. */
+.portada__reja { display: grid; gap: clamp(2.5rem, 5vw, var(--e10)); }
+
+.portada__cabeza { display: grid; gap: var(--e6) var(--e9); align-items: end; }
+
+.portada__lado .portada__acciones { margin-top: 0; }
+
+.portada__lado .portada__firma { flex-direction: column; gap: .55rem; }
+
+/* Tres señales de confianza bajo los botones, separadas por una línea fina.
+   Las tres llevan la misma marca: una sola con viñeta y dos sin ella es lo que
+   hace que una portada se vea armada a mano. */
+.portada__firma { padding-top: var(--e5); border-top: 1px solid var(--linea-noche); }
+
+.portada__firma svg { width: 14px; height: 14px; flex: 0 0 auto; color: var(--a4); }
+
+/* Los rótulos del pie son encabezados de verdad (h3), para no saltar de h2 a h5
+   en la jerarquía. El aspecto es el que sistema.css le da a .pie h5. */
+.pie__titulo {
+  color: var(--tinta-noche); font-size: var(--t-12); font-weight: var(--peso-fuerte);
+  letter-spacing: .07em; text-transform: uppercase; line-height: 1.4; margin-bottom: var(--e4);
+}
+
+.pie__logo { height: 30px; width: auto; margin-bottom: var(--e4); }
+
+.pie__contacto { display: grid; gap: .4rem; margin-top: var(--e4); font-size: var(--t-13); letter-spacing: var(--tr-13); }
+
+@media (min-width: 900px) {
+  .portada__cabeza { grid-template-columns: minmax(0, 1.3fr) minmax(0, .85fr); }
+}
+
+@media (min-width: 900px) {
+  .portada__lado .portada__firma { flex-direction: column; gap: .55rem; }
+}

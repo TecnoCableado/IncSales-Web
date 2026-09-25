@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "63c29ab",
+   "id": "48e7955",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -32,11 +32,13 @@
      "bottom": "48",
      "left": "0",
      "isLinked": false
-    }
+    },
+    "background_background": "classic",
+    "background_color": "#f4f6f9"
    },
    "elements": [
     {
-     "id": "48e7955",
+     "id": "57d4111",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -71,63 +73,43 @@
      },
      "elements": [
       {
-       "id": "9de8b00",
+       "id": "ab42e48",
        "elType": "container",
        "settings": {
-        "flex_direction": "column",
-        "content_width": "boxed",
-        "boxed_width": {
-         "unit": "px",
-         "size": 720,
+        "container_type": "grid",
+        "grid_columns_grid": {
+         "unit": "fr",
+         "size": 2,
          "sizes": []
         },
-        "margin": {
-         "unit": "px",
-         "top": "0",
-         "right": "0",
-         "bottom": "40",
-         "left": "0",
-         "isLinked": false
+        "grid_columns_grid_tablet": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
         },
-        "flex_gap": {
+        "grid_columns_grid_mobile": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_gaps": {
          "unit": "px",
-         "size": 12,
-         "column": "12",
-         "row": "12"
+         "size": 48,
+         "column": "48",
+         "row": "32"
         }
        },
        "elements": [
         {
-         "id": "aba09c3",
+         "id": "2f5ef6d",
          "elType": "container",
          "settings": {
-          "content_width": "full",
-          "background_background": "classic",
-          "background_color": "#f2f7ff",
-          "border_radius": {
+          "flex_direction": "column",
+          "flex_gap": {
            "unit": "px",
-           "top": "999",
-           "right": "999",
-           "bottom": "999",
-           "left": "999",
-           "isLinked": true
-          },
-          "padding": {
-           "unit": "px",
-           "top": "5",
-           "right": "11",
-           "bottom": "5",
-           "left": "11",
-           "isLinked": false
-          },
-          "flex_direction": "row",
-          "margin": {
-           "unit": "px",
-           "top": "0",
-           "right": "0",
-           "bottom": "14",
-           "left": "0",
-           "isLinked": false
+           "size": 12,
+           "column": "12",
+           "row": "12"
           }
          },
          "elements": [
@@ -136,20 +118,96 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Comparativa 1",
+            "title": "Aspel SAE, CONTPAQi, Microsip, Bind",
             "header_size": "div",
             "title_color": "#1e5bd4",
             "typography_typography": "custom",
             "typography_font_size": {
              "unit": "px",
-             "size": 12,
+             "size": 13,
              "sizes": []
             },
-            "typography_font_weight": "600",
-            "typography_text_transform": "uppercase",
-            "typography_letter_spacing": {
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "ebc21bd",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Factura bien, y empieza a contar cuando el cliente ya dijo que sí",
+            "header_size": "h2",
+            "typography_typography": "custom",
+            "typography_font_size": {
              "unit": "px",
-             "size": 0.6,
+             "size": 36,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "c5cf5e3",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<p>Hace mejor que nadie el almacén, el CFDI y la cuenta por cobrar. Lo de antes del sí, no.</p>"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "3c4ce4b",
+           "elType": "widget",
+           "widgetType": "icon-list",
+           "settings": {
+            "icon_list": [
+             {
+              "_id": "5f14a60",
+              "text": "La bandeja de interesados queda fuera de su alcance.",
+              "selected_icon": {
+               "value": "fas fa-times",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "ff70e47",
+              "text": "El seguimiento y la bitácora dependen de tu edición.",
+              "selected_icon": {
+               "value": "fas fa-times",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "2615ad0",
+              "text": "Sabe lo que hay en tu almacén, no lo que tiene tu proveedor.",
+              "selected_icon": {
+               "value": "fas fa-times",
+               "library": "fa-solid"
+              }
+             }
+            ],
+            "space_between": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "icon_size": {
+             "unit": "px",
+             "size": 17,
+             "sizes": []
+            },
+            "icon_color": "#a7abb3",
+            "icon_self_align": "left",
+            "text_color": "#6a6f78",
+            "icon_typography_typography": "custom",
+            "icon_typography_font_size": {
+             "unit": "px",
+             "size": 16,
              "sizes": []
             }
            },
@@ -160,146 +218,7 @@
          "isInner": false
         },
         {
-         "id": "00a4942",
-         "elType": "widget",
-         "widgetType": "heading",
-         "settings": {
-          "title": "Tu sistema administrativo empieza a contar cuando ya te dijeron que sí",
-          "header_size": "h2",
-          "typography_typography": "custom",
-          "typography_font_size": {
-           "unit": "px",
-           "size": 36,
-           "sizes": []
-          },
-          "typography_font_weight": "600"
-         },
-         "elements": [],
-         "isInner": false
-        },
-        {
-         "id": "5cba382",
-         "elType": "widget",
-         "widgetType": "text-editor",
-         "settings": {
-          "editor": "<p>Administra el egreso. Nosotros administramos el peso antes de que entre.</p>"
-         },
-         "elements": [],
-         "isInner": false
-        }
-       ],
-       "isInner": false
-      },
-      {
-       "id": "57d4111",
-       "elType": "container",
-       "settings": {
-        "container_type": "grid",
-        "grid_columns_grid": {
-         "unit": "fr",
-         "size": 3,
-         "sizes": []
-        },
-        "grid_columns_grid_tablet": {
-         "unit": "fr",
-         "size": 2,
-         "sizes": []
-        },
-        "grid_columns_grid_mobile": {
-         "unit": "fr",
-         "size": 1,
-         "sizes": []
-        },
-        "grid_gaps": {
-         "unit": "px",
-         "size": 24,
-         "column": "24",
-         "row": "24"
-        }
-       },
-       "elements": [
-        {
-         "id": "2f5ef6d",
-         "elType": "container",
-         "settings": {
-          "background_background": "classic",
-          "background_color": "#ffffff",
-          "border_radius": {
-           "unit": "px",
-           "top": "10",
-           "right": "10",
-           "bottom": "10",
-           "left": "10",
-           "isLinked": true
-          },
-          "padding": {
-           "unit": "px",
-           "top": "28",
-           "right": "28",
-           "bottom": "28",
-           "left": "28",
-           "isLinked": true
-          },
-          "padding_mobile": {
-           "unit": "px",
-           "top": "22",
-           "right": "22",
-           "bottom": "22",
-           "left": "22",
-           "isLinked": true
-          },
-          "flex_direction": "column",
-          "flex_gap": {
-           "unit": "px",
-           "size": 12,
-           "column": "12",
-           "row": "12"
-          },
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#dbdee3"
-         },
-         "elements": [
-          {
-           "id": "17022de",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Diez usuarios, un precio",
-            "header_size": "h3",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 18,
-             "sizes": []
-            },
-            "typography_font_weight": "600"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "0a118bf",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p>El plan Operación trae 10 usuarios por <strong>$7,500 al mes</strong> , IVA incluido. Son $750 por persona.</p>"
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "227a569",
+         "id": "d34f104",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -352,12 +271,13 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Los timbres van dentro",
-            "header_size": "h3",
+            "title": "Lo que dice el buscador",
+            "header_size": "div",
+            "title_color": "#1e5bd4",
             "typography_typography": "custom",
             "typography_font_size": {
              "unit": "px",
-             "size": 18,
+             "size": 13,
              "sizes": []
             },
             "typography_font_weight": "600"
@@ -366,78 +286,16 @@
            "isInner": false
           },
           {
-           "id": "5e36c36",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "<p>50, 100 o 500 CFDI al mes según tu plan. El paquete extra de 100 cuesta <strong>+$499 al mes</strong> .</p>"
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "ab42e48",
-         "elType": "container",
-         "settings": {
-          "background_background": "classic",
-          "background_color": "#ffffff",
-          "border_radius": {
-           "unit": "px",
-           "top": "10",
-           "right": "10",
-           "bottom": "10",
-           "left": "10",
-           "isLinked": true
-          },
-          "padding": {
-           "unit": "px",
-           "top": "28",
-           "right": "28",
-           "bottom": "28",
-           "left": "28",
-           "isLinked": true
-          },
-          "padding_mobile": {
-           "unit": "px",
-           "top": "22",
-           "right": "22",
-           "bottom": "22",
-           "left": "22",
-           "isLinked": true
-          },
-          "flex_direction": "column",
-          "flex_gap": {
-           "unit": "px",
-           "size": 12,
-           "column": "12",
-           "row": "12"
-          },
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#dbdee3"
-         },
-         "elements": [
-          {
-           "id": "2bbe117",
+           "id": "84e0a90",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "El embudo es el producto",
+            "title": "Tienes 48 · Proveedor 40 en 5 d",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
              "unit": "px",
-             "size": 18,
+             "size": 22,
              "sizes": []
             },
             "typography_font_weight": "600"
@@ -446,11 +304,29 @@
            "isInner": false
           },
           {
-           "id": "6df861d",
+           "id": "fc3d48a",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<p>Los interesados y el seguimiento no son un módulo pegado a un sistema contable.</p>"
+            "editor": "Antes de que prometas material. Lo del proveedor se enseña aparte y no entra al kárdex.",
+            "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "67338c8",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<a href=\"inventarios.html\">Ver el buscador</a>",
+            "text_color": "#6a6f78",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            }
            },
            "elements": [],
            "isInner": false

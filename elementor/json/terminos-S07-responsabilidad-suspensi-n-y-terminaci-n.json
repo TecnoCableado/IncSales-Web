@@ -1,0 +1,429 @@
+{
+ "version": "0.4",
+ "title": "terminos · S07 RESPONSABILIDAD, SUSPENSIÓN Y TERMINACIÓN",
+ "type": "container",
+ "content": [
+  {
+   "id": "bd85fbe",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "be432be",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 820,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "44b9684",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "10 · Limitación de responsabilidad",
+        "header_size": "h2",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "340d89b",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "10.1 De qué sí respondemos",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "d35dd8d",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>De prestar el servicio con diligencia profesional, corregir las fallas que sean nuestras y cumplir lo firmado.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "0afba84",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "10.2 De qué no",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "973a9dc",
+       "elType": "widget",
+       "widgetType": "icon-list",
+       "settings": {
+        "icon_list": [
+         {
+          "_id": "a434a30",
+          "text": "De las decisiones que tomes con la información del sistema.",
+          "selected_icon": {
+           "value": "fas fa-times",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "5c29aaf",
+          "text": "De errores en datos que capturó tu equipo.",
+          "selected_icon": {
+           "value": "fas fa-times",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "c12318f",
+          "text": "De multas o recargos por comprobantes con datos que tú diste.",
+          "selected_icon": {
+           "value": "fas fa-times",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "05246ac",
+          "text": "De fallas del PAC, de Meta, de Google, de la nube o de tu conexión.",
+          "selected_icon": {
+           "value": "fas fa-times",
+           "library": "fa-solid"
+          }
+         },
+         {
+          "_id": "e739dea",
+          "text": "De lucro cesante o daños indirectos.",
+          "selected_icon": {
+           "value": "fas fa-times",
+           "library": "fa-solid"
+          }
+         }
+        ],
+        "space_between": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        },
+        "icon_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "icon_color": "#a7abb3",
+        "icon_self_align": "left",
+        "text_color": "#6a6f78",
+        "icon_typography_typography": "custom",
+        "icon_typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "1bfeb56",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "10.3 Tope de responsabilidad",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "01f5356",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Por cualquier causa, <strong>no excede lo que pagaste en los doce meses anteriores</strong> . No aplica al dolo, a la mala fe ni a lo que la ley mexicana declare irrenunciable.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "42a2b00",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "10.4 Lo que el sistema no hace",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "1904376",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>No lleva contabilidad ni nómina, y hoy no tiene números de serie, IEPS y retenciones completas, bitácora de auditoría multiusuario ni telefonía: la lista vive en las <a href=\"preguntas.html\">preguntas frecuentes</a> .</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "bfff609",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "10.5 Lo que es servicio, no casilla encendida",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "918794b",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p><a href=\"wordpress.html\">IncSales WooSync</a> y la <a href=\"integraciones.html\">consulta de inventarios externos por API</a> se cotizan e implementan; no vienen activos en tu plan.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "9dde28e",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "11 · Suspensión por falta de pago y terminación",
+        "header_size": "h2",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "b1943ef",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "11.1 Pago vencido y suspensión",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "761ee0f",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Te avisamos el mismo día y tienes <strong>diez días naturales</strong> para regularizarlo; después, con un segundo aviso, se suspende el acceso, no la información: tus datos no se borran y la cuenta se reactiva como la dejaste.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "79c5aa6",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "11.2 Terminación por tu parte",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "3e7f0d2",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>En mensual, avisando por escrito antes de la renovación, sin penalización; en anual, hasta el último día pagado.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "2734e18",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "11.3 Terminación por nuestra parte",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "79c1201",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Solo por causa justificada —falta de pago prolongada, uso ilícito, incumplimiento grave o riesgo para otros clientes— y con aviso previo.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "4c24023",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "11.4 Al terminar",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "b8a0604",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Se corta el acceso, se entrega la exportación pedida y la información se conserva según el apartado 7.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

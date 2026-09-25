@@ -1,0 +1,316 @@
+{
+ "version": "0.4",
+ "title": "terminos · S09 CAMBIOS, LEY APLICABLE Y CONTACTO",
+ "type": "container",
+ "content": [
+  {
+   "id": "b3725f3",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#021035"
+   },
+   "elements": [
+    {
+     "id": "f358c25",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 820,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "da0e073",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "14 · Modificaciones a los términos",
+        "header_size": "h2",
+        "title_color": "#ffffff",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "05805a1",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "14.1 Cómo te enteras",
+        "header_size": "h3",
+        "title_color": "#ffffff",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "7746597",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Si el cambio toca precio, límites, responsabilidad o datos, avisamos al administrador con <strong>30 días naturales</strong> , y con 60 cuando es el precio.</p>",
+        "text_color": "#b9cbe8"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "5286788",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "14.2 Si no estás de acuerdo",
+        "header_size": "h3",
+        "title_color": "#ffffff",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "0f1a493",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Terminas antes de que entre en vigor, sin penalización. Lo ya pagado se rige por los términos vigentes al pagarlo.</p>",
+        "text_color": "#b9cbe8"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "cc4832a",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "15 · Ley aplicable y jurisdicción",
+        "header_size": "h2",
+        "title_color": "#ffffff",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "a1ba281",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "15.1 Antes de pelear, se habla",
+        "header_size": "h3",
+        "title_color": "#ffffff",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "f75b6ae",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Se rigen por las leyes mexicanas, y toda diferencia se intenta resolver de buena fe, por escrito, con <strong>quince días hábiles</strong> de conversación.</p>",
+        "text_color": "#b9cbe8"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "3ad1e5f",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "15.2 Tribunales, cláusulas e idioma",
+        "header_size": "h3",
+        "title_color": "#ffffff",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "d367097",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Si no hay acuerdo, tribunales de Guadalajara, Jalisco. Invalidada una cláusula, el resto sigue vigente, y la versión en español hace fe.</p>",
+        "text_color": "#b9cbe8"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "6b12e02",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "16 · Contacto",
+        "header_size": "h2",
+        "title_color": "#ffffff",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 36,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "25520ad",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Incoming Sales, Guadalajara · <a href=\"mailto:contacto@incsales.com.mx\">contacto@incsales.com.mx</a> · <a href=\"https://wa.me/523337793774\">+52 33 3779 3774</a> .</p>",
+        "text_color": "#b9cbe8"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "ef14b4e",
+       "elType": "container",
+       "settings": {
+        "background_background": "classic",
+        "background_color": "#f2f7ff",
+        "border_radius": {
+         "unit": "px",
+         "top": "8",
+         "right": "8",
+         "bottom": "8",
+         "left": "8",
+         "isLinked": true
+        },
+        "padding": {
+         "unit": "px",
+         "top": "18",
+         "right": "20",
+         "bottom": "18",
+         "left": "20",
+         "isLinked": false
+        },
+        "flex_direction": "column",
+        "flex_gap": {
+         "unit": "px",
+         "size": 4,
+         "column": "4",
+         "row": "4"
+        }
+       },
+       "elements": [
+        {
+         "id": "ed9db3e",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p><strong>Versión 1.0 · 3 de septiembre de 2026</strong> Las versiones anteriores se conservan y se te comparten si las pides.</p>",
+          "text_color": "#b9cbe8"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}
