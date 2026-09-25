@@ -176,7 +176,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "El formulario que no te manda un correo",
+              "title": "Formularios web que crean el prospecto en tu CRM",
               "header_size": "h1",
               "title_color": "#ffffff",
               "typography_typography": "custom",
@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Lo construyes, copias el código y lo pegas en tu sitio. Cuando alguien lo llena, <strong>no llega un aviso a nadie: llega un interesado a tu sistema</strong> , con su origen y listo para cotizarle.",
+              "editor": "El formulario que no te manda un correo. Lo construyes, copias el código y lo pegas en tu sitio: cuando alguien lo llena, el interesado nace dentro del CRM con dueño.",
               "text_color": "#e6bdd4",
               "typography_typography": "custom",
               "typography_font_size": {

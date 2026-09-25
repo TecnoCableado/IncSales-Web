@@ -176,7 +176,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Ningún negocio se te vuelve a caer",
+              "title": "CRM y ERP integrados para PyMEs en México",
               "header_size": "h1",
               "title_color": "#ffffff",
               "typography_typography": "custom",
@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Cada interesado entra a una sola fila, cada negocio vive en una etapa que tú definiste y lo que se habló queda escrito. <strong>Cuando llega la junta del lunes, el reporte ya está hecho.</strong>",
+              "editor": "Ningún negocio se te vuelve a caer. Cada interesado entra a una sola fila y cada negocio vive en una etapa, sobre la misma base de datos con la que cotizas y facturas.",
               "text_color": "#e6bdd4",
               "typography_typography": "custom",
               "typography_font_size": {

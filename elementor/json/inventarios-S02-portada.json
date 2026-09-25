@@ -176,7 +176,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "El buscador te dice qué hay antes de que lo prometas",
+              "title": "Software de inventarios para PyMEs en México",
               "header_size": "h1",
               "title_color": "#ffffff",
               "typography_typography": "custom",
@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Escribes el producto y en el renglón aparece <strong>«Tienes 48 · Proveedor 40 en 5 d»</strong> . Con eso el vendedor sabe si promete de su almacén, si promete del proveedor o si no promete.",
+              "editor": "El buscador te dice qué hay antes de que lo prometas. Escribes el producto y en el renglón aparece la existencia real: multialmacén, kárdex, lotes y caducidades.",
               "text_color": "#d0c3ea",
               "typography_typography": "custom",
               "typography_font_size": {

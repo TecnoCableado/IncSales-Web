@@ -176,7 +176,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "La factura sale del pedido que ya capturó tu vendedor",
+              "title": "Facturación electrónica para empresas en México: CFDI 4.0",
               "header_size": "h1",
               "title_color": "#ffffff",
               "typography_typography": "custom",
@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Eliges el pedido, lo revisas y timbras. El CFDI 4.0 <strong>se arma con los datos que ya están dentro del sistema</strong> , lo sella un PAC autorizado por el SAT y el PDF y el XML se quedan pegados a ese registro.",
+              "editor": "La factura sale del pedido que ya capturó tu vendedor. Eliges el pedido, lo revisas y timbras: el CFDI 4.0 y su complemento de pago salen del mismo sistema.",
               "text_color": "#a2d7d2",
               "typography_typography": "custom",
               "typography_font_size": {

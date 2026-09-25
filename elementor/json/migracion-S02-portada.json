@@ -176,7 +176,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Te cambias de sistema y los totales siguen midiendo lo mismo",
+              "title": "Alternativa a Aspel SAE y CONTPAQi para PyMEs en México",
               "header_size": "h1",
               "title_color": "#ffffff",
               "typography_typography": "custom",
@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Traemos tu catálogo, tus clientes y tu historial desde donde viven hoy. <strong>El sistema viejo se apaga cuando los números cuadran</strong> , no cuando firmamos.",
+              "editor": "Te cambias de sistema y los totales siguen midiendo lo mismo. Traemos tu catálogo, tus clientes y tu historial de CFDI desde donde viven hoy, cuadrados al centavo.",
               "text_color": "#b9cbe8",
               "typography_typography": "custom",
               "typography_font_size": {

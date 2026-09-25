@@ -176,7 +176,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "El correo sale de tu dominio, no del nuestro",
+              "title": "Email marketing desde tu propio dominio y tu CRM",
               "header_size": "h1",
               "title_color": "#ffffff",
               "typography_typography": "custom",
@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Das de alta tu dominio desde el sistema y las campañas salen firmadas con tu nombre. <strong>Nadie entra a la consola de AWS</strong> : IncSales crea la identidad, pone el MAIL FROM y te enseña los registros DNS que hay que pegar.",
+              "editor": "El correo sale de tu dominio, no del nuestro. Das de alta tu dominio desde el sistema y las campañas salen firmadas por ti, con las listas que ya vive el CRM.",
               "text_color": "#e6bdd4",
               "typography_typography": "custom",
               "typography_font_size": {

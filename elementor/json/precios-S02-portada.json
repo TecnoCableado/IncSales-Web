@@ -176,7 +176,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Precio final, en pesos y con IVA incluido",
+              "title": "Precios de un ERP para PyMEs en México",
               "header_size": "h1",
               "title_color": "#ffffff",
               "typography_typography": "custom",
@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Empieza en <strong>$200 al mes</strong> y llega hasta el sistema entero. Lo que ves aquí es lo que vas a pagar: nada de «contáctanos para conocer el precio», nada de dólares que se mueven a media quincena.",
+              "editor": "Precio final, en pesos y con IVA incluido. Empieza en $200 al mes y llega hasta el sistema entero: nada de «contáctanos para conocer el precio», nada de dólares.",
               "text_color": "#b9cbe8",
               "typography_typography": "custom",
               "typography_font_size": {

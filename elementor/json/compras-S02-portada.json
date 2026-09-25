@@ -176,7 +176,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Vende hoy lo que llega el viernes",
+              "title": "Software de compras para empresas en México",
               "header_size": "h1",
               "title_color": "#ffffff",
               "typography_typography": "custom",
@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Confirmas el pedido con material que no tienes y <strong>la requisición se levanta sola</strong> . Sale agrupada con lo demás de ese proveedor, la orden se emite con un botón y al llegar la mercancía el pendiente se apaga.",
+              "editor": "Vende hoy lo que llega el viernes. Confirmas el pedido con material que todavía no tienes, porque la orden de compra y el tránsito viven en el mismo sistema.",
               "text_color": "#d0c3ea",
               "typography_typography": "custom",
               "typography_font_size": {

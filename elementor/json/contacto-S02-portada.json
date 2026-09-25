@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Abrimos el sistema, damos de alta <strong>un producto de tu catálogo</strong> y sacamos la cotización con tu logo. No hay diapositivas.",
+              "editor": "En la demo cotizamos algo que de verdad vendas. Abrimos el sistema, damos de alta un producto de tu catálogo y sacamos la cotización con tu logo. No hay diapositivas.",
               "text_color": "#b9cbe8",
               "typography_typography": "custom",
               "typography_font_size": {

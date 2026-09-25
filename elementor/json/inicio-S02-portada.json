@@ -165,7 +165,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Ocho módulos sobre una sola base de datos",
+              "title": "Sistema ERP para empresas PyME en México",
               "header_size": "h1",
               "title_color": "#ffffff",
               "typography_typography": "custom",
@@ -184,7 +184,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Para empresas que viven de cotizar. Lo que tu vendedor cotiza es <strong>el mismo renglón</strong> que compras, entregas, facturas y cobras: nadie vuelve a teclearlo, y nadie tiene que creerle a dos sistemas a la vez.",
+              "editor": "Ocho módulos sobre una sola base de datos. Para empresas que viven de cotizar: lo que tu vendedor cotiza es lo que de verdad hay en el almacén, y de ahí sale la factura.",
               "text_color": "#b9cbe8",
               "typography_typography": "custom",
               "typography_font_size": {

@@ -176,7 +176,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Ni tus datos ni los de tus clientes están en venta",
+              "title": "Aviso de privacidad de IncSales",
               "header_size": "h1",
               "title_color": "#ffffff",
               "typography_typography": "custom",
@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Incoming Sales recaba lo mínimo para venderte, atenderte y facturarte. Lo que tú capturas dentro del sistema <strong>sigue siendo tuyo y lo puedes exportar completo el día que quieras</strong> .",
+              "editor": "Ni tus datos ni los de tus clientes están en venta. Incoming Sales recaba lo mínimo para venderte, atenderte y facturarte; lo que capturas dentro sigue siendo tuyo.",
               "text_color": "#b9cbe8",
               "typography_typography": "custom",
               "typography_font_size": {

@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Incoming Sales hace IncSales ERP. No empezó como un producto: empezó porque nuestra distribuidora de cableado necesitaba <strong>cotizar, comprar y facturar en el mismo lugar</strong> , y ningún sistema lo hacía junto.",
+              "editor": "Hicimos el sistema que nos hacía falta. No empezó como producto: empezó porque nuestra distribuidora necesitaba cotizar, comprar y facturar en el mismo lugar.",
               "text_color": "#b9cbe8",
               "typography_typography": "custom",
               "typography_font_size": {

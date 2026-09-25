@@ -176,7 +176,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Lo que ya tienes cubre medio ciclo",
+              "title": "Aspel SAE vs CONTPAQi vs IncSales para PyMEs en México",
               "header_size": "h1",
               "title_color": "#ffffff",
               "typography_typography": "custom",
@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Tu sistema administrativo empieza a contar cuando el cliente ya dijo que sí. Tu CRM termina justo ahí. <strong>En la costura de en medio vive el archivo donde alguien captura al mismo cliente por segunda vez.</strong>",
+              "editor": "Lo que ya tienes cubre medio ciclo. Tu sistema administrativo empieza a contar cuando el cliente ya dijo sí; aquí está la tabla, incluidos los puntos donde el otro gana.",
               "text_color": "#b9cbe8",
               "typography_typography": "custom",
               "typography_font_size": {

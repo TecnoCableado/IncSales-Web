@@ -176,7 +176,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "No usamos un CRM. Escribimos el CRM.",
+              "title": "Agencia de marketing digital para PyMEs en Guadalajara",
               "header_size": "h1",
               "title_color": "#ffffff",
               "typography_typography": "custom",
@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Las demás te montan una plataforma ajena y te cobran la licencia aparte. Nosotros fabricamos IncSales ERP: el interesado que trae tu anuncio no llega por correo, <strong>cae dentro del sistema</strong> donde lo cotizas y lo facturas.",
+              "editor": "No usamos un CRM. Escribimos el CRM. El interesado que trae tu anuncio no llega por correo: cae dentro del sistema donde lo cotizas y lo facturas el mismo día.",
               "text_color": "#b9cbe8",
               "typography_typography": "custom",
               "typography_font_size": {

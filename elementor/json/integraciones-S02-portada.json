@@ -176,7 +176,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Tu sistema ya sabe hablar con los sistemas de los demás",
+              "title": "Integraciones y API del ERP de IncSales",
               "header_size": "h1",
               "title_color": "#ffffff",
               "typography_typography": "custom",
@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Tres módulos que se encienden sobre lo que ya operas: la existencia de tu proveedor <strong>dentro de tu buscador</strong> , un solo número repartido entre tus canales y un portal donde tu cliente consulta solo. Y si falta algo, la API.",
+              "editor": "Tu sistema ya sabe hablar con los sistemas de los demás. Tres módulos que se encienden sobre lo que ya operas, y si falta algo, la API está documentada.",
               "text_color": "#a2d7d2",
               "typography_typography": "custom",
               "typography_font_size": {

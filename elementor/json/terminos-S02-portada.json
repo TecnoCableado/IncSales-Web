@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Qué incluye tu plan, qué pagas, de quién son los datos y cómo termina. <strong>Lo que firmes en tu orden de servicio manda sobre esta página.</strong>",
+              "editor": "Qué incluye tu plan, qué pagas, de quién son los datos y cómo termina. Lo que firmes en tu orden de servicio manda sobre esta página.",
               "text_color": "#b9cbe8",
               "typography_typography": "custom",
               "typography_font_size": {

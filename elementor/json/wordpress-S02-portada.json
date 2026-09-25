@@ -176,7 +176,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Tu tienda vende lo que de verdad hay en el almacén",
+              "title": "ERP para WooCommerce en México",
               "header_size": "h1",
               "title_color": "#ffffff",
               "typography_typography": "custom",
@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "IncSales WooSync, el conector nativo con WooCommerce, sincroniza <strong>cinco cosas y ni una más: productos, precios, existencias, pedidos y clientes</strong> , emparejadas por SKU. La tienda y el mostrador dejan de tener dos verdades.",
+              "editor": "Tu tienda vende lo que de verdad hay en el almacén. El conector nativo con WooCommerce sincroniza existencias y precios, y el pedido entra al CRM con dueño.",
               "text_color": "#a2d7d2",
               "typography_typography": "custom",
               "typography_font_size": {

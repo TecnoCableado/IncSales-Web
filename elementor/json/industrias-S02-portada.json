@@ -176,7 +176,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Seis giros donde esto ya opera, y el punto exacto en que cada uno se rompe",
+              "title": "ERP para distribuidores y ferreterías en México",
               "header_size": "h1",
               "title_color": "#ffffff",
               "typography_typography": "custom",
@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "El sistema no se hizo para «empresas». Se hizo para las que <strong>cotizan con proveedor, entregan lo que no tenían en el almacén y cobran con CFDI</strong> . Si ese es tu día, aquí está tu caso.",
+              "editor": "Seis giros donde esto ya opera, y el punto exacto en que cada uno se rompe. Material eléctrico, insumos médicos, pinturas, ferretería, equipo industrial y proyectos.",
               "text_color": "#b9cbe8",
               "typography_typography": "custom",
               "typography_font_size": {

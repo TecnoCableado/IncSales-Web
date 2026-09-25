@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "IncSales no salió de una junta de producto: salió de una distribuidora de material eléctrico que tenía que cotizar, comprar, entregar y cobrar todos los días. Por eso <strong>la primera empresa que lo opera es la nuestra</strong> . <a href=\"nosotros.html\">Cómo empezó</a> .",
+              "editor": "IncSales no salió de una junta de producto: salió de una distribuidora de material eléctrico que tenía que cotizar, comprar, entregar y cobrar todos los días.",
               "text_color": "#b9cbe8",
               "typography_typography": "custom",
               "typography_font_size": {

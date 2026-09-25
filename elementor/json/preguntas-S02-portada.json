@@ -176,7 +176,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Ninguna duda debería llegar viva a la junta",
+              "title": "Preguntas frecuentes sobre IncSales ERP",
               "header_size": "h1",
               "title_color": "#ffffff",
               "typography_typography": "custom",
@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Precio, migración, lo técnico y los límites. Incluido <strong>lo que el sistema todavía no hace</strong> : si va a ser un problema, mejor que lo sepas hoy y no en la tercera semana.",
+              "editor": "Ninguna duda debería llegar viva a la junta. Precio, migración, lo técnico y los límites, incluido lo que el sistema todavía no hace: mejor saberlo hoy.",
               "text_color": "#b9cbe8",
               "typography_typography": "custom",
               "typography_font_size": {

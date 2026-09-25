@@ -176,7 +176,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Estas son las pantallas que vas a usar el lunes",
+              "title": "Sistema administrativo para empresas en México",
               "header_size": "h1",
               "title_color": "#ffffff",
               "typography_typography": "custom",
@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Seis pantallas del ERP con <strong>sus rutas reales</strong> , más los estados que casi nadie diseña. Los nombres y los importes son de ejemplo; el software es el mismo que cotiza, timbra y contesta todos los días.",
+              "editor": "Estas son las pantallas que vas a usar el lunes. Seis pantallas del ERP con sus rutas reales; los importes son de ejemplo, el software es el que cotiza y timbra.",
               "text_color": "#b9cbe8",
               "typography_typography": "custom",
               "typography_font_size": {

@@ -176,7 +176,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "La cotización que enviaste aguanta, aunque el dólar no",
+              "title": "Programa para cotizar y facturar en México",
               "header_size": "h1",
               "title_color": "#ffffff",
               "typography_typography": "custom",
@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Seis documentos con la misma forma: cotización, pedido, remisión, factura, orden de compra y recepción. <strong>Cada uno guarda su propio tipo de cambio</strong> , y lo que ya capturaste no se reescribe mañana.",
+              "editor": "La cotización que enviaste aguanta, aunque el dólar no. Seis documentos con la misma forma: cotización, pedido, remisión, factura, y el folio te sigue del PDF al timbrado.",
               "text_color": "#a2d7d2",
               "typography_typography": "custom",
               "typography_font_size": {

@@ -176,7 +176,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Ni un mensaje de tu cliente se queda sin dueño",
+              "title": "CRM con WhatsApp para Empresas en México",
               "header_size": "h1",
               "title_color": "#ffffff",
               "typography_typography": "custom",
@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Conectas <strong>tu propio número</strong> de WhatsApp Business API y las conversaciones dejan de vivir en el celular de alguien: viven donde ya cotizas y facturas.",
+              "editor": "Ni un mensaje de tu cliente se queda sin dueño. Conectas tu propio número, el equipo contesta desde una sola bandeja y cada conversación queda pegada al interesado.",
               "text_color": "#b0d6ba",
               "typography_typography": "custom",
               "typography_font_size": {
