@@ -1,0 +1,393 @@
+{
+ "version": "0.4",
+ "title": "erp-ventanas-aluminio · S02 PORTADA",
+ "type": "container",
+ "content": [
+  {
+   "id": "a0df544",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#021035"
+   },
+   "elements": [
+    {
+     "id": "26851ce",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1280,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "89dcdad",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<ol><li><a href=\"index.html\">Inicio</a></li><li><a href=\"industrias.html\">Por tu giro</a></li><li>Cancelería, ventanas de aluminio y cristal</li></ol>",
+        "text_color": "#b9cbe8"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "5a44f0e",
+       "elType": "container",
+       "settings": {
+        "container_type": "grid",
+        "grid_columns_grid": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        },
+        "grid_columns_grid_tablet": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_columns_grid_mobile": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_gaps": {
+         "unit": "px",
+         "size": 48,
+         "column": "48",
+         "row": "32"
+        }
+       },
+       "elements": [
+        {
+         "id": "ec7b02f",
+         "elType": "container",
+         "settings": {
+          "container_type": "grid",
+          "grid_columns_grid": {
+           "unit": "fr",
+           "size": 2,
+           "sizes": []
+          },
+          "grid_columns_grid_tablet": {
+           "unit": "fr",
+           "size": 1,
+           "sizes": []
+          },
+          "grid_columns_grid_mobile": {
+           "unit": "fr",
+           "size": 1,
+           "sizes": []
+          },
+          "grid_gaps": {
+           "unit": "px",
+           "size": 48,
+           "column": "48",
+           "row": "32"
+          }
+         },
+         "elements": [
+          {
+           "id": "97586eb",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 12,
+             "column": "12",
+             "row": "12"
+            }
+           },
+           "elements": [
+            {
+             "id": "991fb8b",
+             "elType": "widget",
+             "widgetType": "heading",
+             "settings": {
+              "title": "Por tu giro · Cancelería, ventanas de aluminio y cristal",
+              "header_size": "div",
+              "title_color": "#b9cbe8",
+              "typography_typography": "custom",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 13,
+               "sizes": []
+              },
+              "typography_font_weight": "600"
+             },
+             "elements": [],
+             "isInner": false
+            },
+            {
+             "id": "cffed35",
+             "elType": "widget",
+             "widgetType": "heading",
+             "settings": {
+              "title": "ERP para fabricantes de ventanas de aluminio en México",
+              "header_size": "h1",
+              "title_color": "#ffffff",
+              "typography_typography": "custom",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 52,
+               "sizes": []
+              },
+              "typography_font_weight": "600"
+             },
+             "elements": [],
+             "isInner": false
+            },
+            {
+             "id": "b82d1f4",
+             "elType": "widget",
+             "widgetType": "text-editor",
+             "settings": {
+              "editor": "Te piden el precio de una casa entera, veinte ventanas y ninguna igual, y ahí se te va medio día en la hoja. Cuando el cliente dice que sí, tres semanas después, el perfil ya subió y nadie sabe con qué margen quedaste.",
+              "text_color": "#b9cbe8",
+              "typography_typography": "custom",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 19,
+               "sizes": []
+              }
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          },
+          {
+           "id": "dc49834",
+           "elType": "container",
+           "settings": {
+            "flex_direction": "column",
+            "flex_gap": {
+             "unit": "px",
+             "size": 16,
+             "column": "16",
+             "row": "16"
+            }
+           },
+           "elements": [
+            {
+             "id": "f219416",
+             "elType": "container",
+             "settings": {
+              "flex_direction": "column",
+              "flex_gap": {
+               "unit": "px",
+               "size": 16,
+               "column": "16",
+               "row": "16"
+              }
+             },
+             "elements": [
+              {
+               "id": "8281911",
+               "elType": "widget",
+               "widgetType": "button",
+               "settings": {
+                "text": "Agenda tu demo",
+                "link": {
+                 "url": "contacto.html",
+                 "is_external": "",
+                 "nofollow": ""
+                },
+                "size": "md",
+                "border_radius": {
+                 "unit": "px",
+                 "top": "6",
+                 "right": "6",
+                 "bottom": "6",
+                 "left": "6",
+                 "isLinked": true
+                },
+                "text_padding": {
+                 "unit": "px",
+                 "top": "15",
+                 "right": "26",
+                 "bottom": "15",
+                 "left": "26",
+                 "isLinked": false
+                },
+                "align": "left",
+                "background_color": "#1e5bd4",
+                "button_text_color": "#ffffff"
+               },
+               "elements": [],
+               "isInner": false
+              },
+              {
+               "id": "39c8709",
+               "elType": "widget",
+               "widgetType": "button",
+               "settings": {
+                "text": "Ver qué plan te toca",
+                "link": {
+                 "url": "#precio",
+                 "is_external": "",
+                 "nofollow": ""
+                },
+                "size": "md",
+                "border_radius": {
+                 "unit": "px",
+                 "top": "6",
+                 "right": "6",
+                 "bottom": "6",
+                 "left": "6",
+                 "isLinked": true
+                },
+                "text_padding": {
+                 "unit": "px",
+                 "top": "15",
+                 "right": "26",
+                 "bottom": "15",
+                 "left": "26",
+                 "isLinked": false
+                },
+                "align": "left",
+                "background_color": "#00000000",
+                "button_text_color": "#1e5bd4",
+                "border_border": "solid",
+                "border_width": {
+                 "unit": "px",
+                 "top": "1",
+                 "right": "1",
+                 "bottom": "1",
+                 "left": "1",
+                 "isLinked": true
+                },
+                "border_color": "#dbdee3"
+               },
+               "elements": [],
+               "isInner": false
+              }
+             ],
+             "isInner": false
+            },
+            {
+             "id": "a9c82de",
+             "elType": "widget",
+             "widgetType": "icon-list",
+             "settings": {
+              "icon_list": [
+               {
+                "_id": "da0c2a0",
+                "text": "El costo del perfil se congela en el documento que enviaste",
+                "selected_icon": {
+                 "value": "fas fa-check",
+                 "library": "fa-solid"
+                }
+               },
+               {
+                "_id": "37ac31d",
+                "text": "Un tipo de cambio por documento, no uno global",
+                "selected_icon": {
+                 "value": "fas fa-check",
+                 "library": "fa-solid"
+                }
+               },
+               {
+                "_id": "18305fc",
+                "text": "IncSales ERP, desde $200 al mes, IVA incluido",
+                "selected_icon": {
+                 "value": "fas fa-check",
+                 "library": "fa-solid"
+                }
+               }
+              ],
+              "space_between": {
+               "unit": "px",
+               "size": 14,
+               "sizes": []
+              },
+              "icon_size": {
+               "unit": "px",
+               "size": 17,
+               "sizes": []
+              },
+              "icon_color": "#00874a",
+              "icon_self_align": "left",
+              "text_color": "#4d535d",
+              "icon_typography_typography": "custom",
+              "icon_typography_font_size": {
+               "unit": "px",
+               "size": 16,
+               "sizes": []
+              }
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

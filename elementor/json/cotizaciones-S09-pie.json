@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "69c057b",
+   "id": "71c5850",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -38,7 +38,7 @@
    },
    "elements": [
     {
-     "id": "be56f8d",
+     "id": "6daa311",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -73,7 +73,7 @@
      },
      "elements": [
       {
-       "id": "adc4dae",
+       "id": "bb3a7f8",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -522,7 +522,7 @@
          "isInner": false
         },
         {
-         "id": "d3759f1",
+         "id": "01dbff6",
          "elType": "container",
          "settings": {
           "flex_direction": "column",
@@ -554,7 +554,7 @@
            "isInner": false
           },
           {
-           "id": "f1821f1",
+           "id": "f2e7dce",
            "elType": "widget",
            "widgetType": "icon-list",
            "settings": {
@@ -601,7 +601,7 @@
              },
              {
               "_id": "34b7cb6",
-              "text": "<a href=\"erp-tienda-en-linea.html\">Tienda en línea</a>",
+              "text": "<a href=\"erp-ventanas-aluminio.html\">Ventanas de aluminio</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -609,7 +609,23 @@
              },
              {
               "_id": "98330d8",
-              "text": "<a href=\"industrias.html\">Los seis giros</a>",
+              "text": "<a href=\"erp-paneles-solares.html\">Paneles solares</a>",
+              "selected_icon": {
+               "value": "fas fa-arrow-right",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "68a87cf",
+              "text": "<a href=\"erp-tienda-en-linea.html\">Tienda en línea</a>",
+              "selected_icon": {
+               "value": "fas fa-arrow-right",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "16c6576",
+              "text": "<a href=\"industrias.html\">Los ocho giros</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -646,7 +662,7 @@
        "isInner": false
       },
       {
-       "id": "ce03855",
+       "id": "69c057b",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -659,7 +675,7 @@
        },
        "elements": [
         {
-         "id": "ab2145d",
+         "id": "45f4939",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -670,7 +686,7 @@
          "isInner": false
         },
         {
-         "id": "efac9fb",
+         "id": "44883b6",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {

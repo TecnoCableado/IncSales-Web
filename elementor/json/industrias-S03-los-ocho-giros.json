@@ -1,10 +1,10 @@
 {
  "version": "0.4",
- "title": "industrias · S03 LOS SEIS GIROS",
+ "title": "industrias · S03 LOS OCHO GIROS",
  "type": "container",
  "content": [
   {
-   "id": "65c3b20",
+   "id": "6a1b10e",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -36,7 +36,7 @@
    },
    "elements": [
     {
-     "id": "7b179d7",
+     "id": "7ecd3aa",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -103,7 +103,7 @@
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
-          "title": "Seis giros",
+          "title": "Ocho giros",
           "header_size": "div",
           "title_color": "#1e5bd4",
           "typography_typography": "custom",
@@ -152,13 +152,13 @@
        "isInner": false
       },
       {
-       "id": "7c6e59b",
+       "id": "65c3b20",
        "elType": "container",
        "settings": {
         "container_type": "grid",
         "grid_columns_grid": {
          "unit": "fr",
-         "size": 3,
+         "size": 4,
          "sizes": []
         },
         "grid_columns_grid_tablet": {
@@ -236,6 +236,28 @@
         },
         {
          "id": "4455c95",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<a href=\"erp-ventanas-aluminio.html\">Cancelería, ventanas de aluminio y cristal Veinte ventanas y ninguna igual: perfil por metro, cristal por metro cuadrado y herrajes por pieza, en la misma hoja. IncSales Cotiza congela el costo del perfil al pasarlo a la cotización</a>",
+          "text_color": "#4d535d"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "961fa8a",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<a href=\"erp-paneles-solares.html\">Energía solar fotovoltaica El cliente decide en seis semanas, y nadie sabe en qué punto quedó cada uno de los diez proyectos abiertos. IncSales CRM pone cada proyecto en su etapa con su valor en juego</a>",
+          "text_color": "#4d535d"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "adb7f40",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {

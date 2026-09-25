@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Cada giro se rompe en un punto distinto, y cada uno tiene aquí su propia página. Elige el tuyo: material eléctrico, insumos médicos, pinturas, ferretería, equipo industrial o tienda en línea.",
+              "editor": "Cada giro se rompe en un punto distinto, y cada uno tiene aquí su propia página. Elige el tuyo: material eléctrico, insumos médicos, pinturas, ferretería, equipo industrial, cancelería de aluminio, paneles solares o tienda en línea.",
               "text_color": "#b9cbe8",
               "typography_typography": "custom",
               "typography_font_size": {
