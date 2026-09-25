@@ -1,0 +1,525 @@
+{
+ "version": "0.4",
+ "title": "erp-tienda-en-linea · S06 LO QUE SIGUE",
+ "type": "container",
+ "content": [
+  {
+   "id": "f06c682",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#021035"
+   },
+   "elements": [
+    {
+     "id": "5e990f3",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "53ca9db",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        },
+        "flex_align_items": "center"
+       },
+       "elements": [
+        {
+         "id": "298ff5f",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Lo que sigue",
+          "header_size": "div",
+          "title_color": "#b9cbe8",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "600",
+          "align": "center"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "d5c8759",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "El pedido de la tienda sigue el mismo camino que el del mostrador",
+          "header_size": "h2",
+          "title_color": "#ffffff",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600",
+          "align": "center"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "17e5138",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>No se queda en una bandeja aparte: entra al proceso completo.</p>",
+          "text_color": "#b9cbe8",
+          "align": "center"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "eb809cf",
+       "elType": "container",
+       "settings": {
+        "container_type": "grid",
+        "grid_columns_grid": {
+         "unit": "fr",
+         "size": 4,
+         "sizes": []
+        },
+        "grid_columns_grid_tablet": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        },
+        "grid_columns_grid_mobile": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_gaps": {
+         "unit": "px",
+         "size": 24,
+         "column": "24",
+         "row": "24"
+        }
+       },
+       "elements": [
+        {
+         "id": "7fc8ada",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "rgba(255,255,255,0.06)",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "7cb4353",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Se cotiza",
+            "header_size": "h3",
+            "title_color": "#ffffff",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 22,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "abec1a4",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Seis documentos con la misma forma en <a href=\"cotizaciones.html\">IncSales Cotiza</a> .",
+            "text_color": "#b9cbe8"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "f08ba37",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "rgba(255,255,255,0.06)",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "9c74bf3",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Se surte",
+            "header_size": "h3",
+            "title_color": "#ffffff",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 22,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "35179dc",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Del almacén que elijas, y el kárdex registra la salida.",
+            "text_color": "#b9cbe8"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "91fa062",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "rgba(255,255,255,0.06)",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "0fa8848",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Se compra",
+            "header_size": "h3",
+            "title_color": "#ffffff",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 22,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "765385a",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Lo que no hay levanta la requisición en <a href=\"compras.html\">IncSales Compras</a> , y se cierra al recibir.",
+            "text_color": "#b9cbe8"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "e961928",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "rgba(255,255,255,0.06)",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "fff9644",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Se factura",
+            "header_size": "h3",
+            "title_color": "#ffffff",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 22,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "0e345a9",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "CFDI 4.0 desde el mismo pedido con <a href=\"facturacion.html\">IncSales Facturación</a> .",
+            "text_color": "#b9cbe8"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

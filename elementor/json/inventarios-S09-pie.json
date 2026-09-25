@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "268b516",
+   "id": "94642c6",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -38,7 +38,7 @@
    },
    "elements": [
     {
-     "id": "615d31f",
+     "id": "3039683",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -73,7 +73,7 @@
      },
      "elements": [
       {
-       "id": "9ae47fd",
+       "id": "034a35e",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -409,7 +409,7 @@
          "isInner": false
         },
         {
-         "id": "e2dc1ca",
+         "id": "6d67400",
          "elType": "container",
          "settings": {
           "flex_direction": "column",
@@ -441,7 +441,7 @@
            "isInner": false
           },
           {
-           "id": "dac0f95",
+           "id": "0ec57cd",
            "elType": "widget",
            "widgetType": "icon-list",
            "settings": {
@@ -472,14 +472,6 @@
              },
              {
               "_id": "874547b",
-              "text": "<a href=\"industrias.html\">Por tu giro</a>",
-              "selected_icon": {
-               "value": "fas fa-arrow-right",
-               "library": "fa-solid"
-              }
-             },
-             {
-              "_id": "d8c73fe",
               "text": "<a href=\"preguntas.html\">Preguntas frecuentes</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
@@ -487,7 +479,7 @@
               }
              },
              {
-              "_id": "8146e9e",
+              "_id": "d8c73fe",
               "text": "<a href=\"nosotros.html\">Quiénes somos</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
@@ -495,8 +487,129 @@
               }
              },
              {
-              "_id": "074a3b9",
+              "_id": "8146e9e",
               "text": "<a href=\"contacto.html\">Agenda una demo</a>",
+              "selected_icon": {
+               "value": "fas fa-arrow-right",
+               "library": "fa-solid"
+              }
+             }
+            ],
+            "space_between": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            },
+            "icon_size": {
+             "unit": "px",
+             "size": 17,
+             "sizes": []
+            },
+            "icon_color": "#4d535d",
+            "icon_self_align": "left",
+            "text_color": "#4d535d",
+            "icon_typography_typography": "custom",
+            "icon_typography_font_size": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "4554a94",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          }
+         },
+         "elements": [
+          {
+           "id": "3a93cdd",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Por tu giro",
+            "header_size": "h3",
+            "title_color": "#ffffff",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 22,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "9f154dd",
+           "elType": "widget",
+           "widgetType": "icon-list",
+           "settings": {
+            "icon_list": [
+             {
+              "_id": "d89493b",
+              "text": "<a href=\"erp-material-electrico.html\">Material eléctrico</a>",
+              "selected_icon": {
+               "value": "fas fa-arrow-right",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "fdb8ddc",
+              "text": "<a href=\"erp-insumos-medicos.html\">Insumos médicos</a>",
+              "selected_icon": {
+               "value": "fas fa-arrow-right",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "2483864",
+              "text": "<a href=\"erp-pinturas.html\">Pinturas y recubrimientos</a>",
+              "selected_icon": {
+               "value": "fas fa-arrow-right",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "1c3baac",
+              "text": "<a href=\"erp-ferreterias.html\">Ferretería y tlapalería</a>",
+              "selected_icon": {
+               "value": "fas fa-arrow-right",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "bc41565",
+              "text": "<a href=\"erp-equipo-industrial.html\">Equipo industrial</a>",
+              "selected_icon": {
+               "value": "fas fa-arrow-right",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "64181d5",
+              "text": "<a href=\"erp-tienda-en-linea.html\">Tienda en línea</a>",
+              "selected_icon": {
+               "value": "fas fa-arrow-right",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "9d6a5ea",
+              "text": "<a href=\"industrias.html\">Los seis giros</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -533,7 +646,7 @@
        "isInner": false
       },
       {
-       "id": "bd5e49c",
+       "id": "17b2691",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -546,7 +659,7 @@
        },
        "elements": [
         {
-         "id": "83ea7d0",
+         "id": "a75f8d8",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
@@ -557,7 +670,7 @@
          "isInner": false
         },
         {
-         "id": "a705715",
+         "id": "efdfac9",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {

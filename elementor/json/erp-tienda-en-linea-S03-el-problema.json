@@ -1,10 +1,10 @@
 {
  "version": "0.4",
- "title": "industrias · S04 LOS SEIS GIROS",
+ "title": "erp-tienda-en-linea · S03 EL PROBLEMA",
  "type": "container",
  "content": [
   {
-   "id": "52f82da",
+   "id": "b10be37",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -32,13 +32,11 @@
      "bottom": "48",
      "left": "0",
      "isLinked": false
-    },
-    "background_background": "classic",
-    "background_color": "#f4f6f9"
+    }
    },
    "elements": [
     {
-     "id": "576b378",
+     "id": "8624063",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -73,7 +71,7 @@
      },
      "elements": [
       {
-       "id": "15e3985",
+       "id": "c449d7f",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -101,11 +99,11 @@
        },
        "elements": [
         {
-         "id": "f564908",
+         "id": "74332ae",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
-          "title": "Seis giros",
+          "title": "Lo que pasa hoy",
           "header_size": "div",
           "title_color": "#1e5bd4",
           "typography_typography": "custom",
@@ -121,11 +119,11 @@
          "isInner": false
         },
         {
-         "id": "dbe286c",
+         "id": "60a5f6f",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
-          "title": "Cada giro se rompe en un punto distinto, y ese punto tiene módulo",
+          "title": "Dos existencias del mismo producto, y las dos se equivocan",
           "header_size": "h2",
           "typography_typography": "custom",
           "typography_font_size": {
@@ -138,12 +136,23 @@
          },
          "elements": [],
          "isInner": false
+        },
+        {
+         "id": "fc35aa2",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>La tienda en línea vende lo que el mostrador ya vendió, y el cliente se entera cuando le cancelas el pedido.</p>",
+          "align": "center"
+         },
+         "elements": [],
+         "isInner": false
         }
        ],
        "isInner": false
       },
       {
-       "id": "3484ad3",
+       "id": "faffb9e",
        "elType": "container",
        "settings": {
         "container_type": "grid",
@@ -171,7 +180,7 @@
        },
        "elements": [
         {
-         "id": "bc3e346",
+         "id": "9d04788",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -220,7 +229,7 @@
          },
          "elements": [
           {
-           "id": "0a1b210",
+           "id": "1f14d46",
            "elType": "container",
            "settings": {
             "content_width": "full",
@@ -254,11 +263,11 @@
            },
            "elements": [
             {
-             "id": "9820ac7",
+             "id": "5e43166",
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Material eléctrico y cableado",
+              "title": "La cancelación",
               "header_size": "div",
               "title_color": "#1e5bd4",
               "typography_typography": "custom",
@@ -282,11 +291,11 @@
            "isInner": false
           },
           {
-           "id": "c147bda",
+           "id": "706bff3",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Tres proveedores, tres formas de poner el IVA",
+            "title": "Salió por caja hace dos horas",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -300,11 +309,11 @@
            "isInner": false
           },
           {
-           "id": "0ae7618",
+           "id": "226d0e2",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "IncSales Cotiza normaliza el IVA antes de comparar por producto y marca «no comparable» lo que no lo es. Así compra TecnoCableado todos los días.",
+            "editor": "En línea seguía disponible. El pedido entra, lo cobras y luego hay que devolverlo.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -314,7 +323,7 @@
          "isInner": false
         },
         {
-         "id": "ca4a90c",
+         "id": "37fea6e",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -363,7 +372,7 @@
          },
          "elements": [
           {
-           "id": "b935046",
+           "id": "1eb7770",
            "elType": "container",
            "settings": {
             "content_width": "full",
@@ -397,11 +406,11 @@
            },
            "elements": [
             {
-             "id": "71cf162",
+             "id": "2d0f772",
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Insumos médicos",
+              "title": "El catálogo",
               "header_size": "div",
               "title_color": "#1e5bd4",
               "typography_typography": "custom",
@@ -425,11 +434,11 @@
            "isInner": false
           },
           {
-           "id": "f0f8dd9",
+           "id": "e06634a",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "El lote que caduca primero se queda en el fondo",
+            "title": "Cada canal lleva el suyo",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -443,11 +452,11 @@
            "isInner": false
           },
           {
-           "id": "6fdebfd",
+           "id": "d26b392",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "IncSales Inventarios lleva caducidad y pedimento por lote, avisa a 30, 60 y 90 días, y saca primero lo que vence antes. Es el giro de Distrimedic.",
+            "editor": "Lo capturas en la tienda, en el sistema y en el marketplace. Tres versiones del mismo producto y ninguna tiene la razón.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -457,7 +466,7 @@
          "isInner": false
         },
         {
-         "id": "09abf15",
+         "id": "2bfa441",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -506,7 +515,7 @@
          },
          "elements": [
           {
-           "id": "a8d4db6",
+           "id": "389a6e8",
            "elType": "container",
            "settings": {
             "content_width": "full",
@@ -540,11 +549,11 @@
            },
            "elements": [
             {
-             "id": "7c671b4",
+             "id": "2831216",
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Pinturas y recubrimientos",
+              "title": "El precio",
               "header_size": "div",
               "title_color": "#1e5bd4",
               "typography_typography": "custom",
@@ -568,11 +577,11 @@
            "isInner": false
           },
           {
-           "id": "adc747e",
+           "id": "47ff741",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "La misma cubeta vale tres precios distintos",
+            "title": "Subes uno y el otro se queda",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -586,440 +595,11 @@
            "isInner": false
           },
           {
-           "id": "217e967",
+           "id": "4d595e6",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "IncSales Inventarios cuelga precio y existencia de cada variante, y al cambiar de lista recalcula los renglones respetando los que negociaste a mano.",
-            "text_color": "#6a6f78"
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "dcdf177",
-         "elType": "container",
-         "settings": {
-          "background_background": "classic",
-          "background_color": "#ffffff",
-          "border_radius": {
-           "unit": "px",
-           "top": "10",
-           "right": "10",
-           "bottom": "10",
-           "left": "10",
-           "isLinked": true
-          },
-          "padding": {
-           "unit": "px",
-           "top": "28",
-           "right": "28",
-           "bottom": "28",
-           "left": "28",
-           "isLinked": true
-          },
-          "padding_mobile": {
-           "unit": "px",
-           "top": "22",
-           "right": "22",
-           "bottom": "22",
-           "left": "22",
-           "isLinked": true
-          },
-          "flex_direction": "column",
-          "flex_gap": {
-           "unit": "px",
-           "size": 12,
-           "column": "12",
-           "row": "12"
-          },
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#dbdee3"
-         },
-         "elements": [
-          {
-           "id": "41269d4",
-           "elType": "container",
-           "settings": {
-            "content_width": "full",
-            "background_background": "classic",
-            "background_color": "#f2f7ff",
-            "border_radius": {
-             "unit": "px",
-             "top": "999",
-             "right": "999",
-             "bottom": "999",
-             "left": "999",
-             "isLinked": true
-            },
-            "padding": {
-             "unit": "px",
-             "top": "5",
-             "right": "11",
-             "bottom": "5",
-             "left": "11",
-             "isLinked": false
-            },
-            "flex_direction": "row",
-            "margin": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "14",
-             "left": "0",
-             "isLinked": false
-            }
-           },
-           "elements": [
-            {
-             "id": "b24b71e",
-             "elType": "widget",
-             "widgetType": "heading",
-             "settings": {
-              "title": "Ferretería y refacciones",
-              "header_size": "div",
-              "title_color": "#1e5bd4",
-              "typography_typography": "custom",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 12,
-               "sizes": []
-              },
-              "typography_font_weight": "600",
-              "typography_text_transform": "uppercase",
-              "typography_letter_spacing": {
-               "unit": "px",
-               "size": 0.6,
-               "sizes": []
-              }
-             },
-             "elements": [],
-             "isInner": false
-            }
-           ],
-           "isInner": false
-          },
-          {
-           "id": "e671d37",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "El mostrador vende algo que nadie pidió al proveedor",
-            "header_size": "h3",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 22,
-             "sizes": []
-            },
-            "typography_font_weight": "600"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "1221ac9",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "Confirmar ese pedido levanta la requisición sola en IncSales Compras, agrupada por proveedor. Y se cierra al recibir la mercancía, no al pedirla.",
-            "text_color": "#6a6f78"
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "fb73f8a",
-         "elType": "container",
-         "settings": {
-          "background_background": "classic",
-          "background_color": "#ffffff",
-          "border_radius": {
-           "unit": "px",
-           "top": "10",
-           "right": "10",
-           "bottom": "10",
-           "left": "10",
-           "isLinked": true
-          },
-          "padding": {
-           "unit": "px",
-           "top": "28",
-           "right": "28",
-           "bottom": "28",
-           "left": "28",
-           "isLinked": true
-          },
-          "padding_mobile": {
-           "unit": "px",
-           "top": "22",
-           "right": "22",
-           "bottom": "22",
-           "left": "22",
-           "isLinked": true
-          },
-          "flex_direction": "column",
-          "flex_gap": {
-           "unit": "px",
-           "size": 12,
-           "column": "12",
-           "row": "12"
-          },
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#dbdee3"
-         },
-         "elements": [
-          {
-           "id": "114d3e3",
-           "elType": "container",
-           "settings": {
-            "content_width": "full",
-            "background_background": "classic",
-            "background_color": "#f2f7ff",
-            "border_radius": {
-             "unit": "px",
-             "top": "999",
-             "right": "999",
-             "bottom": "999",
-             "left": "999",
-             "isLinked": true
-            },
-            "padding": {
-             "unit": "px",
-             "top": "5",
-             "right": "11",
-             "bottom": "5",
-             "left": "11",
-             "isLinked": false
-            },
-            "flex_direction": "row",
-            "margin": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "14",
-             "left": "0",
-             "isLinked": false
-            }
-           },
-           "elements": [
-            {
-             "id": "cf88dbd",
-             "elType": "widget",
-             "widgetType": "heading",
-             "settings": {
-              "title": "Equipo industrial",
-              "header_size": "div",
-              "title_color": "#1e5bd4",
-              "typography_typography": "custom",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 12,
-               "sizes": []
-              },
-              "typography_font_weight": "600",
-              "typography_text_transform": "uppercase",
-              "typography_letter_spacing": {
-               "unit": "px",
-               "size": 0.6,
-               "sizes": []
-              }
-             },
-             "elements": [],
-             "isInner": false
-            }
-           ],
-           "isInner": false
-          },
-          {
-           "id": "ccfb8a0",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "El dólar se mueve entre la cotización y la orden",
-            "header_size": "h3",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 22,
-             "sizes": []
-            },
-            "typography_font_weight": "600"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "bf03698",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "IncSales Cotiza congela el tipo de cambio por documento, y también el costo del proveedor al pasarlo, con el enlace al origen para rastrearlo.",
-            "text_color": "#6a6f78"
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "a22b9d8",
-         "elType": "container",
-         "settings": {
-          "background_background": "classic",
-          "background_color": "#ffffff",
-          "border_radius": {
-           "unit": "px",
-           "top": "10",
-           "right": "10",
-           "bottom": "10",
-           "left": "10",
-           "isLinked": true
-          },
-          "padding": {
-           "unit": "px",
-           "top": "28",
-           "right": "28",
-           "bottom": "28",
-           "left": "28",
-           "isLinked": true
-          },
-          "padding_mobile": {
-           "unit": "px",
-           "top": "22",
-           "right": "22",
-           "bottom": "22",
-           "left": "22",
-           "isLinked": true
-          },
-          "flex_direction": "column",
-          "flex_gap": {
-           "unit": "px",
-           "size": 12,
-           "column": "12",
-           "row": "12"
-          },
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#dbdee3"
-         },
-         "elements": [
-          {
-           "id": "b9285b6",
-           "elType": "container",
-           "settings": {
-            "content_width": "full",
-            "background_background": "classic",
-            "background_color": "#f2f7ff",
-            "border_radius": {
-             "unit": "px",
-             "top": "999",
-             "right": "999",
-             "bottom": "999",
-             "left": "999",
-             "isLinked": true
-            },
-            "padding": {
-             "unit": "px",
-             "top": "5",
-             "right": "11",
-             "bottom": "5",
-             "left": "11",
-             "isLinked": false
-            },
-            "flex_direction": "row",
-            "margin": {
-             "unit": "px",
-             "top": "0",
-             "right": "0",
-             "bottom": "14",
-             "left": "0",
-             "isLinked": false
-            }
-           },
-           "elements": [
-            {
-             "id": "89453ec",
-             "elType": "widget",
-             "widgetType": "heading",
-             "settings": {
-              "title": "Comercio en línea",
-              "header_size": "div",
-              "title_color": "#1e5bd4",
-              "typography_typography": "custom",
-              "typography_font_size": {
-               "unit": "px",
-               "size": 12,
-               "sizes": []
-              },
-              "typography_font_weight": "600",
-              "typography_text_transform": "uppercase",
-              "typography_letter_spacing": {
-               "unit": "px",
-               "size": 0.6,
-               "sizes": []
-              }
-             },
-             "elements": [],
-             "isInner": false
-            }
-           ],
-           "isInner": false
-          },
-          {
-           "id": "ca476c3",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "La tienda vende lo que el mostrador ya vendió",
-            "header_size": "h3",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 22,
-             "sizes": []
-            },
-            "typography_font_weight": "600"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "773d70b",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "IncSales WooSync sincroniza productos, precios, existencias y pedidos con WordPress, e IncSales Forms mete al interesado del sitio directo al CRM.",
+            "editor": "El mostrador cobra lo nuevo, la tienda alcanza a vender veinte piezas a lo de antes.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -1032,11 +612,11 @@
        "isInner": false
       },
       {
-       "id": "1c37d17",
+       "id": "c7ff359",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "¿No está tu giro? Lo que decide es el proceso, no el nombre: <a href=\"comparativa.html\">compáralo contra lo que ya tienes</a> o mira <a href=\"casos.html\">quién lo usa hoy</a> .",
+        "editor": "Cada producto lleva tres claves —SKU, código de barras e ID alterno—, únicas y comprobadas entre sí: el candado no es contra el código repetido, es contra el producto duplicado. <a href=\"inventarios.html\">Así funciona el catálogo</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

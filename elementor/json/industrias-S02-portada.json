@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "f6cdc45",
+   "id": "cce85c2",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -38,7 +38,7 @@
    },
    "elements": [
     {
-     "id": "a43cda1",
+     "id": "fadd77c",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -84,7 +84,7 @@
        "isInner": false
       },
       {
-       "id": "cce85c2",
+       "id": "488199c",
        "elType": "container",
        "settings": {
         "container_type": "grid",
@@ -112,7 +112,7 @@
        },
        "elements": [
         {
-         "id": "fadd77c",
+         "id": "9d5ad85",
          "elType": "container",
          "settings": {
           "container_type": "grid",
@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Seis giros donde esto ya opera, y el punto exacto en que cada uno se rompe. Material eléctrico, insumos médicos, pinturas, ferretería, equipo industrial y proyectos.",
+              "editor": "Cada giro se rompe en un punto distinto, y cada uno tiene aquí su propia página. Elige el tuyo: material eléctrico, insumos médicos, pinturas, ferretería, equipo industrial o tienda en línea.",
               "text_color": "#b9cbe8",
               "typography_typography": "custom",
               "typography_font_size": {
@@ -211,7 +211,7 @@
            "isInner": false
           },
           {
-           "id": "488199c",
+           "id": "35fa317",
            "elType": "container",
            "settings": {
             "flex_direction": "column",
@@ -320,29 +320,21 @@
              "isInner": false
             },
             {
-             "id": "044cafd",
+             "id": "b0d25c9",
              "elType": "widget",
              "widgetType": "icon-list",
              "settings": {
               "icon_list": [
                {
+                "_id": "a674208",
+                "text": "Distrimedic, TecnoCableado y GS Pinturas ya lo operan",
+                "selected_icon": {
+                 "value": "fas fa-check",
+                 "library": "fa-solid"
+                }
+               },
+               {
                 "_id": "3dbaf35",
-                "text": "Distrimedic vendió más de $20 millones con el método de la agencia",
-                "selected_icon": {
-                 "value": "fas fa-check",
-                 "library": "fa-solid"
-                }
-               },
-               {
-                "_id": "6c702a2",
-                "text": "TecnoCableado y GS Pinturas también lo operan",
-                "selected_icon": {
-                 "value": "fas fa-check",
-                 "library": "fa-solid"
-                }
-               },
-               {
-                "_id": "9ec4a81",
                 "text": "Desde $200 al mes, IVA incluido",
                 "selected_icon": {
                  "value": "fas fa-check",

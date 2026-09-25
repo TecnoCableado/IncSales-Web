@@ -1,10 +1,10 @@
 {
  "version": "0.4",
- "title": "industrias · S06 CIERRE",
+ "title": "erp-equipo-industrial · S08 CIERRE",
  "type": "container",
  "content": [
   {
-   "id": "45cad3c",
+   "id": "068b111",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -38,7 +38,7 @@
    },
    "elements": [
     {
-     "id": "af465b9",
+     "id": "7e0b086",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -73,7 +73,7 @@
      },
      "elements": [
       {
-       "id": "112031d",
+       "id": "44ebb64",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -101,11 +101,11 @@
        },
        "elements": [
         {
-         "id": "95da30c",
+         "id": "21992f0",
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
-          "title": "Te lo enseñamos con tu catálogo",
+          "title": "Tráenos tu proyecto más largo",
           "header_size": "h2",
           "typography_typography": "custom",
           "typography_font_size": {
@@ -120,18 +120,18 @@
          "isInner": false
         },
         {
-         "id": "2500924",
+         "id": "584162b",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>Treinta minutos. Trae diez de tus productos y una cotización de las tuyas, y ve cómo quedan dentro del sistema.</p>",
+          "editor": "<p>Treinta minutos. Trae dos cotizaciones de proveedor, una en dólares, y armamos con ellas la cotización del cliente para que veas el costo congelado y el comparativo.</p>",
           "align": "center"
          },
          "elements": [],
          "isInner": false
         },
         {
-         "id": "b96a7a5",
+         "id": "b78fb92",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {

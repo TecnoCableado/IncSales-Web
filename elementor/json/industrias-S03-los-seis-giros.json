@@ -1,0 +1,259 @@
+{
+ "version": "0.4",
+ "title": "industrias · S03 LOS SEIS GIROS",
+ "type": "container",
+ "content": [
+  {
+   "id": "65c3b20",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "padding": {
+     "unit": "px",
+     "top": "88",
+     "right": "0",
+     "bottom": "88",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "64",
+     "right": "0",
+     "bottom": "64",
+     "left": "0",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "48",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "7b179d7",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "boxed_width": {
+       "unit": "px",
+       "size": 1140,
+       "sizes": []
+      },
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "24",
+       "bottom": "0",
+       "left": "24",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "0",
+       "right": "20",
+       "bottom": "0",
+       "left": "20",
+       "isLinked": false
+      },
+      "flex_direction": "column",
+      "flex_gap": {
+       "unit": "px",
+       "size": 0,
+       "column": "0",
+       "row": "0"
+      }
+     },
+     "elements": [
+      {
+       "id": "03a225f",
+       "elType": "container",
+       "settings": {
+        "flex_direction": "column",
+        "content_width": "boxed",
+        "boxed_width": {
+         "unit": "px",
+         "size": 720,
+         "sizes": []
+        },
+        "margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "40",
+         "left": "0",
+         "isLinked": false
+        },
+        "flex_gap": {
+         "unit": "px",
+         "size": 12,
+         "column": "12",
+         "row": "12"
+        },
+        "flex_align_items": "center"
+       },
+       "elements": [
+        {
+         "id": "151d5df",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Seis giros",
+          "header_size": "div",
+          "title_color": "#1e5bd4",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "600",
+          "align": "center"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "b7f6c4d",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Entra por el tuyo y ve el cuello que te toca",
+          "header_size": "h2",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 36,
+           "sizes": []
+          },
+          "typography_font_weight": "600",
+          "align": "center"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "b9fbbcf",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Cada página trae el problema de ese giro, el módulo que lo rompe y lo que cuesta.</p>",
+          "align": "center"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "7c6e59b",
+       "elType": "container",
+       "settings": {
+        "container_type": "grid",
+        "grid_columns_grid": {
+         "unit": "fr",
+         "size": 3,
+         "sizes": []
+        },
+        "grid_columns_grid_tablet": {
+         "unit": "fr",
+         "size": 2,
+         "sizes": []
+        },
+        "grid_columns_grid_mobile": {
+         "unit": "fr",
+         "size": 1,
+         "sizes": []
+        },
+        "grid_gaps": {
+         "unit": "px",
+         "size": 24,
+         "column": "24",
+         "row": "24"
+        }
+       },
+       "elements": [
+        {
+         "id": "90f66ab",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<a href=\"erp-material-electrico.html\">Material eléctrico y cableado Te piden precio de cuarenta renglones con material de tres proveedores, y cada uno pone el IVA a su manera. IncSales Cotiza normaliza antes de comparar · Así compra TecnoCableado</a>",
+          "text_color": "#4d535d"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "958dbbb",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<a href=\"erp-insumos-medicos.html\">Insumos médicos y material de curación El lote que caduca primero se queda en el fondo del almacén, y el pedimento aparece cuando ya te lo pidieron. IncSales Inventarios lleva caducidad y lote · Es el giro de Distrimedic</a>",
+          "text_color": "#4d535d"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "953f6a1",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<a href=\"erp-pinturas.html\">Pinturas, recubrimientos y acabados La cubeta de 19 litros no vale lo que el galón, y el contratista no paga el precio del mostrador. IncSales Inventarios cuelga precio y existencia de cada variante · Lo usa GS Pinturas</a>",
+          "text_color": "#4d535d"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "f1f3068",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<a href=\"erp-ferreterias.html\">Ferretería, tlapalería y refacciones El mostrador promete hoy lo que no está en el almacén, y nadie se lo pidió al proveedor. IncSales Compras levanta la requisición al confirmar el pedido</a>",
+          "text_color": "#4d535d"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "0e0f643",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<a href=\"erp-equipo-industrial.html\">Equipo industrial, maquinados y proyectos Cotizas en marzo, el cliente confirma en mayo, y el margen que calculaste ya no existe. IncSales Cotiza congela el tipo de cambio y el costo por documento</a>",
+          "text_color": "#4d535d"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "4455c95",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<a href=\"erp-tienda-en-linea.html\">Comercio en línea con tienda física La tienda vende en la mañana lo que el mostrador ya vendió a mediodía. IncSales WooSync sincroniza catálogo, precios, existencias y pedidos</a>",
+          "text_color": "#4d535d"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

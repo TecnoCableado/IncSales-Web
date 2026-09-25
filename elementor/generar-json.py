@@ -735,6 +735,12 @@ def procesar(ruta, destino, prefijo):
     raiz = p.pila[0]
     bloques = [n for n in raiz["hijos"] if n["tag"] in ("section", "header", "footer")]
     os.makedirs(destino, exist_ok=True)
+    # Se borran los archivos previos de ESTA pagina antes de escribir. Si no,
+    # al renombrar una seccion el archivo viejo se queda huerfano y acabaria
+    # importandose a WordPress como una seccion fantasma.
+    import glob as _glob
+    for viejo in _glob.glob(os.path.join(destino, prefijo + "-S*.json")):
+        os.remove(viejo)
     hechos = []
     for i, b in enumerate(bloques):
         cod, nombre = etiquetas[i] if i < len(etiquetas) else (f"S{i+1:02d}", b.get("id") or b["tag"])
