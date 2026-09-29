@@ -131,12 +131,36 @@
          "isInner": false
         },
         {
-         "id": "9369106",
+         "id": "db7f908",
          "elType": "widget",
-         "widgetType": "text-editor",
+         "widgetType": "button",
          "settings": {
-          "editor": "<p><a href=\"contacto.html\">Agenda tu demo</a></p>",
-          "align": "center"
+          "text": "Agenda tu demo",
+          "link": {
+           "url": "contacto.html",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "size": "md",
+          "border_radius": {
+           "unit": "px",
+           "top": "6",
+           "right": "6",
+           "bottom": "6",
+           "left": "6",
+           "isLinked": true
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "15",
+           "right": "26",
+           "bottom": "15",
+           "left": "26",
+           "isLinked": false
+          },
+          "align": "center",
+          "background_color": "#1e5bd4",
+          "button_text_color": "#ffffff"
          },
          "elements": [],
          "isInner": false

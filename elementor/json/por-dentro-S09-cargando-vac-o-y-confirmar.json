@@ -241,11 +241,36 @@
              "isInner": false
             },
             {
-             "id": "8988c29",
+             "id": "0b6ed2c",
              "elType": "widget",
-             "widgetType": "text-editor",
+             "widgetType": "button",
              "settings": {
-              "editor": "<p><a href=\"compras.html\">Ver IncSales Compras</a></p>"
+              "text": "Ver IncSales Compras",
+              "link": {
+               "url": "compras.html",
+               "is_external": "",
+               "nofollow": ""
+              },
+              "size": "md",
+              "border_radius": {
+               "unit": "px",
+               "top": "6",
+               "right": "6",
+               "bottom": "6",
+               "left": "6",
+               "isLinked": true
+              },
+              "text_padding": {
+               "unit": "px",
+               "top": "15",
+               "right": "26",
+               "bottom": "15",
+               "left": "26",
+               "isLinked": false
+              },
+              "align": "left",
+              "background_color": "#1e5bd4",
+              "button_text_color": "#ffffff"
              },
              "elements": [],
              "isInner": false

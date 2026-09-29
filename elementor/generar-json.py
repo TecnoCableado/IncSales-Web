@@ -349,6 +349,24 @@ def traducir(n, oscura=False, fam_claro=None):
         return piezas
 
     if t == "p":
+        # Un parrafo cuyo contenido real es un boton NO es texto: es un boton.
+        # Sin esto el <a class="btn"> se aplanaba a enlace suelto y el llamado
+        # a la accion llegaba a Elementor como texto sin estilo.
+        botones = [h for h in n["hijos"] if h["tag"] == "a" and "btn" in h["clase"]]
+        if botones:
+            resto = re.sub(r"\s+", " ",
+                           " ".join(texto_de(h) for h in n["hijos"]
+                                    if h not in botones)).strip()
+            piezas = []
+            if resto:
+                piezas.append(w_texto(resto, cuerpo or COL["cuerpo"]))
+            for b in botones:
+                w = w_boton(texto_de(b), b["href"], b["clase"])
+                if "centro" in c.split():
+                    w["settings"]["align"] = "center"
+                piezas.append(w)
+            return piezas
+
         if "sobre-titulo" in c or "rotulo" in c:
             return [w_titulo(texto_de(n), "div",
                              (fam_claro or COL["primario"]) if oscura else COL["primario"],
