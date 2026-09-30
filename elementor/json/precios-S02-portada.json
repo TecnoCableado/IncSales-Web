@@ -157,7 +157,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Nueve planes, todos publicados",
+              "title": "Seis planes, todos publicados",
               "header_size": "div",
               "title_color": "#1e5bd4",
               "typography_typography": "custom",
@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Precio final, en pesos y con IVA incluido. Empieza en $200 al mes y llega hasta el sistema entero: nada de «contáctanos para conocer el precio», nada de dólares.",
+              "editor": "Precio final, en pesos y con IVA incluido. Empieza en $890 al mes y llega hasta el sistema entero con la agencia adentro: nada de «contáctanos para conocer el precio», nada de dólares.",
               "text_color": "#b9cbe8",
               "typography_typography": "custom",
               "typography_font_size": {
@@ -335,7 +335,7 @@
                },
                {
                 "_id": "bf7969b",
-                "text": "Anual: 15% menos y precio congelado 12 meses",
+                "text": "Anual: 15% menos, pagado por adelantado",
                 "selected_icon": {
                  "value": "fas fa-check",
                  "library": "fa-solid"
@@ -343,7 +343,7 @@
                },
                {
                 "_id": "001f4ef",
-                "text": "Migración sin costo con plan anual",
+                "text": "Ningún plan con tope de facturas",
                 "selected_icon": {
                  "value": "fas fa-check",
                  "library": "fa-solid"

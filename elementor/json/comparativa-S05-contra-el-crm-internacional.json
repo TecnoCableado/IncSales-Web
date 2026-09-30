@@ -201,7 +201,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<a href=\"/migracion/\">IncSales Migración</a> , desde $9,900, sin costo con plan anual.",
+            "editor": "Lo trajo <a href=\"/migracion/\">IncSales Migración</a> . Cada migración se cotiza aparte, de $5,000 a $50,000 con IVA incluido, después de ver tu exportación: no hay dos iguales.",
             "text_color": "#6a6f78",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -343,7 +343,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Si tu CRM te gusta, quédate con él: <strong>Factura Esencial, $2,490 al mes, IVA incluido</strong> . <a href=\"/precios/\">Ver los planes</a>",
+            "editor": "Si tu CRM te gusta, no tienes que soltarlo el primer día: <strong>Esencial, $1,490 al mes, IVA incluido</strong> , trae la facturación CFDI 4.0 sin tope publicado, las cotizaciones y el inventario, y el CRM viene incluido en lugar de cobrarse aparte. <a href=\"/precios/\">Ver los planes</a>",
             "text_color": "#6a6f78",
             "typography_typography": "custom",
             "typography_font_size": {

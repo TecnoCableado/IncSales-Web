@@ -124,7 +124,7 @@
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
-          "title": "Un ERP para tlapalería que empieza en doscientos pesos al mes",
+          "title": "Un ERP para tlapalería que empieza en $1,490 al mes, IVA incluido",
           "header_size": "h2",
           "typography_typography": "custom",
           "typography_font_size": {
@@ -268,7 +268,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Desde aquí",
+              "title": "El piso para ferretería",
               "header_size": "div",
               "title_color": "#1e5bd4",
               "typography_typography": "custom",
@@ -296,7 +296,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Cotiza Uno · $200 al mes",
+            "title": "Esencial · $1,490 al mes, IVA incluido",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -314,7 +314,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Un usuario, IVA incluido. Hasta 500 productos, un almacén y cotizaciones con folio y PDF con tu logo.",
+            "editor": "Cinco accesos. Catálogo, variantes y almacenes sin tope, cotizaciones con folio y PDF con tu logo, y facturación CFDI 4.0 sin tope publicado.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -439,7 +439,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Cotiza Pro · $999 al mes",
+            "title": "Crecimiento · $2,490 al mes, IVA incluido",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -457,7 +457,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Cinco usuarios. Catálogo ilimitado, multialmacén, listas de precios y las compras completas: requisiciones, órdenes y recepciones.",
+            "editor": "Cinco accesos, los mismos que Esencial: lo que separa a los dos no son las personas, es el área de compras completa —proveedores y proveedores por producto, requisiciones, órdenes y recepciones— más el comparativo que normaliza el IVA para saber con quién conviene surtir.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -474,7 +474,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "La facturación CFDI 4.0 entra desde Factura Esencial, $2,490 al mes; almacén adicional, $299 al mes. <a href=\"/precios/\">Ver los nueve planes</a> .",
+        "editor": "Los almacenes y el catálogo van sin tope y no se cobran aparte, y la facturación va sin tope publicado. Si por ahora solo quieres atender y dar seguimiento, CRM + WhatsApp cuesta $890 al mes, IVA incluido, y no trae catálogo ni compras. <a href=\"/precios/\">Ver los seis planes</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

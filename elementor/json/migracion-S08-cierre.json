@@ -124,7 +124,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>Sácala del sistema que usas hoy y en media hora te decimos qué se trae, qué hay que limpiar y qué no se puede traer.</p>",
+          "editor": "<p>Sácala del sistema que usas hoy y en media hora te decimos qué se trae, qué hay que limpiar, qué no se puede traer y cuánto cuesta moverlo.</p>",
           "align": "center"
          },
          "elements": [],

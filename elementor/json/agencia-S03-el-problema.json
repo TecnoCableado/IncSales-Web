@@ -419,7 +419,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "Cuota fija, nunca porcentaje: cobramos lo mismo si inviertes $8,000 o $30,000 al mes.",
+        "editor": "Cuota fija, nunca porcentaje: cobramos lo mismo si inviertes $18,000 al mes o tres veces eso.",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

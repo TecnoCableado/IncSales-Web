@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "a97a134",
+   "id": "fed7ba6",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -36,7 +36,7 @@
    },
    "elements": [
     {
-     "id": "ec153b1",
+     "id": "a97a134",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -152,7 +152,7 @@
        "isInner": false
       },
       {
-       "id": "be1b9ce",
+       "id": "ec153b1",
        "elType": "container",
        "settings": {
         "container_type": "grid",
@@ -323,7 +323,7 @@
          "isInner": false
         },
         {
-         "id": "a708d1c",
+         "id": "be1b9ce",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -458,6 +458,23 @@
            "settings": {
             "editor": "El buscador te lo dice antes de que lo prometas: cada proveedor con su clave, su costo y sus días de entrega. Lo de él no entra a tu kárdex: se enseña aparte, con su fecha.",
             "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "3d57ff3",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Esa clave, ese costo y esos días los capturas tú desde el plan Crecimiento. Si lo que quieres es que la existencia de tu proveedor se refresque sola cada diez minutos, es el complemento de consulta de inventario del proveedor: +$890 al mes, IVA incluido, solo sobre el plan Corporativo, y la integración se cotiza de $14,900 a $200,000 según si el proveedor tiene API documentada o hay que leerle un archivo que cambia de forma cada semana.",
+            "text_color": "#6a6f78",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            }
            },
            "elements": [],
            "isInner": false

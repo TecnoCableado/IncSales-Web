@@ -121,7 +121,7 @@
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
-          "title": "El plan más elegido cuesta $7,500 al mes y no pide permanencia",
+          "title": "Seis planes desde $890 al mes con IVA incluido, y ninguno pide permanencia",
           "header_size": "h2",
           "typography_typography": "custom",
           "typography_font_size": {
@@ -157,7 +157,7 @@
          },
          {
           "_id": "fb1e925",
-          "item_title": "¿Qué pasa si crece el equipo o se acaban los timbres?"
+          "item_title": "¿Qué pasa si crece el equipo o se acaban las plantillas de WhatsApp?"
          }
         ],
         "default_state": "all_collapsed",
@@ -203,7 +203,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Nueve planes, desde $200 al mes con IVA incluido; el más elegido es Operación, $7,500 al mes con diez usuarios, 100 CFDI y el sistema entero. Si ya traes un plan de cotizaciones o de facturación, el CRM se agrega por $499 al mes. <a href=\"/precios/\">Ver los planes</a> ."
+            "editor": "Seis planes, desde $890 al mes con IVA incluido. El de entrada es CRM + WhatsApp: tres accesos, para el equipo que atiende por WhatsApp y correo y factura en otro lado. De ahí sube a Esencial en $1,490 al mes con IVA incluido, que además factura; a Crecimiento en $2,490 al mes con IVA incluido, que abre el área de compras —proveedores, requisiciones, órdenes y recepciones— y el comparativo que normaliza el IVA para saber con quién conviene surtir; y a Operación en $3,490 al mes con IVA incluido, que trae las seis áreas del sistema, diez accesos y la implementación incluida: es el plan sobre el que opera TecnoCableado todos los días. Arriba quedan Corporativo desde $9,990 y Método IncSales en $19,999, los dos al mes y con IVA incluido. El CRM, el correo desde tu propio dominio y WhatsApp vienen en todos los planes, no se agregan aparte. <a href=\"/precios/\">Ver los planes</a> ."
            },
            "elements": [],
            "isInner": false
@@ -259,7 +259,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "No. La implementación y capacitación cuesta desde $14,900 e incluye tres sesiones, manual propio y acompañamiento el primer mes. Lo que va sin costo al contratar cualquier plan anual es la <a href=\"/migracion/\">migración de datos</a> ."
+            "editor": "No. La implementación y capacitación cuesta desde $14,900 con IVA incluido e incluye tres sesiones, manual propio y acompañamiento el primer mes; va incluida en Operación y en Corporativo, y en los demás planes se contrata aparte. El plan anual baja 15 % el precio del sistema, y eso es lo único que baja: ni la implementación ni la <a href=\"/migracion/\">migración de datos</a> cambian de precio por pagar por adelantado."
            },
            "elements": [],
            "isInner": false
@@ -287,7 +287,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "El usuario adicional cuesta +$199 al mes en las familias Cotiza y CRM, y +$349 en la familia Completo. El paquete de 100 CFDI adicionales son +$499 al mes y se acumulan dentro del mes."
+            "editor": "Los accesos suben con el plan y nadie pierde nada al subir: 3 en CRM + WhatsApp, 5 en Esencial, 5 en Crecimiento, 10 en Operación y desde 25 en Corporativo. Esencial y Crecimiento traen los mismos 5 accesos a propósito: lo que los separa no son las personas, es que Crecimiento abre el área de compras —proveedores, requisiciones, órdenes y recepciones— y el comparativo que normaliza el IVA. El tope se siente al invitar, no a media captura, así que crecer es cambiar de escalón y queda resuelto ese mismo día. De facturas no hay nada que se acabe: la facturación CFDI 4.0 va sin tope publicado en todos los planes. Las plantillas de WhatsApp sí se cuentan —son 1,000 al mes en todos los planes, porque Meta cobra cada una—: avisan al 90%, se frenan al 100% y el contador se reinicia el día 1. Contestar a quien te escribió dentro de las 24 horas no gasta plantilla, así que la bandeja nunca se apaga, y 1,000 plantillas más cuestan +$390 al mes con IVA incluido."
            },
            "elements": [],
            "isInner": false

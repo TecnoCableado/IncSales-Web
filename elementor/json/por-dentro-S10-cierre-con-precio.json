@@ -217,7 +217,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Desde $200 al mes",
+            "title": "Desde $890 al mes",
             "header_size": "h3",
             "title_color": "#ffffff",
             "typography_typography": "custom",
@@ -236,7 +236,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "IVA incluido, sin permanencia forzosa. Nueve planes. <a href=\"/precios/\">Ver los planes</a>",
+            "editor": "IVA incluido, sin permanencia forzosa. Seis planes, todos publicados. <a href=\"/precios/\">Ver los planes</a>",
             "text_color": "#b9cbe8"
            },
            "elements": [],
@@ -299,7 +299,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Operación · $7,500 al mes",
+            "title": "Operación · $3,490 al mes, IVA incluido",
             "header_size": "h3",
             "title_color": "#ffffff",
             "typography_typography": "custom",
@@ -318,7 +318,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "El más elegido: el sistema entero con 10 usuarios y 100 CFDI, IVA incluido.",
+            "editor": "Es el plan sobre el que opera TecnoCableado todos los días: las seis áreas, 10 accesos e implementación y capacitación incluidas.",
             "text_color": "#b9cbe8"
            },
            "elements": [],

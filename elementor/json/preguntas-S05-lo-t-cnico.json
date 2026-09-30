@@ -231,7 +231,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Sí: tu empresa puede tener su propio subdominio, del estilo erp.tuempresa.com, y en ese subdominio solo entra tu gente."
+            "editor": "Sí: tu empresa puede entrar por su propio subdominio, del estilo erp.tuempresa.com, y ahí solo entra tu gente. El dominio propio viene con el plan Corporativo, desde $9,990 al mes con IVA incluido, y lo configuramos nosotros. Así opera TecnoCableado hoy."
            },
            "elements": [],
            "isInner": false

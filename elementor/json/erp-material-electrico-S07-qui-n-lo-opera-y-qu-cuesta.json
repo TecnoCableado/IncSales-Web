@@ -143,7 +143,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>Cableado estructurado y material eléctrico. Es la organización número uno de IncSales ERP, opera con datos reales desde el primer día y paga el plan Operación de $7,500 al mes. El sistema se escribió resolviendo estas cotizaciones.</p>",
+          "editor": "<p>Cableado estructurado y material eléctrico. Es la organización número uno de IncSales ERP, opera con datos reales desde el primer día y paga el plan Operación de $3,490 al mes, IVA incluido. El sistema se escribió resolviendo estas cotizaciones.</p>",
           "align": "center"
          },
          "elements": [],
@@ -296,7 +296,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Cotiza Equipo · $499 al mes",
+            "title": "Esencial · $1,490 al mes, IVA incluido",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -314,7 +314,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Tres usuarios, IVA incluido. Catálogo ilimitado, multialmacén hasta tres, listas de precios y varios proveedores por producto.",
+            "editor": "Cinco accesos. Catálogo y variantes, almacenes y listas de precios sin tope, y facturación CFDI 4.0 sin tope publicado.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -411,7 +411,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "El más elegido",
+              "title": "TecnoCableado",
               "header_size": "div",
               "title_color": "#1e5bd4",
               "typography_typography": "custom",
@@ -439,7 +439,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Operación · $7,500 al mes",
+            "title": "Operación · $3,490 al mes, IVA incluido",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -457,7 +457,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Diez usuarios y 100 CFDI al mes. El sistema completo, con subdominio propio.",
+            "editor": "Es el plan sobre el que opera TecnoCableado todos los días: diez accesos, las seis áreas, implementación y capacitación incluidas y subdominio propio.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -474,7 +474,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "El comparativo de proveedores y las compras completas entran desde Cotiza Pro, $999 al mes. Están <a href=\"/precios/\">los nueve planes</a> .",
+        "editor": "El comparativo que normaliza el IVA y las compras completas —proveedores, requisiciones, órdenes y recepciones— entran desde Crecimiento, $2,490 al mes, IVA incluido: los mismos cinco accesos que Esencial, lo que cambia es que se abre el área de compras. Están <a href=\"/precios/\">los seis planes</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

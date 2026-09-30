@@ -144,7 +144,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>Ninguno viene encendido en un plan: cada uno se levanta como trabajo de integración.</p>",
+          "editor": "<p>Ninguno viene encendido en los planes de $890 a $3,490 al mes, IVA incluido: cada uno se levanta como trabajo de integración y se cobra aparte. La tienda en línea se vende desde el plan Crecimiento, de $2,490 al mes con IVA incluido; la consulta del inventario de tu proveedor solo se suma sobre el plan Corporativo, desde $9,990 al mes con IVA incluido, que ya trae la tienda encendida y una bolsa de cinco horas de desarrollo al mes.</p>",
           "align": "center"
          },
          "elements": [],
@@ -269,7 +269,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "IncSales Proveedores en Línea",
+              "title": "Consulta del inventario de tu proveedor",
               "header_size": "div",
               "title_color": "#1e5bd4",
               "typography_typography": "custom",
@@ -315,7 +315,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "El buscador dice «Tienes 48 · Proveedor 40 en 5 d» antes de que prometas nada. Lo de él no entra a tu kárdex: se enseña aparte, con la fecha en que lo dijo. Tu proveedor necesita API.",
+            "editor": "Cada diez minutos refleja sus precios y sus existencias dentro de tu catálogo, y el buscador dice «Tienes 48 · Proveedor 40 en 5 d» antes de que prometas nada. Lo de él no entra a tu kárdex: se enseña aparte, con la fecha en que lo dijo. Va <strong>un proveedor por empresa</strong> y <strong>solo con el plan Corporativo</strong> , porque la conexión hay que escribirla y sostenerla cada semana.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -412,7 +412,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "IncSales Orquestador",
+              "title": "IncSales WooSync",
               "header_size": "div",
               "title_color": "#1e5bd4",
               "typography_typography": "custom",
@@ -440,7 +440,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Un solo número manda en tus canales",
+            "title": "Tu tienda cuenta las piezas que hay",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -458,7 +458,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "De 60 piezas aparta 8 reservadas y 4 de colchón, y reparte las 48: tienda 24, marketplace 16, mostrador 8. Cada canal se levanta aparte.",
+            "editor": "Productos, precios, existencias, pedidos y clientes van y vienen entre WooCommerce y el ERP, sin que nadie recapture el pedido de ayer. Se enciende por empresa, tiene su propio precio y va <strong>desde el plan Crecimiento</strong> : sin compras y sin el catálogo trabajado, sincronizar una tienda deja más problemas de los que resuelve.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -555,7 +555,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "IncSales Portal",
+              "title": "Desarrollo a la medida",
               "header_size": "div",
               "title_color": "#1e5bd4",
               "typography_typography": "custom",
@@ -583,7 +583,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Tu cliente consulta y deja de llamar",
+            "title": "Con el ERP o el sistema que ya tienes",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -601,7 +601,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Entra a ver sus pedidos y sus facturas. Eso es todo lo que hace: desde ahí nadie pide, nadie autoriza y nadie paga.",
+            "editor": "Lo que no existe se escribe: reportes, pantallas e integraciones con el sistema que no piensas apagar. Se cobra por hora, con alcance escrito y con fecha, nunca como casilla de un plan.",
             "text_color": "#6a6f78"
            },
            "elements": [],

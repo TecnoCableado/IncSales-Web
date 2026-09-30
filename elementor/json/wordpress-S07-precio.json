@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "72221a3",
+   "id": "f889200",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -37,7 +37,7 @@
    },
    "elements": [
     {
-     "id": "b1c9851",
+     "id": "72221a3",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -143,7 +143,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>Es un servicio con trabajo adentro, no una palomita dentro de la tabla de un plan.</p>",
+          "editor": "<p>Es un servicio con trabajo adentro, no una palomita dentro de la tabla de un plan, y se vende desde el plan Crecimiento en adelante.</p>",
           "align": "center"
          },
          "elements": [],
@@ -153,7 +153,7 @@
        "isInner": false
       },
       {
-       "id": "3a68746",
+       "id": "4c58921",
        "elType": "container",
        "settings": {
         "container_type": "grid",
@@ -181,7 +181,7 @@
        },
        "elements": [
         {
-         "id": "6ac4fd3",
+         "id": "fb12b7d",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -296,7 +296,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "IncSales WooSync · +$1,490 al mes",
+            "title": "IncSales WooSync · +$1,390 al mes",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -314,8 +314,25 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "IVA incluido, sobre el plan que ya tengas, más la implementación desde $9,900 una sola vez.",
+            "editor": "IVA incluido, <strong>desde el plan Crecimiento</strong> , más la implementación desde $9,900 una sola vez. En el Corporativo la tienda ya viene incluida.",
             "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "4268538",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "No se vende sobre CRM + WhatsApp ni sobre Esencial: sin el área de compras y sin el catálogo trabajado, sincronizar una tienda deja más problemas de los que resuelve.",
+            "text_color": "#6a6f78",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            }
            },
            "elements": [],
            "isInner": false
@@ -324,7 +341,7 @@
          "isInner": false
         },
         {
-         "id": "9efe2fa",
+         "id": "3a68746",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -373,7 +390,7 @@
          },
          "elements": [
           {
-           "id": "36448cb",
+           "id": "3d10901",
            "elType": "container",
            "settings": {
             "content_width": "full",
@@ -407,7 +424,7 @@
            },
            "elements": [
             {
-             "id": "1092fd8",
+             "id": "ed1beff",
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
@@ -435,11 +452,11 @@
            "isInner": false
           },
           {
-           "id": "8dab7de",
+           "id": "fab531f",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "IncSales Forms · desde $499 al mes",
+            "title": "IncSales Forms · incluido desde $890 al mes",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -453,11 +470,11 @@
            "isInner": false
           },
           {
-           "id": "c09a1de",
+           "id": "fd1de87",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Viene dentro de CRM Esencial, IVA incluido: tres usuarios, bandeja de interesados y tablero por etapas.",
+            "editor": "Va dentro del CRM, o sea en los seis planes. El de entrada es CRM + WhatsApp a $890 al mes, IVA incluido: tres accesos, bandeja de interesados y tablero por etapas.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -470,7 +487,7 @@
        "isInner": false
       },
       {
-       "id": "f375dda",
+       "id": "fbc9e91",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {

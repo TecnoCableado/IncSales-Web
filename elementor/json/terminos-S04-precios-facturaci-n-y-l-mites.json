@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "acbef6e",
+   "id": "c2cf92a",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -38,7 +38,7 @@
    },
    "elements": [
     {
-     "id": "4de090a",
+     "id": "8338718",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -179,7 +179,7 @@
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
-        "title": "4 · Límites de cada plan",
+        "title": "4 · Lo que divide un plan de otro",
         "header_size": "h2",
         "typography_typography": "custom",
         "typography_font_size": {
@@ -197,7 +197,7 @@
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
-        "title": "4.1 Están publicados y así se amplían",
+        "title": "4.1 Áreas del sistema, accesos y servicios incluidos",
         "header_size": "h3",
         "typography_typography": "custom",
         "typography_font_size": {
@@ -215,7 +215,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "<p>Usuarios, CFDI al mes, almacenes y módulos viven en la <a href=\"/precios/\">página de precios</a> . Cada límite se amplía con complementos mensuales —usuario, 100 CFDI, almacén, empresa o RFC con datos aislados, WhatsApp— que se quitan en la siguiente renovación.</p>"
+        "editor": "<p>Eso es lo que cambia de un escalón al siguiente, y está en la <a href=\"/precios/\">página de precios</a> : son seis planes, desde $890 al mes con IVA incluido. La facturación CFDI 4.0 va sin tope publicado, y lo mismo el catálogo, los almacenes, las listas de precios, los pipelines y los formularios. Todos los planes traen <strong>un número de WhatsApp</strong> con 1,000 plantillas al mes.</p>"
        },
        "elements": [],
        "isInner": false
@@ -225,7 +225,7 @@
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
-        "title": "4.2 Cuando te acercas al límite",
+        "title": "4.2 Los complementos que se pueden sumar",
         "header_size": "h3",
         "typography_typography": "custom",
         "typography_font_size": {
@@ -243,7 +243,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "<p>Te avisamos antes de alcanzarlo: no suspendemos el timbrado, pero no se da de alta un usuario de más sin su complemento.</p>"
+        "editor": "<p>Son tres, mensuales y con su precio publicado, y no todos se pueden sumar a cualquier plan. Las <strong>1,000 plantillas de WhatsApp más al mes</strong> se suman a cualquiera. <strong>IncSales WooSync</strong> para WordPress y WooCommerce se vende <strong>desde el plan Crecimiento</strong> , porque sin compras y sin el catálogo trabajado sincronizar una tienda deja más problemas de los que resuelve, y va incluida en Corporativo. La <strong>consulta del inventario de tu proveedor</strong> se vende <strong>solo con el plan Corporativo</strong> , y su integración se cotiza aparte según cómo entregue la información ese proveedor. Los tres se quitan en la siguiente renovación. Varias empresas o RFC, con los datos aislados entre ellas, no es complemento: es Corporativo.</p>"
        },
        "elements": [],
        "isInner": false
@@ -253,7 +253,7 @@
        "elType": "widget",
        "widgetType": "heading",
        "settings": {
-        "title": "4.3 Uso razonable",
+        "title": "4.3 Cuando te acercas al tope de accesos",
         "header_size": "h3",
         "typography_typography": "custom",
         "typography_font_size": {
@@ -268,6 +268,62 @@
       },
       {
        "id": "d38213b",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Te avisamos antes de alcanzarlo, y el tope se siente al invitar, no al trabajar: el sistema cuenta las invitaciones vivas y no deja apartar el siguiente lugar, así que nadie se queda sin capturar a media quincena. <strong>No suspendemos el timbrado.</strong> Las plantillas de WhatsApp avisan al 90% y se frenan al 100% del mes, porque cada una la cobra Meta; contestar a quien te escribió no consume plantillas.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "82e4060",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "4.4 Nunca se cobra un excedente sin tu autorización",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "22148a8",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Ningún consumo de más se factura sin que lo autorices por escrito antes, y puedes fijarnos tu propio techo mensual para que no se te cobre de más ni con tu permiso.</p>"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "9aa63e3",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "4.5 Uso razonable",
+        "header_size": "h3",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_weight": "600"
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "0858451",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {

@@ -124,7 +124,7 @@
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
-          "title": "Los tres se cobran aparte, y así se cobran",
+          "title": "Se cobran aparte del plan, y así se cobran",
           "header_size": "h2",
           "typography_typography": "custom",
           "typography_font_size": {
@@ -285,7 +285,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "+$890 · desde +$2,490 · +$1,290",
+            "title": "+$890 · +$1,490 al mes, IVA incluido",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -303,7 +303,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "IncSales Proveedores en Línea, <strong>por proveedor conectado</strong> ; IncSales Orquestador; IncSales Portal. IVA incluido.",
+            "editor": "La consulta del inventario de tu proveedor, <strong>un proveedor por empresa</strong> y solo con el plan Corporativo; e IncSales WooSync para WordPress y WooCommerce, desde el plan Crecimiento.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -428,7 +428,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Integración desde $12,000",
+            "title": "Integración de $14,900 a $200,000, IVA incluido",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -446,7 +446,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Y lo que se escriba a la medida, $890 la hora; bolsa de 40 horas desde $29,900.",
+            "editor": "La del proveedor se cotiza después de ver qué deja leer su sistema. La implementación de WooSync desde $9,900, y lo que se escriba a la medida, $890 la hora; bolsa de 40 horas desde $29,900.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -463,7 +463,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "IncSales Orquestador y el acceso a la API vienen incluidos en Corporativo, $15,000 al mes.",
+        "editor": "La tienda en línea viene incluida en Corporativo, desde $9,990 al mes con IVA incluido, junto con cinco horas de desarrollo al mes; es el único plan que puede sumar la consulta del inventario de tu proveedor, +$890 al mes con IVA incluido. La migración de tus datos se cotiza aparte, de $5,000 a $50,000 con IVA incluido. <a href=\"/precios/\">Ver los seis planes</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

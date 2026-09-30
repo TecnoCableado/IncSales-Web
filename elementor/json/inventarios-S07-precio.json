@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "4be9264",
+   "id": "c675446",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -37,7 +37,7 @@
    },
    "elements": [
     {
-     "id": "90cb35b",
+     "id": "f490d06",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -124,7 +124,7 @@
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
-          "title": "Empieza en doscientos pesos al mes",
+          "title": "El almacén entra con el plan Esencial, $1,490 al mes con IVA incluido",
           "header_size": "h2",
           "typography_typography": "custom",
           "typography_font_size": {
@@ -143,7 +143,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>IncSales Inventarios no se vende aparte: viene dentro de los planes y crece con tu catálogo.</p>",
+          "editor": "<p>IncSales Inventarios no se vende aparte: es una de las seis áreas del sistema y viene completa desde Esencial. El catálogo y los almacenes van sin tope, así que no crece el precio porque crezca tu catálogo.</p>",
           "align": "center"
          },
          "elements": [],
@@ -153,13 +153,13 @@
        "isInner": false
       },
       {
-       "id": "3c96984",
+       "id": "f12d043",
        "elType": "container",
        "settings": {
         "container_type": "grid",
         "grid_columns_grid": {
          "unit": "fr",
-         "size": 2,
+         "size": 3,
          "sizes": []
         },
         "grid_columns_grid_tablet": {
@@ -296,7 +296,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Cotiza Uno · $200 al mes",
+            "title": "Esencial · $1,490 al mes",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -314,7 +314,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Un usuario, IVA incluido. Hasta 500 productos, un almacén, cotizaciones con folio y PDF con tu logo.",
+            "editor": "IVA incluido, o $1,267 al mes pagando anual. Cinco accesos. Catálogo, variantes, almacenes, kárdex, listas de precios y lotes con caducidad y pedimento, todo sin tope. Y en la misma cuenta, CRM, WhatsApp, correo, cotizaciones y facturación CFDI 4.0 sin tope publicado.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -411,7 +411,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "El almacén completo",
+              "title": "Cuando además compras",
               "header_size": "div",
               "title_color": "#1e5bd4",
               "typography_typography": "custom",
@@ -439,7 +439,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Cotiza Equipo · $499 al mes",
+            "title": "Crecimiento · $2,490 al mes",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -457,7 +457,150 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Tres usuarios. Catálogo ilimitado, multialmacén hasta tres, listas de precios, pedidos y remisiones e importación por archivo.",
+            "editor": "IVA incluido, o $2,117 al mes pagando anual. Los mismos cinco accesos que Esencial: lo que cambia no son las personas, es que se abre el área de compras —proveedores, requisiciones, órdenes y recepciones—. Lo que falta en el almacén levanta la requisición, y el comparativo que normaliza el IVA dice con quién conviene surtir.",
+            "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        },
+        {
+         "id": "ea249a1",
+         "elType": "container",
+         "settings": {
+          "background_background": "classic",
+          "background_color": "#ffffff",
+          "border_radius": {
+           "unit": "px",
+           "top": "10",
+           "right": "10",
+           "bottom": "10",
+           "left": "10",
+           "isLinked": true
+          },
+          "padding": {
+           "unit": "px",
+           "top": "28",
+           "right": "28",
+           "bottom": "28",
+           "left": "28",
+           "isLinked": true
+          },
+          "padding_mobile": {
+           "unit": "px",
+           "top": "22",
+           "right": "22",
+           "bottom": "22",
+           "left": "22",
+           "isLinked": true
+          },
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          },
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#dbdee3"
+         },
+         "elements": [
+          {
+           "id": "7fd5a31",
+           "elType": "container",
+           "settings": {
+            "content_width": "full",
+            "background_background": "classic",
+            "background_color": "#f2f7ff",
+            "border_radius": {
+             "unit": "px",
+             "top": "999",
+             "right": "999",
+             "bottom": "999",
+             "left": "999",
+             "isLinked": true
+            },
+            "padding": {
+             "unit": "px",
+             "top": "5",
+             "right": "11",
+             "bottom": "5",
+             "left": "11",
+             "isLinked": false
+            },
+            "flex_direction": "row",
+            "margin": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "14",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [
+            {
+             "id": "d32dcfa",
+             "elType": "widget",
+             "widgetType": "heading",
+             "settings": {
+              "title": "Con quien lo implemente",
+              "header_size": "div",
+              "title_color": "#1e5bd4",
+              "typography_typography": "custom",
+              "typography_font_size": {
+               "unit": "px",
+               "size": 12,
+               "sizes": []
+              },
+              "typography_font_weight": "600",
+              "typography_text_transform": "uppercase",
+              "typography_letter_spacing": {
+               "unit": "px",
+               "size": 0.6,
+               "sizes": []
+              }
+             },
+             "elements": [],
+             "isInner": false
+            }
+           ],
+           "isInner": false
+          },
+          {
+           "id": "ac38917",
+           "elType": "widget",
+           "widgetType": "heading",
+           "settings": {
+            "title": "Operación · $3,490 al mes",
+            "header_size": "h3",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 22,
+             "sizes": []
+            },
+            "typography_font_weight": "600"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "3e2a055",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "IVA incluido, o $2,967 al mes pagando anual. Diez accesos, las seis áreas y la implementación y capacitación incluidas —valen $14,900 aparte—, para que el catálogo entre cargado y cuadrado desde el primer día.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -470,11 +613,11 @@
        "isInner": false
       },
       {
-       "id": "2e8a62d",
+       "id": "7ee8468",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "Los lotes con caducidad y pedimento y el comparativo de proveedores entran desde Cotiza Pro, $999 al mes. Almacén adicional, $299 al mes.",
+        "editor": "Si atiendes por WhatsApp y correo pero no manejas almacén, el plan de entrada es CRM + WhatsApp a $890 al mes con IVA incluido, y ése no trae inventario. La carga y limpieza de catálogo —hasta 5,000 productos con sus claves y sus proveedores— cuesta desde $6,900 una sola vez, con IVA incluido. <a href=\"/precios/\">Ver los seis planes</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "2781da1",
+   "id": "d283d5d",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -38,7 +38,7 @@
    },
    "elements": [
     {
-     "id": "74218dd",
+     "id": "2781da1",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -73,7 +73,7 @@
      },
      "elements": [
       {
-       "id": "866ca93",
+       "id": "74218dd",
        "elType": "container",
        "settings": {
         "container_type": "grid",
@@ -101,7 +101,7 @@
        },
        "elements": [
         {
-         "id": "7c6ad5f",
+         "id": "b948e25",
          "elType": "container",
          "settings": {
           "flex_direction": "column",
@@ -155,13 +155,13 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<p>IncSales WooSync, el conector nativo con WooCommerce, cuesta $1,490 al mes con IVA incluido más implementación desde $9,900.</p>"
+            "editor": "<p>IncSales WooSync, el conector nativo con WooCommerce, cuesta $1,390 al mes con IVA incluido más implementación desde $9,900.</p>"
            },
            "elements": [],
            "isInner": false
           },
           {
-           "id": "d00b0e7",
+           "id": "102d32b",
            "elType": "widget",
            "widgetType": "icon-list",
            "settings": {
@@ -177,6 +177,14 @@
              {
               "_id": "bde6e0e",
               "text": "<strong>El empate es por SKU.</strong> Una de las tres claves del producto, así que la tienda y el almacén hablan del mismo renglón, no de dos que se parecen.",
+              "selected_icon": {
+               "value": "fas fa-arrow-right",
+               "library": "fa-solid"
+              }
+             },
+             {
+              "_id": "2a040af",
+              "text": "<strong>Se vende desde el plan Crecimiento</strong> , $2,490 al mes con IVA incluido. No va sobre CRM + WhatsApp ni sobre Esencial, y no es por cobrar más: sin el área de compras y sin el catálogo trabajado, sincronizar una tienda deja más problemas de los que resuelve.",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -210,7 +218,7 @@
          "isInner": false
         },
         {
-         "id": "e5147e4",
+         "id": "866ca93",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -259,7 +267,7 @@
          },
          "elements": [
           {
-           "id": "cee7048",
+           "id": "901243f",
            "elType": "container",
            "settings": {
             "content_width": "full",
@@ -293,7 +301,7 @@
            },
            "elements": [
             {
-             "id": "fe9f1bd",
+             "id": "a19ea91",
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
@@ -321,7 +329,7 @@
            "isInner": false
           },
           {
-           "id": "360f192",
+           "id": "d173a3f",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -339,7 +347,7 @@
            "isInner": false
           },
           {
-           "id": "f56d843",
+           "id": "e985016",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -350,7 +358,7 @@
            "isInner": false
           },
           {
-           "id": "e985016",
+           "id": "19c9b18",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {

@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "3c63201",
+   "id": "b58e98d",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -37,7 +37,7 @@
    },
    "elements": [
     {
-     "id": "b7c74ff",
+     "id": "3c63201",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -124,7 +124,7 @@
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
-          "title": "Se agrega a lo que ya tienes, o ya viene adentro",
+          "title": "Ya no se agrega: viene adentro de los seis planes",
           "header_size": "h2",
           "typography_typography": "custom",
           "typography_font_size": {
@@ -143,7 +143,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>Y en los dos casos el número queda a nombre de tu empresa.</p>",
+          "editor": "<p>No hay complemento que comprar. En todos los planes el número queda a nombre de tu empresa, y en todos es un número por empresa con 1,000 plantillas al mes.</p>",
           "align": "center"
          },
          "elements": [],
@@ -268,7 +268,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "Complemento",
+              "title": "El de entrada",
               "header_size": "div",
               "title_color": "#1e5bd4",
               "typography_typography": "custom",
@@ -296,7 +296,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "+$699 al mes",
+            "title": "CRM + WhatsApp · $890 al mes",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -314,7 +314,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Sobre cualquier plan, IVA incluido. Bandeja de equipo y campañas por plantilla aprobada, con tu propio número.",
+            "editor": "IVA incluido, o $757 al mes pagando el año por adelantado. Tres accesos, un número de WhatsApp y 1,000 plantillas al mes. Es el plan del equipo que atiende por WhatsApp y correo, y factura en otro lado.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -439,7 +439,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Desde CRM Crecimiento · $1,299 al mes",
+            "title": "Y en los otros cinco, igual",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -457,7 +457,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Ocho usuarios, IVA incluido. También viene en Operación $7,500 y en Corporativo $15,000.",
+            "editor": "Esencial $1,490, Crecimiento $2,490, Operación $3,490, Corporativo desde $9,990 y Método IncSales $19,999, todos al mes y con IVA incluido. Lo que sube con el precio son las áreas del sistema y los accesos, no la bandeja.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -483,6 +483,41 @@
          "size": 13,
          "sizes": []
         }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "2073e52",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Ver los seis planes",
+        "link": {
+         "url": "/precios/",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "size": "md",
+        "border_radius": {
+         "unit": "px",
+         "top": "6",
+         "right": "6",
+         "bottom": "6",
+         "left": "6",
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": "15",
+         "right": "26",
+         "bottom": "15",
+         "left": "26",
+         "isLinked": false
+        },
+        "align": "center",
+        "background_color": "#1e5bd4",
+        "button_text_color": "#ffffff"
        },
        "elements": [],
        "isInner": false

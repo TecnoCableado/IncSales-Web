@@ -178,7 +178,7 @@
              },
              {
               "_id": "f579518",
-              "text": "<strong>Tu propio subdominio</strong> , donde solo entra tu gente.",
+              "text": "<strong>Tu propio subdominio</strong> en el plan Corporativo: entras por erp.tudominio.com y ahí solo entra tu gente.",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -378,7 +378,7 @@
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
-                "editor": "<strong>Lo que todavía no hace, escrito</strong> Números de serie, IEPS y retenciones completas, bitácora de auditoría multiusuario y telefonía. WooCommerce y la consulta de inventarios de proveedores son servicio con implementación, no una casilla encendida. La lista completa vive en",
+                "editor": "<strong>Lo que todavía no hace, escrito</strong> Números de serie, IEPS y retenciones completas, bitácora de auditoría multiusuario y telefonía. WooCommerce —desde el plan Crecimiento— y la consulta de inventarios de proveedores —solo en Corporativo— son servicio con implementación, no una casilla encendida. La lista completa vive en",
                 "text_color": "#b9cbe8"
                },
                "elements": [],

@@ -166,7 +166,7 @@
             "icon_list": [
              {
               "_id": "b92e1a6",
-              "text": "<strong>Un solo catálogo para afuera.</strong> IncSales WooSync, el conector con WooCommerce, sincroniza productos, precios y existencias con tu sitio: +$1,490 al mes más implementación desde $9,900. <a href=\"/wordpress/\">Cómo se conecta</a> .",
+              "text": "<strong>Un solo catálogo para afuera.</strong> IncSales WooSync, el conector con WooCommerce, sincroniza productos, precios y existencias con tu sitio: +$1,390 al mes con IVA incluido, más implementación desde $9,900. Se vende desde el plan Crecimiento: sin compras y sin el catálogo trabajado, sincronizar una tienda deja más problemas de los que resuelve. <a href=\"/wordpress/\">Cómo se conecta</a> .",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -279,7 +279,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Catálogo de producto en Google con foto y precio, campañas de Google Ads y un programa de puntos de venta. El interesado entra con el canal por el que llegó a <a href=\"/crm/\">IncSales CRM</a> , +$499 al mes sobre tu plan.",
+            "editor": "Catálogo de producto en Google con foto y precio, campañas de Google Ads y un programa de puntos de venta. El interesado entra con el canal por el que llegó a <a href=\"/crm/\">IncSales CRM</a> , que viene en los seis planes desde $890 al mes, IVA incluido.",
             "text_color": "#6a6f78"
            },
            "elements": [],

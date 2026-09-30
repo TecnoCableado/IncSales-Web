@@ -123,7 +123,7 @@
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
-          "title": "Cuatro cosas que el sistema todavía no hace, y aquí están",
+          "title": "Cinco cosas que el sistema todavía no hace, y aquí están",
           "header_size": "h2",
           "title_color": "#ffffff",
           "typography_typography": "custom",
@@ -206,7 +206,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "No maneja números de serie, no cubre IEPS ni retenciones completas, no tiene bitácora de auditoría multiusuario y no hace telefonía. Preferimos que lo leas hoy y no descubrirlo en la tercera semana de uso."
+            "editor": "No da un segundo número de WhatsApp —todos los planes traen uno, y es la base la que admite uno por empresa—, no maneja números de serie, no cubre IEPS ni retenciones completas, no tiene bitácora de auditoría multiusuario y no hace telefonía. Preferimos que lo leas hoy y no descubrirlo en la tercera semana de uso."
            },
            "elements": [],
            "isInner": false
@@ -262,7 +262,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "No, son servicio con implementación. IncSales WooSync cuesta +$1,490 al mes con implementación desde $9,900 y sincroniza cinco cosas emparejadas por SKU: productos, precios, existencias, pedidos y clientes; IncSales Proveedores en Línea cuesta +$890 al mes por proveedor conectado, con integración desde $12,000."
+            "editor": "No, son servicio con implementación. IncSales WooSync cuesta +$1,390 al mes con IVA incluido, más implementación desde $9,900 con IVA incluido, y sincroniza cinco cosas emparejadas por SKU: productos, precios, existencias, pedidos y clientes; se vende desde el plan Crecimiento, porque sin compras y sin el catálogo trabajado sincronizar una tienda deja más problemas de los que resuelve, y va incluido en Corporativo. IncSales Proveedores en Línea cuesta +$890 al mes con IVA incluido por proveedor conectado y solo se vende con el plan Corporativo; la integración se cotiza entre $14,900 y $200,000 con IVA incluido: un proveedor con API documentada y catálogo limpio son $14,900, y uno sin API, del que hay que leer un archivo que cambia de forma cada semana, llega a $200,000."
            },
            "elements": [],
            "isInner": false
@@ -290,7 +290,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "El acceso a la API viene en el plan Corporativo, $15,000 al mes. Lo demás se cotiza como desarrollo a la medida: $890 la hora, o bolsa de 40 horas desde $29,900. <a href=\"/integraciones/\">Ver integraciones</a> ."
+            "editor": "Lo que ya está hecho y no se programa son dos conexiones: WooCommerce, con IncSales WooSync, que se vende desde el plan Crecimiento, y la consulta del inventario de tu proveedor, que solo se suma sobre el plan Corporativo y refleja sus precios y existencias en tu catálogo cada diez minutos. Lo demás se cotiza como desarrollo a la medida: $890 la hora con IVA incluido, o bolsa de 40 horas desde $29,900. El plan Corporativo, desde $9,990 al mes con IVA incluido, trae cinco horas de desarrollo al mes para eso. <a href=\"/integraciones/\">Ver integraciones</a> ."
            },
            "elements": [],
            "isInner": false

@@ -122,7 +122,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>Treinta minutos: nos cuentas cómo cotizas y facturas hoy, y sales con el plan, el complemento que sí necesitas y la cuenta del arranque por escrito.</p>",
+          "editor": "<p>Treinta minutos: nos cuentas cómo vendes y facturas hoy, y sales con el plan, el complemento que sí necesitas y la cuenta del arranque por escrito.</p>",
           "align": "center"
          },
          "elements": [],

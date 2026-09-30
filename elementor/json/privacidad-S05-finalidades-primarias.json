@@ -153,7 +153,7 @@
          },
          {
           "_id": "5acde56",
-          "text": "Dar de alta tu organización, tu subdominio propio y tus usuarios.",
+          "text": "Dar de alta tu organización y tus usuarios, y configurar el dominio propio desde el que entra tu gente cuando tu plan lo incluye.",
           "selected_icon": {
            "value": "fas fa-arrow-right",
            "library": "fa-solid"
@@ -177,7 +177,7 @@
          },
          {
           "_id": "bcfecd2",
-          "text": "Avisarte de mantenimientos, cambios de seguridad y vencimientos de tu plan o de tus folios.",
+          "text": "Avisarte de mantenimientos, cambios de seguridad y vencimientos de tu plan.",
           "selected_icon": {
            "value": "fas fa-arrow-right",
            "library": "fa-solid"

@@ -296,7 +296,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Cotiza Pro · $999 al mes",
+            "title": "Crecimiento · $2,490 al mes",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -314,7 +314,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Cinco usuarios, IVA incluido. Compras completas: requisiciones, órdenes y recepciones, comparativo de proveedores y lotes con caducidad y pedimento.",
+            "editor": "IVA incluido, o $2,117 al mes en anual. Cinco accesos y las compras completas: proveedores y proveedores por producto, requisiciones, órdenes y recepciones, comparativo de proveedores, y lotes con caducidad y pedimento sobre un catálogo y unos almacenes sin tope.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -411,7 +411,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "El más elegido",
+              "title": "La operación entera",
               "header_size": "div",
               "title_color": "#1e5bd4",
               "typography_typography": "custom",
@@ -439,7 +439,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Operación · $7,500 al mes",
+            "title": "Operación · $3,490 al mes",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -457,7 +457,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Diez usuarios y 100 CFDI. El sistema entero: CRM, cotizaciones, inventarios, compras, facturación, WhatsApp y marketing.",
+            "editor": "IVA incluido, o $2,967 al mes en anual. Es el plan sobre el que opera TecnoCableado todos los días: diez accesos, las seis áreas —CRM, WhatsApp, ventas, inventario, compras y facturación CFDI 4.0 sin tope publicado— e implementación y capacitación incluidas.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -474,7 +474,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "Si facturas dentro del sistema, compras viene en toda la familia Completo, desde $2,490 al mes.",
+        "editor": "Compras es una de las seis áreas del sistema y empieza en Crecimiento. Esencial, a $1,490 al mes con IVA incluido, trae los mismos cinco accesos y ya factura: lo que no trae es esta área. Lo que separa a los dos planes no son las personas, es que Crecimiento abre las compras —proveedores, requisiciones, órdenes y recepciones— y el comparativo que normaliza el IVA antes de comparar. <a href=\"/precios/\">Ver los seis planes</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

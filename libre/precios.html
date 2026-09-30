@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Precios de un ERP para PyMEs en México · IncSales</title>
+<meta name="description" content="Seis planes desde $890 al mes con IVA incluido y el precio publicado, no una cotización. Sin tope de facturas. La migración y las integraciones sí se cotizan.">
+<link rel="icon" type="image/svg+xml" href="../assets/logos/incsales-icono.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<style>
+/* ===========================================================================
+   PRECIOS · DISEÑO LIBRE
+   Sin las restricciones de Elementor: aquí sí hay degradados, sombras de
+   varias capas, transiciones, posición pegajosa y rejillas fluidas.
+   Esta página NO se convierte a JSON: es para verse, no para armarse.
+   ========================================================================= */
+:root{
+  --a1:#f2f7ff;--a2:#e3edff;--a4:#a4c6ff;--a8:#1e5bd4;--a9:#1348b1;--a10:#0b3587;--a12:#021035;
+  --n1:#fafcfe;--n2:#f4f6f9;--n3:#ebedf1;--n4:#dbdee3;--n8:#6a6f78;--n9:#4d535d;--n11:#21252d;--n12:#0f1319;
+  --v1:#eefbf2;--v7:#00874a;--g4:#711b69;--g-tenue:#ffeef9;
+  --r:14px;--rs:10px;
+  --s1:0 1px 2px rgba(15,19,25,.04),0 0 1px rgba(15,19,25,.07);
+  --s2:0 2px 4px rgba(15,19,25,.04),0 4px 12px rgba(15,19,25,.06);
+  --s3:0 8px 16px rgba(15,19,25,.05),0 24px 48px rgba(15,19,25,.09);
+  --curva:cubic-bezier(.2,.7,.3,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.65;
+  color:var(--n9);background:#fff;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
+h1,h2,h3,h4{color:var(--n12);margin:0 0 .5rem;font-weight:600;letter-spacing:-.02em}
+h1{font-size:clamp(2.2rem,1.4rem + 3.2vw,3.6rem);line-height:1.08;letter-spacing:-.035em}
+h2{font-size:clamp(1.6rem,1.2rem + 1.6vw,2.4rem);line-height:1.15;letter-spacing:-.028em}
+h3{font-size:1.25rem}
+p{margin:0 0 1rem}p:last-child{margin-bottom:0}
+a{color:var(--a9);text-decoration:none}
+.env{max-width:1180px;margin:0 auto;padding:0 24px}
+.env--planes{max-width:1380px}
+.bloque{padding:clamp(3.5rem,2rem + 6vw,6.5rem) 0}
+.hundido{background:var(--n2)}
+
+/* --- Barra pegajosa: aquí sí se puede --- */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.82);
+  backdrop-filter:saturate(180%) blur(18px);-webkit-backdrop-filter:saturate(180%) blur(18px);
+  border-bottom:1px solid var(--n3);transition:box-shadow .3s var(--curva)}
+.nav__f{display:flex;align-items:center;gap:1.5rem;min-height:70px}
+.nav img{height:26px;width:auto;display:block}
+.nav__m{display:flex;gap:1.4rem;margin-left:auto;align-items:center}
+.nav__m a{font-size:.9rem;font-weight:500;color:var(--n8);transition:color .2s}
+.nav__m a:hover{color:var(--n12)}
+@media(max-width:860px){.nav__m a:not(.btn){display:none}}
+
+/* --- Botones con degradado y elevación --- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  padding:.85rem 1.5rem;border-radius:var(--rs);font-size:.95rem;font-weight:600;line-height:1;
+  background:linear-gradient(180deg,var(--a8),var(--a9));color:#fff;border:1px solid var(--a9);
+  box-shadow:0 1px 2px rgba(19,72,177,.3),0 4px 12px rgba(19,72,177,.22);
+  transition:transform .18s var(--curva),box-shadow .18s var(--curva),filter .18s;cursor:pointer}
+.btn:hover{transform:translateY(-1px);filter:brightness(1.06);
+  box-shadow:0 2px 4px rgba(19,72,177,.3),0 10px 22px rgba(19,72,177,.3)}
+.btn:active{transform:translateY(0)}
+.btn--l{background:#fff;color:var(--a9);border-color:var(--n4);box-shadow:var(--s1)}
+.btn--l:hover{border-color:var(--a4);background:var(--a1);filter:none}
+.btn--b{width:100%}
+.btn--sm{padding:.6rem 1.05rem;font-size:.875rem}
+
+/* --- Portada con degradado profundo --- */
+.portada{background:
+    radial-gradient(1100px 520px at 12% -10%,rgba(52,115,239,.32),transparent 62%),
+    radial-gradient(900px 480px at 88% 8%,rgba(113,27,105,.26),transparent 60%),
+    linear-gradient(170deg,#04154a 0%,var(--a12) 58%);
+  color:#c3d4f0;padding:clamp(3.5rem,2rem + 6vw,6rem) 0 clamp(6rem,4rem + 8vw,9rem)}
+.portada h1{color:#fff}
+.portada .sub{font-size:clamp(1.05rem,1rem + .4vw,1.3rem);color:#a8c0e8;max-width:62ch;margin-top:1rem}
+.rotulo{display:inline-flex;align-items:center;gap:.5rem;font-size:.75rem;font-weight:600;
+  letter-spacing:.09em;text-transform:uppercase;color:var(--a4);
+  background:rgba(164,198,255,.11);border:1px solid rgba(164,198,255,.2);
+  padding:.4rem .85rem;border-radius:999px;margin-bottom:1.25rem}
+.punto{width:6px;height:6px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 3px rgba(74,222,128,.22)}
+
+/* --- Interruptor mensual / anual --- */
+.sw{display:inline-flex;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);
+  border-radius:999px;padding:4px;margin-top:2rem;gap:4px}
+.sw button{border:0;background:transparent;color:#a8c0e8;font:inherit;font-size:.9rem;font-weight:600;
+  padding:.55rem 1.3rem;border-radius:999px;cursor:pointer;transition:all .25s var(--curva)}
+.sw button[aria-pressed=true]{background:#fff;color:var(--a10);box-shadow:var(--s1)}
+.sw .ahorro{font-size:.72rem;opacity:.85;margin-left:.35rem;font-weight:500}
+
+/* --- Las tarjetas de plan, montadas sobre la portada --- */
+.planes{display:grid;gap:16px;margin-top:-5rem;position:relative;z-index:2;
+  grid-template-columns:repeat(5,1fr);max-width:1320px;margin-inline:auto}
+@media(max-width:1280px){.planes{grid-template-columns:repeat(3,1fr);gap:20px}}
+@media(max-width:860px){.planes{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.planes{grid-template-columns:1fr}}
+.plan{background:#fff;border:1px solid var(--n4);border-radius:var(--r);padding:1.5rem 1.35rem;
+  display:flex;flex-direction:column;box-shadow:var(--s2);
+  transition:transform .22s var(--curva),box-shadow .22s var(--curva),border-color .22s}
+.plan:hover{transform:translateY(-4px);box-shadow:var(--s3);border-color:var(--a4)}
+.plan--top{border:2px solid var(--a8);box-shadow:var(--s3);position:relative}
+.plan--top::before{content:"";position:absolute;inset:-1px;border-radius:var(--r);
+  background:linear-gradient(140deg,rgba(52,115,239,.09),transparent 45%);pointer-events:none}
+.cinta{position:absolute;top:-11px;left:50%;transform:translateX(-50%);
+  background:linear-gradient(180deg,var(--a8),var(--a9));color:#fff;font-size:.68rem;font-weight:700;
+  letter-spacing:.07em;text-transform:uppercase;padding:.35rem .85rem;border-radius:999px;white-space:nowrap;
+  box-shadow:0 3px 10px rgba(19,72,177,.35)}
+.plan__n{font-size:1.15rem;font-weight:600;color:var(--n12)}
+.plan__q{font-size:.83rem;color:var(--n8);min-height:4.2em;margin:.35rem 0 1.1rem;line-height:1.45}
+.precio{display:flex;align-items:baseline;gap:.3rem}
+.precio b{font-size:2.15rem;font-weight:700;color:var(--n12);letter-spacing:-.04em;line-height:1}
+.precio span{font-size:.9rem;color:var(--n8)}
+.iva{font-size:.78rem;color:var(--v7);font-weight:600;margin:.5rem 0 1.25rem;
+  padding-bottom:1.25rem;border-bottom:1px solid var(--n3)}
+.lista{list-style:none;padding:0;margin:0 0 1.5rem;display:grid;gap:.6rem;flex:1}
+.lista li{display:flex;gap:.55rem;font-size:.855rem;line-height:1.5;color:var(--n9)}
+.lista svg{width:16px;height:16px;flex:0 0 auto;margin-top:.22rem;color:var(--v7)}
+.lista b{color:var(--n12);font-weight:600}
+.no{color:var(--n8)}.no svg{color:#b8bcc4}
+
+/* --- Tabla comparativa --- */
+.tabla{width:100%;border-collapse:collapse;font-size:.9rem}
+.tabla th,.tabla td{padding:.85rem 1rem;text-align:left;border-bottom:1px solid var(--n3)}
+.tabla thead th{font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--n8);
+  font-weight:600;position:sticky;top:70px;background:#fff;z-index:1}
+.tabla td:not(:first-child),.tabla th:not(:first-child){text-align:center}
+.tabla tbody tr{transition:background .15s}
+.tabla tbody tr:hover{background:var(--a1)}
+.tabla .mio{background:var(--a1);font-weight:600;color:var(--n12)}
+.si{color:var(--v7);font-weight:700}.nop{color:#b8bcc4}
+.envuelve{overflow-x:auto;border:1px solid var(--n4);border-radius:var(--r);background:#fff;box-shadow:var(--s1)}
+
+.rej{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.tar{background:#fff;border:1px solid var(--n4);border-radius:var(--r);padding:1.6rem;box-shadow:var(--s1);
+  transition:box-shadow .2s var(--curva),transform .2s var(--curva)}
+.tar:hover{box-shadow:var(--s2);transform:translateY(-2px)}
+.cab{max-width:56ch;margin-bottom:2.5rem}
+.cab--c{margin-left:auto;margin-right:auto;text-align:center}
+.cab p{font-size:1.1rem;color:var(--n8)}
+.sobre{font-size:.74rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--a8);display:block;margin-bottom:.6rem}
+.apunte{font-size:.82rem;color:var(--n8)}
+.faq details{border-bottom:1px solid var(--n3)}
+.faq summary{cursor:pointer;list-style:none;padding:1.15rem 2.5rem 1.15rem 0;font-weight:600;
+  color:var(--n12);position:relative;transition:color .2s}
+.faq summary:hover{color:var(--a9)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:.4rem;top:.95rem;font-size:1.4rem;
+  font-weight:400;color:var(--a8);transition:transform .25s var(--curva)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .c{padding:0 2.5rem 1.35rem 0;color:var(--n9);font-size:.95rem}
+.aviso{background:var(--a1);border-radius:var(--rs);padding:1.15rem 1.35rem;font-size:.92rem}
+.aviso b{display:block;color:var(--a10);margin-bottom:.2rem}
+.cierre{background:linear-gradient(165deg,#04154a,var(--a12));color:#c3d4f0;text-align:center}
+.cierre h2{color:#fff}
+.pie{background:var(--a12);color:#b9cbe8;padding:3rem 0 1.75rem;font-size:.875rem}
+.pie a{color:#b9cbe8}.pie a:hover{color:#fff}
+.pie__l{margin-top:2rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.13);
+  font-size:.78rem;color:#8fa3c4;display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between}
+@media(max-width:700px){.planes{margin-top:-3rem}.plan__q{min-height:0}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="env"><div class="nav__f">
+    <a href="../index.html"><img src="../assets/logos/incsales-completo.svg" alt="IncSales"></a>
+    <nav class="nav__m">
+      <a href="../index.html">Producto</a>
+      <a href="../por-dentro.html">Las pantallas</a>
+      <a href="#comparar">Comparar</a>
+      <a href="#preguntas">Preguntas</a>
+      <a class="btn btn--sm" href="../contacto.html">Agenda una demo</a>
+    </nav>
+  </div></div>
+</header>
+
+<section class="portada">
+  <div class="env">
+    <span class="rotulo"><i class="punto"></i> Precio final, publicado</span>
+    <h1>Precios de un ERP<br>para PyMEs en México</h1>
+    <p class="sub">Seis planes desde <strong style="color:#fff">$890 al mes</strong>. El precio del
+      plan es el que ves, con IVA y sin llamada de ventas de por medio. Lo que sí se cotiza es la
+      migración de tus datos y las integraciones, porque no hay dos iguales.</p>
+    <div class="sw" role="group" aria-label="Forma de pago">
+      <button type="button" aria-pressed="true" data-pago="mes">Mensual</button>
+      <button type="button" aria-pressed="false" data-pago="anio">Anual<span class="ahorro">−15%</span></button>
+    </div>
+  </div>
+</section>
+
+<section class="bloque" style="padding-top:0">
+  <div class="env env--planes">
+    <div class="planes">
+
+      <article class="plan">
+        <div class="plan__n">CRM + WhatsApp</div>
+        <p class="plan__q">Equipo de venta que atiende por WhatsApp y correo, y factura en otro lado.</p>
+        <p class="precio"><b data-mes="890" data-anio="757">$890</b> <span>al mes</span></p>
+        <p class="iva">IVA incluido · 3 accesos</p>
+        <ul class="lista">
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 5.5"/></svg><span>Negocios, etapas, bitácora y metas</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 5.5"/></svg><span><b>Correo</b> entrante y saliente desde tu dominio</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 5.5"/></svg><span>Campañas, listas, formularios y <b>automatizaciones</b></span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 5.5"/></svg><span>WhatsApp con 1 número y 1,000 plantillas al mes</span></li>
+          <li class="no"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 5.5l9 9M14.5 5.5l-9 9"/></svg><span>Sin facturación ni inventarios</span></li>
+        </ul>
+        <a class="btn btn--l btn--b" href="../contacto.html">Agenda una demo</a>
+      </article>
+
+      <article class="plan">
+        <div class="plan__n">Esencial</div>
+        <p class="plan__q">Vender, dar seguimiento y facturar en un solo lugar.</p>
+        <p class="precio"><b data-mes="1,490" data-anio="1,267">$1,490</b> <span>al mes</span></p>
+        <p class="iva">IVA incluido · 5 accesos</p>
+        <ul class="lista">
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 5.5"/></svg><span>Todo lo del CRM y WhatsApp</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 5.5"/></svg><span><b>CFDI 4.0 timbrado</b>, sin tope publicado</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 5.5"/></svg><span>Bancos y conciliación</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 5.5"/></svg><span>Cotizaciones, pedidos e inventarios</span></li>
+          <li class="no"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 5.5l9 9M14.5 5.5l-9 9"/></svg><span>Sin compras ni proveedores</span></li>
+        </ul>
+        <a class="btn btn--l btn--b" href="../contacto.html">Agenda una demo</a>
+      </article>
+
+      <article class="plan">
+        <div class="plan__n">Crecimiento</div>
+        <p class="plan__q">El que además compra para surtir y compara proveedores.</p>
+        <p class="precio"><b data-mes="2,490" data-anio="2,117">$2,490</b> <span>al mes</span></p>
+        <p class="iva">IVA incluido · 5 accesos</p>
+        <ul class="lista">
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 5.5"/></svg><span>Todo lo de Esencial</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 5.5"/></svg><span><b>Compras completas</b>: requisiciones, órdenes y recepciones</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 5.5"/></svg><span>Comparativo que normaliza el IVA</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 5.5"/></svg><span>Tienda en línea disponible desde aquí</span></li>
+        </ul>
+        <a class="btn btn--l btn--b" href="../contacto.html">Agenda una demo</a>
+      </article>
+
+      <article class="plan plan--top">
+        <span class="cinta">Lo usa TecnoCableado</span>
+        <div class="plan__n">Operación</div>
+        <p class="plan__q">La operación entera en una cuenta, con quien la implemente.</p>
+        <p class="precio"><b data-mes="3,490" data-anio="2,967">$3,490</b> <span>al mes</span></p>
+        <p class="iva">IVA incluido · 10 accesos</p>
+        <ul class="lista">
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 5.5"/></svg><span><b>Las seis áreas completas</b></span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 5.5"/></svg><span><b>Implementación y capacitación incluidas</b>, valen $14,900</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 5.5"/></svg><span>Inventario de tu proveedor y API, a la medida</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 5.5"/></svg><span>Soporte con persona, no con robot</span></li>
+        </ul>
+        <a class="btn btn--b" href="../contacto.html">Agenda una demo</a>
+      </article>
+
+      <article class="plan">
+        <div class="plan__n">Corporativo</div>
+        <p class="plan__q">Varias empresas o RFC, tienda en línea y desarrollo continuo.</p>
+        <p class="precio"><b data-mes="9,990" data-anio="8,492">$9,990</b> <span>al mes</span></p>
+        <p class="iva">IVA incluido · desde 25 accesos</p>
+        <ul class="lista">
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 5.5"/></svg><span>Todo lo de Operación</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 5.5"/></svg><span><b>Dominio propio</b>: erp.tuempresa.com, donde solo entra tu gente</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 5.5"/></svg><span><b>Asesoría con persona</b>, una sesión al mes con quien programa</span></li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 5.5"/></svg><span>Tienda en línea, API y bolsa de desarrollo</span></li>
+        </ul>
+        <a class="btn btn--l btn--b" href="../contacto.html">Hablemos</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="bloque hundido">
+  <div class="env">
+    <div class="cab cab--c">
+      <span class="sobre">El plan que no vende software</span>
+      <h2>Método IncSales · $19,999 al mes</h2>
+      <p>El sistema completo <strong>más la agencia que lo llena</strong>. Aquí no cobramos por
+        licencias: cobramos porque entren clientes y se cierren dentro del sistema.</p>
+    </div>
+    <div class="rej">
+      <div class="tar"><h3>Google Ads gestionado</h3><p class="apunte">Cuenta a tu nombre, con tu tarjeta. La inversión publicitaria va aparte y nunca pasa por nosotros.</p></div>
+      <div class="tar"><h3>Landing pages conectadas</h3><p class="apunte">Hechas con IncSales Forms: el interesado cae en tu bandeja con su campaña y su anuncio de origen.</p></div>
+      <div class="tar"><h3>Automatizaciones armadas</h3><p class="apunte">Listas, campañas de correo desde tu dominio y secuencias de WhatsApp, configuradas por nosotros.</p></div>
+      <div class="tar"><h3>Reporte que empieza en ventas</h3><p class="apunte">No en impresiones. El sistema tiene el dato porque el sistema lo hicimos nosotros.</p></div>
+    </div>
+    <div class="aviso" style="margin-top:2rem">
+      <b>Por qué $19,999 y no $27,500</b>
+      Por separado, Operación ($3,490) más el Método de agencia son más de veintisiete mil al mes.
+      Aquí cuesta menos porque el trabajo se abarata cuando la agencia opera sobre un sistema que
+      hicimos nosotros: no hay que integrar nada ni pedirle datos a nadie.
+    </div>
+  </div>
+</section>
+
+<section class="bloque" id="comparar">
+  <div class="env">
+    <div class="cab cab--c">
+      <span class="sobre">Comparar</span>
+      <h2>Qué abre cada plan</h2>
+      <p>El sistema son seis áreas. Un plan es cuáles enciende y para cuántas personas.</p>
+    </div>
+    <div class="envuelve">
+      <table class="tabla">
+        <thead><tr>
+          <th>Área</th><th>CRM<br>$890</th><th>Esencial<br>$1,490</th>
+          <th>Crecimiento<br>$2,490</th><th class="mio">Operación<br>$3,490</th><th>Corporativo<br>$9,990</th>
+        </tr></thead>
+        <tbody>
+          <tr><th scope="row">CRM, correo y marketing</th><td class="si">Sí</td><td class="si">Sí</td><td class="si">Sí</td><td class="mio si">Sí</td><td class="si">Sí</td></tr>
+          <tr><th scope="row">WhatsApp Business</th><td class="si">Sí</td><td class="si">Sí</td><td class="si">Sí</td><td class="mio si">Sí</td><td class="si">Sí</td></tr>
+          <tr><th scope="row">Cotizaciones y pedidos</th><td class="nop">—</td><td class="si">Sí</td><td class="si">Sí</td><td class="mio si">Sí</td><td class="si">Sí</td></tr>
+          <tr><th scope="row">Inventarios y almacenes</th><td class="nop">—</td><td class="si">Sí</td><td class="si">Sí</td><td class="mio si">Sí</td><td class="si">Sí</td></tr>
+          <tr><th scope="row">Facturación, bancos y conciliación</th><td class="nop">—</td><td class="si">Sí</td><td class="si">Sí</td><td class="mio si">Sí</td><td class="si">Sí</td></tr>
+          <tr><th scope="row">Compras y proveedores</th><td class="nop">—</td><td class="nop">—</td><td class="si">Sí</td><td class="mio si">Sí</td><td class="si">Sí</td></tr>
+          <tr><th scope="row">Tienda en línea</th><td class="nop">—</td><td class="nop">—</td><td class="nop">+$1,390</td><td class="mio nop">+$1,390</td><td class="si">Sí</td></tr>
+          <tr><th scope="row">Accesos</th><td>3</td><td>5</td><td>5</td><td class="mio">10</td><td>desde 25</td></tr>
+          <tr><th scope="row">Implementación</th><td class="nop">$14,900</td><td class="nop">$14,900</td><td class="nop">$14,900</td><td class="mio si">Incluida</td><td class="si">Incluida</td></tr>
+          <tr><th scope="row">Migración de datos</th><td class="nop">Se cotiza</td><td class="nop">Se cotiza</td><td class="nop">Se cotiza</td><td class="mio nop">Se cotiza</td><td class="nop">Se cotiza</td></tr>
+          <tr><th scope="row">Dominio propio</th><td class="nop">—</td><td class="nop">—</td><td class="nop">—</td><td class="nop">—</td><td class="si">Sí</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="apunte" style="margin-top:1rem">Todos los precios son mensuales, en pesos y con IVA
+      incluido. El plan anual baja 15% y se paga por adelantado.</p>
+  </div>
+</section>
+
+<section class="bloque hundido">
+  <div class="env">
+    <div class="cab cab--c">
+      <span class="sobre">Se suman a cualquier plan</span>
+      <h2>Complementos y servicios</h2>
+    </div>
+    <div class="rej">
+      <div class="tar"><h3>Tienda con WooCommerce</h3><p class="precio" style="margin:.5rem 0"><b style="font-size:1.6rem">$1,390</b> <span>al mes</span></p><p class="apunte"><b>Desde el plan Crecimiento.</b> Productos, precios, existencias y pedidos sincronizados. Implementación desde $9,900. Incluida en Corporativo.</p></div>
+      <div class="tar"><h3>Inventario de tu proveedor</h3><p class="precio" style="margin:.5rem 0"><b style="font-size:1.6rem">$890</b> <span>al mes</span></p><p class="apunte"><b>Solo en Corporativo.</b> Ves su existencia y su precio dentro del buscador, cada diez minutos. La integración va de $14,900 a $200,000 según qué tan accesible sea su catálogo. Un proveedor por empresa.</p></div>
+      <div class="tar"><h3>+1,000 plantillas de WhatsApp</h3><p class="precio" style="margin:.5rem 0"><b style="font-size:1.6rem">$390</b> <span>al mes</span></p><p class="apunte">Sobre las 1,000 que ya trae tu plan. El contador se reinicia el día 1 de cada mes.</p></div>
+      <div class="tar"><h3>Empresa o RFC adicional</h3><p class="precio" style="margin:.5rem 0"><b style="font-size:1.6rem">$1,900</b> <span>al mes</span></p><p class="apunte">Otra organización con sus datos totalmente aislados. Son dos cuentas, no multiempresa en una.</p></div>
+      <div class="tar"><h3>Migración de datos</h3><p class="precio" style="margin:.5rem 0"><b style="font-size:1.6rem">$5,000</b> <span>a $50,000</span></p><p class="apunte">Se cotiza siempre, después de ver tu exportación. No hay dos migraciones iguales: una libreta de Excel con 300 clientes no es un SAE de doce años con inventario y cartera.</p></div>
+      <div class="tar"><h3>Desarrollo a la medida</h3><p class="precio" style="margin:.5rem 0"><b style="font-size:1.6rem">$890</b> <span>la hora</span></p><p class="apunte">Reportes, pantallas, integraciones y automatizaciones propias. Bolsa de 40 horas desde $29,900.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="bloque" id="preguntas">
+  <div class="env" style="max-width:820px">
+    <div class="cab cab--c"><span class="sobre">Preguntas</span><h2>Lo que se pregunta antes de firmar</h2></div>
+    <div class="faq">
+      <details open><summary>¿Cuántas facturas puedo timbrar al mes?</summary><div class="c">No publicamos un tope. Las facturas van dentro del plan y no se cobran por pieza. Si algún día tu volumen se vuelve excepcional lo hablamos, pero no vas a encontrar un contador que te frene a media quincena.</div></details>
+      <details><summary>¿Qué pasa si se me acaban los accesos?</summary><div class="c">El sistema te avisa y ya no te deja invitar a nadie más, contando las invitaciones sin contestar. No se cobra sobreconsumo por sorpresa: o subes de plan, o liberas un acceso. Y se puede bajar de plan el mes siguiente, sin penalización.</div></details>
+      <details><summary>¿Cuántos números de WhatsApp puedo conectar?</summary><div class="c">Uno por empresa, en todos los planes. No es una limitación comercial: hoy el sistema está hecho para un número por organización. Si necesitas dos, se resuelve con dos cuentas.</div></details>
+      <details><summary>¿El precio incluye IVA?</summary><div class="c">Sí, todos. Lo decimos porque en este mercado casi nadie lo hace: vas a ver «$1,299 + IVA» en otros lados y en la firma resultan $1,507. Aquí $1,490 son $1,490.</div></details>
+      <details><summary>¿Hay costo de instalación?</summary><div class="c">La implementación y capacitación cuesta desde $14,900 y va <strong>incluida</strong> en Operación y en Corporativo. En los planes de abajo se cobra aparte, también en el anual: no la regalamos con el anual porque son tres sesiones de trabajo real.</div></details>
+      <details><summary>¿Cuánto cuesta migrar mis datos?</summary><div class="c">Entre $5,000 y $50,000, y <strong>siempre se cotiza</strong> después de ver tu exportación. No hay precio de lista porque no hay dos migraciones iguales: depende de cuánta información hay, de qué software sale y de en qué estado está. Preferimos cotizarlo bien a publicar un número y ajustarlo en la llamada. La verificación es con números de control: si el valor total no cuadra, no se cierra la migración.</div></details>
+      <details><summary>¿Hay permanencia forzosa?</summary><div class="c">No en los planes mensuales: los cancelas cuando quieras. El anual baja 15% y se paga por adelantado, y es tu opción, no nuestro requisito.</div></details>
+      <details><summary>¿Puedo cambiar de plan después?</summary><div class="c">Sí, en los dos sentidos. Subir es inmediato. Bajar toma efecto el mes siguiente, y antes te decimos qué áreas se van a cerrar para que nadie se quede a media captura.</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="bloque cierre">
+  <div class="env">
+    <h2>Treinta minutos con tu propia operación en pantalla</h2>
+    <p style="max-width:56ch;margin:1rem auto 2rem">Nos dices qué vendes, cargamos un par de tus
+      productos y sigues el mismo renglón desde la cotización hasta el CFDI timbrado.</p>
+    <a class="btn" href="../contacto.html">Agenda una demo</a>
+  </div>
+</section>
+
+<footer class="pie">
+  <div class="env">
+    <img src="../assets/logos/incsales-completo-blanco.svg" alt="IncSales" style="height:28px;margin-bottom:1rem">
+    <p>ERP en la nube con CRM adentro, para empresas que viven de cotizar. Hecho en Guadalajara por Incoming Sales.</p>
+    <p><a href="mailto:contacto@incsales.com.mx">contacto@incsales.com.mx</a> · <a href="tel:+523337793774">+52 33 3779 3774</a></p>
+    <div class="pie__l">
+      <span>© 2026 Incoming Sales · IncSales ERP. Precios mensuales en pesos mexicanos con IVA incluido.</span>
+      <span><a href="../terminos.html">Términos</a> · <a href="../privacidad.html">Privacidad</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// El interruptor mensual/anual. Cambia el número y el renglón del IVA.
+document.querySelectorAll('.sw button').forEach(b => b.addEventListener('click', () => {
+  const anual = b.dataset.pago === 'anio';
+  document.querySelectorAll('.sw button').forEach(o =>
+    o.setAttribute('aria-pressed', String(o === b)));
+  document.querySelectorAll('.precio b[data-mes]').forEach(n => {
+    n.textContent = '$' + (anual ? n.dataset.anio : n.dataset.mes);
+  });
+  document.querySelectorAll('.iva').forEach(n => {
+    const base = n.dataset.base || (n.dataset.base = n.textContent);
+    n.textContent = anual ? base + ' · pagando el año' : base;
+  });
+}));
+</script>
+</body>
+</html>

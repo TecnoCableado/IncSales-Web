@@ -298,7 +298,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "No es plataforma de automatización: sin flujos con condiciones, sin pruebas A/B.",
+            "editor": "Las automatizaciones del CRM mandan el correo solas. No es plataforma de pruebas A/B.",
             "text_color": "#6a6f78",
             "typography_typography": "custom",
             "typography_font_size": {

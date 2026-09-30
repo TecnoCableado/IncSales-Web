@@ -158,7 +158,7 @@
          },
          {
           "_id": "32efffa",
-          "text": "<strong>Plan y complemento.</strong> El paquete con sus límites, y lo que se le suma cada mes.",
+          "text": "<strong>Plan y complemento.</strong> El paquete de áreas del sistema y accesos que contratas, y lo que se le suma cada mes.",
           "selected_icon": {
            "value": "fas fa-arrow-right",
            "library": "fa-solid"
@@ -337,7 +337,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "<p>Cuesta <strong>15% menos</strong> , se paga completo al inicio y trae la migración sin costo. No se devuelve de forma proporcional: corre hasta el último día pagado.</p>"
+        "editor": "<p>Cuesta <strong>15% menos</strong> y se paga completo al inicio. No se devuelve de forma proporcional: corre hasta el último día pagado. La <a href=\"/migracion/\">migración de tus datos</a> no va incluida en el anual ni en ningún plan: es un servicio de una sola vez que se cotiza sobre tu exportación, <strong>de $5,000 a $50,000 con IVA incluido</strong> , porque no hay dos migraciones iguales.</p>"
        },
        "elements": [],
        "isInner": false
@@ -365,7 +365,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "<p>Subir aplica el mismo día, con la diferencia proporcional; bajar, en la siguiente renovación.</p>"
+        "editor": "<p>Subir aplica el mismo día, con la diferencia proporcional; bajar aplica el mes siguiente, sin penalización y sin esperar a que se acabe el contrato. Ningún plan sube de escalón solo: el sistema avisa y espera tu autorización.</p>"
        },
        "elements": [],
        "isInner": false

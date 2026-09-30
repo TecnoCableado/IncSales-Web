@@ -296,7 +296,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Cotiza Pro · $999 al mes",
+            "title": "Crecimiento · $2,490 al mes",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -314,7 +314,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Cinco usuarios, IVA incluido. Variantes, listas de precios, comparativo de proveedores y compras completas.",
+            "editor": "IVA incluido, o $2,117 al mes en anual. Cinco accesos. Variantes y listas de precios, compras completas —proveedores, requisiciones, órdenes y recepciones— con el comparativo que normaliza el IVA, y facturación CFDI 4.0 sin tope publicado.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -411,7 +411,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "El más elegido",
+              "title": "El sistema entero",
               "header_size": "div",
               "title_color": "#1e5bd4",
               "typography_typography": "custom",
@@ -439,7 +439,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Operación · $7,500 al mes",
+            "title": "Operación · $3,490 al mes",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -457,7 +457,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Diez usuarios y 100 CFDI al mes. Todo el sistema, con subdominio propio.",
+            "editor": "IVA incluido, o $2,967 al mes en anual. Diez accesos, las seis áreas, y la implementación y la capacitación incluidas. Es el plan sobre el que opera TecnoCableado todos los días.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -474,7 +474,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "Si apenas vas a ordenar las cotizaciones, Cotiza Uno cuesta $200 al mes, IVA incluido. Usuario adicional en la familia completa, $349. <a href=\"/precios/\">Ver los nueve planes</a> .",
+        "editor": "Si apenas vas a ordenar las cotizaciones, Esencial cuesta $1,490 al mes, IVA incluido, y trae los mismos cinco accesos que Crecimiento: lo que Crecimiento abre de más no son personas, es el área de compras —proveedores, requisiciones, órdenes y recepciones— y el comparativo que normaliza el IVA para saber con quién te conviene surtir el perfil. Y si por ahora solo quieres dar seguimiento a las obras por WhatsApp y correo, CRM + WhatsApp empieza en $890 al mes, IVA incluido, aunque ese plan no trae catálogo ni compras. <a href=\"/precios/\">Ver los seis planes</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

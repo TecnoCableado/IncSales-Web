@@ -458,7 +458,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "El conector nativo con WooCommerce. Una sola existencia entre la tienda y el almacén.",
+            "editor": "El conector nativo con WooCommerce. Una sola existencia entre la tienda y el almacén. Se vende desde el plan Crecimiento en adelante.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -601,7 +601,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Lo que no es estándar se programa. El acceso a la API viene en el plan Corporativo.",
+            "editor": "Lo que no es estándar se programa por hora, a $890. El Corporativo trae cinco horas de desarrollo al mes.",
             "text_color": "#6a6f78"
            },
            "elements": [],

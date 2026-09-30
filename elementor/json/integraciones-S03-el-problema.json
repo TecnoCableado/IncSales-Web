@@ -123,7 +123,7 @@
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
-          "title": "Cuatro lugares creen que las últimas diez piezas son suyas",
+          "title": "El mismo dato vive en tres lugares y ninguno le cree al otro",
           "header_size": "h2",
           "typography_typography": "custom",
           "typography_font_size": {
@@ -321,7 +321,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Sesenta piezas en el kárdex y cada canal descontando las que cree suyas.",
+            "editor": "Se fue en el mostrador y tu tienda en línea la sigue ofreciendo.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -384,7 +384,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Tu teléfono es el portal",
+            "title": "Tu otro sistema no habla",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -402,7 +402,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "«¿Ya salió mi pedido?» y «¿me reenvías la factura?», todos los días.",
+            "editor": "Exportas de uno, acomodas columnas y pegas en el otro, cada semana.",
             "text_color": "#6a6f78"
            },
            "elements": [],

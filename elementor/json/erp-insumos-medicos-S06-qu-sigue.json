@@ -519,7 +519,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "El seguimiento de cada clínica vive en <a href=\"/crm/\">IncSales CRM</a> , $499 al mes, e <a href=\"/wordpress/\">IncSales WooSync</a> sincroniza existencias con WooCommerce por $1,490 al mes más implementación.",
+        "editor": "El seguimiento de cada clínica vive en <a href=\"/crm/\">IncSales CRM</a> , que viene en los seis planes desde $890 al mes con IVA incluido, e <a href=\"/wordpress/\">IncSales WooSync</a> sincroniza existencias con WooCommerce por $1,390 al mes con IVA incluido, más implementación desde $9,900, desde el plan Crecimiento: sin compras y sin el catálogo trabajado, sincronizar una tienda deja más problemas de los que resuelve.",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

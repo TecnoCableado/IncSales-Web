@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "2e017c7",
+   "id": "842c38d",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -39,7 +39,7 @@
    },
    "elements": [
     {
-     "id": "64661d0",
+     "id": "2e017c7",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -74,7 +74,7 @@
      },
      "elements": [
       {
-       "id": "0a927c0",
+       "id": "23f0ce7",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -150,12 +150,23 @@
          },
          "elements": [],
          "isInner": false
+        },
+        {
+         "id": "3a5f10b",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Por eso la migración se cotiza y no tiene precio de lista: va de $5,000 a $50,000 según cuánta información traigas, de qué software salga y en qué estado esté. Una libreta de Excel con 300 clientes no es un SAE de doce años con inventario, cartera y facturas. Primero vemos tu exportación, como aquí, y después te damos el número.</p>",
+          "align": "center"
+         },
+         "elements": [],
+         "isInner": false
         }
        ],
        "isInner": false
       },
       {
-       "id": "e717ec1",
+       "id": "2491367",
        "elType": "container",
        "settings": {
         "background_background": "classic",
@@ -198,7 +209,7 @@
        },
        "elements": [
         {
-         "id": "32395d2",
+         "id": "e717ec1",
          "elType": "container",
          "settings": {
           "flex_direction": "column",
@@ -211,7 +222,7 @@
          },
          "elements": [
           {
-           "id": "bb0413c",
+           "id": "623ccbe",
            "elType": "container",
            "settings": {
             "flex_direction": "column",
@@ -224,7 +235,7 @@
            },
            "elements": [
             {
-             "id": "75aa9ea",
+             "id": "bb0413c",
              "elType": "container",
              "settings": {
               "flex_direction": "column",
@@ -247,7 +258,7 @@
              },
              "elements": [
               {
-               "id": "4695ca2",
+               "id": "e8541a9",
                "elType": "container",
                "settings": {
                 "container_type": "grid",
@@ -288,7 +299,7 @@
                },
                "elements": [
                 {
-                 "id": "d0de39d",
+                 "id": "3d98e88",
                  "elType": "widget",
                  "widgetType": "heading",
                  "settings": {
@@ -307,7 +318,7 @@
                  "isInner": false
                 },
                 {
-                 "id": "3d98e88",
+                 "id": "dc63fd4",
                  "elType": "widget",
                  "widgetType": "heading",
                  "settings": {
@@ -326,7 +337,7 @@
                  "isInner": false
                 },
                 {
-                 "id": "dc63fd4",
+                 "id": "5821d4d",
                  "elType": "widget",
                  "widgetType": "heading",
                  "settings": {
@@ -348,7 +359,7 @@
                "isInner": false
               },
               {
-               "id": "f9953aa",
+               "id": "1155332",
                "elType": "container",
                "settings": {
                 "container_type": "grid",
@@ -389,7 +400,7 @@
                },
                "elements": [
                 {
-                 "id": "b07f601",
+                 "id": "17b15fe",
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
@@ -406,7 +417,7 @@
                  "isInner": false
                 },
                 {
-                 "id": "17b15fe",
+                 "id": "afec44d",
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
@@ -423,7 +434,7 @@
                  "isInner": false
                 },
                 {
-                 "id": "afec44d",
+                 "id": "f9843c8",
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
@@ -443,7 +454,7 @@
                "isInner": false
               },
               {
-               "id": "f335711",
+               "id": "d6b5b65",
                "elType": "container",
                "settings": {
                 "container_type": "grid",
@@ -484,7 +495,7 @@
                },
                "elements": [
                 {
-                 "id": "1db09a1",
+                 "id": "9d63cd8",
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
@@ -501,7 +512,7 @@
                  "isInner": false
                 },
                 {
-                 "id": "9d63cd8",
+                 "id": "71e0668",
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
@@ -518,7 +529,7 @@
                  "isInner": false
                 },
                 {
-                 "id": "71e0668",
+                 "id": "abcd41c",
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
@@ -538,7 +549,7 @@
                "isInner": false
               },
               {
-               "id": "bc17110",
+               "id": "bc4e7b7",
                "elType": "container",
                "settings": {
                 "container_type": "grid",
@@ -579,7 +590,7 @@
                },
                "elements": [
                 {
-                 "id": "86abe57",
+                 "id": "2022bf1",
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
@@ -596,7 +607,7 @@
                  "isInner": false
                 },
                 {
-                 "id": "2022bf1",
+                 "id": "b4f57fa",
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
@@ -613,7 +624,7 @@
                  "isInner": false
                 },
                 {
-                 "id": "b4f57fa",
+                 "id": "0eeab8a",
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
@@ -633,7 +644,7 @@
                "isInner": false
               },
               {
-               "id": "bc62a90",
+               "id": "27d5eaf",
                "elType": "container",
                "settings": {
                 "container_type": "grid",
@@ -674,28 +685,11 @@
                },
                "elements": [
                 {
-                 "id": "1e31c33",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "Pipelines",
-                  "text_color": "#4d535d",
-                  "typography_typography": "custom",
-                  "typography_font_size": {
-                   "unit": "px",
-                   "size": 15,
-                   "sizes": []
-                  }
-                 },
-                 "elements": [],
-                 "isInner": false
-                },
-                {
                  "id": "b37016b",
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
-                  "editor": "4",
+                  "editor": "Pipelines",
                   "text_color": "#4d535d",
                   "typography_typography": "custom",
                   "typography_font_size": {
@@ -723,12 +717,29 @@
                  },
                  "elements": [],
                  "isInner": false
+                },
+                {
+                 "id": "fb3bf51",
+                 "elType": "widget",
+                 "widgetType": "text-editor",
+                 "settings": {
+                  "editor": "4",
+                  "text_color": "#4d535d",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                   "unit": "px",
+                   "size": 15,
+                   "sizes": []
+                  }
+                 },
+                 "elements": [],
+                 "isInner": false
                 }
                ],
                "isInner": false
               },
               {
-               "id": "f3d4702",
+               "id": "99101eb",
                "elType": "container",
                "settings": {
                 "container_type": "grid",
@@ -769,28 +780,11 @@
                },
                "elements": [
                 {
-                 "id": "8c0c3d0",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "Etapas",
-                  "text_color": "#4d535d",
-                  "typography_typography": "custom",
-                  "typography_font_size": {
-                   "unit": "px",
-                   "size": 15,
-                   "sizes": []
-                  }
-                 },
-                 "elements": [],
-                 "isInner": false
-                },
-                {
                  "id": "90ec83b",
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
-                  "editor": "20",
+                  "editor": "Etapas",
                   "text_color": "#4d535d",
                   "typography_typography": "custom",
                   "typography_font_size": {
@@ -818,12 +812,29 @@
                  },
                  "elements": [],
                  "isInner": false
+                },
+                {
+                 "id": "52026b5",
+                 "elType": "widget",
+                 "widgetType": "text-editor",
+                 "settings": {
+                  "editor": "20",
+                  "text_color": "#4d535d",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                   "unit": "px",
+                   "size": 15,
+                   "sizes": []
+                  }
+                 },
+                 "elements": [],
+                 "isInner": false
                 }
                ],
                "isInner": false
               },
               {
-               "id": "fe8fa00",
+               "id": "1626c51",
                "elType": "container",
                "settings": {
                 "container_type": "grid",
@@ -864,28 +875,11 @@
                },
                "elements": [
                 {
-                 "id": "cd78b1b",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "Propietarios",
-                  "text_color": "#4d535d",
-                  "typography_typography": "custom",
-                  "typography_font_size": {
-                   "unit": "px",
-                   "size": 15,
-                   "sizes": []
-                  }
-                 },
-                 "elements": [],
-                 "isInner": false
-                },
-                {
                  "id": "ed92f3a",
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
-                  "editor": "5",
+                  "editor": "Propietarios",
                   "text_color": "#4d535d",
                   "typography_typography": "custom",
                   "typography_font_size": {
@@ -913,12 +907,29 @@
                  },
                  "elements": [],
                  "isInner": false
+                },
+                {
+                 "id": "63bb18c",
+                 "elType": "widget",
+                 "widgetType": "text-editor",
+                 "settings": {
+                  "editor": "5",
+                  "text_color": "#4d535d",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                   "unit": "px",
+                   "size": 15,
+                   "sizes": []
+                  }
+                 },
+                 "elements": [],
+                 "isInner": false
                 }
                ],
                "isInner": false
               },
               {
-               "id": "266973b",
+               "id": "75aa9ea",
                "elType": "container",
                "settings": {
                 "container_type": "grid",
@@ -959,28 +970,11 @@
                },
                "elements": [
                 {
-                 "id": "30ad878",
-                 "elType": "widget",
-                 "widgetType": "text-editor",
-                 "settings": {
-                  "editor": "Valor total",
-                  "text_color": "#4d535d",
-                  "typography_typography": "custom",
-                  "typography_font_size": {
-                   "unit": "px",
-                   "size": 15,
-                   "sizes": []
-                  }
-                 },
-                 "elements": [],
-                 "isInner": false
-                },
-                {
                  "id": "491121f",
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
-                  "editor": "$14,759,302.27",
+                  "editor": "Valor total",
                   "text_color": "#4d535d",
                   "typography_typography": "custom",
                   "typography_font_size": {
@@ -1008,6 +1002,23 @@
                  },
                  "elements": [],
                  "isInner": false
+                },
+                {
+                 "id": "69a03b1",
+                 "elType": "widget",
+                 "widgetType": "text-editor",
+                 "settings": {
+                  "editor": "$14,759,302.27",
+                  "text_color": "#4d535d",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                   "unit": "px",
+                   "size": 15,
+                   "sizes": []
+                  }
+                 },
+                 "elements": [],
+                 "isInner": false
                 }
                ],
                "isInner": false
@@ -1019,7 +1030,7 @@
            "isInner": false
           },
           {
-           "id": "86e64d9",
+           "id": "32395d2",
            "elType": "container",
            "settings": {
             "flex_direction": "column",
@@ -1032,7 +1043,7 @@
            },
            "elements": [
             {
-             "id": "f79cf05",
+             "id": "aa1d7dc",
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
@@ -1043,7 +1054,7 @@
              "isInner": false
             },
             {
-             "id": "653bbbf",
+             "id": "86e64d9",
              "elType": "container",
              "settings": {
               "content_width": "full",
@@ -1077,7 +1088,7 @@
              },
              "elements": [
               {
-               "id": "3af57a0",
+               "id": "83a9f93",
                "elType": "widget",
                "widgetType": "heading",
                "settings": {
@@ -1114,7 +1125,7 @@
        "isInner": false
       },
       {
-       "id": "a9b95ff",
+       "id": "34a3727",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {

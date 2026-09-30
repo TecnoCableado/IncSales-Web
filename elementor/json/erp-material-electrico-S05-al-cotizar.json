@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "07d9b61",
+   "id": "98b4e95",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -36,7 +36,7 @@
    },
    "elements": [
     {
-     "id": "937c979",
+     "id": "07d9b61",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -152,7 +152,7 @@
        "isInner": false
       },
       {
-       "id": "32a868c",
+       "id": "937c979",
        "elType": "container",
        "settings": {
         "container_type": "grid",
@@ -180,7 +180,7 @@
        },
        "elements": [
         {
-         "id": "3dae205",
+         "id": "98b69e2",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -318,12 +318,29 @@
            },
            "elements": [],
            "isInner": false
+          },
+          {
+           "id": "c436810",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Esa clave, ese costo y esos días los capturas tú desde el plan Crecimiento. Que la existencia del proveedor se refresque sola cada diez minutos es el complemento de consulta de inventario del proveedor: +$890 al mes, IVA incluido, solo sobre el plan Corporativo, y la integración se cotiza de $14,900 a $200,000 según si el proveedor tiene API documentada o hay que leerle un archivo que cambia de forma cada semana.",
+            "text_color": "#6a6f78",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
           }
          ],
          "isInner": false
         },
         {
-         "id": "8cb35f5",
+         "id": "32a868c",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -372,7 +389,7 @@
          },
          "elements": [
           {
-           "id": "5f49621",
+           "id": "2323724",
            "elType": "container",
            "settings": {
             "content_width": "full",
@@ -406,7 +423,7 @@
            },
            "elements": [
             {
-             "id": "31e8640",
+             "id": "5aa82f6",
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
@@ -434,7 +451,7 @@
            "isInner": false
           },
           {
-           "id": "3f86183",
+           "id": "e8434c9",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -452,7 +469,7 @@
            "isInner": false
           },
           {
-           "id": "fe6a5c5",
+           "id": "abf2832",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {

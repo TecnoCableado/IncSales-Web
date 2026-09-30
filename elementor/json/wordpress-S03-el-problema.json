@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "461d3bf",
+   "id": "2ab849e",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -36,7 +36,7 @@
    },
    "elements": [
     {
-     "id": "8d01b99",
+     "id": "461d3bf",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -141,7 +141,7 @@
        "isInner": false
       },
       {
-       "id": "30415ac",
+       "id": "8d01b99",
        "elType": "container",
        "settings": {
         "container_type": "grid",
@@ -250,7 +250,7 @@
          "isInner": false
         },
         {
-         "id": "bdd7c9c",
+         "id": "32e4491",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -326,12 +326,29 @@
            },
            "elements": [],
            "isInner": false
+          },
+          {
+           "id": "be1598e",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "La consulta al inventario de tu proveedor es un complemento del plan Corporativo: +$890 al mes con IVA incluido, y la integración se cotiza.",
+            "text_color": "#6a6f78",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "isInner": false
           }
          ],
          "isInner": false
         },
         {
-         "id": "1950134",
+         "id": "30415ac",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -380,7 +397,7 @@
          },
          "elements": [
           {
-           "id": "94a5740",
+           "id": "f1f6dad",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -398,7 +415,7 @@
            "isInner": false
           },
           {
-           "id": "660d4bc",
+           "id": "fb701cd",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {

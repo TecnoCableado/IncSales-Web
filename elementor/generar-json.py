@@ -782,6 +782,42 @@ def procesar(ruta, destino, prefijo):
         hechos.append((os.path.basename(arch), contar(doc)))
     return hechos
 
+def procesar_pagina(ruta, destino, prefijo, titulo_pagina):
+    """Una sola plantilla con TODA la pagina, en vez de una por seccion.
+    Se salta el cintillo, el menu y el pie: esos viven en el Theme Builder y
+    si vinieran aqui saldrian dos veces en cada pagina."""
+    html = open(ruta, encoding="utf-8").read()
+    etiquetas = [(m.group(1), m.group(2).strip())
+                 for m in re.finditer(r"<!--\s*(S\d+)\s*·\s*([^\n>]*?)-->", html)]
+    p = Lector(); p.feed(html)
+    raiz = p.pila[0]
+    bloques = [n for n in raiz["hijos"]
+               if n["tag"] in ("section", "header", "footer")
+               or (n["tag"] == "div" and "cintillo" in n.get("clase", "").split())]
+    os.makedirs(destino, exist_ok=True)
+    contenido = []
+    for i, b in enumerate(bloques):
+        cod, nombre = etiquetas[i] if i < len(etiquetas) else (f"S{i+1:02d}", b.get("id") or b["tag"])
+        c = b.get("clase", "")
+        if b["tag"] in ("header", "footer") or "cintillo" in c.split() or "barra" in c.split():
+            continue
+        _n[0] = i * 1000
+        _sal[0] = prefijo
+        doc = seccion_a_json(b, nombre)
+        contenido += doc["content"]
+    arch = os.path.join(destino, prefijo + ".json")
+    with open(arch, "w", encoding="utf-8") as f:
+        json.dump({"version": "0.4", "title": titulo_pagina, "type": "page",
+                   "content": contenido, "page_settings": []},
+                  f, ensure_ascii=False, indent=1)
+    n = 0
+    def rec(e):
+        nonlocal n
+        n += 1
+        for h in e.get("elements", []): rec(h)
+    for e in contenido: rec(e)
+    return arch, len(contenido), n
+
 def contar(doc):
     n = 0
     def rec(e):
@@ -792,6 +828,11 @@ def contar(doc):
     return n
 
 if __name__ == "__main__":
+    if sys.argv[1] == "--pagina":
+        origen, destino, prefijo, titulo = sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5]
+        arch, secs, nodos = procesar_pagina(origen, destino, prefijo, titulo)
+        print(f"  {secs:2d} secciones  {nodos:4d} nodos  {os.path.basename(arch)}")
+        sys.exit(0)
     origen, destino, prefijo = sys.argv[1], sys.argv[2], sys.argv[3]
     for arch, n in procesar(origen, destino, prefijo):
         print(f"  {n:4d} elementos  {arch}")

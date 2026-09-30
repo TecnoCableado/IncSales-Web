@@ -287,7 +287,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Impuestos, folios y datos fiscales se configuran por empresa, así que varias razones sociales facturan desde el mismo sistema sin mezclarse.",
+            "editor": "Impuestos, folios y datos fiscales se configuran por empresa. Si facturas con dos razones sociales, cada una lleva su propia cuenta con sus datos aislados: eso es Corporativo, no dos RFC dentro de una misma cuenta.",
             "text_color": "#6a6f78"
            },
            "elements": [],

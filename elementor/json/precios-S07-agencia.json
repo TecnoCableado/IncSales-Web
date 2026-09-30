@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "ddbc209",
+   "id": "7bad40e",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -38,7 +38,7 @@
    },
    "elements": [
     {
-     "id": "1c2f0f9",
+     "id": "7f0a050",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -73,7 +73,7 @@
      },
      "elements": [
       {
-       "id": "83ae2a4",
+       "id": "692f017",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -139,18 +139,30 @@
          },
          "elements": [],
          "isInner": false
+        },
+        {
+         "id": "d6961d8",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>El Método con el sistema adentro es el plan de $19,999 de arriba. Estos tres van sueltos.</p>",
+          "text_color": "#b9cbe8",
+          "align": "center"
+         },
+         "elements": [],
+         "isInner": false
         }
        ],
        "isInner": false
       },
       {
-       "id": "7f0a050",
+       "id": "103486a",
        "elType": "container",
        "settings": {
         "container_type": "grid",
         "grid_columns_grid": {
          "unit": "fr",
-         "size": 4,
+         "size": 3,
          "sizes": []
         },
         "grid_columns_grid_tablet": {
@@ -172,7 +184,7 @@
        },
        "elements": [
         {
-         "id": "b32e73e",
+         "id": "4e29215",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -221,7 +233,7 @@
          },
          "elements": [
           {
-           "id": "dd2af5a",
+           "id": "59573fb",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -240,11 +252,11 @@
            "isInner": false
           },
           {
-           "id": "6f33180",
+           "id": "e4d1fa5",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Desde $12,000 al mes + tu inversión publicitaria.",
+            "editor": "Desde $12,000 al mes, más tu inversión publicitaria pagada directo a Google.",
             "text_color": "#b9cbe8"
            },
            "elements": [],
@@ -254,7 +266,7 @@
          "isInner": false
         },
         {
-         "id": "aaa5773",
+         "id": "b6084f7",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -303,7 +315,7 @@
          },
          "elements": [
           {
-           "id": "8d93218",
+           "id": "ad7e5e8",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -322,7 +334,7 @@
            "isInner": false
           },
           {
-           "id": "61415e4",
+           "id": "0ac6d0f",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -336,7 +348,7 @@
          "isInner": false
         },
         {
-         "id": "2d2370c",
+         "id": "b7e2488",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -385,89 +397,7 @@
          },
          "elements": [
           {
-           "id": "ef6a366",
-           "elType": "widget",
-           "widgetType": "heading",
-           "settings": {
-            "title": "Método IncSales completo",
-            "header_size": "h3",
-            "title_color": "#ffffff",
-            "typography_typography": "custom",
-            "typography_font_size": {
-             "unit": "px",
-             "size": 22,
-             "sizes": []
-            },
-            "typography_font_weight": "600"
-           },
-           "elements": [],
-           "isInner": false
-          },
-          {
-           "id": "7885752",
-           "elType": "widget",
-           "widgetType": "text-editor",
-           "settings": {
-            "editor": "Ads, SEO, sistema y seguimiento: desde $24,000 al mes + tu inversión publicitaria.",
-            "text_color": "#b9cbe8"
-           },
-           "elements": [],
-           "isInner": false
-          }
-         ],
-         "isInner": false
-        },
-        {
-         "id": "c34487a",
-         "elType": "container",
-         "settings": {
-          "background_background": "classic",
-          "background_color": "rgba(255,255,255,0.06)",
-          "border_radius": {
-           "unit": "px",
-           "top": "10",
-           "right": "10",
-           "bottom": "10",
-           "left": "10",
-           "isLinked": true
-          },
-          "padding": {
-           "unit": "px",
-           "top": "28",
-           "right": "28",
-           "bottom": "28",
-           "left": "28",
-           "isLinked": true
-          },
-          "padding_mobile": {
-           "unit": "px",
-           "top": "22",
-           "right": "22",
-           "bottom": "22",
-           "left": "22",
-           "isLinked": true
-          },
-          "flex_direction": "column",
-          "flex_gap": {
-           "unit": "px",
-           "size": 12,
-           "column": "12",
-           "row": "12"
-          },
-          "border_border": "solid",
-          "border_width": {
-           "unit": "px",
-           "top": "1",
-           "right": "1",
-           "bottom": "1",
-           "left": "1",
-           "isLinked": true
-          },
-          "border_color": "#dbdee3"
-         },
-         "elements": [
-          {
-           "id": "5818384",
+           "id": "9a4190b",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -486,7 +416,7 @@
            "isInner": false
           },
           {
-           "id": "5e9b780",
+           "id": "e8381d4",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -503,7 +433,7 @@
        "isInner": false
       },
       {
-       "id": "a2796b1",
+       "id": "1f1baa0",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {

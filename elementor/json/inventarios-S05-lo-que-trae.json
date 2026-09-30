@@ -174,7 +174,7 @@
              },
              {
               "_id": "1078218",
-              "text": "<strong>Varios proveedores por producto.</strong> Cada uno con su clave, su costo y en cuántos días entrega. Lo que dice tener no entra a tu kárdex: se enseña aparte, con la fecha en que lo dijo.",
+              "text": "<strong>Varios proveedores por producto.</strong> Cada uno con su clave, su costo y en cuántos días entrega: eso vive en el área de compras, que entra desde Crecimiento. Lo que el proveedor dice tener es otra cosa —esa consulta es un servicio que solo se levanta sobre el plan Corporativo— y ni ahí entra a tu kárdex: se enseña aparte y con la fecha en que lo dijo.",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -290,7 +290,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "La consulta al almacén de tu proveedor por API se levanta como servicio, no viene encendida.",
+            "editor": "La consulta al almacén de tu proveedor es un servicio aparte y solo se levanta sobre el plan Corporativo: +$890 al mes por proveedor, IVA incluido, y un proveedor por empresa. La integración se cotiza, de $14,900 a $200,000 con IVA incluido: un proveedor con API documentada y catálogo limpio son $14,900; uno sin API, del que hay que leer un archivo que cambia de forma cada semana, llega a $200,000.",
             "text_color": "#6a6f78",
             "typography_typography": "custom",
             "typography_font_size": {

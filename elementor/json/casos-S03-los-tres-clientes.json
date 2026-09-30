@@ -302,7 +302,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Cableado estructurado y material eléctrico. Es la organización número uno de IncSales, con datos reales y el plan Operación de $7,500 al mes: cotizaciones, inventarios, compras y facturación.",
+            "editor": "Cableado estructurado y material eléctrico. Es la organización número uno de IncSales, con datos reales y el plan Operación de $3,490 al mes, IVA incluido: cotizaciones, inventarios, compras y facturación.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -462,7 +462,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Distribución de insumos médicos. La cifra es del método completo que opera la Agencia IncSales: Google Ads, CRM y seguimiento sobre el mismo embudo.",
+            "editor": "Distribución de insumos médicos. La cifra es del Método IncSales que opera la agencia: Google Ads, CRM y seguimiento sobre el mismo embudo.",
             "text_color": "#6a6f78"
            },
            "elements": [],

@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "4b1ad3b",
+   "id": "43f275d",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -38,7 +38,7 @@
    },
    "elements": [
     {
-     "id": "95ad0c9",
+     "id": "14600f1",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -147,7 +147,7 @@
         "icon_list": [
          {
           "_id": "7efa420",
-          "text": "<strong>Cotizo solo y en Excel.</strong> Cotiza Uno, $200 al mes.",
+          "text": "<strong>Atiendo por WhatsApp y correo, y facturo en otro lado.</strong> CRM + WhatsApp, $890 al mes con IVA incluido, con tres accesos.",
           "selected_icon": {
            "value": "fas fa-arrow-right",
            "library": "fa-solid"
@@ -155,7 +155,7 @@
          },
          {
           "_id": "119d93c",
-          "text": "<strong>Somos tres en el mostrador con el mismo catálogo.</strong> Cotiza Equipo, $499.",
+          "text": "<strong>Quiero vender, dar seguimiento y facturar en un solo lugar.</strong> Esencial, $1,490 al mes con IVA incluido, con cinco accesos.",
           "selected_icon": {
            "value": "fas fa-arrow-right",
            "library": "fa-solid"
@@ -163,7 +163,7 @@
          },
          {
           "_id": "6863945",
-          "text": "<strong>Se nos caen los seguimientos.</strong> CRM Esencial, $499.",
+          "text": "<strong>Además compro para surtir y comparo proveedores.</strong> Crecimiento, $2,490 al mes con IVA incluido: los mismos cinco accesos que Esencial, y lo que se abre es el área de compras —proveedores, requisiciones, órdenes y recepciones— con el comparativo que normaliza el IVA.",
           "selected_icon": {
            "value": "fas fa-arrow-right",
            "library": "fa-solid"
@@ -171,7 +171,7 @@
          },
          {
           "_id": "2519447",
-          "text": "<strong>Ya facturo en otro lado y quiero seguimiento.</strong> CRM Esencial, o el complemento de CRM por $499 sobre el plan que ya tengas.",
+          "text": "<strong>Quiero la operación entera y que alguien nos implemente.</strong> Operación, $3,490 al mes con IVA incluido, con diez accesos.",
           "selected_icon": {
            "value": "fas fa-arrow-right",
            "library": "fa-solid"
@@ -179,7 +179,7 @@
          },
          {
           "_id": "687edd6",
-          "text": "<strong>Quiero todo junto y dejar de conciliar.</strong> Operación, $7,500.",
+          "text": "<strong>Tengo dos empresas, tienda en línea y desarrollo aparte.</strong> Corporativo, desde $9,990 al mes con IVA incluido.",
           "selected_icon": {
            "value": "fas fa-arrow-right",
            "library": "fa-solid"
@@ -187,7 +187,7 @@
          },
          {
           "_id": "7e66b07",
-          "text": "<strong>Tengo dos empresas y tienda en línea.</strong> Corporativo, $15,000, más IncSales WooSync.",
+          "text": "<strong>Quiero el sistema y que además me llenen la bandeja.</strong> Método IncSales, $19,999 al mes con IVA incluido.",
           "selected_icon": {
            "value": "fas fa-arrow-right",
            "library": "fa-solid"
@@ -218,7 +218,68 @@
        "isInner": false
       },
       {
-       "id": "ee31736",
+       "id": "4b1ad3b",
+       "elType": "container",
+       "settings": {
+        "background_background": "classic",
+        "background_color": "#f2f7ff",
+        "border_radius": {
+         "unit": "px",
+         "top": "8",
+         "right": "8",
+         "bottom": "8",
+         "left": "8",
+         "isLinked": true
+        },
+        "padding": {
+         "unit": "px",
+         "top": "18",
+         "right": "20",
+         "bottom": "18",
+         "left": "20",
+         "isLinked": false
+        },
+        "flex_direction": "column",
+        "flex_gap": {
+         "unit": "px",
+         "size": 4,
+         "column": "4",
+         "row": "4"
+        }
+       },
+       "elements": [
+        {
+         "id": "95ad0c9",
+         "elType": "container",
+         "settings": {
+          "flex_direction": "column",
+          "flex_gap": {
+           "unit": "px",
+           "size": 12,
+           "column": "12",
+           "row": "12"
+          }
+         },
+         "elements": [
+          {
+           "id": "ee31736",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "<strong>Avisa, deja trabajar y nunca cambia de plan solo.</strong> Las plantillas de WhatsApp avisan al 90% y se frenan al 100% del mes, porque Meta cobra cada una; contestar a quien te escribió es gratis y la bandeja nunca se apaga. Si falla un cobro, la cuenta queda en solo consulta hasta regularizar: se ve y se exporta todo.",
+            "text_color": "#4d535d"
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "6abef4b",
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {

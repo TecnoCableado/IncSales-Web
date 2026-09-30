@@ -420,7 +420,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Un proveedor o un canal a la vez, nunca todos juntos.",
+            "editor": "Un proveedor o una tienda a la vez, nunca todo junto.",
             "text_color": "#a2d7d2"
            },
            "elements": [],

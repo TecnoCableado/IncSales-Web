@@ -124,7 +124,7 @@
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
-          "title": "Las listas de precios empiezan en cuatrocientos noventa y nueve pesos",
+          "title": "Las listas de precios empiezan en mil cuatrocientos noventa pesos al mes",
           "header_size": "h2",
           "typography_typography": "custom",
           "typography_font_size": {
@@ -296,7 +296,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Cotiza Equipo · $499 al mes",
+            "title": "Esencial · $1,490 al mes, IVA incluido",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -314,7 +314,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Tres usuarios, IVA incluido. Catálogo ilimitado con variantes, multialmacén hasta tres, listas de precios, pedidos y remisiones.",
+            "editor": "Cinco accesos. Catálogo con variantes, almacenes y listas de precios sin tope, cotizaciones, pedidos y remisiones, y facturación CFDI 4.0 sin tope publicado.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -439,7 +439,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Operación · $7,500 al mes",
+            "title": "Operación · $3,490 al mes, IVA incluido",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -457,7 +457,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Diez usuarios y 100 CFDI al mes. Todo el sistema: CRM, cotizaciones, inventarios, compras, facturación, WhatsApp Business y analítica.",
+            "editor": "Es el plan sobre el que opera TecnoCableado todos los días: diez accesos, las seis áreas —CRM, WhatsApp con un número, ventas, inventario, compras y facturación— e implementación y capacitación incluidas.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -474,7 +474,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "Cotiza Uno arranca en $200 al mes con un almacén y 500 productos, sin listas de precios. Almacén adicional, $299 al mes. Todo en <a href=\"/precios/\">precios y planes</a> .",
+        "editor": "Si hoy solo quieres atender y dar seguimiento, CRM + WhatsApp arranca en $890 al mes con IVA incluido, aunque ese plan no trae catálogo ni listas de precios. Las compras completas —proveedores, requisiciones, órdenes y recepciones— y el comparativo que normaliza el IVA entran desde Crecimiento, $2,490 al mes, IVA incluido: los accesos son los mismos cinco que trae Esencial, lo que se abre es el área de compras. Están <a href=\"/precios/\">los seis planes</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

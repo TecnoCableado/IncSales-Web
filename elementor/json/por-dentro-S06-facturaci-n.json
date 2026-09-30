@@ -123,7 +123,7 @@
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
-          "title": "Los timbres de tu plan se ven aquí dentro, no a fin de mes",
+          "title": "Lo timbrado del mes se ve aquí dentro, no cuando llega el estado de cuenta",
           "header_size": "h2",
           "typography_typography": "custom",
           "typography_font_size": {
@@ -141,7 +141,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>Sesenta de los cien CFDI del plan Operación, a la vista. Y cuando el PAC rechaza, la clave del SAT viene en el mismo renglón. <a href=\"/facturacion/\">Ver IncSales Facturación</a></p>"
+          "editor": "<p>Las 64 facturas del mes con su estado, sin tope de CFDI que te esté contando atrás: la facturación entra desde el plan Esencial y ningún plan publica tope de facturas. Y cuando el PAC rechaza, la clave del SAT viene en el mismo renglón. <a href=\"/facturacion/\">Ver IncSales Facturación</a></p>"
          },
          "elements": [],
          "isInner": false

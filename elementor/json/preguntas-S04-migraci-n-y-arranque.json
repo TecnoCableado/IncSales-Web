@@ -201,7 +201,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "De SAE, CONTPAQi, HubSpot, Alegra, Bind y Excel. Cuesta desde $9,900 y va sin costo al contratar cualquier plan anual."
+            "editor": "De SAE, CONTPAQi, HubSpot, Alegra, Bind, SICAR y Excel. Se cotiza siempre, entre $5,000 y $50,000 con IVA incluido, y no viene incluida en ningún plan. No hay precio de lista porque no hay dos migraciones iguales: depende de cuánta información hay, de qué software sale y de en qué estado está. Una libreta de Excel con 300 clientes no es un SAE de doce años con inventario, cartera y facturas. Te la cotizamos después de ver tu exportación, no antes. <a href=\"/migracion/\">Ver la migración</a> ."
            },
            "elements": [],
            "isInner": false

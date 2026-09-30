@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "69fab2d",
+   "id": "9b5ab47",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -38,7 +38,7 @@
    },
    "elements": [
     {
-     "id": "b635e23",
+     "id": "69fab2d",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -154,7 +154,7 @@
        "isInner": false
       },
       {
-       "id": "db15fd4",
+       "id": "b635e23",
        "elType": "container",
        "settings": {
         "container_type": "grid",
@@ -182,7 +182,7 @@
        },
        "elements": [
         {
-         "id": "72431e0",
+         "id": "1c9eefd",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -315,8 +315,25 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Vender lo que no tienes queda cubierto de punta a punta, sin una pantalla aparte para el mostrador. Lo trae <a href=\"/inventarios/\">IncSales Inventarios</a> , con proveedores por producto desde Cotiza Equipo $499 al mes.",
+            "editor": "Vender lo que no tienes queda cubierto de punta a punta, sin una pantalla aparte para el mostrador. Lo trae <a href=\"/inventarios/\">IncSales Inventarios</a> , y los proveedores por producto entran con el área de compras, desde Crecimiento, $2,490 al mes, IVA incluido.",
             "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "a0faf3a",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Esa clave, ese costo y esos días los capturas tú desde el plan Crecimiento, y por eso el dato trae su fecha. Que la existencia del proveedor se refresque sola cada diez minutos es el complemento de consulta de inventario del proveedor: +$890 al mes, IVA incluido, solo sobre el plan Corporativo, y la integración se cotiza de $14,900 a $200,000 según si el proveedor tiene API documentada o hay que leerle un archivo que cambia de forma cada semana.",
+            "text_color": "#6a6f78",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            }
            },
            "elements": [],
            "isInner": false
@@ -325,7 +342,7 @@
          "isInner": false
         },
         {
-         "id": "a1f9664",
+         "id": "5e4502c",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -374,7 +391,7 @@
          },
          "elements": [
           {
-           "id": "936eae6",
+           "id": "5d2ab68",
            "elType": "container",
            "settings": {
             "content_width": "full",
@@ -408,7 +425,7 @@
            },
            "elements": [
             {
-             "id": "6551e6a",
+             "id": "2de8540",
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
@@ -436,7 +453,7 @@
            "isInner": false
           },
           {
-           "id": "4247e04",
+           "id": "c418ec1",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -454,7 +471,7 @@
            "isInner": false
           },
           {
-           "id": "04332c7",
+           "id": "f285397",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -468,7 +485,7 @@
          "isInner": false
         },
         {
-         "id": "5bedf77",
+         "id": "db15fd4",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -517,7 +534,7 @@
          },
          "elements": [
           {
-           "id": "7dfcfe2",
+           "id": "bd46ba5",
            "elType": "container",
            "settings": {
             "content_width": "full",
@@ -551,7 +568,7 @@
            },
            "elements": [
             {
-             "id": "85f3de2",
+             "id": "8284835",
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
@@ -579,7 +596,7 @@
            "isInner": false
           },
           {
-           "id": "3f30c98",
+           "id": "7f53338",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -597,11 +614,11 @@
            "isInner": false
           },
           {
-           "id": "2415944",
+           "id": "1219280",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "La orden sale con un botón, ya con el costo que él te cobra, en <a href=\"/compras/\">IncSales Compras</a> , incluido desde Cotiza Pro $999 al mes.",
+            "editor": "La orden sale con un botón, ya con el costo que él te cobra, en <a href=\"/compras/\">IncSales Compras</a> , incluido desde Crecimiento, $2,490 al mes, IVA incluido.",
             "text_color": "#6a6f78"
            },
            "elements": [],

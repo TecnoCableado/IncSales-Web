@@ -319,7 +319,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<a href=\"/inventarios/\">Ver el buscador</a>",
+            "editor": "La consulta al inventario de tu proveedor es un complemento del plan Corporativo: +$890 al mes con IVA incluido, y la integración se cotiza de $14,900 a $200,000 con IVA incluido, según si tu proveedor tiene API o hay que leerle un archivo. <a href=\"/inventarios/\">Ver el buscador</a>",
             "text_color": "#6a6f78",
             "typography_typography": "custom",
             "typography_font_size": {

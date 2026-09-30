@@ -327,7 +327,7 @@
               "icon_list": [
                {
                 "_id": "5530621",
-                "text": "+$1,490 al mes, IVA incluido · implementación desde $9,900",
+                "text": "+$1,490 al mes, IVA incluido, desde el plan Crecimiento · implementación desde $9,900",
                 "selected_icon": {
                  "value": "fas fa-check",
                  "library": "fa-solid"
@@ -343,7 +343,7 @@
                },
                {
                 "_id": "5eb6546",
-                "text": "IncSales Forms incluido desde CRM Esencial $499 al mes, IVA incluido",
+                "text": "IncSales Forms incluido en todos los planes, desde $890 al mes, IVA incluido",
                 "selected_icon": {
                  "value": "fas fa-check",
                  "library": "fa-solid"

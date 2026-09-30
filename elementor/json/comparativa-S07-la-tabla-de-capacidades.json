@@ -1039,7 +1039,7 @@
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
-                "editor": "Sí",
+                "editor": "Sí, complemento de Corporativo",
                 "text_color": "#4d535d",
                 "typography_typography": "custom",
                 "typography_font_size": {

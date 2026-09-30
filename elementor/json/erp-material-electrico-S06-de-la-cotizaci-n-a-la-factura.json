@@ -519,7 +519,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "El seguimiento del proyecto vive en <a href=\"/crm/\">IncSales CRM</a> , y <a href=\"/wordpress/\">IncSales WooSync</a> sincroniza tu tienda de WordPress con el mismo catálogo.",
+        "editor": "El seguimiento del proyecto vive en <a href=\"/crm/\">IncSales CRM</a> , que viene en los seis planes desde $890 al mes con IVA incluido. Y si también vendes en línea, <a href=\"/wordpress/\">IncSales WooSync</a> sincroniza tu tienda de WordPress con el mismo catálogo por $1,390 al mes, IVA incluido, más implementación desde $9,900, y se vende desde el plan Crecimiento: sin compras y sin el catálogo trabajado, sincronizar una tienda deja más problemas de los que resuelve.",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

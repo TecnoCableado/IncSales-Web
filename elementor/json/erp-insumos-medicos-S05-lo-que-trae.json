@@ -166,7 +166,7 @@
             "icon_list": [
              {
               "_id": "a0bb0cc",
-              "text": "<strong>Multialmacén con existencia por almacén.</strong> Con kárdex completo de entradas y salidas, cada movimiento con su fecha. Almacén adicional, $299 al mes.",
+              "text": "<strong>Multialmacén con existencia por almacén.</strong> Con kárdex completo de entradas y salidas, cada movimiento con su fecha. Sin tope de almacenes: da de alta los que necesites sin pagar por bodega.",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"

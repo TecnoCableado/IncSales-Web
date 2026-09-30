@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "120e058",
+   "id": "4ed9d93",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -38,7 +38,7 @@
    },
    "elements": [
     {
-     "id": "33e882f",
+     "id": "120e058",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -156,7 +156,7 @@
        "isInner": false
       },
       {
-       "id": "04d155d",
+       "id": "33e882f",
        "elType": "container",
        "settings": {
         "container_type": "grid",
@@ -266,7 +266,7 @@
          "isInner": false
         },
         {
-         "id": "0738617",
+         "id": "23907fd",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -338,8 +338,25 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "El buscador dice «Tienes 48 · Proveedor 40 en 5 d».",
+            "editor": "El buscador dice lo que tienes y en qué almacén antes de que prometas material.",
             "text_color": "#a2d7d2"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "880b16f",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Que además diga «Proveedor 40 en 5 d» es la consulta del inventario de tu proveedor, complemento solo del plan Corporativo: +$890 al mes con IVA incluido.",
+            "text_color": "#6a6f78",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            }
            },
            "elements": [],
            "isInner": false
@@ -348,7 +365,7 @@
          "isInner": false
         },
         {
-         "id": "044ce31",
+         "id": "c24c1f9",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -397,7 +414,7 @@
          },
          "elements": [
           {
-           "id": "c125bc9",
+           "id": "6a057d7",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -416,7 +433,7 @@
            "isInner": false
           },
           {
-           "id": "69f8205",
+           "id": "b3e3899",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -430,7 +447,7 @@
          "isInner": false
         },
         {
-         "id": "1ccb948",
+         "id": "04d155d",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -479,7 +496,7 @@
          },
          "elements": [
           {
-           "id": "73ab8ce",
+           "id": "3ccd325",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -498,7 +515,7 @@
            "isInner": false
           },
           {
-           "id": "ddb266c",
+           "id": "c6f2024",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {

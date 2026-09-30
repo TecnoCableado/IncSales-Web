@@ -618,7 +618,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "El catálogo con variantes y las listas de precios entran en <a href=\"/inventarios/\">IncSales Inventarios</a> desde Cotiza Equipo, $499 al mes con IVA incluido.",
+        "editor": "El catálogo con variantes y las listas de precios entran con el área de inventario, desde el plan Esencial, $1,490 al mes con IVA incluido. Catálogo, almacenes y listas van sin tope: <a href=\"/inventarios/\">así funciona IncSales Inventarios</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

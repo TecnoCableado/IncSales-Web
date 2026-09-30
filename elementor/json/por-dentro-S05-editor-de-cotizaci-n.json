@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "ae591df",
+   "id": "e1f5fd9",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -36,7 +36,7 @@
    },
    "elements": [
     {
-     "id": "259fd6e",
+     "id": "ae591df",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -71,7 +71,7 @@
      },
      "elements": [
       {
-       "id": "0704223",
+       "id": "929a83c",
        "elType": "container",
        "settings": {
         "flex_direction": "column",
@@ -143,12 +143,29 @@
          },
          "elements": [],
          "isInner": false
+        },
+        {
+         "id": "3e7fed8",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "Lo que tú tienes lo dice el buscador en todos los planes. Que además diga «Proveedor 40 en 5 d» es la consulta del inventario de tu proveedor, complemento solo del plan Corporativo: +$890 al mes con IVA incluido, y la integración se cotiza.",
+          "text_color": "#6a6f78",
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
         }
        ],
        "isInner": false
       },
       {
-       "id": "e2f25c5",
+       "id": "259fd6e",
        "elType": "container",
        "settings": {
         "background_background": "classic",
@@ -191,7 +208,7 @@
        },
        "elements": [
         {
-         "id": "8456979",
+         "id": "1b57c64",
          "elType": "widget",
          "widgetType": "image",
          "settings": {
@@ -204,7 +221,7 @@
          "isInner": false
         },
         {
-         "id": "df5c186",
+         "id": "1cbf4be",
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {

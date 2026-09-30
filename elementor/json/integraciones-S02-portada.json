@@ -195,7 +195,7 @@
              "elType": "widget",
              "widgetType": "text-editor",
              "settings": {
-              "editor": "Tu sistema ya sabe hablar con los sistemas de los demás. Tres módulos que se encienden sobre lo que ya operas, y si falta algo, la API está documentada.",
+              "editor": "Tu sistema ya sabe hablar con los sistemas de los demás. Tres conexiones que se encienden sobre lo que ya operas, y lo que falte se escribe a la medida, por hora y con alcance firmado.",
               "text_color": "#a2d7d2",
               "typography_typography": "custom",
               "typography_font_size": {
@@ -327,7 +327,7 @@
               "icon_list": [
                {
                 "_id": "22649ec",
-                "text": "IncSales Proveedores en Línea · +$890 al mes por proveedor conectado · integración desde $12,000",
+                "text": "Consulta del inventario de tu proveedor, solo con el plan Corporativo · +$890 al mes, IVA incluido · un proveedor por empresa · integración de $14,900 a $200,000, se cotiza",
                 "selected_icon": {
                  "value": "fas fa-check",
                  "library": "fa-solid"
@@ -335,7 +335,7 @@
                },
                {
                 "_id": "b3c664b",
-                "text": "IncSales Orquestador desde +$2,490 al mes · IncSales Portal +$1,290 al mes",
+                "text": "IncSales WooSync para WordPress y WooCommerce, desde el plan Crecimiento · +$1,390 al mes, IVA incluido · implementación desde $9,900",
                 "selected_icon": {
                  "value": "fas fa-check",
                  "library": "fa-solid"
@@ -343,7 +343,7 @@
                },
                {
                 "_id": "a2125eb",
-                "text": "El acceso a la API viene en Corporativo, $15,000 al mes",
+                "text": "Lo que falta se escribe a la medida · $890 la hora, IVA incluido · bolsa de 40 horas desde $29,900",
                 "selected_icon": {
                  "value": "fas fa-check",
                  "library": "fa-solid"

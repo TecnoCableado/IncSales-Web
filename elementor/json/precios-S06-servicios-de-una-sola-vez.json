@@ -335,7 +335,7 @@
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
-                "editor": "IncSales Migración: SAE, CONTPAQi, HubSpot, Alegra, Bind o Excel",
+                "editor": "IncSales Migración: SAE, CONTPAQi, Alegra, Bind, SICAR, HubSpot o Excel",
                 "text_color": "#4d535d",
                 "typography_typography": "custom",
                 "typography_font_size": {
@@ -352,7 +352,7 @@
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
-                "editor": "desde $9,900",
+                "editor": "de $5,000 a $50,000",
                 "text_color": "#4d535d",
                 "typography_typography": "custom",
                 "typography_font_size": {
@@ -369,7 +369,7 @@
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
-                "editor": "Sin costo al contratar cualquier plan anual. La de HubSpot, en prueba, cuadró al centavo en $14,759,302.27",
+                "editor": "Se cotiza siempre, y no viene incluida en ningún plan: no hay dos migraciones iguales. Depende de cuánta información hay, de qué software sale y de en qué estado está. Una libreta de Excel con 300 clientes no es un SAE de doce años con inventario, cartera y facturas. Se cotiza después de ver la exportación, no antes",
                 "text_color": "#4d535d",
                 "typography_typography": "custom",
                 "typography_font_size": {
@@ -464,7 +464,7 @@
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
-                "editor": "Tres sesiones, manual propio y acompañamiento el primer mes. Se cobra aparte, también en anual",
+                "editor": "Tres sesiones, manual propio y acompañamiento el primer mes. Incluida en Operación y Corporativo",
                 "text_color": "#4d535d",
                 "typography_typography": "custom",
                 "typography_font_size": {

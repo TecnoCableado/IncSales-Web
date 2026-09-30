@@ -143,7 +143,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>Depende de si necesitas facturar y darle seguimiento al cliente desde el mismo lugar.</p>",
+          "editor": "<p>Los dos traen las seis áreas: lo que cambia es cuánta gente entra y si nosotros lo implementamos.</p>",
           "align": "center"
          },
          "elements": [],
@@ -296,7 +296,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Cotiza Pro · $999 al mes",
+            "title": "Crecimiento · $2,490 al mes",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -314,7 +314,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Cinco usuarios, IVA incluido. Compras completas con requisiciones, órdenes y recepciones, comparativo de proveedores y analítica de ventas.",
+            "editor": "Cinco accesos, IVA incluido. Las seis áreas, con compras completas: proveedores, requisiciones, órdenes y recepciones, y el comparativo que normaliza el IVA antes de comparar, más facturación CFDI 4.0 sin tope publicado. La migración de tus datos se cotiza aparte, de $5,000 a $50,000: no hay dos iguales.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -411,7 +411,7 @@
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
-              "title": "El más elegido",
+              "title": "TecnoCableado",
               "header_size": "div",
               "title_color": "#1e5bd4",
               "typography_typography": "custom",
@@ -439,7 +439,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Operación · $7,500 al mes",
+            "title": "Operación · $3,490 al mes",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -457,7 +457,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Diez usuarios y 100 CFDI al mes. Todo el sistema: CRM, cotizaciones, inventarios, compras, facturación, WhatsApp y subdominio propio.",
+            "editor": "Diez accesos, IVA incluido, con implementación y capacitación incluidas —valen $14,900 sueltas—. Es el plan sobre el que opera TecnoCableado todos los días: CRM, correo, cotizaciones, inventarios, compras, facturación y WhatsApp en la misma base.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -474,7 +474,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "Si apenas vas a ordenar las cotizaciones, Cotiza Uno cuesta $200 al mes con IVA incluido. Usuario adicional en la familia completa, $349 al mes. <a href=\"/precios/\">Ver todos los planes</a> .",
+        "editor": "Todos los planes traen un número de WhatsApp con 1,000 plantillas al mes. Si por ahora solo quieres ordenar el seguimiento y atender por WhatsApp y correo, la entrada es CRM + WhatsApp, desde $890 al mes con IVA incluido, aunque ahí todavía no hay cotizaciones: el primer escalón que cotiza y factura es Esencial, $1,490 al mes con IVA incluido. <a href=\"/precios/\">Ver los seis planes</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

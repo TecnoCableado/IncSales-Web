@@ -327,7 +327,7 @@
               "icon_list": [
                {
                 "_id": "d48fe35",
-                "text": "IncSales WooSync, $1,490 al mes con IVA incluido más implementación desde $9,900",
+                "text": "IncSales WooSync, $1,390 al mes con IVA incluido más implementación desde $9,900",
                 "selected_icon": {
                  "value": "fas fa-check",
                  "library": "fa-solid"
@@ -343,7 +343,7 @@
                },
                {
                 "_id": "3426527",
-                "text": "El sistema arranca en $200 al mes, IVA incluido",
+                "text": "Se vende desde el plan Crecimiento, $2,490 al mes con IVA incluido",
                 "selected_icon": {
                  "value": "fas fa-check",
                  "library": "fa-solid"

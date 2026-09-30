@@ -124,7 +124,7 @@
          "elType": "widget",
          "widgetType": "heading",
          "settings": {
-          "title": "IncSales Cotiza empieza en $200 al mes",
+          "title": "IncSales Cotiza empieza en $1,490 al mes, IVA incluido",
           "header_size": "h2",
           "typography_typography": "custom",
           "typography_font_size": {
@@ -143,7 +143,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>Los tres planes traen folio y PDF; lo que cambia es cuánta operación aguantan.</p>",
+          "editor": "<p>Viene en todos los planes que facturan, desde Esencial; lo que cambia es qué áreas abre el plan y cuánta gente entra.</p>",
           "align": "center"
          },
          "elements": [],
@@ -296,7 +296,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Cotiza Uno · $200 al mes",
+            "title": "Esencial · $1,490 al mes",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -314,7 +314,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Un usuario, IVA incluido. Cotizaciones con folio y PDF, clientes y contactos, catálogo de hasta 500 productos y un almacén.",
+            "editor": "Cinco accesos, IVA incluido. Cotizaciones con folio y PDF, pedidos, remisiones y comisiones, catálogo y almacenes sin tope, y del mismo folio sale la factura CFDI 4.0, sin tope publicado.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -439,7 +439,7 @@
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
-            "title": "Cotiza Pro · $999 al mes",
+            "title": "Crecimiento · $2,490 al mes",
             "header_size": "h3",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -457,7 +457,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Cinco usuarios. Suma el comparativo de proveedores, requisiciones, órdenes y recepciones, y lotes con caducidad y pedimento.",
+            "editor": "Los mismos cinco accesos, IVA incluido. Lo que lo separa de Esencial no son las personas: abre el área de compras —proveedores, requisiciones, órdenes y recepciones— y el comparativo que normaliza el IVA antes de comparar.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -474,7 +474,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "En medio, Cotiza Equipo $499 al mes: tres usuarios, catálogo ilimitado, pedidos y remisiones. Las facturas no vienen en los planes Cotiza: el CFDI 4.0 empieza en Factura Esencial, $2,490 al mes.",
+        "editor": "Arriba están Operación, $3,490 al mes con IVA incluido y diez accesos e implementación incluida, y Corporativo, desde $9,990 al mes con IVA incluido. Las cotizaciones no vienen en CRM + WhatsApp, el plan de $890 al mes con IVA incluido: esa línea atiende y da seguimiento, y factura en otro lado. <a href=\"/precios/\">Ver los seis planes</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

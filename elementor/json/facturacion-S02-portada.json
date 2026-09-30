@@ -327,7 +327,7 @@
               "icon_list": [
                {
                 "_id": "e584d6b",
-                "text": "Incluido desde Factura Esencial $2,490 al mes, IVA incluido",
+                "text": "Incluido desde el plan Esencial, $1,490 al mes, IVA incluido",
                 "selected_icon": {
                  "value": "fas fa-check",
                  "library": "fa-solid"

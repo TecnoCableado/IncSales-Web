@@ -538,7 +538,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "Se entra por donde duele: <strong>Cotiza Uno, $200 al mes, IVA incluido</strong> . <a href=\"/precios/\">Ver los planes</a>",
+        "editor": "Se entra por donde duele, y la hoja se cambia por la cotización con folio, la lista de precios vigente y la existencia que sí se descuenta: <strong>Esencial, $1,490 al mes, IVA incluido</strong> . El catálogo empieza más abajo, en $890 al mes con IVA incluido, con CRM y WhatsApp. <a href=\"/precios/\">Ver los planes</a>",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

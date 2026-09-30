@@ -283,7 +283,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "<p><a href=\"/wordpress/\">IncSales WooSync</a> y la <a href=\"/integraciones/\">consulta de inventarios externos por API</a> se cotizan e implementan; no vienen activos en tu plan.</p>"
+        "editor": "<p><a href=\"/wordpress/\">IncSales WooSync</a> , la <a href=\"/integraciones/\">consulta de inventarios externos por API</a> y la <a href=\"/migracion/\">migración de tus datos</a> se cotizan e implementan: no vienen activos en tu plan y no son casillas que se enciendan. WooSync se contrata desde el plan Crecimiento y la tienda en línea va incluida en Corporativo; la consulta del inventario de tu proveedor solo se vende con Corporativo.</p>"
        },
        "elements": [],
        "isInner": false

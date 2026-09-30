@@ -4,7 +4,7 @@
  "type": "container",
  "content": [
   {
-   "id": "b2f57da",
+   "id": "bb68ebc",
    "elType": "container",
    "settings": {
     "content_width": "full",
@@ -36,7 +36,7 @@
    },
    "elements": [
     {
-     "id": "dafbcb3",
+     "id": "b2f57da",
      "elType": "container",
      "settings": {
       "content_width": "boxed",
@@ -152,7 +152,7 @@
        "isInner": false
       },
       {
-       "id": "29b38db",
+       "id": "dafbcb3",
        "elType": "container",
        "settings": {
         "container_type": "grid",
@@ -180,7 +180,7 @@
        },
        "elements": [
         {
-         "id": "cabf343",
+         "id": "bf75f4b",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -313,8 +313,25 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Varios proveedores por producto, cada uno con su clave, su costo, lo que dice tener y en cuántos días entrega. El buscador te responde antes de que prometas el inversor, y marca en rojo lo que lleva más de una semana.",
+            "editor": "Varios proveedores por producto, cada uno con su clave, su costo y en cuántos días entrega. El buscador te responde antes de que prometas el inversor, y marca en rojo lo que lleva más de una semana. Lo de él no entra a tu kárdex: se enseña aparte, con su fecha.",
             "text_color": "#6a6f78"
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "05a44ad",
+           "elType": "widget",
+           "widgetType": "text-editor",
+           "settings": {
+            "editor": "Esa clave, ese costo y esos días los capturas tú desde el plan Crecimiento. Que la existencia del proveedor se refresque sola cada diez minutos es el complemento de consulta de inventario del proveedor: +$890 al mes, IVA incluido, solo sobre el plan Corporativo, y la integración se cotiza de $14,900 a $200,000 según si el proveedor tiene API documentada o hay que leerle un archivo que cambia de forma cada semana.",
+            "text_color": "#6a6f78",
+            "typography_typography": "custom",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            }
            },
            "elements": [],
            "isInner": false
@@ -323,7 +340,7 @@
          "isInner": false
         },
         {
-         "id": "5e36d89",
+         "id": "29b38db",
          "elType": "container",
          "settings": {
           "background_background": "classic",
@@ -372,7 +389,7 @@
          },
          "elements": [
           {
-           "id": "d899c3c",
+           "id": "f3d94ca",
            "elType": "container",
            "settings": {
             "content_width": "full",
@@ -406,7 +423,7 @@
            },
            "elements": [
             {
-             "id": "6d395da",
+             "id": "c289f7f",
              "elType": "widget",
              "widgetType": "heading",
              "settings": {
@@ -434,7 +451,7 @@
            "isInner": false
           },
           {
-           "id": "889a6fa",
+           "id": "0e077e8",
            "elType": "widget",
            "widgetType": "heading",
            "settings": {
@@ -452,7 +469,7 @@
            "isInner": false
           },
           {
-           "id": "a3fb430",
+           "id": "57c92be",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
@@ -463,7 +480,7 @@
            "isInner": false
           },
           {
-           "id": "57c92be",
+           "id": "f112e30",
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
