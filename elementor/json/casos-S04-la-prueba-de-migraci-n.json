@@ -145,7 +145,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>El 2 y 3 de septiembre de 2026 se cargó la exportación real de Distrimedic en un ambiente de prueba y se comparó número contra número. <a href=\"migracion.html\">Los ocho pasos</a> .</p>",
+          "editor": "<p>El 2 y 3 de septiembre de 2026 se cargó la exportación real de Distrimedic en un ambiente de prueba y se comparó número contra número. <a href=\"/migracion/\">Los ocho pasos</a> .</p>",
           "align": "center"
          },
          "elements": [],

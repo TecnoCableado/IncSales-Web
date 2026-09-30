@@ -319,7 +319,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<a href=\"inventarios.html\">Ver el buscador</a>",
+            "editor": "<a href=\"/inventarios/\">Ver el buscador</a>",
             "text_color": "#6a6f78",
             "typography_typography": "custom",
             "typography_font_size": {

@@ -247,7 +247,7 @@
              "settings": {
               "text": "Ver IncSales Compras",
               "link": {
-               "url": "compras.html",
+               "url": "/compras/",
                "is_external": "",
                "nofollow": ""
               },

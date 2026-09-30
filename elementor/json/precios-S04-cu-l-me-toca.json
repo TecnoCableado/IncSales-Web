@@ -222,7 +222,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "<a href=\"comparativa.html\">Contra lo que ya tienes</a> · <a href=\"por-dentro.html\">Las pantallas por dentro</a> · <a href=\"preguntas.html\">Preguntas frecuentes</a>",
+        "editor": "<a href=\"/comparativa/\">Contra lo que ya tienes</a> · <a href=\"/por-dentro/\">Las pantallas por dentro</a> · <a href=\"/preguntas/\">Preguntas frecuentes</a>",
         "text_color": "#6a6f78",
         "typography_typography": "custom",
         "typography_font_size": {

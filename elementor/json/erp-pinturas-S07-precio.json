@@ -474,7 +474,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "Cotiza Uno arranca en $200 al mes con un almacén y 500 productos, sin listas de precios. Almacén adicional, $299 al mes. Todo en <a href=\"precios.html\">precios y planes</a> .",
+        "editor": "Cotiza Uno arranca en $200 al mes con un almacén y 500 productos, sin listas de precios. Almacén adicional, $299 al mes. Todo en <a href=\"/precios/\">precios y planes</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

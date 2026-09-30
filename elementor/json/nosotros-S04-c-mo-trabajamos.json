@@ -323,7 +323,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "El mismo sistema lleva la distribuidora y la <a href=\"agencia.html\">agencia de marketing</a> que también somos.",
+            "editor": "El mismo sistema lleva la distribuidora y la <a href=\"/agencia/\">agencia de marketing</a> que también somos.",
             "text_color": "#6a6f78"
            },
            "elements": [],

@@ -214,7 +214,7 @@
             "icon_list": [
              {
               "_id": "071f88b",
-              "text": "<a href=\"crm.html\">IncSales CRM</a>",
+              "text": "<a href=\"/crm/\">IncSales CRM</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -222,7 +222,7 @@
              },
              {
               "_id": "693b1b0",
-              "text": "<a href=\"cotizaciones.html\">IncSales Cotiza</a>",
+              "text": "<a href=\"/cotizaciones/\">IncSales Cotiza</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -230,7 +230,7 @@
              },
              {
               "_id": "5c35036",
-              "text": "<a href=\"inventarios.html\">IncSales Inventarios</a>",
+              "text": "<a href=\"/inventarios/\">IncSales Inventarios</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -238,7 +238,7 @@
              },
              {
               "_id": "2911495",
-              "text": "<a href=\"compras.html\">IncSales Compras</a>",
+              "text": "<a href=\"/compras/\">IncSales Compras</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -246,7 +246,7 @@
              },
              {
               "_id": "cb2374f",
-              "text": "<a href=\"facturacion.html\">IncSales Facturación</a>",
+              "text": "<a href=\"/facturacion/\">IncSales Facturación</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -254,7 +254,7 @@
              },
              {
               "_id": "f658e38",
-              "text": "<a href=\"whatsapp.html\">IncSales WhatsApp</a>",
+              "text": "<a href=\"/whatsapp/\">IncSales WhatsApp</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -262,7 +262,7 @@
              },
              {
               "_id": "b1caf8c",
-              "text": "<a href=\"forms.html\">IncSales Forms</a>",
+              "text": "<a href=\"/forms/\">IncSales Forms</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -270,7 +270,7 @@
              },
              {
               "_id": "b091bb7",
-              "text": "<a href=\"correo.html\">IncSales Correo</a>",
+              "text": "<a href=\"/correo/\">IncSales Correo</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -343,7 +343,7 @@
             "icon_list": [
              {
               "_id": "03918ea",
-              "text": "<a href=\"wordpress.html\">WordPress y WooCommerce</a>",
+              "text": "<a href=\"/wordpress/\">WordPress y WooCommerce</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -351,7 +351,7 @@
              },
              {
               "_id": "3db7550",
-              "text": "<a href=\"integraciones.html\">Integraciones y API</a>",
+              "text": "<a href=\"/integraciones/\">Integraciones y API</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -359,7 +359,7 @@
              },
              {
               "_id": "6649026",
-              "text": "<a href=\"migracion.html\">IncSales Migración</a>",
+              "text": "<a href=\"/migracion/\">IncSales Migración</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -367,7 +367,7 @@
              },
              {
               "_id": "851f9f8",
-              "text": "<a href=\"agencia.html\">Agencia IncSales</a>",
+              "text": "<a href=\"/agencia/\">Agencia IncSales</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -375,7 +375,7 @@
              },
              {
               "_id": "d06464e",
-              "text": "<a href=\"precios.html\">Precios y planes</a>",
+              "text": "<a href=\"/precios/\">Precios y planes</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -448,7 +448,7 @@
             "icon_list": [
              {
               "_id": "7e31ac8",
-              "text": "<a href=\"por-dentro.html\">Las pantallas por dentro</a>",
+              "text": "<a href=\"/por-dentro/\">Las pantallas por dentro</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -456,7 +456,7 @@
              },
              {
               "_id": "cdf9e3b",
-              "text": "<a href=\"casos.html\">Clientes</a>",
+              "text": "<a href=\"/casos/\">Clientes</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -464,7 +464,7 @@
              },
              {
               "_id": "253ebe2",
-              "text": "<a href=\"comparativa.html\">Contra lo que ya tienes</a>",
+              "text": "<a href=\"/comparativa/\">Contra lo que ya tienes</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -472,7 +472,7 @@
              },
              {
               "_id": "a039751",
-              "text": "<a href=\"preguntas.html\">Preguntas frecuentes</a>",
+              "text": "<a href=\"/preguntas/\">Preguntas frecuentes</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -480,7 +480,7 @@
              },
              {
               "_id": "5e129eb",
-              "text": "<a href=\"nosotros.html\">Quiénes somos</a>",
+              "text": "<a href=\"/nosotros/\">Quiénes somos</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -488,7 +488,7 @@
              },
              {
               "_id": "65ce87f",
-              "text": "<a href=\"contacto.html\">Agenda una demo</a>",
+              "text": "<a href=\"/contacto/\">Agenda una demo</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -561,7 +561,7 @@
             "icon_list": [
              {
               "_id": "65e93de",
-              "text": "<a href=\"erp-material-electrico.html\">Material eléctrico</a>",
+              "text": "<a href=\"/erp-material-electrico/\">Material eléctrico</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -569,7 +569,7 @@
              },
              {
               "_id": "3967a6e",
-              "text": "<a href=\"erp-insumos-medicos.html\">Insumos médicos</a>",
+              "text": "<a href=\"/erp-insumos-medicos/\">Insumos médicos</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -577,7 +577,7 @@
              },
              {
               "_id": "6ae18d9",
-              "text": "<a href=\"erp-pinturas.html\">Pinturas y recubrimientos</a>",
+              "text": "<a href=\"/erp-pinturas/\">Pinturas y recubrimientos</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -585,7 +585,7 @@
              },
              {
               "_id": "09289e5",
-              "text": "<a href=\"erp-ferreterias.html\">Ferretería y tlapalería</a>",
+              "text": "<a href=\"/erp-ferreterias/\">Ferretería y tlapalería</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -593,7 +593,7 @@
              },
              {
               "_id": "d65cfc0",
-              "text": "<a href=\"erp-equipo-industrial.html\">Equipo industrial</a>",
+              "text": "<a href=\"/erp-equipo-industrial/\">Equipo industrial</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -601,7 +601,7 @@
              },
              {
               "_id": "a7653d9",
-              "text": "<a href=\"erp-ventanas-aluminio.html\">Ventanas de aluminio</a>",
+              "text": "<a href=\"/erp-ventanas-aluminio/\">Ventanas de aluminio</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -609,7 +609,7 @@
              },
              {
               "_id": "8805494",
-              "text": "<a href=\"erp-paneles-solares.html\">Paneles solares</a>",
+              "text": "<a href=\"/erp-paneles-solares/\">Paneles solares</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -617,7 +617,7 @@
              },
              {
               "_id": "2f9e18e",
-              "text": "<a href=\"erp-tienda-en-linea.html\">Tienda en línea</a>",
+              "text": "<a href=\"/erp-tienda-en-linea/\">Tienda en línea</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -625,7 +625,7 @@
              },
              {
               "_id": "671267e",
-              "text": "<a href=\"industrias.html\">Los ocho giros</a>",
+              "text": "<a href=\"/industrias/\">Los ocho giros</a>",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"
@@ -690,7 +690,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p><a href=\"terminos.html\">Términos del servicio</a> · <a href=\"privacidad.html\">Aviso de privacidad</a></p>",
+          "editor": "<p><a href=\"/terminos/\">Términos del servicio</a> · <a href=\"/privacidad/\">Aviso de privacidad</a></p>",
           "text_color": "#b9cbe8"
          },
          "elements": [],

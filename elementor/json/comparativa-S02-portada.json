@@ -77,7 +77,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "<ol><li><a href=\"index.html\">Inicio</a></li><li>Antes de decidir</li><li>Contra lo que ya tienes</li></ol>",
+        "editor": "<ol><li><a href=\"/\">Inicio</a></li><li>Antes de decidir</li><li>Contra lo que ya tienes</li></ol>",
         "text_color": "#b9cbe8"
        },
        "elements": [],
@@ -243,7 +243,7 @@
                "settings": {
                 "text": "Agenda una demo",
                 "link": {
-                 "url": "contacto.html",
+                 "url": "/contacto/",
                  "is_external": "",
                  "nofollow": ""
                 },

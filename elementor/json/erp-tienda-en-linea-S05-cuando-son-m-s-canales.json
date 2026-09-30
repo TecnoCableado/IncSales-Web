@@ -338,7 +338,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "Lo que entra de la tienda llega con su persona: <a href=\"crm.html\">IncSales CRM</a> guarda al cliente, el negocio y la bitácora, y se suma a cualquier plan por $499 al mes.",
+        "editor": "Lo que entra de la tienda llega con su persona: <a href=\"/crm/\">IncSales CRM</a> guarda al cliente, el negocio y la bitácora, y se suma a cualquier plan por $499 al mes.",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

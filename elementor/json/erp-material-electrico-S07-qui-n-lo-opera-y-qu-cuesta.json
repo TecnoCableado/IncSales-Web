@@ -474,7 +474,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "El comparativo de proveedores y las compras completas entran desde Cotiza Pro, $999 al mes. Están <a href=\"precios.html\">los nueve planes</a> .",
+        "editor": "El comparativo de proveedores y las compras completas entran desde Cotiza Pro, $999 al mes. Están <a href=\"/precios/\">los nueve planes</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

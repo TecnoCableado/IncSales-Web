@@ -141,7 +141,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>Folio, cliente, vigencia, importe y estado. Los seis documentos del sistema se capturan con esta misma forma. <a href=\"cotizaciones.html\">Ver IncSales Cotiza</a></p>"
+          "editor": "<p>Folio, cliente, vigencia, importe y estado. Los seis documentos del sistema se capturan con esta misma forma. <a href=\"/cotizaciones/\">Ver IncSales Cotiza</a></p>"
          },
          "elements": [],
          "isInner": false

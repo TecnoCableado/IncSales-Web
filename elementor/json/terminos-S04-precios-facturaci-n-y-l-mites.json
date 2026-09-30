@@ -113,7 +113,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "<p>El número de la <a href=\"precios.html\">página de precios</a> es el que sale de tu cuenta: no se le suma un 16% después ni depende del tipo de cambio.</p>"
+        "editor": "<p>El número de la <a href=\"/precios/\">página de precios</a> es el que sale de tu cuenta: no se le suma un 16% después ni depende del tipo de cambio.</p>"
        },
        "elements": [],
        "isInner": false
@@ -215,7 +215,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "<p>Usuarios, CFDI al mes, almacenes y módulos viven en la <a href=\"precios.html\">página de precios</a> . Cada límite se amplía con complementos mensuales —usuario, 100 CFDI, almacén, empresa o RFC con datos aislados, WhatsApp— que se quitan en la siguiente renovación.</p>"
+        "editor": "<p>Usuarios, CFDI al mes, almacenes y módulos viven en la <a href=\"/precios/\">página de precios</a> . Cada límite se amplía con complementos mensuales —usuario, 100 CFDI, almacén, empresa o RFC con datos aislados, WhatsApp— que se quitan en la siguiente renovación.</p>"
        },
        "elements": [],
        "isInner": false

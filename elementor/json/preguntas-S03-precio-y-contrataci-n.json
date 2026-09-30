@@ -203,7 +203,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Nueve planes, desde $200 al mes con IVA incluido; el más elegido es Operación, $7,500 al mes con diez usuarios, 100 CFDI y el sistema entero. Si ya traes un plan de cotizaciones o de facturación, el CRM se agrega por $499 al mes. <a href=\"precios.html\">Ver los planes</a> ."
+            "editor": "Nueve planes, desde $200 al mes con IVA incluido; el más elegido es Operación, $7,500 al mes con diez usuarios, 100 CFDI y el sistema entero. Si ya traes un plan de cotizaciones o de facturación, el CRM se agrega por $499 al mes. <a href=\"/precios/\">Ver los planes</a> ."
            },
            "elements": [],
            "isInner": false
@@ -259,7 +259,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "No. La implementación y capacitación cuesta desde $14,900 e incluye tres sesiones, manual propio y acompañamiento el primer mes. Lo que va sin costo al contratar cualquier plan anual es la <a href=\"migracion.html\">migración de datos</a> ."
+            "editor": "No. La implementación y capacitación cuesta desde $14,900 e incluye tres sesiones, manual propio y acompañamiento el primer mes. Lo que va sin costo al contratar cualquier plan anual es la <a href=\"/migracion/\">migración de datos</a> ."
            },
            "elements": [],
            "isInner": false

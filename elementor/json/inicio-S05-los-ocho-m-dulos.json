@@ -208,7 +208,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<a href=\"crm.html\">IncSales CRM Interesados, tablero por etapas y bitácora por negocio. Las comisiones se fijan sobre lo cobrado. Desde CRM Esencial $499 al mes, IVA incluido</a>",
+            "editor": "<a href=\"/crm/\">IncSales CRM Interesados, tablero por etapas y bitácora por negocio. Las comisiones se fijan sobre lo cobrado. Desde CRM Esencial $499 al mes, IVA incluido</a>",
             "text_color": "#4d535d"
            },
            "elements": [],
@@ -219,7 +219,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<a href=\"forms.html\">IncSales Forms Catorce tipos de campo y tres formas de publicarlo. El envío crea al interesado en tu sistema. Incluido desde CRM Esencial $499 al mes, IVA incluido</a>",
+            "editor": "<a href=\"/forms/\">IncSales Forms Catorce tipos de campo y tres formas de publicarlo. El envío crea al interesado en tu sistema. Incluido desde CRM Esencial $499 al mes, IVA incluido</a>",
             "text_color": "#4d535d"
            },
            "elements": [],
@@ -230,7 +230,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<a href=\"correo.html\">IncSales Correo Listas y campañas desde tu propio dominio. El alta se hace desde el sistema, sin entrar a la consola de AWS. Campañas desde CRM Crecimiento $1,299 al mes, IVA incluido</a>",
+            "editor": "<a href=\"/correo/\">IncSales Correo Listas y campañas desde tu propio dominio. El alta se hace desde el sistema, sin entrar a la consola de AWS. Campañas desde CRM Crecimiento $1,299 al mes, IVA incluido</a>",
             "text_color": "#4d535d"
            },
            "elements": [],
@@ -241,7 +241,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<a href=\"whatsapp.html\">IncSales WhatsApp Tu propio número en una bandeja de cuatro columnas, donde contestar es hacerse cargo. +$699 al mes · alta técnica $4,900 una sola vez</a>",
+            "editor": "<a href=\"/whatsapp/\">IncSales WhatsApp Tu propio número en una bandeja de cuatro columnas, donde contestar es hacerse cargo. +$699 al mes · alta técnica $4,900 una sola vez</a>",
             "text_color": "#4d535d"
            },
            "elements": [],
@@ -326,7 +326,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<a href=\"inventarios.html\">IncSales Inventarios Variantes, kárdex, multialmacén y lotes con caducidad. El buscador dice «Tienes 48 · Proveedor 40 en 5 d» antes de que prometas nada. Desde Cotiza Uno $200 al mes; multialmacén y lotes desde Cotiza Pro $999, IVA incluido</a>",
+            "editor": "<a href=\"/inventarios/\">IncSales Inventarios Variantes, kárdex, multialmacén y lotes con caducidad. El buscador dice «Tienes 48 · Proveedor 40 en 5 d» antes de que prometas nada. Desde Cotiza Uno $200 al mes; multialmacén y lotes desde Cotiza Pro $999, IVA incluido</a>",
             "text_color": "#4d535d"
            },
            "elements": [],
@@ -337,7 +337,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<a href=\"compras.html\">IncSales Compras Requisiciones agrupadas por proveedor, porque así se compra, y la orden sale con un botón ya con su costo. Incluido desde Cotiza Pro $999 al mes, IVA incluido</a>",
+            "editor": "<a href=\"/compras/\">IncSales Compras Requisiciones agrupadas por proveedor, porque así se compra, y la orden sale con un botón ya con su costo. Incluido desde Cotiza Pro $999 al mes, IVA incluido</a>",
             "text_color": "#4d535d"
            },
            "elements": [],
@@ -405,7 +405,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<a href=\"cotizaciones.html\">IncSales Cotiza Folio propio y PDF con tu logo. El comparativo de proveedores normaliza el IVA antes de comparar. Incluido desde Cotiza Uno $200 al mes, IVA incluido</a>",
+            "editor": "<a href=\"/cotizaciones/\">IncSales Cotiza Folio propio y PDF con tu logo. El comparativo de proveedores normaliza el IVA antes de comparar. Incluido desde Cotiza Uno $200 al mes, IVA incluido</a>",
             "text_color": "#4d535d"
            },
            "elements": [],
@@ -416,7 +416,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<a href=\"facturacion.html\">IncSales Facturación CFDI 4.0 timbrado por un PAC desde el mismo pedido que capturó el vendedor, y el ZIP del año en un clic. Incluido desde Factura Esencial $2,490 al mes, IVA incluido</a>",
+            "editor": "<a href=\"/facturacion/\">IncSales Facturación CFDI 4.0 timbrado por un PAC desde el mismo pedido que capturó el vendedor, y el ZIP del año en un clic. Incluido desde Factura Esencial $2,490 al mes, IVA incluido</a>",
             "text_color": "#4d535d"
            },
            "elements": [],

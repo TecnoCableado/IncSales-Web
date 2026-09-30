@@ -122,7 +122,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>La armamos contigo en la llamada. Los planes arrancan en <a href=\"precios.html\">$200 al mes, IVA incluido</a> .</p>",
+          "editor": "<p>La armamos contigo en la llamada. Los planes arrancan en <a href=\"/precios/\">$200 al mes, IVA incluido</a> .</p>",
           "align": "center"
          },
          "elements": [],

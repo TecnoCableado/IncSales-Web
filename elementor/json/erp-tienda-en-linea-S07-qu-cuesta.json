@@ -474,7 +474,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "Almacén adicional, $299 al mes. <a href=\"precios.html\">Los planes completos</a> .",
+        "editor": "Almacén adicional, $299 al mes. <a href=\"/precios/\">Los planes completos</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

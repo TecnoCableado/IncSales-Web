@@ -223,7 +223,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "<p>Tú eres el responsable de su tratamiento y nosotros los procesamos por cuenta tuya; el detalle está en el <a href=\"privacidad.html\">aviso de privacidad</a> .</p>"
+        "editor": "<p>Tú eres el responsable de su tratamiento y nosotros los procesamos por cuenta tuya; el detalle está en el <a href=\"/privacidad/\">aviso de privacidad</a> .</p>"
        },
        "elements": [],
        "isInner": false

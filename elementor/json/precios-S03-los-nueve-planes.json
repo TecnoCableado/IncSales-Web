@@ -638,7 +638,7 @@
                "settings": {
                 "text": "Empieza aquí",
                 "link": {
-                 "url": "contacto.html",
+                 "url": "/contacto/",
                  "is_external": "",
                  "nofollow": ""
                 },
@@ -1101,7 +1101,7 @@
                "settings": {
                 "text": "Empieza aquí",
                 "link": {
-                 "url": "contacto.html",
+                 "url": "/contacto/",
                  "is_external": "",
                  "nofollow": ""
                 },
@@ -1564,7 +1564,7 @@
                "settings": {
                 "text": "Empieza aquí",
                 "link": {
-                 "url": "contacto.html",
+                 "url": "/contacto/",
                  "is_external": "",
                  "nofollow": ""
                 },
@@ -2012,7 +2012,7 @@
                "settings": {
                 "text": "Empieza aquí",
                 "link": {
-                 "url": "contacto.html",
+                 "url": "/contacto/",
                  "is_external": "",
                  "nofollow": ""
                 },
@@ -2413,7 +2413,7 @@
                "settings": {
                 "text": "Empieza aquí",
                 "link": {
-                 "url": "contacto.html",
+                 "url": "/contacto/",
                  "is_external": "",
                  "nofollow": ""
                 },
@@ -2845,7 +2845,7 @@
                "settings": {
                 "text": "Empieza aquí",
                 "link": {
-                 "url": "contacto.html",
+                 "url": "/contacto/",
                  "is_external": "",
                  "nofollow": ""
                 },
@@ -3281,7 +3281,7 @@
                "settings": {
                 "text": "Agenda tu demo",
                 "link": {
-                 "url": "contacto.html",
+                 "url": "/contacto/",
                  "is_external": "",
                  "nofollow": ""
                 },
@@ -3636,7 +3636,7 @@
                "settings": {
                 "text": "Pide la propuesta",
                 "link": {
-                 "url": "contacto.html",
+                 "url": "/contacto/",
                  "is_external": "",
                  "nofollow": ""
                 },
@@ -3973,7 +3973,7 @@
                "settings": {
                 "text": "Pide la propuesta",
                 "link": {
-                 "url": "contacto.html",
+                 "url": "/contacto/",
                  "is_external": "",
                  "nofollow": ""
                 },

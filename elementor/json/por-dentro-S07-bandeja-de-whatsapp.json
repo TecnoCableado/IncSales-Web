@@ -139,7 +139,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>El mensaje entra por teléfono, se cruza con el contacto y cae solo en la bitácora del negocio abierto. Contestar es hacerse cargo. <a href=\"whatsapp.html\">Ver IncSales WhatsApp</a></p>"
+          "editor": "<p>El mensaje entra por teléfono, se cruza con el contacto y cae solo en la bitácora del negocio abierto. Contestar es hacerse cargo. <a href=\"/whatsapp/\">Ver IncSales WhatsApp</a></p>"
          },
          "elements": [],
          "isInner": false

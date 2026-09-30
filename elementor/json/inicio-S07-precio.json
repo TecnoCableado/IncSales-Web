@@ -474,7 +474,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "El plan anual cuesta 15% menos pagando el año por adelantado, y ahí la migración de tus datos no se cobra. <a href=\"precios.html\">Ver todos los planes</a>",
+        "editor": "El plan anual cuesta 15% menos pagando el año por adelantado, y ahí la migración de tus datos no se cobra. <a href=\"/precios/\">Ver todos los planes</a>",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

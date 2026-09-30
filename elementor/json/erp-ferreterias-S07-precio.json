@@ -474,7 +474,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "La facturación CFDI 4.0 entra desde Factura Esencial, $2,490 al mes; almacén adicional, $299 al mes. <a href=\"precios.html\">Ver los nueve planes</a> .",
+        "editor": "La facturación CFDI 4.0 entra desde Factura Esencial, $2,490 al mes; almacén adicional, $299 al mes. <a href=\"/precios/\">Ver los nueve planes</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

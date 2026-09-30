@@ -153,7 +153,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<p>El tablero de <a href=\"crm.html\">IncSales CRM</a> pone cada proyecto en su etapa con el valor en juego, y la bitácora guarda lo que se habló y cuándo.</p>"
+            "editor": "<p>El tablero de <a href=\"/crm/\">IncSales CRM</a> pone cada proyecto en su etapa con el valor en juego, y la bitácora guarda lo que se habló y cuándo.</p>"
            },
            "elements": [],
            "isInner": false
@@ -174,7 +174,7 @@
              },
              {
               "_id": "0e65774",
-              "text": "<strong>Varias cotizaciones de proveedor por proyecto.</strong> Con el desempeño de cada proveedor, su costo y en cuántos días entrega, dentro de <a href=\"inventarios.html\">IncSales Inventarios</a> .",
+              "text": "<strong>Varias cotizaciones de proveedor por proyecto.</strong> Con el desempeño de cada proveedor, su costo y en cuántos días entrega, dentro de <a href=\"/inventarios/\">IncSales Inventarios</a> .",
               "selected_icon": {
                "value": "fas fa-arrow-right",
                "library": "fa-solid"

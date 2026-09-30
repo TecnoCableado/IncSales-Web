@@ -440,7 +440,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "La lista completa vive en <a href=\"preguntas.html\">preguntas frecuentes</a> .",
+        "editor": "La lista completa vive en <a href=\"/preguntas/\">preguntas frecuentes</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

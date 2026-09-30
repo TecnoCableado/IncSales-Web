@@ -209,7 +209,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<p><a href=\"por-dentro.html\">Ver las pantallas</a></p>"
+            "editor": "<p><a href=\"/por-dentro/\">Ver las pantallas</a></p>"
            },
            "elements": [],
            "isInner": false
@@ -300,7 +300,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<a href=\"preguntas.html\">Lo que todavía no hace, completo</a> .",
+            "editor": "<a href=\"/preguntas/\">Lo que todavía no hace, completo</a> .",
             "text_color": "#6a6f78",
             "typography_typography": "custom",
             "typography_font_size": {

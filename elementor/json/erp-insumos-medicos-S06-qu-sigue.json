@@ -519,7 +519,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "El seguimiento de cada clínica vive en <a href=\"crm.html\">IncSales CRM</a> , $499 al mes, e <a href=\"wordpress.html\">IncSales WooSync</a> sincroniza existencias con WooCommerce por $1,490 al mes más implementación.",
+        "editor": "El seguimiento de cada clínica vive en <a href=\"/crm/\">IncSales CRM</a> , $499 al mes, e <a href=\"/wordpress/\">IncSales WooSync</a> sincroniza existencias con WooCommerce por $1,490 al mes más implementación.",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

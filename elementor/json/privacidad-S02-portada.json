@@ -77,7 +77,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "<ol><li><a href=\"index.html\">Inicio</a></li><li>Aviso de privacidad</li></ol>",
+        "editor": "<ol><li><a href=\"/\">Inicio</a></li><li>Aviso de privacidad</li></ol>",
         "text_color": "#b9cbe8"
        },
        "elements": [],

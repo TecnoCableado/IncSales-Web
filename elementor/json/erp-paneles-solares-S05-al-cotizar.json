@@ -142,7 +142,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>Al pasarlo a la cotización del cliente queda fijo, con el enlace para rastrear de dónde salió cada renglón. Eso lo hace <a href=\"cotizaciones.html\">IncSales Cotiza</a> .</p>",
+          "editor": "<p>Al pasarlo a la cotización del cliente queda fijo, con el enlace para rastrear de dónde salió cada renglón. Eso lo hace <a href=\"/cotizaciones/\">IncSales Cotiza</a> .</p>",
           "align": "center"
          },
          "elements": [],
@@ -456,7 +456,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Las cotizaciones de tus proveedores se guardan en el proyecto y se comparan producto por producto, en la misma base. Lo que no es comparable se marca así, en <a href=\"inventarios.html\">IncSales Inventarios</a> .",
+            "editor": "Las cotizaciones de tus proveedores se guardan en el proyecto y se comparan producto por producto, en la misma base. Lo que no es comparable se marca así, en <a href=\"/inventarios/\">IncSales Inventarios</a> .",
             "text_color": "#6a6f78"
            },
            "elements": [],

@@ -256,7 +256,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Con la lista de ese cliente y su <a href=\"cotizaciones.html\">folio</a> .",
+            "editor": "Con la lista de ese cliente y su <a href=\"/cotizaciones/\">folio</a> .",
             "text_color": "#b9cbe8"
            },
            "elements": [],
@@ -338,7 +338,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Lo que falta levanta la <a href=\"compras.html\">requisición</a> , que se cierra al recibir, no al pedir.",
+            "editor": "Lo que falta levanta la <a href=\"/compras/\">requisición</a> , que se cierra al recibir, no al pedir.",
             "text_color": "#b9cbe8"
            },
            "elements": [],
@@ -502,7 +502,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<a href=\"facturacion.html\">CFDI 4.0</a> timbrado desde el mismo pedido, sin recapturar nada.",
+            "editor": "<a href=\"/facturacion/\">CFDI 4.0</a> timbrado desde el mismo pedido, sin recapturar nada.",
             "text_color": "#b9cbe8"
            },
            "elements": [],

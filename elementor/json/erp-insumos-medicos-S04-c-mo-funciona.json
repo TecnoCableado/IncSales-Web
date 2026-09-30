@@ -144,7 +144,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>En el sistema para distribuidores de material de curación, el lote es el que manda: <a href=\"inventarios.html\">IncSales Inventarios</a> lleva su caducidad, su pedimento y su existencia por almacén.</p>",
+          "editor": "<p>En el sistema para distribuidores de material de curación, el lote es el que manda: <a href=\"/inventarios/\">IncSales Inventarios</a> lleva su caducidad, su pedimento y su existencia por almacén.</p>",
           "align": "center"
          },
          "elements": [],

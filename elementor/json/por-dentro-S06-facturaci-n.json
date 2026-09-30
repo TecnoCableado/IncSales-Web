@@ -141,7 +141,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>Sesenta de los cien CFDI del plan Operación, a la vista. Y cuando el PAC rechaza, la clave del SAT viene en el mismo renglón. <a href=\"facturacion.html\">Ver IncSales Facturación</a></p>"
+          "editor": "<p>Sesenta de los cien CFDI del plan Operación, a la vista. Y cuando el PAC rechaza, la clave del SAT viene en el mismo renglón. <a href=\"/facturacion/\">Ver IncSales Facturación</a></p>"
          },
          "elements": [],
          "isInner": false

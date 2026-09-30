@@ -354,7 +354,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<a href=\"wordpress.html\">Cómo se conecta tu sitio</a>",
+            "editor": "<a href=\"/wordpress/\">Cómo se conecta tu sitio</a>",
             "text_color": "#6a6f78",
             "typography_typography": "custom",
             "typography_font_size": {

@@ -474,7 +474,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "Si apenas vas a ordenar propuestas, Cotiza Uno cuesta $200 al mes, IVA incluido. El seguimiento se agrega a cualquier plan por $499 al mes. <a href=\"precios.html\">Ver los planes</a> .",
+        "editor": "Si apenas vas a ordenar propuestas, Cotiza Uno cuesta $200 al mes, IVA incluido. El seguimiento se agrega a cualquier plan por $499 al mes. <a href=\"/precios/\">Ver los planes</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

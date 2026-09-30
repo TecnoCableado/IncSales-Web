@@ -432,7 +432,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "¿No está tu giro? Lo que decide es el proceso, no el nombre: <a href=\"comparativa.html\">compáralo contra lo que ya tienes</a> o mira <a href=\"casos.html\">quién lo usa hoy</a> .",
+        "editor": "¿No está tu giro? Lo que decide es el proceso, no el nombre: <a href=\"/comparativa/\">compáralo contra lo que ya tienes</a> o mira <a href=\"/casos/\">quién lo usa hoy</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

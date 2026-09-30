@@ -292,7 +292,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "En <a href=\"inventarios.html\">IncSales Inventarios</a> la existencia y el precio cuelgan de la variante, no del producto.",
+            "editor": "En <a href=\"/inventarios/\">IncSales Inventarios</a> la existencia y el precio cuelgan de la variante, no del producto.",
             "text_color": "#6a6f78",
             "typography_typography": "custom",
             "typography_font_size": {

@@ -389,7 +389,7 @@
                "elType": "widget",
                "widgetType": "text-editor",
                "settings": {
-                "editor": "<a href=\"preguntas.html\">preguntas frecuentes</a>",
+                "editor": "<a href=\"/preguntas/\">preguntas frecuentes</a>",
                 "text_color": "#b9cbe8"
                },
                "elements": [],

@@ -256,7 +256,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Con la lista de precios de ese cliente ya aplicada. <a href=\"cotizaciones.html\">El módulo</a> .",
+            "editor": "Con la lista de precios de ese cliente ya aplicada. <a href=\"/cotizaciones/\">El módulo</a> .",
             "text_color": "#b9cbe8"
            },
            "elements": [],
@@ -338,7 +338,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Requisición agrupada, orden con un botón y <a href=\"compras.html\">recepción que la cierra</a> .",
+            "editor": "Requisición agrupada, orden con un botón y <a href=\"/compras/\">recepción que la cierra</a> .",
             "text_color": "#b9cbe8"
            },
            "elements": [],
@@ -420,7 +420,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "CFDI 4.0 timbrado desde el mismo pedido, <a href=\"facturacion.html\">sin recapturar</a> .",
+            "editor": "CFDI 4.0 timbrado desde el mismo pedido, <a href=\"/facturacion/\">sin recapturar</a> .",
             "text_color": "#b9cbe8"
            },
            "elements": [],
@@ -502,7 +502,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "El obrero de hoy es el contratista de todo el año, <a href=\"crm.html\">con su bitácora</a> .",
+            "editor": "El obrero de hoy es el contratista de todo el año, <a href=\"/crm/\">con su bitácora</a> .",
             "text_color": "#b9cbe8"
            },
            "elements": [],
@@ -519,7 +519,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "Si también vendes en línea, IncSales WooSync, el conector con WooCommerce, sincroniza productos, precios y existencias desde $1,490 al mes más implementación: <a href=\"wordpress.html\">cómo se conecta</a> .",
+        "editor": "Si también vendes en línea, IncSales WooSync, el conector con WooCommerce, sincroniza productos, precios y existencias desde $1,490 al mes más implementación: <a href=\"/wordpress/\">cómo se conecta</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

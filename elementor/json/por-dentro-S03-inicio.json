@@ -139,7 +139,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>Las cuatro columnas son las etapas reales del negocio, con su valor en juego. Se renombran desde configuración y el mapa sigue funcionando. <a href=\"crm.html\">Ver IncSales CRM</a></p>"
+          "editor": "<p>Las cuatro columnas son las etapas reales del negocio, con su valor en juego. Se renombran desde configuración y el mapa sigue funcionando. <a href=\"/crm/\">Ver IncSales CRM</a></p>"
          },
          "elements": [],
          "isInner": false

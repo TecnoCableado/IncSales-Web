@@ -616,7 +616,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "Cada producto lleva tres claves —SKU, código de barras e ID alterno—, únicas y comprobadas entre sí: el candado no es contra el código repetido, es contra el producto duplicado. <a href=\"inventarios.html\">Así funciona el catálogo</a> .",
+        "editor": "Cada producto lleva tres claves —SKU, código de barras e ID alterno—, únicas y comprobadas entre sí: el candado no es contra el código repetido, es contra el producto duplicado. <a href=\"/inventarios/\">Así funciona el catálogo</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

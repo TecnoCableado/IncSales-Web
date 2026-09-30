@@ -338,7 +338,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Lo que no hay levanta la requisición en <a href=\"compras.html\">IncSales Compras</a> , agrupada por proveedor.",
+            "editor": "Lo que no hay levanta la requisición en <a href=\"/compras/\">IncSales Compras</a> , agrupada por proveedor.",
             "text_color": "#b9cbe8"
            },
            "elements": [],
@@ -502,7 +502,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "CFDI 4.0 timbrado desde el mismo pedido con <a href=\"facturacion.html\">IncSales Facturación</a> .",
+            "editor": "CFDI 4.0 timbrado desde el mismo pedido con <a href=\"/facturacion/\">IncSales Facturación</a> .",
             "text_color": "#b9cbe8"
            },
            "elements": [],

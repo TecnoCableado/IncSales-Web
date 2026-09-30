@@ -59,6 +59,17 @@ def caja(t, r, b, l, link=False):
     return {"unit": "px", "top": str(t), "right": str(r), "bottom": str(b),
             "left": str(l), "isLinked": link}
 
+def url_wp(h):
+    """archivo.html -> /archivo/  ·  index.html -> /  ·  ancla -> se conserva.
+    En la maqueta los enlaces son archivos sueltos; en WordPress son rutas.
+    Sin esta conversion los 31 paginas se importan con todos los enlaces rotos."""
+    if not h or h.startswith(("http", "mailto:", "tel:", "#")):
+        return h
+    base, _, frag = h.partition("#")
+    if base.endswith(".html"):
+        base = "/" if base == "index.html" else "/" + base[:-5] + "/"
+    return base + ("#" + frag if frag else "")
+
 def marcar_centro(elementos):
     """En Elementor la alineación no vive en el contenedor sino en cada widget."""
     for e in elementos:
@@ -271,7 +282,7 @@ def html_de(n):
         elif h["tag"] in ("em", "small"):
             partes.append(f"<em>{html_de(h)}</em>")
         elif h["tag"] == "a":
-            partes.append(f'<a href="{h["href"]}">{html_de(h)}</a>')
+            partes.append(f'<a href="{url_wp(h["href"])}">{html_de(h)}</a>')
         else:
             partes.append(html_de(h))
     return re.sub(r"\s+", " ", " ".join(p for p in partes if p)).strip()
@@ -361,7 +372,7 @@ def traducir(n, oscura=False, fam_claro=None):
             if resto:
                 piezas.append(w_texto(resto, cuerpo or COL["cuerpo"]))
             for b in botones:
-                w = w_boton(texto_de(b), b["href"], b["clase"])
+                w = w_boton(texto_de(b), url_wp(b["href"]), b["clase"])
                 if "centro" in c.split():
                     w["settings"]["align"] = "center"
                 piezas.append(w)
@@ -399,14 +410,14 @@ def traducir(n, oscura=False, fam_claro=None):
 
     if t == "a":
         if "btn" in c:
-            return [w_boton(texto_de(n), n["href"], c)]
+            return [w_boton(texto_de(n), url_wp(n["href"]), c)]
         imgs = [h for h in n["hijos"] if h["tag"] == "img"]
         if imgs and not texto_de(n).strip():
             w = w_imagen(imgs[0]["src"])
             w["settings"]["link_to"] = "custom"
-            w["settings"]["link"] = {"url": n["href"], "is_external": "", "nofollow": ""}
+            w["settings"]["link"] = {"url": url_wp(n["href"]), "is_external": "", "nofollow": ""}
             return [w]
-        return [w_texto(f'<a href="{n["href"]}">{texto_de(n)}</a>', cuerpo or COL["cuerpo"])]
+        return [w_texto(f'<a href="{url_wp(n["href"])}">{texto_de(n)}</a>', cuerpo or COL["cuerpo"])]
 
     if t == "strong":
         return [w_texto(f"<strong>{html_de(n)}</strong>", tinta or COL["titulo"])]

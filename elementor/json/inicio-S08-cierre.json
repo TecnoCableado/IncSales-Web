@@ -137,7 +137,7 @@
          "settings": {
           "text": "Agenda una demo",
           "link": {
-           "url": "contacto.html",
+           "url": "/contacto/",
            "is_external": "",
            "nofollow": ""
           },

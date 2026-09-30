@@ -184,7 +184,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<a href=\"erp-material-electrico.html\">Material eléctrico y cableado Te piden precio de cuarenta renglones con material de tres proveedores, y cada uno pone el IVA a su manera. IncSales Cotiza normaliza antes de comparar · Así compra TecnoCableado</a>",
+          "editor": "<a href=\"/erp-material-electrico/\">Material eléctrico y cableado Te piden precio de cuarenta renglones con material de tres proveedores, y cada uno pone el IVA a su manera. IncSales Cotiza normaliza antes de comparar · Así compra TecnoCableado</a>",
           "text_color": "#4d535d"
          },
          "elements": [],
@@ -195,7 +195,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<a href=\"erp-insumos-medicos.html\">Insumos médicos y material de curación El lote que caduca primero se queda en el fondo del almacén, y el pedimento aparece cuando ya te lo pidieron. IncSales Inventarios lleva caducidad y lote · Es el giro de Distrimedic</a>",
+          "editor": "<a href=\"/erp-insumos-medicos/\">Insumos médicos y material de curación El lote que caduca primero se queda en el fondo del almacén, y el pedimento aparece cuando ya te lo pidieron. IncSales Inventarios lleva caducidad y lote · Es el giro de Distrimedic</a>",
           "text_color": "#4d535d"
          },
          "elements": [],
@@ -206,7 +206,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<a href=\"erp-pinturas.html\">Pinturas, recubrimientos y acabados La cubeta de 19 litros no vale lo que el galón, y el contratista no paga el precio del mostrador. IncSales Inventarios cuelga precio y existencia de cada variante · Lo usa GS Pinturas</a>",
+          "editor": "<a href=\"/erp-pinturas/\">Pinturas, recubrimientos y acabados La cubeta de 19 litros no vale lo que el galón, y el contratista no paga el precio del mostrador. IncSales Inventarios cuelga precio y existencia de cada variante · Lo usa GS Pinturas</a>",
           "text_color": "#4d535d"
          },
          "elements": [],
@@ -217,7 +217,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<a href=\"erp-ferreterias.html\">Ferretería, tlapalería y refacciones El mostrador promete hoy lo que no está en el almacén, y nadie se lo pidió al proveedor. IncSales Compras levanta la requisición al confirmar el pedido</a>",
+          "editor": "<a href=\"/erp-ferreterias/\">Ferretería, tlapalería y refacciones El mostrador promete hoy lo que no está en el almacén, y nadie se lo pidió al proveedor. IncSales Compras levanta la requisición al confirmar el pedido</a>",
           "text_color": "#4d535d"
          },
          "elements": [],
@@ -228,7 +228,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<a href=\"erp-equipo-industrial.html\">Equipo industrial, maquinados y proyectos Cotizas en marzo, el cliente confirma en mayo, y el margen que calculaste ya no existe. IncSales Cotiza congela el tipo de cambio y el costo por documento</a>",
+          "editor": "<a href=\"/erp-equipo-industrial/\">Equipo industrial, maquinados y proyectos Cotizas en marzo, el cliente confirma en mayo, y el margen que calculaste ya no existe. IncSales Cotiza congela el tipo de cambio y el costo por documento</a>",
           "text_color": "#4d535d"
          },
          "elements": [],
@@ -239,7 +239,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<a href=\"erp-ventanas-aluminio.html\">Cancelería, ventanas de aluminio y cristal Veinte ventanas y ninguna igual: perfil por metro, cristal por metro cuadrado y herrajes por pieza, en la misma hoja. IncSales Cotiza congela el costo del perfil al pasarlo a la cotización</a>",
+          "editor": "<a href=\"/erp-ventanas-aluminio/\">Cancelería, ventanas de aluminio y cristal Veinte ventanas y ninguna igual: perfil por metro, cristal por metro cuadrado y herrajes por pieza, en la misma hoja. IncSales Cotiza congela el costo del perfil al pasarlo a la cotización</a>",
           "text_color": "#4d535d"
          },
          "elements": [],
@@ -250,7 +250,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<a href=\"erp-paneles-solares.html\">Energía solar fotovoltaica El cliente decide en seis semanas, y nadie sabe en qué punto quedó cada uno de los diez proyectos abiertos. IncSales CRM pone cada proyecto en su etapa con su valor en juego</a>",
+          "editor": "<a href=\"/erp-paneles-solares/\">Energía solar fotovoltaica El cliente decide en seis semanas, y nadie sabe en qué punto quedó cada uno de los diez proyectos abiertos. IncSales CRM pone cada proyecto en su etapa con su valor en juego</a>",
           "text_color": "#4d535d"
          },
          "elements": [],
@@ -261,7 +261,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<a href=\"erp-tienda-en-linea.html\">Comercio en línea con tienda física La tienda vende en la mañana lo que el mostrador ya vendió a mediodía. IncSales WooSync sincroniza catálogo, precios, existencias y pedidos</a>",
+          "editor": "<a href=\"/erp-tienda-en-linea/\">Comercio en línea con tienda física La tienda vende en la mañana lo que el mostrador ya vendió a mediodía. IncSales WooSync sincroniza catálogo, precios, existencias y pedidos</a>",
           "text_color": "#4d535d"
          },
          "elements": [],

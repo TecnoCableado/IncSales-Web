@@ -77,7 +77,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "<ol><li><a href=\"index.html\">Inicio</a></li><li>Agenda una demo</li></ol>",
+        "editor": "<ol><li><a href=\"/\">Inicio</a></li><li>Agenda una demo</li></ol>",
         "text_color": "#b9cbe8"
        },
        "elements": [],
@@ -262,7 +262,7 @@
                "settings": {
                 "text": "Ver los precios",
                 "link": {
-                 "url": "precios.html",
+                 "url": "/precios/",
                  "is_external": "",
                  "nofollow": ""
                 },

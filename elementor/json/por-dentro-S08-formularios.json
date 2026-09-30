@@ -141,7 +141,7 @@
          "elType": "widget",
          "widgetType": "text-editor",
          "settings": {
-          "editor": "<p>Sin dar de alta tu dominio no se acepta ningún envío, y la doble confirmación limpia la lista en la puerta. <a href=\"forms.html\">Ver IncSales Forms</a></p>"
+          "editor": "<p>Sin dar de alta tu dominio no se acepta ningún envío, y la doble confirmación limpia la lista en la puerta. <a href=\"/forms/\">Ver IncSales Forms</a></p>"
          },
          "elements": [],
          "isInner": false

@@ -315,7 +315,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Vender lo que no tienes queda cubierto de punta a punta, sin una pantalla aparte para el mostrador. Lo trae <a href=\"inventarios.html\">IncSales Inventarios</a> , con proveedores por producto desde Cotiza Equipo $499 al mes.",
+            "editor": "Vender lo que no tienes queda cubierto de punta a punta, sin una pantalla aparte para el mostrador. Lo trae <a href=\"/inventarios/\">IncSales Inventarios</a> , con proveedores por producto desde Cotiza Equipo $499 al mes.",
             "text_color": "#6a6f78"
            },
            "elements": [],
@@ -601,7 +601,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "La orden sale con un botón, ya con el costo que él te cobra, en <a href=\"compras.html\">IncSales Compras</a> , incluido desde Cotiza Pro $999 al mes.",
+            "editor": "La orden sale con un botón, ya con el costo que él te cobra, en <a href=\"/compras/\">IncSales Compras</a> , incluido desde Cotiza Pro $999 al mes.",
             "text_color": "#6a6f78"
            },
            "elements": [],

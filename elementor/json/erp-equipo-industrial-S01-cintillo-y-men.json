@@ -94,7 +94,7 @@
           },
           "link_to": "custom",
           "link": {
-           "url": "index.html",
+           "url": "/",
            "is_external": "",
            "nofollow": ""
           }
@@ -169,7 +169,7 @@
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
-                  "editor": "<a href=\"crm.html\">IncSales CRM Interesados, negocios y bitácora</a>",
+                  "editor": "<a href=\"/crm/\">IncSales CRM Interesados, negocios y bitácora</a>",
                   "text_color": "#4d535d"
                  },
                  "elements": [],
@@ -180,7 +180,7 @@
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
-                  "editor": "<a href=\"cotizaciones.html\">IncSales Cotiza Seis documentos, una sola forma</a>",
+                  "editor": "<a href=\"/cotizaciones/\">IncSales Cotiza Seis documentos, una sola forma</a>",
                   "text_color": "#4d535d"
                  },
                  "elements": [],
@@ -191,7 +191,7 @@
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
-                  "editor": "<a href=\"inventarios.html\">IncSales Inventarios Variantes, kárdex y lotes</a>",
+                  "editor": "<a href=\"/inventarios/\">IncSales Inventarios Variantes, kárdex y lotes</a>",
                   "text_color": "#4d535d"
                  },
                  "elements": [],
@@ -202,7 +202,7 @@
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
-                  "editor": "<a href=\"compras.html\">IncSales Compras Requisiciones y recepciones</a>",
+                  "editor": "<a href=\"/compras/\">IncSales Compras Requisiciones y recepciones</a>",
                   "text_color": "#4d535d"
                  },
                  "elements": [],
@@ -213,7 +213,7 @@
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
-                  "editor": "<a href=\"facturacion.html\">IncSales Facturación CFDI 4.0 timbrado por PAC</a>",
+                  "editor": "<a href=\"/facturacion/\">IncSales Facturación CFDI 4.0 timbrado por PAC</a>",
                   "text_color": "#4d535d"
                  },
                  "elements": [],
@@ -224,7 +224,7 @@
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
-                  "editor": "<a href=\"whatsapp.html\">IncSales WhatsApp Tu número, bandeja de equipo</a>",
+                  "editor": "<a href=\"/whatsapp/\">IncSales WhatsApp Tu número, bandeja de equipo</a>",
                   "text_color": "#4d535d"
                  },
                  "elements": [],
@@ -235,7 +235,7 @@
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
-                  "editor": "<a href=\"forms.html\">IncSales Forms 14 tipos de campo, tres formas</a>",
+                  "editor": "<a href=\"/forms/\">IncSales Forms 14 tipos de campo, tres formas</a>",
                   "text_color": "#4d535d"
                  },
                  "elements": [],
@@ -246,7 +246,7 @@
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
-                  "editor": "<a href=\"correo.html\">IncSales Correo Listas desde tu propio dominio</a>",
+                  "editor": "<a href=\"/correo/\">IncSales Correo Listas desde tu propio dominio</a>",
                   "text_color": "#4d535d"
                  },
                  "elements": [],
@@ -257,7 +257,7 @@
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
-                  "editor": "<a href=\"wordpress.html\">WordPress y WooCommerce IncSales WooSync, desde $1,490 al mes</a>",
+                  "editor": "<a href=\"/wordpress/\">WordPress y WooCommerce IncSales WooSync, desde $1,490 al mes</a>",
                   "text_color": "#4d535d"
                  },
                  "elements": [],
@@ -268,7 +268,7 @@
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
-                  "editor": "<a href=\"integraciones.html\">Integraciones y API Con el ERP que ya tienes</a>",
+                  "editor": "<a href=\"/integraciones/\">Integraciones y API Con el ERP que ya tienes</a>",
                   "text_color": "#4d535d"
                  },
                  "elements": [],
@@ -279,7 +279,7 @@
                  "elType": "widget",
                  "widgetType": "text-editor",
                  "settings": {
-                  "editor": "<a href=\"migracion.html\">IncSales Migración Desde $9,900, sin costo en plan anual</a>",
+                  "editor": "<a href=\"/migracion/\">IncSales Migración Desde $9,900, sin costo en plan anual</a>",
                   "text_color": "#4d535d"
                  },
                  "elements": [],
@@ -314,7 +314,7 @@
                    "elType": "widget",
                    "widgetType": "text-editor",
                    "settings": {
-                    "editor": "<a href=\"por-dentro.html\">Ver las pantallas</a>",
+                    "editor": "<a href=\"/por-dentro/\">Ver las pantallas</a>",
                     "text_color": "#4d535d"
                    },
                    "elements": [],
@@ -337,7 +337,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<a href=\"por-dentro.html\">Las pantallas</a>",
+            "editor": "<a href=\"/por-dentro/\">Las pantallas</a>",
             "text_color": "#4d535d"
            },
            "elements": [],
@@ -348,7 +348,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<a href=\"precios.html\">Precios</a>",
+            "editor": "<a href=\"/precios/\">Precios</a>",
             "text_color": "#4d535d"
            },
            "elements": [],
@@ -359,7 +359,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<a href=\"agencia.html\">Agencia</a>",
+            "editor": "<a href=\"/agencia/\">Agencia</a>",
             "text_color": "#4d535d"
            },
            "elements": [],
@@ -370,7 +370,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<a href=\"casos.html\">Clientes</a>",
+            "editor": "<a href=\"/casos/\">Clientes</a>",
             "text_color": "#4d535d"
            },
            "elements": [],
@@ -381,7 +381,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<a href=\"preguntas.html\">Preguntas</a>",
+            "editor": "<a href=\"/preguntas/\">Preguntas</a>",
             "text_color": "#4d535d"
            },
            "elements": [],
@@ -410,7 +410,7 @@
            "settings": {
             "text": "Agenda una demo",
             "link": {
-             "url": "contacto.html",
+             "url": "/contacto/",
              "is_external": "",
              "nofollow": ""
             },

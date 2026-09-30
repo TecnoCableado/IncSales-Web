@@ -507,7 +507,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "<a href=\"agencia.html\">Cómo trabaja la agencia</a> · <a href=\"casos.html\">Los tres clientes con nombre</a>",
+        "editor": "<a href=\"/agencia/\">Cómo trabaja la agencia</a> · <a href=\"/casos/\">Los tres clientes con nombre</a>",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

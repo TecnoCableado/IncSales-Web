@@ -601,7 +601,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "No hay tipo de cambio global: cada documento guarda el suyo y mañana no se mueve. Eso lo hace <a href=\"cotizaciones.html\">IncSales Cotiza</a> .",
+            "editor": "No hay tipo de cambio global: cada documento guarda el suyo y mañana no se mueve. Eso lo hace <a href=\"/cotizaciones/\">IncSales Cotiza</a> .",
             "text_color": "#6a6f78"
            },
            "elements": [],

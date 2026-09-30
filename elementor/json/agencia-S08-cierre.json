@@ -137,7 +137,7 @@
          "settings": {
           "text": "Agenda tu sesión",
           "link": {
-           "url": "contacto.html",
+           "url": "/contacto/",
            "is_external": "",
            "nofollow": ""
           },

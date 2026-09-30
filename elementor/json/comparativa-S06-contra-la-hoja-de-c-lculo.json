@@ -538,7 +538,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "Se entra por donde duele: <strong>Cotiza Uno, $200 al mes, IVA incluido</strong> . <a href=\"precios.html\">Ver los planes</a>",
+        "editor": "Se entra por donde duele: <strong>Cotiza Uno, $200 al mes, IVA incluido</strong> . <a href=\"/precios/\">Ver los planes</a>",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

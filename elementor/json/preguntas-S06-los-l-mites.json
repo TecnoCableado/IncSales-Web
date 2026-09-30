@@ -234,7 +234,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "No: esos módulos no existen. Timbra el CFDI 4.0 por medio de un PAC y entrega el XML y el PDF de cada comprobante, más el ZIP de todas las facturas del año, para que tu contador trabaje con eso. <a href=\"facturacion.html\">Ver facturación</a> ."
+            "editor": "No: esos módulos no existen. Timbra el CFDI 4.0 por medio de un PAC y entrega el XML y el PDF de cada comprobante, más el ZIP de todas las facturas del año, para que tu contador trabaje con eso. <a href=\"/facturacion/\">Ver facturación</a> ."
            },
            "elements": [],
            "isInner": false
@@ -290,7 +290,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "El acceso a la API viene en el plan Corporativo, $15,000 al mes. Lo demás se cotiza como desarrollo a la medida: $890 la hora, o bolsa de 40 horas desde $29,900. <a href=\"integraciones.html\">Ver integraciones</a> ."
+            "editor": "El acceso a la API viene en el plan Corporativo, $15,000 al mes. Lo demás se cotiza como desarrollo a la medida: $890 la hora, o bolsa de 40 horas desde $29,900. <a href=\"/integraciones/\">Ver integraciones</a> ."
            },
            "elements": [],
            "isInner": false

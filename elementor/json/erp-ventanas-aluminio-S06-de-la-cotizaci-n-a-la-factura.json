@@ -256,7 +256,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Las veinte ventanas en un documento de <a href=\"cotizaciones.html\">IncSales Cotiza</a> , con tu logo.",
+            "editor": "Las veinte ventanas en un documento de <a href=\"/cotizaciones/\">IncSales Cotiza</a> , con tu logo.",
             "text_color": "#b9cbe8"
            },
            "elements": [],
@@ -420,7 +420,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Lo que no hay levanta la requisición en <a href=\"compras.html\">IncSales Compras</a> y se cierra al recibir.",
+            "editor": "Lo que no hay levanta la requisición en <a href=\"/compras/\">IncSales Compras</a> y se cierra al recibir.",
             "text_color": "#b9cbe8"
            },
            "elements": [],
@@ -502,7 +502,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "CFDI 4.0 timbrado desde el mismo pedido con <a href=\"facturacion.html\">IncSales Facturación</a> .",
+            "editor": "CFDI 4.0 timbrado desde el mismo pedido con <a href=\"/facturacion/\">IncSales Facturación</a> .",
             "text_color": "#b9cbe8"
            },
            "elements": [],
@@ -519,7 +519,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "Cada obra vive en su etapa, con su valor en juego, en <a href=\"crm.html\">IncSales CRM</a> .",
+        "editor": "Cada obra vive en su etapa, con su valor en juego, en <a href=\"/crm/\">IncSales CRM</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

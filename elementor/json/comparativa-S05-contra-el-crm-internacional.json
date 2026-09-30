@@ -201,7 +201,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<a href=\"migracion.html\">IncSales Migración</a> , desde $9,900, sin costo con plan anual.",
+            "editor": "<a href=\"/migracion/\">IncSales Migración</a> , desde $9,900, sin costo con plan anual.",
             "text_color": "#6a6f78",
             "typography_typography": "custom",
             "typography_font_size": {
@@ -343,7 +343,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Si tu CRM te gusta, quédate con él: <strong>Factura Esencial, $2,490 al mes, IVA incluido</strong> . <a href=\"precios.html\">Ver los planes</a>",
+            "editor": "Si tu CRM te gusta, quédate con él: <strong>Factura Esencial, $2,490 al mes, IVA incluido</strong> . <a href=\"/precios/\">Ver los planes</a>",
             "text_color": "#6a6f78",
             "typography_typography": "custom",
             "typography_font_size": {

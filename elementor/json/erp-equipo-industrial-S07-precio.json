@@ -474,7 +474,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "Si apenas vas a ordenar las cotizaciones, Cotiza Uno cuesta $200 al mes con IVA incluido. Usuario adicional en la familia completa, $349 al mes. <a href=\"precios.html\">Ver todos los planes</a> .",
+        "editor": "Si apenas vas a ordenar las cotizaciones, Cotiza Uno cuesta $200 al mes con IVA incluido. Usuario adicional en la familia completa, $349 al mes. <a href=\"/precios/\">Ver todos los planes</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

@@ -463,7 +463,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "Si todavía no necesitas lotes, arranca en Cotiza Uno, $200 al mes con IVA incluido. <a href=\"precios.html\">Ver los nueve planes</a> .",
+        "editor": "Si todavía no necesitas lotes, arranca en Cotiza Uno, $200 al mes con IVA incluido. <a href=\"/precios/\">Ver los nueve planes</a> .",
         "align": "center",
         "text_color": "#6a6f78",
         "typography_typography": "custom",

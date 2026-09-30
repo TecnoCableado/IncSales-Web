@@ -77,7 +77,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "<ol><li><a href=\"index.html\">Inicio</a></li><li><a href=\"index.html\">Producto</a></li><li>IncSales Correo</li></ol>",
+        "editor": "<ol><li><a href=\"/\">Inicio</a></li><li><a href=\"/\">Producto</a></li><li>IncSales Correo</li></ol>",
         "text_color": "#e6bdd4"
        },
        "elements": [],
@@ -243,7 +243,7 @@
                "settings": {
                 "text": "Agenda tu demo",
                 "link": {
-                 "url": "contacto.html",
+                 "url": "/contacto/",
                  "is_external": "",
                  "nofollow": ""
                 },

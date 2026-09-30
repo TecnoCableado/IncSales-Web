@@ -155,7 +155,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "<p>El tablero de <a href=\"crm.html\">IncSales CRM</a> pone cada proyecto en su etapa con el valor en juego: cotizando con proveedores, propuesta enviada, en proceso, por instalar.</p>"
+            "editor": "<p>El tablero de <a href=\"/crm/\">IncSales CRM</a> pone cada proyecto en su etapa con el valor en juego: cotizando con proveedores, propuesta enviada, en proceso, por instalar.</p>"
            },
            "elements": [],
            "isInner": false

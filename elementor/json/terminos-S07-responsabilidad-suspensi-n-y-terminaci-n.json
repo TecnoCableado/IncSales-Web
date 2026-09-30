@@ -255,7 +255,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "<p>No lleva contabilidad ni nómina, y hoy no tiene números de serie, IEPS y retenciones completas, bitácora de auditoría multiusuario ni telefonía: la lista vive en las <a href=\"preguntas.html\">preguntas frecuentes</a> .</p>"
+        "editor": "<p>No lleva contabilidad ni nómina, y hoy no tiene números de serie, IEPS y retenciones completas, bitácora de auditoría multiusuario ni telefonía: la lista vive en las <a href=\"/preguntas/\">preguntas frecuentes</a> .</p>"
        },
        "elements": [],
        "isInner": false
@@ -283,7 +283,7 @@
        "elType": "widget",
        "widgetType": "text-editor",
        "settings": {
-        "editor": "<p><a href=\"wordpress.html\">IncSales WooSync</a> y la <a href=\"integraciones.html\">consulta de inventarios externos por API</a> se cotizan e implementan; no vienen activos en tu plan.</p>"
+        "editor": "<p><a href=\"/wordpress/\">IncSales WooSync</a> y la <a href=\"/integraciones/\">consulta de inventarios externos por API</a> se cotizan e implementan; no vienen activos en tu plan.</p>"
        },
        "elements": [],
        "isInner": false

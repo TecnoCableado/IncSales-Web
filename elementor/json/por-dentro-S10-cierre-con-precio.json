@@ -236,7 +236,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "IVA incluido, sin permanencia forzosa. Nueve planes. <a href=\"precios.html\">Ver los planes</a>",
+            "editor": "IVA incluido, sin permanencia forzosa. Nueve planes. <a href=\"/precios/\">Ver los planes</a>",
             "text_color": "#b9cbe8"
            },
            "elements": [],
@@ -400,7 +400,7 @@
            "elType": "widget",
            "widgetType": "text-editor",
            "settings": {
-            "editor": "Lo que valían los 800 negocios de la migración de HubSpot hecha en prueba. Cuadró al centavo. <a href=\"casos.html\">Ver los clientes</a>",
+            "editor": "Lo que valían los 800 negocios de la migración de HubSpot hecha en prueba. Cuadró al centavo. <a href=\"/casos/\">Ver los clientes</a>",
             "text_color": "#b9cbe8"
            },
            "elements": [],
@@ -419,7 +419,7 @@
        "settings": {
         "text": "Agenda tu demo",
         "link": {
-         "url": "contacto.html",
+         "url": "/contacto/",
          "is_external": "",
          "nofollow": ""
         },
